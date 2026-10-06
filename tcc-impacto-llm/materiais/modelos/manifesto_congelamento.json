@@ -1,0 +1,21 @@
+{
+  "status": "NAO_CONGELADO",
+  "data": null,
+  "revisor_referencia": null,
+  "aprovacao_escopo": null,
+  "baseline_commit": null,
+  "arquivos_sha256": {},
+  "modelo": {
+    "provedor": null,
+    "id": null,
+    "versao_disponivel": null,
+    "parametros": {},
+    "parametros_indisponiveis": []
+  },
+  "integracao_desenvolvimento": null,
+  "spec_kit_versao": null,
+  "repeticoes_principais_aprovadas": null,
+  "ordem_planejada": null,
+  "versao_avaliador": null,
+  "politica_falhas_aprovada": null
+}
