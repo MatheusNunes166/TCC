@@ -1,50 +1,69 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+﻿<!-- Sync Impact Report
+Version change: template sem versão → 1.0.0 (constituição inicial preparada).
+Modified principles: placeholders → Escopo controlado; Decisões explícitas;
+Rastreabilidade; Verificação por evidências; Incrementos pequenos.
+Added sections: Separação de contextos; Fluxo e fechamento; Governance preenchida.
+Removed sections: nenhuma; exemplos substituídos.
+Follow-up TODO: RATIFICATION_DATE — registrar adoção pelo responsável do projeto.
+Templates e comandos dependentes não alterados; leem a constituição em execução.
+Comentário temporário para revisão, a remover antes de commit após acompanhamento.
+-->
+# TCC Impacto LLM Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Escopo controlado
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+Toda capacidade deve ter objetivo, limites e critérios observáveis antes da implementação.
+Ampliações exigem decisão explícita e atualização do escopo. Conveniência técnica não autoriza
+transformar a bancada em produto ou framework geral.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### II. Decisões explícitas
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+Decisões confirmadas devem registrar responsável, data, justificativa e evidência em
+`documentacao/decisoes.md`. Propostas, hipóteses e aprovações têm estados distintos.
+Não inferir aprovação do orientador a partir de documentação ou autorização de engenharia.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### III. Rastreabilidade
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+Requisitos, critérios, testes e mudanças devem manter IDs e vínculos verificáveis com as fontes.
+Preservar materiais originais e registrar divergências e resolução antes de depender delas.
+Alterações de contrato exigem revisão dos artefatos afetados.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### IV. Verificação por evidências
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+Testes devem confrontar entradas e saídas observáveis com expectativas identificadas e revisáveis.
+Planejado, implementado e executado são estados distintos. Fechamento exige evidências reais dos
+critérios aplicáveis; documentação ou código presente não prova correção nem valida a referência.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### V. Incrementos pequenos
+
+Trabalhar uma capacidade delimitada por vez. Revisar alterações e lacunas antes de concluir,
+reconciliar realizado e planejado e atualizar documentação, estado, bloqueios e handoff.
+Não avançar silenciosamente da preparação para implementação ou pesquisa.
+
+## Separação de contextos
+
+Desenvolvimento e experimento devem ter contextos separados. A coleta deve usar pacote permitido
+verificável, sem referência privada ou histórico de desenvolvimento; a avaliação acessa a referência
+separadamente. Escolhas científicas pendentes permanecem em `documentacao/decisoes.md`, sem se
+converterem em princípios constitucionais. Documentação pronta não libera piloto ou coleta.
+
+## Fluxo e fechamento
+
+Seguir o ciclo incremental de `documentacao/roadmap.md`. Resolver antes da implementação decisões
+que afetem a capacidade corrente; pendências futuras não bloqueiam atividades independentes.
+Toda revisão de fechamento deve conferir escopo, rastreabilidade, evidências e atualização do estado.
+Instruções operacionais e ordem de leitura ficam em `AGENTS.md`.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+Versão preparada por solicitação do usuário; não registra aprovação científica do desenho.
+TODO(RATIFICATION_DATE): registrar data de adoção explícita pelo responsável do projeto.
+Alterações devem registrar responsável, justificativa, impacto e aprovação em
+`documentacao/decisoes.md`, atualizar esta versão e revisar coerência dos documentos dependentes.
+Usar SemVer: MAJOR para remoção/redefinição incompatível, MINOR para novo princípio ou expansão
+material e PATCH para esclarecimento sem mudança de regra. Revisões de incremento devem verificar
+conformidade; divergências exigem resolução explícita, sem exceções silenciosas.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: pendente de adoção registrada | **Last Amended**: 2026-10-14
