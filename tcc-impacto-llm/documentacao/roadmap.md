@@ -1,12 +1,12 @@
-# Roadmap incremental
+﻿# Roadmap incremental
 
-Estado em 14/10/2026: baseline documental preparada; implementação, Specs e pesquisa não iniciadas nesta entrega. Contratos e desenho permanecem candidatos. As pendências estão em [decisoes.md](decisoes.md).
+Estado em 14/10/2026: baseline e governança preparadas; Spec 001, planejamento e tarefas existentes, com Python + unittest e organização mínima confirmados pelo usuário. Implementação e pesquisa não iniciadas. O desenho científico permanece candidato. As pendências estão em [decisoes.md](decisoes.md).
 
 ## Ciclo de cada capacidade
 
 Seguir a [metodologia descrita nos materiais](../materiais/03_DESENVOLVIMENTO_SPEC_KIT.md): delimitar uma capacidade → esclarecer contratos → especificar, planejar e decompor tarefas quando autorizado → analisar coerência → implementar quando autorizado → verificar → reconciliar o realizado e atualizar contexto, decisões e próxima ação.
 
-Fechar cada incremento com evidências reais vinculadas aos critérios, versões/fontes e limitações. Não encerrar pelo simples preenchimento de tarefas. Neste momento o ciclo termina na preparação documental, sem abrir Spec. Spec Kit é apoio de desenvolvimento, não condição experimental nem mecanismo de validação científica.
+Fechar cada incremento com evidências reais vinculadas aos critérios, versões/fontes e limitações. Não encerrar pelo simples preenchimento de tarefas. A etapa atual termina em tarefas e análise documental; nenhuma implementação ou verificação da aplicação foi realizada. Spec Kit é apoio de desenvolvimento, não condição experimental nem mecanismo de validação científica.
 
 ## Capacidades e critérios de passagem
 
@@ -30,6 +30,7 @@ Para r repetições principais, planejar r blocos, cada um com as 16 combinaçõ
 
 ## Próxima ação e dúvidas do primeiro incremento
 
-A próxima ação proposta é confirmar o contrato de RF-01/RF-02, saída/motivos e precedência, registrar as decisões pertinentes e escolher a tecnologia mínima quando houver autorização para avançar. O material não apresenta contradição técnica que impeça delimitar essa capacidade. Escolha do LLM, quantidade final de repetições e revisão integral da referência não bloqueiam seu planejamento, embora sejam necessárias nas etapas posteriores.
+A base RF-01/RF-02 foi fornecida pelo usuário e a escolha Python + unittest com organização mínima foi confirmada (D-06/D-07). A próxima ação é revisar [tasks.md](../specs/001-autorizacao-direta/tasks.md) e, quando solicitado implementar, executar a sequência prevista com evidências reais. O material não apresenta contradição técnica que impeça delimitar essa capacidade. Escolha do LLM, quantidade final de repetições e revisão integral da referência não bloqueiam seu planejamento, embora sejam necessárias nas etapas posteriores.
 
-Não há pergunta adicional indispensável para concluir esta baseline. Antes de implementar o primeiro incremento, permanecem necessários o aceite do contrato candidato e a autorização para a nova etapa; esta entrega não os presume.
+Não há pergunta adicional indispensável para concluir esta baseline. A implementação ainda depende de solicitação para a nova etapa; a criação de tarefas não a executa nem presume aprovação científica.
+

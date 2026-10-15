@@ -1,4 +1,4 @@
-# Requisitos e contrato candidato
+﻿# Requisitos e contrato candidato
 
 Estado: definições derivadas do [material de referência](../materiais/02_REQUISITOS_TESTES_E_REFERENCIA.md), ainda sujeitas à revisão humana. A criação desta baseline não registra aprovação do orientador. Ver [decisoes.md](decisoes.md).
 
@@ -26,6 +26,7 @@ Saída: decisão `permitir` ou `negar`, acompanhada de um motivo estável: `esta
 
 A precedência das negações é estado → conflito → ausência de permissão. Um incremento parcial de RF-01/RF-02 não pode redefinir o contrato global ou alegar suporte a RF-03/RF-04.
 
-## Definições ainda candidatas
+## Situação da baseline completa e do incremento 1
 
-Permanecem para confirmação: redação dos quatro RFs, contrato `decisão + motivo`, precedência, prioridade da origem direta e definição de impacto funcional em dependências. Os onze resultados esperados são expectativas, não evidências: [qualidade-e-testes.md](qualidade-e-testes.md). Política experimental e conjuntos candidatos permanecem no material de referência, sem duplicação integral aqui.
+Para engenharia do incremento 1, o usuário forneceu o contrato RF-01/RF-02, decisão/motivo e precedência do estado na solicitação da Spec (D-06). O recorte e os cenários estão na [Spec 001](../specs/001-autorizacao-direta/spec.md). A baseline completa, a prioridade entre origem direta/herdada e a definição científica de impacto funcional permanecem sujeitas à revisão; essa delimitação não altera RF-03/RF-04 nem aprova o experimento. Os onze resultados esperados são expectativas, não evidências: [qualidade-e-testes.md](qualidade-e-testes.md). Política experimental e conjuntos candidatos permanecem no material de referência, sem duplicação integral aqui.
+

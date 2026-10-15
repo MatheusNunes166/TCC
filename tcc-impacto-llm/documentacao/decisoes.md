@@ -33,3 +33,15 @@ Estas autorizações não equivalem à aprovação científica do desenho pelo o
 ## Como atualizar
 
 Para cada decisão futura, registrar ID, data, responsável pela aprovação, evidência da resposta, decisão e justificativa, ajustes solicitados, documentos/versões afetados e próxima ação. Enquanto não houver esse registro, manter o item como proposta ou pendência. Materiais históricos não são decisões simultaneamente vigentes; a substituição de MC-04 continua candidata.
+
+## Atualização de engenharia — especificação e tarefas (14/10/2026)
+
+| ID | Decisão e evidência | Alcance e efeito |
+|---|---|---|
+| D-06 | Usuário forneceu o contrato RF-01/RF-02 e solicitou `$speckit-specify` nesta conversa. | Base de engenharia para a Spec 001: estado, concessões próprias e decisão/motivo; RF-03/RF-04 ficam para o próximo incremento. Sem aprovação do orientador ou validação científica. |
+| D-07 | Usuário declarou: “Confirmo Python + unittest e a organização mínima proposta como escolhas técnicas para o primeiro incremento.” | Python + biblioteca padrão unittest, sem terceiros; `autorizacao.py` e `tests/test_autorizacao.py`. Versão exata do interpretador a conferir no ambiente; 3.11+ é a compatibilidade proposta no plano. |
+| D-08 | Usuário solicitou planejamento e, depois, geração de tarefas e análise de consistência nesta conversa. | Spec e plano existentes; tarefas documentadas, todas pendentes. Não autoriza implementação, execução de testes da aplicação, piloto ou coleta. Substitui as restrições temporais das entregas anteriores apenas nesse alcance. |
+
+Responsável pelas confirmações acima: usuário/responsável do projeto; evidência: solicitações explícitas desta conversa em 14/10/2026. Justificativa técnica e desenho em [plano da Spec 001](../specs/001-autorizacao-direta/plan.md). Assinaturas e representações do contrato são desenho de implementação, sem alegar confirmação específica além da linguagem, ferramenta e organização declaradas pelo usuário.
+
+P-01/P-02/P-03, adoção formal da constituição e revisão humana da referência/notas permanecem pendentes. O contrato completo RF-01–RF-04 não foi reduzido. Próxima ação: revisar tasks e, quando solicitado implementar, cumprir verificações e atualizar evidências reais.

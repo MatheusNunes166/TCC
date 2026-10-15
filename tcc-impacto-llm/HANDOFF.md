@@ -1,7 +1,7 @@
 ﻿# Handoff — 14/10/2026
 
-Leia [AGENTS.md](AGENTS.md) e siga sua ordem: constituição → estado/bloqueios → baseline documental → materiais pertinentes. Retome pelo incremento 1 do [roadmap](documentacao/roadmap.md).
+Siga a ordem de leitura de [AGENTS.md](AGENTS.md), depois leia Spec, plano, research, modelo de dados, contrato, quickstart e [tasks.md](specs/001-autorizacao-direta/tasks.md) da Spec 001.
 
-Próxima ação concreta: preparar para decisão o contrato RF-01/RF-02 — estados bloqueados, permissões diretas, decisão/motivo, precedência do estado e limites da capacidade parcial — e registrar a resposta em [decisoes.md](documentacao/decisoes.md). Confirmar o recorte de aceitação T01–T04 e T09, preservando RF-03/RF-04 como futuros, sem redefinir a baseline completa.
+Python + unittest e organização mínima estão confirmados (D-07 em [decisoes.md](documentacao/decisoes.md)). Spec/plano/tarefas existem; todas as tarefas continuam pendentes. A próxima ação concreta é revisar tarefas e, quando houver solicitação de implementação, começar pela preparação local e RF-01, depois RF-02, executando verificações previstas e preservando evidências.
 
-Quando solicitado especificar, usar `$speckit-specify` somente para essa capacidade; escolhas técnicas podem ser resolvidas no planejamento. Nesta entrega não executar esse comando, abrir Spec ou implementar. Pendências experimentais não impedem esclarecer o primeiro contrato; efeitos e responsáveis em [BLOQUEIOS.md](BLOQUEIOS.md).
+O pedido atual não autoriza implementar ou executar testes da aplicação. Não retomar a criação de outra Spec nem reabrir a escolha Python/unittest sem motivo novo. Preservar o domínio parcial e os resultados originais T05–T08. Atualizar estado e documentos com evidências reais antes de fechar o incremento. Pendências científicas em [BLOQUEIOS.md](BLOQUEIOS.md) não são resolvidas pela confirmação técnica.

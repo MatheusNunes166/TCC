@@ -3,20 +3,20 @@
 **Branch**: Git atual `main`; o setup retornou identificador de feature `001-autorizacao-direta`, sem criar branch.
 **Date**: 2026-10-14 | **Spec**: [spec.md](spec.md)
 **Input**: `specs/001-autorizacao-direta/spec.md` e solicitação atual de planejamento.
-**Status**: proposta técnica para revisão; sem implementação, tarefas ou testes executados.
+**Status**: Python + unittest e organização mínima confirmados pelo usuário em 14/10/2026 (D-07); desenho detalhado para execução futura. Tarefas documentadas, sem implementação ou testes executados.
 
 ## Summary
 
-Planejar RF-01/RF-02 como função local pura em Python e testes com `unittest`, sem dependências externas. As propostas deste plano não são escolhas aprovadas por consequência da sua redação. A base funcional foi fornecida pelo usuário ao solicitar a Spec; aprovações científicas e revisão da referência permanecem pendentes.
+Planejar RF-01/RF-02 como função local pura em Python e testes com `unittest`, sem dependências externas. Python + unittest e os dois arquivos mínimos foram confirmados explicitamente pelo usuário; os demais detalhes são desenho técnico, sem alegar aprovações adicionais. A base funcional foi fornecida pelo usuário ao solicitar a Spec; aprovações científicas e revisão da referência permanecem pendentes.
 
-Artefatos produzidos pelo fluxo: este plano, [research.md](research.md), [data-model.md](data-model.md), [contracts/autorizacao.md](contracts/autorizacao.md) e [quickstart.md](quickstart.md). O fluxo termina no desenho; `tasks.md` não é criado.
+Artefatos produzidos pelo fluxo: este plano, [research.md](research.md), [data-model.md](data-model.md), [contracts/autorizacao.md](contracts/autorizacao.md) e [quickstart.md](quickstart.md). O fluxo de planejamento terminou no desenho; [tasks.md](tasks.md) foi gerado posteriormente por solicitação do usuário.
 
 ## Technical Context
 
-**Language/Version**: proposta Python 3.11 ou superior, usando apenas recursos disponíveis em 3.11; versão exata do interpretador a registrar na futura preparação do ambiente.
+**Language/Version**: Python confirmado; compatibilidade proposta 3.11 ou superior, usando apenas recursos disponíveis em 3.11; versão exata do interpretador a registrar na futura preparação do ambiente.
 **Primary Dependencies**: biblioteca padrão; nenhuma dependência de terceiros proposta.
 **Storage**: nenhuma persistência; solicitações e resultados somente em memória.
-**Testing**: proposta `unittest`, com IDs T existentes nos nomes dos testes; comparações de decisão e motivo.
+**Testing**: `unittest` confirmado, com IDs T existentes nos nomes dos testes; comparações de decisão e motivo.
 **Target Platform**: execução local, inicialmente Windows/PowerShell; sem requisito de serviço ou implantação.
 **Project Type**: módulo importável por testes, sem interface de usuário, CLI da aplicação ou API de rede.
 **Performance Goals**: sem meta temporal ou de carga na Spec; não criar benchmark neste incremento.
@@ -30,10 +30,10 @@ Gates conferidos antes da pesquisa e novamente após o desenho, por revisão doc
 | Princípio | Antes da pesquisa | Após desenho |
 |---|---|---|
 | Escopo controlado | RF-01/RF-02 delimitados pela Spec. | Um módulo e testes; capacidades futuras fora do domínio parcial. |
-| Decisões explícitas | Contrato fornecido; tecnologia ainda pendente. | Propostas e alternativas registradas em research; aprovação técnica não presumida. |
+| Decisões explícitas | Contrato fornecido; tecnologia ainda pendente. | Confirmação de Python/unittest/layout em D-07; demais detalhes e alternativas em research. |
 | Rastreabilidade | IDs RF/T/SC preservados. | Matriz abaixo e contrato remetem à Spec e baseline completa. |
 | Verificação por evidências | Testes somente planejados. | Guia define execução futura e evidências; nenhum resultado declarado. |
-| Incrementos pequenos | Uma capacidade. | Sem tasks, implementação ou avanço de pesquisa. |
+| Incrementos pequenos | Uma capacidade. | Uma lista de tarefas pendentes gerada posteriormente, sem implementação ou pesquisa. |
 | Separação de contextos | Nenhum pacote experimental montado. | Nenhum acesso a modelo, coleta, avaliação ou gabarito promovido a validado. |
 
 Resultado: nenhuma violação de desenho identificada. A adoção formal da constituição continua pendente; isso não é aprovação do orientador.
@@ -55,7 +55,7 @@ specs/001-autorizacao-direta/
 
 ### Source Code (repository root)
 
-Estrutura futura proposta, não criada nesta etapa:
+Estrutura mínima confirmada, ainda não implementada:
 
 ```text
 autorizacao.py              # concessões próprias e função parcial de autorização
@@ -87,14 +87,13 @@ Os 32 exemplos auxiliares verificam o contrato de estado sem acrescentar IDs T �
 
 T05–T08 permanecem integralmente no catálogo original e fora desta aceitação; não criar testes ignorados que sugiram sua implementação nem substituir seus resultados esperados. RF-03 acrescentará herança antes da decisão por ausência de permissão; RF-04 acrescentará conflito antes da decisão por concessão. O contrato completo permanece estado → conflito → ausência de permissão.
 
-## Revisão antes de tarefas
+## Revisão e situação após geração de tarefas
 
-Revisar as propostas de tecnologia, layout, assinatura/resultado, função de consulta às concessões, domínio parcial e verificações auxiliares. Registrar aceites ou ajustes pelo responsável técnico antes de tratar essas escolhas como confirmadas. Ambiente e versão exata serão conferidos futuramente; nenhuma instalação ou validação de compatibilidade foi feita agora.
+A conferência prévia confirmou os sete casos, três concessões próprias, decisão/motivo e domínio parcial, sem contradição funcional com a baseline completa. D-07 em [decisoes.md](../../documentacao/decisoes.md) registra a escolha técnica confirmada; [tasks.md](tasks.md) organiza trabalho futuro. Ambiente e versão exata serão conferidos na execução autorizada, sem instalação ou validação de compatibilidade realizadas agora.
 
-Os arquivos de estado/handoff/bloqueios ainda descrevem o marco anterior à Spec e não refletem o estágio observado. O pedido atual limita alterações aos artefatos de planejamento; este plano registra a divergência sem alterar esses arquivos. A Spec existente e as solicitações posteriores autorizam especificação e planejamento, não implementação. Antes de fechar o incremento, reconciliar esses registros e centralizar decisões em `documentacao/decisoes.md`.
-
-P-01/P-02/P-03, adoção da constituição e revisão do gabarito/notas continuam pendentes. Nenhum desses itens é resolvido pela proposta técnica; piloto continua sem liberação.
+Estado, handoff e bloqueios foram reconciliados para refletir Spec/plano/tarefas existentes. Restrições de etapas anteriores são históricas; o pedido atual autoriza somente registro de escolhas, tarefas e análise. P-01/P-02/P-03, adoção da constituição e revisão do gabarito/notas continuam pendentes. Nenhuma dessas pendências é resolvida pela confirmação técnica; piloto permanece sem liberação.
 
 ## Complexity Tracking
 
 Nenhuma exceção constitucional ou complexidade adicional requerida. Sem infraestrutura, dependências externas ou abstrações de extensão antecipadas.
+

@@ -1,4 +1,4 @@
-# Contexto e escopo
+﻿# Contexto e escopo
 
 Baseline documental preparada em 14/10/2026. O desenho de pesquisa e os contratos permanecem candidatos à revisão; não há implementação, testes executados ou gabarito validado nesta entrega. Situações e responsáveis estão em [decisoes.md](decisoes.md).
 
@@ -24,6 +24,7 @@ O sistema de permissões é uma bancada local fictícia para tornar regras, depe
 
 Cadastro, interface, autenticação real, banco, implantação, dados reais, entradas malformadas, hierarquia multinível, ciclos, conflitos adicionais, vários modelos, novos testes gerados pelo LLM avaliado, framework geral e benchmark de vários sistemas.
 
-Nesta etapa estão autorizados apenas os seis documentos desta baseline. Não abrir Spec, implementar ou executar pesquisa. A preparação documental não libera o piloto. Próximas capacidades e critérios de passagem estão em [roadmap.md](roadmap.md).
+Na preparação inicial foram autorizados apenas os seis documentos desta baseline. Posteriormente foram autorizados Spec, planejamento, tarefas e análise, registrados em [decisoes.md](decisoes.md) (D-06–D-08). Implementação e pesquisa ainda não executadas nem autorizadas nesta entrega. A preparação documental não libera o piloto. Próximas capacidades e critérios de passagem estão em [roadmap.md](roadmap.md).
 
 Fontes: [guia de leitura](../materiais/LEIA_PRIMEIRO.md), [protocolo](../materiais/01_PROTOCOLO.md) e [fontes e decisões](../materiais/06_FONTES_E_DECISOES.md). Os materiais permanecem preservados como fontes; estes documentos não devem ser enviados integralmente ao modelo avaliado.
+

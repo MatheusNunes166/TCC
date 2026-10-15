@@ -4,13 +4,14 @@ Não há bloqueio para concluir a governança documental. Este quadro delimita e
 
 ## Primeiro incremento
 
-| Pendência | O que impede | Quem decide |
-|---|---|---|
-| Confirmar RF-01/RF-02: estados, permissões, decisão/motivo, precedência e recorte parcial/testes. | Tratar contrato como aprovado e implementar contra aceitação definitiva. É possível preparar esclarecimentos; para especificar uma baseline confirmada, registrar aceite. | Pesquisador/responsável do projeto; alinhar com orientador se mudar o recorte científico. |
-| Autorizar a próxima etapa de especificação. | Abrir Spec agora; o pedido atual limita o trabalho à governança. | Usuário/responsável do projeto, em solicitação futura. |
-| Escolher linguagem, ferramenta de testes e estrutura mínima. | Planejamento técnico final e implementação; não impede especificação funcional. Python + pytest continuam sugestões. | Pesquisador/responsável técnico. |
+Contrato base fornecido pelo usuário (D-06); especificação e planejamento realizados. Python + unittest e organização mínima confirmados (D-07); geração de tarefas autorizada (D-08). Essas escolhas não são mais bloqueios.
 
-A adoção formal da constituição está pendente de registro pelo responsável do projeto; não equivale à aprovação científica pelo orientador.
+| Pendência | O que impede | Quem decide ou verifica |
+|---|---|---|
+| Solicitação de implementação futura. | Executar tasks agora; o pedido atual termina em tarefas e análise. | Usuário/responsável do projeto. |
+| Conferir interpretador e versão compatível com a proposta 3.11+. | Executar verificações automatizadas sem ambiente disponível; disponibilidade ainda não conferida. Não bloqueia a lista de tarefas. | Responsável técnico durante preparação autorizada. |
+
+A adoção formal da constituição segue pendente de registro pelo responsável; não equivale à aprovação científica nem é declarada resolvida pela confirmação técnica. Não há contradição funcional bloqueante identificada na conferência prévia Spec/plano.
 
 ## Somente experimento futuro
 
@@ -22,3 +23,4 @@ A adoção formal da constituição está pendente de registro pelo responsável
 | Modelo/API, parâmetros suportados, orçamento, modalidade de saída e isolamento demonstrado. | Preparar coleta utilizável e liberar piloto; não impede núcleo de permissões. | Pesquisador/responsável técnico, com alinhamento científico se alterar o desenho. |
 
 Condições de entrada do piloto permanecem em [qualidade-e-testes.md](documentacao/qualidade-e-testes.md) e no material de piloto/coleta. Documentação pronta não as satisfaz por si só.
+

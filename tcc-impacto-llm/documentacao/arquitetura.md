@@ -1,4 +1,4 @@
-# Arquitetura mínima proposta
+﻿# Arquitetura mínima proposta
 
 Estado: desenho documental; componentes e tecnologias não implementados. Limites em [contexto-e-escopo.md](contexto-e-escopo.md), contrato em [requisitos.md](requisitos.md).
 
@@ -21,12 +21,13 @@ O processo que consulta o modelo deve ter acesso somente ao pacote permitido, se
 
 Uma pasta chamada privada ou um `.gitignore` não impõe isolamento. A separação física/de acesso e a inspeção do payload precisam de evidência antes do piloto. Esta pasta documental contém expectativas e não constitui pacote experimental permitido.
 
-## Escolhas técnicas pendentes
+## Escolhas técnicas e pendências
 
-- Linguagem e ferramenta de testes: Python + pytest são sugestões do material, sem adoção registrada.
-- Organização física dos componentes, representação da política/variantes e formatos dos registros: JSON é proposta.
+- Confirmados pelo usuário para o incremento 1: Python + unittest e organização mínima em `autorizacao.py` e `tests/test_autorizacao.py`, sem dependências externas (D-07 em [decisoes.md](decisoes.md)). pytest permanece alternativa histórica não adotada.
+- O [plano 001](../specs/001-autorizacao-direta/plan.md) detalha o desenho local parcial. Representação de variantes e formatos dos futuros registros experimentais continuam pendentes; JSON é proposta para esses registros, não requisito de persistência do núcleo.
 - Provedor, modelo/versão, modalidade de API, parâmetros suportados, limite de saída e orçamento.
 - Uso uniforme de saída estruturada forçada, tratamento operacional de acesso e mecanismo de isolamento.
 - Ferramentas e versões de desenvolvimento, inclusive Spec Kit, a confirmar antes de uso; sua utilização não escolhe o modelo avaliado.
 
 As decisões devem ser registradas em [decisoes.md](decisoes.md) antes do incremento correspondente. Detalhes experimentais e falhas: [protocolo](../materiais/01_PROTOCOLO.md), [prompts](../materiais/04_NOTAS_E_PROMPTS.md) e [piloto/coleta](../materiais/05_PILOTO_E_COLETA.md).
+

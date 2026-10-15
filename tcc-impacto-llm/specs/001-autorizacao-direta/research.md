@@ -1,10 +1,10 @@
 ﻿# Pesquisa de desenho — incremento 001
 
-Status: propostas técnicas para revisão, em 14/10/2026. Pesquisa documental e revisão técnica; sem instalação, benchmark ou teste de aplicação. Não há incógnita técnica que impeça apresentar o desenho. Aceite das escolhas pelo responsável do projeto permanece pendente.
+Status: propostas técnicas para revisão, em 14/10/2026. Pesquisa documental e revisão técnica; sem instalação, benchmark ou teste de aplicação. Não há incógnita técnica que impeça apresentar o desenho. Atualização: Python + unittest e organização mínima confirmados pelo usuário em 14/10/2026 (D-07 em documentacao/decisoes.md). Demais detalhes permanecem desenho técnico.
 
 ## Linguagem e testes
 
-**Decisão proposta**: Python 3.11+ e `unittest` da biblioteca padrão, sem dependências de terceiros. Registrar versão exata do interpretador quando preparar o ambiente.
+**Escolha confirmada (D-07)**: Python + `unittest` da biblioteca padrão, sem dependências de terceiros. Compatibilidade proposta: Python 3.11+. Registrar versão exata do interpretador quando preparar o ambiente.
 
 **Justificativa**: função pequena em memória e conjunto pequeno de cenários não exigem infraestrutura. `unittest` oferece execução automatizada, comparação de resultados e subtestes para verificações tabeladas. Essa opção minimiza instalações; a versão-base retoma Python 3.11+ já mencionado nos materiais, sem afirmar que esteja instalado.
 
@@ -14,7 +14,7 @@ Fontes oficiais consultadas em 14/10/2026: [unittest](https://docs.python.org/3/
 
 ## Organização e representação
 
-**Decisão proposta**: um módulo `autorizacao.py`, um arquivo `tests/test_autorizacao.py`, resultados em dicionário com duas strings e papéis como conjunto imutável. Concessões próprias retornadas como conjunto imutável por função de consulta.
+**Organização confirmada (D-07)**: um módulo `autorizacao.py` e um arquivo `tests/test_autorizacao.py`. **Desenho proposto**: resultados em dicionário com duas strings e papéis como conjunto imutável. Concessões próprias retornadas como conjunto imutável por função de consulta.
 
 **Justificativa**: mantém regras e testes legíveis, sem empacotamento, serialização ou dependência de arquivos de política. Permite verificar Supervisão sem permissão própria sem atribuir-lhe uma negativa final indevida.
 
@@ -30,4 +30,5 @@ Fontes oficiais consultadas em 14/10/2026: [unittest](https://docs.python.org/3/
 
 ## Pendências preservadas
 
-Revisar e aceitar estas propostas antes das tarefas. A versão exata do ambiente é uma verificação futura, não lacuna de desenho. Não decidir MC-04, modelo, métricas, revisor ou repetições: ver [decisões científicas](../../documentacao/decisoes.md). A revisão técnica não valida referência, constituição ou protocolo.
+As escolhas técnicas expressamente confirmadas estão em D-07; tarefas geradas sem converter outros detalhes ou pendências científicas em aprovações. A versão exata do ambiente é uma verificação futura, não lacuna de desenho. Não decidir MC-04, modelo, métricas, revisor ou repetições: ver [decisões científicas](../../documentacao/decisoes.md). A revisão técnica não valida referência, constituição ou protocolo.
+
