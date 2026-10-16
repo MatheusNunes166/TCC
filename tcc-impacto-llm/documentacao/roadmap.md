@@ -1,5 +1,8 @@
 ﻿# Roadmap incremental
 
+> Atualização vigente — 16/10/2026: RF-01/RF-02 implementados e verificados com Python 3.13.3 + unittest, sem terceiros. Sete casos de aceitação conformes, três concessões próprias, 32 combinações de estado e controle Auditoria/visualizar; 10 métodos, zero falhas/erros/ignorados. Evidências em `specs/001-autorizacao-direta/evidencias.md` (caminho desde a raiz). D-09/D-10 registram recorte aceito e autorização. Domínio ativo parcial somente Consulta ou Auditoria isoladamente; RF-03/RF-04 permanecem futuros. Afirmações de ausência de autorização/implementação nos registros de 14/10 abaixo são históricas, superadas somente nesse alcance. Constituição não formalmente adotada; referência, notas, prompts, métricas e piloto pendentes. Nenhum piloto ou LLM experimental executado.
+
+
 Estado em 14/10/2026: baseline e governança preparadas; Spec 001, planejamento e tarefas existentes, com Python + unittest e organização mínima confirmados pelo usuário. Implementação e pesquisa não iniciadas. O desenho científico permanece candidato. As pendências estão em [decisoes.md](decisoes.md).
 
 ## Ciclo de cada capacidade
@@ -33,4 +36,3 @@ Para r repetições principais, planejar r blocos, cada um com as 16 combinaçõ
 A base RF-01/RF-02 foi fornecida pelo usuário e a escolha Python + unittest com organização mínima foi confirmada (D-06/D-07). A próxima ação é revisar [tasks.md](../specs/001-autorizacao-direta/tasks.md) e, quando solicitado implementar, executar a sequência prevista com evidências reais. O material não apresenta contradição técnica que impeça delimitar essa capacidade. Escolha do LLM, quantidade final de repetições e revisão integral da referência não bloqueiam seu planejamento, embora sejam necessárias nas etapas posteriores.
 
 Não há pergunta adicional indispensável para concluir esta baseline. A implementação ainda depende de solicitação para a nova etapa; a criação de tarefas não a executa nem presume aprovação científica.
-

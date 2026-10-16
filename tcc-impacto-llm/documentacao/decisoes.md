@@ -1,5 +1,21 @@
 # Decisões, propostas e pendências
 
+## Fechamento de engenharia — 16/10/2026
+
+D-11: execução técnica pelo assistente sob autorização D-10; evidências observadas em [evidencias.md](../specs/001-autorizacao-direta/evidencias.md). Python 3.13.3; 10 métodos unittest OK; SC-001–SC-004 atendidos no domínio parcial. T001–T017 concluídas com revisão código/contrato/documentação. RF-03/RF-04 futuros, sem alteração de contrato ou expectativas T05–T08; referência original preservada. Sem piloto ou LLM experimental. Retorno científico permanece limitado a D-09 e proposta P-04.
+
+## Registro vigente — 16/10/2026
+
+D-09: orientador, conforme relato explícito do usuário nesta conversa (data do registro; data da manifestação não informada): recorte da bancada aceito, autorizado prosseguir. Gabarito, notas, prompts, métricas e piloto ainda serão revisados. P-01 parcialmente atendida quanto ao recorte; demais detalhes não recebem aprovação científica por consequência. P-02/P-03 continuam pendentes.
+
+Ajuste solicitado: retirar a herança em MC-04 elimina o conflito em Supervisão + Auditoria, pois Consulta deixa de ser papel efetivo, e pode liberar exportar pela concessão direta de Auditoria. T07 continua correto para visualizar: baseline negar/conflito; sem herança negar/sem_permissao.
+
+P-04: proposta do usuário, ainda não adotada nem executada: T12, ativa, Supervisão + Auditoria, exportar. Baseline negar/conflito; MC-04 sem herança permitir/permissao_direta. Antes de adotar, revisar relevância nas quatro mudanças, inclusões/exclusões, expectativas, conjuntos candidatos, notas/prompts, tamanho da suíte e cálculos/denominadores. Seriam 12 casos e 48 pares teste × mudança em vez de 11/44, sem alterar por si o número de chamadas. Catálogo e referência JSON permanecem preservados.
+
+D-10: usuário, pedido explícito desta conversa em 16/10/2026: implementação da Spec 001, 17 tarefas, Python + unittest e testes locais autorizados. Supera restrições temporais anteriores somente nesse alcance. Sem RF-03/RF-04, piloto ou LLM experimental. Adoção formal da constituição pendente.
+
+Conferência prévia de Spec/plano/tasks/modelo/contrato: sete casos coerentes, concessões próprias distintas da autorização final, estado primeiro e domínio parcial sem guarda adicional. Nenhuma contradição funcional bloqueante identificada; nenhum contrato alterado. Registros abaixo descrevem etapas históricas.
+
 Registro inicial: 14/10/2026. Fontes: solicitação do usuário nesta conversa e [fontes e decisões](../materiais/06_FONTES_E_DECISOES.md). Não há aprovação do orientador registrada nos materiais consultados. Ausência de resposta ou aprovação parcial não aprova os demais pontos.
 
 ## Diretrizes com autorização registrada

@@ -1,5 +1,8 @@
 # Qualidade e testes planejados
 
+> Atualização vigente — 16/10/2026: RF-01/RF-02 implementados e verificados com Python 3.13.3 + unittest, sem terceiros. Sete casos de aceitação conformes, três concessões próprias, 32 combinações de estado e controle Auditoria/visualizar; 10 métodos, zero falhas/erros/ignorados. Evidências em `specs/001-autorizacao-direta/evidencias.md` (caminho desde a raiz). D-09/D-10 registram recorte aceito e autorização. Domínio ativo parcial somente Consulta ou Auditoria isoladamente; RF-03/RF-04 permanecem futuros. Afirmações de ausência de autorização/implementação nos registros de 14/10 abaixo são históricas, superadas somente nesse alcance. Constituição não formalmente adotada; referência, notas, prompts, métricas e piloto pendentes. Nenhum piloto ou LLM experimental executado.
+
+
 Estado: onze casos planejados, não implementados nem executados nesta entrega. Os resultados abaixo são expectativas candidatas da baseline, derivadas de [requisitos.md](requisitos.md) e do [material de referência](../materiais/02_REQUISITOS_TESTES_E_REFERENCIA.md); não constituem gabarito validado.
 
 ## Estratégia de verificação
@@ -33,3 +36,8 @@ Antes da coleta, verificar parser e pontuação com exemplos sintéticos de sele
 **Redução nominal só pode ser interpretada favoravelmente em resposta válida, com seleção completa dos testes relevantes (revocação de testes = 1) e sem IDs inexistentes.** Não implica economia real de tempo ou detecção de defeitos. Omissões e revocação têm prioridade de apresentação.
 
 Documentação preparada não libera o piloto: ainda são necessárias baseline/variantes verificadas, referência e notas revisadas, coleta rastreável, isolamento demonstrado e avaliador conferido. Critérios completos em [piloto/coleta](../materiais/05_PILOTO_E_COLETA.md); sequência em [roadmap.md](roadmap.md).
+
+
+## Proposta de suíte completa — P-04
+
+T12 ainda não adotado nem executado: ativa, Supervisão + Auditoria, exportar. Baseline negar/conflito; MC-04 sem herança permitir/permissao_direta, pois desaparece Consulta efetivo e sua incompatibilidade, mantendo a concessão de Auditoria. T07/visualizar permanece correto: negar/conflito → negar/sem_permissao. Revisar relevância de T12 nas quatro mudanças, inclusões/exclusões e resultados antes de adotar; atualizar catálogo, conjuntos, notas/prompts e todos os cálculos/denominadores (12 casos/48 pares se adotado). O catálogo 11/44 e o JSON candidato não foram alterados. D-09 não valida gabarito.

@@ -1,5 +1,8 @@
 ﻿# Tasks: Autorização direta com bloqueio por estado
 
+> Fechamento em 16/10/2026: 17/17 tarefas concluídas por D-10. Evidências reais em [evidencias.md](evidencias.md) e resumo em [quickstart.md](quickstart.md). T001: Python 3.13.3; T002–T007: domínio, testes US1 antes/depois e estado; T008–T013: testes US2 antes, concessões e integrada; T014–T017: revisão e reconciliação documental. As descrições de todas pendentes e restrições de autorização abaixo são históricas da geração em 14/10, superadas pelo pedido atual.
+
+
 **Input**: [Spec](spec.md), [plano](plan.md), [research](research.md), [modelo de dados](data-model.md), [contrato](contracts/autorizacao.md) e [guia de verificação](quickstart.md).
 **Prerequisites**: D-06/D-07/D-08 em [decisoes.md](../../documentacao/decisoes.md); implementação ainda não autorizada nesta entrega.
 **Tests**: exigidos pela Spec. Todas as tarefas abaixo estão inicialmente pendentes, inclusive preparação, execução e documentação. Gerar esta lista não executa nenhuma tarefa nem fecha incremento.
@@ -17,13 +20,13 @@ Caminhos relativos à raiz com `documentacao/`, `materiais/` e `.specify/`. Úni
 
 **Propósito**: verificar ambiente e preparar evidência, somente quando autorizado implementar.
 
-- [ ] T001 Conferir Python compatível com a proposta 3.11+ e registrar versão real, comando e data em `specs/001-autorizacao-direta/quickstart.md`; não instalar pytest ou declarar ambiente pronto sem conferência.
+- [x] T001 Conferir Python compatível com a proposta 3.11+ e registrar versão real, comando e data em `specs/001-autorizacao-direta/quickstart.md`; não instalar pytest ou declarar ambiente pronto sem conferência.
 
 ## Phase 2: Foundational (Blocking Prerequisites)
 
 **Propósito**: fixar o domínio de uso antes das duas histórias, sem implementar capacidades futuras.
 
-- [ ] T002 Criar `autorizacao.py` inicialmente apenas com documentação do domínio parcial e criar a pasta `tests/` para `tests/test_autorizacao.py`; documentar entradas válidas (`ativa`, `suspensa`, `em_revisao`; papéis Consulta/Auditoria/Supervisão como `frozenset[str]`; visualizar/exportar), saída com exatamente `decisao` e `motivo` strings, contas não ativas com qualquer subconjunto e contas ativas somente com Consulta ou Auditoria isoladamente. Não definir retorno, exceção, guarda ou novo motivo para ativos fora do recorte; preservar vocabulário e precedência completos.
+- [x] T002 Criar `autorizacao.py` inicialmente apenas com documentação do domínio parcial e criar a pasta `tests/` para `tests/test_autorizacao.py`; documentar entradas válidas (`ativa`, `suspensa`, `em_revisao`; papéis Consulta/Auditoria/Supervisão como `frozenset[str]`; visualizar/exportar), saída com exatamente `decisao` e `motivo` strings, contas não ativas com qualquer subconjunto e contas ativas somente com Consulta ou Auditoria isoladamente. Não definir retorno, exceção, guarda ou novo motivo para ativos fora do recorte; preservar vocabulário e precedência completos.
 
 **Checkpoint**: estrutura mínima e domínio documentados; nenhuma funcionalidade presumida.
 
@@ -34,14 +37,14 @@ Caminhos relativos à raiz com `documentacao/`, `materiais/` e `.specify/`. Úni
 
 ### Tests for User Story 1
 
-- [ ] T003 [US1] Escrever em `tests/test_autorizacao.py` testes unittest identificados T01 (suspensa, Consulta, visualizar), T09 (em_revisao, Consulta, visualizar), T10 (em_revisao, Supervisão, visualizar) e T11 (em_revisao, Consulta+Auditoria, visualizar); comparar dicionários completos com `decisao=negar` e `motivo=estado`, sem campos extras. Cobrir SC-001 (parte), SC-002 e SC-004 (parte), sem testar RF-03/RF-04.
-- [ ] T004 [US1] Acrescentar em `tests/test_autorizacao.py` verificação auxiliar tabelada dos dois estados bloqueados × oito subconjuntos dos três papéis × duas operações (32 entradas), esperando sempre `negar/estado` e argumentos preservados; manter esses exemplos separados dos IDs T do catálogo experimental. Cobrir universalidade RF-01 e precedência.
-- [ ] T005 [US1] Executar os testes US1 antes da implementação conforme `specs/001-autorizacao-direta/quickstart.md` e registrar resultado real nesse arquivo; confirmar que identificam ausência da capacidade, distinguindo ausência de `autorizar` de erro de ambiente/sintaxe. Não relatar erro de preparação ou zero testes como falha funcional demonstrada nem como sucesso.
+- [x] T003 [US1] Escrever em `tests/test_autorizacao.py` testes unittest identificados T01 (suspensa, Consulta, visualizar), T09 (em_revisao, Consulta, visualizar), T10 (em_revisao, Supervisão, visualizar) e T11 (em_revisao, Consulta+Auditoria, visualizar); comparar dicionários completos com `decisao=negar` e `motivo=estado`, sem campos extras. Cobrir SC-001 (parte), SC-002 e SC-004 (parte), sem testar RF-03/RF-04.
+- [x] T004 [US1] Acrescentar em `tests/test_autorizacao.py` verificação auxiliar tabelada dos dois estados bloqueados × oito subconjuntos dos três papéis × duas operações (32 entradas), esperando sempre `negar/estado` e argumentos preservados; manter esses exemplos separados dos IDs T do catálogo experimental. Cobrir universalidade RF-01 e precedência.
+- [x] T005 [US1] Executar os testes US1 antes da implementação conforme `specs/001-autorizacao-direta/quickstart.md` e registrar resultado real nesse arquivo; confirmar que identificam ausência da capacidade, distinguindo ausência de `autorizar` de erro de ambiente/sintaxe. Não relatar erro de preparação ou zero testes como falha funcional demonstrada nem como sucesso.
 
 ### Implementation for User Story 1
 
-- [ ] T006 [US1] Implementar em `autorizacao.py` o bloqueio de `autorizar(estado, papeis, operacao)` para `suspensa` e `em_revisao`, retornando exatamente `{'decisao': 'negar', 'motivo': 'estado'}` antes de consultar permissões. Manter entradas intactas e documentar que a parte ativa ainda depende de US2; não criar resultado de negócio provisório para cenários ativos futuros.
-- [ ] T007 [US1] Executar novamente apenas a verificação US1 e registrar comandos, IDs, contagens reais e resultados em `specs/001-autorizacao-direta/quickstart.md`; investigar falhas antes de avançar e verificar por revisão de `autorizacao.py` que o bloqueio precede consulta de permissões. Não declarar o incremento completo com US2 ausente.
+- [x] T006 [US1] Implementar em `autorizacao.py` o bloqueio de `autorizar(estado, papeis, operacao)` para `suspensa` e `em_revisao`, retornando exatamente `{'decisao': 'negar', 'motivo': 'estado'}` antes de consultar permissões. Manter entradas intactas e documentar que a parte ativa ainda depende de US2; não criar resultado de negócio provisório para cenários ativos futuros.
+- [x] T007 [US1] Executar novamente apenas a verificação US1 e registrar comandos, IDs, contagens reais e resultados em `specs/001-autorizacao-direta/quickstart.md`; investigar falhas antes de avançar e verificar por revisão de `autorizacao.py` que o bloqueio precede consulta de permissões. Não declarar o incremento completo com US2 ausente.
 
 **Checkpoint**: US1 pode ser demonstrada isoladamente com contas não ativas. Isso não prova permissões diretas, herança ou incompatibilidade.
 
@@ -52,24 +55,24 @@ Caminhos relativos à raiz com `documentacao/`, `materiais/` e `.specify/`. Úni
 
 ### Tests for User Story 2
 
-- [ ] T008 [US2] Escrever em `tests/test_autorizacao.py` os testes T02 (ativa, Consulta, visualizar → permitir/permissao_direta), T03 (ativa, Consulta, exportar → negar/sem_permissao) e T04 (ativa, Auditoria, exportar → permitir/permissao_direta), comparando o dicionário inteiro; acrescentar como controle auxiliar Auditoria isolada solicitando visualizar → negar/sem_permissao, sem inventar novo ID T. Cobrir RF-02, SC-001 e SC-004 restantes e ambas as operações do domínio direto.
-- [ ] T009 [US2] Escrever em `tests/test_autorizacao.py` verificações de `obter_permissoes_diretas(papeis)` para Consulta → `frozenset({'visualizar'})`, Auditoria → `frozenset({'exportar'})` e Supervisão → `frozenset()`; esperados explícitos e independentes da política interna. Conferir retorno imutável, ausência de mutação das entradas e consistência em chamadas repetidas. Cobrir SC-003; não interpretar Supervisão sem concessão própria como negativa final de visualizar.
-- [ ] T010 [US2] Executar os testes US2 antes da implementação correspondente e registrar resultados reais em `specs/001-autorizacao-direta/quickstart.md`; identificar capacidade ausente, separando falhas funcionais de importação/preparação, sem registrar expectativas como execução bem-sucedida.
+- [x] T008 [US2] Escrever em `tests/test_autorizacao.py` os testes T02 (ativa, Consulta, visualizar → permitir/permissao_direta), T03 (ativa, Consulta, exportar → negar/sem_permissao) e T04 (ativa, Auditoria, exportar → permitir/permissao_direta), comparando o dicionário inteiro; acrescentar como controle auxiliar Auditoria isolada solicitando visualizar → negar/sem_permissao, sem inventar novo ID T. Cobrir RF-02, SC-001 e SC-004 restantes e ambas as operações do domínio direto.
+- [x] T009 [US2] Escrever em `tests/test_autorizacao.py` verificações de `obter_permissoes_diretas(papeis)` para Consulta → `frozenset({'visualizar'})`, Auditoria → `frozenset({'exportar'})` e Supervisão → `frozenset()`; esperados explícitos e independentes da política interna. Conferir retorno imutável, ausência de mutação das entradas e consistência em chamadas repetidas. Cobrir SC-003; não interpretar Supervisão sem concessão própria como negativa final de visualizar.
+- [x] T010 [US2] Executar os testes US2 antes da implementação correspondente e registrar resultados reais em `specs/001-autorizacao-direta/quickstart.md`; identificar capacidade ausente, separando falhas funcionais de importação/preparação, sem registrar expectativas como execução bem-sucedida.
 
 ### Implementation for User Story 2
 
-- [ ] T011 [US2] Implementar em `autorizacao.py` a relação de concessões próprias e `obter_permissoes_diretas(papeis)`, retornando união imutável das operações diretas sem expor política mutável: Consulta somente visualizar, Auditoria somente exportar, Supervisão vazio. Não expandir herança ou verificar conflito.
-- [ ] T012 [US2] Completar `autorizar` em `autorizacao.py` para contas ativas do domínio direto: usar concessões próprias e retornar exatamente `permitir/permissao_direta` ou `negar/sem_permissao` nas chaves `decisao`/`motivo`; manter RF-01 primeiro, função pura e vocabulário estável. Documentar a precondição parcial; não adicionar respostas, exceções, stubs de herança/conflito ou critérios de aceitação para ativos com Supervisão/combinações dependentes de RF-03/RF-04.
-- [ ] T013 [US2] Executar a suíte integrada conforme `specs/001-autorizacao-direta/quickstart.md`, registrando resultados reais dos sete casos T01/T02/T03/T04/T09/T10/T11, três concessões, 32 combinações de estado e controles auxiliares; exigir descoberta não vazia, ausência de falhas e nenhum caso de aceitação ignorado. Conferir regressão US1 e SC-001–SC-004; não executar T05–T08 como se implementados ou iniciar piloto.
+- [x] T011 [US2] Implementar em `autorizacao.py` a relação de concessões próprias e `obter_permissoes_diretas(papeis)`, retornando união imutável das operações diretas sem expor política mutável: Consulta somente visualizar, Auditoria somente exportar, Supervisão vazio. Não expandir herança ou verificar conflito.
+- [x] T012 [US2] Completar `autorizar` em `autorizacao.py` para contas ativas do domínio direto: usar concessões próprias e retornar exatamente `permitir/permissao_direta` ou `negar/sem_permissao` nas chaves `decisao`/`motivo`; manter RF-01 primeiro, função pura e vocabulário estável. Documentar a precondição parcial; não adicionar respostas, exceções, stubs de herança/conflito ou critérios de aceitação para ativos com Supervisão/combinações dependentes de RF-03/RF-04.
+- [x] T013 [US2] Executar a suíte integrada conforme `specs/001-autorizacao-direta/quickstart.md`, registrando resultados reais dos sete casos T01/T02/T03/T04/T09/T10/T11, três concessões, 32 combinações de estado e controles auxiliares; exigir descoberta não vazia, ausência de falhas e nenhum caso de aceitação ignorado. Conferir regressão US1 e SC-001–SC-004; não executar T05–T08 como se implementados ou iniciar piloto.
 
 **Checkpoint**: sete cenários de aceitação e controles conformes, somente se evidências reais o demonstrarem. RF-03/RF-04 continuam fora da entrega.
 
 ## Phase 5: Polish & Cross-Cutting Concerns
 
-- [ ] T014 Revisar as alterações em `autorizacao.py` e `tests/test_autorizacao.py` contra `specs/001-autorizacao-direta/spec.md`, `plan.md` e `contracts/autorizacao.md`; conferir chaves/motivos, precedência, ausência de efeitos externos, domínio parcial explícito e preservação de T05–T08. Resolver divergências no contrato/documentação antes de fechar, sem redefinir baseline completa.
-- [ ] T015 Consolidar em `specs/001-autorizacao-direta/quickstart.md` evidência real de comandos, versão, data, revisão ou diff utilizado, contagens por categoria, falhas/resoluções e relatório bruto; distinguir cenários, métodos e subtestes. Somente repetir verificações se houver correções ou dúvida material; não inventar relatório, resultado ou cobertura total.
-- [ ] T016 Atualizar `documentacao/arquitetura.md`, `documentacao/qualidade-e-testes.md` e `documentacao/decisoes.md` com realizado versus planejado e evidências de T013–T015; manter catálogo original, RF-03/RF-04 futuros e P-01/P-02/P-03 pendentes. Não validar gabarito ou protocolo como consequência de testes de engenharia.
-- [ ] T017 Reconciliar `ESTADO_ATUAL.md`, `BLOQUEIOS.md`, `HANDOFF.md`, `documentacao/roadmap.md` e `specs/001-autorizacao-direta/tasks.md` após revisão/evidências: marcar apenas tarefas comprovadas, declarar limitações restantes e próxima capacidade RF-03/RF-04 sem abri-la automaticamente. Não declarar piloto/coleta realizados ou incremento concluído com lacunas.
+- [x] T014 Revisar as alterações em `autorizacao.py` e `tests/test_autorizacao.py` contra `specs/001-autorizacao-direta/spec.md`, `plan.md` e `contracts/autorizacao.md`; conferir chaves/motivos, precedência, ausência de efeitos externos, domínio parcial explícito e preservação de T05–T08. Resolver divergências no contrato/documentação antes de fechar, sem redefinir baseline completa.
+- [x] T015 Consolidar em `specs/001-autorizacao-direta/quickstart.md` evidência real de comandos, versão, data, revisão ou diff utilizado, contagens por categoria, falhas/resoluções e relatório bruto; distinguir cenários, métodos e subtestes. Somente repetir verificações se houver correções ou dúvida material; não inventar relatório, resultado ou cobertura total.
+- [x] T016 Atualizar `documentacao/arquitetura.md`, `documentacao/qualidade-e-testes.md` e `documentacao/decisoes.md` com realizado versus planejado e evidências de T013–T015; manter catálogo original, RF-03/RF-04 futuros e P-01/P-02/P-03 pendentes. Não validar gabarito ou protocolo como consequência de testes de engenharia.
+- [x] T017 Reconciliar `ESTADO_ATUAL.md`, `BLOQUEIOS.md`, `HANDOFF.md`, `documentacao/roadmap.md` e `specs/001-autorizacao-direta/tasks.md` após revisão/evidências: marcar apenas tarefas comprovadas, declarar limitações restantes e próxima capacidade RF-03/RF-04 sem abri-la automaticamente. Não declarar piloto/coleta realizados ou incremento concluído com lacunas.
 
 ## Dependencies & Execution Order
 
@@ -109,4 +112,4 @@ MVP demonstrável: US1 (bloqueio por estado), explicitamente parcial. O incremen
 | SC-004 | T003, T008, T013–T015 | Sete pares exatos |
 | Domínio parcial e governança | T002, T006, T012, T014–T017 | Sem novas respostas RF-03/RF-04; evidências e documentação |
 
-Contagem: 17 tarefas, todas pendentes; US1 = 5, US2 = 6, preparação/fundação = 2, fechamento = 4. Os percentuais e razões acima são metas, não resultados observados.
+Contagem de fechamento: 17 tarefas concluídas; US1 = 5, US2 = 6, preparação/fundação = 2, fechamento = 4. Resultados observados e vínculos de evidência constam no registro de fechamento.

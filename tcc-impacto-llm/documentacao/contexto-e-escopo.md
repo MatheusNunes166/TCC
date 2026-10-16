@@ -1,5 +1,8 @@
 ﻿# Contexto e escopo
 
+> Atualização vigente — 16/10/2026: RF-01/RF-02 implementados e verificados com Python 3.13.3 + unittest, sem terceiros. Sete casos de aceitação conformes, três concessões próprias, 32 combinações de estado e controle Auditoria/visualizar; 10 métodos, zero falhas/erros/ignorados. Evidências em `specs/001-autorizacao-direta/evidencias.md` (caminho desde a raiz). D-09/D-10 registram recorte aceito e autorização. Domínio ativo parcial somente Consulta ou Auditoria isoladamente; RF-03/RF-04 permanecem futuros. Afirmações de ausência de autorização/implementação nos registros de 14/10 abaixo são históricas, superadas somente nesse alcance. Constituição não formalmente adotada; referência, notas, prompts, métricas e piloto pendentes. Nenhum piloto ou LLM experimental executado.
+
+
 Baseline documental preparada em 14/10/2026. O desenho de pesquisa e os contratos permanecem candidatos à revisão; não há implementação, testes executados ou gabarito validado nesta entrega. Situações e responsáveis estão em [decisoes.md](decisoes.md).
 
 ## Objetivo da pesquisa
@@ -27,4 +30,3 @@ Cadastro, interface, autenticação real, banco, implantação, dados reais, ent
 Na preparação inicial foram autorizados apenas os seis documentos desta baseline. Posteriormente foram autorizados Spec, planejamento, tarefas e análise, registrados em [decisoes.md](decisoes.md) (D-06–D-08). Implementação e pesquisa ainda não executadas nem autorizadas nesta entrega. A preparação documental não libera o piloto. Próximas capacidades e critérios de passagem estão em [roadmap.md](roadmap.md).
 
 Fontes: [guia de leitura](../materiais/LEIA_PRIMEIRO.md), [protocolo](../materiais/01_PROTOCOLO.md) e [fontes e decisões](../materiais/06_FONTES_E_DECISOES.md). Os materiais permanecem preservados como fontes; estes documentos não devem ser enviados integralmente ao modelo avaliado.
-

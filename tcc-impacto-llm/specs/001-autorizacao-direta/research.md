@@ -1,5 +1,8 @@
 ﻿# Pesquisa de desenho — incremento 001
 
+> Atualização vigente — 16/10/2026: RF-01/RF-02 implementados e verificados com Python 3.13.3 + unittest, sem terceiros. Sete casos de aceitação conformes, três concessões próprias, 32 combinações de estado e controle Auditoria/visualizar; 10 métodos, zero falhas/erros/ignorados. Evidências em `specs/001-autorizacao-direta/evidencias.md` (caminho desde a raiz). D-09/D-10 registram recorte aceito e autorização. Domínio ativo parcial somente Consulta ou Auditoria isoladamente; RF-03/RF-04 permanecem futuros. Afirmações de ausência de autorização/implementação nos registros de 14/10 abaixo são históricas, superadas somente nesse alcance. Constituição não formalmente adotada; referência, notas, prompts, métricas e piloto pendentes. Nenhum piloto ou LLM experimental executado.
+
+
 Status: propostas técnicas para revisão, em 14/10/2026. Pesquisa documental e revisão técnica; sem instalação, benchmark ou teste de aplicação. Não há incógnita técnica que impeça apresentar o desenho. Atualização: Python + unittest e organização mínima confirmados pelo usuário em 14/10/2026 (D-07 em documentacao/decisoes.md). Demais detalhes permanecem desenho técnico.
 
 ## Linguagem e testes
@@ -31,4 +34,3 @@ Fontes oficiais consultadas em 14/10/2026: [unittest](https://docs.python.org/3/
 ## Pendências preservadas
 
 As escolhas técnicas expressamente confirmadas estão em D-07; tarefas geradas sem converter outros detalhes ou pendências científicas em aprovações. A versão exata do ambiente é uma verificação futura, não lacuna de desenho. Não decidir MC-04, modelo, métricas, revisor ou repetições: ver [decisões científicas](../../documentacao/decisoes.md). A revisão técnica não valida referência, constituição ou protocolo.
-

@@ -1,5 +1,8 @@
 ﻿# Requisitos e contrato candidato
 
+> Atualização vigente — 16/10/2026: RF-01/RF-02 implementados e verificados com Python 3.13.3 + unittest, sem terceiros. Sete casos de aceitação conformes, três concessões próprias, 32 combinações de estado e controle Auditoria/visualizar; 10 métodos, zero falhas/erros/ignorados. Evidências em `specs/001-autorizacao-direta/evidencias.md` (caminho desde a raiz). D-09/D-10 registram recorte aceito e autorização. Domínio ativo parcial somente Consulta ou Auditoria isoladamente; RF-03/RF-04 permanecem futuros. Afirmações de ausência de autorização/implementação nos registros de 14/10 abaixo são históricas, superadas somente nesse alcance. Constituição não formalmente adotada; referência, notas, prompts, métricas e piloto pendentes. Nenhum piloto ou LLM experimental executado.
+
+
 Estado: definições derivadas do [material de referência](../materiais/02_REQUISITOS_TESTES_E_REFERENCIA.md), ainda sujeitas à revisão humana. A criação desta baseline não registra aprovação do orientador. Ver [decisoes.md](decisoes.md).
 
 ## Entradas e saídas
@@ -29,4 +32,3 @@ A precedência das negações é estado → conflito → ausência de permissão
 ## Situação da baseline completa e do incremento 1
 
 Para engenharia do incremento 1, o usuário forneceu o contrato RF-01/RF-02, decisão/motivo e precedência do estado na solicitação da Spec (D-06). O recorte e os cenários estão na [Spec 001](../specs/001-autorizacao-direta/spec.md). A baseline completa, a prioridade entre origem direta/herdada e a definição científica de impacto funcional permanecem sujeitas à revisão; essa delimitação não altera RF-03/RF-04 nem aprova o experimento. Os onze resultados esperados são expectativas, não evidências: [qualidade-e-testes.md](qualidade-e-testes.md). Política experimental e conjuntos candidatos permanecem no material de referência, sem duplicação integral aqui.
-

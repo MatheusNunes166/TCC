@@ -1,5 +1,8 @@
 ﻿# Arquitetura mínima proposta
 
+> Atualização vigente — 16/10/2026: RF-01/RF-02 implementados e verificados com Python 3.13.3 + unittest, sem terceiros. Sete casos de aceitação conformes, três concessões próprias, 32 combinações de estado e controle Auditoria/visualizar; 10 métodos, zero falhas/erros/ignorados. Evidências em `specs/001-autorizacao-direta/evidencias.md` (caminho desde a raiz). D-09/D-10 registram recorte aceito e autorização. Domínio ativo parcial somente Consulta ou Auditoria isoladamente; RF-03/RF-04 permanecem futuros. Afirmações de ausência de autorização/implementação nos registros de 14/10 abaixo são históricas, superadas somente nesse alcance. Constituição não formalmente adotada; referência, notas, prompts, métricas e piloto pendentes. Nenhum piloto ou LLM experimental executado.
+
+
 Estado: desenho documental; componentes e tecnologias não implementados. Limites em [contexto-e-escopo.md](contexto-e-escopo.md), contrato em [requisitos.md](requisitos.md).
 
 ## Componentes e responsabilidades
@@ -30,4 +33,3 @@ Uma pasta chamada privada ou um `.gitignore` não impõe isolamento. A separaç�
 - Ferramentas e versões de desenvolvimento, inclusive Spec Kit, a confirmar antes de uso; sua utilização não escolhe o modelo avaliado.
 
 As decisões devem ser registradas em [decisoes.md](decisoes.md) antes do incremento correspondente. Detalhes experimentais e falhas: [protocolo](../materiais/01_PROTOCOLO.md), [prompts](../materiais/04_NOTAS_E_PROMPTS.md) e [piloto/coleta](../materiais/05_PILOTO_E_COLETA.md).
-
