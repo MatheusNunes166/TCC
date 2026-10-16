@@ -1,13 +1,15 @@
-﻿# Handoff — 14/10/2026
+# Handoff — 16/10/2026
 
-## Handoff vigente — 16/10/2026
+Ler [AGENTS](AGENTS.md), constituição, estado, bloqueios e decisões; depois [Spec 002](specs/002-heranca-incompatibilidade/spec.md), checklist, os cinco artefatos de [planejamento](specs/002-heranca-incompatibilidade/plan.md) e [tasks.md](specs/002-heranca-incompatibilidade/tasks.md).
 
-Spec 001 concluída para engenharia, T001–T017 comprovadas em [evidencias.md](specs/001-autorizacao-direta/evidencias.md). Código: autorizacao.py; testes: tests/test_autorizacao.py. Para reproduzir: `python -m unittest discover -s tests -p 'test_*.py' -v` na raiz; Python usado 3.13.3, 10 métodos OK, sem terceiros. Revisão sem divergência funcional ou mudança de contrato.
+Spec ativa: `specs/002-heranca-incompatibilidade` em .specify/feature.json. Resolvedor confirmou FEATURE_SPEC/IMPL_PLAN antes de setup-plan; nenhum branch criado. Não voltar à Spec 001 por suposição ou gerar nova Spec.
 
-Ler D-09/D-10/P-04: orientador aceitou recorte, mas gabarito/notas/prompts/métricas/piloto serão revisados. MC-04 elimina conflito herdado e pode liberar exportar. T07/visualizar preservado; T12/exportar proposto, não adotado/executado. Revisar relevância nas quatro mudanças e cálculos/tamanho se adotado. Não alterar gabarito silenciosamente. Próxima capacidade RF-03/RF-04 mediante novo pedido. Preservar domínio parcial e precedência; nenhum piloto/LLM autorizado. Instruções de 14/10 abaixo são históricas e superadas somente neste alcance.
+Incremento 1 fechado para engenharia; [evidências](specs/001-autorizacao-direta/evidencias.md) preservadas. O código atual continua RF-01/RF-02 parcial. Spec 002: especificação, planejamento e tarefas preparados; análise de consistência realizada, sem contradição funcional ou requisito sem tarefa. As 22 tarefas T001–T022 permanecem pendentes. Nenhum teste da Spec 002 executado e nenhuma implementação concluída.
 
-Siga a ordem de leitura de [AGENTS.md](AGENTS.md), depois leia Spec, plano, research, modelo de dados, contrato, quickstart e [tasks.md](specs/001-autorizacao-direta/tasks.md) da Spec 001.
+Histórico: o planejamento anterior (D-12) terminou sem tarefas; a solicitação posterior autorizou somente sua geração e análise. Esta reconciliação corrige o estado temporal dos documentos, sem executar tarefas ou modificar requisitos, código e gabarito.
 
-Python + unittest e organização mínima estão confirmados (D-07 em [decisoes.md](documentacao/decisoes.md)). Spec/plano/tarefas existem; todas as tarefas continuam pendentes. A próxima ação concreta é revisar tarefas e, quando houver solicitação de implementação, começar pela preparação local e RF-01, depois RF-02, executando verificações previstas e preservando evidências.
+Desenho futuro mantém autorizacao.py e tests/test_autorizacao.py, Python + unittest. Preserva consulta direta dos atribuídos; funções puras de papéis efetivos e incompatibilidade; estado primeiro, conflito antes da decisão por permissão, direta antes de herdada e ausência por último. Ampliação do domínio só vale após implementar/verificar. Integrar T05–T08 aos sete casos, preservar controles e acrescentar bordas da Spec. Guia registra execução futura; não confundir com resultados.
 
-O pedido atual não autoriza implementar ou executar testes da aplicação. Não retomar a criação de outra Spec nem reabrir a escolha Python/unittest sem motivo novo. Preservar o domínio parcial e os resultados originais T05–T08. Atualizar estado e documentos com evidências reais antes de fechar o incremento. Pendências científicas em [BLOQUEIOS.md](BLOQUEIOS.md) não são resolvidas pela confirmação técnica.
+Próxima ação: solicitar implementação quando desejado; então seguir T001–T022 (preparação → herança → conflito → regressão/integração → revisão/documentação), registrando evidências antes de marcar conclusão. Não implementar automaticamente. Nenhuma dúvida funcional bloqueante identificada.
+
+D-12 registra autorização de planejamento e alcance; D-09/P-04 preservam limites científicos. T12 permanece proposto fora da aceitação/execução planejada. Sua eventual adoção exige revisão nas quatro mudanças e recálculos. Sem gabarito alterado ou validado, sem variantes/piloto/LLM experimental. Adoção formal da constituição e revisão científica continuam pendentes em [BLOQUEIOS](BLOQUEIOS.md).

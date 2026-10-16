@@ -1,5 +1,17 @@
 # Decisões, propostas e pendências
 
+## Planejamento da Spec 002 — 16/10/2026
+
+D-12 — Responsável pela autorização: usuário/responsável do projeto; evidência: solicitação explícita desta conversa para selecionar Spec 002 e preparar planejamento técnico com Python + unittest, aproveitando organização existente. Autoriza somente cinco artefatos de planejamento, seleção local e reconciliação de estado/handoff/bloqueios/decisões. Sem geração de tarefas, código, testes de aplicação, variantes, piloto ou LLM experimental; não registra aprovação científica.
+
+Seleção pelo mecanismo local documentado em common.sh: .specify/feature.json → specs/002-heranca-incompatibilidade. Destino confirmado por check-prerequisites.sh --json --paths-only antes de setup-plan.sh --json, que copiou o template no destino certo. BRANCH no JSON é identificador de contexto; nenhuma branch criada. Sandbox inicialmente negou escrita do setup e criação de contracts; repetições com permissão técnica concluídas. O apontador é estado local ignorado pelo Git.
+
+Desenho em [plan.md](../specs/002-heranca-incompatibilidade/plan.md): funções puras de efetivos e incompatibilidade; consulta direta preservada; estado → conflito → decisão por permissão, com direta antes de herdada e ausência por último. Interface existente conservada; domínio ativo ampliado apenas na implementação futura. Nenhuma nova decisão funcional necessária ou contradição bloqueante identificada; preferência direta/herdada já consta no contrato completo.
+
+Cinco artefatos produzidos: plan, research, data-model, contracts/autorizacao e quickstart. Revisão documental pré/pós-desenho conforme constituição, sem exceções identificadas. Testes antigos não repetidos e testes novos não executados; RF-03/RF-04 continuam não implementados. T12 fora dos critérios; gabarito e catálogo intactos. Adoção formal da constituição, P-01 parcialmente atendida e P-02/P-03/P-04 continuam pendentes. Próxima ação: revisão e solicitação de tarefas.
+
+Registros anteriores abaixo preservam o histórico; seus limites temporais não revogam D-12.
+
 ## Fechamento de engenharia — 16/10/2026
 
 D-11: execução técnica pelo assistente sob autorização D-10; evidências observadas em [evidencias.md](../specs/001-autorizacao-direta/evidencias.md). Python 3.13.3; 10 métodos unittest OK; SC-001–SC-004 atendidos no domínio parcial. T001–T017 concluídas com revisão código/contrato/documentação. RF-03/RF-04 futuros, sem alteração de contrato ou expectativas T05–T08; referência original preservada. Sem piloto ou LLM experimental. Retorno científico permanece limitado a D-09 e proposta P-04.
