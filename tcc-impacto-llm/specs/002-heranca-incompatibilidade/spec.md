@@ -1,3 +1,5 @@
+> Estado vigente — 18/10/2026 (D-13/D-14): Spec 002 implementada com Python 3.13.3 + unittest. RF-01–RF-04 integrados; 17 métodos aprovados, T01–T11 11/11 em decisão/motivo e 55 subtestes auxiliares conformes, zero falhas/erros/ignorados. Três estados, oito subconjuntos e duas operações no domínio válido; verificação dirigida, sem matriz que inclua T12. Evidências em `specs/002-heranca-incompatibilidade/quickstart.md` (caminho desde a raiz). T12 somente proposta; catálogo 11/44 e gabarito preservados. Sem variantes, piloto ou LLM experimental. Adoção constitucional e pendências científicas permanecem abertas. Trechos datados anteriores abaixo são históricos e não descrevem a capacidade atual.
+
 # Feature Specification: Herança de um nível e incompatibilidade efetiva
 
 **Feature Branch**: não criada; nenhum hook de branch configurado.
@@ -6,7 +8,7 @@
 
 **Created**: 2026-10-16
 
-**Status**: especificação, planejamento e tarefas preparados; análise de consistência realizada. As 22 tarefas T001–T022 estão pendentes; nenhum teste da Spec 002 executado e RF-03/RF-04 não implementados. T12 fora da aceitação; revisões científicas pendentes.
+**Status**: incremento de engenharia concluído em 18/10/2026; T001–T022 com evidências em [quickstart](quickstart.md). RF-03/RF-04 implementados; onze casos conformes. Requisitos e critérios abaixo preservados; referências ao futuro descrevem a preparação histórica.
 
 **Input histórico da especificação**: pedido explícito do usuário nesta conversa: conferir o fechamento do incremento 1 e especificar RF-03/RF-04, preservando RF-01/RF-02. Naquela etapa, produzir somente Spec e checklist, sem plano, tarefas, código, variantes, piloto ou chamadas ao LLM experimental.
 
@@ -90,10 +92,10 @@ Expectativas de engenharia de [requisitos.md](../../documentacao/requisitos.md) 
 | T02 | ativa | Consulta | visualizar | permitir | permissao_direta | Regressão RF-02 |
 | T03 | ativa | Consulta | exportar | negar | sem_permissao | Regressão RF-02 |
 | T04 | ativa | Auditoria | exportar | permitir | permissao_direta | Regressão RF-02 |
-| T05 | ativa | Supervisão | visualizar | permitir | permissao_herdada | RF-03, ainda não implementado |
-| T06 | ativa | Consulta + Auditoria | visualizar | negar | conflito | RF-04, ainda não implementado |
-| T07 | ativa | Supervisão + Auditoria | visualizar | negar | conflito | RF-03/RF-04, ainda não implementado |
-| T08 | ativa | Supervisão | exportar | negar | sem_permissao | Ausência após herança, ainda não implementado |
+| T05 | ativa | Supervisão | visualizar | permitir | permissao_herdada | RF-03, verificado em 18/10 |
+| T06 | ativa | Consulta + Auditoria | visualizar | negar | conflito | RF-04, verificado em 18/10 |
+| T07 | ativa | Supervisão + Auditoria | visualizar | negar | conflito | RF-03/RF-04, verificado em 18/10 |
+| T08 | ativa | Supervisão | exportar | negar | sem_permissao | Ausência após herança, verificado em 18/10 |
 | T09 | em_revisao | Consulta | visualizar | negar | estado | Regressão RF-01 |
 | T10 | em_revisao | Supervisão | visualizar | negar | estado | Estado sobre herança |
 | T11 | em_revisao | Consulta + Auditoria | visualizar | negar | estado | Estado sobre conflito |

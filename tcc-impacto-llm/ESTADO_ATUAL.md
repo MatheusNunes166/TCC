@@ -1,3 +1,9 @@
+> Estado vigente — 18/10/2026 (D-13/D-14): Spec 002 implementada com Python 3.13.3 + unittest. RF-01–RF-04 integrados; 17 métodos aprovados, T01–T11 11/11 em decisão/motivo e 55 subtestes auxiliares conformes, zero falhas/erros/ignorados. Três estados, oito subconjuntos e duas operações no domínio válido; verificação dirigida, sem matriz que inclua T12. Evidências em `specs/002-heranca-incompatibilidade/quickstart.md` (caminho desde a raiz). T12 somente proposta; catálogo 11/44 e gabarito preservados. Sem variantes, piloto ou LLM experimental. Adoção constitucional e pendências científicas permanecem abertas. Trechos datados anteriores abaixo são históricos e não descrevem a capacidade atual.
+
+Próxima ação: revisão humana dos resultados e das pendências científicas registradas em documentacao/decisoes.md. Nenhuma nova etapa iniciada automaticamente. Spec ativa permanece 002 em .specify/feature.json; aba da Spec 001 não define seleção.
+
+## Registro histórico anterior
+
 # Estado atual — 16/10/2026
 
 - Incremento 1 fechado para engenharia: RF-01/RF-02 implementados; 17 tarefas com evidências; dez métodos aprovados no registro anterior, sete casos e controles conformes. [Evidências preservadas](specs/001-autorizacao-direta/evidencias.md).

@@ -1,4 +1,4 @@
-# Pendências por etapa — 16/10/2026
+# Pendências por etapa — 18/10/2026
 
 Registro central em [decisoes.md](documentacao/decisoes.md). Quadro vigente substitui pendências temporais antigas de solicitação/ambiente do incremento 1.
 
@@ -6,7 +6,7 @@ Registro central em [decisoes.md](documentacao/decisoes.md). Quadro vigente subs
 
 Incremento 1 fechado com evidências; Python 3.13.3 usado naquela execução. Não há bloqueio funcional para o planejamento 002 concluído. Spec 002 ativa; desenho em [plan.md](specs/002-heranca-incompatibilidade/plan.md).
 
-Geração de tarefas e implementação 002 não foram solicitadas nesta etapa. Próxima passagem depende de solicitação do usuário, não de presumir autorização pelo plano. Ambiente deverá ser conferido na implementação autorizada; nenhuma instalação ou teste novo agora.
+Reconciliação: geração das 22 tarefas e análise já registradas em tasks, estado e handoff de 16/10. Implementação e testes locais agora autorizados pelo pedido de 18/10 (D-13); Python 3.13.3 confirmado. Incremento 002 concluído: 22 tarefas com evidências em [quickstart](specs/002-heranca-incompatibilidade/quickstart.md); 17 métodos OK, onze casos e controles conformes. Nenhum bloqueio funcional identificado. Sem dependências externas. Pendências abaixo continuam científicas/de etapas futuras.
 
 Adoção formal da constituição continua pendente do responsável; cumprimento da revisão de engenharia não equivale a ratificação.
 

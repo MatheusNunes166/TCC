@@ -1,12 +1,11 @@
-"""Bancada parcial RF-01/RF-02, somente com entradas válidas.
+"""Baseline integrada RF-01–RF-04, somente com entradas válidas.
 
 Estados: ativa, suspensa, em_revisao; operações: visualizar, exportar.
 Papéis: frozenset[str] de Consulta, Auditoria e Supervisão.
-autorizar cobre não ativas com qualquer subconjunto; ativas somente com
-Consulta ou Auditoria isoladamente. Fora disso não há resultado garantido,
-guarda, exceção ou motivo substituto contratado. Saída: dict com exatamente
-decisao e motivo strings. RF-03/RF-04 são futuros; a precedência completa
-permanece estado → conflito → ausência de permissão.
+autorizar cobre os três estados e os oito subconjuntos, inclusive vazio,
+nas duas operações. Sem política para entradas malformadas.
+Saída: dict com exatamente decisao e motivo strings. Precedência:
+estado → conflito → permissão direta → herdada → ausência de permissão.
 """
 
 
@@ -19,10 +18,26 @@ def obter_permissoes_diretas(papeis: frozenset[str]) -> frozenset[str]:
     )
 
 
+def obter_papeis_efetivos(papeis: frozenset[str]) -> frozenset[str]:
+    """Preserva atribuídos e expande a única herança de um nível."""
+    return papeis | frozenset({'Consulta'} if 'Supervisão' in papeis else ())
+
+
+def ha_incompatibilidade(papeis_efetivos: frozenset[str]) -> bool:
+    """Verifica o único conflito, sem expandir os papéis recebidos."""
+    return {'Consulta', 'Auditoria'} <= papeis_efetivos
+
+
 def autorizar(estado: str, papeis: frozenset[str], operacao: str) -> dict[str, str]:
-    """Decide somente no domínio parcial descrito no módulo, sem I/O ou mutação."""
+    """Decide no domínio válido descrito no módulo, sem I/O ou mutação."""
     if estado in ('suspensa', 'em_revisao'):
         return {'decisao': 'negar', 'motivo': 'estado'}
-    if operacao in obter_permissoes_diretas(papeis):
+    diretas = obter_permissoes_diretas(papeis)
+    efetivos = obter_papeis_efetivos(papeis)
+    if ha_incompatibilidade(efetivos):
+        return {'decisao': 'negar', 'motivo': 'conflito'}
+    if operacao in diretas:
         return {'decisao': 'permitir', 'motivo': 'permissao_direta'}
+    if operacao in obter_permissoes_diretas(efetivos):
+        return {'decisao': 'permitir', 'motivo': 'permissao_herdada'}
     return {'decisao': 'negar', 'motivo': 'sem_permissao'}

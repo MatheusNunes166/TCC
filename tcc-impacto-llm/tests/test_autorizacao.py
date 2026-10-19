@@ -4,6 +4,78 @@ import unittest
 import autorizacao
 
 
+class TestHeranca(unittest.TestCase):
+    def test_T05(self):
+        self.assertEqual(autorizacao.autorizar('ativa', frozenset({'Supervisão'}), 'visualizar'),
+                         {'decisao': 'permitir', 'motivo': 'permissao_herdada'})
+
+    def test_T08(self):
+        self.assertEqual(autorizacao.autorizar('ativa', frozenset({'Supervisão'}), 'exportar'),
+                         {'decisao': 'negar', 'motivo': 'sem_permissao'})
+
+    def test_efetivos_oito_subconjuntos(self):
+        for atribuidos, esperado in (
+                ((), ()),
+                (('Consulta',), ('Consulta',)),
+                (('Auditoria',), ('Auditoria',)),
+                (('Supervisão',), ('Supervisão', 'Consulta')),
+                (('Consulta', 'Auditoria'), ('Consulta', 'Auditoria')),
+                (('Consulta', 'Supervisão'), ('Consulta', 'Supervisão')),
+                (('Auditoria', 'Supervisão'), ('Consulta', 'Auditoria', 'Supervisão')),
+                (('Consulta', 'Auditoria', 'Supervisão'), ('Consulta', 'Auditoria', 'Supervisão'))):
+            with self.subTest(atribuidos=atribuidos):
+                papeis = frozenset(atribuidos)
+                resultado = autorizacao.obter_papeis_efetivos(papeis)
+                self.assertIsInstance(resultado, frozenset)
+                self.assertEqual(resultado, frozenset(esperado))
+                self.assertEqual(papeis, frozenset(atribuidos))
+                self.assertEqual(autorizacao.obter_papeis_efetivos(papeis), resultado)
+
+
+class TestConflito(unittest.TestCase):
+    def test_T06(self):
+        self.assertEqual(autorizacao.autorizar('ativa', frozenset({'Consulta', 'Auditoria'}), 'visualizar'),
+                         {'decisao': 'negar', 'motivo': 'conflito'})
+
+    def test_T07(self):
+        self.assertEqual(autorizacao.autorizar('ativa', frozenset({'Supervisão', 'Auditoria'}), 'visualizar'),
+                         {'decisao': 'negar', 'motivo': 'conflito'})
+
+    def test_incompatibilidade_oito_subconjuntos(self):
+        for nomes, esperado in (
+                ((), False),
+                (('Consulta',), False),
+                (('Auditoria',), False),
+                (('Supervisão',), False),
+                (('Consulta', 'Auditoria'), True),
+                (('Consulta', 'Supervisão'), False),
+                (('Auditoria', 'Supervisão'), False),
+                (('Consulta', 'Auditoria', 'Supervisão'), True)):
+            with self.subTest(efetivos=nomes):
+                efetivos = frozenset(nomes)
+                resultado = autorizacao.ha_incompatibilidade(efetivos)
+                self.assertIs(type(resultado), bool)
+                self.assertEqual(resultado, esperado)
+                self.assertEqual(efetivos, frozenset(nomes))
+                self.assertEqual(autorizacao.ha_incompatibilidade(efetivos), esperado)
+
+
+class TestBordas(unittest.TestCase):
+    def test_vazio_e_prioridade_direta(self):
+        for nomes, operacao, esperado in (
+                ((), 'visualizar', {'decisao': 'negar', 'motivo': 'sem_permissao'}),
+                ((), 'exportar', {'decisao': 'negar', 'motivo': 'sem_permissao'}),
+                (('Supervisão', 'Consulta'), 'visualizar',
+                 {'decisao': 'permitir', 'motivo': 'permissao_direta'}),
+                (('Supervisão', 'Consulta'), 'exportar',
+                 {'decisao': 'negar', 'motivo': 'sem_permissao'})):
+            with self.subTest(papeis=nomes, operacao=operacao):
+                entrada = ('ativa', frozenset(nomes), operacao)
+                self.assertEqual(autorizacao.autorizar(*entrada), esperado)
+                self.assertEqual(autorizacao.autorizar(*entrada), esperado)
+                self.assertEqual(entrada, ('ativa', frozenset(nomes), operacao))
+
+
 class TestEstado(unittest.TestCase):
     def conferir_estado(self, estado, papeis):
         self.assertEqual(autorizacao.autorizar(estado, frozenset(papeis), 'visualizar'),

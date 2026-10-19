@@ -1,5 +1,15 @@
 # Decisões, propostas e pendências
 
+## Fechamento vigente — 18/10/2026
+
+D-14 — Execução técnica pelo assistente sob autorização D-13, em 18/10/2026. Evidências: [quickstart da Spec 002](../specs/002-heranca-incompatibilidade/quickstart.md), relatório bruto final e revisão do diff. T001–T022 concluídas; RF-01–RF-04 integrados, 17 métodos OK, onze casos com decisão/motivo conformes e 55 subtestes. Dez métodos originais e expectativas preservados. Estado precede conflito, direta precede herdada. Domínio válido ampliado; verificação dirigida sem T12. Sem alteração de gabarito, materiais, variantes, piloto ou chamadas experimentais. D-09 e P-01/P-02/P-03/P-04 preservados; engenharia não equivale a validação científica. Nenhuma pendência funcional bloqueante no incremento; próxima etapa exige autorização própria.
+
+## Autorização vigente — 18/10/2026
+
+D-13 — Responsável: usuário/responsável do projeto; evidência: pedido explícito nesta conversa para implementar a Spec 002 seguindo suas 22 tarefas com Python e unittest. Autoriza implementação, testes locais e reconciliação documental; preserva gabarito e T12 como proposta. Não autoriza variantes, piloto ou LLM experimental nem representa aprovação científica ou adoção formal da constituição.
+
+Reconciliação prévia: tasks, estado e handoff já registravam geração de 22 tarefas e análise em 16/10, posteriores ao planejamento D-12. BLOQUEIOS e a próxima ação de D-12 estavam desatualizados. Esses limites são históricos, superados pelo pedido atual apenas no alcance de engenharia. Nenhuma divergência funcional bloqueante identificada.
+
 ## Planejamento da Spec 002 — 16/10/2026
 
 D-12 — Responsável pela autorização: usuário/responsável do projeto; evidência: solicitação explícita desta conversa para selecionar Spec 002 e preparar planejamento técnico com Python + unittest, aproveitando organização existente. Autoriza somente cinco artefatos de planejamento, seleção local e reconciliação de estado/handoff/bloqueios/decisões. Sem geração de tarefas, código, testes de aplicação, variantes, piloto ou LLM experimental; não registra aprovação científica.
