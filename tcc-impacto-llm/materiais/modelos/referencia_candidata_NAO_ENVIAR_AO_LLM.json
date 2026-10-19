@@ -1,9 +1,9 @@
 {
   "status": "CANDIDATO_NAO_REVISADO",
-  "versao": "0.1",
+  "versao": "0.2",
   "revisor": null,
   "data_revisao": null,
-  "observacao": "Não fornecer ao LLM avaliado. Justificativas no documento 02.",
+  "observacao": "Não fornecer ao LLM avaliado. T12 adotado pelo pesquisador em D-15 (19/10/2026); sem aprovação científica do orientador. Somente versão inicial executada; variantes não executadas. MC-04 designa MC-04-v2, retirada de herança. Justificativas no material 02 e documento de revisão.",
   "mudancas": [
     {
       "id": "MC-01",
@@ -13,12 +13,65 @@
         "RF-02"
       ],
       "tests": [
-        "T04"
+        "T04",
+        "T12"
       ],
       "changed": [
         "T04"
       ],
-      "preserved": []
+      "preserved": [
+        "T12"
+      ],
+      "expected": {
+        "T01": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T02": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T03": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T04": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T05": {
+          "decisao": "permitir",
+          "motivo": "permissao_herdada"
+        },
+        "T06": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T07": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T08": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T09": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T10": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T11": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T12": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        }
+      }
     },
     {
       "id": "MC-02",
@@ -30,15 +83,67 @@
       "tests": [
         "T06",
         "T07",
-        "T11"
+        "T11",
+        "T12"
       ],
       "changed": [
         "T06",
-        "T07"
+        "T07",
+        "T12"
       ],
       "preserved": [
         "T11"
-      ]
+      ],
+      "expected": {
+        "T01": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T02": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T03": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T04": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T05": {
+          "decisao": "permitir",
+          "motivo": "permissao_herdada"
+        },
+        "T06": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T07": {
+          "decisao": "permitir",
+          "motivo": "permissao_herdada"
+        },
+        "T08": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T09": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T10": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T11": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T12": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        }
+      }
     },
     {
       "id": "MC-03",
@@ -69,7 +174,57 @@
         "T09",
         "T10",
         "T11"
-      ]
+      ],
+      "expected": {
+        "T01": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T02": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T03": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T04": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T05": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T06": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T07": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T08": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T09": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T10": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T11": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T12": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        }
+      }
     },
     {
       "id": "MC-04-v2",
@@ -83,16 +238,224 @@
         "T05",
         "T07",
         "T08",
-        "T10"
+        "T10",
+        "T12"
       ],
       "changed": [
         "T05",
-        "T07"
+        "T07",
+        "T12"
       ],
       "preserved": [
         "T08",
         "T10"
-      ]
+      ],
+      "expected": {
+        "T01": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T02": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T03": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T04": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T05": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T06": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T07": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T08": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T09": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T10": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T11": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T12": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        }
+      }
+    }
+  ],
+  "historico_anterior": "../../documentacao/historico/pre-t12-2026-10-19/materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+  "quantidades": {
+    "testes_baseline": 12,
+    "pares_teste_mudanca": 48,
+    "expectativas_com_baseline": 60
+  },
+  "catalogo": [
+    {
+      "id": "T01",
+      "estado": "suspensa",
+      "papeis": [
+        "Consulta"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      }
+    },
+    {
+      "id": "T02",
+      "estado": "ativa",
+      "papeis": [
+        "Consulta"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      }
+    },
+    {
+      "id": "T03",
+      "estado": "ativa",
+      "papeis": [
+        "Consulta"
+      ],
+      "operacao": "exportar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      }
+    },
+    {
+      "id": "T04",
+      "estado": "ativa",
+      "papeis": [
+        "Auditoria"
+      ],
+      "operacao": "exportar",
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      }
+    },
+    {
+      "id": "T05",
+      "estado": "ativa",
+      "papeis": [
+        "Supervisão"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      }
+    },
+    {
+      "id": "T06",
+      "estado": "ativa",
+      "papeis": [
+        "Consulta",
+        "Auditoria"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      }
+    },
+    {
+      "id": "T07",
+      "estado": "ativa",
+      "papeis": [
+        "Supervisão",
+        "Auditoria"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      }
+    },
+    {
+      "id": "T08",
+      "estado": "ativa",
+      "papeis": [
+        "Supervisão"
+      ],
+      "operacao": "exportar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      }
+    },
+    {
+      "id": "T09",
+      "estado": "em_revisao",
+      "papeis": [
+        "Consulta"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      }
+    },
+    {
+      "id": "T10",
+      "estado": "em_revisao",
+      "papeis": [
+        "Supervisão"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      }
+    },
+    {
+      "id": "T11",
+      "estado": "em_revisao",
+      "papeis": [
+        "Consulta",
+        "Auditoria"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      }
+    },
+    {
+      "id": "T12",
+      "estado": "ativa",
+      "papeis": [
+        "Supervisão",
+        "Auditoria"
+      ],
+      "operacao": "exportar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      }
     }
   ]
 }

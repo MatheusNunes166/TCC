@@ -1,13 +1,6 @@
-> Estado vigente — 18/10/2026 (D-13/D-14): Spec 002 implementada com Python 3.13.3 + unittest. RF-01–RF-04 integrados; 17 métodos aprovados, T01–T11 11/11 em decisão/motivo e 55 subtestes auxiliares conformes, zero falhas/erros/ignorados. Três estados, oito subconjuntos e duas operações no domínio válido; verificação dirigida, sem matriz que inclua T12. Evidências em `specs/002-heranca-incompatibilidade/quickstart.md` (caminho desde a raiz). T12 somente proposta; catálogo 11/44 e gabarito preservados. Sem variantes, piloto ou LLM experimental. Adoção constitucional e pendências científicas permanecem abertas. Trechos datados anteriores abaixo são históricos e não descrevem a capacidade atual.
+# Qualidade e testes da bancada
 
-# Qualidade e testes planejados
-
-> Atualização vigente — 16/10/2026: RF-01/RF-02 implementados e verificados com Python 3.13.3 + unittest, sem terceiros. Sete casos de aceitação conformes, três concessões próprias, 32 combinações de estado e controle Auditoria/visualizar; 10 métodos, zero falhas/erros/ignorados. Evidências em `specs/001-autorizacao-direta/evidencias.md` (caminho desde a raiz). D-09/D-10 registram recorte aceito e autorização. Domínio ativo parcial somente Consulta ou Auditoria isoladamente; RF-03/RF-04 permanecem futuros. Afirmações de ausência de autorização/implementação nos registros de 14/10 abaixo são históricas, superadas somente nesse alcance. Constituição não formalmente adotada; referência, notas, prompts, métricas e piloto pendentes. Nenhum piloto ou LLM experimental executado.
-
-
-Estado: onze casos planejados, não implementados nem executados nesta entrega. Os resultados abaixo são expectativas candidatas da baseline, derivadas de [requisitos.md](requisitos.md) e do [material de referência](../materiais/02_REQUISITOS_TESTES_E_REFERENCIA.md); não constituem gabarito validado.
-
-Execução de engenharia: onze casos da tabela abaixo implementados, comparados por dicionário completo e aprovados. Auxiliares: 32 estados, três concessões, Auditoria/visualizar, oito efetivos, oito predicados e quatro bordas com repetição/imutabilidade. Dez métodos anteriores preservados. A tabela conserva expectativas sem validar referência científica. Relatório bruto no quickstart 002.
+> Estado vigente — 19/10/2026 (D-15/D-16): T12 adotado pelo pesquisador e verificado na versão inicial como negar/conflito. Python 3.13.3: teste isolado OK; suíte integrada com 18 métodos OK, T01–T12 12/12 e controles anteriores preservados. Catálogo: 12 testes; referência candidata: 48 pares teste × mudança, 60 expectativas incluindo a versão inicial; seleções 2/4/8/5. Variantes não implementadas nem executadas; sem piloto ou LLM experimental. A adoção é autorização do pesquisador, sem aprovação científica atribuída ao orientador. Revisão científica e adoção formal da constituição continuam pendentes. Evidências: `documentacao/evidencias-t12.md` (caminho desde a raiz).
 
 ## Estratégia de verificação
 
@@ -15,7 +8,7 @@ Revisar primeiro regras, precedência, entradas e expectativas com o revisor a c
 
 Verificar decisão e motivo. A suíte completa só é exigida após herança e incompatibilidade; o primeiro incremento verifica o subconjunto compatível com sua capacidade. A suíte é pequena e não promete cobertura total de RBAC. Os vínculos abaixo indicam comportamentos exercitados, sem substituir a política de impacto experimental.
 
-## Onze casos da baseline
+## Doze casos da baseline
 
 | ID | Estado | Papéis | Operação | Decisão esperada | Motivo esperado | RFs exercitados em destaque |
 |---|---|---|---|---|---|---|
@@ -30,10 +23,11 @@ Verificar decisão e motivo. A suíte completa só é exigida após herança e i
 | T09 | em_revisao | Consulta | visualizar | negar | estado | RF-01 |
 | T10 | em_revisao | Supervisão | visualizar | negar | estado | RF-01 |
 | T11 | em_revisao | Consulta + Auditoria | visualizar | negar | estado | RF-01; preservação da precedência sobre conflito |
+| T12 | ativa | Supervisão + Auditoria | exportar | negar | conflito | RF-01 prossegue; RF-03 inclui Consulta; RF-04 supera exportar direto de RF-02 |
 
 ## Variantes e avaliação futura
 
-As quatro mudanças e as 44 expectativas teste × mudança permanecem no material de referência. Conferir todas antes do piloto, mantendo alterações independentes. Em MC-04-v2, T07 continua negado, mas o motivo candidato muda para `sem_permissao`; conferir somente a decisão seria insuficiente.
+As quatro mudanças e as 48 expectativas teste × mudança permanecem no material de referência. Conferir todas antes do piloto, mantendo alterações independentes. Em MC-04-v2, T07 continua negado, mas o motivo candidato muda para `sem_permissao`; conferir somente a decisão seria insuficiente.
 
 Antes da coleta, verificar parser e pontuação com exemplos sintéticos de seleção vazia, todos, exata, parcial, formato inválido, duplicatas e IDs inexistentes. Esses exemplos não são resultados da pesquisa. O protocolo define fórmulas e tratamento de falhas, sem necessidade de reproduzi-los integralmente aqui.
 
@@ -42,6 +36,10 @@ Antes da coleta, verificar parser e pontuação com exemplos sintéticos de sele
 Documentação preparada não libera o piloto: ainda são necessárias baseline/variantes verificadas, referência e notas revisadas, coleta rastreável, isolamento demonstrado e avaliador conferido. Critérios completos em [piloto/coleta](../materiais/05_PILOTO_E_COLETA.md); sequência em [roadmap.md](roadmap.md).
 
 
-## Proposta de suíte completa — P-04
+## Adoção de T12 — P-04/D-15
 
-T12 ainda não adotado nem executado: ativa, Supervisão + Auditoria, exportar. Baseline negar/conflito; MC-04 sem herança permitir/permissao_direta, pois desaparece Consulta efetivo e sua incompatibilidade, mantendo a concessão de Auditoria. T07/visualizar permanece correto: negar/conflito → negar/sem_permissao. Revisar relevância de T12 nas quatro mudanças, inclusões/exclusões e resultados antes de adotar; atualizar catálogo, conjuntos, notas/prompts e todos os cálculos/denominadores (12 casos/48 pares se adotado). O catálogo 11/44 e o JSON candidato não foram alterados. D-09 não valida gabarito.
+T12 foi adotado pelo pesquisador em 19/10/2026 e executado na versão inicial, com decisão e motivo conformes. A suíte integrada mantém os onze casos anteriores e todos os controles; 18 métodos OK. Evidências em [evidencias-t12.md](evidencias-t12.md). Adoção e execução local não validam cientificamente o gabarito.
+
+Expectativas candidatas: MC-01 negar/conflito, preservação selecionada; MC-02 permitir/permissao_direta, mudança selecionada; MC-03 negar/conflito, excluído por operação; MC-04-v2 permitir/permissao_direta, mudança selecionada. MC-04 nesta etapa designa MC-04-v2 (retirada de herança), preservando o ID do JSON.
+
+São 12 testes, 48 pares teste × mudança e 60 expectativas incluindo a versão inicial; seleções 2/4/8/5. Conjuntos, justificativas e matriz em [referência candidata](referencia-candidata-proxima-etapa.md) e [material 02](../materiais/02_REQUISITOS_TESTES_E_REFERENCIA.md). Versão anterior preservada em [histórico pré-T12](historico/pre-t12-2026-10-19/LEIA_PRIMEIRO.md). Variantes não implementadas nem executadas.

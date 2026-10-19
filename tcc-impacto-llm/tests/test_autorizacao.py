@@ -33,6 +33,11 @@ class TestHeranca(unittest.TestCase):
 
 
 class TestConflito(unittest.TestCase):
+    def test_T12(self):
+        # RF-03 inclui Consulta efetivo; RF-04 supera exportar direto de RF-02.
+        self.assertEqual(autorizacao.autorizar('ativa', frozenset({'Supervisão', 'Auditoria'}), 'exportar'),
+                         {'decisao': 'negar', 'motivo': 'conflito'})
+
     def test_T06(self):
         self.assertEqual(autorizacao.autorizar('ativa', frozenset({'Consulta', 'Auditoria'}), 'visualizar'),
                          {'decisao': 'negar', 'motivo': 'conflito'})

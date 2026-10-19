@@ -7,7 +7,7 @@ Foram usados os materiais disponíveis nesta conversa e no workspace. Versões h
 | Material | Como foi utilizado |
 |---|---|
 | Proposta revisada mais recente disponível, final `(3)` | Objetivo comparativo, quatro requisitos/mudanças, um LLM e limites do estudo |
-| Pauta de alinhamento em Markdown e versão Word com diagramas | Baseline de três papéis, onze testes e quatro condições; é a base operacional mais recente |
+| Pauta de alinhamento em Markdown e versão Word com diagramas | Origem histórica da baseline de três papéis, onze testes e quatro condições; catálogo ampliado para doze testes pelo pesquisador em D-15, sem atribuir aprovação científica ao orientador |
 | Visão geral da pesquisa | Separação entre aplicação de apoio e avaliação de respostas |
 | Plano de documentação e kit anteriores | Organização de artefatos; regras antigas de vários níveis não foram carregadas para a baseline |
 | Documento formal de escopo e pesquisa de delimitação | Histórico do recorte; divergências subordinadas à pauta mais recente, sem apagar fontes |

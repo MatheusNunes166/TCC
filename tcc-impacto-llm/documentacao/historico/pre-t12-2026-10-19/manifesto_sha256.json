@@ -1,0 +1,17 @@
+{
+  "documentacao/arquitetura.md": "dc634075b521a4daeaae2d9cb0b34af12a9dc8f17cc180e4da1c922e899ccf09",
+  "documentacao/contexto-e-escopo.md": "4bdf28d6f6eb2767108a000a51f3a05b8b15461b284b77d24d862d4e0c16468e",
+  "documentacao/decisoes.md": "c701f98162ecc8c9e40e0ee7e4f5d8cde040da5615549db1ac388a6c71213cb9",
+  "documentacao/qualidade-e-testes.md": "d5b67dc5efa1e9117711bd2694422f6a527e013216f2834b98d5cfd6c9fc0665",
+  "documentacao/referencia-candidata-proxima-etapa.md": "2430e528284b7636447bfa2a6703a0531b3d3d85fea40e6d0ae1e1d88e70cfd9",
+  "documentacao/requisitos.md": "8ed8c57922e1d56c8faf885b0a1abc7e658d9b2cf96f2e3e854ea03dd4ef239d",
+  "documentacao/roadmap.md": "11404ad4faa3d551b8175f4df46198fd4e5b34d12716f07d0499909859719a80",
+  "materiais/01_PROTOCOLO.md": "effa57594a9646189cb901fbb71332ddf5d184bee121134111d6774ed55ea76b",
+  "materiais/02_REQUISITOS_TESTES_E_REFERENCIA.md": "409dd1bb53751117d4b696c5e52c1857fc1539fda1cb2f3607e5e8b4dbc286c5",
+  "materiais/03_DESENVOLVIMENTO_SPEC_KIT.md": "5984254a8985cc79c513c62406a333c9024bc0ecd57e35733ce51350f1a99faa",
+  "materiais/04_NOTAS_E_PROMPTS.md": "81053e4865ba7a3945ebef8b617911d008a159ef0282e31b46fde917c9ed9df5",
+  "materiais/05_PILOTO_E_COLETA.md": "db86bf89db1c3c26344b870715686e165353844626084c1b76000c04d145c396",
+  "materiais/06_FONTES_E_DECISOES.md": "89e3dd2970fa5f9b9b1ff4df0c783c61030278fb9d86d17ef973d99986c2e414",
+  "materiais/LEIA_PRIMEIRO.md": "766f5c6b59e5d93b5c4245f4c9bd9e1caf349be7c6783cded431efb790ed9619",
+  "materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json": "529823b02dd195a31aba9f77ff4e9e2c3fa17547fc32a0820b49e064ac913bd0"
+}

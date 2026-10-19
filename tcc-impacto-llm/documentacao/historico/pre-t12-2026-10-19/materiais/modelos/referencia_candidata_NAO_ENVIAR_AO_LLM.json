@@ -1,0 +1,98 @@
+{
+  "status": "CANDIDATO_NAO_REVISADO",
+  "versao": "0.1",
+  "revisor": null,
+  "data_revisao": null,
+  "observacao": "Não fornecer ao LLM avaliado. Justificativas no documento 02.",
+  "mudancas": [
+    {
+      "id": "MC-01",
+      "text": "Retirar Auditoria → exportar.",
+      "tipo": "Direto",
+      "rfs": [
+        "RF-02"
+      ],
+      "tests": [
+        "T04"
+      ],
+      "changed": [
+        "T04"
+      ],
+      "preserved": []
+    },
+    {
+      "id": "MC-02",
+      "text": "Retirar a incompatibilidade Consulta + Auditoria.",
+      "tipo": "Direto",
+      "rfs": [
+        "RF-04"
+      ],
+      "tests": [
+        "T06",
+        "T07",
+        "T11"
+      ],
+      "changed": [
+        "T06",
+        "T07"
+      ],
+      "preserved": [
+        "T11"
+      ]
+    },
+    {
+      "id": "MC-03",
+      "text": "Retirar Consulta → visualizar.",
+      "tipo": "Propagado",
+      "rfs": [
+        "RF-02",
+        "RF-03"
+      ],
+      "tests": [
+        "T01",
+        "T02",
+        "T05",
+        "T06",
+        "T07",
+        "T09",
+        "T10",
+        "T11"
+      ],
+      "changed": [
+        "T02",
+        "T05"
+      ],
+      "preserved": [
+        "T01",
+        "T06",
+        "T07",
+        "T09",
+        "T10",
+        "T11"
+      ]
+    },
+    {
+      "id": "MC-04-v2",
+      "text": "Retirar Supervisão → Consulta da herança.",
+      "tipo": "Propagado",
+      "rfs": [
+        "RF-03",
+        "RF-04"
+      ],
+      "tests": [
+        "T05",
+        "T07",
+        "T08",
+        "T10"
+      ],
+      "changed": [
+        "T05",
+        "T07"
+      ],
+      "preserved": [
+        "T08",
+        "T10"
+      ]
+    }
+  ]
+}

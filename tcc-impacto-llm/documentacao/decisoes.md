@@ -1,10 +1,22 @@
 # Decisões, propostas e pendências
 
-## Fechamento vigente — 18/10/2026
+## Adoção de T12 e fechamento técnico — 19/10/2026
+
+**D-15 — Autorização do pesquisador.** Responsável: usuário/pesquisador. Evidência: pedido explícito nesta conversa, “Confirmo a adoção de T12 no catálogo da bancada”, com entrada ativa, Supervisão + Auditoria, exportar e resultado inicial negar/conflito. Autoriza acrescentar o teste, executar isolado e suíte integrada, atualizar catálogo, rastreabilidade, referência candidata/JSON e artefatos dependentes, preservar histórico e reconciliar estado/handoff/pendências. Justificativa: acrescentar a operação exportar sob conflito herdado, complementando T07. Não atribui aprovação científica ao orientador nem adota formalmente a constituição. Não autoriza implementar/executar variantes, piloto ou chamadas ao LLM experimental.
+
+Expectativas candidatas autorizadas para registro: MC-01 negar/conflito, preservação selecionada; MC-02 permitir/permissao_direta, mudança selecionada; MC-03 negar/conflito, excluído pela política; MC-04 permitir/permissao_direta, mudança selecionada. MC-04 aqui é a retirada de herança já identificada como **MC-04-v2**; mantém-se esse ID no JSON para evitar ambiguidade com a antiga mudança de estado. Não há acumulação: cada mudança parte da mesma versão inicial.
+
+**D-16 — Fechamento de engenharia sob D-15.** Responsável pela execução: assistente, 19/10/2026. Evidências em [evidencias-t12.md](evidencias-t12.md): Python 3.13.3; T12 isolado OK; suíte integrada com 18 métodos OK, sem falhas/erros/ignorados. T01–T11, seis métodos auxiliares, controles e regras preservados; somente T12 foi acrescentado ao código de testes. Nenhuma divergência na versão inicial; resultado negar/conflito conforme RF-03/RF-04, prevalecendo sobre exportar direto de RF-02.
+
+Catálogo vigente T01–T12; 48 pares teste × mudança e 60 expectativas com a versão inicial. Referência candidata 0.2, seleções 2/4/8/5; conjuntos de RFs intactos. Histórico anterior preservado literalmente com hashes em [pré-T12](historico/pre-t12-2026-10-19/LEIA_PRIMEIRO.md). Foram harmonizados requisitos, testes, documento de revisão, materiais 01–06 e guia, JSON, estado, governança operacional e handoff. Bloco de definições comuns em `materiais/07_DEFINICOES_COMUNS.md`, obrigatório e igual às quatro condições, sem respostas; notas candidatas intactas. Schema sem restrição de IDs não exigiu alteração; manifesto continua não congelado. Artefatos das Specs são históricos do incremento e recebem aviso de complemento em D-15, preservando evidências antigas.
+
+P-04: **adoção e engenharia concluídas**, expectativas das mudanças ainda candidatas e sujeitas à revisão humana em P-02. P-01/P-02/P-03 e adoção constitucional permanecem abertas nos seus demais alcances. Próxima ação: revisão humana da referência 0.2, notas, política e medidas; revisor/data a combinar. Variantes não implementadas nem executadas; sem piloto/LLM experimental. Registros abaixo são históricos e seus limites não revogam D-15.
+
+## Fechamento anterior — 18/10/2026
 
 D-14 — Execução técnica pelo assistente sob autorização D-13, em 18/10/2026. Evidências: [quickstart da Spec 002](../specs/002-heranca-incompatibilidade/quickstart.md), relatório bruto final e revisão do diff. T001–T022 concluídas; RF-01–RF-04 integrados, 17 métodos OK, onze casos com decisão/motivo conformes e 55 subtestes. Dez métodos originais e expectativas preservados. Estado precede conflito, direta precede herdada. Domínio válido ampliado; verificação dirigida sem T12. Sem alteração de gabarito, materiais, variantes, piloto ou chamadas experimentais. D-09 e P-01/P-02/P-03/P-04 preservados; engenharia não equivale a validação científica. Nenhuma pendência funcional bloqueante no incremento; próxima etapa exige autorização própria.
 
-## Autorização vigente — 18/10/2026
+## Autorização anterior — 18/10/2026
 
 D-13 — Responsável: usuário/responsável do projeto; evidência: pedido explícito nesta conversa para implementar a Spec 002 seguindo suas 22 tarefas com Python e unittest. Autoriza implementação, testes locais e reconciliação documental; preserva gabarito e T12 como proposta. Não autoriza variantes, piloto ou LLM experimental nem representa aprovação científica ou adoção formal da constituição.
 

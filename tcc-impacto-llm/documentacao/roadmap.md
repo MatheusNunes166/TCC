@@ -1,4 +1,8 @@
-> Estado vigente — 18/10/2026 (D-13/D-14): Spec 002 implementada com Python 3.13.3 + unittest. RF-01–RF-04 integrados; 17 métodos aprovados, T01–T11 11/11 em decisão/motivo e 55 subtestes auxiliares conformes, zero falhas/erros/ignorados. Três estados, oito subconjuntos e duas operações no domínio válido; verificação dirigida, sem matriz que inclua T12. Evidências em `specs/002-heranca-incompatibilidade/quickstart.md` (caminho desde a raiz). T12 somente proposta; catálogo 11/44 e gabarito preservados. Sem variantes, piloto ou LLM experimental. Adoção constitucional e pendências científicas permanecem abertas. Trechos datados anteriores abaixo são históricos e não descrevem a capacidade atual.
+> Estado vigente — 19/10/2026 (D-15/D-16): T12 adotado pelo pesquisador e verificado na versão inicial como negar/conflito. Python 3.13.3: teste isolado OK; suíte integrada com 18 métodos OK, T01–T12 12/12 e controles anteriores preservados. Catálogo: 12 testes; referência candidata: 48 pares teste × mudança, 60 expectativas incluindo a versão inicial; seleções 2/4/8/5. Variantes não implementadas nem executadas; sem piloto ou LLM experimental. A adoção é autorização do pesquisador, sem aprovação científica atribuída ao orientador. Revisão científica e adoção formal da constituição continuam pendentes. Evidências: `documentacao/evidencias-t12.md` (caminho desde a raiz).
+
+## Estado anterior preservado — 18/10/2026
+
+> Estado histórico — 18/10/2026 (D-13/D-14): Spec 002 implementada com Python 3.13.3 + unittest. RF-01–RF-04 integrados; 17 métodos aprovados, T01–T11 11/11 em decisão/motivo e 55 subtestes auxiliares conformes, zero falhas/erros/ignorados. Três estados, oito subconjuntos e duas operações no domínio válido; verificação dirigida, sem matriz que inclua T12. Evidências em `specs/002-heranca-incompatibilidade/quickstart.md` (caminho desde a raiz). T12 somente proposta; catálogo 11/44 e gabarito preservados. Sem variantes, piloto ou LLM experimental. Adoção constitucional e pendências científicas permanecem abertas. Trechos datados anteriores abaixo são históricos e não descrevem a capacidade atual.
 
 ﻿# Roadmap incremental
 
@@ -19,8 +23,8 @@ Fechar cada incremento com evidências reais vinculadas aos critérios, versões
 |---|---|---|
 | 0 — Baseline de engenharia | Estes seis documentos, contratos candidatos e pendências explícitas. | Coerência documental conferida; decisões essenciais registradas para liberar o próximo trabalho. Documentos preparados não significam aprovações obtidas. |
 | 1 — Autorização direta e estado | RF-01/RF-02 e saída decisão/motivo. | Contrato confirmado para o incremento; posteriormente T01–T04 e T09 verificados com resultados reais. RF-03/RF-04 continuam capacidades futuras; não executar a suíte completa como se já suportada. |
-| 2 — Herança e incompatibilidade | RF-03/RF-04 e baseline completa. | Posteriormente onze casos executados, decisão/motivo corretos e precedência conferida, incluindo conflito herdado e estado sobre conflito. |
-| 3 — Mudanças e referência | Quatro variantes independentes e referência rastreável. | MC-04 escolhida; 44 pares teste × mudança conferidos contra expectativas humanas; baseline preservada; revisão, data e resolução das divergências registradas. |
+| 2 — Herança e incompatibilidade | RF-03/RF-04 e baseline completa. | Doze casos da versão inicial executados após D-15, incluindo T12, decisão/motivo corretos e precedência conferida, incluindo conflito herdado e estado sobre conflito. |
+| 3 — Mudanças e referência | Quatro variantes independentes e referência rastreável. | MC-04 escolhida; 48 pares teste × mudança (60 expectativas incluindo a versão inicial) conferidos contra expectativas humanas; baseline preservada; revisão, data e resolução das divergências registradas. |
 | 4 — Preparação da coleta e avaliação | Montagem permitida, chamadas isoladas, registros brutos e avaliador separado. | Isolamento/payload inspecionados; configuração versionada; parser e métricas conferidos com exemplos sintéticos; falhas e orçamento definidos; notas revisadas. |
 | 5 — Piloto e congelamento — pesquisa | Proposta de 16 chamadas: MC-01/MC-03 × quatro condições × duas repetições. | Todos os critérios de entrada e saída do material de piloto atendidos; relatório e ajustes registrados; novo ensaio se necessário; versões e repetições principais congeladas. |
 | 6 — Coleta principal e análise — pesquisa | Execuções principais e comparação descritiva. | Integridade e desvios registrados; omissões, excedentes, validade e consistência apresentados por mudança/condição; conclusões limitadas ao recorte. |
@@ -33,7 +37,7 @@ A preparação documental não libera o piloto. Antes dele, precisam existir bas
 
 Para r repetições principais, planejar r blocos, cada um com as 16 combinações de quatro mudanças × quatro condições, em ordem aleatorizada e registrada. Total: 16r chamadas. Cinco blocos e 80 chamadas são apenas o cenário candidato r = 5. Fixar r antes da coleta principal; não ajustar por vantagem observada de uma condição.
 
-## Próxima ação e dúvidas do primeiro incremento
+## Próxima ação histórica e dúvidas do primeiro incremento
 
 A base RF-01/RF-02 foi fornecida pelo usuário e a escolha Python + unittest com organização mínima foi confirmada (D-06/D-07). A próxima ação é revisar [tasks.md](../specs/001-autorizacao-direta/tasks.md) e, quando solicitado implementar, executar a sequência prevista com evidências reais. O material não apresenta contradição técnica que impeça delimitar essa capacidade. Escolha do LLM, quantidade final de repetições e revisão integral da referência não bloqueiam seu planejamento, embora sejam necessárias nas etapas posteriores.
 

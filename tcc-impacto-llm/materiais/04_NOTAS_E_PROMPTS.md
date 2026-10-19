@@ -27,9 +27,9 @@ Checklist: [ ] não contém gabarito; [ ] não resolve uma mudança; [ ] não cr
 
 Ordem fixa:
 1. Mensagem de sistema: responder à tarefa usando apenas o material fornecido, sem ferramentas externas, no esquema exigido.
-2. Definição de requisito impactado e política de seleção (documentos 1.2 e 2.3, sem gabaritos).
+2. Bloco integral de `07_DEFINICOES_COMUNS.md`: definição de impacto e relevância incluindo preservação, com a mesma política de seleção em D0/D1/E0/E1; fora das notas, sem gabaritos ou exemplos resolvidos.
 3. RFs e política inicial, incluindo precedência e contrato dos motivos.
-4. Catálogo T01–T11 com entradas e saídas da baseline.
+4. Catálogo T01–T12 com entradas e saídas da baseline.
 5. Uma descrição de mudança, isolada, sem rótulo “direta/propagada” nem conjuntos corretos.
 6. Notas: bloco candidato apenas em D1/E1.
 7. Pedido direto ou estruturado.

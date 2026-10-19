@@ -1,6 +1,6 @@
 # 3. Desenvolvimento incremental com Spec Kit
 
-**Agora:** preparar e revisar especificação, arquitetura, testes e protocolo. Os comandos abaixo são um roteiro futuro; não foram executados para instalar ferramentas ou implementar a aplicação nesta entrega.
+**Estado em 19/10/2026:** baseline implementada e verificada com T12 sob autorização do pesquisador (D-15/D-16); referência 0.2 continua candidata. O roteiro de instalação e os exemplos abaixo são históricos/propostos, sem execução nesta adoção. Python + unittest é a escolha técnica vigente; pytest citado no exemplo histórico não foi adotado. Nenhuma variante, piloto ou chamada ao LLM experimental foi executada.
 
 ## 3.1 Três coisas diferentes
 
@@ -53,8 +53,8 @@ Acionar a etapa de constituição com esta orientação adaptada:
 |---|---|---|
 | 0 — Documentação | Decisões, contratos, arquitetura e protocolo aprovados no que é essencial | Três decisões do resumo registradas; referência ainda claramente candidata se não revisada |
 | 1 — Autorização direta | RF-01 e RF-02, decisão e motivo | Casos de estado e permissão direta exercitados; sem alegar que herança já funciona |
-| 2 — Herança e conflito | RF-03 e RF-04; baseline completa | Onze casos executados, motivos corretos e precedência verificada |
-| 3 — Variantes controladas | Quatro alterações isoladas e expectativas rastreadas | Conferir os 44 pares teste×mudança; baseline intacta; divergências resolvidas com referência |
+| 2 — Herança e conflito | RF-03 e RF-04; baseline completa | Doze casos da versão inicial executados após adoção de T12 (D-15), motivos corretos e precedência verificada |
+| 3 — Variantes controladas | Quatro alterações isoladas e expectativas rastreadas | Conferir os 48 pares teste×mudança (60 expectativas incluindo a versão inicial); baseline intacta; divergências resolvidas com referência |
 | 4 — Coleta e avaliação | Payload isolado, registro bruto, parser e cálculo | Exemplos sintéticos de vazio, todos, exato, parcial, inválido e ID inexistente; nenhum dado real fabricado |
 | 5 — Piloto e congelamento | Ensaio, relatório de ajustes e protocolo fechado | Critérios do documento 5 atendidos; quantidade principal fixada |
 | 6 — Coleta e análise | Lotes principais e tabelas por condição | Rastreabilidade integral; falhas e desvios declarados; conclusões limitadas |

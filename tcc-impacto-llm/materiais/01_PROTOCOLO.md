@@ -6,7 +6,7 @@
 
 ## 1.1 Escopo e unidade de análise
 
-Um módulo fictício de autorização; quatro RFs; três papéis; duas operações; herança de um nível; uma incompatibilidade; onze casos existentes; quatro mudanças independentes; um LLM. Não há cadastro, interface, autenticação real, banco, implantação, vários modelos ou geração de novos testes pelo LLM avaliado.
+Um módulo fictício de autorização; quatro RFs; três papéis; duas operações; herança de um nível; uma incompatibilidade; doze casos existentes; quatro mudanças independentes; um LLM. Não há cadastro, interface, autenticação real, banco, implantação, vários modelos ou geração de novos testes pelo LLM avaliado.
 
 Cada observação é uma resposta de **mudança × condição × repetição**. Cada mudança começa na mesma baseline, nunca no resultado da anterior. Cinco repetições por combinação são uma proposta inicial, derivada das avaliações: 4 × 4 × 5 = 80 chamadas principais, mais 16 de piloto. Confirmar viabilidade após o ensaio e fixar a quantidade antes da coleta; não parar quando uma condição parecer melhor.
 
@@ -27,6 +27,8 @@ O estudo mede concordância com uma referência local revisada. Não mede compre
 | E0 | Pedido com etapas explícitas, em uma chamada | Não |
 | E1 | Mesmo pedido estruturado | Sim |
 
+O bloco de [definições comuns](07_DEFINICOES_COMUNS.md) deve ser incluído integralmente e igualmente em D0, D1, E0 e E1, fora das notas e sem exemplos resolvidos.
+
 Todas recebem os mesmos requisitos, política inicial, dependências, catálogo de testes com resultados da baseline, definição de impacto, política de seleção e uma mudança. Não recebem os resultados esperados após a mudança, conjuntos corretos, este guia completo, histórico de desenvolvimento ou exemplos resolvidos do caso. Notas idênticas nas condições D1 e E1 e iguais entre mudanças nesta versão.
 
 Fixar: provedor, ID e versão disponível do modelo, modalidade de API, parâmetros realmente suportados, limite de saída, mensagem de sistema, textos integrais, ordem e versão dos documentos, esquema JSON, ferramentas desativadas e regras de falha. Registrar parâmetros indisponíveis como “não suportado”, sem simular controle. Temperatura baixa ou zero não garante determinismo.
@@ -36,9 +38,9 @@ Fixar: provedor, ID e versão disponível do modelo, modalidade de API, parâmet
 ## 1.4 Como construir e revisar o gabarito
 
 1. Fechar a redação da baseline e o contrato `decisão + motivo`.
-2. Aplicar, em papel, cada mudança isoladamente; obter saídas esperadas dos onze casos.
+2. Aplicar, em papel, cada mudança isoladamente; obter saídas esperadas dos doze casos.
 3. Identificar a regra alterada e os valores dependentes que mudam. Justificar cada RF incluído e cada exclusão contestável.
-4. Aplicar a mesma política de seleção aos onze casos; marcar por que cada teste entra ou fica fora.
+4. Aplicar a mesma política de seleção aos doze casos; marcar por que cada teste entra ou fica fora.
 5. Implementar e executar futuramente os testes da baseline e das variantes como verificação adicional. A implementação não é a única fonte de verdade: confrontá-la com regras e expectativas revisadas.
 6. Solicitar revisão humana do gabarito e das notas. Proposta: pesquisador prepara e orientador revisa; combinar isso explicitamente. Registrar divergências, resolução, revisor e data.
 7. Gerar versão e hash dos artefatos; guardar a referência fora do contexto do LLM avaliado.
@@ -57,7 +59,7 @@ Considere G = IDs esperados e S = IDs indicados. Após retirar duplicatas, TP = 
 | Seleção completa | 1 se FN = 0, senão 0 | A resposta incluiu todo o conjunto esperado? |
 | Correspondência exata | 1 se S = G, senão 0 | A resposta coincidiu integralmente com a referência? |
 | Consistência de Jaccard | tamanho(Sᵢ ∩ Sⱼ) / tamanho(Sᵢ ∪ Sⱼ) | Quanto duas repetições da mesma condição se parecem? |
-| Fração de testes selecionados | IDs válidos de testes selecionados / 11 | Quanto da suíte foi indicado? |
+| Fração de testes selecionados | IDs válidos de testes selecionados / 12 | Quanto da suíte foi indicado? |
 | Redução nominal | 1 − fração selecionada | Quanto ficou de fora, sem inferir economia real? |
 
 G é não vazio em todos os casos candidatos. Se S for vazio, definir precisão, revocação e F1 como zero. Jaccard entre duas seleções vazias é 1 por convenção, mas isso não indica qualidade; mostrar a revocação zero junto. G vazio em uma futura revisão exige nova convenção antes da coleta.
@@ -66,16 +68,16 @@ G é não vazio em todos os casos candidatos. Se S for vazio, definir precisão,
 
 ### Exemplo calculado, não resultado de experimento
 
-Para MC-02, a referência candidata tem T06, T07 e T11, em uma suíte de onze testes.
+Para MC-02, a referência candidata tem T06, T07, T11 e T12, em uma suíte de doze testes.
 
 | Seleção hipotética | Precisão | Revocação | F1 | Redução nominal | Interpretação |
 |---|---:|---:|---:|---:|---|
 | Nenhum | 0% | 0% | 0% | 100% | Omite tudo; não é melhora |
-| Todos os onze | 27,3% | 100% | 42,9% | 0% | Completa, com oito excedentes |
-| T06, T07, T11 | 100% | 100% | 100% | 72,7% | Coincide com a referência |
-| T06, T07 | 100% | 66,7% | 80% | 81,8% | Omite a preservação da regra de estado |
+| Todos os doze | 33,3% | 100% | 50% | 0% | Completa, com oito excedentes |
+| T06, T07, T11, T12 | 100% | 100% | 100% | 66,7% | Coincide com a referência |
+| T06, T07, T12 | 100% | 75% | 85,7% | 75% | Omite a preservação da regra de estado |
 
-Precisão usa como denominador o que o modelo selecionou; revocação, o que deveria selecionar; redução, os onze testes disponíveis. Esse é o balanceamento solicitado pelo professor. A fundamentação de precisão/recall/F1 consta em [F3]; a política concreta e a prioridade de interpretação são decisões deste estudo, não prescrições dessa fonte.
+Precisão usa como denominador o que o modelo selecionou; revocação, o que deveria selecionar; redução, os doze testes disponíveis. Esse é o balanceamento solicitado pelo professor. A fundamentação de precisão/recall/F1 consta em [F3]; a política concreta e a prioridade de interpretação são decisões deste estudo, não prescrições dessa fonte.
 
 ## 1.6 Saídas inválidas e falhas
 

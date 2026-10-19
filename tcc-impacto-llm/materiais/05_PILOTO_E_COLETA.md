@@ -2,7 +2,9 @@
 
 ## 5.1 Antes do piloto
 
-O piloto só começa quando a baseline existe, a referência está revisada, os prompts/notas estão versionados e a coleta registra payload e resposta originais. Hoje esses itens ainda são planejados; a documentação criada não prova sua implementação.
+Atualização de catálogo (D-15): 12 testes, 48 pares teste × mudança, 60 expectativas incluindo a versão inicial. T12 foi executado apenas na versão inicial; as quatro variantes continuam sem implementação ou execução. Referência 0.2 candidata, sem revisão científica concluída.
+
+O piloto só começa quando a baseline existe, a referência está revisada, os prompts/notas estão versionados e a coleta registra payload e resposta originais. A versão inicial existe e foi verificada com T12; referência, notas e demais condições científicas/operacionais continuam pendentes. Documentação preparada não prova implementação da coleta nem libera piloto.
 
 Checklist de entrada:
 - [ ] Definições de impacto e seleção aprovadas; MC-04-v2 aceita ou referência reescrita.

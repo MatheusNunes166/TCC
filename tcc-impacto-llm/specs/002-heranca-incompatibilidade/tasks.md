@@ -1,3 +1,5 @@
+> Complemento vigente — 19/10/2026, D-15/D-16: T12 adotado pelo pesquisador e acrescentado à suíte da versão inicial; teste isolado OK e 18 métodos integrados OK. Catálogo atual T01–T12, 48 pares e 60 expectativas com a versão inicial, referência ainda candidata. Evidências em `documentacao/evidencias-t12.md` desde a raiz. O conteúdo datado abaixo preserva o escopo e as evidências originais da Spec 002 (T01–T11); menções a T12 como proposta ou fora da aceitação descrevem aquele incremento, superadas por D-15 apenas nesse alcance. Sem variantes, piloto ou LLM experimental; sem aprovação científica atribuída ao orientador.
+
 > Fechamento — 18/10/2026: T001–T022 concluídas. [Evidências por tarefa, comandos e relatório bruto](quickstart.md). T12 não adotado nem executado.
 
 # Tasks: Herança de um nível e incompatibilidade efetiva

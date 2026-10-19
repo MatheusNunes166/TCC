@@ -1,6 +1,6 @@
 # 2. Baseline e referência candidata
 
-**Situação:** proposta para revisão; não é gabarito aprovado. Todas as saídas abaixo são expectativas derivadas das regras, ainda não evidências de execução.
+**Situação:** proposta para revisão; não é gabarito aprovado. Expectativas derivadas dos requisitos. A versão inicial T01–T12 foi conferida em execução local; as 48 expectativas das variantes não foram executadas. Isso não valida cientificamente a referência. Atualização 0.2 autorizada pelo pesquisador em D-15, em 19/10/2026; histórico 0.1 preservado em `../documentacao/historico/pre-t12-2026-10-19/`.
 
 ## 2.1 Contrato da bancada
 
@@ -17,7 +17,7 @@ Saída observável: decisão `permitir`/`negar` e motivo estável: `estado`, `co
 
 Depois de RF-01, obter permissões diretas e expandir herança; verificar conflito; somente então decidir pela presença da permissão. Não negar em RF-02 antes de consultar RF-03. Não há hierarquia de vários níveis, ciclos ou conflitos adicionais.
 
-## 2.2 Onze testes existentes quando começar a comparação
+## 2.2 Doze testes existentes quando começar a comparação
 
 P = permitir; N = negar. Os nomes curtos de motivo abaixo correspondem ao contrato acima.
 
@@ -34,6 +34,7 @@ P = permitir; N = negar. Os nomes curtos de motivo abaixo correspondem ao contra
 | T09 | Em revisão | Consulta | visualizar | N/estado |
 | T10 | Em revisão | Supervisão | visualizar | N/estado |
 | T11 | Em revisão | Consulta + Auditoria | visualizar | N/estado |
+| T12 | Ativa | Supervisão + Auditoria | exportar | N/conflito |
 
 ## 2.3 Política de seleção — a mesma para todas as condições
 
@@ -55,10 +56,10 @@ A política é conservadora e específica da bancada. Ela incorpora testes de pr
 
 | Mudança | Alteração única | Tipo | RFs candidatos | Testes pela política |
 |---|---|---|---|---|
-| MC-01 | Retirar Auditoria → exportar. | Direto | RF-02 | T04 |
-| MC-02 | Retirar a incompatibilidade Consulta + Auditoria. | Direto | RF-04 | T06, T07, T11 |
+| MC-01 | Retirar Auditoria → exportar. | Direto | RF-02 | T04, T12 |
+| MC-02 | Retirar a incompatibilidade Consulta + Auditoria. | Direto | RF-04 | T06, T07, T11, T12 |
 | MC-03 | Retirar Consulta → visualizar. | Propagado | RF-02, RF-03 | T01, T02, T05, T06, T07, T09, T10, T11 |
-| MC-04-v2 | Retirar Supervisão → Consulta da herança. | Propagado | RF-03, RF-04 | T05, T07, T08, T10 |
+| MC-04-v2 | Retirar Supervisão → Consulta da herança. | Propagado | RF-03, RF-04 | T05, T07, T08, T10, T12 |
 
 ### Por que esses requisitos entram
 
@@ -73,15 +74,15 @@ RF-01 não entra nos conjuntos de impacto porque nenhuma mudança altera a regra
 
 | Mudança | Resultado/motivo muda | Resultado preservado, mas relevante | Excluídos pela política |
 |---|---|---|---|
-| MC-01 | T04 | Nenhum caso disponível | T01, T02, T03, T05, T06, T07, T08, T09, T10, T11 |
-| MC-02 | T06, T07 | T11 | T01, T02, T03, T04, T05, T08, T09, T10 |
-| MC-03 | T02, T05 | T01, T06, T07, T09, T10, T11 | T03, T04, T08 |
-| MC-04-v2 | T05, T07 | T08, T10 | T01, T02, T03, T04, T06, T09, T11 |
+| MC-01 | T04 | T12 | T01, T02, T03, T05, T06, T07, T08, T09, T10, T11 |
+| MC-02 | T06, T07, T12 | T11 | T01, T02, T03, T04, T05, T08, T09, T10 |
+| MC-03 | T02, T05 | T01, T06, T07, T09, T10, T11 | T03, T04, T08, T12 |
+| MC-04-v2 | T05, T07, T12 | T08, T10 | T01, T02, T03, T04, T06, T09, T11 |
 
-- MC-01: somente T04 combina Auditoria efetivo e exportar. Não existe outro teste dessa combinação na suíte; não inventar controles não existentes.
-- MC-02: T06/T07 verificam a retirada do conflito; T11 verifica que conta em revisão continua bloqueada apesar dessa retirada.
-- MC-03: T02/T05 perdem acesso. T01/T09/T10/T11 continuam negados por estado; T06/T07, por conflito. Todos combinam Consulta efetivo e visualizar. T03/T08 usam exportar; T04 não tem Consulta efetivo.
-- MC-04-v2: T05 perde o acesso herdado; T07 continua negado, agora por ausência de permissão, não por conflito. T08 mantém a ausência de permissão de exportar; T10 continua negado por estado. Os quatro têm Supervisão.
+- MC-01: T04 e T12 combinam Auditoria efetivo e exportar. T04 perde a concessão e nega por sem_permissao; T12 mantém negar/conflito pela precedência de RF-04.
+- MC-02: T06/T07/T12 verificam a retirada do conflito, T12 liberando exportar direto por Auditoria; T11 verifica que conta em revisão continua bloqueada apesar dessa retirada.
+- MC-03: T02/T05 perdem acesso. T01/T09/T10/T11 continuam negados por estado; T06/T07, por conflito. Todos combinam Consulta efetivo e visualizar. T03/T08/T12 usam exportar; T04 não tem Consulta efetivo. T12 mantém negar/conflito e fica excluído pela operação.
+- MC-04-v2: T05 perde o acesso herdado; T07 continua negado, agora por ausência de permissão, não por conflito. T08 mantém a ausência de permissão de exportar; T10 continua negado por estado. T12 passa de negar/conflito a permitir/permissao_direta, pois RF-02 mantém exportar de Auditoria e o conflito herdado desaparece. Os cinco têm Supervisão.
 
 ### Matriz de resultados esperados das quatro variantes
 
@@ -100,13 +101,16 @@ Cada célula compara a MESMA entrada com uma única mudança aplicada à baselin
 | T09 | N/estado | N/estado | N/estado | N/estado | N/estado |
 | T10 | N/estado | N/estado | N/estado | N/estado | N/estado |
 | T11 | N/estado | N/estado | N/estado | N/estado | N/estado |
+| T12 | N/conflito | N/conflito | P/direta | N/conflito | P/direta |
 
 T07 evidencia por que verificar só “permitir/negar” é insuficiente para MC-04-v2: a decisão continua negar, mas o motivo muda. Trata-se de uma expectativa contratual, não de uma falha introduzida.
 
 ## 2.5 Revisão e limitações da referência
 
-Revisor e data: **a combinar**. Conferir: precedência; valores intermediários que justificam cada RF; os onze casos nas quatro variantes; inclusões/exclusões pela política; notas sem respostas; ausência de dependência de um resultado do LLM. Registrar cada divergência e resolvê-la antes do piloto.
+Revisor e data: **a combinar**. Conferir: precedência; valores intermediários que justificam cada RF; os doze casos nas quatro variantes; inclusões/exclusões pela política; notas sem respostas; ausência de dependência de um resultado do LLM. Registrar cada divergência e resolvê-la antes do piloto.
 
-A suíte pequena não pretende cobrir todo RBAC. O número de testes relevantes difere (1, 3, 8 e 4), e a seleção de MC-03 pode ser mais óbvia ou extensa. Essas diferenças limitam comparações entre tipos de mudança; não invalidam a comparação entre condições aplicada à mesma mudança. Se houver efeito de teto, relatar e discutir com o orientador antes de ampliar a bancada.
+A suíte pequena não pretende cobrir todo RBAC. O número de testes relevantes difere (2, 4, 8 e 5), e a seleção de MC-03 pode ser mais óbvia ou extensa. Essas diferenças limitam comparações entre tipos de mudança; não invalidam a comparação entre condições aplicada à mesma mudança. Se houver efeito de teto, relatar e discutir com o orientador antes de ampliar a bancada.
 
 Se a definição de impacto exigir modificação textual em vez de alteração funcional, a referência de RF-03/04 precisa ser revista; não alterar o conceito durante a coleta.
+
+Total: 12 testes na versão inicial + 48 pares teste × mudança = 60 expectativas. MC-04 nesta etapa é a retirada de herança identificada como MC-04-v2. O bloco comum exportável de impacto/relevância está em [07_DEFINICOES_COMUNS.md](07_DEFINICOES_COMUNS.md); não exportar este material com o gabarito.
