@@ -6,6 +6,8 @@
 
 **Status**: Draft — revisada documentalmente; implementação e execução não iniciadas.
 
+Atualização de etapa — 19/10/2026, D-17: planejamento autorizado posteriormente, concluído em [plan.md](plan.md) e artefatos vinculados. Spec 003 selecionada/confirmada como ativa. Nenhuma tarefa, implementação ou execução de variante iniciada; expectativas e requisitos abaixo preservados. Menções a “somente Spec/checklist” em Assumptions descrevem a autorização da etapa de especificação.
+
 **Input**: solicitação explícita do pesquisador nesta conversa para preparar somente Spec e checklist pelo fluxo do Spec Kit, especificando quatro mudanças independentes, preservação da versão inicial e comparação futura dos 12 casos por variante, sem ajustar automaticamente o gabarito ao código.
 
 **Versão inicial B**: commit `aec474bcb54d6dae2afceff8e5b9226991386490` (`adicionando cenario de testes T12`). Identificado em leitura do repositório, inicialmente com árvore limpa; contém T12 e a referência candidata 0.2. Nenhum commit ou branch foi criado nesta etapa.

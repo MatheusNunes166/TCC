@@ -44,6 +44,8 @@
 
 ## Notes
 
+Atualização — 19/10/2026, D-17: planejamento preparado após a revisão documental original, com [plan.md](../plan.md), research, data-model, contracts/verificacao e quickstart. Spec 003 agora selecionada e confirmada; a decisão histórica abaixo de manter a seleção em 002 foi superada pelo pedido de planejamento. Nenhuma marcação desta checklist significa execução; sem tarefas ou variantes implementadas, expectativas/conjuntos preservados.
+
 Revisão documental em 19/10/2026, uma passagem, sem contradição funcional bloqueante. “48/48 conforme” é meta futura. Marcações atestam qualidade da Spec; revisão científica continua pendente.
 
 Fluxo: [skill local speckit-specify](../../../.agents/skills/speckit-specify/SKILL.md). Configuração `feature_numbering: sequential`, diretórios existentes 001/002, próximo 003. Pilha local conferida, sem presets/overrides; usado `.specify/templates/spec-template.md` e ciclo de checklist de qualidade de specify. `.specify/extensions.yml` ausente antes da escrita e novamente no fechamento; sem hooks a despachar. Nenhuma branch ou commit criado.

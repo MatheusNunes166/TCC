@@ -1,4 +1,4 @@
-> Estado vigente — 19/10/2026 (D-15/D-16): T12 adotado pelo pesquisador e verificado na versão inicial como negar/conflito. Python 3.13.3: teste isolado OK; suíte integrada com 18 métodos OK, T01–T12 12/12 e controles anteriores preservados. Catálogo: 12 testes; referência candidata: 48 pares teste × mudança, 60 expectativas incluindo a versão inicial; seleções 2/4/8/5. Variantes não implementadas nem executadas; sem piloto ou LLM experimental. A adoção é autorização do pesquisador, sem aprovação científica atribuída ao orientador. Revisão científica e adoção formal da constituição continuam pendentes. Evidências: `documentacao/evidencias-t12.md` (caminho desde a raiz).
+> Estado vigente — 19/10/2026 (D-17): Spec 003 ativa, confirmada pelo resolvedor antes do setup-plan; cinco artefatos de planejamento preparados, sem tarefas/implementação. B = aec474bcb54d6dae2afceff8e5b9226991386490; código, 18 métodos/T01–T12 e referência candidata 0.2 disponíveis e conferidos por leitura, sem execução nesta etapa. Expectativas e conjuntos 2/4/8/5 intactos. Revisão científica e adoção constitucional pendentes; sem variantes executadas, piloto ou LLM experimental. Próxima ação: revisar planejamento e solicitar tarefas quando desejado. Evidências T12 anteriores continuam em documentacao/evidencias-t12.md.
 
 ## Estado anterior preservado — 18/10/2026
 
@@ -30,4 +30,4 @@ Desenvolva uma capacidade por vez, conforme roadmap e constituição. Antes de f
 
 O contexto do assistente de desenvolvimento não é o pacote do LLM avaliado. Não envie estes arquivos ou materiais inteiros ao experimento: contêm expectativas e referência candidata. Siga a separação de coleta/avaliação de `documentacao/arquitetura.md`. Documentação pronta não libera piloto.
 
-Etapa autorizada em D-15: adoção e teste de T12 na versão inicial, harmonização documental e preservação do histórico. Fechamento em D-16. Não implementar variantes, iniciar piloto ou chamadas ao LLM experimental sem nova autorização e cumprimento dos critérios aplicáveis.
+Etapa autorizada em D-17: selecionar/confirmar Spec 003 e produzir planejamento técnico e reconciliação documental. T12 foi adotado e verificado anteriormente em D-15/D-16. Não gerar tarefas, implementar variantes, iniciar piloto ou chamadas ao LLM experimental sem nova autorização no respectivo escopo.

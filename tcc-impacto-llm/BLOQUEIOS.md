@@ -1,5 +1,7 @@
 # Pendências vigentes — 19/10/2026
 
+Atualização D-17: Spec 003 ativa, cinco artefatos de planejamento preparados em `specs/003-mudancas-controladas/`. B aec474bcb54d6dae2afceff8e5b9226991386490 confirmado por leitura, código/testes/referência necessários presentes e nenhuma alteração relevante não commitada inicialmente. Sem dúvida técnica bloqueante para este planejamento. Próxima ação de engenharia: revisar desenho e solicitar tarefas; não existem tarefas/variantes implementadas nem nova execução de testes. A solicitação atual supera a próxima ação antiga abaixo somente no alcance documental de planejamento. Pendências científicas da tabela continuam abertas, sem nova adoção de T12 a solicitar.
+
 Decisões centrais: D-15/D-16 em [decisões](documentacao/decisoes.md). T12 adotado pelo pesquisador e executado na versão inicial; teste isolado e suíte integrada (18 métodos) aprovados. Sem divergência ou bloqueio funcional de engenharia; evidências em [evidencias-t12.md](documentacao/evidencias-t12.md). Catálogo e referência candidata harmonizados: 12 testes, 48 pares, 60 expectativas incluindo a versão inicial; seleções 2/4/8/5.
 
 | Pendência atual | Situação e responsável |
