@@ -1,4 +1,6 @@
-# Pendências vigentes — 19/10/2026
+# Pendências vigentes — 20/10/2026
+
+Atualização D-18: tarefas da Spec 003 geradas, 35 pendentes; fluxo setup-tasks confirmou a seleção ativa. Spec/plano/contrato/referência lidos, análise de consistência posterior somente documental e apresentada na resposta. Geração não executa tarefas ou testes. Próxima ação de engenharia: revisar lista/achados e autorizar implementação quando desejado, sem dispensar revisões científicas da tabela. Nenhuma variante, teste, piloto ou chamada experimental nesta etapa; expectativas/conjuntos intactos. Atualizações de 19/10 abaixo preservam o histórico do planejamento e não mantêm pendência de gerar tarefas.
 
 Atualização D-17: Spec 003 ativa, cinco artefatos de planejamento preparados em `specs/003-mudancas-controladas/`. B aec474bcb54d6dae2afceff8e5b9226991386490 confirmado por leitura, código/testes/referência necessários presentes e nenhuma alteração relevante não commitada inicialmente. Sem dúvida técnica bloqueante para este planejamento. Próxima ação de engenharia: revisar desenho e solicitar tarefas; não existem tarefas/variantes implementadas nem nova execução de testes. A solicitação atual supera a próxima ação antiga abaixo somente no alcance documental de planejamento. Pendências científicas da tabela continuam abertas, sem nova adoção de T12 a solicitar.
 

@@ -2,6 +2,8 @@
 
 **Feature**: `003-mudancas-controladas` | **Date**: 2026-10-19 | **Spec**: [spec.md](spec.md)
 
+Atualização — 20/10/2026, D-18: [tasks.md](tasks.md) preparado em etapa posterior, com 35 tarefas pendentes e análise documental solicitada. Desenho abaixo permanece o mesmo; referências a ausência de tarefas descrevem o fechamento do planejamento em 19/10. Nenhuma variante/teste implementado ou executado nesta geração.
+
 **Input**: Spec/checklist 003 e referência candidata 0.2. Autorização do pesquisador para planejamento, seleção ativa e reconciliação documental, registrada em D-17 de [decisões](../../documentacao/decisoes.md). Sem tarefas, variantes ou testes novos implementados.
 
 ## Summary

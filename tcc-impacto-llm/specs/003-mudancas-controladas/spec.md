@@ -6,6 +6,8 @@
 
 **Status**: Draft — revisada documentalmente; implementação e execução não iniciadas.
 
+Atualização de etapa — 20/10/2026, D-18: [tasks.md](tasks.md) gerado com 35 tarefas, todas pendentes, seguido de análise somente documental. Nenhuma tarefa foi executada; sem variantes ou testes nesta etapa. As restrições temporais anteriores abaixo descrevem suas etapas, superadas apenas para geração/análise documental; requisitos, expectativas e conjuntos preservados.
+
 Atualização de etapa — 19/10/2026, D-17: planejamento autorizado posteriormente, concluído em [plan.md](plan.md) e artefatos vinculados. Spec 003 selecionada/confirmada como ativa. Nenhuma tarefa, implementação ou execução de variante iniciada; expectativas e requisitos abaixo preservados. Menções a “somente Spec/checklist” em Assumptions descrevem a autorização da etapa de especificação.
 
 **Input**: solicitação explícita do pesquisador nesta conversa para preparar somente Spec e checklist pelo fluxo do Spec Kit, especificando quatro mudanças independentes, preservação da versão inicial e comparação futura dos 12 casos por variante, sem ajustar automaticamente o gabarito ao código.

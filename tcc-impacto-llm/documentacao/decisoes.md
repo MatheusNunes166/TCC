@@ -1,5 +1,15 @@
 # Decisões, propostas e pendências
 
+## Tarefas e análise documental da Spec 003 — 20/10/2026
+
+**D-18 — Autorização do pesquisador.** Responsável: usuário/pesquisador; evidência: pedido explícito nesta conversa para gerar tarefas da Spec 003 pelo fluxo local e analisar a consistência Spec/plano/tarefas, preservando expectativas, conjuntos e pendências científicas. Autoriza somente trabalho documental e reconciliação de contexto; não autoriza implementar variantes, executar testes, iniciar piloto ou chamadas ao LLM experimental. Não representa aprovação científica do orientador ou ratificação constitucional.
+
+Execução documental pelo assistente em 20/10/2026: Spec ativa 003 em `.specify/feature.json`, confirmada por `setup-tasks.sh --json`; template local e research/data-model/contracts/quickstart disponíveis. Árvore inicialmente limpa, HEAD `53bbac223e17dd15516a6d0172275ed995b7dd46`. Leitura dos blobs de B `aec474bcb54d6dae2afceff8e5b9226991386490` confirmou 18 métodos/T12 e referência candidata 0.2 com 12 casos/48 expectativas/conjuntos 2/4/8/5; nenhum módulo da bancada importado ou teste executado.
+
+Gerado [tasks.md](../specs/003-mudancas-controladas/tasks.md): **35 tarefas, todas pendentes**; Setup 2, Fundação 6, US1 9, US2 8, US3 6, Fechamento 4. Quatro tarefas paralelizáveis, somente fontes distintas das variantes após pré-condições. Formato/IDs/caminhos/links conferidos documentalmente; baseline, testes, materiais e referência intactos. Geração pela [skill tasks](../.agents/skills/speckit-tasks/SKILL.md); análise posterior pela [skill analyze](../.agents/skills/speckit-analyze/SKILL.md) em modo somente leitura, com relatório na resposta desta solicitação e sem corrigir silenciosamente achados. Sem arquivo de implementação criado.
+
+Estado de engenharia: especificação, planejamento e tarefas documentados, ainda sem variantes ou teste novo executável. A análise não é teste da aplicação, validação científica ou autorização de implementação. P-01/P-02/P-03 e adoção constitucional continuam pendentes; T12 já adotado em B, expectativas das mudanças ainda candidatas sob P-02. Próxima ação: revisar tarefas e eventuais achados da análise; implementação exige pedido próprio. Registros anteriores mantêm o histórico das etapas, superados apenas no alcance autorizado por D-18.
+
 ## Planejamento da Spec 003 — 19/10/2026
 
 **D-17 — Autorização do pesquisador e fechamento documental.** Responsável pela autorização: usuário/pesquisador; evidência: pedido explícito nesta conversa para planejar a Spec 003 pelo fluxo local, selecionar/confirmar a feature ativa, manter Python + unittest e preservar expectativas/conjuntos. Autoriza cinco artefatos de planejamento e reconciliação documental; não autoriza tarefas, variantes implementadas, teste de aplicação, piloto ou LLM experimental. Execução técnica documental: assistente, 19/10/2026. Não representa aprovação científica do orientador ou ratificação constitucional.

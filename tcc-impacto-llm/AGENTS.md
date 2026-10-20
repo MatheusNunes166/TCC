@@ -1,4 +1,4 @@
-> Estado vigente — 19/10/2026 (D-17): Spec 003 ativa, confirmada pelo resolvedor antes do setup-plan; cinco artefatos de planejamento preparados, sem tarefas/implementação. B = aec474bcb54d6dae2afceff8e5b9226991386490; código, 18 métodos/T01–T12 e referência candidata 0.2 disponíveis e conferidos por leitura, sem execução nesta etapa. Expectativas e conjuntos 2/4/8/5 intactos. Revisão científica e adoção constitucional pendentes; sem variantes executadas, piloto ou LLM experimental. Próxima ação: revisar planejamento e solicitar tarefas quando desejado. Evidências T12 anteriores continuam em documentacao/evidencias-t12.md.
+> Estado vigente — 20/10/2026 (D-18): Spec 003 ativa, confirmada por setup-tasks; especificação/planejamento/tarefas preparados. tasks.md contém 35 tarefas, todas pendentes; análise de consistência somente documental na resposta da solicitação. B = aec474bcb54d6dae2afceff8e5b9226991386490; baseline/testes/T12/referência candidata 0.2 e seleções 2/4/8/5 preservados. Nenhuma variante implementada ou teste executado agora; sem piloto/LLM experimental. Revisões científicas e adoção constitucional pendentes. Próxima ação: revisão de tarefas/achados e pedido próprio de implementação.
 
 ## Estado anterior preservado — 18/10/2026
 
@@ -30,4 +30,4 @@ Desenvolva uma capacidade por vez, conforme roadmap e constituição. Antes de f
 
 O contexto do assistente de desenvolvimento não é o pacote do LLM avaliado. Não envie estes arquivos ou materiais inteiros ao experimento: contêm expectativas e referência candidata. Siga a separação de coleta/avaliação de `documentacao/arquitetura.md`. Documentação pronta não libera piloto.
 
-Etapa autorizada em D-17: selecionar/confirmar Spec 003 e produzir planejamento técnico e reconciliação documental. T12 foi adotado e verificado anteriormente em D-15/D-16. Não gerar tarefas, implementar variantes, iniciar piloto ou chamadas ao LLM experimental sem nova autorização no respectivo escopo.
+Etapa autorizada em D-18: gerar tarefas 003 e analisar consistência documental. Planejamento anterior D-17 e adoção/verificação T12 em D-15/D-16 preservados como histórico. Não implementar variantes, executar testes, iniciar piloto ou chamadas ao LLM experimental sem autorização no respectivo escopo.

@@ -44,6 +44,8 @@
 
 ## Notes
 
+Atualização — 20/10/2026, D-18: [tasks.md](../tasks.md) gerado com 35 tarefas pendentes; análise Spec/plano/tarefas somente documental, relatada na resposta. Checklist continua atestando apenas qualidade da especificação. Nenhum teste executado, variante implementada ou referência validada cientificamente.
+
 Atualização — 19/10/2026, D-17: planejamento preparado após a revisão documental original, com [plan.md](../plan.md), research, data-model, contracts/verificacao e quickstart. Spec 003 agora selecionada e confirmada; a decisão histórica abaixo de manter a seleção em 002 foi superada pelo pedido de planejamento. Nenhuma marcação desta checklist significa execução; sem tarefas ou variantes implementadas, expectativas/conjuntos preservados.
 
 Revisão documental em 19/10/2026, uma passagem, sem contradição funcional bloqueante. “48/48 conforme” é meta futura. Marcações atestam qualidade da Spec; revisão científica continua pendente.
