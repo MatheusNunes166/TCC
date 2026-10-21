@@ -1,0 +1,6 @@
+runTest (verificacao_variantes.run_matrix.<locals>.Matrix.runTest) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.165s
+
+OK

@@ -1,0 +1,137 @@
+test_git_bytes_e_commit_ausente (test_variantes.TestFundacao.test_git_bytes_e_commit_ausente) ... ok
+test_pasta_repetida_e_interceptacao (test_variantes.TestFundacao.test_pasta_repetida_e_interceptacao) ... ok
+test_referencia_invalida (test_variantes.TestFundacao.test_referencia_invalida) ... ok
+test_registros_ausentes_e_persistencia (test_variantes.TestFundacao.test_registros_ausentes_e_persistencia) ... ok
+test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) ... 
+  test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='ok') ... ERROR
+  test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='divergente') ... ERROR
+  test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='erro_par') ... ERROR
+  test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='retorno_invalido') ... ERROR
+  test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='fonte_invalida') ... ERROR
+  test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='baseline_divergente') ... ERROR
+  test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='suite_invalida') ... ERROR
+  test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='referencia_invalida') ... ERROR
+  test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='interrupcao') ... ERROR
+test_duplicata_integridade_e_cli_restrita (test_variantes.TestInterface.test_duplicata_integridade_e_cli_restrita) ... ERROR
+test_falha_de_escrita_nao_pode_retornar_sucesso (test_variantes.TestInterface.test_falha_de_escrita_nao_pode_retornar_sucesso) ... ERROR
+test_retentar_preserva_primeira_e_diagnostico (test_variantes.TestInterface.test_retentar_preserva_primeira_e_diagnostico) ... ERROR
+test_48_entradas_esperados_e_sem_filtro (test_variantes.TestMatriz.test_48_entradas_esperados_e_sem_filtro) ... ok
+test_baseline_invalida_bloqueia_todas (test_variantes.TestMatriz.test_baseline_invalida_bloqueia_todas) ... ok
+test_efeitos_e_chaves_unicas (test_variantes.TestMatriz.test_efeitos_e_chaves_unicas) ... ok
+test_fonte_invalida_e_erro_individual (test_variantes.TestMatriz.test_fonte_invalida_e_erro_individual) ... ok
+test_motivo_diferente_e_retorno_malformado (test_variantes.TestMatriz.test_motivo_diferente_e_retorno_malformado) ... ok
+test_loader_confere_caminho_hash_e_cache (test_variantes.TestProcedencia.test_loader_confere_caminho_hash_e_cache) ... ok
+test_quatro_edicoes_e_rejeicao_de_extra (test_variantes.TestProcedencia.test_quatro_edicoes_e_rejeicao_de_extra) ... ok
+
+======================================================================
+ERROR: test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='ok')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 262, in test_codigos_0_1_2_e_prioridade
+    self.assertEqual(v.result_code(manifest, rows), code)
+                     ^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'result_code'
+
+======================================================================
+ERROR: test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='divergente')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 262, in test_codigos_0_1_2_e_prioridade
+    self.assertEqual(v.result_code(manifest, rows), code)
+                     ^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'result_code'
+
+======================================================================
+ERROR: test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='erro_par')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 262, in test_codigos_0_1_2_e_prioridade
+    self.assertEqual(v.result_code(manifest, rows), code)
+                     ^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'result_code'
+
+======================================================================
+ERROR: test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='retorno_invalido')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 262, in test_codigos_0_1_2_e_prioridade
+    self.assertEqual(v.result_code(manifest, rows), code)
+                     ^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'result_code'
+
+======================================================================
+ERROR: test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='fonte_invalida')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 262, in test_codigos_0_1_2_e_prioridade
+    self.assertEqual(v.result_code(manifest, rows), code)
+                     ^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'result_code'
+
+======================================================================
+ERROR: test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='baseline_divergente')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 262, in test_codigos_0_1_2_e_prioridade
+    self.assertEqual(v.result_code(manifest, rows), code)
+                     ^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'result_code'
+
+======================================================================
+ERROR: test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='suite_invalida')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 262, in test_codigos_0_1_2_e_prioridade
+    self.assertEqual(v.result_code(manifest, rows), code)
+                     ^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'result_code'
+
+======================================================================
+ERROR: test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='referencia_invalida')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 262, in test_codigos_0_1_2_e_prioridade
+    self.assertEqual(v.result_code(manifest, rows), code)
+                     ^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'result_code'
+
+======================================================================
+ERROR: test_codigos_0_1_2_e_prioridade (test_variantes.TestInterface.test_codigos_0_1_2_e_prioridade) (mode='interrupcao')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 262, in test_codigos_0_1_2_e_prioridade
+    self.assertEqual(v.result_code(manifest, rows), code)
+                     ^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'result_code'
+
+======================================================================
+ERROR: test_duplicata_integridade_e_cli_restrita (test_variantes.TestInterface.test_duplicata_integridade_e_cli_restrita)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 316, in test_duplicata_integridade_e_cli_restrita
+    self.assertEqual(v.result_code(manifest, rows), 2)
+                     ^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'result_code'
+
+======================================================================
+ERROR: test_falha_de_escrita_nao_pode_retornar_sucesso (test_variantes.TestInterface.test_falha_de_escrita_nao_pode_retornar_sucesso)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 304, in test_falha_de_escrita_nao_pode_retornar_sucesso
+    v.finalize_attempt(root / 'evidencias/spec003/tentativa', manifest, rows)
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'finalize_attempt'
+
+======================================================================
+ERROR: test_retentar_preserva_primeira_e_diagnostico (test_variantes.TestInterface.test_retentar_preserva_primeira_e_diagnostico)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 284, in test_retentar_preserva_primeira_e_diagnostico
+    v.finalize_attempt(output, manifest, rows)
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'finalize_attempt'
+
+----------------------------------------------------------------------
+Ran 15 tests in 36.788s
+
+FAILED (errors=12)

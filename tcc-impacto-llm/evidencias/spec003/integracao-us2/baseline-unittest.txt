@@ -1,0 +1,23 @@
+test_vazio_e_prioridade_direta (test_autorizacao.TestBordas.test_vazio_e_prioridade_direta) ... ok
+test_T06 (test_autorizacao.TestConflito.test_T06) ... ok
+test_T07 (test_autorizacao.TestConflito.test_T07) ... ok
+test_T12 (test_autorizacao.TestConflito.test_T12) ... ok
+test_incompatibilidade_oito_subconjuntos (test_autorizacao.TestConflito.test_incompatibilidade_oito_subconjuntos) ... ok
+test_T02 (test_autorizacao.TestDiretas.test_T02) ... ok
+test_T03 (test_autorizacao.TestDiretas.test_T03) ... ok
+test_T04 (test_autorizacao.TestDiretas.test_T04) ... ok
+test_auditoria_visualizar (test_autorizacao.TestDiretas.test_auditoria_visualizar) ... ok
+test_concessoes_proprias (test_autorizacao.TestDiretas.test_concessoes_proprias) ... ok
+test_T01 (test_autorizacao.TestEstado.test_T01) ... ok
+test_T09 (test_autorizacao.TestEstado.test_T09) ... ok
+test_T10 (test_autorizacao.TestEstado.test_T10) ... ok
+test_T11 (test_autorizacao.TestEstado.test_T11) ... ok
+test_estados_32_combinacoes (test_autorizacao.TestEstado.test_estados_32_combinacoes) ... ok
+test_T05 (test_autorizacao.TestHeranca.test_T05) ... ok
+test_T08 (test_autorizacao.TestHeranca.test_T08) ... ok
+test_efetivos_oito_subconjuntos (test_autorizacao.TestHeranca.test_efetivos_oito_subconjuntos) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.001s
+
+OK

@@ -1,0 +1,25 @@
+test_fonte_alterada_apos_execucao_impede_fechamento (test_variantes.TestInterface.test_fonte_alterada_apos_execucao_impede_fechamento) ... FAIL
+test_log_ausente_impede_fechamento_conforme (test_variantes.TestInterface.test_log_ausente_impede_fechamento_conforme) ... FAIL
+
+======================================================================
+FAIL: test_fonte_alterada_apos_execucao_impede_fechamento (test_variantes.TestInterface.test_fonte_alterada_apos_execucao_impede_fechamento)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 336, in test_fonte_alterada_apos_execucao_impede_fechamento
+    self.assertEqual(v.finalize_attempt(path.parents[2], manifest, rows), 2)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 2
+
+======================================================================
+FAIL: test_log_ausente_impede_fechamento_conforme (test_variantes.TestInterface.test_log_ausente_impede_fechamento_conforme)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 327, in test_log_ausente_impede_fechamento_conforme
+    self.assertEqual(v.finalize_attempt(output, manifest, rows), 2)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 2
+
+----------------------------------------------------------------------
+Ran 2 tests in 30.440s
+
+FAILED (failures=2)

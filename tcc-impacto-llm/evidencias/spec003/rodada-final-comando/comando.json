@@ -1,0 +1,14 @@
+{
+  "tipo": "comando_real",
+  "comando": [
+    "python",
+    "-B",
+    "verificacao_variantes.py",
+    "--saida",
+    "evidencias/spec003/rodada-final"
+  ],
+  "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+  "retorno": 0,
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "instante_utc": "2026-10-21T20:22:06.585593+00:00"
+}

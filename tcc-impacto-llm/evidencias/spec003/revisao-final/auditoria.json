@@ -1,0 +1,107 @@
+{
+  "tipo": "inspecao_sem_nova_execucao_da_bancada",
+  "tarefas_concluidas": 35,
+  "checklist_qualidade_preservada": 23,
+  "pares_baseline": 12,
+  "pares_variantes": 48,
+  "referencia": "0.2 candidata, sem revisor/data",
+  "links_validos": 21,
+  "hashes_conferidos": {
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\autorizacao.py": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\tests\\test_autorizacao.py": "187c4c244b4a26bcd9f256a5f07f352c3f8b81839689182f853fcf1d0bde044d",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\documentacao\\requisitos.md": "880ed618cd7fccb5cf5a5c150c783d3e44dd4d6ffae95a400a62db3446d262c2",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\documentacao\\qualidade-e-testes.md": "5c7aeb9971d56346f645d0e3e463200fec6b48ab892a8b542321355e86866ca3",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\documentacao\\referencia-candidata-proxima-etapa.md": "40bac481b9bcad54f84f51587de4e827b110880518b0b08a31ae6a18bfcbe65d",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\documentacao\\evidencias-t12.md": "a4ae9d0969e1ad0404d1b2502205b8309a70f6b42bace847595ecd09de581a88",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\02_REQUISITOS_TESTES_E_REFERENCIA.md": "ae4844de40638d448523ac8e792316a76b522bb34f6a5d0b5fb48a46a2d6271e",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\07_DEFINICOES_COMUNS.md": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\autorizacao.py": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\tests\\test_autorizacao.py": "db9f3d964cd71a4cd92c8440561afc3164e5ae3f0d766719f426f53974391c6d",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\01_PROTOCOLO.md": "bcc92a8a3b9430db6d033e9d27409579981b2547eaa9af2e17e499aba8a364a2",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\02_REQUISITOS_TESTES_E_REFERENCIA.md": "4134ad6bc64f251b6542ab6885ad682231282f63d5c44bca7b942ac5bfc1c7c8",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\03_DESENVOLVIMENTO_SPEC_KIT.md": "070bd6e779e59d9184e61405c4677bd177e30ed6d6be9565053164293f4855ea",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\04_NOTAS_E_PROMPTS.md": "2c0b651fb0e7b95358e2c466a18d0116c4342a477c3cacace7d68468de0d8021",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\05_PILOTO_E_COLETA.md": "b21d4f77f44a22003f0338b19e4bbd7e894f5517774caad2eeba500aafc009d7",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\06_FONTES_E_DECISOES.md": "a3c40ee97ef12d3f775609e3835237c79cea1848cf38db85891fd5689da0016c",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\07_DEFINICOES_COMUNS.md": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\Desenho_Experimental_Para_Orientador.docx": "a9de81deba6fae38110a158e892a5d20572e8f9fbf150429efb92b244a838a2d",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\LEIA_PRIMEIRO.md": "80f71ee280674325330145f36647007e0f08cb475a9500888a69076005debd3a",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\diagramas\\01_caminho_pesquisa.png": "6993026820af8f69bbd3c62560bc09ac3fc913e1a6d8da96191e92055cc5b79c",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\diagramas\\01_caminho_pesquisa.svg": "f1f77c9b877e4dce8c5f039aa3243504f2c0122f7d7f1c5f88c362f68809b388",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\diagramas\\02_arquitetura.png": "f4d33392d5f2e9b24d798f784519f95b7c88e4d571ef48c71cee6652264b9ba5",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\diagramas\\02_arquitetura.svg": "5f08ef1f3f0b5054b20ef700c3f5aea88b6c562e76cae175550f3fb03abbfb06",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\modelos\\manifesto_congelamento.json": "3ad4c18a722f5e748e428ec9a2d6727f662bc9c4547dd4de2fb910ef2b99749b",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\modelos\\registro_execucao.json": "f84b4fbf53663368c97a6556881475f4608f2592b84a1debe56d5a3bab0b9a7f",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\modelos\\schema_saida.json": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\verificacao_variantes.py": "fd2744988674eacc32ab936247a2d8b69f1e0be49d044b594b82a355e08e2094",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\executor\\verificacao_variantes.py": "fd2744988674eacc32ab936247a2d8b69f1e0be49d044b594b82a355e08e2094",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\tests\\test_variantes.py": "e28f3238f42476d2687280024572932c4e39769ea23ddb150cf0e8093e106318",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\executor\\tests\\test_variantes.py": "e28f3238f42476d2687280024572932c4e39769ea23ddb150cf0e8093e106318",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\variantes\\procedencia.json": "08a55e1d9563611cbcf0f1e726bde5a62dc481ddb6d6cf9b7a8310e8b1f9b8a0",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\executor\\variantes\\procedencia.json": "08a55e1d9563611cbcf0f1e726bde5a62dc481ddb6d6cf9b7a8310e8b1f9b8a0",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\variantes\\mc01.py": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc01.py": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\diffs\\MC-01.diff": "7a37cc6e36ef6b3a51e1143d73d6895a5c58dbe7db0abacb04149505e2ee08b5",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\variantes\\mc02.py": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc02.py": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\diffs\\MC-02.diff": "c0ef308d7178a5b5fa643afa5dba01b52855a7d56234529574b2b37c39e75221",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\variantes\\mc03.py": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc03.py": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\diffs\\MC-03.diff": "2487e8484f3f64cfc23e40f5956e1a543769140f0eedc9fa367d7bc5fa7c9269",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\variantes\\mc04.py": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc04.py": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\diffs\\MC-04-v2.diff": "45e9cfc336ae31c60c11d8210bb36cdef41389ab0b1a4a91d80c4c5e2f4da19d"
+  },
+  "comandos": [
+    {
+      "comando": [
+        "git",
+        "diff",
+        "--exit-code",
+        "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "--",
+        "autorizacao.py",
+        "tests/test_autorizacao.py",
+        "materiais/"
+      ],
+      "retorno": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "comando": [
+        "git",
+        "-c",
+        "core.safecrlf=false",
+        "diff",
+        "--check"
+      ],
+      "retorno": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "comando": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "retorno": 0,
+      "stdout": " M AGENTS.md\n M BLOQUEIOS.md\n M ESTADO_ATUAL.md\n M HANDOFF.md\n M documentacao/arquitetura.md\n M documentacao/contexto-e-escopo.md\n M documentacao/decisoes.md\n M documentacao/qualidade-e-testes.md\n M documentacao/roadmap.md\n M specs/003-mudancas-controladas/checklists/requirements.md\n M specs/003-mudancas-controladas/contracts/verificacao.md\n M specs/003-mudancas-controladas/data-model.md\n M specs/003-mudancas-controladas/plan.md\n M specs/003-mudancas-controladas/quickstart.md\n M specs/003-mudancas-controladas/spec.md\n M specs/003-mudancas-controladas/tasks.md\n?? evidencias/\n?? specs/003-mudancas-controladas/evidencias.md\n?? tests/test_variantes.py\n?? variantes/\n?? verificacao_variantes.py\n",
+      "stderr": ""
+    },
+    {
+      "comando": [
+        "git",
+        "diff",
+        "--stat"
+      ],
+      "retorno": 0,
+      "stdout": " tcc-impacto-llm/AGENTS.md                          |  4 ++\n tcc-impacto-llm/BLOQUEIOS.md                       |  4 ++\n tcc-impacto-llm/ESTADO_ATUAL.md                    |  4 ++\n tcc-impacto-llm/HANDOFF.md                         |  4 ++\n tcc-impacto-llm/documentacao/arquitetura.md        |  2 +\n tcc-impacto-llm/documentacao/contexto-e-escopo.md  |  2 +\n tcc-impacto-llm/documentacao/decisoes.md           | 22 +++++++\n tcc-impacto-llm/documentacao/qualidade-e-testes.md |  2 +\n tcc-impacto-llm/documentacao/roadmap.md            |  2 +\n .../checklists/requirements.md                     |  2 +\n .../contracts/verificacao.md                       |  2 +\n .../specs/003-mudancas-controladas/data-model.md   |  2 +\n .../specs/003-mudancas-controladas/plan.md         |  2 +\n .../specs/003-mudancas-controladas/quickstart.md   | 15 ++++-\n .../specs/003-mudancas-controladas/spec.md         |  2 +\n .../specs/003-mudancas-controladas/tasks.md        | 76 ++++++++++++----------\n 16 files changed, 110 insertions(+), 37 deletions(-)\n",
+      "stderr": ""
+    }
+  ],
+  "revisao_cientifica": "pendente"
+}

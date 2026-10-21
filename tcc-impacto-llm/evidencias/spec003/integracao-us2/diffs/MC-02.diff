@@ -1,0 +1,11 @@
+--- B/autorizacao.py
++++ variantes/mc02.py
+@@ -25,7 +25,7 @@
+ 
+ def ha_incompatibilidade(papeis_efetivos: frozenset[str]) -> bool:
+     """Verifica o único conflito, sem expandir os papéis recebidos."""
+-    return {'Consulta', 'Auditoria'} <= papeis_efetivos
++    return False
+ 
+ 
+ def autorizar(estado: str, papeis: frozenset[str], operacao: str) -> dict[str, str]:

@@ -1,5 +1,27 @@
 # Decisões, propostas e pendências
 
+## Implementação e verificação da Spec 003 — 21/10/2026
+
+**D-20 — Autorização do pesquisador.** Responsável: usuário/pesquisador; evidência: pedido explícito nesta conversa para implementar as 35 tarefas, preservar alterações locais/B/T01–T12, executar baseline e 48 comparações por decisão/motivo, investigar divergências sem ajustar automaticamente expectativas e reconciliar documentação. Não autoriza piloto, LLM, novos modelos ou alterações nas métricas; não aprova cientificamente a referência nem ratifica a constituição.
+
+**D-21 — Fechamento de engenharia pelo assistente.** Spec 003 confirmada pelo resolvedor; checklist 23/23 satisfeita. HEAD inicial `8041b0b1deca09f13c8b95069699616c7a1a7a60`; sete alterações documentais locais preservadas e arquivadas com hashes em `evidencias/spec003/preparacao/`. B confirmado, sem redefinição por HEAD. Quatro extrações independentes do mesmo blob; cada fonte possui só a edição do plano, diff/AST/revisão e hashes. Manifestos identificam HEAD, estado local e snapshots dos arquivos novos executados, sem pressupor commit da implementação.
+
+Execução Python 3.13.3: primeira integração US2 e rodada final em pastas distintas; cada uma com 18 métodos originais OK, 12/12 pares B e 48/48 pares reais de variantes conformes. Zero divergências/erros/lacunas na bancada. T07/MC-04 muda apenas motivo; T12/MC-03 executado sem filtro. Controles sintéticos separados, 17 métodos finais OK, sem compor os 48 pares. Originais, comandos/retornos/stdout/stderr, fontes, hashes e diffs preservados. [Relatório e rastreabilidade](../specs/003-mudancas-controladas/evidencias.md).
+
+Desvio de engenharia M-01 encontrado em controles adicionais: o fechamento não revalidava fonte/log entre execução e consolidação. Dois testes sintéticos reproduziram código 0 indevido. Correção: revalidar hashes/arquivos no fechamento e retornar 2 com integridade inválida. Falhas originais e versão corrigida arquivadas em `sintetico-integridade-final-red/` e `sintetico-final-green/`; rodada final posterior integral conforme. Não houve alteração no gabarito, na política ou nas variantes para acomodar resultados. Nenhuma suspeita de erro na referência foi identificada; T031 concluída pela conferência de ausência de ocorrência, sem inventar revisão/resolução.
+
+35 tarefas concluídas com vínculos a evidências; baseline/testes/materiais/referência 0.2 e conjuntos 2/4/8/5 preservados. P-01/P-02/P-03, expectativas T12 e adoção constitucional continuam pendentes. T12 já adotado em B; não pedir nova adoção. Revisão profissional, possíveis novos modelos e mudanças nas métricas aguardam transcrição da orientação e decisão explícita. Textos datados da referência de B são preservados como fonte histórica; observações novas ficam nas evidências externas à referência. Próxima ação: revisão humana, sem liberar etapas experimentais.
+
+
+## Revisão das tarefas da Spec 003 — 21/10/2026
+
+**D-19 — Autorização do pesquisador.** Responsável: usuário/pesquisador; evidência: pedido explícito nesta conversa para revisar tasks existente, completar apenas o necessário, analisar consistência e reconciliar estado. Somente documentação; sem variantes, testes ou chamadas ao LLM. Revisão profissional, possíveis novos modelos e mudanças nas métricas aguardam transcrição da orientação e decisão explícita.
+
+Conferência pelo assistente: árvore inicialmente limpa; HEAD `8041b0b1deca09f13c8b95069699616c7a1a7a60`; Spec 003 em `.specify/feature.json`, confirmada por `check-prerequisites.sh --json --require-spec --require-tasks --include-tasks`. B disponível; blobs de código/testes/JSON coincidem com o plano. Diff contra B vazio para código, testes, JSON, requisitos, catálogo e evidências T12. Referência 0.2 candidata sem revisor/data; 12 casos, 48 expectativas e seleções 2/4/8/5 preservados.
+
+35 tarefas mantidas pendentes; T024 esclarece controles sintéticos no teste novo e matriz real no verificador, sem depender da CLI futura T027. Nenhuma tarefa concluída por inspeção. Notas vigentes preservam os registros históricos. Análise posterior somente de leitura pela skill local speckit-analyze, com relatório na resposta; sem implementação ou execução da bancada. Pendências científicas e adoção constitucional preservadas.
+
+
 ## Tarefas e análise documental da Spec 003 — 20/10/2026
 
 **D-18 — Autorização do pesquisador.** Responsável: usuário/pesquisador; evidência: pedido explícito nesta conversa para gerar tarefas da Spec 003 pelo fluxo local e analisar a consistência Spec/plano/tarefas, preservando expectativas, conjuntos e pendências científicas. Autoriza somente trabalho documental e reconciliação de contexto; não autoriza implementar variantes, executar testes, iniciar piloto ou chamadas ao LLM experimental. Não representa aprovação científica do orientador ou ratificação constitucional.

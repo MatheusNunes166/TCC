@@ -1,0 +1,15 @@
+{
+  "codigo_saida": 0,
+  "baseline_conforme": true,
+  "resumo": {
+    "conformes": 48,
+    "divergentes": 0,
+    "erros": 0,
+    "nao_executados": 0,
+    "previstos": 48,
+    "tentados": 48,
+    "comparados": 48
+  },
+  "integridade": true,
+  "revisao_cientifica": "pendente"
+}

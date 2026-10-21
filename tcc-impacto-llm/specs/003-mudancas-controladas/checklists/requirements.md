@@ -1,3 +1,5 @@
+> Complemento de execução — 21/10/2026, D-20/D-21: implementação autorizada e concluída. Baseline 18 métodos/12 pares e variantes 48 pares conformes; 17 métodos sintéticos separados. Evidências em [evidencias.md](../evidencias.md). Marcadores abaixo conservam sua semântica de qualidade da especificação; não representam aprovação científica. Descrições de etapa somente documental abaixo são históricas.
+
 # Specification Quality Checklist: Quatro mudanças controladas e verificação de efeitos
 
 **Purpose**: validar completude e qualidade da especificação antes de planejamento posterior.

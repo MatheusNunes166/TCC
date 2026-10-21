@@ -1,0 +1,2846 @@
+{
+  "baseline": [
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "BASELINE",
+      "teste": "T01",
+      "entrada": {
+        "estado": "suspensa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "BASELINE",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\autorizacao.py",
+        "sha256": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+        "executada": true,
+        "manifesto": "fontes/autorizacao.py"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "catalogo[id=T01].esperado",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "indisponivel",
+      "erro": null,
+      "evidencia": {
+        "log": "baseline-pares.jsonl",
+        "subteste": "BASELINE/T01"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "BASELINE",
+      "teste": "T02",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "BASELINE",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\autorizacao.py",
+        "sha256": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+        "executada": true,
+        "manifesto": "fontes/autorizacao.py"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "catalogo[id=T02].esperado",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "indisponivel",
+      "erro": null,
+      "evidencia": {
+        "log": "baseline-pares.jsonl",
+        "subteste": "BASELINE/T02"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "BASELINE",
+      "teste": "T03",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "BASELINE",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\autorizacao.py",
+        "sha256": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+        "executada": true,
+        "manifesto": "fontes/autorizacao.py"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "catalogo[id=T03].esperado",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "indisponivel",
+      "erro": null,
+      "evidencia": {
+        "log": "baseline-pares.jsonl",
+        "subteste": "BASELINE/T03"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "BASELINE",
+      "teste": "T04",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Auditoria"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "BASELINE",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\autorizacao.py",
+        "sha256": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+        "executada": true,
+        "manifesto": "fontes/autorizacao.py"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "catalogo[id=T04].esperado",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "indisponivel",
+      "erro": null,
+      "evidencia": {
+        "log": "baseline-pares.jsonl",
+        "subteste": "BASELINE/T04"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "BASELINE",
+      "teste": "T05",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "BASELINE",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\autorizacao.py",
+        "sha256": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+        "executada": true,
+        "manifesto": "fontes/autorizacao.py"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "catalogo[id=T05].esperado",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "indisponivel",
+      "erro": null,
+      "evidencia": {
+        "log": "baseline-pares.jsonl",
+        "subteste": "BASELINE/T05"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "BASELINE",
+      "teste": "T06",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "BASELINE",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\autorizacao.py",
+        "sha256": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+        "executada": true,
+        "manifesto": "fontes/autorizacao.py"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "catalogo[id=T06].esperado",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "indisponivel",
+      "erro": null,
+      "evidencia": {
+        "log": "baseline-pares.jsonl",
+        "subteste": "BASELINE/T06"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "BASELINE",
+      "teste": "T07",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "BASELINE",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\autorizacao.py",
+        "sha256": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+        "executada": true,
+        "manifesto": "fontes/autorizacao.py"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "catalogo[id=T07].esperado",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "indisponivel",
+      "erro": null,
+      "evidencia": {
+        "log": "baseline-pares.jsonl",
+        "subteste": "BASELINE/T07"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "BASELINE",
+      "teste": "T08",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "BASELINE",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\autorizacao.py",
+        "sha256": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+        "executada": true,
+        "manifesto": "fontes/autorizacao.py"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "catalogo[id=T08].esperado",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "indisponivel",
+      "erro": null,
+      "evidencia": {
+        "log": "baseline-pares.jsonl",
+        "subteste": "BASELINE/T08"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "BASELINE",
+      "teste": "T09",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "BASELINE",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\autorizacao.py",
+        "sha256": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+        "executada": true,
+        "manifesto": "fontes/autorizacao.py"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "catalogo[id=T09].esperado",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "indisponivel",
+      "erro": null,
+      "evidencia": {
+        "log": "baseline-pares.jsonl",
+        "subteste": "BASELINE/T09"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "BASELINE",
+      "teste": "T10",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "BASELINE",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\autorizacao.py",
+        "sha256": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+        "executada": true,
+        "manifesto": "fontes/autorizacao.py"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "catalogo[id=T10].esperado",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "indisponivel",
+      "erro": null,
+      "evidencia": {
+        "log": "baseline-pares.jsonl",
+        "subteste": "BASELINE/T10"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "BASELINE",
+      "teste": "T11",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Consulta",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "BASELINE",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\autorizacao.py",
+        "sha256": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+        "executada": true,
+        "manifesto": "fontes/autorizacao.py"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "catalogo[id=T11].esperado",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "indisponivel",
+      "erro": null,
+      "evidencia": {
+        "log": "baseline-pares.jsonl",
+        "subteste": "BASELINE/T11"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "BASELINE",
+      "teste": "T12",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão",
+          "Auditoria"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "BASELINE",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\autorizacao.py",
+        "sha256": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+        "executada": true,
+        "manifesto": "fontes/autorizacao.py"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "catalogo[id=T12].esperado",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "indisponivel",
+      "erro": null,
+      "evidencia": {
+        "log": "baseline-pares.jsonl",
+        "subteste": "BASELINE/T12"
+      },
+      "diagnostico": null
+    }
+  ],
+  "variantes": [
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-01",
+      "teste": "T01",
+      "entrada": {
+        "estado": "suspensa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc01.py",
+        "sha256": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+        "executada": true,
+        "manifesto": "variantes/MC-01"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-01].expected.T01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-01/T01"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-01",
+      "teste": "T02",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc01.py",
+        "sha256": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+        "executada": true,
+        "manifesto": "variantes/MC-01"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-01].expected.T02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-01/T02"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-01",
+      "teste": "T03",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc01.py",
+        "sha256": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+        "executada": true,
+        "manifesto": "variantes/MC-01"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-01].expected.T03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-01/T03"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-01",
+      "teste": "T04",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Auditoria"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc01.py",
+        "sha256": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+        "executada": true,
+        "manifesto": "variantes/MC-01"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-01].expected.T04",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "mudou",
+      "efeito_observado": "mudou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-01/T04"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-01",
+      "teste": "T05",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc01.py",
+        "sha256": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+        "executada": true,
+        "manifesto": "variantes/MC-01"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-01].expected.T05",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-01/T05"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-01",
+      "teste": "T06",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc01.py",
+        "sha256": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+        "executada": true,
+        "manifesto": "variantes/MC-01"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-01].expected.T06",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-01/T06"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-01",
+      "teste": "T07",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc01.py",
+        "sha256": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+        "executada": true,
+        "manifesto": "variantes/MC-01"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-01].expected.T07",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-01/T07"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-01",
+      "teste": "T08",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc01.py",
+        "sha256": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+        "executada": true,
+        "manifesto": "variantes/MC-01"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-01].expected.T08",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-01/T08"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-01",
+      "teste": "T09",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc01.py",
+        "sha256": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+        "executada": true,
+        "manifesto": "variantes/MC-01"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-01].expected.T09",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-01/T09"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-01",
+      "teste": "T10",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc01.py",
+        "sha256": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+        "executada": true,
+        "manifesto": "variantes/MC-01"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-01].expected.T10",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-01/T10"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-01",
+      "teste": "T11",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Consulta",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc01.py",
+        "sha256": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+        "executada": true,
+        "manifesto": "variantes/MC-01"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-01].expected.T11",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-01/T11"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-01",
+      "teste": "T12",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão",
+          "Auditoria"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc01.py",
+        "sha256": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+        "executada": true,
+        "manifesto": "variantes/MC-01"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-01].expected.T12",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-01/T12"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-02",
+      "teste": "T01",
+      "entrada": {
+        "estado": "suspensa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc02.py",
+        "sha256": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+        "executada": true,
+        "manifesto": "variantes/MC-02"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-02].expected.T01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-02/T01"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-02",
+      "teste": "T02",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc02.py",
+        "sha256": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+        "executada": true,
+        "manifesto": "variantes/MC-02"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-02].expected.T02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-02/T02"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-02",
+      "teste": "T03",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc02.py",
+        "sha256": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+        "executada": true,
+        "manifesto": "variantes/MC-02"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-02].expected.T03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-02/T03"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-02",
+      "teste": "T04",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Auditoria"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc02.py",
+        "sha256": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+        "executada": true,
+        "manifesto": "variantes/MC-02"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-02].expected.T04",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-02/T04"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-02",
+      "teste": "T05",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc02.py",
+        "sha256": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+        "executada": true,
+        "manifesto": "variantes/MC-02"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-02].expected.T05",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-02/T05"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-02",
+      "teste": "T06",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc02.py",
+        "sha256": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+        "executada": true,
+        "manifesto": "variantes/MC-02"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-02].expected.T06",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "mudou",
+      "efeito_observado": "mudou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-02/T06"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-02",
+      "teste": "T07",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc02.py",
+        "sha256": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+        "executada": true,
+        "manifesto": "variantes/MC-02"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-02].expected.T07",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "mudou",
+      "efeito_observado": "mudou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-02/T07"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-02",
+      "teste": "T08",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc02.py",
+        "sha256": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+        "executada": true,
+        "manifesto": "variantes/MC-02"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-02].expected.T08",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-02/T08"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-02",
+      "teste": "T09",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc02.py",
+        "sha256": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+        "executada": true,
+        "manifesto": "variantes/MC-02"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-02].expected.T09",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-02/T09"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-02",
+      "teste": "T10",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc02.py",
+        "sha256": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+        "executada": true,
+        "manifesto": "variantes/MC-02"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-02].expected.T10",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-02/T10"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-02",
+      "teste": "T11",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Consulta",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc02.py",
+        "sha256": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+        "executada": true,
+        "manifesto": "variantes/MC-02"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-02].expected.T11",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-02/T11"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-02",
+      "teste": "T12",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão",
+          "Auditoria"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc02.py",
+        "sha256": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+        "executada": true,
+        "manifesto": "variantes/MC-02"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-02].expected.T12",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "mudou",
+      "efeito_observado": "mudou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-02/T12"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-03",
+      "teste": "T01",
+      "entrada": {
+        "estado": "suspensa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc03.py",
+        "sha256": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+        "executada": true,
+        "manifesto": "variantes/MC-03"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-03].expected.T01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-03/T01"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-03",
+      "teste": "T02",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc03.py",
+        "sha256": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+        "executada": true,
+        "manifesto": "variantes/MC-03"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-03].expected.T02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "mudou",
+      "efeito_observado": "mudou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-03/T02"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-03",
+      "teste": "T03",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc03.py",
+        "sha256": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+        "executada": true,
+        "manifesto": "variantes/MC-03"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-03].expected.T03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-03/T03"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-03",
+      "teste": "T04",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Auditoria"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc03.py",
+        "sha256": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+        "executada": true,
+        "manifesto": "variantes/MC-03"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-03].expected.T04",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-03/T04"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-03",
+      "teste": "T05",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc03.py",
+        "sha256": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+        "executada": true,
+        "manifesto": "variantes/MC-03"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-03].expected.T05",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "mudou",
+      "efeito_observado": "mudou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-03/T05"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-03",
+      "teste": "T06",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc03.py",
+        "sha256": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+        "executada": true,
+        "manifesto": "variantes/MC-03"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-03].expected.T06",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-03/T06"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-03",
+      "teste": "T07",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc03.py",
+        "sha256": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+        "executada": true,
+        "manifesto": "variantes/MC-03"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-03].expected.T07",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-03/T07"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-03",
+      "teste": "T08",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc03.py",
+        "sha256": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+        "executada": true,
+        "manifesto": "variantes/MC-03"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-03].expected.T08",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-03/T08"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-03",
+      "teste": "T09",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc03.py",
+        "sha256": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+        "executada": true,
+        "manifesto": "variantes/MC-03"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-03].expected.T09",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-03/T09"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-03",
+      "teste": "T10",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc03.py",
+        "sha256": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+        "executada": true,
+        "manifesto": "variantes/MC-03"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-03].expected.T10",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-03/T10"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-03",
+      "teste": "T11",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Consulta",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc03.py",
+        "sha256": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+        "executada": true,
+        "manifesto": "variantes/MC-03"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-03].expected.T11",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-03/T11"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-03",
+      "teste": "T12",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão",
+          "Auditoria"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc03.py",
+        "sha256": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+        "executada": true,
+        "manifesto": "variantes/MC-03"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-03].expected.T12",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-03/T12"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-04-v2",
+      "teste": "T01",
+      "entrada": {
+        "estado": "suspensa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-04-v2",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc04.py",
+        "sha256": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+        "executada": true,
+        "manifesto": "variantes/MC-04-v2"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-04-v2].expected.T01",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-04-v2/T01"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-04-v2",
+      "teste": "T02",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-04-v2",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc04.py",
+        "sha256": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+        "executada": true,
+        "manifesto": "variantes/MC-04-v2"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-04-v2].expected.T02",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-04-v2/T02"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-04-v2",
+      "teste": "T03",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-04-v2",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc04.py",
+        "sha256": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+        "executada": true,
+        "manifesto": "variantes/MC-04-v2"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-04-v2].expected.T03",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-04-v2/T03"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-04-v2",
+      "teste": "T04",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Auditoria"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-04-v2",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc04.py",
+        "sha256": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+        "executada": true,
+        "manifesto": "variantes/MC-04-v2"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-04-v2].expected.T04",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-04-v2/T04"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-04-v2",
+      "teste": "T05",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-04-v2",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc04.py",
+        "sha256": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+        "executada": true,
+        "manifesto": "variantes/MC-04-v2"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-04-v2].expected.T05",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "mudou",
+      "efeito_observado": "mudou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-04-v2/T05"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-04-v2",
+      "teste": "T06",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Consulta",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-04-v2",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc04.py",
+        "sha256": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+        "executada": true,
+        "manifesto": "variantes/MC-04-v2"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-04-v2].expected.T06",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-04-v2/T06"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-04-v2",
+      "teste": "T07",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-04-v2",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc04.py",
+        "sha256": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+        "executada": true,
+        "manifesto": "variantes/MC-04-v2"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-04-v2].expected.T07",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "mudou",
+      "efeito_observado": "mudou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-04-v2/T07"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-04-v2",
+      "teste": "T08",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-04-v2",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc04.py",
+        "sha256": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+        "executada": true,
+        "manifesto": "variantes/MC-04-v2"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-04-v2].expected.T08",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-04-v2/T08"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-04-v2",
+      "teste": "T09",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Consulta"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-04-v2",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc04.py",
+        "sha256": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+        "executada": true,
+        "manifesto": "variantes/MC-04-v2"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-04-v2].expected.T09",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-04-v2/T09"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-04-v2",
+      "teste": "T10",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Supervisão"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-04-v2",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc04.py",
+        "sha256": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+        "executada": true,
+        "manifesto": "variantes/MC-04-v2"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-04-v2].expected.T10",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-04-v2/T10"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-04-v2",
+      "teste": "T11",
+      "entrada": {
+        "estado": "em_revisao",
+        "papeis": [
+          "Consulta",
+          "Auditoria"
+        ],
+        "operacao": "visualizar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-04-v2",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc04.py",
+        "sha256": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+        "executada": true,
+        "manifesto": "variantes/MC-04-v2"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-04-v2].expected.T11",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "preservou",
+      "efeito_observado": "preservou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-04-v2/T11"
+      },
+      "diagnostico": null
+    },
+    {
+      "id_execucao": "rodada-final",
+      "mudanca": "MC-04-v2",
+      "teste": "T12",
+      "entrada": {
+        "estado": "ativa",
+        "papeis": [
+          "Supervisão",
+          "Auditoria"
+        ],
+        "operacao": "exportar"
+      },
+      "versao_executada": {
+        "B": "aec474bcb54d6dae2afceff8e5b9226991386490",
+        "id": "MC-04-v2",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\variantes\\mc04.py",
+        "sha256": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+        "executada": true,
+        "manifesto": "variantes/MC-04-v2"
+      },
+      "referencia": {
+        "versao": "0.2",
+        "chave": "mudancas[id=MC-04-v2].expected.T12",
+        "caminho": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\rodada-final\\fontes\\baseline\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "sha256": "e4a1e4c850d84e4f7a75263be25bc42f71eb9964e63c655729abe2b6261e6396",
+        "status": "CANDIDATO_NAO_REVISADO"
+      },
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado_bruto": null,
+      "estado": "conforme",
+      "comparacao": "igual",
+      "diferencas": [],
+      "efeito_esperado": "mudou",
+      "efeito_observado": "mudou",
+      "erro": null,
+      "evidencia": {
+        "log": "variantes-unittest.txt",
+        "subteste": "MC-04-v2/T12"
+      },
+      "diagnostico": null
+    }
+  ]
+}

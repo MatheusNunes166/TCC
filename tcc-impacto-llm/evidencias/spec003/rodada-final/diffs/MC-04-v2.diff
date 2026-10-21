@@ -1,0 +1,11 @@
+--- B/autorizacao.py
++++ variantes/mc04.py
+@@ -20,7 +20,7 @@
+ 
+ def obter_papeis_efetivos(papeis: frozenset[str]) -> frozenset[str]:
+     """Preserva atribuídos e expande a única herança de um nível."""
+-    return papeis | frozenset({'Consulta'} if 'Supervisão' in papeis else ())
++    return papeis
+ 
+ 
+ def ha_incompatibilidade(papeis_efetivos: frozenset[str]) -> bool:

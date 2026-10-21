@@ -1,0 +1,19 @@
+{
+  "tipo": "inventario_sem_execucao_da_bancada",
+  "locais": {
+    "AGENTS.md": "64070c9f87c0543dd3e302984ca3fe21e9ab3717190884aa6e5875ac628dc756",
+    "BLOQUEIOS.md": "609db1d1e8304816e58f934e40f88e18e64e4ecc19db4a73e46702204e1bb2ee",
+    "ESTADO_ATUAL.md": "569afe3d7012889daf5c93efcdcacc3cc9fead129e3841b940e87ad3804d13c0",
+    "HANDOFF.md": "9aec2706db90fbf576705183d295640457b1d178cdfd16e820d0b56b5272c023",
+    "documentacao/decisoes.md": "78b5d08e8f3b8d5a558f92fc57496bd2195dc5a97e82515d850f2e4f5a48a58a",
+    "specs/003-mudancas-controladas/quickstart.md": "a0e8e7c65895359a18b06d2ea617b9f0b2eaf4acf5deaa55ecc8b17c4fe3086e",
+    "specs/003-mudancas-controladas/tasks.md": "63167e378208fc4f2989d48bb76f8a5c3962f6c016946e630f0557c2e459a979"
+  },
+  "git status --short": " M AGENTS.md\n M BLOQUEIOS.md\n M ESTADO_ATUAL.md\n M HANDOFF.md\n M documentacao/decisoes.md\n M specs/003-mudancas-controladas/quickstart.md\n M specs/003-mudancas-controladas/tasks.md\n?? evidencias/\n?? tests/test_variantes.py\n",
+  "git rev-parse HEAD": "8041b0b1deca09f13c8b95069699616c7a1a7a60\n",
+  "git rev-parse --show-toplevel": "D:/TCC-Projeto/TCC\n",
+  "git rev-parse --show-prefix": "tcc-impacto-llm/\n",
+  "git cat-file -t aec474bcb54d6dae2afceff8e5b9226991386490": "commit\n",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "C:\\Program Files\\Python313\\python.exe"
+}

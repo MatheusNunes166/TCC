@@ -1,0 +1,66 @@
+{
+  "MC-01": {
+    "origem": "aec474bcb54d6dae2afceff8e5b9226991386490",
+    "ast_conforme": true,
+    "alteracao_unica": true,
+    "sha256": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+    "diff_sha256": "7a37cc6e36ef6b3a51e1143d73d6895a5c58dbe7db0abacb04149505e2ee08b5",
+    "objeto_origem": "c219b9ab1f2ed75a92664c79009a1a417e75ef11",
+    "caminho": "variantes/mc01.py",
+    "diff": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\procedencia\\diffs\\MC-01.diff",
+    "revisao": {
+      "responsavel": "assistente Codex",
+      "data": "2026-10-21",
+      "resultado": "aprovada",
+      "observacao": "Diff lido: somente a remocao/substituicao prevista; assinaturas e demais nos AST preservados; revisao de engenharia, sem aprovacao cientifica."
+    }
+  },
+  "MC-02": {
+    "origem": "aec474bcb54d6dae2afceff8e5b9226991386490",
+    "ast_conforme": true,
+    "alteracao_unica": true,
+    "sha256": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+    "diff_sha256": "c0ef308d7178a5b5fa643afa5dba01b52855a7d56234529574b2b37c39e75221",
+    "objeto_origem": "c219b9ab1f2ed75a92664c79009a1a417e75ef11",
+    "caminho": "variantes/mc02.py",
+    "diff": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\procedencia\\diffs\\MC-02.diff",
+    "revisao": {
+      "responsavel": "assistente Codex",
+      "data": "2026-10-21",
+      "resultado": "aprovada",
+      "observacao": "Diff lido: somente a remocao/substituicao prevista; assinaturas e demais nos AST preservados; revisao de engenharia, sem aprovacao cientifica."
+    }
+  },
+  "MC-03": {
+    "origem": "aec474bcb54d6dae2afceff8e5b9226991386490",
+    "ast_conforme": true,
+    "alteracao_unica": true,
+    "sha256": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+    "diff_sha256": "2487e8484f3f64cfc23e40f5956e1a543769140f0eedc9fa367d7bc5fa7c9269",
+    "objeto_origem": "c219b9ab1f2ed75a92664c79009a1a417e75ef11",
+    "caminho": "variantes/mc03.py",
+    "diff": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\procedencia\\diffs\\MC-03.diff",
+    "revisao": {
+      "responsavel": "assistente Codex",
+      "data": "2026-10-21",
+      "resultado": "aprovada",
+      "observacao": "Diff lido: somente a remocao/substituicao prevista; assinaturas e demais nos AST preservados; revisao de engenharia, sem aprovacao cientifica."
+    }
+  },
+  "MC-04-v2": {
+    "origem": "aec474bcb54d6dae2afceff8e5b9226991386490",
+    "ast_conforme": true,
+    "alteracao_unica": true,
+    "sha256": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4",
+    "diff_sha256": "45e9cfc336ae31c60c11d8210bb36cdef41389ab0b1a4a91d80c4c5e2f4da19d",
+    "objeto_origem": "c219b9ab1f2ed75a92664c79009a1a417e75ef11",
+    "caminho": "variantes/mc04.py",
+    "diff": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec003\\procedencia\\diffs\\MC-04-v2.diff",
+    "revisao": {
+      "responsavel": "assistente Codex",
+      "data": "2026-10-21",
+      "resultado": "aprovada",
+      "observacao": "Diff lido: somente a remocao/substituicao prevista; assinaturas e demais nos AST preservados; revisao de engenharia, sem aprovacao cientifica."
+    }
+  }
+}

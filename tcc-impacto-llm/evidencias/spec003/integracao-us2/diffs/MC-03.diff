@@ -1,0 +1,11 @@
+--- B/autorizacao.py
++++ variantes/mc03.py
+@@ -13,7 +13,7 @@
+     """Retorna somente concessões próprias; não decide acesso final."""
+     return frozenset(
+         operacao
+-        for papel, operacao in (('Consulta', 'visualizar'), ('Auditoria', 'exportar'))
++        for papel, operacao in (('Auditoria', 'exportar'),)
+         if papel in papeis
+     )
+ 

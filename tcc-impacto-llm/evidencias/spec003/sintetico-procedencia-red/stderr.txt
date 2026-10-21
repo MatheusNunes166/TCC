@@ -1,0 +1,70 @@
+test_git_bytes_e_commit_ausente (test_variantes.TestFundacao.test_git_bytes_e_commit_ausente) ... ok
+test_pasta_repetida_e_interceptacao (test_variantes.TestFundacao.test_pasta_repetida_e_interceptacao) ... ok
+test_referencia_invalida (test_variantes.TestFundacao.test_referencia_invalida) ... ok
+test_registros_ausentes_e_persistencia (test_variantes.TestFundacao.test_registros_ausentes_e_persistencia) ... ok
+test_loader_confere_caminho_hash_e_cache (test_variantes.TestProcedencia.test_loader_confere_caminho_hash_e_cache) ... ERROR
+test_quatro_edicoes_e_rejeicao_de_extra (test_variantes.TestProcedencia.test_quatro_edicoes_e_rejeicao_de_extra) ... 
+  test_quatro_edicoes_e_rejeicao_de_extra (test_variantes.TestProcedencia.test_quatro_edicoes_e_rejeicao_de_extra) (change='MC-01') ... ERROR
+  test_quatro_edicoes_e_rejeicao_de_extra (test_variantes.TestProcedencia.test_quatro_edicoes_e_rejeicao_de_extra) (change='MC-02') ... ERROR
+  test_quatro_edicoes_e_rejeicao_de_extra (test_variantes.TestProcedencia.test_quatro_edicoes_e_rejeicao_de_extra) (change='MC-03') ... ERROR
+  test_quatro_edicoes_e_rejeicao_de_extra (test_variantes.TestProcedencia.test_quatro_edicoes_e_rejeicao_de_extra) (change='MC-04-v2') ... ERROR
+test_quatro_edicoes_e_rejeicao_de_extra (test_variantes.TestProcedencia.test_quatro_edicoes_e_rejeicao_de_extra) ... ERROR
+
+======================================================================
+ERROR: test_loader_confere_caminho_hash_e_cache (test_variantes.TestProcedencia.test_loader_confere_caminho_hash_e_cache)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 98, in test_loader_confere_caminho_hash_e_cache
+    module = v.load_source(path, v.sha256(self.base), 'sintetico')
+             ^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'load_source'
+
+======================================================================
+ERROR: test_quatro_edicoes_e_rejeicao_de_extra (test_variantes.TestProcedencia.test_quatro_edicoes_e_rejeicao_de_extra) (change='MC-01')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 79, in test_quatro_edicoes_e_rejeicao_de_extra
+    report = v.audit_source(self.base, source, change, v.BASELINE)
+             ^^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'audit_source'
+
+======================================================================
+ERROR: test_quatro_edicoes_e_rejeicao_de_extra (test_variantes.TestProcedencia.test_quatro_edicoes_e_rejeicao_de_extra) (change='MC-02')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 79, in test_quatro_edicoes_e_rejeicao_de_extra
+    report = v.audit_source(self.base, source, change, v.BASELINE)
+             ^^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'audit_source'
+
+======================================================================
+ERROR: test_quatro_edicoes_e_rejeicao_de_extra (test_variantes.TestProcedencia.test_quatro_edicoes_e_rejeicao_de_extra) (change='MC-03')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 79, in test_quatro_edicoes_e_rejeicao_de_extra
+    report = v.audit_source(self.base, source, change, v.BASELINE)
+             ^^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'audit_source'
+
+======================================================================
+ERROR: test_quatro_edicoes_e_rejeicao_de_extra (test_variantes.TestProcedencia.test_quatro_edicoes_e_rejeicao_de_extra) (change='MC-04-v2')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 79, in test_quatro_edicoes_e_rejeicao_de_extra
+    report = v.audit_source(self.base, source, change, v.BASELINE)
+             ^^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'audit_source'
+
+======================================================================
+ERROR: test_quatro_edicoes_e_rejeicao_de_extra (test_variantes.TestProcedencia.test_quatro_edicoes_e_rejeicao_de_extra)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 91, in test_quatro_edicoes_e_rejeicao_de_extra
+    v.audit_source(self.base, chained, 'MC-02', v.BASELINE)
+    ^^^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'audit_source'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.748s
+
+FAILED (errors=6)

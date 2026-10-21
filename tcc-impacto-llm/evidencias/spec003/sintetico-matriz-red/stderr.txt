@@ -1,0 +1,61 @@
+test_git_bytes_e_commit_ausente (test_variantes.TestFundacao.test_git_bytes_e_commit_ausente) ... ok
+test_pasta_repetida_e_interceptacao (test_variantes.TestFundacao.test_pasta_repetida_e_interceptacao) ... ok
+test_referencia_invalida (test_variantes.TestFundacao.test_referencia_invalida) ... ok
+test_registros_ausentes_e_persistencia (test_variantes.TestFundacao.test_registros_ausentes_e_persistencia) ... ok
+test_48_entradas_esperados_e_sem_filtro (test_variantes.TestMatriz.test_48_entradas_esperados_e_sem_filtro) ... ERROR
+test_baseline_invalida_bloqueia_todas (test_variantes.TestMatriz.test_baseline_invalida_bloqueia_todas) ... ERROR
+test_efeitos_e_chaves_unicas (test_variantes.TestMatriz.test_efeitos_e_chaves_unicas) ... ERROR
+test_fonte_invalida_e_erro_individual (test_variantes.TestMatriz.test_fonte_invalida_e_erro_individual) ... ERROR
+test_motivo_diferente_e_retorno_malformado (test_variantes.TestMatriz.test_motivo_diferente_e_retorno_malformado) ... ERROR
+test_loader_confere_caminho_hash_e_cache (test_variantes.TestProcedencia.test_loader_confere_caminho_hash_e_cache) ... ok
+test_quatro_edicoes_e_rejeicao_de_extra (test_variantes.TestProcedencia.test_quatro_edicoes_e_rejeicao_de_extra) ... ok
+
+======================================================================
+ERROR: test_48_entradas_esperados_e_sem_filtro (test_variantes.TestMatriz.test_48_entradas_esperados_e_sem_filtro)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 143, in test_48_entradas_esperados_e_sem_filtro
+    v.run_matrix(self.rows['variantes'], functions, baseline)
+    ^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'run_matrix'
+
+======================================================================
+ERROR: test_baseline_invalida_bloqueia_todas (test_variantes.TestMatriz.test_baseline_invalida_bloqueia_todas)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 164, in test_baseline_invalida_bloqueia_todas
+    v.run_matrix(self.rows['variantes'], {m: lambda *args: called.append(args) for m in v.VARIANTS}, {}, baseline_ok=False)
+    ^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'run_matrix'
+
+======================================================================
+ERROR: test_efeitos_e_chaves_unicas (test_variantes.TestMatriz.test_efeitos_e_chaves_unicas)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 171, in test_efeitos_e_chaves_unicas
+    v.observe(row, lambda *args: {'decisao': 'negar', 'motivo': 'sem_permissao'},
+    ^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'observe'
+
+======================================================================
+ERROR: test_fonte_invalida_e_erro_individual (test_variantes.TestMatriz.test_fonte_invalida_e_erro_individual)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 157, in test_fonte_invalida_e_erro_individual
+    v.run_matrix(self.rows['variantes'], {'MC-01': failing}, {})
+    ^^^^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'run_matrix'
+
+======================================================================
+ERROR: test_motivo_diferente_e_retorno_malformado (test_variantes.TestMatriz.test_motivo_diferente_e_retorno_malformado)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_variantes.py", line 119, in test_motivo_diferente_e_retorno_malformado
+    v.observe(row, lambda *args: {'decisao': 'negar', 'motivo': 'conflito'})
+    ^^^^^^^^^
+AttributeError: module 'verificacao_variantes' has no attribute 'observe'
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.773s
+
+FAILED (errors=5)

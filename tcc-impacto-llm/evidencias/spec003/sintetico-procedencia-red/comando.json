@@ -1,0 +1,19 @@
+{
+  "tipo": "controle_sintetico",
+  "comando": [
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_variantes.py",
+    "-v"
+  ],
+  "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+  "retorno": 1,
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "instante_utc": "2026-10-21T20:12:08.407851+00:00"
+}

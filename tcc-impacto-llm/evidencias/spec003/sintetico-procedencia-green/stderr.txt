@@ -1,0 +1,11 @@
+test_git_bytes_e_commit_ausente (test_variantes.TestFundacao.test_git_bytes_e_commit_ausente) ... ok
+test_pasta_repetida_e_interceptacao (test_variantes.TestFundacao.test_pasta_repetida_e_interceptacao) ... ok
+test_referencia_invalida (test_variantes.TestFundacao.test_referencia_invalida) ... ok
+test_registros_ausentes_e_persistencia (test_variantes.TestFundacao.test_registros_ausentes_e_persistencia) ... ok
+test_loader_confere_caminho_hash_e_cache (test_variantes.TestProcedencia.test_loader_confere_caminho_hash_e_cache) ... ok
+test_quatro_edicoes_e_rejeicao_de_extra (test_variantes.TestProcedencia.test_quatro_edicoes_e_rejeicao_de_extra) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.832s
+
+OK

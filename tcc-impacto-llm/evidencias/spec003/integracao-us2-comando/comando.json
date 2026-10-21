@@ -1,0 +1,13 @@
+{
+  "tipo": "comando_real",
+  "comando": [
+    "python",
+    "-B",
+    "-c",
+    "import pathlib,json,verificacao_variantes as v; m,r=v.execute_attempt(pathlib.Path.cwd(),'evidencias/spec003/integracao-us2'); print(json.dumps({k:m.get(k) for k in ('estado','baseline_conforme','resumo','integridade','erros')},ensure_ascii=False,indent=2)); raise SystemExit(0 if m.get('resumo',{}).get('conformes') == 48 and m.get('baseline_conforme') and m.get('integridade') else 2)"
+  ],
+  "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+  "retorno": 0,
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "instante_utc": "2026-10-21T20:15:54.160743+00:00"
+}
