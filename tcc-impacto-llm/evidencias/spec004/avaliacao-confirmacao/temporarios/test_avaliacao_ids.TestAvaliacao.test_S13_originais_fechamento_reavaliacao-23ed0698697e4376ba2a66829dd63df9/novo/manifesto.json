@@ -1,0 +1,65 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "preparacao-original.json",
+      "sha256": "9ffbcfc2bd3afe7fda8e3faa36f8d99b74bccacda3f08e8589a70f1cc807af0b"
+    },
+    {
+      "arquivo": "tentativa-original.json",
+      "sha256": "a1345e36be574a690d716be5c64c7b39b53c35e38a6b60d585a93e26d6db1e08"
+    },
+    {
+      "arquivo": "entrada\\payload.txt",
+      "sha256": "223aa9b06f276a912414604a68372e773e23ee1271b925837bbeab1a89fc410b"
+    },
+    {
+      "arquivo": "resposta-original.bin",
+      "sha256": "f50c4caa8885787f973435ea0a2d52242044d0fac477c788f80f3d5c42e29f67"
+    },
+    {
+      "arquivo": "avaliacao-anterior.json",
+      "sha256": "86c196dba3fbda73ce8f64527995fea2e375acac1a69381a194d7abc2c55aaff"
+    },
+    {
+      "arquivo": "referencia-privada.json",
+      "sha256": "7e0f5c24829f9652d600c9cbe9dbf637b955ab9987fe26488063e128117afdaa"
+    },
+    {
+      "arquivo": "politica-candidata.json",
+      "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c"
+    },
+    {
+      "arquivo": "avaliacao.json",
+      "sha256": "fc70b755262c65579e4e73c147360a3935e1edcfbb1d164601f23ff6d99c7d90"
+    }
+  ],
+  "completo": true,
+  "fontes": [
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpie9ahnw_\\prep\\preparacao.json",
+      "sha256": "9ffbcfc2bd3afe7fda8e3faa36f8d99b74bccacda3f08e8589a70f1cc807af0b"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpie9ahnw_\\tentativa.json",
+      "sha256": "a1345e36be574a690d716be5c64c7b39b53c35e38a6b60d585a93e26d6db1e08"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpie9ahnw_\\prep\\payload.txt",
+      "sha256": "223aa9b06f276a912414604a68372e773e23ee1271b925837bbeab1a89fc410b"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpie9ahnw_\\resposta.bin",
+      "sha256": "f50c4caa8885787f973435ea0a2d52242044d0fac477c788f80f3d5c42e29f67"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpie9ahnw_\\out\\avaliacao.json",
+      "sha256": "86c196dba3fbda73ce8f64527995fea2e375acac1a69381a194d7abc2c55aaff"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpie9ahnw_\\referencia.json",
+      "sha256": "7e0f5c24829f9652d600c9cbe9dbf637b955ab9987fe26488063e128117afdaa"
+    }
+  ],
+  "origem": "sintetica",
+  "retorno": 1
+}

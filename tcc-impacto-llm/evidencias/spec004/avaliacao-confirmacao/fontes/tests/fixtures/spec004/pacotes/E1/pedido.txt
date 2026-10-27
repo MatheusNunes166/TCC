@@ -1,0 +1,1 @@
+Examine a mudanca e dependencias; selecione IDs.

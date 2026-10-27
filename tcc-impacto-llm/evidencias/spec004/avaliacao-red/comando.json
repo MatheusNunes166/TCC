@@ -1,0 +1,26 @@
+{
+  "comando": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_avaliacao_ids.py",
+    "-v"
+  ],
+  "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+  "instante_utc": "2026-10-27T20:24:32.737861+00:00",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "retorno": 1,
+  "origem": "sintetica",
+  "fontes_sha256": {
+    "tests/test_montagem_entradas.py": "0e45ddad9e5a1589297eed106c58368cc95d8c569d82d795c1dd79949bbc132b",
+    "tests/test_avaliacao_ids.py": "7fc030d71bc775998ff1a455159a11ff2575af3c191bc94ab4088070f04d560e",
+    "tests/suporte_spec004.py": "75812291ac93051a9976f2d05473833385440bc7ee8dc82f3e03b932be3f6e64",
+    "tests/fixtures/spec004/esperados.json": "309ddf6849153f415bc9894f57a4100c0f6c9be455d311e8d4a3acd5da4b0146"
+  },
+  "limite": "Nao comprova isolamento de identidade; nao e resultado de LLM."
+}

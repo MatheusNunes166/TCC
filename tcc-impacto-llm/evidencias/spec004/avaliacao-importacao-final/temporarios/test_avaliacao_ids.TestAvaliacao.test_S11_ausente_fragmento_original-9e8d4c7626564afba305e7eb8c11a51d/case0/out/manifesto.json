@@ -1,0 +1,49 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "preparacao-original.json",
+      "sha256": "9ffbcfc2bd3afe7fda8e3faa36f8d99b74bccacda3f08e8589a70f1cc807af0b"
+    },
+    {
+      "arquivo": "tentativa-original.json",
+      "sha256": "c88570e818ce0729f8569eb10797de27280c32c5db99fe12e5c7b3c0ce03d412"
+    },
+    {
+      "arquivo": "entrada\\payload.txt",
+      "sha256": "223aa9b06f276a912414604a68372e773e23ee1271b925837bbeab1a89fc410b"
+    },
+    {
+      "arquivo": "referencia-privada.json",
+      "sha256": "7e0f5c24829f9652d600c9cbe9dbf637b955ab9987fe26488063e128117afdaa"
+    },
+    {
+      "arquivo": "politica-candidata.json",
+      "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c"
+    },
+    {
+      "arquivo": "avaliacao.json",
+      "sha256": "a393a221162a8d6b745a1fb1ed8741b2593d3877c2c8067dbb2fc458018f0529"
+    }
+  ],
+  "completo": true,
+  "fontes": [
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpvkaziy5k\\case0\\prep\\preparacao.json",
+      "sha256": "9ffbcfc2bd3afe7fda8e3faa36f8d99b74bccacda3f08e8589a70f1cc807af0b"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpvkaziy5k\\case0\\tentativa.json",
+      "sha256": "c88570e818ce0729f8569eb10797de27280c32c5db99fe12e5c7b3c0ce03d412"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpvkaziy5k\\case0\\prep\\payload.txt",
+      "sha256": "223aa9b06f276a912414604a68372e773e23ee1271b925837bbeab1a89fc410b"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpvkaziy5k\\case0\\referencia.json",
+      "sha256": "7e0f5c24829f9652d600c9cbe9dbf637b955ab9987fe26488063e128117afdaa"
+    }
+  ],
+  "origem": "sintetica",
+  "retorno": 1
+}

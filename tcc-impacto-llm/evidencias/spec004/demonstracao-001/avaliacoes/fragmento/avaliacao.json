@@ -1,0 +1,39 @@
+{
+  "avaliacao_anterior": null,
+  "avaliacao_id": "4b860baa069344b496f6c15fee0aa539",
+  "avaliador_sha256": "51c23bdaa7163fff94816e5ced7bdfb644c38b1541ccb4748ed4e8e42baef56f",
+  "causa": null,
+  "causa_tecnica": "falha artificial de transporte",
+  "completo": true,
+  "condicao": "D0",
+  "configuracao_id": "controle-local-v1",
+  "estado_tecnico": "falha_tecnica",
+  "formato_contrato": "nao_analisado",
+  "fragmento": true,
+  "instante_utc": "2026-10-27T20:30:38.019056+00:00",
+  "json_sintatico": "nao_analisado",
+  "modelo_reportado": null,
+  "mudanca": "MC-01",
+  "mudanca_pedida": "MC-01",
+  "observacao_id": "obs-fragmento",
+  "origem": "sintetica",
+  "payload_sha256": "ee80d93e8b54c4737d58de0a4ed5011adea409b2d35b04d9540bc2311b83a07f",
+  "politica": {
+    "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+    "status": "CANDIDATA_REVISAO_CIENTIFICA_PENDENTE",
+    "versao": "ids-proposta-004-v2"
+  },
+  "referencia": {
+    "sha256": "b65126915d74089bfe2f7f14f1c9ae93180067e2e26d9e650e2346ce40865b2a",
+    "status": "SINTETICA_NAO_EXPERIMENTAL",
+    "versao": "sintetica-1"
+  },
+  "repeticao_sintetica": 12,
+  "requisitos": null,
+  "resposta_sha256": "431b0656600d9bedd92995f8a054c131e76ccbde938868096e394cf4399bae08",
+  "somente_ids_conhecidos": null,
+  "status_avaliacao": "falha_tecnica",
+  "tentativa_anterior": null,
+  "tentativa_id": "tent-fragmento",
+  "testes": null
+}

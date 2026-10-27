@@ -1,0 +1,14 @@
+[
+  {
+    "arquivo": "avaliacao-0.json",
+    "sha256": "bb6ab10e5ee0ea9cc6a03bdb8eb1226b55e5c82abdf7b4697b9c7df11ca8bfc2"
+  },
+  {
+    "arquivo": "avaliacao-1.json",
+    "sha256": "29bb27d5780314ca11063d19b096a0b1aaf7a1ccf15b1570ef039df3bd29a4a7"
+  },
+  {
+    "arquivo": "avaliacao-2.json",
+    "sha256": "d1d0d61a1cc62d62d18be86090bedef32908683a2a29eede447eb17bea5ead49"
+  }
+]

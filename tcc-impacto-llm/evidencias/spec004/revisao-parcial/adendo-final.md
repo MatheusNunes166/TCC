@@ -1,0 +1,7 @@
+# Adendo de verificação — 27/10/2026
+
+O checkpoint mais recente do avaliador é `../avaliacao-importacao-final/`: 14 métodos aprovados, sem falhas, erros ou ignorados, após validar explicitamente que registros de tentativa/preparação/avaliação anterior sejam objetos. A falha anterior de importação está preservada em `../importacao-tipo-red/`; não houve ajuste de escores esperados. A [matriz atual](matriz-atual.json) inclui os confrontos dessa versão. Montagem permanece em `../montagem-final/`: cinco aprovados e um ignorado por WinError1314; isolamento real não demonstrado.
+
+[verificacao-final.json](verificacao-final.json) confirma originais protegidos, checklist e snapshots preservados, fonte atual identificada pelos hashes dos checkpoints e 39 tarefas concluídas/9 pendentes. Seu campo de erros contém somente a conferência documental: linhas vazias adicionais no fim de sete documentos, acompanhadas dos avisos de conversão LF/CRLF do Git. A tentativa de remover essas linhas foi rejeitada com `patch rejected by user`; a recusa foi respeitada, sem outra via para executar a remoção. Os avisos permanecem registrados; não se declara `git diff --check` limpo.
+
+Nenhuma dessas verificações de hashes/links substitui os valores esperado/observado dos controles funcionais. T014/T015 e T042–T048 continuam pendentes, S-14 parcial, sem fechamento integral, LLM, piloto ou revisão científica atribuída. Este adendo acrescenta o estado da auditoria sem sobrescrever documentos, respostas ou evidências anteriores.

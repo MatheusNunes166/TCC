@@ -1,0 +1,18 @@
+{
+  "comando": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "-B",
+    "avaliacao_ids.py",
+    "resumir",
+    "--avaliacoes",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\listas\\todas-validas\\avaliacoes.json",
+    "--observacoes",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\listas\\todas-validas\\planejadas.json",
+    "--saida",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\resumos\\todas-validas"
+  ],
+  "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+  "retorno": 0,
+  "esperado": 0,
+  "origem": "sintetica"
+}

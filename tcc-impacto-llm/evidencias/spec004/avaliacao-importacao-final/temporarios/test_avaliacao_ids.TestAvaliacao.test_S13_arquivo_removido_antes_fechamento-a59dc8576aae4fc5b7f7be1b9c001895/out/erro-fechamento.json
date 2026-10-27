@@ -1,0 +1,43 @@
+{
+  "avaliacao_anterior": null,
+  "avaliacao_id": "5d47816aceec4882b5751ab99bed3a16",
+  "avaliador_sha256": "8eb1b3aacb9177ad24c7aac87bd5ae50a9e9c98b294138c67316ea31ba046454",
+  "causa": "[WinError 2] O sistema n\u00e3o pode encontrar o arquivo especificado: 'C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\tmphv1y3tdz\\\\out\\\\resposta-original.bin'",
+  "causa_tecnica": null,
+  "completo": false,
+  "condicao": "D0",
+  "configuracao_id": "controle-local-v1",
+  "estado_tecnico": "concluida",
+  "formato_contrato": "valido",
+  "fragmento": false,
+  "ids_conhecidos_por_dimensao": {
+    "requisitos": true,
+    "testes": true
+  },
+  "instante_utc": "2026-10-27T21:13:46.311189+00:00",
+  "json_sintatico": "valido",
+  "modelo_reportado": null,
+  "mudanca": "MC-01",
+  "mudanca_pedida": "MC-01",
+  "observacao_id": "obs-1",
+  "origem": "sintetica",
+  "payload_sha256": "223aa9b06f276a912414604a68372e773e23ee1271b925837bbeab1a89fc410b",
+  "politica": {
+    "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+    "status": "CANDIDATA_REVISAO_CIENTIFICA_PENDENTE",
+    "versao": "ids-proposta-004-v2"
+  },
+  "referencia": {
+    "sha256": "7e0f5c24829f9652d600c9cbe9dbf637b955ab9987fe26488063e128117afdaa",
+    "status": "SINTETICA_NAO_EXPERIMENTAL",
+    "versao": "sintetica-1"
+  },
+  "repeticao_sintetica": 1,
+  "requisitos": null,
+  "resposta_sha256": "2a9e670b676299fffd37d6fb902bdb38568a5ca83d741f1d6ac407dd3e283f4e",
+  "somente_ids_conhecidos": true,
+  "status_avaliacao": "erro_integridade",
+  "tentativa_anterior": null,
+  "tentativa_id": "tent-1",
+  "testes": null
+}

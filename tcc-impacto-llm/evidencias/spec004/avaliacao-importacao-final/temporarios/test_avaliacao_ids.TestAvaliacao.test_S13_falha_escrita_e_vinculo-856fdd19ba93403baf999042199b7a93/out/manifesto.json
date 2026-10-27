@@ -1,0 +1,41 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "preparacao-original.json",
+      "sha256": "9ffbcfc2bd3afe7fda8e3faa36f8d99b74bccacda3f08e8589a70f1cc807af0b"
+    },
+    {
+      "arquivo": "tentativa-original.json",
+      "sha256": "2e856bbdf8301b608dd094500a516f1196e22240c92014e56cda489e61109ada"
+    },
+    {
+      "arquivo": "entrada\\payload.txt",
+      "sha256": "223aa9b06f276a912414604a68372e773e23ee1271b925837bbeab1a89fc410b"
+    },
+    {
+      "arquivo": "avaliacao.json",
+      "sha256": "bce6125f78e703bf055c58c8b5d5bbe57b319cb58daea6b65beaedaf4dc1a4d4"
+    }
+  ],
+  "completo": false,
+  "fontes": [
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpg4u7kon_\\prep\\preparacao.json",
+      "sha256": "9ffbcfc2bd3afe7fda8e3faa36f8d99b74bccacda3f08e8589a70f1cc807af0b"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpg4u7kon_\\tentativa.json",
+      "sha256": "2e856bbdf8301b608dd094500a516f1196e22240c92014e56cda489e61109ada"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpg4u7kon_\\prep\\payload.txt",
+      "sha256": "223aa9b06f276a912414604a68372e773e23ee1271b925837bbeab1a89fc410b"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpg4u7kon_\\resposta.bin",
+      "sha256": "2a9e670b676299fffd37d6fb902bdb38568a5ca83d741f1d6ac407dd3e283f4e"
+    }
+  ],
+  "origem": "sintetica",
+  "retorno": 2
+}

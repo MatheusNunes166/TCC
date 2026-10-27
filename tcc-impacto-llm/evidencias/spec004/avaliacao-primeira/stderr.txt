@@ -1,0 +1,134 @@
+test_S01_S02_S09_cli (test_avaliacao_ids.TestAvaliacao.test_S01_S02_S09_cli) ... FAIL
+test_S01_a_S10_oraculos_literais (test_avaliacao_ids.TestAvaliacao.test_S01_a_S10_oraculos_literais) ... ok
+test_S07_espacos_vazio_caixa (test_avaliacao_ids.TestAvaliacao.test_S07_espacos_vazio_caixa) ... ok
+test_S09_invalida_sem_reparo (test_avaliacao_ids.TestAvaliacao.test_S09_invalida_sem_reparo) ... ok
+test_S11_ausente_fragmento_original (test_avaliacao_ids.TestAvaliacao.test_S11_ausente_fragmento_original) ... 
+  test_S11_ausente_fragmento_original (test_avaliacao_ids.TestAvaliacao.test_S11_ausente_fragmento_original) (caso=0) ... ERROR
+  test_S11_ausente_fragmento_original (test_avaliacao_ids.TestAvaliacao.test_S11_ausente_fragmento_original) (caso=1) ... ERROR
+  test_S11_ausente_fragmento_original (test_avaliacao_ids.TestAvaliacao.test_S11_ausente_fragmento_original) (caso=2) ... ERROR
+test_S12_referencia_e_alias (test_avaliacao_ids.TestAvaliacao.test_S12_referencia_e_alias) ... ok
+test_S13_falha_escrita_e_vinculo (test_avaliacao_ids.TestAvaliacao.test_S13_falha_escrita_e_vinculo) ... ERROR
+test_S13_originais_fechamento_reavaliacao (test_avaliacao_ids.TestAvaliacao.test_S13_originais_fechamento_reavaliacao) ... ERROR
+test_S15_jaccard_observacoes_pares (test_avaliacao_ids.TestAvaliacao.test_S15_jaccard_observacoes_pares) ... ok
+test_S16_PONT01_versoes_separadas (test_avaliacao_ids.TestAvaliacao.test_S16_PONT01_versoes_separadas) ... ok
+test_S16_PONT02_duplicidades_tentativas (test_avaliacao_ids.TestAvaliacao.test_S16_PONT02_duplicidades_tentativas) ... ok
+test_S16_cli_listas_hashed (test_avaliacao_ids.TestAvaliacao.test_S16_cli_listas_hashed) ... FAIL
+test_S16_resumo_A_B_ausencia (test_avaliacao_ids.TestAvaliacao.test_S16_resumo_A_B_ausencia) ... ERROR
+
+======================================================================
+ERROR: test_S11_ausente_fragmento_original (test_avaliacao_ids.TestAvaliacao.test_S11_ausente_fragmento_original) (caso=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_avaliacao_ids.py", line 118, in test_S11_ausente_fragmento_original
+    self.entrada(content,True,frag); r,code=self.evaluate()
+                                            ~~~~~~~~~~~~~^^
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_avaliacao_ids.py", line 112, in evaluate
+    return a.avaliar(self.prep,self.attempt,self.refpath,self.root/out)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\avaliacao_ids.py", line 184, in avaliar
+    out=nova_saida(saida,inputs);tracked=[]
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\avaliacao_ids.py", line 149, in nova_saida
+    raise ValueError('saida sobreposta a raiz de importacao')
+ValueError: saida sobreposta a raiz de importacao
+
+======================================================================
+ERROR: test_S11_ausente_fragmento_original (test_avaliacao_ids.TestAvaliacao.test_S11_ausente_fragmento_original) (caso=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_avaliacao_ids.py", line 118, in test_S11_ausente_fragmento_original
+    self.entrada(content,True,frag); r,code=self.evaluate()
+                                            ~~~~~~~~~~~~~^^
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_avaliacao_ids.py", line 112, in evaluate
+    return a.avaliar(self.prep,self.attempt,self.refpath,self.root/out)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\avaliacao_ids.py", line 184, in avaliar
+    out=nova_saida(saida,inputs);tracked=[]
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\avaliacao_ids.py", line 149, in nova_saida
+    raise ValueError('saida sobreposta a raiz de importacao')
+ValueError: saida sobreposta a raiz de importacao
+
+======================================================================
+ERROR: test_S11_ausente_fragmento_original (test_avaliacao_ids.TestAvaliacao.test_S11_ausente_fragmento_original) (caso=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_avaliacao_ids.py", line 118, in test_S11_ausente_fragmento_original
+    self.entrada(content,True,frag); r,code=self.evaluate()
+                                            ~~~~~~~~~~~~~^^
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_avaliacao_ids.py", line 112, in evaluate
+    return a.avaliar(self.prep,self.attempt,self.refpath,self.root/out)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\avaliacao_ids.py", line 184, in avaliar
+    out=nova_saida(saida,inputs);tracked=[]
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\avaliacao_ids.py", line 149, in nova_saida
+    raise ValueError('saida sobreposta a raiz de importacao')
+ValueError: saida sobreposta a raiz de importacao
+
+======================================================================
+ERROR: test_S13_falha_escrita_e_vinculo (test_avaliacao_ids.TestAvaliacao.test_S13_falha_escrita_e_vinculo)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_avaliacao_ids.py", line 143, in test_S13_falha_escrita_e_vinculo
+    with patch.object(a,'salvar',side_effect=failure):r,code=self.evaluate()
+                                                             ~~~~~~~~~~~~~^^
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_avaliacao_ids.py", line 112, in evaluate
+    return a.avaliar(self.prep,self.attempt,self.refpath,self.root/out)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\avaliacao_ids.py", line 184, in avaliar
+    out=nova_saida(saida,inputs);tracked=[]
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\avaliacao_ids.py", line 149, in nova_saida
+    raise ValueError('saida sobreposta a raiz de importacao')
+ValueError: saida sobreposta a raiz de importacao
+
+======================================================================
+ERROR: test_S13_originais_fechamento_reavaliacao (test_avaliacao_ids.TestAvaliacao.test_S13_originais_fechamento_reavaliacao)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_avaliacao_ids.py", line 126, in test_S13_originais_fechamento_reavaliacao
+    r,code=self.evaluate(); self.assertEqual(code,1)
+           ~~~~~~~~~~~~~^^
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_avaliacao_ids.py", line 112, in evaluate
+    return a.avaliar(self.prep,self.attempt,self.refpath,self.root/out)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\avaliacao_ids.py", line 184, in avaliar
+    out=nova_saida(saida,inputs);tracked=[]
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\avaliacao_ids.py", line 149, in nova_saida
+    raise ValueError('saida sobreposta a raiz de importacao')
+ValueError: saida sobreposta a raiz de importacao
+
+======================================================================
+ERROR: test_S16_resumo_A_B_ausencia (test_avaliacao_ids.TestAvaliacao.test_S16_resumo_A_B_ausencia)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_avaliacao_ids.py", line 189, in test_S16_resumo_A_B_ausencia
+    self.checar('S-16','planejada-ausente',[r['celulas'][0]['grupos'][0]['taxas']['completude']['fracao'],code],['1/2',1])
+                                            ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+======================================================================
+FAIL: test_S01_S02_S09_cli (test_avaliacao_ids.TestAvaliacao.test_S01_S02_S09_cli)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_avaliacao_ids.py", line 153, in test_S01_S02_S09_cli
+    self.checar('S-02','cli-incorreta-nao-falha',cp.returncode,0)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\suporte_spec004.py", line 27, in checar
+    self.assertEqual(observado, esperado, f'{familia}/{caso}')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 2 != 0 : S-02/cli-incorreta-nao-falha
+
+======================================================================
+FAIL: test_S16_cli_listas_hashed (test_avaliacao_ids.TestAvaliacao.test_S16_cli_listas_hashed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_avaliacao_ids.py", line 219, in test_S16_cli_listas_hashed
+    self.checar('S-16','cli-resumo-local',cp.returncode,0)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\suporte_spec004.py", line 27, in checar
+    self.assertEqual(observado, esperado, f'{familia}/{caso}')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 2 != 0 : S-16/cli-resumo-local
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.567s
+
+FAILED (failures=2, errors=6)

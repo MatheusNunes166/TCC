@@ -1,0 +1,17 @@
+{
+  "comando": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "-B",
+    "montagem_entradas.py",
+    "--pacote",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\tests\\fixtures\\spec004\\pacotes\\D0",
+    "--manifesto",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\tests\\fixtures\\spec004\\pacotes\\D0\\manifesto.json",
+    "--saida",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\preparacoes\\D0"
+  ],
+  "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+  "retorno": 0,
+  "esperado": 0,
+  "origem": "sintetica"
+}

@@ -1,0 +1,20 @@
+{
+  "comando": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "-B",
+    "avaliacao_ids.py",
+    "avaliar",
+    "--preparacao",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\preparacoes\\D0\\preparacao.json",
+    "--tentativa",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\entradas-avaliacao\\ret-1\\tentativa.json",
+    "--referencia",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\tests\\fixtures\\spec004\\referencia-sintetica.json",
+    "--saida",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\avaliacoes\\ret-1"
+  ],
+  "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+  "retorno": 1,
+  "esperado": 1,
+  "origem": "sintetica"
+}

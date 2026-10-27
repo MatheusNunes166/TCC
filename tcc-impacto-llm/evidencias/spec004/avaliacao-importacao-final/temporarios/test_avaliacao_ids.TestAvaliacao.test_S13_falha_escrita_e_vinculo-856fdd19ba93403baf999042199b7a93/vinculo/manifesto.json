@@ -1,0 +1,29 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "preparacao-original.json",
+      "sha256": "9ffbcfc2bd3afe7fda8e3faa36f8d99b74bccacda3f08e8589a70f1cc807af0b"
+    },
+    {
+      "arquivo": "tentativa-original.json",
+      "sha256": "e21d7bc85e59692fa0dc1a1f093f6db0f1c86e22f917a4041b6d7352cfda818d"
+    },
+    {
+      "arquivo": "avaliacao.json",
+      "sha256": "dca03c5d175196ce18da07662831912afb36b187caa8f27855605af6f4f80107"
+    }
+  ],
+  "completo": false,
+  "fontes": [
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpg4u7kon_\\prep\\preparacao.json",
+      "sha256": "9ffbcfc2bd3afe7fda8e3faa36f8d99b74bccacda3f08e8589a70f1cc807af0b"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpg4u7kon_\\tentativa.json",
+      "sha256": "e21d7bc85e59692fa0dc1a1f093f6db0f1c86e22f917a4041b6d7352cfda818d"
+    }
+  ],
+  "origem": "sintetica",
+  "retorno": 2
+}

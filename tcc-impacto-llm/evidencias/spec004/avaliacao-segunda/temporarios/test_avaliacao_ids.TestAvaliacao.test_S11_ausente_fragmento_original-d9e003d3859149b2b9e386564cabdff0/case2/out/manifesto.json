@@ -1,0 +1,57 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "preparacao-original.json",
+      "sha256": "9ffbcfc2bd3afe7fda8e3faa36f8d99b74bccacda3f08e8589a70f1cc807af0b"
+    },
+    {
+      "arquivo": "tentativa-original.json",
+      "sha256": "1b3b46d634578f31ce3a093519b603c52248383cd40a26b6601f8d1b06c741e6"
+    },
+    {
+      "arquivo": "entrada\\payload.txt",
+      "sha256": "223aa9b06f276a912414604a68372e773e23ee1271b925837bbeab1a89fc410b"
+    },
+    {
+      "arquivo": "resposta-original.bin",
+      "sha256": "8ab4edb3d58f709e6427f2a8026dae08e2379a7c708c459b9a3996312e914710"
+    },
+    {
+      "arquivo": "referencia-privada.json",
+      "sha256": "7e0f5c24829f9652d600c9cbe9dbf637b955ab9987fe26488063e128117afdaa"
+    },
+    {
+      "arquivo": "politica-candidata.json",
+      "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c"
+    },
+    {
+      "arquivo": "avaliacao.json",
+      "sha256": "3d34e56a71e4943e0dc2d18025fbe7c80f7b3f80a76c64a94c62a1cd59c639d3"
+    }
+  ],
+  "completo": true,
+  "fontes": [
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmp5nfl0ua3\\case2\\prep\\preparacao.json",
+      "sha256": "9ffbcfc2bd3afe7fda8e3faa36f8d99b74bccacda3f08e8589a70f1cc807af0b"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmp5nfl0ua3\\case2\\tentativa.json",
+      "sha256": "1b3b46d634578f31ce3a093519b603c52248383cd40a26b6601f8d1b06c741e6"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmp5nfl0ua3\\case2\\prep\\payload.txt",
+      "sha256": "223aa9b06f276a912414604a68372e773e23ee1271b925837bbeab1a89fc410b"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmp5nfl0ua3\\case2\\resposta.bin",
+      "sha256": "8ab4edb3d58f709e6427f2a8026dae08e2379a7c708c459b9a3996312e914710"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmp5nfl0ua3\\case2\\referencia.json",
+      "sha256": "7e0f5c24829f9652d600c9cbe9dbf637b955ab9987fe26488063e128117afdaa"
+    }
+  ],
+  "origem": "sintetica",
+  "retorno": 1
+}

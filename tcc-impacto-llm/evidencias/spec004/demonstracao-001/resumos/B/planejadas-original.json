@@ -1,0 +1,10 @@
+[
+  {
+    "observacao_id": "obs-retentativa",
+    "configuracao_id": "controle-local-v1",
+    "mudanca": "MC-01",
+    "condicao": "D0",
+    "repeticao_sintetica": 100,
+    "payload_sha256": "ee80d93e8b54c4737d58de0a4ed5011adea409b2d35b04d9540bc2311b83a07f"
+  }
+]

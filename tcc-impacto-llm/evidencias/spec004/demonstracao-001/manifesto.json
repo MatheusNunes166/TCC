@@ -1,0 +1,9 @@
+{
+  "origem": "sintetica",
+  "completo_no_escopo_offline": true,
+  "isolamento_real_demonstrado": false,
+  "modelos": null,
+  "llm_chamadas": 0,
+  "piloto": false,
+  "limite": "Nao e fechamento integral; T014/T015 e dependentes pendentes."
+}

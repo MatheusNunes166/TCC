@@ -1,0 +1,10 @@
+{
+  "causa": "lista/ordem de arquivos nao permitida",
+  "completo": false,
+  "contrato": "spec004-v2",
+  "instante_utc": "2026-10-27T20:32:52.319537+00:00",
+  "liberado_para_pesquisa": false,
+  "montador_sha256": "ecd17862ae28eb7651f7f31c4566a7fc28c5115301d270b6dc6775ba7ff1d28d",
+  "preparacao_id": "fe059e70812142059832e48bbbc04619",
+  "status": "BLOQUEADO"
+}

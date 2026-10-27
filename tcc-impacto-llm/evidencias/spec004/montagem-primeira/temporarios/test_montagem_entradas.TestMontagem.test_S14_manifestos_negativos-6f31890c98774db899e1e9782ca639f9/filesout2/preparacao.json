@@ -1,0 +1,10 @@
+{
+  "causa": "arquivo extra/ausente no pacote",
+  "completo": false,
+  "contrato": "spec004-v2",
+  "instante_utc": "2026-10-27T20:28:29.433312+00:00",
+  "liberado_para_pesquisa": false,
+  "montador_sha256": "231062f7d1f960e0c184fdb458002d383e7a2da3d410fbe02e726bfca1c3a7f2",
+  "preparacao_id": "4b3d93f8b312454db19f37cbad21c653",
+  "status": "BLOQUEADO"
+}

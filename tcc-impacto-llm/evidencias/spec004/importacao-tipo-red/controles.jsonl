@@ -1,0 +1,2 @@
+{"caso": "escrita-parcial", "conforme": true, "esperado": [2, false], "familia": "S-13", "observado": [2, false], "origem": "sintetica"}
+{"caso": "vinculo-quebrado", "conforme": true, "esperado": 2, "familia": "S-13", "observado": 2, "origem": "sintetica"}

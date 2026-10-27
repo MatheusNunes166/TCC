@@ -1,0 +1,32 @@
+<<<inicio:sistema>>>
+Use somente este material ficticio. Retorne JSON de IDs.
+
+<<<fim:sistema>>>
+<<<inicio:definicoes-comuns>>>
+Definicoes ficticias comuns; sem selecao resolvida.
+
+<<<fim:definicoes-comuns>>>
+<<<inicio:requisitos-baseline>>>
+RF-01 a RF-04 identificam regras ficticias.
+
+<<<fim:requisitos-baseline>>>
+<<<inicio:catalogo-baseline>>>
+T01 a T12 identificam casos ficticios; sem selecao apos mudanca.
+
+<<<fim:catalogo-baseline>>>
+<<<inicio:mudanca>>>
+Retirar uma concessao ficticia, isoladamente.
+
+<<<fim:mudanca>>>
+<<<inicio:notas>>>
+Observacoes ficticias para controle de composicao; rascunho.
+
+<<<fim:notas>>>
+<<<inicio:pedido>>>
+Selecione IDs.
+
+<<<fim:pedido>>>
+<<<inicio:schema_saida>>>
+{"type":"object","required":["requisitos","testes"],"additionalProperties":false,"properties":{"requisitos":{"type":"array","items":{"type":"string"}},"testes":{"type":"array","items":{"type":"string"}}}}
+
+<<<fim:schema_saida>>>

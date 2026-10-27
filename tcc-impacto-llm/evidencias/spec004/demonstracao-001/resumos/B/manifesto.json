@@ -1,0 +1,45 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "lista-original.json",
+      "sha256": "b5c8e1ddcea35c6d0bb3a1b5ec0aea70eae4aff0789d13854435b70058a0a0e6"
+    },
+    {
+      "arquivo": "planejadas-original.json",
+      "sha256": "3c42c3688825207e30e1ead509afb780e1ed426606b517125027e3c35781e473"
+    },
+    {
+      "arquivo": "avaliacoes\\0000.json",
+      "sha256": "6d73b337dc2633e6be497fec97331bcb915c45c05c9fa1abc652bdeb7694aa0e"
+    },
+    {
+      "arquivo": "avaliacoes\\0001.json",
+      "sha256": "e019e37f7c8b07136c05621c4481aab3b1d5096070ecb7cc5786cbac3e4dce23"
+    },
+    {
+      "arquivo": "resumo.json",
+      "sha256": "c367eb16e4e4583eddd3db7ef78e26bee04cfa8c431bc5c3b1e64562c610c5c2"
+    }
+  ],
+  "completo": true,
+  "fontes": [
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\listas\\B\\avaliacoes.json",
+      "sha256": "b5c8e1ddcea35c6d0bb3a1b5ec0aea70eae4aff0789d13854435b70058a0a0e6"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\listas\\B\\planejadas.json",
+      "sha256": "3c42c3688825207e30e1ead509afb780e1ed426606b517125027e3c35781e473"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\listas\\B\\avaliacao-0.json",
+      "sha256": "6d73b337dc2633e6be497fec97331bcb915c45c05c9fa1abc652bdeb7694aa0e"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\listas\\B\\avaliacao-1.json",
+      "sha256": "e019e37f7c8b07136c05621c4481aab3b1d5096070ecb7cc5786cbac3e4dce23"
+    }
+  ],
+  "origem": "sintetica",
+  "retorno": 0
+}

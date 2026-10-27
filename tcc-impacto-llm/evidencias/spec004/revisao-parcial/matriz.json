@@ -1,0 +1,2098 @@
+{
+  "origem": "sintetica",
+  "fechamento_integral": false,
+  "familias": [
+    {
+      "familia": "S-01",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "exata: TP/FP/FN e PRF independentes"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "requisitos-contagens",
+          "conforme": true,
+          "esperado": [
+            1,
+            0,
+            0
+          ],
+          "familia": "S-01",
+          "observado": [
+            1,
+            0,
+            0
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "requisitos-prf",
+          "conforme": true,
+          "esperado": [
+            "1",
+            "1",
+            "1"
+          ],
+          "familia": "S-01",
+          "observado": [
+            "1",
+            "1",
+            "1"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-contagens",
+          "conforme": true,
+          "esperado": [
+            2,
+            0,
+            0
+          ],
+          "familia": "S-01",
+          "observado": [
+            2,
+            0,
+            0
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-prf",
+          "conforme": true,
+          "esperado": [
+            "1",
+            "1",
+            "1"
+          ],
+          "familia": "S-01",
+          "observado": [
+            "1",
+            "1",
+            "1"
+          ],
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    },
+    {
+      "familia": "S-02",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "parcial: 1/0/1, 1, 1/2, 2/3 em testes",
+        "retorno CLI 0 para selecao incorreta"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "cli-incorreta-nao-falha",
+          "conforme": true,
+          "esperado": 0,
+          "familia": "S-02",
+          "observado": 0,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "requisitos-contagens",
+          "conforme": true,
+          "esperado": [
+            1,
+            0,
+            0
+          ],
+          "familia": "S-02",
+          "observado": [
+            1,
+            0,
+            0
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "requisitos-prf",
+          "conforme": true,
+          "esperado": [
+            "1",
+            "1",
+            "1"
+          ],
+          "familia": "S-02",
+          "observado": [
+            "1",
+            "1",
+            "1"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-contagens",
+          "conforme": true,
+          "esperado": [
+            1,
+            0,
+            1
+          ],
+          "familia": "S-02",
+          "observado": [
+            1,
+            0,
+            1
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-prf",
+          "conforme": true,
+          "esperado": [
+            "1",
+            "1/2",
+            "2/3"
+          ],
+          "familia": "S-02",
+          "observado": [
+            "1",
+            "1/2",
+            "2/3"
+          ],
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    },
+    {
+      "familia": "S-03",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "todos: 1/3/0 RF e 2/10/0 testes, fracoes literais"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "requisitos-contagens",
+          "conforme": true,
+          "esperado": [
+            1,
+            3,
+            0
+          ],
+          "familia": "S-03",
+          "observado": [
+            1,
+            3,
+            0
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "requisitos-prf",
+          "conforme": true,
+          "esperado": [
+            "1/4",
+            "1",
+            "2/5"
+          ],
+          "familia": "S-03",
+          "observado": [
+            "1/4",
+            "1",
+            "2/5"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-contagens",
+          "conforme": true,
+          "esperado": [
+            2,
+            10,
+            0
+          ],
+          "familia": "S-03",
+          "observado": [
+            2,
+            10,
+            0
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-prf",
+          "conforme": true,
+          "esperado": [
+            "1/6",
+            "1",
+            "2/7"
+          ],
+          "familia": "S-03",
+          "observado": [
+            "1/6",
+            "1",
+            "2/7"
+          ],
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    },
+    {
+      "familia": "S-04",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "duas listas vazias validas: omissoes e zeros"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "requisitos-contagens",
+          "conforme": true,
+          "esperado": [
+            0,
+            0,
+            1
+          ],
+          "familia": "S-04",
+          "observado": [
+            0,
+            0,
+            1
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "requisitos-prf",
+          "conforme": true,
+          "esperado": [
+            "0",
+            "0",
+            "0"
+          ],
+          "familia": "S-04",
+          "observado": [
+            "0",
+            "0",
+            "0"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-contagens",
+          "conforme": true,
+          "esperado": [
+            0,
+            0,
+            2
+          ],
+          "familia": "S-04",
+          "observado": [
+            0,
+            0,
+            2
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-prf",
+          "conforme": true,
+          "esperado": [
+            "0",
+            "0",
+            "0"
+          ],
+          "familia": "S-04",
+          "observado": [
+            "0",
+            "0",
+            "0"
+          ],
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    },
+    {
+      "familia": "S-05",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "ordem",
+        "duplicatas exatas",
+        "posicoes a partir de zero",
+        "escape JSON legitimo"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "requisitos-contagens",
+          "conforme": true,
+          "esperado": [
+            1,
+            0,
+            0
+          ],
+          "familia": "S-05",
+          "observado": [
+            1,
+            0,
+            0
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "requisitos-prf",
+          "conforme": true,
+          "esperado": [
+            "1",
+            "1",
+            "1"
+          ],
+          "familia": "S-05",
+          "observado": [
+            "1",
+            "1",
+            "1"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-contagens",
+          "conforme": true,
+          "esperado": [
+            2,
+            0,
+            0
+          ],
+          "familia": "S-05",
+          "observado": [
+            2,
+            0,
+            0
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-prf",
+          "conforme": true,
+          "esperado": [
+            "1",
+            "1",
+            "1"
+          ],
+          "familia": "S-05",
+          "observado": [
+            "1",
+            "1",
+            "1"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "posicoes-repetidas",
+          "conforme": true,
+          "esperado": [
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "familia": "S-05",
+          "observado": [
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    },
+    {
+      "familia": "S-06",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "desconhecidos unicos RF/testes",
+        "duplicata desconhecida nao duplica FP",
+        "FP preserva denominador"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "requisitos-contagens",
+          "conforme": true,
+          "esperado": [
+            1,
+            1,
+            0
+          ],
+          "familia": "S-06",
+          "observado": [
+            1,
+            1,
+            0
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "requisitos-prf",
+          "conforme": true,
+          "esperado": [
+            "1/2",
+            "1",
+            "2/3"
+          ],
+          "familia": "S-06",
+          "observado": [
+            "1/2",
+            "1",
+            "2/3"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-contagens",
+          "conforme": true,
+          "esperado": [
+            2,
+            1,
+            0
+          ],
+          "familia": "S-06",
+          "observado": [
+            2,
+            1,
+            0
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-prf",
+          "conforme": true,
+          "esperado": [
+            "2/3",
+            "1",
+            "4/5"
+          ],
+          "familia": "S-06",
+          "observado": [
+            "2/3",
+            "1",
+            "4/5"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "desconhecidos",
+          "conforme": true,
+          "esperado": [
+            [
+              "RF-99"
+            ],
+            [
+              "T99"
+            ]
+          ],
+          "familia": "S-06",
+          "observado": [
+            [
+              "RF-99"
+            ],
+            [
+              "T99"
+            ]
+          ],
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    },
+    {
+      "familia": "S-07",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "caixa",
+        "espaco inicial/final",
+        "string vazia",
+        "ID aproximado sem correcao"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "requisitos-contagens",
+          "conforme": true,
+          "esperado": [
+            0,
+            1,
+            1
+          ],
+          "familia": "S-07",
+          "observado": [
+            0,
+            1,
+            1
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "requisitos-prf",
+          "conforme": true,
+          "esperado": [
+            "0",
+            "0",
+            "0"
+          ],
+          "familia": "S-07",
+          "observado": [
+            "0",
+            "0",
+            "0"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-contagens",
+          "conforme": true,
+          "esperado": [
+            0,
+            1,
+            2
+          ],
+          "familia": "S-07",
+          "observado": [
+            0,
+            1,
+            2
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-prf",
+          "conforme": true,
+          "esperado": [
+            "0",
+            "0",
+            "0"
+          ],
+          "familia": "S-07",
+          "observado": [
+            "0",
+            "0",
+            "0"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "id-' RF-02'",
+          "conforme": true,
+          "esperado": [
+            0,
+            1,
+            1
+          ],
+          "familia": "S-07",
+          "observado": [
+            0,
+            1,
+            1
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "id-'RF-02 '",
+          "conforme": true,
+          "esperado": [
+            0,
+            1,
+            1
+          ],
+          "familia": "S-07",
+          "observado": [
+            0,
+            1,
+            1
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "id-''",
+          "conforme": true,
+          "esperado": [
+            0,
+            1,
+            1
+          ],
+          "familia": "S-07",
+          "observado": [
+            0,
+            1,
+            1
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "id-'rf-02'",
+          "conforme": true,
+          "esperado": [
+            0,
+            1,
+            1
+          ],
+          "familia": "S-07",
+          "observado": [
+            0,
+            1,
+            1
+          ],
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    },
+    {
+      "familia": "S-08",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "IDs trocados entre dimensoes, sem transferencia"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "requisitos-contagens",
+          "conforme": true,
+          "esperado": [
+            0,
+            1,
+            1
+          ],
+          "familia": "S-08",
+          "observado": [
+            0,
+            1,
+            1
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "requisitos-prf",
+          "conforme": true,
+          "esperado": [
+            "0",
+            "0",
+            "0"
+          ],
+          "familia": "S-08",
+          "observado": [
+            "0",
+            "0",
+            "0"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-contagens",
+          "conforme": true,
+          "esperado": [
+            0,
+            1,
+            2
+          ],
+          "familia": "S-08",
+          "observado": [
+            0,
+            1,
+            2
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-prf",
+          "conforme": true,
+          "esperado": [
+            "0",
+            "0",
+            "0"
+          ],
+          "familia": "S-08",
+          "observado": [
+            "0",
+            "0",
+            "0"
+          ],
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    },
+    {
+      "familia": "S-09",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "arquivo vazio recebido",
+        "objeto sem chaves",
+        "chave ausente",
+        "chave extra",
+        "null",
+        "objeto em vez de lista",
+        "item numerico",
+        "item bool",
+        "item objeto",
+        "chave repetida",
+        "cercas Markdown",
+        "recusa textual",
+        "truncamento",
+        "BOM",
+        "UTF-8 invalido",
+        "NaN",
+        "Infinity",
+        "texto residual",
+        "positivo espacos/escape JSON"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "invalida-0",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-1",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-2",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-3",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-4",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-5",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-6",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-7",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-8",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-9",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-10",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-11",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-12",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-13",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-14",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-15",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-16",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "invalida-17",
+          "conforme": true,
+          "esperado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "familia": "S-09",
+          "observado": [
+            "resposta_formato_invalido",
+            null,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "escape-legitimo-espacos",
+          "conforme": true,
+          "esperado": [
+            "RF-02"
+          ],
+          "familia": "S-09",
+          "observado": [
+            "RF-02"
+          ],
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    },
+    {
+      "familia": "S-10",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "RF vazia com testes exatos, sem compensacao"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "requisitos-contagens",
+          "conforme": true,
+          "esperado": [
+            0,
+            0,
+            1
+          ],
+          "familia": "S-10",
+          "observado": [
+            0,
+            0,
+            1
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "requisitos-prf",
+          "conforme": true,
+          "esperado": [
+            "0",
+            "0",
+            "0"
+          ],
+          "familia": "S-10",
+          "observado": [
+            "0",
+            "0",
+            "0"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-contagens",
+          "conforme": true,
+          "esperado": [
+            2,
+            0,
+            0
+          ],
+          "familia": "S-10",
+          "observado": [
+            2,
+            0,
+            0
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "testes-prf",
+          "conforme": true,
+          "esperado": [
+            "1",
+            "1",
+            "1"
+          ],
+          "familia": "S-10",
+          "observado": [
+            "1",
+            "1",
+            "1"
+          ],
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    },
+    {
+      "familia": "S-11",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "ausencia",
+        "fragmento invalido",
+        "fragmento parseavel continua tecnico",
+        "sem selecao/escores"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "0",
+          "conforme": true,
+          "esperado": [
+            1,
+            "falha_tecnica",
+            null
+          ],
+          "familia": "S-11",
+          "observado": [
+            1,
+            "falha_tecnica",
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "1",
+          "conforme": true,
+          "esperado": [
+            1,
+            "falha_tecnica",
+            null
+          ],
+          "familia": "S-11",
+          "observado": [
+            1,
+            "falha_tecnica",
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "2",
+          "conforme": true,
+          "esperado": [
+            1,
+            "falha_tecnica",
+            null
+          ],
+          "familia": "S-11",
+          "observado": [
+            1,
+            "falha_tecnica",
+            null
+          ],
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    },
+    {
+      "familia": "S-12",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "G vazio",
+        "versao ausente",
+        "status ausente",
+        "mudanca ausente",
+        "mudanca duplicada",
+        "ID esperado duplicado",
+        "ID esperado desconhecido",
+        "tipo errado",
+        "alias documental MC-04",
+        "rfs/tests independentes de changed/expected/preserved"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "0",
+          "conforme": true,
+          "esperado": [
+            "erro_referencia",
+            null
+          ],
+          "familia": "S-12",
+          "observado": [
+            "erro_referencia",
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "1",
+          "conforme": true,
+          "esperado": [
+            "erro_referencia",
+            null
+          ],
+          "familia": "S-12",
+          "observado": [
+            "erro_referencia",
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "2",
+          "conforme": true,
+          "esperado": [
+            "erro_referencia",
+            null
+          ],
+          "familia": "S-12",
+          "observado": [
+            "erro_referencia",
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "3",
+          "conforme": true,
+          "esperado": [
+            "erro_referencia",
+            null
+          ],
+          "familia": "S-12",
+          "observado": [
+            "erro_referencia",
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "4",
+          "conforme": true,
+          "esperado": [
+            "erro_referencia",
+            null
+          ],
+          "familia": "S-12",
+          "observado": [
+            "erro_referencia",
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "5",
+          "conforme": true,
+          "esperado": [
+            "erro_referencia",
+            null
+          ],
+          "familia": "S-12",
+          "observado": [
+            "erro_referencia",
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "6",
+          "conforme": true,
+          "esperado": [
+            "erro_referencia",
+            null
+          ],
+          "familia": "S-12",
+          "observado": [
+            "erro_referencia",
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "7",
+          "conforme": true,
+          "esperado": [
+            "erro_referencia",
+            null
+          ],
+          "familia": "S-12",
+          "observado": [
+            "erro_referencia",
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "rfs-tests-sem-expected",
+          "conforme": true,
+          "esperado": [
+            "T04",
+            "T12"
+          ],
+          "familia": "S-12",
+          "observado": [
+            "T04",
+            "T12"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "alias-documental",
+          "conforme": true,
+          "esperado": "MC-04-v2",
+          "familia": "S-12",
+          "observado": "MC-04-v2",
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    },
+    {
+      "familia": "S-13",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "pasta repetida",
+        "saida sobreposta",
+        "fonte alterada antes do fechamento",
+        "resposta original invalida preservada",
+        "reavaliacao vinculada",
+        "arquivo removido antes de fechar",
+        "escrita parcial",
+        "vinculo quebrado",
+        "hash na lista de avaliacoes"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "montagem-sem-falso-fechamento",
+          "conforme": true,
+          "esperado": [
+            false,
+            "BLOQUEADO"
+          ],
+          "familia": "S-13",
+          "observado": [
+            false,
+            "BLOQUEADO"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "cli-pasta-repetida",
+          "conforme": true,
+          "esperado": 2,
+          "familia": "S-13",
+          "observado": 2,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "arquivo-removido",
+          "conforme": true,
+          "esperado": [
+            2,
+            false,
+            null
+          ],
+          "familia": "S-13",
+          "observado": [
+            2,
+            false,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "escrita-parcial",
+          "conforme": true,
+          "esperado": [
+            2,
+            false
+          ],
+          "familia": "S-13",
+          "observado": [
+            2,
+            false
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "vinculo-quebrado",
+          "conforme": true,
+          "esperado": 2,
+          "familia": "S-13",
+          "observado": 2,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "original-invalido-exato",
+          "conforme": true,
+          "esperado": "6e616f2065204a534f4e0d0a",
+          "familia": "S-13",
+          "observado": "6e616f2065204a534f4e0d0a",
+          "origem": "sintetica"
+        },
+        {
+          "caso": "reavaliacao-vinculada",
+          "conforme": true,
+          "esperado": "fa41db30e563451d8b22f42b6e2e0c35",
+          "familia": "S-13",
+          "observado": "fa41db30e563451d8b22f42b6e2e0c35",
+          "origem": "sintetica"
+        },
+        {
+          "caso": "rechecagem-final",
+          "conforme": true,
+          "esperado": [
+            2,
+            false,
+            "erro_integridade"
+          ],
+          "familia": "S-13",
+          "observado": [
+            2,
+            false,
+            "erro_integridade"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "cli-lista-hash",
+          "conforme": true,
+          "esperado": 2,
+          "familia": "S-13",
+          "observado": 2,
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    },
+    {
+      "familia": "S-14",
+      "origem": "sintetica",
+      "estado": "parcial",
+      "previstos": [
+        "extra/ausente",
+        "nota extra D0",
+        "nota ausente D1",
+        "revisao pendente/reprovada",
+        "papel/caminho duplicado",
+        "hash/tamanho/versao",
+        "condicao",
+        "rascunho/liberacao",
+        "path absoluto/traversal/subdiretorio",
+        "quatro payloads literais",
+        "comuns e notas identicos",
+        "junction interna real",
+        "junction externa real",
+        "bit reparse logico",
+        "symlink interno/externo real (pendente WinError1314)",
+        "identidade restrita e negacao de leitura real (pendente runner)"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "cli-local",
+          "conforme": true,
+          "esperado": 0,
+          "familia": "S-14",
+          "observado": 0,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "payload-D0",
+          "conforme": true,
+          "esperado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a64697265746f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "familia": "S-14",
+          "observado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a64697265746f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "origem": "sintetica"
+        },
+        {
+          "caso": "status-D0",
+          "conforme": true,
+          "esperado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "ausentes"
+          ],
+          "familia": "S-14",
+          "observado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "ausentes"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "payload-D1",
+          "conforme": true,
+          "esperado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a6e6f7461733e3e3e0a6e6f74612073696e74657469636120656d2072617363756e686f0d0a0a3c3c3c66696d3a6e6f7461733e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a64697265746f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "familia": "S-14",
+          "observado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a6e6f7461733e3e3e0a6e6f74612073696e74657469636120656d2072617363756e686f0d0a0a3c3c3c66696d3a6e6f7461733e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a64697265746f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "origem": "sintetica"
+        },
+        {
+          "caso": "status-D1",
+          "conforme": true,
+          "esperado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "RASCUNHO_NAO_REVISADO"
+          ],
+          "familia": "S-14",
+          "observado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "RASCUNHO_NAO_REVISADO"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "payload-E0",
+          "conforme": true,
+          "esperado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a657374727574757261646f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "familia": "S-14",
+          "observado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a657374727574757261646f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "origem": "sintetica"
+        },
+        {
+          "caso": "status-E0",
+          "conforme": true,
+          "esperado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "ausentes"
+          ],
+          "familia": "S-14",
+          "observado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "ausentes"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "payload-E1",
+          "conforme": true,
+          "esperado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a6e6f7461733e3e3e0a6e6f74612073696e74657469636120656d2072617363756e686f0d0a0a3c3c3c66696d3a6e6f7461733e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a657374727574757261646f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "familia": "S-14",
+          "observado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a6e6f7461733e3e3e0a6e6f74612073696e74657469636120656d2072617363756e686f0d0a0a3c3c3c66696d3a6e6f7461733e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a657374727574757261646f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "origem": "sintetica"
+        },
+        {
+          "caso": "status-E1",
+          "conforme": true,
+          "esperado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "RASCUNHO_NAO_REVISADO"
+          ],
+          "familia": "S-14",
+          "observado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "RASCUNHO_NAO_REVISADO"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "equivalencia-condicoes",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "nota-diferente-diagnosticada",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "junction-real-interno",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "junction-real-externo",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "bit-reparse-logico",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "pendente",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "gabarito-ficticio-reprovado",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "duplicado",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "hash",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "tamanho",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "versao",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "condicao",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "liberacao",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "rascunho",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "absoluto",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "traversal",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "subdiretorio",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "extra",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "ausente",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "nota-D0",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "nota-ausente-D1",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": [
+        "Runner sob identidade separada com negacao real nao provisionado (T014/T015)",
+        "Criacao de symlink real negada: WinError 1314; sem escalada/contorno"
+      ]
+    },
+    {
+      "familia": "S-15",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "tres observacoes e tres pares",
+        "valores de cada par",
+        "media RF1/3 e testes1/6",
+        "dois vazios",
+        "uma observacao nao calculavel",
+        "desconhecidos na uniao"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "tres-requisitos",
+          "conforme": true,
+          "esperado": [
+            "1/3",
+            3,
+            3
+          ],
+          "familia": "S-15",
+          "observado": [
+            "1/3",
+            3,
+            3
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "tres-testes",
+          "conforme": true,
+          "esperado": [
+            "1/6",
+            3,
+            3
+          ],
+          "familia": "S-15",
+          "observado": [
+            "1/6",
+            3,
+            3
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "pares-individuais",
+          "conforme": true,
+          "esperado": [
+            "1/2",
+            "0",
+            "0"
+          ],
+          "familia": "S-15",
+          "observado": [
+            "1/2",
+            "0",
+            "0"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "desconhecidos-no-Jaccard",
+          "conforme": true,
+          "esperado": [
+            "1/2",
+            "1/2"
+          ],
+          "familia": "S-15",
+          "observado": [
+            "1/2",
+            "1/2"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "menos-duas",
+          "conforme": true,
+          "esperado": [
+            "nao_calculavel",
+            null,
+            0
+          ],
+          "familia": "S-15",
+          "observado": [
+            "nao_calculavel",
+            null,
+            0
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "dois-vazios",
+          "conforme": true,
+          "esperado": "1",
+          "familia": "S-15",
+          "observado": "1",
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    },
+    {
+      "familia": "S-16",
+      "origem": "sintetica",
+      "estado": "conforme_no_escopo_offline",
+      "previstos": [
+        "cenario A",
+        "cenario B com duas tentativas/uma observacao",
+        "segunda falha",
+        "planejada ausente",
+        "imputacao opcional preserva nulos observados",
+        "PONT-01 referencia diferente",
+        "PONT-01 politica diferente",
+        "PONT-02 repeticao duplicada",
+        "PONT-02 duas concluidas",
+        "PONT-02 avaliacao duplicada",
+        "payload diferente na retentativa",
+        "CLI lista explicita hash"
+      ],
+      "registros_de_confronto": [
+        {
+          "caso": "PONT01-referencia",
+          "conforme": true,
+          "esperado": [
+            2,
+            null,
+            2,
+            [
+              "versoes_distintas"
+            ]
+          ],
+          "familia": "S-16",
+          "observado": [
+            2,
+            null,
+            2,
+            [
+              "versoes_distintas"
+            ]
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "PONT01-politica",
+          "conforme": true,
+          "esperado": [
+            2,
+            null,
+            2,
+            [
+              "versoes_distintas"
+            ]
+          ],
+          "familia": "S-16",
+          "observado": [
+            2,
+            null,
+            2,
+            [
+              "versoes_distintas"
+            ]
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "PONT02-mesma-repeticao",
+          "conforme": true,
+          "esperado": [
+            2,
+            []
+          ],
+          "familia": "S-16",
+          "observado": [
+            2,
+            []
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "PONT02-duas-concluidas",
+          "conforme": true,
+          "esperado": [
+            2,
+            []
+          ],
+          "familia": "S-16",
+          "observado": [
+            2,
+            []
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "PONT02-duplicada-lista",
+          "conforme": true,
+          "esperado": [
+            2,
+            []
+          ],
+          "familia": "S-16",
+          "observado": [
+            2,
+            []
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "PONT02-payload-retentativa",
+          "conforme": true,
+          "esperado": [
+            2,
+            []
+          ],
+          "familia": "S-16",
+          "observado": [
+            2,
+            []
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "cli-resumo-local",
+          "conforme": true,
+          "esperado": 0,
+          "familia": "S-16",
+          "observado": 0,
+          "origem": "sintetica"
+        },
+        {
+          "caso": "A-contagens",
+          "conforme": true,
+          "esperado": {
+            "A": 3,
+            "C": 2,
+            "I": 1,
+            "K": 1,
+            "N": 3,
+            "T": 1,
+            "V": 1
+          },
+          "familia": "S-16",
+          "observado": {
+            "A": 3,
+            "C": 2,
+            "I": 1,
+            "K": 1,
+            "N": 3,
+            "T": 1,
+            "V": 1
+          },
+          "origem": "sintetica"
+        },
+        {
+          "caso": "A-escores",
+          "conforme": true,
+          "esperado": [
+            "1",
+            "1/2",
+            1
+          ],
+          "familia": "S-16",
+          "observado": [
+            "1",
+            "1/2",
+            1
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "B-contagens",
+          "conforme": true,
+          "esperado": {
+            "A": 2,
+            "C": 1,
+            "I": 0,
+            "K": 1,
+            "N": 1,
+            "T": 0,
+            "V": 1
+          },
+          "familia": "S-16",
+          "observado": {
+            "A": 2,
+            "C": 1,
+            "I": 0,
+            "K": 1,
+            "N": 1,
+            "T": 0,
+            "V": 1
+          },
+          "origem": "sintetica"
+        },
+        {
+          "caso": "segunda-falha",
+          "conforme": true,
+          "esperado": [
+            1,
+            1
+          ],
+          "familia": "S-16",
+          "observado": [
+            1,
+            1
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "caso": "planejada-ausente",
+          "conforme": true,
+          "esperado": [
+            "1/2",
+            1
+          ],
+          "familia": "S-16",
+          "observado": [
+            "1/2",
+            1
+          ],
+          "origem": "sintetica"
+        }
+      ],
+      "pendencias": []
+    }
+  ],
+  "chamadas_llm": 0,
+  "piloto": false,
+  "politica": "ids-proposta-004-v2"
+}

@@ -1,0 +1,183 @@
+{
+  "avaliador_sha256": "51c23bdaa7163fff94816e5ced7bdfb644c38b1541ccb4748ed4e8e42baef56f",
+  "celulas": [
+    {
+      "condicao": "D0",
+      "configuracao_id": "controle-local-v1",
+      "diagnosticos": [],
+      "grupos": [
+        {
+          "ausentes": [],
+          "avaliacoes": [
+            "e8bd9aa4526e416e953667b638fbea23",
+            "e5bd37238a014cb483938fbad19b5752",
+            "7b4bcee76fa945b3a895ab04e09dfa48"
+          ],
+          "contagens": {
+            "A": 3,
+            "C": 2,
+            "I": 1,
+            "K": 1,
+            "N": 3,
+            "T": 1,
+            "V": 1
+          },
+          "exclusoes": [
+            {
+              "motivo": "resposta_formato_invalido",
+              "observacao_id": "obs-invalida"
+            },
+            {
+              "motivo": "falha_tecnica",
+              "observacao_id": "obs-tecnica"
+            }
+          ],
+          "imputacoes": [
+            {
+              "F1_RF_T": 0,
+              "P_RF_T": 0,
+              "R_RF_T": 0,
+              "observacao_id": "obs-invalida",
+              "origem": "imputacao_nao_observacao"
+            }
+          ],
+          "jaccard": {
+            "requisitos": {
+              "estado": "nao_calculavel",
+              "motivo": "n\u00e3o calcul\u00e1vel",
+              "numero_pares": 0,
+              "observacoes": 1,
+              "pares": [],
+              "valor": null
+            },
+            "testes": {
+              "estado": "nao_calculavel",
+              "motivo": "n\u00e3o calcul\u00e1vel",
+              "numero_pares": 0,
+              "observacoes": 1,
+              "pares": [],
+              "valor": null
+            }
+          },
+          "operacional": {
+            "requisitos": {
+              "f1": {
+                "decimal": "0.500000",
+                "denominador": 2,
+                "fracao": "1/2",
+                "numerador": 1
+              },
+              "precisao": {
+                "decimal": "0.500000",
+                "denominador": 2,
+                "fracao": "1/2",
+                "numerador": 1
+              },
+              "revocacao": {
+                "decimal": "0.500000",
+                "denominador": 2,
+                "fracao": "1/2",
+                "numerador": 1
+              }
+            },
+            "testes": {
+              "f1": {
+                "decimal": "0.500000",
+                "denominador": 2,
+                "fracao": "1/2",
+                "numerador": 1
+              },
+              "precisao": {
+                "decimal": "0.500000",
+                "denominador": 2,
+                "fracao": "1/2",
+                "numerador": 1
+              },
+              "revocacao": {
+                "decimal": "0.500000",
+                "denominador": 2,
+                "fracao": "1/2",
+                "numerador": 1
+              }
+            }
+          },
+          "taxas": {
+            "completude": {
+              "decimal": "0.666667",
+              "denominador": 3,
+              "fracao": "2/3",
+              "numerador": 2
+            },
+            "ids_conhecidos": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "validade": {
+              "decimal": "0.500000",
+              "denominador": 2,
+              "fracao": "1/2",
+              "numerador": 1
+            }
+          },
+          "validas": {
+            "requisitos": {
+              "f1": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              },
+              "precisao": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              },
+              "revocacao": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            },
+            "testes": {
+              "f1": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              },
+              "precisao": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              },
+              "revocacao": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            }
+          },
+          "versoes": [
+            "ids-proposta-004-v2",
+            "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+            "sintetica-1",
+            "b65126915d74089bfe2f7f14f1c9ae93180067e2e26d9e650e2346ce40865b2a"
+          ]
+        }
+      ],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    }
+  ],
+  "completo": true,
+  "instante_utc": "2026-10-27T20:30:38.837928+00:00",
+  "origem": "sintetica",
+  "politica": "ids-proposta-004-v2",
+  "resumo_id": "aa62bd610fd841f5a6839dfed82fb84d"
+}

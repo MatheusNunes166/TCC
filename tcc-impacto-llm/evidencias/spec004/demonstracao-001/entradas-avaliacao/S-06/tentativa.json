@@ -1,0 +1,20 @@
+{
+  "observacao_id": "obs-S-06",
+  "tentativa_id": "tent-S-06",
+  "tentativa_anterior": null,
+  "configuracao_id": "controle-local-v1",
+  "mudanca": "MC-01",
+  "condicao": "D0",
+  "repeticao_sintetica": 6,
+  "origem": "sintetica",
+  "modelo_reportado": null,
+  "preparacao_id": "196a6497410144fd98c056d3d2f9d329",
+  "preparacao_sha256": "9df0e92ffcf0042e185a71d4634eeb194b823ca8b841692a0a9b2f614f45ebde",
+  "payload_sha256": "ee80d93e8b54c4737d58de0a4ed5011adea409b2d35b04d9540bc2311b83a07f",
+  "estado_tecnico": "concluida",
+  "causa": null,
+  "fragmento": false,
+  "resposta_arquivo": "resposta.bin",
+  "resposta_sha256": "263e5840f7481e78f3294100b1edab04bd05216c4ee1c8c69a412f63c8b6031c",
+  "resposta_tamanho": 84
+}

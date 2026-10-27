@@ -1,0 +1,57 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "preparacao-original.json",
+      "sha256": "9ffbcfc2bd3afe7fda8e3faa36f8d99b74bccacda3f08e8589a70f1cc807af0b"
+    },
+    {
+      "arquivo": "tentativa-original.json",
+      "sha256": "d56841f2e64fc7b2eb8a4c6da721e3f77ceda4baf7a6d496b0a25f956bae7efb"
+    },
+    {
+      "arquivo": "entrada\\payload.txt",
+      "sha256": "223aa9b06f276a912414604a68372e773e23ee1271b925837bbeab1a89fc410b"
+    },
+    {
+      "arquivo": "resposta-original.bin",
+      "sha256": "6c221d2d4cb284e41a4b46eea54372e83e7c58b855a8a23e18194168ea0784b7"
+    },
+    {
+      "arquivo": "referencia-privada.json",
+      "sha256": "7e0f5c24829f9652d600c9cbe9dbf637b955ab9987fe26488063e128117afdaa"
+    },
+    {
+      "arquivo": "politica-candidata.json",
+      "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c"
+    },
+    {
+      "arquivo": "avaliacao.json",
+      "sha256": "93a37891771294e6ec64004188100e959adfc5c99b4fc10c45819553a98acb13"
+    }
+  ],
+  "completo": true,
+  "fontes": [
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpevnkcn6k\\prep\\preparacao.json",
+      "sha256": "9ffbcfc2bd3afe7fda8e3faa36f8d99b74bccacda3f08e8589a70f1cc807af0b"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpevnkcn6k\\tentativa.json",
+      "sha256": "d56841f2e64fc7b2eb8a4c6da721e3f77ceda4baf7a6d496b0a25f956bae7efb"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpevnkcn6k\\prep\\payload.txt",
+      "sha256": "223aa9b06f276a912414604a68372e773e23ee1271b925837bbeab1a89fc410b"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpevnkcn6k\\resposta.bin",
+      "sha256": "6c221d2d4cb284e41a4b46eea54372e83e7c58b855a8a23e18194168ea0784b7"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpevnkcn6k\\referencia.json",
+      "sha256": "7e0f5c24829f9652d600c9cbe9dbf637b955ab9987fe26488063e128117afdaa"
+    }
+  ],
+  "origem": "sintetica",
+  "retorno": 0
+}

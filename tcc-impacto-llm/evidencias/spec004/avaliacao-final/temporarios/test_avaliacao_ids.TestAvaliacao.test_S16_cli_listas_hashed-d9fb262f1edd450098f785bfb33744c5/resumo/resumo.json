@@ -1,0 +1,121 @@
+{
+  "avaliador_sha256": "0799ec2233782a020d999911e9c68c8d393defdeaa00290be91c5f0d59435eee",
+  "celulas": [
+    {
+      "condicao": "D0",
+      "configuracao_id": "controle-local-v1",
+      "diagnosticos": [],
+      "grupos": [
+        {
+          "ausentes": [],
+          "avaliacoes": [
+            "ava-1"
+          ],
+          "contagens": {
+            "A": 1,
+            "C": 1,
+            "I": 0,
+            "K": 1,
+            "N": 1,
+            "T": 0,
+            "V": 1
+          },
+          "exclusoes": [],
+          "jaccard": {
+            "requisitos": {
+              "estado": "nao_calculavel",
+              "motivo": "n\u00e3o calcul\u00e1vel",
+              "numero_pares": 0,
+              "observacoes": 1,
+              "pares": [],
+              "valor": null
+            },
+            "testes": {
+              "estado": "nao_calculavel",
+              "motivo": "n\u00e3o calcul\u00e1vel",
+              "numero_pares": 0,
+              "observacoes": 1,
+              "pares": [],
+              "valor": null
+            }
+          },
+          "taxas": {
+            "completude": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "ids_conhecidos": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "validade": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "validas": {
+            "requisitos": {
+              "f1": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              },
+              "precisao": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              },
+              "revocacao": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            },
+            "testes": {
+              "f1": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              },
+              "precisao": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              },
+              "revocacao": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            }
+          },
+          "versoes": [
+            "ids-proposta-004-v2",
+            "p1",
+            "sintetica-1",
+            "r1"
+          ]
+        }
+      ],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    }
+  ],
+  "completo": true,
+  "instante_utc": "2026-10-27T20:32:31.387008+00:00",
+  "origem": "sintetica",
+  "politica": "ids-proposta-004-v2",
+  "resumo_id": "f70e6ac860224a9db83be2ee39d8cad3"
+}

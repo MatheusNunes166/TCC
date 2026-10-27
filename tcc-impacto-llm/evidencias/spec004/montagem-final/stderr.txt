@@ -1,0 +1,11 @@
+test_S13_integridade_fechamento_e_pastas (test_montagem_entradas.TestMontagem.test_S13_integridade_fechamento_e_pastas) ... ok
+test_S14_cli (test_montagem_entradas.TestMontagem.test_S14_cli) ... ok
+test_S14_condicoes_payload_literal (test_montagem_entradas.TestMontagem.test_S14_condicoes_payload_literal) ... ok
+test_S14_links_internos_externos_junction_real (test_montagem_entradas.TestMontagem.test_S14_links_internos_externos_junction_real) ... ok
+test_S14_manifestos_negativos (test_montagem_entradas.TestMontagem.test_S14_manifestos_negativos) ... ok
+test_S14_symlinks_reais_quando_disponiveis (test_montagem_entradas.TestMontagem.test_S14_symlinks_reais_quando_disponiveis) ... skipped "Criacao de symlink real indisponivel: [WinError 1314] O cliente não tem o privilégio necessário: 'C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\tmpczettvyo\\\\sym\\\\sistema.txt' -> 'C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\tmpczettvyo\\\\sym\\\\sym-interno'"
+
+----------------------------------------------------------------------
+Ran 6 tests in 35.730s
+
+OK (skipped=1)

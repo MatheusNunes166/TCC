@@ -1,0 +1,11 @@
+{
+  "runner_isolado": "nao provisionado; token atual le referencia, ver ambiente.json",
+  "junctions_internas_externas": "criadas e rejeitadas em controles reais temporarios (sem prova de isolamento de identidade)",
+  "symlinks_reais": "criacao negada pelo Windows, WinError1314; um metodo ignorado",
+  "reparse_generico": "validacao logica de lstat/bit e teste controlado; nao substitui prova de identidade",
+  "tarefas_pendentes": [
+    "T014",
+    "T015"
+  ],
+  "contorno_realizado": false
+}

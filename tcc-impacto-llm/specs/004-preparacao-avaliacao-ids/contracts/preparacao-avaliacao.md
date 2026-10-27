@@ -1,5 +1,7 @@
 # Contrato local proposto — montagem e avaliação de IDs
 
+> Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Isolamento real não demonstrado; T014/T015 e dependentes permanecem pendentes. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
+
 27/10/2026. Interface de arquivos/CLI futura, não API de rede. **Não implementada; comandos abaixo ainda não existem.** Autorização atual termina no planejamento. [Spec](../spec.md), [research](../research.md) e [modelo](../data-model.md) compõem o contrato. Regras científicas continuam candidatas.
 
 ## 1. Fronteiras
@@ -15,7 +17,7 @@ Dois processos sem importação do avaliador pelo montador. Identidade restrita 
 
 ```text
 python -B montagem_entradas.py --pacote <raiz-permitida> --manifesto <manifesto.json> --saida <pasta-nova>
-python -B avaliacao_ids.py avaliar --preparacao <preparacao.json> --tentativa <tentativa.json> --referencia <referencia.json> --saida <pasta-nova>
+python -B avaliacao_ids.py avaliar --preparacao <preparacao.json> --tentativa <tentativa.json> --referencia <referencia.json> --saida <pasta-nova> [--avaliacao-anterior <avaliacao.json>]
 python -B avaliacao_ids.py resumir --avaliacoes <lista-explicita.json> --observacoes <lista-planejada.json> --saida <pasta-nova> [--imputar-invalidas]
 ```
 
@@ -57,7 +59,7 @@ Armazenar payload exato, cópias dos documentos/manifesto e preparação com ver
 
 Preservar resposta original em bytes antes de interpretar e vincular à preparação/tentativa. Resposta ausente é nula; arquivo recebido de zero bytes é presente e inválido. Fragmento de transporte nunca vira resposta concluída. Falha de copiar/ler íntegro é erro técnico do mecanismo, não erro de conteúdo.
 
-Proposta explícita da política `ids-proposta-004-v1`: UTF-8 estrito sem remover BOM; BOM/codificação inválida classificadas como formato inválido, com bytes guardados. Parser rejeita chaves repetidas, NaN/Infinity e texto residual. Espaços JSON externos são aceitos. Usar hooks específicos da biblioteca padrão e validação manual do contrato existente; não implementar JSON Schema genérico.
+Proposta explícita da política `ids-proposta-004-v2`: UTF-8 estrito sem remover BOM; BOM/codificação inválida classificadas como formato inválido, com bytes guardados. Parser rejeita chaves repetidas, NaN/Infinity e texto residual. Espaços JSON externos são aceitos. Usar hooks específicos da biblioteca padrão e validação manual do contrato existente; não implementar JSON Schema genérico.
 
 Objeto final tem exatamente `requisitos` e `testes`, listas cujos itens são strings. Null, número, bool, objeto, campo extra/faltante, explicação/cercas externas ou truncamento invalidam **as duas dimensões**. Não normalizar IDs, reparar JSON, aproveitar parcialmente ou solicitar resposta melhor. Escapes JSON legítimos são decodificados segundo JSON: por exemplo `RF-\u0030\u0032` corresponde à mesma string `RF-02`; isso é interpretação sintática, não correção aproximada. Duplicatas são detectadas após essa decodificação; não aplicar normalização Unicode adicional.
 
@@ -84,7 +86,7 @@ Estas escolhas permanecem sujeitas à fundamentação/revisão científica. Não
 | F1 | 2TP/(2TP+FP+FN); S vazio/G não vazio dá 0. |
 | Seleção completa | 1 se FN=0, senão 0; extra/desconhecido não apaga omissão nem equivale a exatidão. |
 | Correspondência exata | 1 se S=G, senão 0. |
-| Consistência Jaccard | Interseção/união de S de duas observações elegíveis da mesma mudança/condição, por dimensão. Dois S vazios: 1 com omissões/revocação expostas; menos de duas observações elegíveis: indisponível. |
+| Consistência Jaccard | Interseção/união de S de duas observações elegíveis da mesma mudança/condição, por dimensão. Dois S vazios: 1 com omissões/revocação expostas; menos de duas observações elegíveis: não calculável. |
 
 Conservar frações exatas, inclusive médias, e decimal derivado sem arredondamento intermediário; proposta de exibição com seis casas, nunca usada para decidir conformidade. G vazio bloqueia, sem aplicar fórmula alternativa. Desconhecidos permanecem em S também no Jaccard.
 
@@ -115,12 +117,23 @@ Todos com origem `sintetica`, sem modelo, sem piloto. Fixar manualmente G_RF={RF
 | S-11 técnicas | (a) nenhuma resposta: falha técnica, original ausente; (b) fragmento, inclusive JSON incidentalmente parseável: bruto preservado, sem seleção/escore. Ambos fora de V/I, retorno 1 se registro completo. |
 | S-12 referência | Subcasos: G vazio, mudança ausente/duplicada, versão ausente, ID esperado duplicado/desconhecido, lista com tipo errado. Todos erro de referência, retorno 2, sem escore, fonte intacta. Referência sintética fixa válida é controle positivo. Alias MC-04 é mapeamento de mudança, não ID de resposta. |
 | S-13 integridade | Subcasos: payload/original alterado após importação, hash divergente, arquivo removido antes de fechar, escrita parcial, pasta de saída repetida. Detectar, retorno 2, sem fechamento completo; nova avaliação com ID novo preserva a anterior. |
-| S-14 montagem | Subcasos: nome/arquivo extra, path absoluto/../link/junction externo, hash divergente, revisão reprovada por gabarito fictício, notas na condição errada ou ausentes quando exigidas. Bloquear com causa. Controles positivos: quatro condições com comuns iguais e N idêntico D1/E1; notas marcadas rascunho em metadados; leitura negada das sentinelas proibidas na execução restrita. |
-| S-15 Jaccard | S-01×S-02: RF=1,T=1/2; dois S-04 de repetições distintas: 1/1 com FN=1/2 expostos. Para três seleções T={T04,T12},{T04},{}: 3 pares, valores 1/2,0,0, média 1/6; RF={RF-02},{RF-02},{}: média 1/3. Um válido sozinho: sem par, indisponível; inválida/tentativa excluída com causa. |
-| S-16 resumos | Cenário A: N=3,A=3,C=2,V=1,I=1,T=1,K=1,completude=2/3,validade=1/2,conhecidos=1; uma exata, uma inválida e uma falha técnica. P/R/F válido=1, operacional=1/2 por dimensão, técnica sem escore, Jaccard indisponível. Cenário B: N=1,A=2,C=1,V=1,I=0,T=0, primeira tentativa técnica falhou e segunda exata com payload idêntico: taxas=1 e uma única observação. Subcasos: segunda falha (C=0,T=1, taxas de conteúdo indisponíveis), payload diferente na retentativa, duas concluídas para mesmo ID (erro 2), lista planejada com ausente (completude menor, ausência explícita). |
+| S-14 montagem | Subcasos: nome/arquivo extra, path absoluto/../link interno/externo/junction/reparse point, hash divergente, revisão reprovada por gabarito fictício, notas na condição errada ou ausentes quando exigidas. Bloquear com causa. Controles positivos: quatro condições com comuns iguais e N idêntico D1/E1; notas marcadas rascunho em metadados; leitura negada das sentinelas proibidas na execução restrita. |
+| S-15 Jaccard | S-01×S-02: RF=1,T=1/2; dois S-04 de repetições distintas: 1/1 com FN=1/2 expostos. Para três seleções T={T04,T12},{T04},{}: 3 pares, valores 1/2,0,0, média 1/6; RF={RF-02},{RF-02},{}: média 1/3. Um válido sozinho: sem par, não calculável; inválida/tentativa excluída com causa. |
+| S-16 resumos | Cenário A: N=3,A=3,C=2,V=1,I=1,T=1,K=1,completude=2/3,validade=1/2,conhecidos=1; uma exata, uma inválida e uma falha técnica. P/R/F válido=1, operacional=1/2 por dimensão, técnica sem escore, Jaccard não calculável. Cenário B: N=1,A=2,C=1,V=1,I=0,T=0, primeira tentativa técnica falhou e segunda exata com payload idêntico: taxas=1 e uma única observação. Subcasos: segunda falha (C=0,T=1, taxas de conteúdo indisponíveis), payload diferente na retentativa, duas concluídas para mesmo ID (erro 2), lista planejada com ausente (completude menor, ausência explícita). |
 
 O detalhamento de S-16 adiciona diagnóstico de contrato/identidade; não executa retentativa real. Esperados de contagens, estados ausentes/imputados e frações devem ser conferidos independentemente por leitura das fórmulas, sem usar saídas do código futuro como gabarito.
 
 ## 8. Gates e limites
 
 Saída íntegra/conforme de controle demonstra comportamento técnico local. Não aprova referência, notas, políticas ou medidas. Antes de pesquisa: revisão profissional/científica registrada, notas definitivas, fundamentação/revisão das convenções, fronteira de acesso demonstrada e desenho final do piloto/configuração/orçamento/congelamento próprios. T12 já adotado em B; sem novo pedido de adoção. Sem modelos, rede, coleta, interface/API ou código nesta entrega.
+
+## 9. Convenções candidatas adotadas — D-26
+
+PONT-01/PONT-02 e I1 conforme complemento vigente. `configuracao_id` não vazio e `repeticao_sintetica` inteiro positivo identificam controles locais, sem configuração de provedor. Listas explícitas de importação/resumo usam itens `arquivo`/`sha256`; a lista planejada identifica observação, configuração, mudança, condição, repetição e payload hash. Tentativas técnicas têm no máximo dois IDs encadeados, mesmo payload e uma única resposta concluída. Observações duplicadas, IDs em células diferentes ou reavaliações sem seleção explícita bloqueiam a célula afetada; não deduplicar por pontuação.
+
+Não combinar hashes/versões distintos de política/referência. Resultado contém diagnóstico de mistura e inventários de grupos homogêneos separados, sem média combinada. A tentativa mista não pontua esses grupos; novo resumo requer lista homogênea explícita para não presumir denominadores planejados. Jaccard registra observações elegíveis e pares utilizados por dimensão; menos de duas resulta `estado=nao_calculavel`, `motivo=não calculável`, valor nulo e zero pares. Os subcasos de S-16 cobrem versões misturadas, duplicidade de repetição/observação e tentativas vinculadas; S-14 cobre também links internos, junctions e todos os reparse points. Essas regras são convenções técnicas do pesquisador sujeitas à revisão científica.
+
+## Estado técnico parcial — 27/10/2026
+
+Implementados `montagem_entradas.py` e `avaliacao_ids.py`, sem rede/provedor. Convenções D-26 candidatas, política ids-proposta-004-v2; 39 tarefas independentes concluídas. T014/T015 e T042–T048 pendentes: runner isolado não provisionado e criação de symlink real negada com WinError1314. Não há fechamento integral. [Evidências e limites](../../../evidencias/spec004/revisao-parcial/relatorio.md). As descrições anteriores datadas de planejamento/comandos futuros são históricas; comandos locais agora existentes só preparam/avaliam arquivos sintéticos, sem envio ou piloto. Métricas, notas definitivas, referência e desenho científico continuam sujeitos à revisão. Checklist de qualidade preservada, sem remarcação.
+

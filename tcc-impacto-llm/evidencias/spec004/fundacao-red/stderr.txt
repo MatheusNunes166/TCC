@@ -1,0 +1,21 @@
+test_montagem_entradas (unittest.loader._FailedTest.test_montagem_entradas) ... ERROR
+
+======================================================================
+ERROR: test_montagem_entradas (unittest.loader._FailedTest.test_montagem_entradas)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_montagem_entradas
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Program Files\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_montagem_entradas.py", line 12, in <module>
+    import montagem_entradas as m
+ModuleNotFoundError: No module named 'montagem_entradas'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)

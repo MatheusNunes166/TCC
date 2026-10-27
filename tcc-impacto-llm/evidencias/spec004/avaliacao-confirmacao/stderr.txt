@@ -1,0 +1,19 @@
+test_S01_S02_S09_cli (test_avaliacao_ids.TestAvaliacao.test_S01_S02_S09_cli) ... ok
+test_S01_a_S10_oraculos_literais (test_avaliacao_ids.TestAvaliacao.test_S01_a_S10_oraculos_literais) ... ok
+test_S07_espacos_vazio_caixa (test_avaliacao_ids.TestAvaliacao.test_S07_espacos_vazio_caixa) ... ok
+test_S09_invalida_sem_reparo (test_avaliacao_ids.TestAvaliacao.test_S09_invalida_sem_reparo) ... ok
+test_S11_ausente_fragmento_original (test_avaliacao_ids.TestAvaliacao.test_S11_ausente_fragmento_original) ... ok
+test_S12_referencia_e_alias (test_avaliacao_ids.TestAvaliacao.test_S12_referencia_e_alias) ... ok
+test_S13_arquivo_removido_antes_fechamento (test_avaliacao_ids.TestAvaliacao.test_S13_arquivo_removido_antes_fechamento) ... ok
+test_S13_falha_escrita_e_vinculo (test_avaliacao_ids.TestAvaliacao.test_S13_falha_escrita_e_vinculo) ... ok
+test_S13_originais_fechamento_reavaliacao (test_avaliacao_ids.TestAvaliacao.test_S13_originais_fechamento_reavaliacao) ... ok
+test_S15_jaccard_observacoes_pares (test_avaliacao_ids.TestAvaliacao.test_S15_jaccard_observacoes_pares) ... ok
+test_S16_PONT01_versoes_separadas (test_avaliacao_ids.TestAvaliacao.test_S16_PONT01_versoes_separadas) ... ok
+test_S16_PONT02_duplicidades_tentativas (test_avaliacao_ids.TestAvaliacao.test_S16_PONT02_duplicidades_tentativas) ... ok
+test_S16_cli_listas_hashed (test_avaliacao_ids.TestAvaliacao.test_S16_cli_listas_hashed) ... ok
+test_S16_resumo_A_B_ausencia (test_avaliacao_ids.TestAvaliacao.test_S16_resumo_A_B_ausencia) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.855s
+
+OK

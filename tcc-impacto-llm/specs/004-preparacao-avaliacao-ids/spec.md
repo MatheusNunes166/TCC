@@ -1,5 +1,7 @@
 # Feature Specification: Preparação de entradas e avaliação separada de IDs
 
+> Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Isolamento real não demonstrado; T014/T015 e dependentes permanecem pendentes. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
+
 > Complemento de planejamento — 27/10/2026 (D-24/D-25): planejamento autorizado em pedido posterior, sem tarefas ou implementação. Spec 004 selecionada e confirmada antes do setup. [Plano](plan.md), [pesquisa local](research.md), [modelo](data-model.md), [contrato](contracts/preparacao-avaliacao.md) e [guia futuro](quickstart.md) preparados. FR-012, SC-007 e premissas de somente Spec/checklist/seletor 003 abaixo registram o alcance histórico da entrega inicial; o pedido atual os supera somente quanto aos artefatos de planejamento/seleção. Requisitos funcionais, controles, referência e pendências científicas preservados. Nenhum controle, envio, coleta ou piloto executado.
 
 **Feature Directory**: `specs/004-preparacao-avaliacao-ids` (sem criação de branch)
@@ -139,7 +141,7 @@ Por dimensão: G é o conjunto esperado; S contém strings distintas indicadas, 
 
 Propostas existentes: precisão = TP/(TP+FP), revocação = TP/(TP+FN), F1 = 2TP/(2TP+FP+FN). Para S vazio/G não vazio, convenção proposta zero nas três. Não arredondar antes das contagens/cálculos; identificar regra de apresentação. Não pontuar texto explicativo, código, diffs ou semelhança textual; não combinar RFs/testes em escore único.
 
-Consistência de Jaccard = \|Sᵢ∩Sⱼ\|/\|Sᵢ∪Sⱼ\| continua proposta: pares de respostas concluídas de formato válido da mesma mudança/condição, repetições distintas, por dimensão, informando pares elegíveis/usados. Dois conjuntos vazios dão 1 pela convenção candidata, sem significar qualidade: mostrar revocação zero perante G não vazio. Menos de duas respostas elegíveis dá indisponível, não zero. Desconhecidos permanecem no conjunto e são expostos. Não se criam repetições experimentais agora.
+Consistência de Jaccard = \|Sᵢ∩Sⱼ\|/\|Sᵢ∪Sⱼ\| continua proposta: pares de respostas concluídas de formato válido da mesma mudança/condição, repetições distintas, por dimensão, informando pares elegíveis/usados. Dois conjuntos vazios dão 1 pela convenção candidata, sem significar qualidade: mostrar revocação zero perante G não vazio. Menos de duas respostas elegíveis informa “não calculável”, com valor nulo e observações/pares explícitos. Desconhecidos permanecem no conjunto e são expostos. Não se criam repetições experimentais agora.
 
 São hipóteses operacionais para conferir controles, não fundamentação bibliográfica nova, aprovação do orientador ou protocolo definitivo. Revisão pode exigir nova versão antes de piloto; o avaliador deverá identificar qual versão calculou. Redução de testes/economia de tempo não são critérios de sucesso desta Spec.
 
@@ -162,7 +164,7 @@ Referência de controle prévia: G_RF={`RF-02`}, G_T={`T04`,`T12`}. Usa IDs exis
 | S-11 falha técnica | Sem resposta; outro subcaso com fragmento incompleto | Erro registrado, sem seleção, métrica ou resposta fabricada. |
 | S-12 referência defeituosa | Subcasos: G vazio, mudança ausente, ID esperado duplicado/desconhecido | Bloquear por referência; não alterar candidata original. |
 | S-13 integridade | Subcasos: entrada/resposta alterada, escrita incompleta, tentativa repetida | Detectar erro, impedir fechamento completo, preservar originais; nova tentativa tem ID/vínculo próprios. |
-| S-14 montagem/isolamento | Subcasos: arquivo extra, caminho/link externo, hash diferente, gabarito no conteúdo, notas na condição errada | Bloquear cada caso; montagem íntegra/revisada é controle positivo. Usar arquivos fictícios marcados nos controles negativos, sem dar acesso real à referência. |
+| S-14 montagem/isolamento | Subcasos: arquivo extra, caminho externo ou link interno/externo, junction/reparse point, hash diferente, gabarito no conteúdo, notas na condição errada | Bloquear cada caso; montagem íntegra/revisada é controle positivo. Usar arquivos fictícios marcados nos controles negativos, sem dar acesso real à referência. |
 | S-15 consistência | S-01 × S-02; S-04 × S-04 de repetições sintéticas distintas; par com inválida; só uma elegível | Jaccard RF=1/testes=1/2 no primeiro; 1/1 no vazio, com omissões expostas; inválida excluída com denominador; uma elegível dá indisponível. |
 | S-16 resumo/retentativa | Uma exata, uma inválida, uma falha técnica; simular transporte e uma retentativa vinculada com mesmo payload | Denominadores explícitos; resumo válido só exata; operacional distingue zero imputado e falha sem escore; tentativas não viram repetições adicionais. |
 
@@ -201,3 +203,8 @@ Metas futuras, não resultados realizados:
 - **Demonstração e pesquisa:** MC-01/MC-04 são exemplos do [roteiro](../../documentacao/roteiro-demonstracao-spec003.md), sem decidir piloto. Exportação permitida e isolamento precisam de implementação/verificação/revisão próprias; documentação não libera experimento.
 
 Fonte da orientação e classificação de pedidos/sugestões/decisões abertas: [encaminhamentos](../../documentacao/encaminhamentos-orientacao-21-10-2026.md). Esta Spec contém exemplos resolvidos e é excluída do contexto do LLM avaliado.
+
+## Estado técnico parcial — 27/10/2026
+
+Implementados `montagem_entradas.py` e `avaliacao_ids.py`, sem rede/provedor. Convenções D-26 candidatas, política ids-proposta-004-v2; 39 tarefas independentes concluídas. T014/T015 e T042–T048 pendentes: runner isolado não provisionado e criação de symlink real negada com WinError1314. Não há fechamento integral. [Evidências e limites](../../evidencias/spec004/revisao-parcial/relatorio.md). As descrições anteriores datadas de planejamento/comandos futuros são históricas; comandos locais agora existentes só preparam/avaliam arquivos sintéticos, sem envio ou piloto. Métricas, notas definitivas, referência e desenho científico continuam sujeitos à revisão. Checklist de qualidade preservada, sem remarcação.
+

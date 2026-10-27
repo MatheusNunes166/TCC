@@ -1,0 +1,1149 @@
+{
+  "avaliador_sha256": "51c23bdaa7163fff94816e5ced7bdfb644c38b1541ccb4748ed4e8e42baef56f",
+  "celulas": [
+    {
+      "condicao": "D0",
+      "configuracao_id": "controle-local-v1",
+      "diagnosticos": [],
+      "grupos": [
+        {
+          "ausentes": [],
+          "avaliacoes": [
+            "e8bd9aa4526e416e953667b638fbea23",
+            "b73c567b4ea6412eb85ba8c73bae9751",
+            "ad44ae11b33f4ed2959285ce33e7b57a",
+            "10569751aed74c9bbe39ae5fafdb759c",
+            "1454ac56e7a548a7ad157a2e59a740ee",
+            "8cd056eadc5848708e3d57522e80846a",
+            "1c59c68982534b478e9381b7a1155cf9",
+            "1a5bec36696d455e89d7f41a3bce227a",
+            "e57b72a5063c4791b4c9950ae97e6901"
+          ],
+          "contagens": {
+            "A": 9,
+            "C": 9,
+            "I": 0,
+            "K": 6,
+            "N": 9,
+            "T": 0,
+            "V": 9
+          },
+          "exclusoes": [],
+          "jaccard": {
+            "requisitos": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 36,
+              "observacoes": 9,
+              "pares": [
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-02"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-03"
+                  ],
+                  "uniao": 4,
+                  "valor": {
+                    "decimal": "0.250000",
+                    "denominador": 4,
+                    "fracao": "1/4",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-04"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-05"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-06"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.500000",
+                    "denominador": 2,
+                    "fracao": "1/2",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-07"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-08"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-10"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-02",
+                    "obs-S-03"
+                  ],
+                  "uniao": 4,
+                  "valor": {
+                    "decimal": "0.250000",
+                    "denominador": 4,
+                    "fracao": "1/4",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-02",
+                    "obs-S-04"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-02",
+                    "obs-S-05"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-02",
+                    "obs-S-06"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.500000",
+                    "denominador": 2,
+                    "fracao": "1/2",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-02",
+                    "obs-S-07"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-02",
+                    "obs-S-08"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-02",
+                    "obs-S-10"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-03",
+                    "obs-S-04"
+                  ],
+                  "uniao": 4,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-03",
+                    "obs-S-05"
+                  ],
+                  "uniao": 4,
+                  "valor": {
+                    "decimal": "0.250000",
+                    "denominador": 4,
+                    "fracao": "1/4",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-03",
+                    "obs-S-06"
+                  ],
+                  "uniao": 5,
+                  "valor": {
+                    "decimal": "0.200000",
+                    "denominador": 5,
+                    "fracao": "1/5",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-03",
+                    "obs-S-07"
+                  ],
+                  "uniao": 5,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-03",
+                    "obs-S-08"
+                  ],
+                  "uniao": 5,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-03",
+                    "obs-S-10"
+                  ],
+                  "uniao": 4,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-04",
+                    "obs-S-05"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-04",
+                    "obs-S-06"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-04",
+                    "obs-S-07"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-04",
+                    "obs-S-08"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-04",
+                    "obs-S-10"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-05",
+                    "obs-S-06"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.500000",
+                    "denominador": 2,
+                    "fracao": "1/2",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-05",
+                    "obs-S-07"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-05",
+                    "obs-S-08"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-05",
+                    "obs-S-10"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-06",
+                    "obs-S-07"
+                  ],
+                  "uniao": 3,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-06",
+                    "obs-S-08"
+                  ],
+                  "uniao": 3,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-06",
+                    "obs-S-10"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-07",
+                    "obs-S-08"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-07",
+                    "obs-S-10"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-08",
+                    "obs-S-10"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "0.179167",
+                "denominador": 240,
+                "fracao": "43/240",
+                "numerador": 43
+              }
+            },
+            "testes": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 36,
+              "observacoes": 9,
+              "pares": [
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-02"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.500000",
+                    "denominador": 2,
+                    "fracao": "1/2",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 2,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-03"
+                  ],
+                  "uniao": 12,
+                  "valor": {
+                    "decimal": "0.166667",
+                    "denominador": 6,
+                    "fracao": "1/6",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-04"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 2,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-05"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 2,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-06"
+                  ],
+                  "uniao": 3,
+                  "valor": {
+                    "decimal": "0.666667",
+                    "denominador": 3,
+                    "fracao": "2/3",
+                    "numerador": 2
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-07"
+                  ],
+                  "uniao": 3,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-08"
+                  ],
+                  "uniao": 3,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 2,
+                  "observacoes": [
+                    "obs-S-01",
+                    "obs-S-10"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-02",
+                    "obs-S-03"
+                  ],
+                  "uniao": 12,
+                  "valor": {
+                    "decimal": "0.083333",
+                    "denominador": 12,
+                    "fracao": "1/12",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-02",
+                    "obs-S-04"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-02",
+                    "obs-S-05"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.500000",
+                    "denominador": 2,
+                    "fracao": "1/2",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-02",
+                    "obs-S-06"
+                  ],
+                  "uniao": 3,
+                  "valor": {
+                    "decimal": "0.333333",
+                    "denominador": 3,
+                    "fracao": "1/3",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-02",
+                    "obs-S-07"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-02",
+                    "obs-S-08"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 1,
+                  "observacoes": [
+                    "obs-S-02",
+                    "obs-S-10"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.500000",
+                    "denominador": 2,
+                    "fracao": "1/2",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-03",
+                    "obs-S-04"
+                  ],
+                  "uniao": 12,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 2,
+                  "observacoes": [
+                    "obs-S-03",
+                    "obs-S-05"
+                  ],
+                  "uniao": 12,
+                  "valor": {
+                    "decimal": "0.166667",
+                    "denominador": 6,
+                    "fracao": "1/6",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 2,
+                  "observacoes": [
+                    "obs-S-03",
+                    "obs-S-06"
+                  ],
+                  "uniao": 13,
+                  "valor": {
+                    "decimal": "0.153846",
+                    "denominador": 13,
+                    "fracao": "2/13",
+                    "numerador": 2
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-03",
+                    "obs-S-07"
+                  ],
+                  "uniao": 13,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-03",
+                    "obs-S-08"
+                  ],
+                  "uniao": 13,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 2,
+                  "observacoes": [
+                    "obs-S-03",
+                    "obs-S-10"
+                  ],
+                  "uniao": 12,
+                  "valor": {
+                    "decimal": "0.166667",
+                    "denominador": 6,
+                    "fracao": "1/6",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-04",
+                    "obs-S-05"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-04",
+                    "obs-S-06"
+                  ],
+                  "uniao": 3,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-04",
+                    "obs-S-07"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-04",
+                    "obs-S-08"
+                  ],
+                  "uniao": 1,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-04",
+                    "obs-S-10"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 2,
+                  "observacoes": [
+                    "obs-S-05",
+                    "obs-S-06"
+                  ],
+                  "uniao": 3,
+                  "valor": {
+                    "decimal": "0.666667",
+                    "denominador": 3,
+                    "fracao": "2/3",
+                    "numerador": 2
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-05",
+                    "obs-S-07"
+                  ],
+                  "uniao": 3,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-05",
+                    "obs-S-08"
+                  ],
+                  "uniao": 3,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 2,
+                  "observacoes": [
+                    "obs-S-05",
+                    "obs-S-10"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-06",
+                    "obs-S-07"
+                  ],
+                  "uniao": 4,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-06",
+                    "obs-S-08"
+                  ],
+                  "uniao": 4,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 2,
+                  "observacoes": [
+                    "obs-S-06",
+                    "obs-S-10"
+                  ],
+                  "uniao": 3,
+                  "valor": {
+                    "decimal": "0.666667",
+                    "denominador": 3,
+                    "fracao": "2/3",
+                    "numerador": 2
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-07",
+                    "obs-S-08"
+                  ],
+                  "uniao": 2,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-07",
+                    "obs-S-10"
+                  ],
+                  "uniao": 3,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                },
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "obs-S-08",
+                    "obs-S-10"
+                  ],
+                  "uniao": 3,
+                  "valor": {
+                    "decimal": "0.000000",
+                    "denominador": 1,
+                    "fracao": "0",
+                    "numerador": 0
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "0.210292",
+                "denominador": 5616,
+                "fracao": "1181/5616",
+                "numerador": 1181
+              }
+            }
+          },
+          "taxas": {
+            "completude": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "ids_conhecidos": {
+              "decimal": "0.666667",
+              "denominador": 3,
+              "fracao": "2/3",
+              "numerador": 2
+            },
+            "validade": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "validas": {
+            "requisitos": {
+              "f1": {
+                "decimal": "0.451852",
+                "denominador": 135,
+                "fracao": "61/135",
+                "numerador": 61
+              },
+              "precisao": {
+                "decimal": "0.416667",
+                "denominador": 12,
+                "fracao": "5/12",
+                "numerador": 5
+              },
+              "revocacao": {
+                "decimal": "0.555556",
+                "denominador": 9,
+                "fracao": "5/9",
+                "numerador": 5
+              }
+            },
+            "testes": {
+              "f1": {
+                "decimal": "0.528042",
+                "denominador": 945,
+                "fracao": "499/945",
+                "numerador": 499
+              },
+              "precisao": {
+                "decimal": "0.537037",
+                "denominador": 54,
+                "fracao": "29/54",
+                "numerador": 29
+              },
+              "revocacao": {
+                "decimal": "0.611111",
+                "denominador": 18,
+                "fracao": "11/18",
+                "numerador": 11
+              }
+            }
+          },
+          "versoes": [
+            "ids-proposta-004-v2",
+            "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+            "sintetica-1",
+            "b65126915d74089bfe2f7f14f1c9ae93180067e2e26d9e650e2346ce40865b2a"
+          ]
+        }
+      ],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    }
+  ],
+  "completo": true,
+  "instante_utc": "2026-10-27T20:30:39.360574+00:00",
+  "origem": "sintetica",
+  "politica": "ids-proposta-004-v2",
+  "resumo_id": "ed9d9742db8e4f9b95d9781386126573"
+}

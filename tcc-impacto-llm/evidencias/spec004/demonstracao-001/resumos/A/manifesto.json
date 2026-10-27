@@ -1,0 +1,53 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "lista-original.json",
+      "sha256": "d964c37624dc19a9ec394535a4daa4a4c0516e01026fb60f7f376108140dd68a"
+    },
+    {
+      "arquivo": "planejadas-original.json",
+      "sha256": "bd35abd237eda42c7f0320da38a8aa23be01747b3de66dc80ac8b8ea44b2dbfe"
+    },
+    {
+      "arquivo": "avaliacoes\\0000.json",
+      "sha256": "bb6ab10e5ee0ea9cc6a03bdb8eb1226b55e5c82abdf7b4697b9c7df11ca8bfc2"
+    },
+    {
+      "arquivo": "avaliacoes\\0001.json",
+      "sha256": "29bb27d5780314ca11063d19b096a0b1aaf7a1ccf15b1570ef039df3bd29a4a7"
+    },
+    {
+      "arquivo": "avaliacoes\\0002.json",
+      "sha256": "d1d0d61a1cc62d62d18be86090bedef32908683a2a29eede447eb17bea5ead49"
+    },
+    {
+      "arquivo": "resumo.json",
+      "sha256": "e1961fb11f701d8c5952711918feab081817c24e572937a893b7beaad40da45b"
+    }
+  ],
+  "completo": true,
+  "fontes": [
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\listas\\A\\avaliacoes.json",
+      "sha256": "d964c37624dc19a9ec394535a4daa4a4c0516e01026fb60f7f376108140dd68a"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\listas\\A\\planejadas.json",
+      "sha256": "bd35abd237eda42c7f0320da38a8aa23be01747b3de66dc80ac8b8ea44b2dbfe"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\listas\\A\\avaliacao-0.json",
+      "sha256": "bb6ab10e5ee0ea9cc6a03bdb8eb1226b55e5c82abdf7b4697b9c7df11ca8bfc2"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\listas\\A\\avaliacao-1.json",
+      "sha256": "29bb27d5780314ca11063d19b096a0b1aaf7a1ccf15b1570ef039df3bd29a4a7"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\listas\\A\\avaliacao-2.json",
+      "sha256": "d1d0d61a1cc62d62d18be86090bedef32908683a2a29eede447eb17bea5ead49"
+    }
+  ],
+  "origem": "sintetica",
+  "retorno": 1
+}

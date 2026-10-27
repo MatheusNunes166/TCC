@@ -1,0 +1,37 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "lista-original.json",
+      "sha256": "75e9106ccd56298e320c054cc923ff892519143f29834710976204d233b149ef"
+    },
+    {
+      "arquivo": "planejadas-original.json",
+      "sha256": "a28328d7153660a122773d5477c813b1515d9ac4b4a301a54cd568f5a0f36a21"
+    },
+    {
+      "arquivo": "avaliacoes\\0000.json",
+      "sha256": "33f0bd15ea675a0129d908a33589d0814dfa4384995d7867dd925ac0c9989aa3"
+    },
+    {
+      "arquivo": "resumo.json",
+      "sha256": "db69e04fc8d6a8dbf6693058eba6dc038f23d0f12c97f9fac4e4802e97a42c7e"
+    }
+  ],
+  "completo": true,
+  "fontes": [
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpcvsqq6d6\\lista.json",
+      "sha256": "75e9106ccd56298e320c054cc923ff892519143f29834710976204d233b149ef"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpcvsqq6d6\\planejadas.json",
+      "sha256": "a28328d7153660a122773d5477c813b1515d9ac4b4a301a54cd568f5a0f36a21"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\AppData\\Local\\Temp\\tmpcvsqq6d6\\a0.json",
+      "sha256": "33f0bd15ea675a0129d908a33589d0814dfa4384995d7867dd925ac0c9989aa3"
+    }
+  ],
+  "origem": "sintetica",
+  "retorno": 0
+}

@@ -1,0 +1,113 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "preparacao-original.json",
+      "sha256": "9df0e92ffcf0042e185a71d4634eeb194b823ca8b841692a0a9b2f614f45ebde"
+    },
+    {
+      "arquivo": "tentativa-original.json",
+      "sha256": "d931ba366975514a38e43daf4d0a64c4cb7941f12ae007af227156fe8db510e8"
+    },
+    {
+      "arquivo": "entrada\\manifesto-original.json",
+      "sha256": "69ee7494ea663b7d96a7ea2d502c3a1a71a482cbc5a4a702f67a2275aaae3d51"
+    },
+    {
+      "arquivo": "entrada\\documentos\\sistema.txt",
+      "sha256": "3ebf50cd8798bf9f9a1f246c0a918162f93f33d4e53768a8f31b30b4abd93e32"
+    },
+    {
+      "arquivo": "entrada\\documentos\\definicoes-comuns.md",
+      "sha256": "905a2827a985497c2ac2044270cbfa5d76c3621512701b970ac3e95d820393d4"
+    },
+    {
+      "arquivo": "entrada\\documentos\\requisitos-baseline.md",
+      "sha256": "79241b88f9ec5d43c637227e92a1c32ddb5f8dac5f9bbcff10bbe82681d4bf83"
+    },
+    {
+      "arquivo": "entrada\\documentos\\catalogo-baseline.md",
+      "sha256": "1a7954dd424bebd2fe46fe5008881c34a98e2c23231bcec945d48da333921379"
+    },
+    {
+      "arquivo": "entrada\\documentos\\mudanca.md",
+      "sha256": "18b2d331d510b965e0e34754608a24ee140402fcb7c45170b48208bb4a2ee863"
+    },
+    {
+      "arquivo": "entrada\\documentos\\pedido.txt",
+      "sha256": "9a8842d77fa07a2a01fc199132aec960a2ac5912da3271a392054757d07f3e52"
+    },
+    {
+      "arquivo": "entrada\\documentos\\schema_saida.json",
+      "sha256": "133b5e3b19e2c654fa72d07ade524f6c14b65e4c40c34b4504dc497d56104aca"
+    },
+    {
+      "arquivo": "entrada\\payload.txt",
+      "sha256": "ee80d93e8b54c4737d58de0a4ed5011adea409b2d35b04d9540bc2311b83a07f"
+    },
+    {
+      "arquivo": "referencia-privada.json",
+      "sha256": "b65126915d74089bfe2f7f14f1c9ae93180067e2e26d9e650e2346ce40865b2a"
+    },
+    {
+      "arquivo": "politica-candidata.json",
+      "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c"
+    },
+    {
+      "arquivo": "avaliacao.json",
+      "sha256": "d1d0d61a1cc62d62d18be86090bedef32908683a2a29eede447eb17bea5ead49"
+    }
+  ],
+  "completo": true,
+  "fontes": [
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\preparacoes\\D0\\preparacao.json",
+      "sha256": "9df0e92ffcf0042e185a71d4634eeb194b823ca8b841692a0a9b2f614f45ebde"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\entradas-avaliacao\\tecnica\\tentativa.json",
+      "sha256": "d931ba366975514a38e43daf4d0a64c4cb7941f12ae007af227156fe8db510e8"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\preparacoes\\D0\\manifesto-original.json",
+      "sha256": "69ee7494ea663b7d96a7ea2d502c3a1a71a482cbc5a4a702f67a2275aaae3d51"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\preparacoes\\D0\\documentos\\sistema.txt",
+      "sha256": "3ebf50cd8798bf9f9a1f246c0a918162f93f33d4e53768a8f31b30b4abd93e32"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\preparacoes\\D0\\documentos\\definicoes-comuns.md",
+      "sha256": "905a2827a985497c2ac2044270cbfa5d76c3621512701b970ac3e95d820393d4"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\preparacoes\\D0\\documentos\\requisitos-baseline.md",
+      "sha256": "79241b88f9ec5d43c637227e92a1c32ddb5f8dac5f9bbcff10bbe82681d4bf83"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\preparacoes\\D0\\documentos\\catalogo-baseline.md",
+      "sha256": "1a7954dd424bebd2fe46fe5008881c34a98e2c23231bcec945d48da333921379"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\preparacoes\\D0\\documentos\\mudanca.md",
+      "sha256": "18b2d331d510b965e0e34754608a24ee140402fcb7c45170b48208bb4a2ee863"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\preparacoes\\D0\\documentos\\pedido.txt",
+      "sha256": "9a8842d77fa07a2a01fc199132aec960a2ac5912da3271a392054757d07f3e52"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\preparacoes\\D0\\documentos\\schema_saida.json",
+      "sha256": "133b5e3b19e2c654fa72d07ade524f6c14b65e4c40c34b4504dc497d56104aca"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\demonstracao-001\\preparacoes\\D0\\payload.txt",
+      "sha256": "ee80d93e8b54c4737d58de0a4ed5011adea409b2d35b04d9540bc2311b83a07f"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\tests\\fixtures\\spec004\\referencia-sintetica.json",
+      "sha256": "b65126915d74089bfe2f7f14f1c9ae93180067e2e26d9e650e2346ce40865b2a"
+    }
+  ],
+  "origem": "sintetica",
+  "retorno": 1
+}

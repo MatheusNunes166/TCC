@@ -1,5 +1,7 @@
 # Pesquisa e decisões técnicas locais — Spec 004
 
+> Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Isolamento real não demonstrado; T014/T015 e dependentes permanecem pendentes. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
+
 27/10/2026. Pesquisa exclusivamente documental/local; sem navegação, chamadas externas, implementação ou controles executados. Autorização D-24 e registro técnico D-25 em [decisões](../../documentacao/decisoes.md). Revisão auxiliar somente de leitura prevista na skill `speckit-plan`, sem arquivos alterados pelo revisor.
 
 ## R-01 — Python e biblioteca padrão
@@ -52,7 +54,7 @@ As distinções abaixo foram destacadas antes de completar o plano. São conven�
 | B — G de testes | A candidata contém `tests`, `changed`, `preserved` e `expected`. Eles têm papéis distintos. | G_RF=`rfs`, G_T=`tests`. Nunca usar somente `changed` ou inferir G das saídas `expected`. Relevantes incluem preservação. |
 | C — desconhecido/duplicata | Spec determina FP para strings desconhecidas e conjunto único. | Não descartar desconhecidos nem normalizar IDs. Duplicata exata conta uma vez. Uma resposta com desconhecido mantém formato válido e indicador de IDs conhecidos negativo. |
 | D — sem avaliação parcial | Contrato exige ambas as listas. | Uma lista com tipo inválido invalida formato do objeto inteiro; a outra não é pontuada isoladamente. Lista vazia válida não invalida o objeto. |
-| E — vazios e consistência | Convenções da Spec para G não vazio, dois S vazios e pares insuficientes. | P/R/F zero para S vazio; Jaccard de dois vazios 1 com omissões expostas; menos de duas respostas elegíveis: indisponível. G vazio bloqueia, sem nova convenção automática. |
+| E — vazios e consistência | Convenções da Spec para G não vazio, dois S vazios e pares insuficientes. | P/R/F zero para S vazio; Jaccard de dois vazios 1 com omissões expostas; menos de duas respostas elegíveis: não calculável. G vazio bloqueia, sem nova convenção automática. |
 | F — tentativas e denominadores | Retentativa técnica não é repetição experimental. | Contar uma observação por identidade; conservar tentativas vinculadas. Usar única resposta concluída da observação; múltiplas concluídas sem adjudicação bloqueiam resumo, sem escolher a melhor. |
 | G — detalhes de codificação/JSON | `json.loads` sozinho aceita chaves repetidas e constantes especiais. Schema estrutural não resolve esses casos. | Proposta técnica explícita: decodificação UTF-8 estrita, sem remoção de BOM; BOM/codificação inválida classificadas como formato inválido após preservar bytes. Rejeitar NaN/Infinity, chave repetida e texto residual. Registrar estes subcasos em S-09. Isso afeta taxa de validade e continua sujeito à revisão. |
 
@@ -62,7 +64,7 @@ As distinções abaixo foram destacadas antes de completar o plano. São conven�
 
 ## R-07 — Cálculos sem interpretação científica antecipada
 
-**Decisão proposta:** TP/FP/FN e listas separados para RF/testes. P/R/F e Jaccard em política candidata versionada `ids-proposta-004-v1`; frações exatas no registro, representação decimal apenas derivada. Contrato define denominadores, elegibilidade e escore indisponível. Sem nota conjunta, ranking de modelos, semelhança textual ou alegação de economia de regressão.
+**Decisão proposta:** TP/FP/FN e listas separados para RF/testes. P/R/F e Jaccard em política candidata versionada `ids-proposta-004-v2`; frações exatas no registro, representação decimal apenas derivada. Contrato define denominadores, elegibilidade e escore indisponível. Sem nota conjunta, ranking de modelos, semelhança textual ou alegação de economia de regressão.
 
 Resumo válido por mudança/condição, sem combinar mudanças neste incremento. Considerar todos os pares elegíveis, n(n−1)/2; pares não são novas observações independentes. Comparações científicas/agregação geral e fundamentos bibliográficos permanecem fora da entrega técnica, a revisar em P-02/P-03.
 
@@ -77,3 +79,8 @@ Referência sintética G_RF={RF-02}, G_T={T04,T12}; não derivá-la automaticame
 ## Fontes e conclusão da pesquisa local
 
 Lidos: governança/constituição, Spec/checklist, encaminhamentos da orientação, arquitetura, materiais 01/04/07, schema, modelo de registro e estrutura da candidata 0.2. Não foi feita pesquisa bibliográfica ou consulta externa. Não há dependência técnica que exija biblioteca adicional. Questões científicas e prova de isolamento permanecem gates de uso futuro, não esclarecimentos técnicos resolvidos por esta pesquisa. Sem tarefas, código, pacote exportado, respostas experimentais ou chamadas.
+
+## Estado técnico parcial — 27/10/2026
+
+Implementados `montagem_entradas.py` e `avaliacao_ids.py`, sem rede/provedor. Convenções D-26 candidatas, política ids-proposta-004-v2; 39 tarefas independentes concluídas. T014/T015 e T042–T048 pendentes: runner isolado não provisionado e criação de symlink real negada com WinError1314. Não há fechamento integral. [Evidências e limites](../../evidencias/spec004/revisao-parcial/relatorio.md). As descrições anteriores datadas de planejamento/comandos futuros são históricas; comandos locais agora existentes só preparam/avaliam arquivos sintéticos, sem envio ou piloto. Métricas, notas definitivas, referência e desenho científico continuam sujeitos à revisão. Checklist de qualidade preservada, sem remarcação.
+

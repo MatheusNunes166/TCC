@@ -1,5 +1,7 @@
 # Guia de validação futura — Spec 004
 
+> Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Isolamento real não demonstrado; T014/T015 e dependentes permanecem pendentes. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
+
 27/10/2026. **Somente planejamento.** Montador, avaliador, testes e fixtures aqui citados não existem. Nenhum comando de aplicação abaixo foi executado. Não há pacote permitido exportado, resposta de LLM ou piloto.
 
 ## Pré-condições
@@ -77,10 +79,28 @@ python -B avaliacao_ids.py resumir --avaliacoes tests/fixtures/spec004/S-16/aval
 python -B avaliacao_ids.py resumir --avaliacoes tests/fixtures/spec004/S-16/avaliacoes-lista.json --observacoes tests/fixtures/spec004/S-16/observacoes-planejadas.json --saida evidencias/spec004/resumo-S16-imputado-001 --imputar-invalidas
 ```
 
-Cenário A de S-16: três observações, uma exata, uma inválida e uma técnica. Esperado N=3,A=3,C=2,V=1,I=1,T=1; validade=1/2, completude=2/3. Resumo válido P/R/F=1 em ambas; opção imputada acrescenta operacional P/R/F=1/2 em ambas, sem converter a falha técnica em seleção vazia. Jaccard indisponível. Retorno 1 informa diagnósticos/incompletude técnica; listas/denominadores devem permanecer explícitos.
+Cenário A de S-16: três observações, uma exata, uma inválida e uma técnica. Esperado N=3,A=3,C=2,V=1,I=1,T=1; validade=1/2, completude=2/3. Resumo válido P/R/F=1 em ambas; opção imputada acrescenta operacional P/R/F=1/2 em ambas, sem converter a falha técnica em seleção vazia. Jaccard não calculável. Retorno 1 informa diagnósticos/incompletude técnica; listas/denominadores devem permanecer explícitos.
 
 Cenário B: uma observação e duas tentativas técnicas vinculadas, segunda exata; N=1,A=2,C=V=1,T=0. Não contar como duas repetições ou criar par Jaccard. Conflito de duas respostas concluídas para o mesmo ID bloqueia resumo até decisão explícita; não escolher a melhor.
 
 ## Fechamento e pendências
 
 Futuro fechamento técnico exige cobertura/esperados e prova de acesso real, preservação/rechecagem de integridade e estado coerente. Roteiro pronto e controles conformes não aprovam cientificamente referência ou métricas. Revisão profissional, notas definitivas, fundamentação/revisão de medidas e desenho final do piloto continuam pendentes. Nenhuma dessas execuções foi feita nesta fase; próxima ação autorizável é revisar planejamento e solicitar tarefas.
+
+## Estado técnico parcial — 27/10/2026
+
+Implementados `montagem_entradas.py` e `avaliacao_ids.py`, sem rede/provedor. Convenções D-26 candidatas, política ids-proposta-004-v2; 39 tarefas independentes concluídas. T014/T015 e T042–T048 pendentes: runner isolado não provisionado e criação de symlink real negada com WinError1314. Não há fechamento integral. [Evidências e limites](../../evidencias/spec004/revisao-parcial/relatorio.md). As descrições anteriores datadas de planejamento/comandos futuros são históricas; comandos locais agora existentes só preparam/avaliam arquivos sintéticos, sem envio ou piloto. Métricas, notas definitivas, referência e desenho científico continuam sujeitos à revisão. Checklist de qualidade preservada, sem remarcação.
+
+Consulta das evidências existentes na raiz do projeto, sem reexecução:
+
+```powershell
+Get-Content -Encoding utf8 evidencias/spec004/revisao-parcial/relatorio.md
+Get-Content -Encoding utf8 evidencias/spec004/revisao-parcial/matriz.json
+Get-Content -Encoding utf8 evidencias/spec004/isolamento/ambiente.json
+Get-Content -Encoding utf8 evidencias/spec004/montagem-final/comando.json
+Get-Content -Encoding utf8 evidencias/spec004/avaliacao-confirmacao/comando.json
+Get-Content -Encoding utf8 evidencias/spec004/demonstracao-001/resumos/A/resumo.json
+```
+
+Preparações originais em demonstracao-001/preparacoes; respostas e registros originais em entradas-avaliacao e nas saídas de avaliacoes. A demonstração identifica os hashes da versão executada; checkpoints finais incluem endurecimento posterior de lstat sem seguir links. Para reavaliar, usar pasta nova e --avaliacao-anterior quando aplicável, preservando a avaliação anterior. Não reexecutar scripts de preparação sobre diretórios existentes.
+

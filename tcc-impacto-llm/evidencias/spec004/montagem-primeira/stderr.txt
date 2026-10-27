@@ -1,0 +1,10 @@
+test_S13_integridade_fechamento_e_pastas (test_montagem_entradas.TestMontagem.test_S13_integridade_fechamento_e_pastas) ... ok
+test_S14_cli (test_montagem_entradas.TestMontagem.test_S14_cli) ... ok
+test_S14_condicoes_payload_literal (test_montagem_entradas.TestMontagem.test_S14_condicoes_payload_literal) ... ok
+test_S14_links_internos_externos_junction_real (test_montagem_entradas.TestMontagem.test_S14_links_internos_externos_junction_real) ... ok
+test_S14_manifestos_negativos (test_montagem_entradas.TestMontagem.test_S14_manifestos_negativos) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 30.667s
+
+OK

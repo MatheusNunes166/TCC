@@ -1,5 +1,7 @@
 # Implementation Plan: Preparação de entradas e avaliação separada de IDs
 
+> Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Isolamento real não demonstrado; T014/T015 e dependentes permanecem pendentes. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
+
 **Feature**: `004-preparacao-avaliacao-ids` | **Date**: 2026-10-27 | **Spec**: [spec.md](spec.md)
 
 **Branch (contexto do resolvedor)**: `004-preparacao-avaliacao-ids`; nenhuma branch Git criada ou trocada.
@@ -117,3 +119,8 @@ Sem exceção constitucional a justificar. O controle de acesso é gate obrigat�
 Planejamento documental encerrado na fase 1 do fluxo local; somente este plano, research, data-model, contrato e quickstart produzidos. Nenhum esperado sintético executado; pacote permitido não exportado; notas/referência não revisadas cientificamente. Próxima ação: revisar planejamento e eventuais convenções e solicitar tarefas quando desejado. P-01/P-02/P-03 e adoção constitucional permanecem abertas; calendário da apresentação e compartilhamento do repositório seguem com o pesquisador.
 
 Conferência documental final: resolvedor retornou 004 e research/data-model/contracts/quickstart disponíveis; 115 links locais válidos nos 12 documentos conferidos; nenhum placeholder técnico ou espaço final; `git diff --check` sem erros. Hash/tamanho de 191 arquivos protegidos mantidos. Sem tasks.md, módulos ou testes novos. `.specify/extensions.yml` ausente antes/depois, sem hooks. Essas verificações não executam a aplicação nem demonstram isolamento. Revisão auxiliar somente de leitura conferiu pontuação/estados/16 famílias; ajuste documental omite integralmente bloco de notas em D0/E0, conforme a Spec.
+
+## Estado técnico parcial — 27/10/2026
+
+Implementados `montagem_entradas.py` e `avaliacao_ids.py`, sem rede/provedor. Convenções D-26 candidatas, política ids-proposta-004-v2; 39 tarefas independentes concluídas. T014/T015 e T042–T048 pendentes: runner isolado não provisionado e criação de symlink real negada com WinError1314. Não há fechamento integral. [Evidências e limites](../../evidencias/spec004/revisao-parcial/relatorio.md). As descrições anteriores datadas de planejamento/comandos futuros são históricas; comandos locais agora existentes só preparam/avaliam arquivos sintéticos, sem envio ou piloto. Métricas, notas definitivas, referência e desenho científico continuam sujeitos à revisão. Checklist de qualidade preservada, sem remarcação.
+

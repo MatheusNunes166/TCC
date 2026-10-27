@@ -1,0 +1,15 @@
+{
+  "identidade": {
+    "comando": [
+      "whoami"
+    ],
+    "retorno": 0,
+    "stdout": "desktop-uqf7ecc\\codexsandboxoffline\r\n",
+    "stderr": ""
+  },
+  "elevada": false,
+  "referencia_legivel_pelo_token_atual": true,
+  "contrato_cumprido": false,
+  "capacidade_ausente": "Runner provisionado sob identidade separada sem leitura de desenvolvimento/referencia/avaliacao, com raizes e permissoes verificaveis. O token atual le a referencia; nao serve como prova de negacao.",
+  "limite": "Nao foram criadas contas, alteradas ACLs, usados privilegios alternativos ou simulada prova de isolamento. T014/T015 pendentes; controles logicos independentes autorizados."
+}

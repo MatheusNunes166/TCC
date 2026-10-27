@@ -1,0 +1,38 @@
+[
+  {
+    "arquivo": "avaliacao-0.json",
+    "sha256": "bb6ab10e5ee0ea9cc6a03bdb8eb1226b55e5c82abdf7b4697b9c7df11ca8bfc2"
+  },
+  {
+    "arquivo": "avaliacao-1.json",
+    "sha256": "062c13d45ff447a8fd217a3394bfae04d46d39667bd873934eb6200e7e4b7e04"
+  },
+  {
+    "arquivo": "avaliacao-2.json",
+    "sha256": "18d9f8ef5462f436e9bdaed0b5d47f6170f9d2309db03d2a406b997122cee8a4"
+  },
+  {
+    "arquivo": "avaliacao-3.json",
+    "sha256": "b5bd7fc8394f43f52e8f8d7d5f753177e5b06785e4900adb25aa7495bc0f2294"
+  },
+  {
+    "arquivo": "avaliacao-4.json",
+    "sha256": "b277cb522562267598be4e04aa50031687bdfab62df106cf93470273efc260f6"
+  },
+  {
+    "arquivo": "avaliacao-5.json",
+    "sha256": "1e60cdad0f5a0b0569d14a4209567e85b2f5ee8dbacfedff2b6ae2844f158040"
+  },
+  {
+    "arquivo": "avaliacao-6.json",
+    "sha256": "e3259c72b3576e27a2746d4913a8bf0be320fe9c47342f103683f07d81c0e1e6"
+  },
+  {
+    "arquivo": "avaliacao-7.json",
+    "sha256": "bce86794850dccabbca29f1f39b13a7f530cd7b24d3a776adad49621279ac3af"
+  },
+  {
+    "arquivo": "avaliacao-8.json",
+    "sha256": "7cc47bf149c204fa767e4305dec2b79fea7f265ae52f03faccb64d80db87a227"
+  }
+]

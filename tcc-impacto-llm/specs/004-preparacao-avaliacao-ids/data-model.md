@@ -1,5 +1,7 @@
 # Modelo de dados proposto — Spec 004
 
+> Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Isolamento real não demonstrado; T014/T015 e dependentes permanecem pendentes. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
+
 27/10/2026. Desenho futuro, sem arquivos de dados gerados ou capacidade implementada. [Contrato](contracts/preparacao-avaliacao.md) define CLI, regras e esperados; [research](research.md) fundamenta escolhas técnicas locais.
 
 ## 1. Manifesto permitido e documento
@@ -57,7 +59,7 @@ Referência sintética de controle tem identidade própria, versão/hash e os me
 
 ## 5. Avaliação derivada por dimensão
 
-`avaliacao.json` conserva `avaliacao_id`, `avaliacao_anterior` quando houver, tentativa/observação, hashes dos originais e da referência, versão/hash do avaliador/contrato, política `ids-proposta-004-v1`, instante UTC e:
+`avaliacao.json` conserva `avaliacao_id`, `avaliacao_anterior` quando houver, tentativa/observação, hashes dos originais e da referência, versão/hash do avaliador/contrato, política `ids-proposta-004-v2`, instante UTC e:
 
 - `integridade`: estado e causas independentes.
 - `estado_tecnico`: espelho da tentativa, não derivado da correção do conteúdo.
@@ -79,7 +81,7 @@ Identidade própria, hash/versão de política e lista exata de avaliações inc
 - Taxa de formato válido V/C, IDs conhecidos K/V, completude C/N; denominador zero dá indisponível. Publicar contagens junto, não só taxas.
 - Resumo de seleção usa V respostas concluídas com integridade/referência válidas; desconhecidos são FP. Média por dimensão de P/R/F calculada sobre observações elegíveis, sem misturar células.
 - Visão operacional, apenas se explicitamente pedida: V+I observações concluídas elegíveis tecnicamente; imputação de P/R/F zero só às I, identificada por observação; sem inventar S/G/TP/FP/FN observados. Falha técnica não entra nesse denominador.
-- Jaccard: todos os pares de observações elegíveis de repetições distintas na mesma célula/dimensão, com IDs dos pares, numerador/denominador, contagem elegível/usada e média candidata. Invalidade/tentativa não cria par; uma elegível não recebe valor zero.
+- Jaccard: todos os pares de observações elegíveis de repetições distintas na mesma célula/dimensão, com IDs dos pares, numerador/denominador, contagem elegível/usada e média candidata. Invalidade/tentativa não cria par; menos de duas elegíveis informa estado nao_calculavel, motivo “não calculável”, valor nulo e número de observações/pares.
 
 Sem resumo geral entre mudanças neste incremento. Nenhuma agregação oculta exclui “resposta ruim”. `origem=sintetica` acompanha cada linha e permanece explícita no resumo.
 
@@ -88,3 +90,14 @@ Sem resumo geral entre mudanças neste incremento. Nenhuma agregação oculta ex
 Cada fixture S-xx/subcaso tem bytes/registro de entrada, referência sintética fixa, expectativa literal de status/listas/TP/FP/FN/frações/denominadores, fundamento na regra e revisão técnica registrada antes da implementação. Resultado futuro inclui observado e conformidade/erro. Expectativa nunca é obtida pela função em teste.
 
 Transições projetadas: pacote pendente → conferido tecnicamente ou reprovado; montagem → preparado local ou bloqueado; tentativa → concluída ou falha técnica; importação → avaliação ou erro/inválida; consolidação → completa só com integridade revalidada. Reavaliação gera nova identidade, sem transição destrutiva do original. Nenhum estado desta modelagem foi executado nesta fase documental.
+
+## Convenção de identidade e grupos — D-26
+
+`configuracao_id` é string não vazia nos manifestos/preparações/tentativas/avaliações; nos controles vale `controle-local-v1`, sem escolher modelo. `repeticao_sintetica` é inteiro positivo (bool excluído), conforme contrato técnico de importação dos controles. A identidade lógica é `(configuracao_id, mudanca canônica, condicao, repeticao_sintetica)`; `observacao_id` deve corresponder univocamente a ela. `tentativa_id` é único e `tentativa_anterior` vincula no máximo uma retentativa com o mesmo payload. Reavaliações têm IDs próprios; duplicar avaliações não cria observações extras.
+
+O resumo mantém célula base configuração/mudança/condição e subgrupos explícitos por versão/hash da política e versão/hash da referência. Mistura de versões recebe diagnóstico/retorno 2 e nenhum resultado combinado; inventários de grupos homogêneos são apresentados separadamente, sem pontuação no resumo misto. Novo resumo com lista homogênea explícita pode calcular o grupo, sem presumir distribuição de N entre versões. Duplicidade de observação/repetição bloqueia métricas da célula afetada, preserva entradas e diagnósticos e não escolhe a melhor resposta. Outras células independentes podem ter resultados.
+
+## Estado técnico parcial — 27/10/2026
+
+Implementados `montagem_entradas.py` e `avaliacao_ids.py`, sem rede/provedor. Convenções D-26 candidatas, política ids-proposta-004-v2; 39 tarefas independentes concluídas. T014/T015 e T042–T048 pendentes: runner isolado não provisionado e criação de symlink real negada com WinError1314. Não há fechamento integral. [Evidências e limites](../../evidencias/spec004/revisao-parcial/relatorio.md). As descrições anteriores datadas de planejamento/comandos futuros são históricas; comandos locais agora existentes só preparam/avaliam arquivos sintéticos, sem envio ou piloto. Métricas, notas definitivas, referência e desenho científico continuam sujeitos à revisão. Checklist de qualidade preservada, sem remarcação.
+

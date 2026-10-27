@@ -1,0 +1,10 @@
+{
+  "causa": "pacote nao e preparacao local em rascunho",
+  "completo": false,
+  "contrato": "spec004-v2",
+  "instante_utc": "2026-10-27T20:32:52.289534+00:00",
+  "liberado_para_pesquisa": false,
+  "montador_sha256": "ecd17862ae28eb7651f7f31c4566a7fc28c5115301d270b6dc6775ba7ff1d28d",
+  "preparacao_id": "7f9876fc4ff54e76bc938330e8eac452",
+  "status": "BLOQUEADO"
+}
