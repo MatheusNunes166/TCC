@@ -1,0 +1,293 @@
+Orientação de TCC | 21/10/2026
+Orientando: Matheus Henrique Braun Nunes
+Orientador: Prof. Me. Muriel Mazzetto
+Identificação das falas: nomes associados pelo contexto da reunião e pelos participantes documentados; trechos incertos permanecem sem identificação.
+Aviso: transcrição automática sujeita a erros. Consulte a gravação para confirmar nomes técnicos e passagens duvidosas.
+
+Fonte: 21-10-2026.mp4
+Duração: 00:19:41
+Transcrição automática em português | Whisper small | cuda int8_float16
+Diarização: simple. Grupos de voz não comprovam identidade nominal.
+
+[00:00:00 - 00:00:01] Muriel Mazzetto (orientador): Tranquilo, você.
+[00:00:01 - 00:00:02] Participante não identificado: E boa.
+[00:00:02 - 00:00:10] Muriel Mazzetto (orientador): Cara, pra apresentação aí, traga suas dúvidas e se tiver algo pra você compartilhar a tela,
+[00:00:10 - 00:00:14] Muriel Mazzetto (orientador): apresentar e lembrar de compartilhar comigo também o repositório.
+[00:00:14 - 00:00:20] Participante não identificado: Deixa eu só ver se eu consigo compartilhar a tela aqui, que faz tempo que eu não uso
+[00:00:20 - 00:00:21] Participante não identificado: o Teams.
+[00:00:21 - 00:00:32] Participante não identificado: Olha aqui, consegui enxergar já ou já?
+[00:00:32 - 00:00:40] Matheus Henrique Braun Nunes (orientando): Basicamente, o experimento que eu fiz foi utilizando o REN, aquela bancada com um sistema de permissão,
+[00:00:40 - 00:00:44] Matheus Henrique Braun Nunes (orientando): que eu tinha feito esses quatro requisitos funcionais primeiramente.
+[00:00:44 - 00:00:50] Matheus Henrique Braun Nunes (orientando): E dentre esses quatro requisitos funcionais, eu fiz um cenário com 12 possíveis testes.
+[00:00:50 - 00:00:56] Matheus Henrique Braun Nunes (orientando): Dentro deles, eu fiz essas quatro principais mudanças controladas que eu ainda estou fazendo.
+[00:00:56 - 00:01:00] Matheus Henrique Braun Nunes (orientando): Agora na parte do trabalho com o ski.
+[00:01:00 - 00:01:05] Matheus Henrique Braun Nunes (orientando): que ia fazer a parte dos quattro exícitos funcionais no DeskCode e tal.
+[00:01:05 - 00:01:08] Matheus Henrique Braun Nunes (orientando): Já fiz os testes com os 12 cenários ali.
+[00:01:08 - 00:01:13] Matheus Henrique Braun Nunes (orientando): Agora vou começar a implementar a spec ali para fazer essas mudanças controladas.
+[00:01:13 - 00:01:16] Matheus Henrique Braun Nunes (orientando): Basicamente foi essa parte que eu implementei, né?
+[00:01:16 - 00:01:24] Matheus Henrique Braun Nunes (orientando): Daí que eu já trouxe o gabarito junto com os testes do que é para acontecer o que não é, certo?
+[00:01:24 - 00:01:29] Matheus Henrique Braun Nunes (orientando): E para a planopiloto, eu justamente estava querendo trazer,
+[00:01:29 - 00:01:33] Matheus Henrique Braun Nunes (orientando): fazer rodar primeiro a mudança controlada 1 e a mudança controlada 3,
+[00:01:33 - 00:01:37] Matheus Henrique Braun Nunes (orientando): que seria uma forma direta, que é a mudança controlada, certo?
+[00:01:37 - 00:01:39] Matheus Henrique Braun Nunes (orientando): E a mudança controlada 3 eu fiz com uma forma propagada,
+[00:01:39 - 00:01:43] Matheus Henrique Braun Nunes (orientando): quando você muda ela, vai afetar outros requisitos.
+[00:01:43 - 00:01:47] Matheus Henrique Braun Nunes (orientando): Eu busco fazer eles através de, com quatro repetições,
+[00:01:47 - 00:01:52] Matheus Henrique Braun Nunes (orientando): onde eu trouxe os documentos comuns e as notas de analista,
+[00:01:52 - 00:01:58] Matheus Henrique Braun Nunes (orientando): onde, na primeira repetição, eu colocaria um prompt mais direto
+[00:01:58 - 00:02:00] Matheus Henrique Braun Nunes (orientando): para ela ver o que vai acontecer.
+[00:02:00 - 00:02:05] Matheus Henrique Braun Nunes (orientando): sem nenhuma nota, depois eu vou dar um prompt direto com as notas do analista
+[00:02:05 - 00:02:08] Matheus Henrique Braun Nunes (orientando): e depois eu vou fazer um prompt um pouco mais estruturado com e sem as notas
+[00:02:08 - 00:02:10] Matheus Henrique Braun Nunes (orientando): para ver como vai ser um dos resultados.
+[00:02:11 - 00:02:17] Matheus Henrique Braun Nunes (orientando): Daí, a principal parte que eu ainda estou analisando vai ser a parte de como que eu vou medir esses resultados,
+[00:02:17 - 00:02:23] Matheus Henrique Braun Nunes (orientando): trazer essas formas de como eu vou registrar tudo isso, certo?
+[00:02:23 - 00:02:28] Matheus Henrique Braun Nunes (orientando): Eu dei uma pesquisada sobre a parte do F1 de precisão e revocação, né?
+[00:02:28 - 00:02:31] Matheus Henrique Braun Nunes (orientando): Eu acho que talvez vou utilizar.
+[00:02:31 - 00:02:38] Muriel Mazzetto (orientador): Esse é isso que tem que cuidar, porque quando a gente trabalha com alteração textual, no
+[00:02:38 - 00:02:48] Muriel Mazzetto (orientador): caso código é alteração textual, a precisão nesse caso dá uma pesquisada para ver como
+[00:02:48 - 00:02:52] Muriel Mazzetto (orientador): que ele se aplica para esse caso de fato, ele pode mudar um pouco as fórmulas, pode
+[00:02:52 - 00:02:59] Muriel Mazzetto (orientador): confundir um pouco, que o F1 é bem interessante quando a gente fala de classificações diretas
+[00:03:00 - 00:03:05] Muriel Mazzetto (orientador): forma se torna mais básica, né? O falso positivo, verdadeiro positivo e tudo mais.
+[00:03:05 - 00:03:09] Muriel Mazzetto (orientador): Mas quando a gente fala de alterações textuais, que se vai confrontar com um
+[00:03:09 - 00:03:14] Muriel Mazzetto (orientador): gabarito, que ele pode chegar num mesmo resultado, mas pode ter palavras
+[00:03:14 - 00:03:19] Muriel Mazzetto (orientador): diferentes, ele pode não bater. Então tem que ver como que vai ser interpretado isso.
+[00:03:19 - 00:03:26] Muriel Mazzetto (orientador): Talvez alguma outra métrica mais relacionada a sintaxe, não a sintaxe, a semântica, talvez.
+[00:03:26 - 00:03:31] Muriel Mazzetto (orientador): Dá uma breve pesquisada nisso, que seria uma boa forma de...
+[00:03:31 - 00:03:35] Muriel Mazzetto (orientador): Acredito até que o termo seria o tal do evaluation,
+[00:03:35 - 00:03:37] Muriel Mazzetto (orientador): dar uma pesquisada dentro desse termo.
+[00:03:37 - 00:03:40] Muriel Mazzetto (orientador): Que ele é mais ligado às LLMS,
+[00:03:40 - 00:03:44] Muriel Mazzetto (orientador): para medir o comportamento de como que as respostas estão se saindo
+[00:03:44 - 00:03:46] Muriel Mazzetto (orientador): dado um contexto, tá?
+[00:03:46 - 00:03:48] Muriel Mazzetto (orientador): Se meio que dá o direcionamento de como que deveria responder,
+[00:03:48 - 00:03:53] Muriel Mazzetto (orientador): não sinceramente as respostas vão ser exatas e iguais ao gabarito,
+[00:03:53 - 00:03:56] Muriel Mazzetto (orientador): mas elas têm o mesmo significado e a semântica atrás disso.
+[00:03:56 - 00:04:00] Muriel Mazzetto (orientador): Então dá uma olhada em cima dessa possibilidade de...
+[00:04:00 - 00:04:08] Muriel Mazzetto (orientador): de validação. Agora se no teu caso é só no final você consegue converter a resposta
+[00:04:08 - 00:04:15] Muriel Mazzetto (orientador): final do LLM vai ser uma classe, como se fosse uma classificação, quais são os que você
+[00:04:15 - 00:04:21] Muriel Mazzetto (orientador): precisa de fato rodar? Quais são os requisitos identificados? Aí é um gabarito 1 para 1,
+[00:04:21 - 00:04:29] Muriel Mazzetto (orientador): você consegue ter um D para claro, aí ele cabe usar essa métrica. Então dá uma
+[00:04:29 - 00:04:31] Muriel Mazzetto (orientador): uma pensada, uma pesquisada em cima disso.
+[00:04:32 - 00:04:34] Matheus Henrique Braun Nunes (orientando): Outro ponto que eu fiquei também na dúvida,
+[00:04:34 - 00:04:36] Matheus Henrique Braun Nunes (orientando): eu estava conversando com o Lucas,
+[00:04:36 - 00:04:38] Matheus Henrique Braun Nunes (orientando): que estava fazendo um trabalho também de pesquisa,
+[00:04:38 - 00:04:41] Matheus Henrique Braun Nunes (orientando): você acha que talvez tenha que fazer, tipo, com mais de uma lêmia
+[00:04:41 - 00:04:43] Matheus Henrique Braun Nunes (orientando): ou só com um modelo específico?
+[00:04:43 - 00:04:47] Matheus Henrique Braun Nunes (orientando): Ou, tipo, talvez mudar o tipo de configuração do modelo e tal?
+[00:04:48 - 00:04:51] Muriel Mazzetto (orientador): Seria interessante se rodar com mais de um.
+[00:04:51 - 00:04:54] Muriel Mazzetto (orientador): Mas aí vamos pensar de novo agora na tua apresentação.
+[00:04:54 - 00:04:55] Muriel Mazzetto (orientador): Legal o caminho.
+[00:04:55 - 00:04:58] Muriel Mazzetto (orientador): Depois quero que você fale também sobre o que você já tem desenvolvido,
+[00:05:00 - 00:05:04] Muriel Mazzetto (orientador): apresentação, vamos considerar pra daqui duas semanas a gente ter algo rodável.
+[00:05:04 - 00:05:08] Muriel Mazzetto (orientador): Acredito que ele em metade de novembro pra final de novembro a gente vai ter que
+[00:05:08 - 00:05:13] Muriel Mazzetto (orientador): começar a apresentar. Então ali pra primeira semana de novembro ter algo pra
+[00:05:13 - 00:05:18] Muriel Mazzetto (orientador): gente poder rodar e simular uma apresentação. Qual que é a ideia que
+[00:05:18 - 00:05:22] Muriel Mazzetto (orientador): você vai ter? Pode ter alguns slides de apoio pra fazer uma introdução. Meu
+[00:05:22 - 00:05:27] Muriel Mazzetto (orientador): nome é esse, o título é esse, meu trabalho está dentro desse contexto, não
+[00:05:27 - 00:05:31] Muriel Mazzetto (orientador): não precisa trazer referenciais, muita coisa assim, mas trazer uma contextualização de
+[00:05:31 - 00:05:37] Muriel Mazzetto (orientador): onde isso se aplica. Então, por exemplo, como que funciona o ciclo de desenvolvimento
+[00:05:37 - 00:05:42] Muriel Mazzetto (orientador): de software? Hoje nós temos muito ciclo de desenvolvimento cada vez mais absorvendo IA
+[00:05:42 - 00:05:48] Muriel Mazzetto (orientador): dentro do ciclo de desenvolvimento. Normalmente acontece XYZ nessa cadência, nessa ordem.
+[00:05:48 - 00:05:52] Muriel Mazzetto (orientador): Chega com requisito, a gente vai fazer uma alteração, a gente vai fazer uma modificação,
+[00:05:52 - 00:05:59] Muriel Mazzetto (orientador): uma correção, então contextualizar esse ciclo e onde o teu estudo se encaixa.
+[00:06:00 - 00:06:03] Muriel Mazzetto (orientador): aqui nesse momento, pode ser feito de diferentes formas, e aí é isso que está
+[00:06:03 - 00:06:07] Muriel Mazzetto (orientador): medindo aqueles cenários, e aí é aí que você está medindo a comparação por que
+[00:06:07 - 00:06:11] Muriel Mazzetto (orientador): dentro desse ciclo começou a ter isso e o que acontece quando a gente tem
+[00:06:11 - 00:06:19] Muriel Mazzetto (orientador): diferentes formas de... não é adaptar, diferentes formas de absorver o uso de
+[00:06:19 - 00:06:23] Muriel Mazzetto (orientador): A, adotar o uso de A no desenvolvimento, quais são os caminhos e quais são esses
+[00:06:23 - 00:06:27] Muriel Mazzetto (orientador): impactos, e aí eu estou explorando aqui dentro. Então aqui dentro, por
+[00:06:27 - 00:06:33] Muriel Mazzetto (orientador): Por exemplo, a gente pode estar utilizando um Cloud Code, que acontece ABC nesse formato.
+[00:06:33 - 00:06:35] Muriel Mazzetto (orientador): Aí você pode rodar ali dentro dele.
+[00:06:35 - 00:06:37] Muriel Mazzetto (orientador): Mas uma outra opção é usar o anti-gravity.
+[00:06:37 - 00:06:43] Muriel Mazzetto (orientador): Aí você pode usar o anti-gravity até já confrontar com aquele novo ARGO 4.
+[00:06:43 - 00:06:47] Muriel Mazzetto (orientador): Faz um teste porque é muito provável que se você baixar o anti-gravity com a tua
+[00:06:47 - 00:06:50] Muriel Mazzetto (orientador): conta Google, você tenha alguns créditos gratuitos.
+[00:06:50 - 00:06:55] Muriel Mazzetto (orientador): Eu acredito que vai ser pouco, mas em dois, três dias separados, talvez você consiga
+[00:06:55 - 00:07:00] Muriel Mazzetto (orientador): rodar a sua bateria de testes usando um tigravity também. E aí você mostra isso.
+[00:07:00 - 00:07:05] Muriel Mazzetto (orientador): Eu estou utilizando duas ferramentas de A que são altamente utilizadas no mercado profissional
+[00:07:05 - 00:07:07] Muriel Mazzetto (orientador): para desenvolvimento de software.
+[00:07:07 - 00:07:13] Muriel Mazzetto (orientador): Dentro desse meu framework eu rodei esses dois testes e você pode até fazer uma deve de fato
+[00:07:13 - 00:07:18] Muriel Mazzetto (orientador): fazer uma rodada ali na hora da apresentação que aí é a parte demonstrativa.
+[00:07:18 - 00:07:22] Muriel Mazzetto (orientador): Então você faz essa condução de dizer o que é o contexto, o título da apresentação,
+[00:07:22 - 00:07:26] Muriel Mazzetto (orientador): o que é o contexto onde você se encaixa, se tiver uns diagramas ali vai ser bem legal
+[00:07:26 - 00:07:27] Muriel Mazzetto (orientador): também.
+[00:07:27 - 00:07:33] Muriel Mazzetto (orientador): É aqui dentro que está meu estudo, porque isso impacta em não ter um padrão de adossão
+[00:07:33 - 00:07:34] Muriel Mazzetto (orientador): e isso pode divergir.
+[00:07:34 - 00:07:37] Muriel Mazzetto (orientador): Aí você traz o teu estudo ali e traz essa comparação.
+[00:07:37 - 00:07:42] Muriel Mazzetto (orientador): Eu usei uma ferramenta com o Cloud e a outra com o anti-grab.
+[00:07:42 - 00:07:45] Muriel Mazzetto (orientador): Eu não sei, você está usando o Cloud ou você está usando o GPT?
+[00:07:45 - 00:07:47] Matheus Henrique Braun Nunes (orientando): No momento eu estou usando o GPT, estou usando o Codex.
+[00:07:47 - 00:07:48] Muriel Mazzetto (orientador): O Codex.
+[00:07:48 - 00:07:52] Muriel Mazzetto (orientador): Estão usando o Codex e eu sugeri o anti-grab porque eu sei que eles estão dando vários
+[00:07:52 - 00:07:54] Muriel Mazzetto (orientador): créditos gratuitos para usar o anti-grab.
+[00:07:54 - 00:07:57] Muriel Mazzetto (orientador): para você trazer um outro com essa configuração.
+[00:07:57 - 00:08:00] Muriel Mazzetto (orientador): E aí pode ser interessante até dentro do mesmo...
+[00:08:00 - 00:08:04] Muriel Mazzetto (orientador): Códix, como você já tem a assinatura dele, e todo mundo vai ser super compreensível, você
+[00:08:04 - 00:08:09] Muriel Mazzetto (orientador): falar a ideia e além disso, mesmo nessa estrutura, eu também rodei o meu experimento usando um
+[00:08:09 - 00:08:16] Muriel Mazzetto (orientador): modelo do Sol e um modelo do Luna, porque aqui pode acontecer os desenvolvedores na correria
+[00:08:16 - 00:08:21] Muriel Mazzetto (orientador): de economiza Tolkien podem optar pelo mais baixo, e isso vai impactar de alguma forma.
+[00:08:21 - 00:08:26] Muriel Mazzetto (orientador): Testei aqui e fiz umas rodadas, e aí no final, o teu comparativo e teu encaminhamento
+[00:08:26 - 00:08:30] Muriel Mazzetto (orientador): para o que, ou ficou pendente da proposta original,
+[00:08:30 - 00:08:33] Muriel Mazzetto (orientador): ou o que você pode expandir no TCC2.
+[00:08:33 - 00:08:34] Muriel Mazzetto (orientador): Então, é importante você trazer isso.
+[00:08:34 - 00:08:38] Muriel Mazzetto (orientador): Porque se você só apresentar e terminar a demonstração
+[00:08:38 - 00:08:40] Muriel Mazzetto (orientador): e ficar subentendido que acabou aqui,
+[00:08:40 - 00:08:41] Muriel Mazzetto (orientador): eles vão questionar.
+[00:08:41 - 00:08:43] Muriel Mazzetto (orientador): E depois, você já finalizou.
+[00:08:43 - 00:08:47] Muriel Mazzetto (orientador): Então, você tem que trazer a questão da minha proposta original,
+[00:08:47 - 00:08:51] Muriel Mazzetto (orientador): modificamos e, ou faltou isso para o TCC2 e podemos expandir,
+[00:08:51 - 00:08:53] Muriel Mazzetto (orientador): ou eu consegui finalizar a minha proposta
+[00:08:53 - 00:08:57] Muriel Mazzetto (orientador): e enxerguei espaço para no TCC2 explorar mais isso.
+[00:08:57 - 00:08:59] Muriel Mazzetto (orientador): De contexto para você...
+[00:09:00 - 00:09:05] Muriel Mazzetto (orientador): fazer a apresentação, seguir essa organização, essa estrutura.
+[00:09:05 - 00:09:06] Participante não identificado: Acho legal.
+[00:09:08 - 00:09:11] Matheus Henrique Braun Nunes (orientando): Outro questão só é mais pontoa na verdade.
+[00:09:11 - 00:09:16] Matheus Henrique Braun Nunes (orientando): A parte dos documentos comuns, os gabaritos ali, a analista,
+[00:09:16 - 00:09:18] Matheus Henrique Braun Nunes (orientando): você acha que precisa de mais alguém para fazer essa revisão
+[00:09:18 - 00:09:21] Matheus Henrique Braun Nunes (orientando): ou só eu já, tipo, vai dar libo, eles vão talvez reclamar
+[00:09:21 - 00:09:26] Matheus Henrique Braun Nunes (orientando): para eu ter feito e talvez dado, tipo, um puxãozinho ali para já responder?
+[00:09:26 - 00:09:30] Muriel Mazzetto (orientador): Você tem algum contato com algum profissional da área?
+[00:09:30 - 00:09:34] Matheus Henrique Braun Nunes (orientando): Cara, tem alguns ali no trabalho que eu posso talvez dar uma procurada.
+[00:09:34 - 00:09:38] Muriel Mazzetto (orientador): É extremamente interessante você trazer essa visão.
+[00:09:38 - 00:09:48] Muriel Mazzetto (orientador): Daí para o meu TCC eu tive suporte de XYZ pessoas ali que me trouxeram essas revisões.
+[00:09:48 - 00:09:50] Muriel Mazzetto (orientador): Então que me trouxeram esse suporte.
+[00:09:50 - 00:09:56] Muriel Mazzetto (orientador): Eu disse, você pode confrontar isso, teve dentro do meu experimento, teve especialistas
+[00:09:56 - 00:10:00] Muriel Mazzetto (orientador): externos que me forneceram essas informações que eu estou utilizando.
+[00:10:00 - 00:10:05] Muriel Mazzetto (orientador): utilizando dentro do experimento, que aí não fica tão enviesado para a tua resposta.
+[00:10:05 - 00:10:07] Muriel Mazzetto (orientador): E isso dá um suporte maior para a tua apresentação.
+[00:10:07 - 00:10:08] Participante não identificado: Show.
+[00:10:08 - 00:10:14] Matheus Henrique Braun Nunes (orientando): Eu acho que o principal dúvida, na verdade, se quiser eu posso mostrar a parte do como
+[00:10:14 - 00:10:16] Matheus Henrique Braun Nunes (orientando): que está desenvolvendo agora, na verdade.
+[00:10:16 - 00:10:17] Muriel Mazzetto (orientador): Seja, seria bom.
+[00:10:17 - 00:10:18] Participante não identificado: Deixa eu pegar aqui.
+[00:10:18 - 00:10:19] Participante não identificado: Tá, eu consegue ver já?
+[00:10:19 - 00:10:20] Participante não identificado: Aqui no VESCOACHE.
+[00:10:20 - 00:10:27] Muriel Mazzetto (orientador): Eu acho que você compartilhou só o Word, tem que compartilhar a janela na hora
+[00:10:27 - 00:10:29] Muriel Mazzetto (orientador): de compartilhar ali.
+[00:10:29 - 00:10:33] Muriel Mazzetto (orientador): Eu tô gravando tudo aqui, depois eu vou pegar a transcrição completa, crua,
+[00:10:33 - 00:10:37] Muriel Mazzetto (orientador): aí te passo, você joga no teu chat ali, separa em tópicos,
+[00:10:37 - 00:10:38] Muriel Mazzetto (orientador): e estrutura bonitinha do teu jeito.
+[00:10:38 - 00:10:39] Participante não identificado: Show de bola.
+[00:10:40 - 00:10:42] Matheus Henrique Braun Nunes (orientando): Consegue ver agora já, ou o mundo é bom?
+[00:10:42 - 00:10:43] Participante não identificado: Tá.
+[00:10:43 - 00:10:47] Matheus Henrique Braun Nunes (orientando): Tá, basicamente eu segui a metodologia incremental, né, que você passou pra nós.
+[00:10:48 - 00:10:52] Matheus Henrique Braun Nunes (orientando): Basicamente, então, eu comecei dando toda a parte de documentação,
+[00:10:52 - 00:10:56] Matheus Henrique Braun Nunes (orientando): o material pra ele fazer do contexto, evidências.
+[00:10:56 - 00:11:00] Matheus Henrique Braun Nunes (orientando): essa parte de evidencia do T2 e T12 que foi...
+[00:11:00 - 00:11:03] Matheus Henrique Braun Nunes (orientando): foi a parte que você comentou comigo da última vez, certo?
+[00:11:03 - 00:11:05] Matheus Henrique Braun Nunes (orientando): Porque eu ainda não tinha pensado na parte do teste 12,
+[00:11:05 - 00:11:08] Matheus Henrique Braun Nunes (orientando): de quando você tira a parte de auditoria,
+[00:11:08 - 00:11:10] Matheus Henrique Braun Nunes (orientando): pode talvez voltar para exportar, né?
+[00:11:10 - 00:11:12] Matheus Henrique Braun Nunes (orientando): Eu já deixei evidenciado aqui.
+[00:11:13 - 00:11:15] Matheus Henrique Braun Nunes (orientando): Daí eu criei as primeiras duas specs,
+[00:11:15 - 00:11:19] Matheus Henrique Braun Nunes (orientando): foram para criar tanto os dois escenários de teste,
+[00:11:19 - 00:11:22] Matheus Henrique Braun Nunes (orientando): onde eles rodaram a príncipe bonitinhos aqui,
+[00:11:22 - 00:11:24] Matheus Henrique Braun Nunes (orientando): deu para ver nas evidências.
+[00:11:24 - 00:11:27] Matheus Henrique Braun Nunes (orientando): Agora eu estou indo para a terceira spec,
+[00:11:27 - 00:11:34] Matheus Henrique Braun Nunes (orientando): que é onde eu vou começar a rodar a parte das mudanças controladas para ver como é que ele vai se comportar e tudo
+[00:11:34 - 00:11:39] Muriel Mazzetto (orientador): o seu sistema de análise, o sistema, o objeto de estudo, o que ele é hoje?
+[00:11:39 - 00:11:42] Matheus Henrique Braun Nunes (orientando): é como assim, eu acho que não...
+[00:11:42 - 00:11:48] Muriel Mazzetto (orientador): que você vai rodar essas mudanças controladas e ele vai identificar isso com base em algo, né, o que é esse teu
+[00:11:48 - 00:11:54] Muriel Mazzetto (orientador): seu sistema de exemplo, que você vai estar aplicando essas mudanças, que você vai estar observando o comportamento
+[00:11:54 - 00:12:00] Muriel Mazzetto (orientador): Seria importante se trazer essa descrição também na sua apresentação.
+[00:12:00 - 00:12:04] Muriel Mazzetto (orientador): organizado, o que é esse caso?
+[00:12:04 - 00:12:08] Muriel Mazzetto (orientador): Ah, espera-se um sistema que faz isso, que tem tal coisa,
+[00:12:08 - 00:12:12] Muriel Mazzetto (orientador): ele pode ter essas opções, existe esse sistema já,
+[00:12:12 - 00:12:15] Muriel Mazzetto (orientador): tem alguma tela, alguma coisa que você pode demonstrar
+[00:12:15 - 00:12:19] Muriel Mazzetto (orientador): basicamente, ou uma API que você pode demonstrar
+[00:12:19 - 00:12:21] Muriel Mazzetto (orientador): basicamente como ele funciona, nem que seja só um back-end
+[00:12:21 - 00:12:25] Muriel Mazzetto (orientador): que você faça as requisições ali no postman mesmo,
+[00:12:25 - 00:12:30] Muriel Mazzetto (orientador): pelo API ali, pra você poder mostrar, né?
+[00:12:30 - 00:12:34] Muriel Mazzetto (orientador): Esse aqui é meu objeto de estudo, e é nele que eu tô gerando todos esses casos e esses
+[00:12:34 - 00:12:35] Muriel Mazzetto (orientador): experimentos.
+[00:12:35 - 00:12:36] Participante não identificado: Ah, entendi.
+[00:12:36 - 00:12:40] Matheus Henrique Braun Nunes (orientando): É, a princípio eu tinha feito só por aqui mesmo, eu não fiz nada assim muito visual,
+[00:12:40 - 00:12:41] Matheus Henrique Braun Nunes (orientando): sabe?
+[00:12:41 - 00:12:44] Matheus Henrique Braun Nunes (orientando): Fiz só mais por terminal pra ver como é que ele tava rodando.
+[00:12:44 - 00:12:49] Matheus Henrique Braun Nunes (orientando): Eu não sei se talvez posso tentar, talvez mais pra frente, talvez trazer essa interface,
+[00:12:49 - 00:12:50] Matheus Henrique Braun Nunes (orientando): né?
+[00:12:50 - 00:12:52] Matheus Henrique Braun Nunes (orientando): Porque no momento eu não fiz, porque talvez o meu poupon...
+[00:12:52 - 00:12:59] Muriel Mazzetto (orientador): Não precisa de uma interface, por exemplo, você vai passar uma alteração.
+[00:13:00 - 00:13:06] Muriel Mazzetto (orientador): ter esses GIFs para eu analisar. Por isso que eu falei, ele pode ser um back-end, pode ser
+[00:13:06 - 00:13:12] Muriel Mazzetto (orientador): uma API simples, que você vai medir ali em cima, mas vai ter um repositório desse sistema.
+[00:13:12 - 00:13:16] Muriel Mazzetto (orientador): Vai ter um repositório disso para você fazer um git ali e você vai poder ver os GIFs
+[00:13:16 - 00:13:24] Muriel Mazzetto (orientador): do que que foi alterado. Descrever o que é ter esse sistema, ter esse repositório
+[00:13:24 - 00:13:28] Muriel Mazzetto (orientador): e falar, ó, esse aqui é meu objeto de estudo. Aí esse framework, essa metodologia
+[00:13:28 - 00:13:32] Muriel Mazzetto (orientador): que eu tô trazendo aqui pra fazer o estudo, ela vem por fora, né?
+[00:13:32 - 00:13:36] Matheus Henrique Braun Nunes (orientando): Não entendi. Essa parte que vou ter que dar uma olhada, realmente.
+[00:13:36 - 00:13:42] Matheus Henrique Braun Nunes (orientando): Daí, voltando, né, agora eu tô na parte da terceira expect,
+[00:13:42 - 00:13:47] Matheus Henrique Braun Nunes (orientando): vou começar as mudanças controladas pra ver realmente como é que ele vai se comportar
+[00:13:47 - 00:13:51] Matheus Henrique Braun Nunes (orientando): e daí talvez começar a pensar no piloto, pra daí a gente já chamar LLEM,
+[00:13:51 - 00:13:55] Matheus Henrique Braun Nunes (orientando): pra daí ver como é que vai funcionar e fazer todas aquelas repetições
+[00:13:55 - 00:14:00] Matheus Henrique Braun Nunes (orientando): para procurar as notas de analista sem um prêmio de melhor.
+[00:14:00 - 00:14:02] Matheus Henrique Braun Nunes (orientando): Eu estou nessa farta agora.
+[00:14:02 - 00:14:08] Muriel Mazzetto (orientador): Perfeito. Então, assim, eu entendo que acho que seria esse momento de você dar essa parada
+[00:14:08 - 00:14:14] Muriel Mazzetto (orientador): para desenhar esse sistema, fazer ele rodar, fazer ele seus exemplos, e aí em cima dele
+[00:14:14 - 00:14:21] Muriel Mazzetto (orientador): você fazer essas modificações. Aí você traz isso para ir aplicando em cima dele.
+[00:14:21 - 00:14:27] Muriel Mazzetto (orientador): Você vai lapidando isso como uma camada, uma casca em volta desse teu objeto de estudo.
+[00:14:27 - 00:14:33] Muriel Mazzetto (orientador): Quando digo objeto de estudo, é o teu sistema, é o teu API, é o teu site, é o teu software,
+[00:14:33 - 00:14:39] Muriel Mazzetto (orientador): é o que você for definir ali como desenho do objeto de estudo, tenha ele, tenha essas
+[00:14:39 - 00:14:44] Muriel Mazzetto (orientador): funcionalidades e fala, esse é o sistema base para todos os experimentos, é isso que
+[00:14:44 - 00:14:47] Muriel Mazzetto (orientador): ele faz, que são aquelas características daqueles requisitos que você já descreveu,
+[00:14:47 - 00:14:50] Muriel Mazzetto (orientador): agora ele faz isso, e é assim que ele funciona.
+[00:14:50 - 00:14:56] Muriel Mazzetto (orientador): Em cima dele, primeiro caso, modificação 1, aí você vai mostrar o que acontece,
+[00:14:56 - 00:15:00] Muriel Mazzetto (orientador): E aí, atrelado a isso, mostrar, de fato, também o que foi o resultado...
+[00:15:00 - 00:15:04] Muriel Mazzetto (orientador): resultado, porque uma coisa vai ser os resultados que você vai medir ali com ou com o Diff,
+[00:15:04 - 00:15:09] Muriel Mazzetto (orientador): ou com a forma como ele apresentou o código final, como que você vai observar se está
+[00:15:09 - 00:15:14] Muriel Mazzetto (orientador): de acordo com o teu gabarito ou não, das expectativas, e aí o que muda quando você
+[00:15:14 - 00:15:19] Muriel Mazzetto (orientador): traz notas do especialista, é ali que você está estudando, mas também trazer a outra
+[00:15:19 - 00:15:24] Muriel Mazzetto (orientador): parte que é o que aconteceu na funcionalidade. Eu tenho a minha base, teve alteração
+[00:15:24 - 00:15:29] Muriel Mazzetto (orientador): com usando, é que você vai ter ali, acho que são 12 caminhos, né, para cada caso,
+[00:15:29 - 00:15:35] Muriel Mazzetto (orientador): 12, né, então para cada, para cada você vai ter 12 avaliações, então essa é minha base,
+[00:15:35 - 00:15:40] Muriel Mazzetto (orientador): a mesma base para todos, e aí você vai rodar para cada uma dessas 12 e o que que são as
+[00:15:40 - 00:15:44] Muriel Mazzetto (orientador): saídas que aconteceram funcionalmente, você vai estar fazendo essa análise já para dar
+[00:15:44 - 00:15:49] Muriel Mazzetto (orientador): nota, medir, comparar, mas você vai também olhar o que aconteceu funcionalmente do
+[00:15:49 - 00:15:51] Muriel Mazzetto (orientador): do ponto de vista do teu objeto de estudo.
+[00:15:51 - 00:15:56] Muriel Mazzetto (orientador): E daí você estava falando assim ó, beleza, eu estou fazendo o meu framework aqui para
+[00:15:56 - 00:16:00] Muriel Mazzetto (orientador): fazer esses testes, fazer essas comparações, tirar essas métricas...
+[00:16:00 - 00:16:05] Muriel Mazzetto (orientador): entender como está sendo a qualidade dessa seleção desses testes, de como está fazendo
+[00:16:05 - 00:16:14] Muriel Mazzetto (orientador): essa adequação dos requisitos de acordo com as mudanças, mas no meu objeto se comportou assim.
+[00:16:14 - 00:16:19] Muriel Mazzetto (orientador): Então, você tem, por exemplo, esse meu sistema, então, por exemplo, ele ficou assim. Aí,
+[00:16:19 - 00:16:25] Muriel Mazzetto (orientador): se eles... você apresentar isso, pode ser que para um TCC2, a tua extensão seja trocar o
+[00:16:25 - 00:16:30] Muriel Mazzetto (orientador): objeto de teste. Aí ao invés de ser relacionado a esses conjuntos de testes de modificação
+[00:16:30 - 00:16:35] Muriel Mazzetto (orientador): e a esse sistema, agora eu vou pegar esse mesmo framework que eu estou utilizando para medir
+[00:16:35 - 00:16:39] Muriel Mazzetto (orientador): e vou criar um outro objeto de teste. Vou pegar agora um outro sistema que seja, sei
+[00:16:39 - 00:16:43] Muriel Mazzetto (orientador): lá, com tela. Não vai ser só um API, vai ser um outro sistema que eu vou estar observando
+[00:16:43 - 00:16:48] Muriel Mazzetto (orientador): isso numa tela de cadastro de um usuário. E aí o que acontece as modificações lá
+[00:16:48 - 00:16:53] Muriel Mazzetto (orientador): dentro? Então aí pode ser uma expansão para o TCC2, uma proposta dessas também.
+[00:16:53 - 00:16:58] Matheus Henrique Braun Nunes (orientando): Eu não entendi. Acho que seria mais essa parte aí mesmo, então.
+[00:16:59 - 00:17:00] Muriel Mazzetto (orientador): Beleza.
+[00:17:00 - 00:17:09] Muriel Mazzetto (orientador): E, cara, é bem interessante ter o TCC, o que eu acredito que vai ser necessário
+[00:17:09 - 00:17:13] Muriel Mazzetto (orientador): é desenhar essa tua apresentação dentro dessa contextualização, né?
+[00:17:13 - 00:17:17] Muriel Mazzetto (orientador): Contar essa historinha, o que acontece no mercado, como que foi a virada,
+[00:17:17 - 00:17:23] Muriel Mazzetto (orientador): que todo mundo usando IA para desenvolver, e quais são os impactos que se pode estar acontecendo,
+[00:17:23 - 00:17:28] Muriel Mazzetto (orientador): e você focou especificamente nessa seleção de requisitos, testes,
+[00:17:28 - 00:17:32] Muriel Mazzetto (orientador): e quais são os impactos que tem com as possibilidades diferentes.
+[00:17:32 - 00:17:37] Muriel Mazzetto (orientador): Para isso, você montou esse teu experimento com um sistema de exemplo que faz XPTO.
+[00:17:37 - 00:17:43] Muriel Mazzetto (orientador): E aí você traz o teu framework, roda, tira as métricas, apresenta esse resultado.
+[00:17:43 - 00:17:49] Muriel Mazzetto (orientador): Seria interessante você verificar se é possível durante a apresentação fazer uma rodada,
+[00:17:49 - 00:17:54] Muriel Mazzetto (orientador): uma validação, porque daí não precisaria rodar todos os experimentos, mas pelo menos rodar dois.
+[00:17:54 - 00:18:00] Muriel Mazzetto (orientador): Se seria possível, ou se não só mencionar e deixar rodando em paralelo e falar, demora tanto tempo.
+[00:18:00 - 00:18:05] Muriel Mazzetto (orientador): e tal e tudo mais, mas seria legal você ter pelo menos dois bem distintos para exibir a
+[00:18:05 - 00:18:12] Muriel Mazzetto (orientador): execução, a demonstração prática, e trazer depois no final o que seria essa continuação.
+[00:18:12 - 00:18:17] Muriel Mazzetto (orientador): Tem algo pendente para você dar continuidade ou o que você já consegue observar que no
+[00:18:17 - 00:18:21] Muriel Mazzetto (orientador): TCC2 eu posso mudar o meu sistema para fazer uma outra avaliação.
+[00:18:21 - 00:18:26] Muriel Mazzetto (orientador): Acho que é mais você desenhar essa trilha de como vai apresentar e ir preenchendo
+[00:18:26 - 00:18:31] Muriel Mazzetto (orientador): esses pontos que não estão muito claros ainda ou que talvez não tenham ou que já tem e aí você
+[00:18:31 - 00:18:36] Muriel Mazzetto (orientador): saber tá dessa historinha toda o que que eu já tenho e que eu vou completar e ter essa trilha
+[00:18:36 - 00:18:51] Muriel Mazzetto (orientador): para a apresentação. Beleza, te dei o prompt completo pro GPT agora. Juda, já. Alguma outra dúvida em relação a apresentação?
+[00:18:51 - 00:18:56] Matheus Henrique Braun Nunes (orientando): Eu acho que seria, mas essa na verdade está nessa dúvida de se a gente teria que rodar
+[00:18:56 - 00:19:00] Matheus Henrique Braun Nunes (orientando): alguma coisa na hora né, mas acho que agora quando se respondeu seria realmente tipo...
+[00:19:00 - 00:19:06] Matheus Henrique Braun Nunes (orientando): ver a oportunidade, já a gente rodar pra ter essa melhor aí, mas acho que seria essa
+[00:19:06 - 00:19:12] Matheus Henrique Braun Nunes (orientando): parte, só uma coisa, o 3C1 não precisa ter nada do artigo já, né, fechou então.
+[00:19:12 - 00:19:16] Muriel Mazzetto (orientador): Ele é de fato a demonstração, é abrir repositório e mostrar.
+[00:19:16 - 00:19:23] Matheus Henrique Braun Nunes (orientando): Fechou então, acho que seria isso aí, caso surja alguma coisa, e o tichão não, eu
+[00:19:23 - 00:19:30] Matheus Henrique Braun Nunes (orientando): A gente manda ali o Word ali que eu fiz ali sobre as coisinhas ali e fica deixado.
+[00:19:30 - 00:19:31] Muriel Mazzetto (orientador): Você não dá repositório.
+[00:19:31 - 00:19:32] Participante não identificado: Aham.
+[00:19:32 - 00:19:33] Participante não identificado: Show.
+[00:19:33 - 00:19:34] Muriel Mazzetto (orientador): Valeu então.
+[00:19:34 - 00:19:35] Participante não identificado: Beleza?
+[00:19:35 - 00:19:36] Muriel Mazzetto (orientador): Valeu.
+[00:19:36 - 00:19:37] Muriel Mazzetto (orientador): Assim que possível manda a transcrição ali pra ti.
+[00:19:37 - 00:19:38] Participante não identificado: Show.
+[00:19:38 - 00:19:39] Participante não identificado: Valeu.
+[00:19:39 - 00:19:40] Participante não identificado: Até mais.
