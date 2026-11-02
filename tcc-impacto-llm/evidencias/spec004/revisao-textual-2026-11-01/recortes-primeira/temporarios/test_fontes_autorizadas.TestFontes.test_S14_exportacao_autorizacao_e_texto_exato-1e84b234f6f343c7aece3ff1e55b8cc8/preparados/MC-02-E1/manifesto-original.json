@@ -1,0 +1,118 @@
+{
+  "condicao": "E1",
+  "configuracao_id": "texto-autorizado-D29",
+  "documentos": [
+    {
+      "arquivo": "sistema.txt",
+      "papel": "sistema",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "5918e1f7760700e6bf027ab13c9e54bab1eaaa8d34f686b209e6559e1a307c40",
+      "tamanho_bytes": 29,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "definicoes-comuns.md",
+      "papel": "definicoes-comuns",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "519d6d8b8943e643be676deaa7f516ec49f6c0fc572ace99e653e3eaf91b8e1f",
+      "tamanho_bytes": 44,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "requisitos-baseline.md",
+      "papel": "requisitos-baseline",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "ddd913393fdf31752deedd390e1cba5f97ab848cb3f6de7eca27123059caeaed",
+      "tamanho_bytes": 145,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "catalogo-baseline.md",
+      "papel": "catalogo-baseline",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "04f49ddd3f6d9939d7f363715194f4d74b51db117bdd36c8236627d6c0684c59",
+      "tamanho_bytes": 163,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "mudanca.md",
+      "papel": "mudanca",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "aa8a2fc0f4fd8157dcf48d05e9e256d1e8d42d70fdd2db605dace0a644392e4a",
+      "tamanho_bytes": 18,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "notas.md",
+      "papel": "notas",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "b3c234832cb1fc360d4545c56be9c14544a31f1805dcb1004fa8577e78adce10",
+      "tamanho_bytes": 38,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "pedido.txt",
+      "papel": "pedido",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "7cb336b26c8b7093fb8ee7c04187935614d2b49a61e16c3605781c7c8a75b883",
+      "tamanho_bytes": 27,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "schema_saida.json",
+      "papel": "schema_saida",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "9091a8164f97eaca182b3d06d0e5a59e923c880ebc0148056c453c651f5b46cb",
+      "tamanho_bytes": 18,
+      "versao": "recorte-D29-2026-11-01"
+    }
+  ],
+  "liberado_para_pesquisa": false,
+  "mudanca": "MC-02",
+  "origem_notas": "pesquisador, representa conhecimento de analista; revisao profissional pendente",
+  "pacote_id": "MC-02-E1",
+  "status": "RASCUNHO_PREPARACAO",
+  "status_notas": "RASCUNHO_NAO_REVISADO",
+  "versao_contrato": "spec004-v3",
+  "versao_pacote": "D29-2026-11-01"
+}

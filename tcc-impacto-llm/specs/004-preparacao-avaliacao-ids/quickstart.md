@@ -1,8 +1,14 @@
-# Guia de validação futura — Spec 004
+# Guia de consulta e validação local — Spec 004
 
-> Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Isolamento real não demonstrado; T014/T015 e dependentes permanecem pendentes. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
+> Contrato vigente — 01/11/2026 (D-29): o modelo recebe somente texto preparado, sem ferramentas, repositório, código, comandos, gabarito, resultados de variantes ou histórico. Exigências de identidade/ACL do Windows de T014/T015 substituídas, sem execução ou aprovação retroativa. Permanecem validação de arquivos/caminhos, autorização de conteúdo, integridade, equivalência de condições e avaliação separada. Notas representam conhecimento de analista de testes; texto definitivo e revisão profissional pendentes. Não se avaliam juniores, novos testes ou defeitos reais. Sem modelo escolhido, envio, chamadas externas ou piloto; revisão científica pendente. Histórico preservado em evidencias/spec004/revisao-textual-2026-11-01/originais.
+
+> Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Registro de 27/10: isolamento por SO não demonstrado; exigência substituída por D-29, sem aprovação retroativa. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
 
 27/10/2026. **Somente planejamento.** Montador, avaliador, testes e fixtures aqui citados não existem. Nenhum comando de aplicação abaixo foi executado. Não há pacote permitido exportado, resposta de LLM ou piloto.
+
+## Histórico de planejamento e comandos v2 — 27/10/2026
+
+Os comandos desta seção pertencem ao contrato antigo. Não os reutilizar para montagem v3: a autorização externa agora é obrigatória. Comandos vigentes e evidências D-30 estão ao final.
 
 ## Pré-condições
 
@@ -40,7 +46,7 @@ python -B montagem_entradas.py --pacote tests/fixtures/spec004/pacotes/E1 --mani
 
 Esses paths no repositório servem a testes locais de composição e não comprovam isolamento. Conferir payload integral/delimitadores, cópias originais e hashes comuns, igualdade de notas D1/E1 e diferença apenas de pedido/notas conforme condição. Esperar retorno 0 e `PREPARADO_LOCAL_NAO_ENVIADO`, sem liberação de pesquisa.
 
-Separadamente, S-14 de fronteira de acesso exige runner/pacote em zona restrita sob identidade sem leitura das zonas de desenvolvimento/avaliação. Demonstrar leitura permitida dos documentos e negada das sentinelas fictícias nas zonas proibidas, mantendo provas. Sem essa preparação/permissão e inspeção humana, registrar “isolamento não demonstrado”; não marcar S-14 integralmente conforme só pelos testes de paths/mocks. Nenhuma identidade/ACL é criada neste planejamento.
+> **Exigência histórica substituída por D-29, não executada/aprovada:** Separadamente, S-14 de fronteira de acesso exige runner/pacote em zona restrita sob identidade sem leitura das zonas de desenvolvimento/avaliação. Demonstrar leitura permitida dos documentos e negada das sentinelas fictícias nas zonas proibidas, mantendo provas. Sem essa preparação/permissão e inspeção humana, registrar “isolamento não demonstrado”; não marcar S-14 integralmente conforme só pelos testes de paths/mocks. Nenhuma identidade/ACL é criada neste planejamento.
 
 ## 3. Importar originais e conferir avaliação — futuro
 
@@ -87,7 +93,7 @@ Cenário B: uma observação e duas tentativas técnicas vinculadas, segunda exa
 
 Futuro fechamento técnico exige cobertura/esperados e prova de acesso real, preservação/rechecagem de integridade e estado coerente. Roteiro pronto e controles conformes não aprovam cientificamente referência ou métricas. Revisão profissional, notas definitivas, fundamentação/revisão de medidas e desenho final do piloto continuam pendentes. Nenhuma dessas execuções foi feita nesta fase; próxima ação autorizável é revisar planejamento e solicitar tarefas.
 
-## Estado técnico parcial — 27/10/2026
+## Histórico técnico parcial — 27/10/2026 (substituído no alcance de D-29)
 
 Implementados `montagem_entradas.py` e `avaliacao_ids.py`, sem rede/provedor. Convenções D-26 candidatas, política ids-proposta-004-v2; 39 tarefas independentes concluídas. T014/T015 e T042–T048 pendentes: runner isolado não provisionado e criação de symlink real negada com WinError1314. Não há fechamento integral. [Evidências e limites](../../evidencias/spec004/revisao-parcial/relatorio.md). As descrições anteriores datadas de planejamento/comandos futuros são históricas; comandos locais agora existentes só preparam/avaliam arquivos sintéticos, sem envio ou piloto. Métricas, notas definitivas, referência e desenho científico continuam sujeitos à revisão. Checklist de qualidade preservada, sem remarcação.
 
@@ -104,3 +110,31 @@ Get-Content -Encoding utf8 evidencias/spec004/demonstracao-001/resumos/A/resumo.
 
 Preparações originais em demonstracao-001/preparacoes; respostas e registros originais em entradas-avaliacao e nas saídas de avaliacoes. A demonstração identifica os hashes da versão executada; checkpoints finais incluem endurecimento posterior de lstat sem seguir links. Para reavaliar, usar pasta nova e --avaliacao-anterior quando aplicável, preservando a avaliação anterior. Não reexecutar scripts de preparação sobre diretórios existentes.
 
+## Contrato textual verificável — D-29
+
+Preparação editorial local em `fontes_autorizadas.py`, com seis caminhos fixos e recortes enumerados: instrução/notas/pedidos de materiais/04; definições integrais de materiais/07; contrato inicial de documentacao/requisitos; seis primeiras colunas da tabela T01–T12 de documentacao/qualidade-e-testes (sem coluna de destaques de RF); somente descrição de uma remoção na tabela da Spec 003; schema existente. Documentos mistos são lidos nessa edição local para selecionar os trechos, nunca enviados inteiros. A referência candidata não é lida nessa etapa.
+
+`montagem_entradas.py`, contrato `spec004-v3`, lê pacote plano e `--autorizacao` externa explícita, fixando hashes de manifesto/documentos. Atualizar apenas seu próprio manifesto não autoriza texto alterado. A autorização é registro técnico controlado, não assinatura de autoridade ou detector semântico de qualquer gabarito: confrontar fontes, recortes, conteúdo e bytes. Mudança de fonte/recorte requer nova conferência; revisão profissional continua pendente. Fixtures v2 e comandos anteriores são históricos, preservados e não reexecutados como prova do contrato atual.
+
+Somente `payload.txt` se destina ao modelo. Manifesto, autorização, cópias de documentos, fontes/hashes e `entrega-textual.json` são registros locais; não anexar diretório, código, fontes mistas ou referência. O recibo fixa texto/hash, `ferramentas=[]`, `anexos_ambiente=[]`, sem histórico e `envio_realizado=false`. Entrega real e ausência de ferramentas na plataforma serão conferidas antes do piloto; não foram exercitadas aqui, pois não há chamadas externas. Não se alega isolamento por SO.
+
+Caminhos suportados: CLI com caminho local absoluto com drive ou relativo ao cwd; documentos do pacote filhos diretos com nomes enumerados; avaliador admite subdiretórios relativos declarados com separadores `/` ou `\`, confinados à raiz. Recusar drive relativo, raiz sem drive no Windows, UNC/dispositivos, streams `arquivo:fluxo`, dispositivos reservados, ponto/espaço final, componentes declarados vazios/`.`/`..` e links/junctions/reparse points. São controles de inclusão indevida, sem contas/permissões ou alegação de isolamento.
+
+S-14 vigente verifica recortes/fontes, autorização independente, conteúdo proibido fictício em negativos, 16 combinações (quatro mudanças × quatro condições), texto exato e notas iguais D1/E1/ausentes D0/E0. Criação de symlink e negação de leitura por identidade são exigências antigas substituídas: não foram aprovadas. Esses objetos não pertencem às entradas suportadas; permanecem controles de recusa, sem exigir criação privilegiada para aceitar o contrato textual. PONT-01/PONT-02 e fórmulas candidatas não mudaram.
+
+CLI vigente (usar diretórios novos, não os exemplos antigos v2):
+
+```powershell
+python -B fontes_autorizadas.py --raiz . --saida <editorial-nova>
+python -B montagem_entradas.py --pacote <editorial-nova>/pacotes/MC-01-D0 --manifesto <editorial-nova>/pacotes/MC-01-D0/manifesto.json --autorizacao <editorial-nova>/autorizacoes/MC-01-D0.json --saida <preparacao-nova>
+```
+
+Avaliação continua na CLI separada com --referencia. Sem parâmetros de modelo/provedor, envio ou chamada externa.
+
+
+
+## Verificação vigente — 01/11/2026 (D-30)
+
+Engenharia offline do contrato D-29 concluída no alcance verificado: 49 tarefas vigentes atendidas; T014/T015 substituídas, não executadas/aprovadas. Recortes das seis fontes, autorização externa e montagem v3 produziram 16 pacotes; bytes, conteúdo, documentos comuns, notas D1/E1 e ausência de notas D0/E0 confrontados. Referência somente no avaliador separado; resposta de demonstração explicitamente sintética. As 16 famílias estão consolidadas com evidências anteriores preservadas e verificações necessárias das alterações; não se reexecutou pontuação inalterada nem se contou sintéticos como LLM.
+
+[Relatório e limitações](../../evidencias/spec004/revisao-textual-2026-11-01/relatorio.md) inclui comandos, esperado/observado, hashes, matriz, caminhos suportados, limitação da criação de symlink e provas de SO substituídas. As seções de 27/10 são históricas; os gates atuais são D-29 e esta verificação, sem aprovação retroativa. Checklist é qualidade documental, preservada sem remarcação. Sem prova de entrega real ao modelo, modelo escolhido, chamada externa ou piloto. Revisão profissional/científica, notas definitivas, fundamentação das métricas, desenho final/congelamento do piloto e adoção constitucional permanecem pendentes.

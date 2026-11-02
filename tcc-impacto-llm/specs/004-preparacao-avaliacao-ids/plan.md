@@ -1,18 +1,20 @@
 # Implementation Plan: Preparação de entradas e avaliação separada de IDs
 
-> Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Isolamento real não demonstrado; T014/T015 e dependentes permanecem pendentes. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
+> Contrato vigente — 01/11/2026 (D-29): o modelo recebe somente texto preparado, sem ferramentas, repositório, código, comandos, gabarito, resultados de variantes ou histórico. Exigências de identidade/ACL do Windows de T014/T015 substituídas, sem execução ou aprovação retroativa. Permanecem validação de arquivos/caminhos, autorização de conteúdo, integridade, equivalência de condições e avaliação separada. Notas representam conhecimento de analista de testes; texto definitivo e revisão profissional pendentes. Não se avaliam juniores, novos testes ou defeitos reais. Sem modelo escolhido, envio, chamadas externas ou piloto; revisão científica pendente. Histórico preservado em evidencias/spec004/revisao-textual-2026-11-01/originais.
+
+> Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Registro de 27/10: isolamento por SO não demonstrado; exigência substituída por D-29, sem aprovação retroativa. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
 
 **Feature**: `004-preparacao-avaliacao-ids` | **Date**: 2026-10-27 | **Spec**: [spec.md](spec.md)
 
 **Branch (contexto do resolvedor)**: `004-preparacao-avaliacao-ids`; nenhuma branch Git criada ou trocada.
 
-**Input**: Spec/checklist 004, governança e encaminhamentos da orientação; autorização documental D-24 e decisões técnicas D-25 em [decisões](../../documentacao/decisoes.md). Esta entrega contém cinco artefatos de planejamento, sem tarefas ou implementação.
+**Input inicial (histórico)**: Spec/checklist 004, governança e encaminhamentos da orientação; autorização documental D-24 e decisões técnicas D-25 em [decisões](../../documentacao/decisoes.md). A entrega original continha cinco artefatos de planejamento. A revisão D-29/D-30 atualiza o contrato já implementado/verificado, mantendo os originais arquivados.
 
 ## Summary
 
-Projetar dois comandos locais em Python: montagem de conteúdo por manifesto fechado de documentos permitidos e avaliação de respostas originais já salvas, com referência candidata acessível somente ao avaliador. Sem cliente LLM ou integração de provedores. Preservar bytes, versões, hashes e registros anteriores; comparar conjuntos de IDs de requisitos e testes independentemente. Verificação futura cobre as 16 famílias sintéticas da Spec com esperados prévios independentes.
+Três utilitários locais em Python: recortes editoriais de seis fontes fixas (`fontes_autorizadas.py`), montagem por manifesto e autorização externa (`montagem_entradas.py`) e avaliação de respostas originais salvas (`avaliacao_ids.py`). Referência candidata acessível somente ao avaliador. Sem cliente LLM ou integração de provedores. Preservar bytes, versões, hashes e registros anteriores; comparar conjuntos de IDs de requisitos e testes independentemente. As 16 famílias sintéticas estão consolidadas com esperados prévios independentes no alcance offline D-30.
 
-O plano não exporta agora pacote de entrada nem transforma notas em texto definitivo. Precisão, revocação, F1 e consistência têm fórmulas/convenções propostas, sem aprovação científica. [Pesquisa local](research.md), [modelo de dados](data-model.md), [contrato](contracts/preparacao-avaliacao.md) e [guia de validação futura](quickstart.md) detalham o desenho.
+Pacotes autorizados foram preparados localmente em D-30, sem envio. Não transformar notas em texto definitivo. Precisão, revocação, F1 e consistência têm fórmulas/convenções propostas, sem aprovação científica. [Pesquisa local](research.md), [modelo de dados](data-model.md), [contrato](contracts/preparacao-avaliacao.md) e [guia de consulta](quickstart.md) detalham o desenho e o histórico.
 
 ## Technical Context
 
@@ -22,15 +24,15 @@ O plano não exporta agora pacote de entrada nem transforma notas em texto defin
 
 **Storage**: arquivos locais UTF-8/JSON; originais copiados em bytes; SHA-256, versões e diretórios exclusivos. Sem banco. Manifesto identifica todos os arquivos de entrada; saídas de avaliação ficam em zona separada.
 
-**Testing**: unittest em dois arquivos novos futuros; fixtures sintéticas explícitas com esperados literais e racionais. Nenhum teste executado agora. Suite original, variantes e verificador 003 permanecem intocados.
+**Testing**: unittest nos três arquivos de montagem/fontes/avaliação; fixtures sintéticas explícitas com esperados literais e racionais. D-30 verifica somente alterações de recortes, conteúdo, caminhos e importação; pontuação inalterada reutiliza evidência anterior identificada. Suíte original, variantes e verificador 003 permanecem intocados.
 
-**Target Platform**: Windows/PowerShell; pathlib para caminhos e sys.executable no futuro. Bash do Git somente no fluxo local do Spec Kit. Isolamento real exige execução restrita por permissões, além da lista permitida; não está demonstrado nesta entrega.
+**Target Platform**: Windows/PowerShell; pathlib para caminhos e sys.executable. Bash do Git somente no fluxo local do Spec Kit. D-29 substitui o antigo gate de identidade/permissões por conteúdo textual verificável sem ferramentas do modelo. Sem alegação de isolamento por SO ou prova de entrega externa.
 
-**Project Type**: dois utilitários locais de preparação/avaliação, sem serviço, API, interface gráfica, framework ou automação de coleta.
+**Project Type**: utilitários locais de recorte/montagem/avaliação, sem serviço, API, interface gráfica, framework ou automação de coleta.
 
 **Performance Goals**: rastreabilidade integral e recusa determinística de entradas inválidas; sem meta de latência/tokens, ganho de tempo ou benchmark.
 
-**Constraints**: sem tarefas, implementação, chamadas externas, modelos escolhidos, piloto/coleta, geração de código ou semelhança textual. Referência 0.2 e histórico preservados; notas atuais `RASCUNHO_NAO_REVISADO`.
+**Constraints vigentes**: implementação/verificações offline autorizadas em D-29; sem chamadas externas, modelos escolhidos, piloto/coleta, geração de código ou semelhança textual. Referência 0.2 e histórico preservados; notas atuais `RASCUNHO_NAO_REVISADO`. Entrega real/revisão científica futuras.
 
 **Scale/Scope**: oito documentos lógicos, quatro mudanças isoladas, quatro condições candidatas, universos de quatro RFs/doze testes e 16 famílias de controles com subcasos. Não fixa repetições experimentais.
 
@@ -54,7 +56,7 @@ Revisão anterior à fase 0 e posterior ao desenho. Constituição 1.0.0 ainda s
 | Separação de contextos | Conforme no desenho | Conforme no desenho | Montador sem referência; avaliação separada; acesso real ainda exige prova antes do uso |
 | Fechamento | Conforme | Conforme | Estado/handoff/pendências atualizados, histórico preservado; revisão científica pendente |
 
-Nenhuma violação documental identificada. Gates de isolamento implementado, referência/notas revisadas e métricas fundamentadas continuam não atendidos para pesquisa; não declarar liberação de piloto.
+Nenhuma violação documental identificada. Gates de revisão profissional/científica, entrega textual efetiva sem ferramentas e desenho final do piloto continuam não atendidos para pesquisa; não declarar liberação de piloto.
 
 ## Project Structure
 
@@ -85,7 +87,7 @@ tests/fixtures/spec004/           # bytes e esperados literais revisados, nunca 
 
 **Structure Decision**: dois módulos independentes, sem importação do avaliador pelo montador, sem importação do núcleo/variantes/verificador 003. Evitar pacote genérico, plug-ins ou abstração de provedor. Fixtures não são artefatos experimentais.
 
-Zonas de execução futuras: pacote permitido/runner/saída da montagem sob identidade restrita, sem acesso ao repositório; zona de avaliação recebe cópias de entrada/resposta e referência privada; resultados ficam somente na avaliação. Os caminhos concretos serão fornecidos explicitamente, sem busca recursiva e sem criar outro repositório. Detalhes de arquivos e CLI no contrato. Nenhuma dessas zonas foi criada agora.
+> **Exigência histórica substituída por D-29, não executada/aprovada:** Zonas de execução futuras: pacote permitido/runner/saída da montagem sob identidade restrita, sem acesso ao repositório; zona de avaliação recebe cópias de entrada/resposta e referência privada; resultados ficam somente na avaliação. Os caminhos concretos serão fornecidos explicitamente, sem busca recursiva e sem criar outro repositório. Detalhes de arquivos e CLI no contrato. Nenhuma dessas zonas foi criada agora.
 
 ### Fluxo projetado
 
@@ -120,7 +122,26 @@ Planejamento documental encerrado na fase 1 do fluxo local; somente este plano, 
 
 Conferência documental final: resolvedor retornou 004 e research/data-model/contracts/quickstart disponíveis; 115 links locais válidos nos 12 documentos conferidos; nenhum placeholder técnico ou espaço final; `git diff --check` sem erros. Hash/tamanho de 191 arquivos protegidos mantidos. Sem tasks.md, módulos ou testes novos. `.specify/extensions.yml` ausente antes/depois, sem hooks. Essas verificações não executam a aplicação nem demonstram isolamento. Revisão auxiliar somente de leitura conferiu pontuação/estados/16 famílias; ajuste documental omite integralmente bloco de notas em D0/E0, conforme a Spec.
 
-## Estado técnico parcial — 27/10/2026
+## Histórico técnico parcial — 27/10/2026 (substituído no alcance de D-29)
 
 Implementados `montagem_entradas.py` e `avaliacao_ids.py`, sem rede/provedor. Convenções D-26 candidatas, política ids-proposta-004-v2; 39 tarefas independentes concluídas. T014/T015 e T042–T048 pendentes: runner isolado não provisionado e criação de symlink real negada com WinError1314. Não há fechamento integral. [Evidências e limites](../../evidencias/spec004/revisao-parcial/relatorio.md). As descrições anteriores datadas de planejamento/comandos futuros são históricas; comandos locais agora existentes só preparam/avaliam arquivos sintéticos, sem envio ou piloto. Métricas, notas definitivas, referência e desenho científico continuam sujeitos à revisão. Checklist de qualidade preservada, sem remarcação.
 
+## Contrato textual verificável — D-29
+
+Preparação editorial local em `fontes_autorizadas.py`, com seis caminhos fixos e recortes enumerados: instrução/notas/pedidos de materiais/04; definições integrais de materiais/07; contrato inicial de documentacao/requisitos; seis primeiras colunas da tabela T01–T12 de documentacao/qualidade-e-testes (sem coluna de destaques de RF); somente descrição de uma remoção na tabela da Spec 003; schema existente. Documentos mistos são lidos nessa edição local para selecionar os trechos, nunca enviados inteiros. A referência candidata não é lida nessa etapa.
+
+`montagem_entradas.py`, contrato `spec004-v3`, lê pacote plano e `--autorizacao` externa explícita, fixando hashes de manifesto/documentos. Atualizar apenas seu próprio manifesto não autoriza texto alterado. A autorização é registro técnico controlado, não assinatura de autoridade ou detector semântico de qualquer gabarito: confrontar fontes, recortes, conteúdo e bytes. Mudança de fonte/recorte requer nova conferência; revisão profissional continua pendente. Fixtures v2 e comandos anteriores são históricos, preservados e não reexecutados como prova do contrato atual.
+
+Somente `payload.txt` se destina ao modelo. Manifesto, autorização, cópias de documentos, fontes/hashes e `entrega-textual.json` são registros locais; não anexar diretório, código, fontes mistas ou referência. O recibo fixa texto/hash, `ferramentas=[]`, `anexos_ambiente=[]`, sem histórico e `envio_realizado=false`. Entrega real e ausência de ferramentas na plataforma serão conferidas antes do piloto; não foram exercitadas aqui, pois não há chamadas externas. Não se alega isolamento por SO.
+
+Caminhos suportados: CLI com caminho local absoluto com drive ou relativo ao cwd; documentos do pacote filhos diretos com nomes enumerados; avaliador admite subdiretórios relativos declarados com separadores `/` ou `\`, confinados à raiz. Recusar drive relativo, raiz sem drive no Windows, UNC/dispositivos, streams `arquivo:fluxo`, dispositivos reservados, ponto/espaço final, componentes declarados vazios/`.`/`..` e links/junctions/reparse points. São controles de inclusão indevida, sem contas/permissões ou alegação de isolamento.
+
+S-14 vigente verifica recortes/fontes, autorização independente, conteúdo proibido fictício em negativos, 16 combinações (quatro mudanças × quatro condições), texto exato e notas iguais D1/E1/ausentes D0/E0. Criação de symlink e negação de leitura por identidade são exigências antigas substituídas: não foram aprovadas. Esses objetos não pertencem às entradas suportadas; permanecem controles de recusa, sem exigir criação privilegiada para aceitar o contrato textual. PONT-01/PONT-02 e fórmulas candidatas não mudaram.
+
+
+
+## Verificação vigente — 01/11/2026 (D-30)
+
+Engenharia offline do contrato D-29 concluída no alcance verificado: 49 tarefas vigentes atendidas; T014/T015 substituídas, não executadas/aprovadas. Recortes das seis fontes, autorização externa e montagem v3 produziram 16 pacotes; bytes, conteúdo, documentos comuns, notas D1/E1 e ausência de notas D0/E0 confrontados. Referência somente no avaliador separado; resposta de demonstração explicitamente sintética. As 16 famílias estão consolidadas com evidências anteriores preservadas e verificações necessárias das alterações; não se reexecutou pontuação inalterada nem se contou sintéticos como LLM.
+
+[Relatório e limitações](../../evidencias/spec004/revisao-textual-2026-11-01/relatorio.md) inclui comandos, esperado/observado, hashes, matriz, caminhos suportados, limitação da criação de symlink e provas de SO substituídas. As seções de 27/10 são históricas; os gates atuais são D-29 e esta verificação, sem aprovação retroativa. Checklist é qualidade documental, preservada sem remarcação. Sem prova de entrega real ao modelo, modelo escolhido, chamada externa ou piloto. Revisão profissional/científica, notas definitivas, fundamentação das métricas, desenho final/congelamento do piloto e adoção constitucional permanecem pendentes.

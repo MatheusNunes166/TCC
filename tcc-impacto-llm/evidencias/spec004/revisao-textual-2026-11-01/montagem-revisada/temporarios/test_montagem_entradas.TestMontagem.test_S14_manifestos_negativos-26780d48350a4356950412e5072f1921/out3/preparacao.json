@@ -1,0 +1,10 @@
+{
+  "causa": "pacote/manifesto diverge da autorizacao externa",
+  "completo": false,
+  "contrato": "spec004-v3",
+  "instante_utc": "2026-11-02T00:29:22.564407+00:00",
+  "liberado_para_pesquisa": false,
+  "montador_sha256": "4277041f87a57073cf75279a885b3c4800fc882d975c4b8bf9ba1a26458a632a",
+  "preparacao_id": "88f92bb26905462b8714d5c5d16303bd",
+  "status": "BLOQUEADO"
+}

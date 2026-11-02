@@ -1,0 +1,177 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "manifesto-original.json",
+      "sha256": "a99a757f954eaaf57d6fff7ff1a1627639d7311f17ce84c7b2156df1060dc6e1"
+    },
+    {
+      "arquivo": "autorizacao-original.json",
+      "sha256": "c226c57c93fe11906ea881354478fe583b68a56292de580f74f68a01fb814d73"
+    },
+    {
+      "arquivo": "documentos/sistema.txt",
+      "sha256": "863d5e523f64b4c0a79898d7aa1529fd3488264ac62459d5b047393362efaf11"
+    },
+    {
+      "arquivo": "documentos/definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "documentos/requisitos-baseline.md",
+      "sha256": "6167072a77a6018717afea1bc51681113a7bb02e55e0966c3d8f74dc4a3c3478"
+    },
+    {
+      "arquivo": "documentos/catalogo-baseline.md",
+      "sha256": "b7261fd6b24a0eca7f1e4abcb4a8ffcbf092e071931be6c4f086646d82242c76"
+    },
+    {
+      "arquivo": "documentos/mudanca.md",
+      "sha256": "a2a646f6a3945f4e033006b390b6db8558ff80e06ff8933a1215a93239d77314"
+    },
+    {
+      "arquivo": "documentos/notas.md",
+      "sha256": "5f82ec8421a7ec27a92a718d27deb2a74cdb7538e12a80c662f27038c2f3cc34"
+    },
+    {
+      "arquivo": "documentos/pedido.txt",
+      "sha256": "55a1dea70f06c29454d6554ba587c6c43506489eceef028b7276de31d09c3540"
+    },
+    {
+      "arquivo": "documentos/schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "payload.txt",
+      "sha256": "29fb72fa1c157f18ffc14ebfb36e723096209d5c75247b84597e4ff440a223e2"
+    },
+    {
+      "arquivo": "entrega-textual.json",
+      "sha256": "1ca9682a96bde226bc7e1c37af05799267d79b7aa391c806d535d876a16f625a"
+    }
+  ],
+  "autorizacao_sha256": "c226c57c93fe11906ea881354478fe583b68a56292de580f74f68a01fb814d73",
+  "completo": true,
+  "condicao": "D1",
+  "configuracao_id": "texto-autorizado-D29",
+  "contrato": "spec004-v3",
+  "documentos": [
+    {
+      "arquivo": "sistema.txt",
+      "papel": "sistema",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "863d5e523f64b4c0a79898d7aa1529fd3488264ac62459d5b047393362efaf11",
+      "tamanho_bytes": 103,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "definicoes-comuns.md",
+      "papel": "definicoes-comuns",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e",
+      "tamanho_bytes": 2285,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "requisitos-baseline.md",
+      "papel": "requisitos-baseline",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "6167072a77a6018717afea1bc51681113a7bb02e55e0966c3d8f74dc4a3c3478",
+      "tamanho_bytes": 2138,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "catalogo-baseline.md",
+      "papel": "catalogo-baseline",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "b7261fd6b24a0eca7f1e4abcb4a8ffcbf092e071931be6c4f086646d82242c76",
+      "tamanho_bytes": 933,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "mudanca.md",
+      "papel": "mudanca",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "a2a646f6a3945f4e033006b390b6db8558ff80e06ff8933a1215a93239d77314",
+      "tamanho_bytes": 41,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "notas.md",
+      "papel": "notas",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "5f82ec8421a7ec27a92a718d27deb2a74cdb7538e12a80c662f27038c2f3cc34",
+      "tamanho_bytes": 416,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "pedido.txt",
+      "papel": "pedido",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "55a1dea70f06c29454d6554ba587c6c43506489eceef028b7276de31d09c3540",
+      "tamanho_bytes": 232,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "schema_saida.json",
+      "papel": "schema_saida",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21",
+      "tamanho_bytes": 430,
+      "versao": "recorte-D29-2026-11-01"
+    }
+  ],
+  "fronteira": "conteudo_textual_sem_ferramentas",
+  "instante_utc": "2026-11-02T00:39:21.002318+00:00",
+  "isolamento_por_SO_alegado": false,
+  "liberado_para_pesquisa": false,
+  "manifesto_sha256": "a99a757f954eaaf57d6fff7ff1a1627639d7311f17ce84c7b2156df1060dc6e1",
+  "montador_sha256": "4277041f87a57073cf75279a885b3c4800fc882d975c4b8bf9ba1a26458a632a",
+  "mudanca": "MC-03",
+  "pacote_id": "MC-03-D1",
+  "payload_sha256": "29fb72fa1c157f18ffc14ebfb36e723096209d5c75247b84597e4ff440a223e2",
+  "payload_tamanho": 6966,
+  "preparacao_id": "09b55b93b05943dcbd17e81b11a71a97",
+  "status": "PREPARADO_LOCAL_NAO_ENVIADO",
+  "status_notas": "RASCUNHO_NAO_REVISADO",
+  "versao_pacote": "D29-2026-11-01"
+}

@@ -1,0 +1,21 @@
+{
+  "comando": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "-B",
+    "avaliacao_ids.py",
+    "avaliar",
+    "--preparacao",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\preparados\\MC-01-D0\\preparacao.json",
+    "--tentativa",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\entrada-avaliacao\\tentativa.json",
+    "--referencia",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+    "--saida",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\avaliacao"
+  ],
+  "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+  "retorno": 0,
+  "esperado": 0,
+  "origem": "verificacao_local",
+  "LLM": false
+}

@@ -1,0 +1,13 @@
+{
+  "PONT-01": "rejeitar mistura; preservar grupos por versao sem combinado",
+  "PONT-02": "configuracao/mudanca/condicao/repeticao unicos; tentativas vinculadas",
+  "desconhecidos": "FP unico",
+  "duplicatas": "conjunto unico",
+  "invalidas": "nulo; imputacao PRF opcional",
+  "jaccard_insuficiente": "nao calculavel",
+  "jaccard_vazios": "1; nao e qualidade",
+  "json": "UTF8 estrito sem BOM; chaves unicas; sem NaN/Infinity",
+  "status": "CANDIDATA_REVISAO_CIENTIFICA_PENDENTE",
+  "vazias": "PRF=0 com G nao vazio",
+  "versao": "ids-proposta-004-v2"
+}

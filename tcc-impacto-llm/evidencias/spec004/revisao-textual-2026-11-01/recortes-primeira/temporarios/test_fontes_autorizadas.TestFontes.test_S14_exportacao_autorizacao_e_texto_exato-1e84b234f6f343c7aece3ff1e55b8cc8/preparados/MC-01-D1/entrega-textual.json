@@ -1,0 +1,11 @@
+{
+  "anexos_ambiente": [],
+  "contrato": "texto-apenas-D29",
+  "envio_realizado": false,
+  "ferramentas": [],
+  "historico_conversa": false,
+  "isolamento_por_SO_alegado": false,
+  "limite": "Somente este texto e destinado ao modelo. Entrega real nao exercitada; sem acesso adicional.",
+  "payload_arquivo": "payload.txt",
+  "payload_sha256": "a887990cf0ceda3d0b2c877601d24fae8f3ef1fa4b44ec53f0be57be2e2cbb89"
+}

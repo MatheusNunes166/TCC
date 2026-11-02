@@ -1,0 +1,29 @@
+{"caso": "cli-incorreta-nao-falha", "conforme": true, "esperado": 0, "familia": "S-02", "observado": 0, "origem": "sintetica"}
+{"caso": "0", "conforme": true, "esperado": [1, "falha_tecnica", null], "familia": "S-11", "observado": [1, "falha_tecnica", null], "origem": "sintetica"}
+{"caso": "1", "conforme": true, "esperado": [1, "falha_tecnica", null], "familia": "S-11", "observado": [1, "falha_tecnica", null], "origem": "sintetica"}
+{"caso": "2", "conforme": true, "esperado": [1, "falha_tecnica", null], "familia": "S-11", "observado": [1, "falha_tecnica", null], "origem": "sintetica"}
+{"caso": "arquivo-removido", "conforme": true, "esperado": [2, false, null], "familia": "S-13", "observado": [2, false, null], "origem": "sintetica"}
+{"caso": "path-declarado-bloqueado-C:arquivo", "conforme": true, "esperado": true, "familia": "S-13", "observado": true, "origem": "sintetica"}
+{"caso": "path-declarado-bloqueado-\\arquivo", "conforme": true, "esperado": true, "familia": "S-13", "observado": true, "origem": "sintetica"}
+{"caso": "path-declarado-bloqueado-\\\\servidor\\pasta\\x", "conforme": true, "esperado": true, "familia": "S-13", "observado": true, "origem": "sintetica"}
+{"caso": "path-declarado-bloqueado-\\\\?\\C:\\x", "conforme": true, "esperado": true, "familia": "S-13", "observado": true, "origem": "sintetica"}
+{"caso": "path-declarado-bloqueado-../x", "conforme": true, "esperado": true, "familia": "S-13", "observado": true, "origem": "sintetica"}
+{"caso": "path-declarado-bloqueado-p/../x", "conforme": true, "esperado": true, "familia": "S-13", "observado": true, "origem": "sintetica"}
+{"caso": "path-declarado-bloqueado-p//x", "conforme": true, "esperado": true, "familia": "S-13", "observado": true, "origem": "sintetica"}
+{"caso": "path-declarado-bloqueado-p/./x", "conforme": true, "esperado": true, "familia": "S-13", "observado": true, "origem": "sintetica"}
+{"caso": "path-declarado-bloqueado-p/x:fluxo", "conforme": true, "esperado": true, "familia": "S-13", "observado": true, "origem": "sintetica"}
+{"caso": "path-declarado-bloqueado-NUL", "conforme": true, "esperado": true, "familia": "S-13", "observado": true, "origem": "sintetica"}
+{"caso": "path-declarado-bloqueado-x.", "conforme": true, "esperado": true, "familia": "S-13", "observado": true, "origem": "sintetica"}
+{"caso": "path-declarado-bloqueado-x ", "conforme": true, "esperado": true, "familia": "S-13", "observado": true, "origem": "sintetica"}
+{"caso": "path-declarado-posix", "conforme": true, "esperado": "C:\\Users\\User\\AppData\\Local\\Temp\\tmp25p5q3if\\documentos\\x.json", "familia": "S-13", "observado": "C:\\Users\\User\\AppData\\Local\\Temp\\tmp25p5q3if\\documentos\\x.json", "origem": "sintetica"}
+{"caso": "path-declarado-windows", "conforme": true, "esperado": "C:\\Users\\User\\AppData\\Local\\Temp\\tmp25p5q3if\\documentos\\x.json", "familia": "S-13", "observado": "C:\\Users\\User\\AppData\\Local\\Temp\\tmp25p5q3if\\documentos\\x.json", "origem": "sintetica"}
+{"caso": "escrita-parcial", "conforme": true, "esperado": [2, false], "familia": "S-13", "observado": [2, false], "origem": "sintetica"}
+{"caso": "vinculo-quebrado", "conforme": true, "esperado": 2, "familia": "S-13", "observado": 2, "origem": "sintetica"}
+{"caso": "registro-nao-objeto-0", "conforme": true, "esperado": [2, false], "familia": "S-13", "observado": [2, false], "origem": "sintetica"}
+{"caso": "registro-nao-objeto-1", "conforme": true, "esperado": [2, false], "familia": "S-13", "observado": [2, false], "origem": "sintetica"}
+{"caso": "registro-nao-objeto-2", "conforme": true, "esperado": [2, false], "familia": "S-13", "observado": [2, false], "origem": "sintetica"}
+{"caso": "original-invalido-exato", "conforme": true, "esperado": "6e616f2065204a534f4e0d0a", "familia": "S-13", "observado": "6e616f2065204a534f4e0d0a", "origem": "sintetica"}
+{"caso": "reavaliacao-vinculada", "conforme": true, "esperado": "0a2a8b9614d24eeeb79207df556598c0", "familia": "S-13", "observado": "0a2a8b9614d24eeeb79207df556598c0", "origem": "sintetica"}
+{"caso": "rechecagem-final", "conforme": true, "esperado": [2, false, "erro_integridade"], "familia": "S-13", "observado": [2, false, "erro_integridade"], "origem": "sintetica"}
+{"caso": "cli-resumo-local", "conforme": true, "esperado": 0, "familia": "S-16", "observado": 0, "origem": "sintetica"}
+{"caso": "cli-lista-hash", "conforme": true, "esperado": 2, "familia": "S-13", "observado": 2, "origem": "sintetica"}

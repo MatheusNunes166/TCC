@@ -1,0 +1,1 @@
+responder à tarefa usando apenas o material fornecido, sem ferramentas externas, no esquema exigido.

@@ -1,0 +1,1 @@
+nota sintetica em rascunho

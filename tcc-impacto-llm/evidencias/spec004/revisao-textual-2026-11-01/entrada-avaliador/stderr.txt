@@ -1,0 +1,12 @@
+test_S01_S02_S09_cli (test_avaliacao_ids.TestAvaliacao.test_S01_S02_S09_cli) ... ok
+test_S11_ausente_fragmento_original (test_avaliacao_ids.TestAvaliacao.test_S11_ausente_fragmento_original) ... ok
+test_S13_arquivo_removido_antes_fechamento (test_avaliacao_ids.TestAvaliacao.test_S13_arquivo_removido_antes_fechamento) ... ok
+test_S13_caminhos_de_entrada_reais (test_avaliacao_ids.TestAvaliacao.test_S13_caminhos_de_entrada_reais) ... ok
+test_S13_falha_escrita_e_vinculo (test_avaliacao_ids.TestAvaliacao.test_S13_falha_escrita_e_vinculo) ... ok
+test_S13_originais_fechamento_reavaliacao (test_avaliacao_ids.TestAvaliacao.test_S13_originais_fechamento_reavaliacao) ... ok
+test_S16_cli_listas_hashed (test_avaliacao_ids.TestAvaliacao.test_S16_cli_listas_hashed) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.648s
+
+OK

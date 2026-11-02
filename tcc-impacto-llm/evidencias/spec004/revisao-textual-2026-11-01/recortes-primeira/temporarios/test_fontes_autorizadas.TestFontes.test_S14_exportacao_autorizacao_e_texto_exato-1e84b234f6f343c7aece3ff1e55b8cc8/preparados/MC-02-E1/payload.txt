@@ -1,0 +1,39 @@
+<<<inicio:sistema>>>
+responda somente com os IDs.
+
+<<<fim:sistema>>>
+<<<inicio:definicoes-comuns>>>
+Definicoes comuns sem exemplos resolvidos.
+
+<<<fim:definicoes-comuns>>>
+<<<inicio:requisitos-baseline>>>
+## Entradas e saídas
+Entrada e saida da baseline.
+## Regras e aceitação planejada
+RF-01 e RF-02 e RF-03 e RF-04.
+## Ordem global
+Precedencia.
+
+<<<fim:requisitos-baseline>>>
+<<<inicio:catalogo-baseline>>>
+| ID | Estado | Papeis | Operacao | Decisao | Motivo |
+| --- | --- | --- | --- | --- | --- |
+| T01 | ativa | Consulta | visualizar | permitir | permissao_direta |
+
+<<<fim:catalogo-baseline>>>
+<<<inicio:mudanca>>>
+Retirar conflito.
+
+<<<fim:mudanca>>>
+<<<inicio:notas>>>
+> Nota de controle literal, rascunho.
+
+<<<fim:notas>>>
+<<<inicio:pedido>>>
+> Examine e selecione IDs.
+
+<<<fim:pedido>>>
+<<<inicio:schema_saida>>>
+{"type":"object"}
+
+<<<fim:schema_saida>>>

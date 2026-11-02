@@ -1,0 +1,31 @@
+<<<inicio:sistema>>>
+comum sintetico
+
+<<<fim:sistema>>>
+<<<inicio:definicoes-comuns>>>
+comum sintetico
+
+<<<fim:definicoes-comuns>>>
+<<<inicio:requisitos-baseline>>>
+comum sintetico
+
+<<<fim:requisitos-baseline>>>
+<<<inicio:catalogo-baseline>>>
+comum sintetico
+
+<<<fim:catalogo-baseline>>>
+<<<inicio:mudanca>>>
+comum sintetico
+
+<<<fim:mudanca>>>
+<<<inicio:notas>>>
+nota sintetica em rascunho
+
+<<<fim:notas>>>
+<<<inicio:pedido>>>
+estruturado
+<<<fim:pedido>>>
+<<<inicio:schema_saida>>>
+comum sintetico
+
+<<<fim:schema_saida>>>

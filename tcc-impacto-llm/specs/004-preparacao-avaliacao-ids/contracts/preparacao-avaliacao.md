@@ -1,22 +1,26 @@
 # Contrato local proposto — montagem e avaliação de IDs
 
-> Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Isolamento real não demonstrado; T014/T015 e dependentes permanecem pendentes. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
+> Contrato vigente — 01/11/2026 (D-29): o modelo recebe somente texto preparado, sem ferramentas, repositório, código, comandos, gabarito, resultados de variantes ou histórico. Exigências de identidade/ACL do Windows de T014/T015 substituídas, sem execução ou aprovação retroativa. Permanecem validação de arquivos/caminhos, autorização de conteúdo, integridade, equivalência de condições e avaliação separada. Notas representam conhecimento de analista de testes; texto definitivo e revisão profissional pendentes. Não se avaliam juniores, novos testes ou defeitos reais. Sem modelo escolhido, envio, chamadas externas ou piloto; revisão científica pendente. Histórico preservado em evidencias/spec004/revisao-textual-2026-11-01/originais.
 
-27/10/2026. Interface de arquivos/CLI futura, não API de rede. **Não implementada; comandos abaixo ainda não existem.** Autorização atual termina no planejamento. [Spec](../spec.md), [research](../research.md) e [modelo](../data-model.md) compõem o contrato. Regras científicas continuam candidatas.
+> Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Registro de 27/10: isolamento por SO não demonstrado; exigência substituída por D-29, sem aprovação retroativa. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
+
+Contrato de arquivos/CLI implementado e verificado offline em D-29/D-30, sem API de rede. A declaração de não implementação de 27/10 permanece no original arquivado; não descreve a capacidade atual. [Spec](../spec.md), [research](../research.md) e [modelo](../data-model.md) compõem o contrato. Regras científicas continuam candidatas.
 
 ## 1. Fronteiras
 
 | Processo | Leituras permitidas | Escritas | Exclusões |
 |---|---|---|---|
-| Montagem | Manifesto permitido e documentos finais aplicáveis, runner identificado | Diretório novo de preparação | Referência, avaliação, repositório, evidências, histórico, rede |
+| Edição local | Seis fontes fixas, com seletores de seções/campos enumerados | Recortes, manifestos e autorizações técnicas novos | Referência candidata, descoberta de arquivos e envio integral das fontes mistas |
+| Montagem | Pacote e autorização externa explícita | Preparação/texto exato novos | Referência, recuperação de fontes adicionais e rede |
 | Avaliação | Preparação copiada, registro de tentativa e resposta local, referência explícita | Diretório novo na zona de avaliação | Montar/enviar pedidos, alterar originais/pacote/referência, buscar arquivos automaticamente, rede |
 
-Dois processos sem importação do avaliador pelo montador. Identidade restrita e permissões devem impedir leitura das zonas proibidas; prova com sentinelas fictícias em S-14. Sem essa prova, relatório diz “separação lógica, isolamento não demonstrado”. Nenhuma conta/permissão será alterada nesta fase. Desenvolvimento e fixtures resolvidas nunca integram o contexto experimental.
+Preparação, montagem e avaliação têm responsabilidades separadas; somente o avaliador lê a referência. O modelo recebe só o texto preparado, sem ferramentas de leitura do ambiente. Identidade restrita/sentinelas de leitura negada foram substituídas por D-29, sem execução ou aprovação retroativa.
 
-## 2. CLI futura
+## 2. CLI local vigente
 
 ```text
-python -B montagem_entradas.py --pacote <raiz-permitida> --manifesto <manifesto.json> --saida <pasta-nova>
+python -B fontes_autorizadas.py --raiz <repositorio-local> --saida <editorial-nova>
+python -B montagem_entradas.py --pacote <raiz-permitida> --manifesto <manifesto.json> --autorizacao <catalogo-externo.json> --saida <pasta-nova>
 python -B avaliacao_ids.py avaliar --preparacao <preparacao.json> --tentativa <tentativa.json> --referencia <referencia.json> --saida <pasta-nova> [--avaliacao-anterior <avaliacao.json>]
 python -B avaliacao_ids.py resumir --avaliacoes <lista-explicita.json> --observacoes <lista-planejada.json> --saida <pasta-nova> [--imputar-invalidas]
 ```
@@ -54,6 +58,8 @@ Ordem e equivalências:
 Notas ausentes não produzem bloco nem delimitadores em D0/E0; nenhum arquivo de notas é aberto. N é o mesmo entre mudanças. Metadados registram `RASCUNHO_NAO_REVISADO` sem acrescentar rótulo ao texto candidato. Conferir hashes dos blocos comuns e igualdade byte a byte entre condições; o payload inteiro difere legitimamente por notas/pedido. A ordem coloca schema por último, como na Spec.
 
 Armazenar payload exato, cópias dos documentos/manifesto e preparação com versões/hashes. Uma composição local não é mensagem enviada; só futura etapa autorizada poderá demonstrar correspondência ao conteúdo efetivamente enviado.
+
+Na versão de montagem `spec004-v3`, `--autorizacao` é obrigatório. JSON externo `autorizacao-textual-v1`, `status=CONFERIDO_TECNICAMENTE_RASCUNHO`, `manifesto_sha256` e lista ordenada `documentos` (`arquivo`/`sha256`) devem corresponder exatamente ao pacote. Exportação conserva também fonte/hash/tamanho e receita `recortes-D29-v1`; copiar autorização em `autorizacao-original.json`. Não é assinatura nem detector semântico. `entrega-textual.json` é metadado local: payload/sha256, `ferramentas=[]`, `anexos_ambiente=[]`, `historico_conversa=false`, `envio_realizado=false`, `isolamento_por_SO_alegado=false`. Nenhum desses metadados entra no payload. Política de pontuação continua `ids-proposta-004-v2`, com versionamento independente do montador.
 
 ## 4. Importação e JSON estrito
 
@@ -117,7 +123,7 @@ Todos com origem `sintetica`, sem modelo, sem piloto. Fixar manualmente G_RF={RF
 | S-11 técnicas | (a) nenhuma resposta: falha técnica, original ausente; (b) fragmento, inclusive JSON incidentalmente parseável: bruto preservado, sem seleção/escore. Ambos fora de V/I, retorno 1 se registro completo. |
 | S-12 referência | Subcasos: G vazio, mudança ausente/duplicada, versão ausente, ID esperado duplicado/desconhecido, lista com tipo errado. Todos erro de referência, retorno 2, sem escore, fonte intacta. Referência sintética fixa válida é controle positivo. Alias MC-04 é mapeamento de mudança, não ID de resposta. |
 | S-13 integridade | Subcasos: payload/original alterado após importação, hash divergente, arquivo removido antes de fechar, escrita parcial, pasta de saída repetida. Detectar, retorno 2, sem fechamento completo; nova avaliação com ID novo preserva a anterior. |
-| S-14 montagem | Subcasos: nome/arquivo extra, path absoluto/../link interno/externo/junction/reparse point, hash divergente, revisão reprovada por gabarito fictício, notas na condição errada ou ausentes quando exigidas. Bloquear com causa. Controles positivos: quatro condições com comuns iguais e N idêntico D1/E1; notas marcadas rascunho em metadados; leitura negada das sentinelas proibidas na execução restrita. |
+| S-14 vigente | Verificar fontes/recortes enumerados, autorização e negativos de inclusão indevida; 16 pacotes/condições/notas/texto exato. Exigências antigas de identidade/criação privilegiada substituídas por D-29, não aprovadas. |
 | S-15 Jaccard | S-01×S-02: RF=1,T=1/2; dois S-04 de repetições distintas: 1/1 com FN=1/2 expostos. Para três seleções T={T04,T12},{T04},{}: 3 pares, valores 1/2,0,0, média 1/6; RF={RF-02},{RF-02},{}: média 1/3. Um válido sozinho: sem par, não calculável; inválida/tentativa excluída com causa. |
 | S-16 resumos | Cenário A: N=3,A=3,C=2,V=1,I=1,T=1,K=1,completude=2/3,validade=1/2,conhecidos=1; uma exata, uma inválida e uma falha técnica. P/R/F válido=1, operacional=1/2 por dimensão, técnica sem escore, Jaccard não calculável. Cenário B: N=1,A=2,C=1,V=1,I=0,T=0, primeira tentativa técnica falhou e segunda exata com payload idêntico: taxas=1 e uma única observação. Subcasos: segunda falha (C=0,T=1, taxas de conteúdo indisponíveis), payload diferente na retentativa, duas concluídas para mesmo ID (erro 2), lista planejada com ausente (completude menor, ausência explícita). |
 
@@ -133,7 +139,35 @@ PONT-01/PONT-02 e I1 conforme complemento vigente. `configuracao_id` não vazio 
 
 Não combinar hashes/versões distintos de política/referência. Resultado contém diagnóstico de mistura e inventários de grupos homogêneos separados, sem média combinada. A tentativa mista não pontua esses grupos; novo resumo requer lista homogênea explícita para não presumir denominadores planejados. Jaccard registra observações elegíveis e pares utilizados por dimensão; menos de duas resulta `estado=nao_calculavel`, `motivo=não calculável`, valor nulo e zero pares. Os subcasos de S-16 cobrem versões misturadas, duplicidade de repetição/observação e tentativas vinculadas; S-14 cobre também links internos, junctions e todos os reparse points. Essas regras são convenções técnicas do pesquisador sujeitas à revisão científica.
 
-## Estado técnico parcial — 27/10/2026
+## Histórico técnico parcial — 27/10/2026 (substituído no alcance de D-29)
 
 Implementados `montagem_entradas.py` e `avaliacao_ids.py`, sem rede/provedor. Convenções D-26 candidatas, política ids-proposta-004-v2; 39 tarefas independentes concluídas. T014/T015 e T042–T048 pendentes: runner isolado não provisionado e criação de symlink real negada com WinError1314. Não há fechamento integral. [Evidências e limites](../../../evidencias/spec004/revisao-parcial/relatorio.md). As descrições anteriores datadas de planejamento/comandos futuros são históricas; comandos locais agora existentes só preparam/avaliam arquivos sintéticos, sem envio ou piloto. Métricas, notas definitivas, referência e desenho científico continuam sujeitos à revisão. Checklist de qualidade preservada, sem remarcação.
 
+## Contrato textual verificável — D-29
+
+Preparação editorial local em `fontes_autorizadas.py`, com seis caminhos fixos e recortes enumerados: instrução/notas/pedidos de materiais/04; definições integrais de materiais/07; contrato inicial de documentacao/requisitos; seis primeiras colunas da tabela T01–T12 de documentacao/qualidade-e-testes (sem coluna de destaques de RF); somente descrição de uma remoção na tabela da Spec 003; schema existente. Documentos mistos são lidos nessa edição local para selecionar os trechos, nunca enviados inteiros. A referência candidata não é lida nessa etapa.
+
+`montagem_entradas.py`, contrato `spec004-v3`, lê pacote plano e `--autorizacao` externa explícita, fixando hashes de manifesto/documentos. Atualizar apenas seu próprio manifesto não autoriza texto alterado. A autorização é registro técnico controlado, não assinatura de autoridade ou detector semântico de qualquer gabarito: confrontar fontes, recortes, conteúdo e bytes. Mudança de fonte/recorte requer nova conferência; revisão profissional continua pendente. Fixtures v2 e comandos anteriores são históricos, preservados e não reexecutados como prova do contrato atual.
+
+Somente `payload.txt` se destina ao modelo. Manifesto, autorização, cópias de documentos, fontes/hashes e `entrega-textual.json` são registros locais; não anexar diretório, código, fontes mistas ou referência. O recibo fixa texto/hash, `ferramentas=[]`, `anexos_ambiente=[]`, sem histórico e `envio_realizado=false`. Entrega real e ausência de ferramentas na plataforma serão conferidas antes do piloto; não foram exercitadas aqui, pois não há chamadas externas. Não se alega isolamento por SO.
+
+Caminhos suportados: CLI com caminho local absoluto com drive ou relativo ao cwd; documentos do pacote filhos diretos com nomes enumerados; avaliador admite subdiretórios relativos declarados com separadores `/` ou `\`, confinados à raiz. Recusar drive relativo, raiz sem drive no Windows, UNC/dispositivos, streams `arquivo:fluxo`, dispositivos reservados, ponto/espaço final, componentes declarados vazios/`.`/`..` e links/junctions/reparse points. São controles de inclusão indevida, sem contas/permissões ou alegação de isolamento.
+
+S-14 vigente verifica recortes/fontes, autorização independente, conteúdo proibido fictício em negativos, 16 combinações (quatro mudanças × quatro condições), texto exato e notas iguais D1/E1/ausentes D0/E0. Criação de symlink e negação de leitura por identidade são exigências antigas substituídas: não foram aprovadas. Esses objetos não pertencem às entradas suportadas; permanecem controles de recusa, sem exigir criação privilegiada para aceitar o contrato textual. PONT-01/PONT-02 e fórmulas candidatas não mudaram.
+
+CLI vigente (usar diretórios novos, não os exemplos antigos v2):
+
+```powershell
+python -B fontes_autorizadas.py --raiz . --saida <editorial-nova>
+python -B montagem_entradas.py --pacote <editorial-nova>/pacotes/MC-01-D0 --manifesto <editorial-nova>/pacotes/MC-01-D0/manifesto.json --autorizacao <editorial-nova>/autorizacoes/MC-01-D0.json --saida <preparacao-nova>
+```
+
+Avaliação continua na CLI separada com --referencia. Sem parâmetros de modelo/provedor, envio ou chamada externa.
+
+
+
+## Verificação vigente — 01/11/2026 (D-30)
+
+Engenharia offline do contrato D-29 concluída no alcance verificado: 49 tarefas vigentes atendidas; T014/T015 substituídas, não executadas/aprovadas. Recortes das seis fontes, autorização externa e montagem v3 produziram 16 pacotes; bytes, conteúdo, documentos comuns, notas D1/E1 e ausência de notas D0/E0 confrontados. Referência somente no avaliador separado; resposta de demonstração explicitamente sintética. As 16 famílias estão consolidadas com evidências anteriores preservadas e verificações necessárias das alterações; não se reexecutou pontuação inalterada nem se contou sintéticos como LLM.
+
+[Relatório e limitações](../../../evidencias/spec004/revisao-textual-2026-11-01/relatorio.md) inclui comandos, esperado/observado, hashes, matriz, caminhos suportados, limitação da criação de symlink e provas de SO substituídas. As seções de 27/10 são históricas; os gates atuais são D-29 e esta verificação, sem aprovação retroativa. Checklist é qualidade documental, preservada sem remarcação. Sem prova de entrega real ao modelo, modelo escolhido, chamada externa ou piloto. Revisão profissional/científica, notas definitivas, fundamentação das métricas, desenho final/congelamento do piloto e adoção constitucional permanecem pendentes.

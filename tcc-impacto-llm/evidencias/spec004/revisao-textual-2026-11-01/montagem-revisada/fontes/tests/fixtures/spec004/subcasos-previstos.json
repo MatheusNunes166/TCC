@@ -1,0 +1,20 @@
+{
+  "origem":"sintetica",
+  "fundamento":"Contrato e esperados literais nos testes escritos antes dos modulos (snapshots fundacao-red/avaliacao-red). Indice editorial, nao gerado pelo observado.",
+  "S-01":["exata: TP/FP/FN e PRF independentes"],
+  "S-02":["parcial: 1/0/1, 1, 1/2, 2/3 em testes","retorno CLI 0 para selecao incorreta"],
+  "S-03":["todos: 1/3/0 RF e 2/10/0 testes, fracoes literais"],
+  "S-04":["duas listas vazias validas: omissoes e zeros"],
+  "S-05":["ordem","duplicatas exatas","posicoes a partir de zero","escape JSON legitimo"],
+  "S-06":["desconhecidos unicos RF/testes","duplicata desconhecida nao duplica FP","FP preserva denominador"],
+  "S-07":["caixa","espaco inicial/final","string vazia","ID aproximado sem correcao"],
+  "S-08":["IDs trocados entre dimensoes, sem transferencia"],
+  "S-09":["arquivo vazio recebido","objeto sem chaves","chave ausente","chave extra","null","objeto em vez de lista","item numerico","item bool","item objeto","chave repetida","cercas Markdown","recusa textual","truncamento","BOM","UTF-8 invalido","NaN","Infinity","texto residual","positivo espacos/escape JSON"],
+  "S-10":["RF vazia com testes exatos, sem compensacao"],
+  "S-11":["ausencia","fragmento invalido","fragmento parseavel continua tecnico","sem selecao/escores"],
+  "S-12":["G vazio","versao ausente","status ausente","mudanca ausente","mudanca duplicada","ID esperado duplicado","ID esperado desconhecido","tipo errado","alias documental MC-04","rfs/tests independentes de changed/expected/preserved"],
+  "S-13":["pasta repetida","saida sobreposta","fonte alterada antes do fechamento","resposta original invalida preservada","reavaliacao vinculada","arquivo removido antes de fechar","escrita parcial","vinculo quebrado","hash na lista de avaliacoes"],
+  "S-14":["extra/ausente","nota extra D0","nota ausente D1","revisao pendente/reprovada","papel/caminho duplicado","hash/tamanho/versao","condicao","rascunho/liberacao","path absoluto/traversal/subdiretorio","quatro payloads literais","comuns e notas identicos","junction interna real","junction externa real","bit reparse logico","symlink interno/externo real (pendente WinError1314)","identidade restrita e negacao de leitura real (pendente runner)"],
+  "S-15":["tres observacoes e tres pares","valores de cada par","media RF1/3 e testes1/6","dois vazios","uma observacao nao calculavel","desconhecidos na uniao"],
+  "S-16":["cenario A","cenario B com duas tentativas/uma observacao","segunda falha","planejada ausente","imputacao opcional preserva nulos observados","PONT-01 referencia diferente","PONT-01 politica diferente","PONT-02 repeticao duplicada","PONT-02 duas concluidas","PONT-02 avaliacao duplicada","payload diferente na retentativa","CLI lista explicita hash"]
+}

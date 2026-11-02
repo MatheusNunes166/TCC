@@ -1,0 +1,1 @@
+{"type":"object","required":["requisitos","testes"],"additionalProperties":false,"properties":{"requisitos":{"type":"array","items":{"type":"string"}},"testes":{"type":"array","items":{"type":"string"}}}}

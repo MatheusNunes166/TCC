@@ -1,0 +1,137 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "preparacao-original.json",
+      "sha256": "7c9ba69ed52f62d8e4c8e5d6a42be6e30581c64c68bf8612d3d29d6f037e81ae"
+    },
+    {
+      "arquivo": "tentativa-original.json",
+      "sha256": "440744c361fab0965994d248e7144716d5ce134cfec4fc500c0643ec93ba4ca7"
+    },
+    {
+      "arquivo": "entrada\\manifesto-original.json",
+      "sha256": "eb0f8ec30b7c1ef33c1a9ff8067cf0602e585da583dbc5f1d81be7211074deb8"
+    },
+    {
+      "arquivo": "entrada\\autorizacao-original.json",
+      "sha256": "068f3473bd286fe17a30dd0c7808296fc47b6293ad708189822fa828f12f86c2"
+    },
+    {
+      "arquivo": "entrada\\documentos\\sistema.txt",
+      "sha256": "863d5e523f64b4c0a79898d7aa1529fd3488264ac62459d5b047393362efaf11"
+    },
+    {
+      "arquivo": "entrada\\documentos\\definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "entrada\\documentos\\requisitos-baseline.md",
+      "sha256": "6167072a77a6018717afea1bc51681113a7bb02e55e0966c3d8f74dc4a3c3478"
+    },
+    {
+      "arquivo": "entrada\\documentos\\catalogo-baseline.md",
+      "sha256": "b7261fd6b24a0eca7f1e4abcb4a8ffcbf092e071931be6c4f086646d82242c76"
+    },
+    {
+      "arquivo": "entrada\\documentos\\mudanca.md",
+      "sha256": "2533dc368d1ba56c6151f470606438fe1e8d4ccda9773bcc907098099d4f852e"
+    },
+    {
+      "arquivo": "entrada\\documentos\\pedido.txt",
+      "sha256": "55a1dea70f06c29454d6554ba587c6c43506489eceef028b7276de31d09c3540"
+    },
+    {
+      "arquivo": "entrada\\documentos\\schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "entrada\\payload.txt",
+      "sha256": "f438d33e8a4a86e59bb239b20da9e37de764561c748ae594613710acc46c73ae"
+    },
+    {
+      "arquivo": "entrada\\entrega-textual.json",
+      "sha256": "326ecc5233e48b64c0c309a807d93e7fe492e64439482826358d9e1388da3527"
+    },
+    {
+      "arquivo": "resposta-original.bin",
+      "sha256": "eed31eeea1ce515e6e21597f6157fe8cafbce00ada22c8b5d9eb78079115818d"
+    },
+    {
+      "arquivo": "referencia-privada.json",
+      "sha256": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80"
+    },
+    {
+      "arquivo": "politica-candidata.json",
+      "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c"
+    },
+    {
+      "arquivo": "avaliacao.json",
+      "sha256": "9211091a71720a5f7fee7c7ee20003aab96e725fd665f4da576e5268f2f8f078"
+    }
+  ],
+  "completo": true,
+  "fontes": [
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\preparados\\MC-01-D0\\preparacao.json",
+      "sha256": "7c9ba69ed52f62d8e4c8e5d6a42be6e30581c64c68bf8612d3d29d6f037e81ae"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\entrada-avaliacao\\tentativa.json",
+      "sha256": "440744c361fab0965994d248e7144716d5ce134cfec4fc500c0643ec93ba4ca7"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\preparados\\MC-01-D0\\manifesto-original.json",
+      "sha256": "eb0f8ec30b7c1ef33c1a9ff8067cf0602e585da583dbc5f1d81be7211074deb8"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\preparados\\MC-01-D0\\autorizacao-original.json",
+      "sha256": "068f3473bd286fe17a30dd0c7808296fc47b6293ad708189822fa828f12f86c2"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\preparados\\MC-01-D0\\documentos\\sistema.txt",
+      "sha256": "863d5e523f64b4c0a79898d7aa1529fd3488264ac62459d5b047393362efaf11"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\preparados\\MC-01-D0\\documentos\\definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\preparados\\MC-01-D0\\documentos\\requisitos-baseline.md",
+      "sha256": "6167072a77a6018717afea1bc51681113a7bb02e55e0966c3d8f74dc4a3c3478"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\preparados\\MC-01-D0\\documentos\\catalogo-baseline.md",
+      "sha256": "b7261fd6b24a0eca7f1e4abcb4a8ffcbf092e071931be6c4f086646d82242c76"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\preparados\\MC-01-D0\\documentos\\mudanca.md",
+      "sha256": "2533dc368d1ba56c6151f470606438fe1e8d4ccda9773bcc907098099d4f852e"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\preparados\\MC-01-D0\\documentos\\pedido.txt",
+      "sha256": "55a1dea70f06c29454d6554ba587c6c43506489eceef028b7276de31d09c3540"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\preparados\\MC-01-D0\\documentos\\schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\preparados\\MC-01-D0\\payload.txt",
+      "sha256": "f438d33e8a4a86e59bb239b20da9e37de764561c748ae594613710acc46c73ae"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\preparados\\MC-01-D0\\entrega-textual.json",
+      "sha256": "326ecc5233e48b64c0c309a807d93e7fe492e64439482826358d9e1388da3527"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\entrada-avaliacao\\resposta.bin",
+      "sha256": "eed31eeea1ce515e6e21597f6157fe8cafbce00ada22c8b5d9eb78079115818d"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+      "sha256": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80"
+    }
+  ],
+  "origem": "sintetica",
+  "retorno": 0
+}

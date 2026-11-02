@@ -1,0 +1,160 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "manifesto-original.json",
+      "sha256": "40506038df066640f829c9b2f39886eb12a0d2736807caa36b06af1f14c56c2d"
+    },
+    {
+      "arquivo": "autorizacao-original.json",
+      "sha256": "02bb7920df29048c35e79d0ed56950f590e80bcf0334bb4f097057c9cf19ff86"
+    },
+    {
+      "arquivo": "documentos/sistema.txt",
+      "sha256": "5918e1f7760700e6bf027ab13c9e54bab1eaaa8d34f686b209e6559e1a307c40"
+    },
+    {
+      "arquivo": "documentos/definicoes-comuns.md",
+      "sha256": "519d6d8b8943e643be676deaa7f516ec49f6c0fc572ace99e653e3eaf91b8e1f"
+    },
+    {
+      "arquivo": "documentos/requisitos-baseline.md",
+      "sha256": "ddd913393fdf31752deedd390e1cba5f97ab848cb3f6de7eca27123059caeaed"
+    },
+    {
+      "arquivo": "documentos/catalogo-baseline.md",
+      "sha256": "04f49ddd3f6d9939d7f363715194f4d74b51db117bdd36c8236627d6c0684c59"
+    },
+    {
+      "arquivo": "documentos/mudanca.md",
+      "sha256": "320871db425b87cc9b21c9e595eacd20759dab0b699839ce716b3ccf19fe413d"
+    },
+    {
+      "arquivo": "documentos/pedido.txt",
+      "sha256": "7cb336b26c8b7093fb8ee7c04187935614d2b49a61e16c3605781c7c8a75b883"
+    },
+    {
+      "arquivo": "documentos/schema_saida.json",
+      "sha256": "9091a8164f97eaca182b3d06d0e5a59e923c880ebc0148056c453c651f5b46cb"
+    },
+    {
+      "arquivo": "payload.txt",
+      "sha256": "1e4531711e065e7c46a8ebc00ee46a45bb3d776daba7a41c6d4ec6f93a086b38"
+    },
+    {
+      "arquivo": "entrega-textual.json",
+      "sha256": "d592ba7b06bde77f7a0ef1a134764a196a7fba4d349939ef9da0e70d8b7c6fdc"
+    }
+  ],
+  "autorizacao_sha256": "02bb7920df29048c35e79d0ed56950f590e80bcf0334bb4f097057c9cf19ff86",
+  "completo": true,
+  "condicao": "E0",
+  "configuracao_id": "texto-autorizado-D29",
+  "contrato": "spec004-v3",
+  "documentos": [
+    {
+      "arquivo": "sistema.txt",
+      "papel": "sistema",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "5918e1f7760700e6bf027ab13c9e54bab1eaaa8d34f686b209e6559e1a307c40",
+      "tamanho_bytes": 29,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "definicoes-comuns.md",
+      "papel": "definicoes-comuns",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "519d6d8b8943e643be676deaa7f516ec49f6c0fc572ace99e653e3eaf91b8e1f",
+      "tamanho_bytes": 44,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "requisitos-baseline.md",
+      "papel": "requisitos-baseline",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "ddd913393fdf31752deedd390e1cba5f97ab848cb3f6de7eca27123059caeaed",
+      "tamanho_bytes": 145,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "catalogo-baseline.md",
+      "papel": "catalogo-baseline",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "04f49ddd3f6d9939d7f363715194f4d74b51db117bdd36c8236627d6c0684c59",
+      "tamanho_bytes": 163,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "mudanca.md",
+      "papel": "mudanca",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "320871db425b87cc9b21c9e595eacd20759dab0b699839ce716b3ccf19fe413d",
+      "tamanho_bytes": 17,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "pedido.txt",
+      "papel": "pedido",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "7cb336b26c8b7093fb8ee7c04187935614d2b49a61e16c3605781c7c8a75b883",
+      "tamanho_bytes": 27,
+      "versao": "recorte-D29-2026-11-01"
+    },
+    {
+      "arquivo": "schema_saida.json",
+      "papel": "schema_saida",
+      "revisao_conteudo": {
+        "alcance": "rastreabilidade do recorte; revisao profissional/cientifica pendente",
+        "data": "2026-11-01",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; recorte editorial autorizado D29"
+      },
+      "sha256": "9091a8164f97eaca182b3d06d0e5a59e923c880ebc0148056c453c651f5b46cb",
+      "tamanho_bytes": 18,
+      "versao": "recorte-D29-2026-11-01"
+    }
+  ],
+  "fronteira": "conteudo_textual_sem_ferramentas",
+  "instante_utc": "2026-11-02T00:28:22.803787+00:00",
+  "isolamento_por_SO_alegado": false,
+  "liberado_para_pesquisa": false,
+  "manifesto_sha256": "40506038df066640f829c9b2f39886eb12a0d2736807caa36b06af1f14c56c2d",
+  "montador_sha256": "4277041f87a57073cf75279a885b3c4800fc882d975c4b8bf9ba1a26458a632a",
+  "mudanca": "MC-04-v2",
+  "pacote_id": "MC-04-v2-E0",
+  "payload_sha256": "1e4531711e065e7c46a8ebc00ee46a45bb3d776daba7a41c6d4ec6f93a086b38",
+  "payload_tamanho": 795,
+  "preparacao_id": "100ad00f282a46c1bf6fcd998c183466",
+  "status": "PREPARADO_LOCAL_NAO_ENVIADO",
+  "status_notas": "ausentes",
+  "versao_pacote": "D29-2026-11-01"
+}

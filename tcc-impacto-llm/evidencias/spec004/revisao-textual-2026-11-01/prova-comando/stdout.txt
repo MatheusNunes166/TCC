@@ -1,0 +1,1 @@
+16 pacotes autorizados, comuns/notas/bytes e avaliacao separada conferidos. Sem envio, LLM ou isolamento por SO.

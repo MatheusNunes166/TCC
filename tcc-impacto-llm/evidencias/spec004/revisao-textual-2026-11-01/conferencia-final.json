@@ -1,0 +1,42 @@
+{
+  "data": "2026-11-01",
+  "protegidos_preservados": 2128,
+  "divergencias": [],
+  "fontes_editoriais_iguais_as_preparadas": true,
+  "checklist_preservada_26_marcas": true,
+  "tarefas_vigentes_concluidas": 49,
+  "tarefas_substituidas_desmarcadas": [
+    "T014",
+    "T015"
+  ],
+  "documentos_sha256": {
+    "specs/004-preparacao-avaliacao-ids/spec.md": "88b0b4e97ac4fcc6cfad9ba9d7a9a34d25e3bec0f7e698afde65675345044c01",
+    "specs/004-preparacao-avaliacao-ids/plan.md": "a0b57f25d482cdb211454b851a45162f27ffac8a4115c43843f11bc462413069",
+    "specs/004-preparacao-avaliacao-ids/research.md": "f209fee7bbdc4b963e7eaf4fd60bceded54037385fdc996c1fc977c0ed8ca1eb",
+    "specs/004-preparacao-avaliacao-ids/data-model.md": "3083be5d3bc153fee6bcb420ef9648ca8b744934a86264001e696057d6e20f65",
+    "specs/004-preparacao-avaliacao-ids/quickstart.md": "2bf73fef41bf6cb60b062ecc0a9b4abbd35533c2cb17c492e22593334bc67573",
+    "specs/004-preparacao-avaliacao-ids/tasks.md": "f92a2dea1686b3f031461646f0dac3c9cd1edcfd9eab8ba5f4646d67b72f6010",
+    "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md": "5050cb298f6aacd4a57d5a7d26653f44336981bd27f752f69e13ddfe282448aa",
+    "AGENTS.md": "514cdb1895d0e517b0c093229f9af298c98c8efe41c3b11e9fabaab049a19145",
+    "ESTADO_ATUAL.md": "7b003783243def7e1c27fc69f3d4c212af75d1feb750638fe8aae8aac2da2bf7",
+    "BLOQUEIOS.md": "adfe233708de06bb1bdb2dcad2a426f8309eb5c4db18e64837b1380910da9bd1",
+    "HANDOFF.md": "777024c8aeddfaeffa2b5dd6b855be9f20eb8560cb8cd86055a11ed8da3d3a72",
+    "documentacao/decisoes.md": "b599964a32afc953861f3330124c342081fc8cfdc6c255341e754369847de2a2",
+    "documentacao/arquitetura.md": "3cc75f8a5daa21a0441b4167fb4103e34e3ecbc980f81842f48e38f9c255975f",
+    "evidencias/spec004/revisao-textual-2026-11-01/relatorio.md": "3f3358b09a786ddaf22fa19d0a3ef86b17e30cbd368bd01e23f82f7176e8fd0d",
+    "evidencias/spec004/revisao-textual-2026-11-01/diagnostico.md": "35d466f2aef2f3f0a38f5be4044dbbe225e9263e00e5e942ead6cb98b3c82bf1"
+  },
+  "links_inexistentes": [],
+  "links_nao_sao_prova_funcional": true,
+  "git_diff_check": {
+    "retorno": 0,
+    "stdout": "",
+    "stderr": "warning: in the working copy of 'tcc-impacto-llm/avaliacao_ids.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tcc-impacto-llm/documentacao/decisoes.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tcc-impacto-llm/montagem_entradas.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tcc-impacto-llm/specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tcc-impacto-llm/specs/004-preparacao-avaliacao-ids/data-model.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tcc-impacto-llm/specs/004-preparacao-avaliacao-ids/plan.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tcc-impacto-llm/specs/004-preparacao-avaliacao-ids/quickstart.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tcc-impacto-llm/specs/004-preparacao-avaliacao-ids/research.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tcc-impacto-llm/specs/004-preparacao-avaliacao-ids/spec.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tcc-impacto-llm/specs/004-preparacao-avaliacao-ids/tasks.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tcc-impacto-llm/tests/test_avaliacao_ids.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tcc-impacto-llm/tests/test_montagem_entradas.py', LF will be replaced by CRLF the next time Git touches it\n"
+  },
+  "hooks_ausentes": true,
+  "LLM": false,
+  "envio_realizado": false,
+  "piloto": false,
+  "isolamento_SO_alegado": false,
+  "evidencia_funcional": "matriz.json; demonstracao-textual-001/confrontos.json; comandos e confrontos das execucoes vinculadas"
+}

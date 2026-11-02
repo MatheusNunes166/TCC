@@ -1,0 +1,12 @@
+{
+  "fontes_lidas": [
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\04_NOTAS_E_PROMPTS.md",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\07_DEFINICOES_COMUNS.md",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\documentacao\\requisitos.md",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\documentacao\\qualidade-e-testes.md",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\specs\\003-mudancas-controladas\\spec.md",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\modelos\\schema_saida.json"
+  ],
+  "fontes_extras": [],
+  "limite": "Edicao local le seis documentos mistos e exporta somente recortes; nao le referencia de selecao."
+}

@@ -1,0 +1,1 @@
+> Identifique os requisitos impactados pela mudança e selecione os testes existentes relevantes conforme as definições e a política de seleção fornecidas. Retorne somente os dois conjuntos de identificadores no JSON exigido.

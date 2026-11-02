@@ -1,16 +1,18 @@
 # Tasks: Preparação de entradas e avaliação separada de IDs
 
-> Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Isolamento real não demonstrado; T014/T015 e dependentes permanecem pendentes. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
+> Contrato vigente — 01/11/2026 (D-29): o modelo recebe somente texto preparado, sem ferramentas, repositório, código, comandos, gabarito, resultados de variantes ou histórico. Exigências de identidade/ACL do Windows de T014/T015 substituídas, sem execução ou aprovação retroativa. Permanecem validação de arquivos/caminhos, autorização de conteúdo, integridade, equivalência de condições e avaliação separada. Notas representam conhecimento de analista de testes; texto definitivo e revisão profissional pendentes. Não se avaliam juniores, novos testes ou defeitos reais. Sem modelo escolhido, envio, chamadas externas ou piloto; revisão científica pendente. Histórico preservado em evidencias/spec004/revisao-textual-2026-11-01/originais.
+
+> Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Registro de 27/10: isolamento por SO não demonstrado; exigência substituída por D-29, sem aprovação retroativa. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
 
 **Input**: [Spec](spec.md), [plano](plan.md), [pesquisa](research.md), [modelo de dados](data-model.md), [contrato](contracts/preparacao-avaliacao.md), [quickstart](quickstart.md), checklist e governança.
 
-**Data**: 27/10/2026. **Estado vigente**: 39 tarefas independentes concluídas com evidências; 9 pendentes por isolamento e dependências de fechamento. Não há fechamento integral. A geração anterior foi somente documental; implementação posterior autorizada em D-26/D-27.
+**Data de criação**: 27/10/2026. **Estado vigente — 01/11/2026, D-29/D-30**: 49 tarefas vigentes concluídas no contrato de engenharia offline; 2 exigências históricas substituídas (T014/T015), mantidas desmarcadas e sem aprovação. Entrega real e pesquisa não executadas. Implementação autorizada em D-26/D-27 e revista em D-29.
 
-**Autorização desta entrega**: pedido atual do pesquisador para somente gerar tarefas e analisar consistência. Leitura/seleção confirmadas por `check-prerequisites.sh --json --paths-only` e `setup-tasks.sh --json`: FEATURE_DIR=`specs/004-preparacao-avaliacao-ids`, documentos de pesquisa/modelo/contrato/quickstart disponíveis; template core resolvido localmente. BRANCH do resolvedor é contexto, sem branch/commit criado. HEAD inicial `d64076af379b9b709bc1dc7a620bd06387ced912`. Não selecionar outra feature por aba aberta.
+**Autorização histórica da geração — 27/10/2026**: pedido atual do pesquisador para somente gerar tarefas e analisar consistência. Leitura/seleção confirmadas por `check-prerequisites.sh --json --paths-only` e `setup-tasks.sh --json`: FEATURE_DIR=`specs/004-preparacao-avaliacao-ids`, documentos de pesquisa/modelo/contrato/quickstart disponíveis; template core resolvido localmente. BRANCH do resolvedor é contexto, sem branch/commit criado. HEAD inicial `d64076af379b9b709bc1dc7a620bd06387ced912`. Não selecionar outra feature por aba aberta.
 
 **Limite da etapa documental anterior**: somente este `tasks.md`; relatório de análise na resposta, em modo somente leitura. Governança e demais documentos são fontes preservadas. Suas declarações datadas de “sem tarefas” descrevem as entregas anteriores; o pedido atual supera esse alcance documental, sem autorizar implementação. Atualizações futuras de contexto estão previstas no fechamento, não realizadas agora.
 
-**Tests**: requeridos pela Spec; escrever controles e esperados independentes antes da implementação correspondente. Comandos/testes destas tarefas são futuros e dependem de pedido próprio de implementação/verificação. Controles são `sintetica`, modelo nulo, sem fase piloto, sem resultados de LLM.
+**Tests**: requeridos pela Spec; escrever controles e esperados independentes antes da implementação correspondente. Implementação/verificações autorizadas posteriormente em D-26/D-29; resultados históricos e atuais vinculados ao final. Controles são `sintetica`, modelo nulo, sem fase piloto, sem resultados de LLM.
 
 **Organization**: quatro histórias da Spec, por prioridade, com dependências explícitas e verificação independente. Sem SDK, rede, API, interface, infraestrutura genérica ou escolha de modelo.
 
@@ -19,11 +21,11 @@
 - Caixas pendentes não atestam execução. Marcar somente com evidência da aceitação correspondente.
 - `[P]` indica arquivos distintos que podem ser editados em paralelo **após** suas pré-condições. Não autoriza agentes paralelos nem edições concorrentes do mesmo arquivo.
 - `[US1]`–`[US4]` correspondem às histórias da Spec. Setup/fundação/fechamento não têm rótulo de história.
-- IDs T001–T048 são locais desta Spec; não são T01–T12 da bancada nem S-01–S-16 dos controles.
+- IDs T001–T051 são locais desta Spec; não são T01–T12 da bancada nem S-01–S-16 dos controles.
 
 ## Path Conventions
 
-Paths relativos a `D:\TCC-Projeto\TCC\tcc-impacto-llm`. Fontes futuras: `montagem_entradas.py`, `avaliacao_ids.py`; testes futuros: `tests/test_montagem_entradas.py`, `tests/test_avaliacao_ids.py`; fixtures: `tests/fixtures/spec004/`; evidências novas por tentativa: `evidencias/spec004/`. Não criar outro repositório. Zonas restritas reais ficam fora do contexto de desenvolvimento, com caminhos explicitamente registrados no futuro; não presumir ACL por nome de pasta.
+Paths relativos a `D:\TCC-Projeto\TCC\tcc-impacto-llm`. Fontes futuras: `montagem_entradas.py`, `avaliacao_ids.py`; testes futuros: `tests/test_montagem_entradas.py`, `tests/test_avaliacao_ids.py`; fixtures: `tests/fixtures/spec004/`; evidências novas por tentativa: `evidencias/spec004/`. Não criar outro repositório. Na revisão D-29, exportador editorial local `fontes_autorizadas.py`, pacote plano e autorização externa; somente payload se destina ao modelo. Não criar zonas/contas/ACL para isolamento.
 
 ## Conferência prévia da pontuação
 
@@ -53,13 +55,13 @@ As lacunas da análise foram resolvidas pelo pedido explícito do pesquisador, r
 | PONT-01 | Adotada em D-26: rejeitar agregação entre versões distintas de política/referência na mesma célula; preservar registros e informar grupos por versão, sem resultado combinado. | T036 resolvida documentalmente; T037–T041 podem avançar nas dependências independentes. |
 | PONT-02 | Adotada em D-26: configuração/mudança/condição/repetição identificam uma observação; duplicidades bloqueiam célula afetada sem escolher resposta. Tentativas técnicas têm IDs/vínculos próprios. | T036 resolvida; refletir na importação, resumo e S-15/S-16. |
 
-**Impedimento de ambiente separado**: S-14 requer identidade restrita e prova real de leitura negada; conta, permissões e raízes ainda não estão disponíveis como evidência. T014/T015 devem registrar disponibilidade/autorização ou impedimento; a ausência bloqueia conclusão integral de US1, S-14 e fechamento, sem impedir testes lógicos ou avaliação por fixtures independentes. Não substituir por mocks ou contagem de arquivos.
+**Exigência substituída por D-29:** T014/T015 não foram executadas/aprovadas e deixam de bloquear o contrato textual. Seus registros permanecem históricos; T049–T051 substituem a garantia. Envio real ao modelo sem ferramentas permanece pendente antes do piloto.
 
 **Pendências científicas preservadas**: revisão profissional/científica da referência/política/expectativas T12; notas definitivas, origem e neutralidade; fundamentação/revisão de P/R/F/Jaccard; piloto/configuração/orçamento/congelamento e adoção constitucional. Não bloqueiam geração desta lista ou verificação técnica de regras candidatas. Bloqueiam alegação de aprovação científica/liberação experimental. T12 já adotado em B; sem nova adoção.
 
 ## Phase 1: Setup — delimitação e preservação
 
-**Objetivo:** preparar futura execução autorizada sem perder contexto/artefatos. Ainda não executado.
+**Objetivo:** preservar contexto e artefatos; execução histórica e revisão atual registradas nas evidências.
 
 - [x] T001 Confirmar autorização futura, feature 004, Python 3.11+ e árvore local; registrar comando/cwd/versão/HEAD/alterações existentes e identidades de código, materiais, notas, referência e evidências em `evidencias/spec004/preparacao/inventario.json`, sem importar a bancada ou gerar variante.
 - [x] T002 Conferir o quadro de pontuação deste `specs/004-preparacao-avaliacao-ids/tasks.md` contra Spec/research/contrato e registrar seu status candidato, PONT-01/PONT-02 e impedimentos de ambiente em `evidencias/spec004/preparacao/escopo-e-gates.md`; usar as convenções candidatas já adotadas em D-26, sem habilitar pesquisa pelo inventário.
@@ -76,9 +78,9 @@ As lacunas da análise foram resolvidas pelo pedido explícito do pesquisador, r
 
 ## Phase 3: US1 — montar somente documentos permitidos (Priority: P1, MVP técnico)
 
-**Goal:** montar entrada íntegra de uma mudança/condição, conferindo lista, revisão técnica, conteúdo/versões e isolamento.
+**Goal:** montar entrada íntegra de uma mudança/condição, conferindo fontes/recortes, autorização externa, conteúdo/versões e limite textual sem ferramentas.
 
-**Independent Test:** usar pacotes fictícios e S-14, conferindo bytes esperados e recusas, sem avaliador/referência. Conclusão integral exige prova real de acesso; resultado lógico isolado não equivale a US1 concluída.
+**Independent Test:** S-14 textual, fontes reais autorizadas e negativos fictícios, conferindo bytes, recortes e recusas sem referência. T049/T050 substituem a prova por identidade; não demonstram envio remoto ou isolamento de SO.
 
 ### Tests for US1 — antes da implementação correspondente
 
@@ -91,10 +93,10 @@ As lacunas da análise foram resolvidas pelo pedido explícito do pesquisador, r
 - [x] T009 [US1] Implementar em `montagem_entradas.py` confinamento de manifesto/documentos e saída nova: apenas filhos diretos com nomes exatos, sem glob/recursão/resolução de dependências, links internos/externos, junctions e reparse points, paths sobrepostos ou fallback; verificar hashes antes de usar e ao consolidar. Não importar avaliador ou aceitar referência.
 - [x] T010 [US1] Implementar composição em `montagem_entradas.py` na ordem do contrato, delimitadores/LF fixos e bytes dos documentos preservados: comuns idênticos por mudança, pedido igual D0/D1 e E0/E1, mesmas notas D1/E1 entre mudanças; omitir integralmente bloco/delimitadores/notas em D0/E0, sem abrir `notas.md` ou acrescentar texto compensatório.
 - [x] T011 [US1] Persistir em `montagem_entradas.py` `payload.txt`, `manifesto-original.json`, `documentos/` e `preparacao.json` com conteúdo integral, instante UTC, versões/hashes/IDs, metadados de rascunho e `PREPARADO_LOCAL_NAO_ENVIADO`; bloqueio/causa explícitos sem payload parcial utilizável, sem sobrescrever tentativa anterior.
-- [x] T012 [US1] Implementar CLI local de montagem em `montagem_entradas.py` conforme contrato §2, com `--pacote`, `--manifesto`, `--saida` e códigos 0/2; recusar argumentos de referência/modelo/provedor e não acessar rede, desenvolvimento, avaliador ou material privado.
+- [x] T012 [US1] Implementar CLI local de montagem em `montagem_entradas.py` conforme contrato §2, com `--pacote`, `--manifesto`, `--autorizacao` externa obrigatória (v3), `--saida` e códigos 0/2; recusar argumentos de referência/modelo/provedor e não acessar rede, desenvolvimento, avaliador ou material privado.
 - [x] T013 [US1] Executar futuramente controles lógicos/positivos da montagem e composição literal das quatro condições; guardar comando/retorno/stdout/stderr, versões, esperado/observado e casos negativos em `evidencias/spec004/us1-logica/`, usando diretórios novos; não declarar isolamento ou ciência aprovados pelo resultado lógico.
-- [ ] T014 [US1] Preparar e registrar em `evidencias/spec004/isolamento/preparacao.md` a identidade Windows restrita, raízes de leitura/escrita e permissões do desenho, com disponibilidade/autorização operacional e runner identificado; se indisponível, registrar impedimento concreto e manter T015/fechamento pendentes. Sem infraestrutura genérica, novo repositório ou acesso ao gabarito pelo runner.
-- [ ] T015 [US1] Verificar S-14 sob a identidade de T014, demonstrando leitura permitida só do pacote/runner e leitura negada de sentinelas fictícias nas zonas de desenvolvimento/referência/avaliação; inspecionar integralmente o payload permitido e preservar provas em `evidencias/spec004/isolamento/`. Não substituir acesso real por mocks, nome de pasta ou hashes.
+- [ ] T014 [US1] Preparar e registrar em `evidencias/spec004/isolamento/preparacao.md` a identidade Windows restrita, raízes de leitura/escrita e permissões do desenho, com disponibilidade/autorização operacional e runner identificado; se indisponível, registrar impedimento concreto e manter T015/fechamento pendentes. Sem infraestrutura genérica, novo repositório ou acesso ao gabarito pelo runner. **[SUBSTITUÍDA D-29, NÃO EXECUTADA/APROVADA; ver T049–T051].**
+- [ ] T015 [US1] Verificar S-14 sob a identidade de T014, demonstrando leitura permitida só do pacote/runner e leitura negada de sentinelas fictícias nas zonas de desenvolvimento/referência/avaliação; inspecionar integralmente o payload permitido e preservar provas em `evidencias/spec004/isolamento/`. Não substituir acesso real por mocks, nome de pasta ou hashes. **[SUBSTITUÍDA D-29, NÃO EXECUTADA/APROVADA; ver T049–T051].**
 
 ## Phase 4: US2 — preservar entrada e resposta original (Priority: P1)
 
@@ -157,18 +159,18 @@ As lacunas da análise foram resolvidas pelo pedido explícito do pesquisador, r
 - [x] T039 [US4] Implementar em `avaliacao_ids.py` visão operacional só com `--imputar-invalidas`: P/R/F zero identificado apenas em I, denominador V+I; conservar resumo válido sobre V e nulos originais, sem imputar falha técnica nem fabricar conjuntos/TP/FP/FN/seleção completa/Jaccard observados.
 - [x] T040 [US4] Integrar CLI `resumir` e persistência nova em `avaliacao_ids.py`, com hashes/versões/IDs/exclusões/pares e códigos do contrato, diagnósticos de completude/conflitos e rechecagem de integridade; decisões T036 explícitas, sem rede, modelo ou transporte.
 - [x] T041 [US4] Executar futuramente S-15/S-16 e subcasos dependentes de T036, preservando contagens/taxas/frações/ausências e retornos em `evidencias/spec004/us4-resumos/`; comparar cenários literais sem invocar produção para gerar esperados, sem transformar tentativas ou pares em respostas LLM.
-- [ ] T042 [US4] Executar futuramente os dois arquivos unittest e consolidar todos os subcasos S-01–S-16 em `evidencias/spec004/integracao/`, com matriz prevista/executada/conforme/divergente/erro/ausente e provas de T015; não marcar 16/16 só pela contagem de métodos, links ou arquivos, e não declarar S-14 completo sem acesso restrito demonstrado.
-- [ ] T043 [US4] Investigar divergências em `evidencias/spec004/integracao/diagnostico.md`, preservando esperado/observado, hipóteses/causas/evidências e responsável/resolução ou pendência; correção do mecanismo exige nova tentativa identificada, sem substituir expectativa pelo observado ou modificar candidata/notas para obter aprovação.
+- [x] T042 [US4] Consolidar verificações necessárias do contrato textual em `evidencias/spec004/revisao-textual-2026-11-01/`, confrontando fontes, recortes, condições, caminhos, bytes e avaliação separada; reutilizar controles de métricas inalterados com versões/fontes identificadas, sem aprovar prova de SO substituída.
+- [x] T043 [US4] Investigar divergências em `evidencias/spec004/revisao-textual-2026-11-01/diagnostico.md`, preservando esperado/observado, hipóteses/causas/evidências e responsável/resolução ou pendência; correção do mecanismo exige nova tentativa identificada, sem substituir expectativa pelo observado ou modificar candidata/notas para obter aprovação.
 
 ## Phase 7: Polish & Cross-Cutting Concerns — fechamento futuro
 
-**Pré-condição:** capacidades e controles anteriores verificados, decisões de T036 registradas e prova real de T015 disponível; caso contrário, fechar somente diagnóstico parcial, sem concluir tarefas sem evidência.
+**Pré-condição vigente:** convenções D-26/D-29 e verificações textuais T049–T051 evidenciadas. Não há gate de identidade do Windows. Fechamento somente de engenharia offline; envio real/piloto/revisão científica continuam pendentes.
 
-- [ ] T044 Revisar semanticamente critério por critério, positivos/negativos, fronteira de acesso, integridade dos originais e regras candidatas em `evidencias/spec004/fechamento/relatorio.md`; registrar conformidade/divergências/erros/ausências por FR/SC/subcaso, sem tratar quantidade de arquivos/links como prova de correção funcional.
-- [ ] T045 Confrontar fonte/referência/notas/materiais/evidências da bancada com inventário T001 e registrar preservação/versões/limites em `evidencias/spec004/fechamento/preservacao.json`; confirmar nenhuma chamada/modelo/piloto, notas ainda rascunho e revisão científica/profissional pendente, sem inferir aprovação da concordância sintética.
-- [ ] T046 Reconciliar realizado/planejado em `specs/004-preparacao-avaliacao-ids/spec.md`, `plan.md`, `checklists/requirements.md` e `quickstart.md`, preservando histórico e substituindo referências a capacidades futuras somente com evidências reais; comandos de documentação conferidos não equivalem a controles executados.
-- [ ] T047 Atualizar com acréscimos datados `documentacao/decisoes.md`, `AGENTS.md`, `ESTADO_ATUAL.md`, `BLOQUEIOS.md` e `HANDOFF.md`, ligando evidências, decisões T036 e lacunas remanescentes; manter revisão profissional, notas definitivas, fundamentação/revisão de métricas, piloto final e adoção constitucional pendentes no alcance não resolvido.
-- [ ] T048 Conferir este `specs/004-preparacao-avaliacao-ids/tasks.md` e relatório de `evidencias/spec004/fechamento/relatorio.md`, marcar somente tarefas com aceitação/evidência e explicitar bloqueios concretos, sem alterar gabarito/conjuntos/notas ou liberar experimento; obter revisão humana necessária antes de qualquer etapa de pesquisa futura.
+- [x] T044 Revisar semanticamente critério por critério, positivos/negativos, fronteira de acesso, integridade dos originais e regras candidatas em `evidencias/spec004/revisao-textual-2026-11-01/relatorio.md`; registrar conformidade/divergências/erros/ausências por FR/SC/subcaso, sem tratar quantidade de arquivos/links como prova de correção funcional.
+- [x] T045 Confrontar fonte/referência/notas/materiais/evidências da bancada com inventário T001 e registrar preservação/versões/limites em `evidencias/spec004/revisao-textual-2026-11-01/preservacao.json`; confirmar nenhuma chamada/modelo/piloto, notas ainda rascunho e revisão científica/profissional pendente, sem inferir aprovação da concordância sintética.
+- [x] T046 Reconciliar realizado/planejado em `specs/004-preparacao-avaliacao-ids/spec.md`, `plan.md` e `quickstart.md`, conferindo `checklists/requirements.md` como gate documental somente leitura, preservando histórico e substituindo referências a capacidades futuras somente com evidências reais; comandos de documentação conferidos não equivalem a controles executados.
+- [x] T047 Atualizar com acréscimos datados `documentacao/decisoes.md`, `AGENTS.md`, `ESTADO_ATUAL.md`, `BLOQUEIOS.md` e `HANDOFF.md`, ligando evidências, decisões T036 e lacunas remanescentes; manter revisão profissional, notas definitivas, fundamentação/revisão de métricas, piloto final e adoção constitucional pendentes no alcance não resolvido.
+- [x] T048 Revisar `specs/004-preparacao-avaliacao-ids/tasks.md` e relatório atual, marcar aceitação evidenciada, manter T014/T015 como substituídas não executadas e registrar revisão humana/científica, notas definitivas, entrega real e piloto pendentes antes da pesquisa.
 
 ## Dependencies & Execution Order
 
@@ -177,14 +179,14 @@ As lacunas da análise foram resolvidas pelo pedido explícito do pesquisador, r
 ```text
 T001–T002 → T003 → {T004, T005}
                     ├─ US1: T006→T007→T008→T009→T010→T011→T012→T013
-                    │                                      └─ T014→T015 (acesso real)
+                    │                                      └─ T049→T050/T051 (contrato textual)
                     └─ US2: T016→T017→T018→T019→T020→T021→T022→T023
                               → US3: T024→T025→T026→T027→T028→T029→T030→T031→T032→T033
                               → US4: T034→T035; T036→T037→T038→T039→T040→T041
-T013 + T015 + US2 + US3 + T041 → T042→T043→T044→T045→T046→T047→T048
+T013 + T049/T050/T051 + US2 + US3 + T041 → T042→T043→T044→T045→T046→T047→T048
 ```
 
-T014/T015 podem ser preparados após T012; requerem identidade/autorização operacional e execução externa ao contexto amplo. Falta de ambiente não bloqueia US2/US3 com preparação literal, mas impede concluir US1/S-14/integração completa. T036 pode ser discutida desde T002; sua posição na US4 não obriga aguardar implementação para decidir. T037–T041 dependem também de US2/US3 e dos cálculos de T034/T035; ambos os ramos se unem antes da integração. Nenhum caminho dispensa pedido de implementação.
+T014/T015 foram substituídas por D-29 e não integram o caminho ativo: não criar identidade nem retomar a prova de SO. T049/T050/T051 verificam recortes, montagem, caminhos e avaliação separada; envio real permanece fora desta etapa. T036 pode ser discutida desde T002; sua posição na US4 não obriga aguardar implementação para decidir. T037–T041 dependem também de US2/US3 e dos cálculos de T034/T035; ambos os ramos se unem antes da integração. Nenhum caminho dispensa pedido de implementação.
 
 ### Dentro de cada história
 
@@ -200,7 +202,7 @@ Testes/esperados escritos antes da implementação correspondente; executar chec
 
 ## Implementation Strategy
 
-**MVP primeiro:** fundação e US1, com pacote fictício, conteúdo exato e prova de isolamento. Se só controles lógicos passarem, denominar resultado parcial; não chamar MVP integral nem liberar envio. Não criar interface para demonstrar a bancada.
+**MVP primeiro:** fundação e US1, com recortes reais, negativos fictícios, conteúdo exato e contrato textual D-29. Aceitação local não libera envio ou pesquisa. Não criar interface para demonstrar a bancada.
 
 **Entrega incremental:** US2 funciona com preparação literal independente; US3 agrega parser/referência e seleção por IDs; US4 acrescenta Jaccard/resumos após decisões necessárias. Esperados ficam identificados/versionados antes das funções correspondentes; nenhuma execução nesta geração.
 
@@ -211,8 +213,8 @@ Testes/esperados escritos antes da implementação correspondente; executar chec
 | Requisito/critério | Tarefas previstas | Limite |
 |---|---|---|
 | FR-001 | T004, T006–T009, T012–T013 | Lista/manifesto e recusas, não descoberta de contexto |
-| FR-002 | T009, T012, T014–T015, T028, T033 | Isolamento real ainda sem evidência |
-| FR-003 | T002, T006–T009, T014–T015 | Conteúdo/neutralidade revisados antes do uso experimental |
+| FR-002 | T009, T012, T028, T033, T049–T051 | Referência separada; limite textual local, envio não exercitado |
+| FR-003 | T002, T006–T009, T049–T050 | Conteúdo/neutralidade revisados antes do uso experimental |
 | FR-004 | T010–T011, T017–T023 | Preparado local não significa enviado |
 | FR-005 | T016–T023, T030–T032 | Ausente/fragmento/técnica não viram seleção |
 | FR-006 | T001, T011, T017–T023, T040, T043–T045 | Derivados novos, originais preservados |
@@ -221,16 +223,16 @@ Testes/esperados escritos antes da implementação correspondente; executar chec
 | FR-009 | T005, T025–T030, T032 | G de rfs/tests, nunca observado |
 | FR-010 | T002, T005, T026, T029–T041 | Candidatas; T036 é gate de agregação |
 | FR-011 | T003–T007, T016–T017, T024–T026, T034–T043 | 16 famílias com subcasos e oráculos prévios |
-| FR-012 | Escopo desta entrega, T001–T002, T044–T048 | Limites temporais da Spec superados apenas pelo pedido atual de tarefas/análise |
-| SC-001 | T006–T015, T042, T044 | Sem prova real não concluir isolamento |
+| FR-012 | T001–T002, T044–T051 | Limites temporais superados apenas pelas autorizações D-26/D-29; sem pesquisa |
+| SC-001 | T006–T013, T042, T044, T049–T051 | Recortes/bytes/caminhos/condições/recibo local; nenhuma alegação de SO |
 | SC-002 | T011, T016–T023, T040, T045 | Integridade e preservação observáveis |
 | SC-003 | T024–T032, T042 | Valores esperados, não contagem de testes |
 | SC-004 | T016–T023, T024, T030–T032, T037–T042 | Estados, nulidades e denominadores |
 | SC-005 | T005, T026, T029, T034–T041 | Frações/convenções candidatas |
-| SC-006 | T003–T005, T015, T042–T044 | Nenhum sintético contabilizado como experimento |
+| SC-006 | T003–T005, T042–T044, T049–T051 | Nenhum sintético contabilizado como experimento |
 | SC-007 | Escopo desta entrega, T044–T048 | Exatamente dois arquivos era condição histórica da criação da Spec; não limitar artefatos hoje autorizados |
 
-Distribuição: Setup 2; Fundação 3; US1 10; US2 8; US3 10; US4 10; Fechamento 5 = **48 tarefas: 39 concluídas e 9 pendentes**. Quatro `[P]` (T004/T005/T006/T016), com pré-condições acima. Essas contagens verificam organização, não correção funcional, execução ou aprovação científica.
+Distribuição: Setup 2; Fundação 3; US1 10; US2 8; US3 10; US4 10; Fechamento 5 = **48 IDs originais (situação histórica: 39 concluídos/9 pendentes em 27/10); revisão D-29 acrescenta T049–T051: 51 IDs, 49 vigentes concluídos e 2 substituídos sem aprovação**. Quatro `[P]` (T004/T005/T006/T016), com pré-condições acima. Essas contagens verificam organização, não correção funcional, execução ou aprovação científica.
 
 ## Notes
 
@@ -251,7 +253,36 @@ Convenções do pesquisador em D-26, execução técnica D-27 e revisão parcial
 | T036 | Decisões explícitas D-26 já registradas; sem escolha automática do implementador |
 | T037–T041 | PONT-01/PONT-02 e S-16 em avaliacao-confirmacao; cenários A/B persistentes, us4-resumos/relatorio.md |
 
-**Pendentes:** T014/T015 (runner sob identidade separada sem leitura das zonas proibidas não provisionado; token atual lê referência) e T042–T048, cujas dependências integrais não foram satisfeitas. Documentação e revisão parciais foram atualizadas, mas não concluem essas tarefas de fechamento. S-14 também registra criação de symlink real negada pelo Windows, WinError1314; junctions reais foram verificadas, sem simulação apresentada como isolamento. As 15 outras famílias estão conformes no escopo offline descrito pelos confrontos; não são resultados de LLM.
+**Pendentes à data de 27/10 (histórico, substituído por D-29/D-30):** T014/T015 (runner sob identidade separada sem leitura das zonas proibidas não provisionado; token atual lê referência) e T042–T048, cujas dependências integrais não foram satisfeitas. Documentação e revisão parciais foram atualizadas, mas não concluem essas tarefas de fechamento. S-14 também registra criação de symlink real negada pelo Windows, WinError1314; junctions reais foram verificadas, sem simulação apresentada como isolamento. As 15 outras famílias estão conformes no escopo offline descrito pelos confrontos; não são resultados de LLM.
 
-**Testes atuais:** 14 métodos do avaliador aprovados; montagem com 5 aprovados e 1 ignorado por capacidade ausente. Valores esperados e observados, não contagens de arquivos/links, sustentam as conclusões técnicas limitadas. Nenhum modelo, chamada ao LLM, piloto ou alteração de candidata/notas reais.
+**Testes à data de 27/10 (histórico):** 14 métodos do avaliador aprovados; montagem com 5 aprovados e 1 ignorado por capacidade ausente. Valores esperados e observados, não contagens de arquivos/links, sustentam as conclusões técnicas limitadas. Nenhum modelo, chamada ao LLM, piloto ou alteração de candidata/notas reais.
 
+## Contrato textual verificável — D-29
+
+Preparação editorial local em `fontes_autorizadas.py`, com seis caminhos fixos e recortes enumerados: instrução/notas/pedidos de materiais/04; definições integrais de materiais/07; contrato inicial de documentacao/requisitos; seis primeiras colunas da tabela T01–T12 de documentacao/qualidade-e-testes (sem coluna de destaques de RF); somente descrição de uma remoção na tabela da Spec 003; schema existente. Documentos mistos são lidos nessa edição local para selecionar os trechos, nunca enviados inteiros. A referência candidata não é lida nessa etapa.
+
+`montagem_entradas.py`, contrato `spec004-v3`, lê pacote plano e `--autorizacao` externa explícita, fixando hashes de manifesto/documentos. Atualizar apenas seu próprio manifesto não autoriza texto alterado. A autorização é registro técnico controlado, não assinatura de autoridade ou detector semântico de qualquer gabarito: confrontar fontes, recortes, conteúdo e bytes. Mudança de fonte/recorte requer nova conferência; revisão profissional continua pendente. Fixtures v2 e comandos anteriores são históricos, preservados e não reexecutados como prova do contrato atual.
+
+Somente `payload.txt` se destina ao modelo. Manifesto, autorização, cópias de documentos, fontes/hashes e `entrega-textual.json` são registros locais; não anexar diretório, código, fontes mistas ou referência. O recibo fixa texto/hash, `ferramentas=[]`, `anexos_ambiente=[]`, sem histórico e `envio_realizado=false`. Entrega real e ausência de ferramentas na plataforma serão conferidas antes do piloto; não foram exercitadas aqui, pois não há chamadas externas. Não se alega isolamento por SO.
+
+Caminhos suportados: CLI com caminho local absoluto com drive ou relativo ao cwd; documentos do pacote filhos diretos com nomes enumerados; avaliador admite subdiretórios relativos declarados com separadores `/` ou `\`, confinados à raiz. Recusar drive relativo, raiz sem drive no Windows, UNC/dispositivos, streams `arquivo:fluxo`, dispositivos reservados, ponto/espaço final, componentes declarados vazios/`.`/`..` e links/junctions/reparse points. São controles de inclusão indevida, sem contas/permissões ou alegação de isolamento.
+
+S-14 vigente verifica recortes/fontes, autorização independente, conteúdo proibido fictício em negativos, 16 combinações (quatro mudanças × quatro condições), texto exato e notas iguais D1/E1/ausentes D0/E0. Criação de symlink e negação de leitura por identidade são exigências antigas substituídas: não foram aprovadas. Esses objetos não pertencem às entradas suportadas; permanecem controles de recusa, sem exigir criação privilegiada para aceitar o contrato textual. PONT-01/PONT-02 e fórmulas candidatas não mudaram.
+
+## Tarefas de substituição — D-29 (IDs anteriores preservados)
+
+- [x] T049 [US1] Materializar apenas seis fontes/recortes enumerados em `fontes_autorizadas.py`, mantendo notas literais, proveniência e autorização externa; verificar 16 pacotes sem resultados de variantes, gabarito, código ou histórico.
+- [x] T050 [US1] Verificar `payload.txt`/`entrega-textual.json`, bytes/versões, ferramentas/anexos vazios e envio não realizado; demonstrar recusa de conteúdo alterado mesmo com manifesto atualizado em `tests/test_fontes_autorizadas.py` e `tests/test_montagem_entradas.py`.
+- [x] T051 [US4] Verificar caminhos locais suportados e recusas de inclusão indevida e demonstrar avaliação pela CLI separada, referência apenas nessa etapa e originais preservados em `evidencias/spec004/revisao-textual-2026-11-01/`.
+
+Dependência vigente: T049 → T050/T051 → T042 → T043–T048. T014/T015 são exigências históricas substituídas, não provas aprovadas. Total: 51 IDs, 49 tarefas vigentes e 2 substituídas. Fechamento técnico não conclui revisão científica nem entrega real/piloto.
+
+
+
+## Verificação vigente — 01/11/2026 (D-30)
+
+Engenharia offline do contrato D-29 concluída no alcance verificado: 49 tarefas vigentes atendidas; T014/T015 substituídas, não executadas/aprovadas. Recortes das seis fontes, autorização externa e montagem v3 produziram 16 pacotes; bytes, conteúdo, documentos comuns, notas D1/E1 e ausência de notas D0/E0 confrontados. Referência somente no avaliador separado; resposta de demonstração explicitamente sintética. As 16 famílias estão consolidadas com evidências anteriores preservadas e verificações necessárias das alterações; não se reexecutou pontuação inalterada nem se contou sintéticos como LLM.
+
+[Relatório e limitações](../../evidencias/spec004/revisao-textual-2026-11-01/relatorio.md) inclui comandos, esperado/observado, hashes, matriz, caminhos suportados, limitação da criação de symlink e provas de SO substituídas. As seções de 27/10 são históricas; os gates atuais são D-29 e esta verificação, sem aprovação retroativa. Checklist é qualidade documental, preservada sem remarcação. Sem prova de entrega real ao modelo, modelo escolhido, chamada externa ou piloto. Revisão profissional/científica, notas definitivas, fundamentação das métricas, desenho final/congelamento do piloto e adoção constitucional permanecem pendentes.
+
+Aceitação das tarefas atuais: T049/T050 — recortes-primeira, montagem-revisada e demonstracao-textual-001; T051 — entrada-avaliador e demonstração separada; T042/T044 — matriz.json e relatório critério a critério; T043 — diagnostico.md; T045 — preservacao.json; T046 — reconciliação e checklist intacta; T047 — D-30/governança; T048 — estado-tarefas.json e limites do relatório. Todos os caminhos de evidência são relativos a `evidencias/spec004/revisao-textual-2026-11-01/`. T014/T015 permanecem desmarcadas exclusivamente como exigências substituídas, não pendências para provisionamento.

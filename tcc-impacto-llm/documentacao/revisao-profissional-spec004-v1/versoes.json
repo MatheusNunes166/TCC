@@ -1,0 +1,91 @@
+{
+  "pacote": "revisao-profissional-spec004",
+  "versao": "1.0",
+  "data_preparacao": "2026-11-01",
+  "preparacao": "assistente de IA por solicitacao do pesquisador",
+  "estado": "PREPARADO_PARA_REVISAO_NAO_RECEBIDA",
+  "revisor": null,
+  "data_revisao": null,
+  "contribuicao_profissional": "nenhuma registrada",
+  "referencia": {
+    "versao": "0.2",
+    "status": "CANDIDATO_NAO_REVISADO",
+    "revisor": null,
+    "data_revisao": null
+  },
+  "nota": {
+    "estado": "RASCUNHO_NAO_REVISADO",
+    "fonte": "materiais/04_NOTAS_E_PROMPTS.md#4.2",
+    "origem_declarada": "Pesquisador no papel de analista, segundo secao 4.1; autoria/data por observacao e apoio de IA a confirmar",
+    "sha256_linha_literal_com_final_de_linha": "5f82ec8421a7ec27a92a718d27deb2a74cdb7538e12a80c662f27038c2f3cc34"
+  },
+  "contrato_montagem": "spec004-v3",
+  "politica_avaliacao": "ids-proposta-004-v2",
+  "fontes": [
+    {
+      "arquivo": "materiais/04_NOTAS_E_PROMPTS.md",
+      "sha256": "2c0b651fb0e7b95358e2c466a18d0116c4342a477c3cacace7d68468de0d8021"
+    },
+    {
+      "arquivo": "materiais/07_DEFINICOES_COMUNS.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "materiais/02_REQUISITOS_TESTES_E_REFERENCIA.md",
+      "sha256": "4134ad6bc64f251b6542ab6885ad682231282f63d5c44bca7b942ac5bfc1c7c8"
+    },
+    {
+      "arquivo": "materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+      "sha256": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80"
+    },
+    {
+      "arquivo": "documentacao/referencia-candidata-proxima-etapa.md",
+      "sha256": "ee357f3bb9d10f84e6245df3f4f38c1a56d7a37b307ea6e882486f4b66ee4a5b"
+    },
+    {
+      "arquivo": "documentacao/requisitos.md",
+      "sha256": "d2d47f932a2e30143097e09873e84cb18dee53c4ea63423794a64edc2b45b957"
+    },
+    {
+      "arquivo": "documentacao/qualidade-e-testes.md",
+      "sha256": "68079106fb4f0adc34ae27837810b80e8c963c11fcfa6275a913df0deca59682"
+    },
+    {
+      "arquivo": "specs/003-mudancas-controladas/evidencias.md",
+      "sha256": "e91ff0db474da7acec31c8c68cdd5d2fa0aa682f4abfb027964fc66ff878f12a"
+    },
+    {
+      "arquivo": "evidencias/spec003/rodada-final/resultados-originais.json",
+      "sha256": "99895d014ce3a052529c3d898dc8f620bc89dc3a9b4c0f49d497bf3e942dff47"
+    },
+    {
+      "arquivo": "specs/004-preparacao-avaliacao-ids/spec.md",
+      "sha256": "88b0b4e97ac4fcc6cfad9ba9d7a9a34d25e3bec0f7e698afde65675345044c01"
+    },
+    {
+      "arquivo": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md",
+      "sha256": "5050cb298f6aacd4a57d5a7d26653f44336981bd27f752f69e13ddfe282448aa"
+    },
+    {
+      "arquivo": "evidencias/spec004/revisao-textual-2026-11-01/relatorio.md",
+      "sha256": "3f3358b09a786ddaf22fa19d0a3ef86b17e30cbd368bd01e23f82f7176e8fd0d"
+    },
+    {
+      "arquivo": "evidencias/spec004/revisao-textual-2026-11-01/matriz.json",
+      "sha256": "f5075405ee90cd6d2dd11e3fbcf377c5ede0456e95fe0663a67dae17bbe5e5c7"
+    },
+    {
+      "arquivo": "evidencias/spec004/revisao-textual-2026-11-01/preservacao.json",
+      "sha256": "11bbbcc1c57d2e7be27abd02380bc807c017b9c99f43d3d33aaa4fe3039f1ccf"
+    }
+  ],
+  "conferencia_documental": {
+    "baseline": 12,
+    "variantes": 48,
+    "divergencias": 0,
+    "execucao_nova": false,
+    "limite": "Confronto dos registros existentes, sem teste novo ou aprovacao cientifica"
+  },
+  "LLM": false,
+  "piloto": false
+}

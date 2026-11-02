@@ -4,12 +4,12 @@ from datetime import datetime, timezone
 import hashlib
 import json
 import os
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 import stat
 import sys
 import uuid
 
-CONTRATO = 'spec004-v2'
+CONTRATO = 'spec004-v3'
 NOMES = ('sistema.txt','definicoes-comuns.md','requisitos-baseline.md',
          'catalogo-baseline.md','mudanca.md','pedido.txt','schema_saida.json')
 CONDICOES = ('D0','D1','E0','E1')
@@ -24,7 +24,15 @@ def reparse(path):
     return stat.S_ISLNK(s.st_mode) or bool(getattr(s,'st_file_attributes',0) & 0x400)
 
 def sem_links(path):
-    """Recusa links internos/externos, junctions e qualquer reparse no caminho."""
+    """Valida caminho local; nao e mecanismo de isolamento por SO."""
+    w=PureWindowsPath(os.fspath(path))
+    if w.drive.startswith('\\\\') or (w.drive and not w.root):
+        raise ValueError('UNC/dispositivo/drive relativo nao suportado')
+    if os.name=='nt' and w.root and not w.drive:raise ValueError('raiz sem drive nao suportada')
+    parts=[p for p in w.parts if p!=w.anchor]
+    if any(':' in p or p.endswith(('.', ' ')) for p in parts):raise ValueError('fluxo alternativo/alias de caminho nao suportado')
+    devices={'CON','PRN','AUX','NUL'}|{f'{p}{i}' for p in ('COM','LPT') for i in range(1,10)}
+    if any(p.split('.')[0].upper() in devices for p in parts):raise ValueError('dispositivo nao suportado')
     p=Path(os.path.abspath(path))
     for item in (p,*p.parents):
         if reparse(item):
@@ -57,11 +65,15 @@ def revalidar(entries):
         sem_links(p)
         if sha(p.read_bytes())!=digest:raise ValueError(f'integridade alterada: {p}')
 
-def preparar(pacote,manifesto,saida):
+def preparar(pacote,manifesto,saida,autorizacao=None):
     root=sem_links(pacote);manifesto=sem_links(manifesto);out=sem_links(saida)
     if not root.is_dir() or manifesto!=root/'manifesto.json':raise ValueError('manifesto fora da raiz permitida')
     if out==root or out.is_relative_to(root) or root.is_relative_to(out):raise ValueError('saida sobreposta a entrada')
     if out.exists():raise ValueError('saida ja existe')
+    if autorizacao is None:raise ValueError('autorizacao externa explicita obrigatoria')
+    autorizacao=sem_links(autorizacao)
+    if autorizacao.is_relative_to(root) or autorizacao.is_relative_to(out):
+        raise ValueError('autorizacao deve ficar fora do pacote/saida')
     out.mkdir(parents=True,exist_ok=False)
     base={'preparacao_id':uuid.uuid4().hex,'contrato':CONTRATO,'instante_utc':datetime.now(timezone.utc).isoformat(),
           'liberado_para_pesquisa':False,'completo':False,'status':'BLOQUEADO',
@@ -86,6 +98,13 @@ def preparar(pacote,manifesto,saida):
         # Only this explicitly supplied flat package is enumerated, never the repository.
         for p in root.iterdir():sem_links(p)
         if {p.name for p in root.iterdir()}!=set(names)|{'manifesto.json'}:raise ValueError('arquivo extra/ausente no pacote')
+        authorization_raw=autorizacao.read_bytes();a=_json(authorization_raw)
+        tracked.append((autorizacao,sha(authorization_raw)))
+        if (not isinstance(a,dict) or a.get('versao')!='autorizacao-textual-v1'
+            or a.get('status')!='CONFERIDO_TECNICAMENTE_RASCUNHO'
+            or a.get('manifesto_sha256')!=sha(raw)
+            or a.get('documentos')!=[{'arquivo':e.get('arquivo'),'sha256':e.get('sha256')} for e in entries]):
+            raise ValueError('pacote/manifesto diverge da autorizacao externa')
         blobs=[]
         for e in entries:
             name=e['arquivo'];p=sem_links(root/name)
@@ -104,11 +123,18 @@ def preparar(pacote,manifesto,saida):
             with p.open('xb') as f:f.write(data)
             tracked.append((p,sha(data)));artifacts.append({'arquivo':relative,'sha256':sha(data)})
         save('manifesto-original.json',raw)
+        save('autorizacao-original.json',authorization_raw)
         for e,b in blobs:save('documentos/'+e['arquivo'],b)
         save('payload.txt',payload)
+        delivery={'contrato':'texto-apenas-D29','payload_arquivo':'payload.txt','payload_sha256':sha(payload),
+                  'ferramentas':[],'anexos_ambiente':[],'historico_conversa':False,
+                  'envio_realizado':False,'isolamento_por_SO_alegado':False,
+                  'limite':'Somente este texto e destinado ao modelo. Entrega real nao exercitada; sem acesso adicional.'}
+        save('entrega-textual.json',(json.dumps(delivery,ensure_ascii=True,sort_keys=True,indent=2)+'\n').encode())
         base.update({k:m[k] for k in ('configuracao_id','mudanca','condicao','status_notas','versao_pacote','pacote_id')})
         base.update(payload_sha256=sha(payload),payload_tamanho=len(payload),manifesto_sha256=sha(raw),
-                    documentos=entries,arquivos=artifacts,status='PREPARADO_LOCAL_NAO_ENVIADO')
+                    documentos=entries,arquivos=artifacts,status='PREPARADO_LOCAL_NAO_ENVIADO',
+                    autorizacao_sha256=sha(authorization_raw),fronteira='conteudo_textual_sem_ferramentas',isolamento_por_SO_alegado=False)
         revalidar(tracked)
         base['completo']=True
         _dump(out/'preparacao.json',base)
@@ -146,10 +172,10 @@ def conferir_condicoes(preparacoes):
 
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
-    for name in ('pacote','manifesto','saida'):parser.add_argument('--'+name,required=True)
+    for name in ('pacote','manifesto','saida','autorizacao'):parser.add_argument('--'+name,required=True)
     args=parser.parse_args(argv)
     try:
-        r=preparar(args.pacote,args.manifesto,args.saida)
+        r=preparar(args.pacote,args.manifesto,args.saida,args.autorizacao)
         print(json.dumps({'preparacao_id':r['preparacao_id'],'status':r['status']}));return 0
     except (ValueError,OSError) as exc:
         print(str(exc),file=sys.stderr);return 2

@@ -1,0 +1,110 @@
+{
+  "versao_contrato": "spec004-v2",
+  "pacote_id": "controle-E1",
+  "versao_pacote": "sintetica-1",
+  "configuracao_id": "controle-local-v1",
+  "mudanca": "MC-01",
+  "condicao": "E1",
+  "status": "RASCUNHO_PREPARACAO",
+  "liberado_para_pesquisa": false,
+  "documentos": [
+    {
+      "papel": "sistema",
+      "arquivo": "sistema.txt",
+      "versao": "sintetica-1",
+      "sha256": "3ebf50cd8798bf9f9a1f246c0a918162f93f33d4e53768a8f31b30b4abd93e32",
+      "tamanho_bytes": 58,
+      "revisao_conteudo": {
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; controle sintetico",
+        "data": "2026-10-27"
+      }
+    },
+    {
+      "papel": "definicoes-comuns",
+      "arquivo": "definicoes-comuns.md",
+      "versao": "sintetica-1",
+      "sha256": "905a2827a985497c2ac2044270cbfa5d76c3621512701b970ac3e95d820393d4",
+      "tamanho_bytes": 53,
+      "revisao_conteudo": {
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; controle sintetico",
+        "data": "2026-10-27"
+      }
+    },
+    {
+      "papel": "requisitos-baseline",
+      "arquivo": "requisitos-baseline.md",
+      "versao": "sintetica-1",
+      "sha256": "79241b88f9ec5d43c637227e92a1c32ddb5f8dac5f9bbcff10bbe82681d4bf83",
+      "tamanho_bytes": 45,
+      "revisao_conteudo": {
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; controle sintetico",
+        "data": "2026-10-27"
+      }
+    },
+    {
+      "papel": "catalogo-baseline",
+      "arquivo": "catalogo-baseline.md",
+      "versao": "sintetica-1",
+      "sha256": "1a7954dd424bebd2fe46fe5008881c34a98e2c23231bcec945d48da333921379",
+      "tamanho_bytes": 66,
+      "revisao_conteudo": {
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; controle sintetico",
+        "data": "2026-10-27"
+      }
+    },
+    {
+      "papel": "mudanca",
+      "arquivo": "mudanca.md",
+      "versao": "sintetica-1",
+      "sha256": "18b2d331d510b965e0e34754608a24ee140402fcb7c45170b48208bb4a2ee863",
+      "tamanho_bytes": 47,
+      "revisao_conteudo": {
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; controle sintetico",
+        "data": "2026-10-27"
+      }
+    },
+    {
+      "papel": "notas",
+      "arquivo": "notas.md",
+      "versao": "sintetica-1",
+      "sha256": "2a0ef94d52ab671faab89e6e0d917441ec9a08326dc06e392ecbe94f288d4f0e",
+      "tamanho_bytes": 62,
+      "revisao_conteudo": {
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; controle sintetico",
+        "data": "2026-10-27"
+      }
+    },
+    {
+      "papel": "pedido",
+      "arquivo": "pedido.txt",
+      "versao": "sintetica-1",
+      "sha256": "eb5581217f81271a2901c62fff70ca92ee473a989e0d4a200ef3c98b5c568efc",
+      "tamanho_bytes": 50,
+      "revisao_conteudo": {
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; controle sintetico",
+        "data": "2026-10-27"
+      }
+    },
+    {
+      "papel": "schema_saida",
+      "arquivo": "schema_saida.json",
+      "versao": "sintetica-1",
+      "sha256": "133b5e3b19e2c654fa72d07ade524f6c14b65e4c40c34b4504dc497d56104aca",
+      "tamanho_bytes": 206,
+      "revisao_conteudo": {
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; controle sintetico",
+        "data": "2026-10-27"
+      }
+    }
+  ],
+  "status_notas": "RASCUNHO_NAO_REVISADO",
+  "origem_notas": "ficticia, nao sao as notas reais do pesquisador"
+}

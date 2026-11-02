@@ -31,18 +31,47 @@ class TestMontagem(ControleCase):
             entries.append({'papel':name.split('.')[0], 'arquivo':name,'versao':'controle-1',
                             'sha256':hashlib.sha256(raw).hexdigest(),'tamanho_bytes':len(raw),
                             'revisao_conteudo':{'estado':'conferido_tecnicamente','responsavel':'controle sintetico','data':'2026-10-27'}})
-        manifest={'versao_contrato':'spec004-v2','pacote_id':tag,'versao_pacote':'1',
+        manifest={'versao_contrato':'spec004-v3','pacote_id':tag,'versao_pacote':'1',
           'configuracao_id':'controle-local-v1','mudanca':'MC-01','condicao':cond,
           'status':'RASCUNHO_PREPARACAO','liberado_para_pesquisa':False,
           'status_notas':'RASCUNHO_NAO_REVISADO' if cond in ('D1','E1') else 'ausentes',
           'origem_notas':'pesquisador' if cond in ('D1','E1') else 'ausentes','documentos':entries}
         self.gravar(p,manifest)
+        author=self.root/'autorizacoes';author.mkdir(exist_ok=True)
+        (author/(tag+'.json')).write_text(json.dumps({
+          'versao':'autorizacao-textual-v1','status':'CONFERIDO_TECNICAMENTE_RASCUNHO',
+          'manifesto_sha256':hashlib.sha256((p/'manifesto.json').read_bytes()).hexdigest(),
+          'documentos':[{'arquivo':e['arquivo'],'sha256':e['sha256']} for e in entries]}),encoding='utf-8')
         return p,manifest
 
     def gravar(self,p,x): (p/'manifesto.json').write_text(json.dumps(x),encoding='utf-8')
 
     def preparar(self,p,out='out'):
-        return m.preparar(p,p/'manifesto.json',self.root/out)
+        return m.preparar(p,p/'manifesto.json',self.root/out,self.root/'autorizacoes'/(p.name+'.json'))
+
+    def test_S14_autorizacao_externa_necessaria(self):
+        p,x=self.pacote()
+        with self.assertRaises(ValueError):m.preparar(p,p/'manifesto.json',self.root/'sem-autorizacao')
+        # A valid self-declared manifest cannot authorize newly inserted content.
+        blob=b'GABARITO PROIBIDO FICTICIO'
+        (p/'sistema.txt').write_bytes(blob)
+        x['documentos'][0].update(sha256=hashlib.sha256(blob).hexdigest(),tamanho_bytes=len(blob))
+        self.gravar(p,x)
+        with self.assertRaises(ValueError):self.preparar(p,'indevido')
+        self.checar('S-14','conteudo-nao-autorizado-mesmo-com-hash-atualizado',True,True)
+
+    def test_S14_caminhos_locais_suportados(self):
+        for name in ['C:relativo','D:relativo',r'\\servidor\pasta\fonte',r'\\?\C:\fonte',r'C:\pasta\arquivo:fluxo']:
+            with self.subTest(path=name):
+                with self.assertRaises(ValueError):m.sem_links(name)
+                self.checar('S-14','path-bloqueado-'+name,True,True)
+        p,_=self.pacote(tag='relativo')
+        old=Path.cwd()
+        try:
+            os.chdir(self.root)
+            result=m.preparar('relativo','relativo/manifesto.json','relativo-saida','autorizacoes/relativo.json')
+        finally:os.chdir(old)
+        self.checar('S-14','path-local-relativo',result['completo'],True)
 
     def test_S14_condicoes_payload_literal(self):
         resultados=[]
@@ -141,7 +170,8 @@ class TestMontagem(ControleCase):
     def test_S14_cli(self):
         p,_=self.pacote(); root=Path(__file__).resolve().parents[1]
         args=[sys.executable,'-B',str(root/'montagem_entradas.py'),'--pacote',str(p),
-              '--manifesto',str(p/'manifesto.json'),'--saida',str(self.root/'cli')]
+              '--manifesto',str(p/'manifesto.json'),'--saida',str(self.root/'cli'),
+              '--autorizacao',str(self.root/'autorizacoes'/(p.name+'.json'))]
         cp=subprocess.run(args,capture_output=True)
         self.checar('S-14','cli-local',cp.returncode,0)
         cp=subprocess.run(args,capture_output=True)

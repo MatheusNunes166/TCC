@@ -1,0 +1,131 @@
+{
+  "avaliacao_anterior": null,
+  "avaliacao_id": "4caa4fdb280e45cab432dca5c11343da",
+  "avaliador_sha256": "e429fb429be9e628bc4992fc6f731a778159d0b121be2775fe366fa459dd1d2a",
+  "causa": null,
+  "causa_tecnica": null,
+  "completo": true,
+  "condicao": "D0",
+  "configuracao_id": "texto-autorizado-D29",
+  "estado_tecnico": "concluida",
+  "formato_contrato": "valido",
+  "fragmento": false,
+  "ids_conhecidos_por_dimensao": {
+    "requisitos": true,
+    "testes": true
+  },
+  "instante_utc": "2026-11-02T00:39:23.692103+00:00",
+  "json_sintatico": "valido",
+  "modelo_reportado": null,
+  "mudanca": "MC-01",
+  "mudanca_pedida": "MC-01",
+  "observacao_id": "controle-D29",
+  "origem": "sintetica",
+  "payload_sha256": "f438d33e8a4a86e59bb239b20da9e37de764561c748ae594613710acc46c73ae",
+  "politica": {
+    "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+    "status": "CANDIDATA_REVISAO_CIENTIFICA_PENDENTE",
+    "versao": "ids-proposta-004-v2"
+  },
+  "referencia": {
+    "sha256": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80",
+    "status": "CANDIDATO_NAO_REVISADO",
+    "versao": "0.2"
+  },
+  "repeticao_sintetica": 1,
+  "requisitos": {
+    "FN": 0,
+    "FP": 0,
+    "G": [
+      "RF-02"
+    ],
+    "S": [
+      "RF-02"
+    ],
+    "TP": 1,
+    "acertos": [
+      "RF-02"
+    ],
+    "desconhecidos": [],
+    "duplicatas": [],
+    "excedentes": [],
+    "lista_original": [
+      "RF-02"
+    ],
+    "metricas_propostas": {
+      "correspondencia_exata": 1,
+      "f1": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "precisao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "revocacao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "selecao_completa": 1
+    },
+    "omissoes": []
+  },
+  "resposta_sha256": "eed31eeea1ce515e6e21597f6157fe8cafbce00ada22c8b5d9eb78079115818d",
+  "somente_ids_conhecidos": true,
+  "status_avaliacao": "avaliada",
+  "tentativa_anterior": null,
+  "tentativa_id": "tentativa-D29",
+  "testes": {
+    "FN": 0,
+    "FP": 0,
+    "G": [
+      "T04",
+      "T12"
+    ],
+    "S": [
+      "T04",
+      "T12"
+    ],
+    "TP": 2,
+    "acertos": [
+      "T04",
+      "T12"
+    ],
+    "desconhecidos": [],
+    "duplicatas": [],
+    "excedentes": [],
+    "lista_original": [
+      "T04",
+      "T12"
+    ],
+    "metricas_propostas": {
+      "correspondencia_exata": 1,
+      "f1": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "precisao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "revocacao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "selecao_completa": 1
+    },
+    "omissoes": []
+  }
+}

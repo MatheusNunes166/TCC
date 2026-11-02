@@ -111,6 +111,15 @@ class TestAvaliacao(ControleCase):
     def evaluate(self,out='out'):
         return a.avaliar(self.prep,self.attempt,self.refpath,self.root/out)
 
+    def test_S13_caminhos_de_entrada_reais(self):
+        for bad in ['C:arquivo',r'\arquivo',r'\\servidor\pasta\x',r'\\?\C:\x','../x','p/../x','p//x','p/./x','p/x:fluxo','NUL','x.','x ']:
+            with self.subTest(path=bad):
+                with self.assertRaises(ValueError):a.relativo(self.root,bad)
+                self.checar('S-13','path-declarado-bloqueado-'+bad,True,True)
+        expected=self.root/'documentos'/'x.json'
+        self.checar('S-13','path-declarado-posix',str(a.relativo(self.root,'documentos/x.json')),str(expected))
+        self.checar('S-13','path-declarado-windows',str(a.relativo(self.root,r'documentos\x.json')),str(expected))
+
     def test_S11_ausente_fragmento_original(self):
         for i,(content,frag) in enumerate([(None,False),(b'{"requisitos":',True),(b'{"requisitos":[],"testes":[]}',True)]):
             with self.subTest(caso=i):

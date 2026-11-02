@@ -1,0 +1,20 @@
+{
+  "comando": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "-B",
+    "montagem_entradas.py",
+    "--pacote",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\editorial\\pacotes\\MC-01-E1",
+    "--manifesto",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\editorial\\pacotes\\MC-01-E1\\manifesto.json",
+    "--autorizacao",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\editorial\\autorizacoes\\MC-01-E1.json",
+    "--saida",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\preparados\\MC-01-E1"
+  ],
+  "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+  "retorno": 0,
+  "esperado": 0,
+  "origem": "verificacao_local",
+  "LLM": false
+}

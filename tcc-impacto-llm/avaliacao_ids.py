@@ -6,7 +6,7 @@ import hashlib
 from itertools import combinations
 import json
 import os
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 import stat
 import sys
 import uuid
@@ -112,6 +112,13 @@ def avaliar_resposta(data,referencia,mudanca='MC-01',estado_tecnico='concluida')
     return result
 
 def caminho_seguro(path):
+    w=PureWindowsPath(os.fspath(path))
+    if w.drive.startswith('\\\\') or (w.drive and not w.root):raise ValueError('UNC/dispositivo/drive relativo nao suportado')
+    if os.name=='nt' and w.root and not w.drive:raise ValueError('raiz sem drive nao suportada')
+    parts=[p for p in w.parts if p!=w.anchor]
+    if any(':' in p or p.endswith(('.', ' ')) for p in parts):raise ValueError('fluxo alternativo/alias nao suportado')
+    devices={'CON','PRN','AUX','NUL'}|{f'{p}{i}' for p in ('COM','LPT') for i in range(1,10)}
+    if any(p.split('.')[0].upper() in devices for p in parts):raise ValueError('dispositivo nao suportado')
     p=Path(os.path.abspath(path))
     for item in (p,*p.parents):
         try:info=item.lstat()
@@ -121,14 +128,19 @@ def caminho_seguro(path):
     return p
 
 def relativo(root,name):
-    if not isinstance(name,str) or not name or Path(name).is_absolute() or '..' in Path(name).parts:
+    if not isinstance(name,str) or not name:
         raise ValueError('caminho relativo invalido')
+    w=PureWindowsPath(name)
+    if w.drive or w.root or any(p in ('','.','..') for p in name.replace('\\','/').split('/')):
+        raise ValueError('caminho declarado deve ser relativo sem alias/traversal')
     path=caminho_seguro(root/name)
     if not path.is_relative_to(root):raise ValueError('caminho externo')
     return path
 
 def ler(path,tracked):
-    path=caminho_seguro(path);data=path.read_bytes();tracked.append((path,sha(data)));return data
+    path=caminho_seguro(path)
+    if not path.is_file():raise ValueError('entrada deve ser arquivo regular')
+    data=path.read_bytes();tracked.append((path,sha(data)));return data
 
 def salvar(path,data,tracked):
     path.parent.mkdir(parents=True,exist_ok=True)

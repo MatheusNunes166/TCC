@@ -1,0 +1,21 @@
+test_fontes_autorizadas (unittest.loader._FailedTest.test_fontes_autorizadas) ... ERROR
+
+======================================================================
+ERROR: test_fontes_autorizadas (unittest.loader._FailedTest.test_fontes_autorizadas)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_fontes_autorizadas
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Program Files\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_fontes_autorizadas.py", line 9, in <module>
+    import fontes_autorizadas as f
+ModuleNotFoundError: No module named 'fontes_autorizadas'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

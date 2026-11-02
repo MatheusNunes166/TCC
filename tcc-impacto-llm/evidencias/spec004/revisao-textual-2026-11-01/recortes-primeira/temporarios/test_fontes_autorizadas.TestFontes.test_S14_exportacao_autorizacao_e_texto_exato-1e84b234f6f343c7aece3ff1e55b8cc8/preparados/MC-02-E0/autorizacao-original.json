@@ -1,0 +1,70 @@
+{
+  "documentos": [
+    {
+      "arquivo": "sistema.txt",
+      "sha256": "5918e1f7760700e6bf027ab13c9e54bab1eaaa8d34f686b209e6559e1a307c40"
+    },
+    {
+      "arquivo": "definicoes-comuns.md",
+      "sha256": "519d6d8b8943e643be676deaa7f516ec49f6c0fc572ace99e653e3eaf91b8e1f"
+    },
+    {
+      "arquivo": "requisitos-baseline.md",
+      "sha256": "ddd913393fdf31752deedd390e1cba5f97ab848cb3f6de7eca27123059caeaed"
+    },
+    {
+      "arquivo": "catalogo-baseline.md",
+      "sha256": "04f49ddd3f6d9939d7f363715194f4d74b51db117bdd36c8236627d6c0684c59"
+    },
+    {
+      "arquivo": "mudanca.md",
+      "sha256": "aa8a2fc0f4fd8157dcf48d05e9e256d1e8d42d70fdd2db605dace0a644392e4a"
+    },
+    {
+      "arquivo": "pedido.txt",
+      "sha256": "7cb336b26c8b7093fb8ee7c04187935614d2b49a61e16c3605781c7c8a75b883"
+    },
+    {
+      "arquivo": "schema_saida.json",
+      "sha256": "9091a8164f97eaca182b3d06d0e5a59e923c880ebc0148056c453c651f5b46cb"
+    }
+  ],
+  "fontes": [
+    {
+      "arquivo": "materiais/04_NOTAS_E_PROMPTS.md",
+      "sha256": "e818b0fbb38266a003aad539538265b88c5763ac3c739d1c8d02e20ad14e7362",
+      "tamanho_bytes": 426
+    },
+    {
+      "arquivo": "materiais/07_DEFINICOES_COMUNS.md",
+      "sha256": "519d6d8b8943e643be676deaa7f516ec49f6c0fc572ace99e653e3eaf91b8e1f",
+      "tamanho_bytes": 44
+    },
+    {
+      "arquivo": "documentacao/requisitos.md",
+      "sha256": "d67c5e7180cd7186dae683e6b935fc296e75cfcff17eb18ff743aba737e1f74d",
+      "tamanho_bytes": 237
+    },
+    {
+      "arquivo": "documentacao/qualidade-e-testes.md",
+      "sha256": "7888433bb12bc53159e5fd367bb5f6a54493c9eab60603fb480b0816e848faed",
+      "tamanho_bytes": 282
+    },
+    {
+      "arquivo": "specs/003-mudancas-controladas/spec.md",
+      "sha256": "4ea51aad18b95af2e240fdc08125db840e51c717c02349ec0a5b18280e90c176",
+      "tamanho_bytes": 360
+    },
+    {
+      "arquivo": "materiais/modelos/schema_saida.json",
+      "sha256": "9091a8164f97eaca182b3d06d0e5a59e923c880ebc0148056c453c651f5b46cb",
+      "tamanho_bytes": 18
+    }
+  ],
+  "manifesto_sha256": "71110cf97d4fa333e0e55887759d8070c43b75f82729141c3e54ff4c3356047a",
+  "receita": "recortes-D29-v1",
+  "regras_de_recorte": "sistema/pedido/nota: blocos literais; requisitos: contrato inicial; catalogo: seis primeiras colunas da baseline; mudanca: somente descricao; definicoes/schema integrais",
+  "revisao_cientifica": "pendente",
+  "status": "CONFERIDO_TECNICAMENTE_RASCUNHO",
+  "versao": "autorizacao-textual-v1"
+}

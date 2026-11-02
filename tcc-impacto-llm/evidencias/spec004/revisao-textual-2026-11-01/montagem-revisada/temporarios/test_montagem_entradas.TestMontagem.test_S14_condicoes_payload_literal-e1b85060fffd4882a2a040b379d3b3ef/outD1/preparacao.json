@@ -1,0 +1,169 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "manifesto-original.json",
+      "sha256": "1262b144fd61654c6f056e8296f6089a03fa19058beec6ba4c98a864324306a5"
+    },
+    {
+      "arquivo": "autorizacao-original.json",
+      "sha256": "11a991963f354f8f085ccf1f427c78a1ba970f8bf3ce49e1b10a8a50cfddedeb"
+    },
+    {
+      "arquivo": "documentos/sistema.txt",
+      "sha256": "14e2b77350929de322eb0ddf8c1ceda3b95f29dfa7da8d711edb1eecbae1e3ec"
+    },
+    {
+      "arquivo": "documentos/definicoes-comuns.md",
+      "sha256": "14e2b77350929de322eb0ddf8c1ceda3b95f29dfa7da8d711edb1eecbae1e3ec"
+    },
+    {
+      "arquivo": "documentos/requisitos-baseline.md",
+      "sha256": "14e2b77350929de322eb0ddf8c1ceda3b95f29dfa7da8d711edb1eecbae1e3ec"
+    },
+    {
+      "arquivo": "documentos/catalogo-baseline.md",
+      "sha256": "14e2b77350929de322eb0ddf8c1ceda3b95f29dfa7da8d711edb1eecbae1e3ec"
+    },
+    {
+      "arquivo": "documentos/mudanca.md",
+      "sha256": "14e2b77350929de322eb0ddf8c1ceda3b95f29dfa7da8d711edb1eecbae1e3ec"
+    },
+    {
+      "arquivo": "documentos/notas.md",
+      "sha256": "81663e82efbd43bbbe6b42f498b61ade09ab47419e003672d4ab4d14e0ae4e60"
+    },
+    {
+      "arquivo": "documentos/pedido.txt",
+      "sha256": "7b6a3706cd87f509e40761e3a534ab9dc83671aaad1249beec01f70cd35ab4ba"
+    },
+    {
+      "arquivo": "documentos/schema_saida.json",
+      "sha256": "14e2b77350929de322eb0ddf8c1ceda3b95f29dfa7da8d711edb1eecbae1e3ec"
+    },
+    {
+      "arquivo": "payload.txt",
+      "sha256": "2f30395cc1155bfffcf0872bafec6ec10e48bcb03bd2a7f9e72ac1c328cf74b2"
+    },
+    {
+      "arquivo": "entrega-textual.json",
+      "sha256": "de1c2951c339d34947a5cacf8fd5aeb178f6ce0d0cce3e82afe66304c62b4d6d"
+    }
+  ],
+  "autorizacao_sha256": "11a991963f354f8f085ccf1f427c78a1ba970f8bf3ce49e1b10a8a50cfddedeb",
+  "completo": true,
+  "condicao": "D1",
+  "configuracao_id": "controle-local-v1",
+  "contrato": "spec004-v3",
+  "documentos": [
+    {
+      "arquivo": "sistema.txt",
+      "papel": "sistema",
+      "revisao_conteudo": {
+        "data": "2026-10-27",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "controle sintetico"
+      },
+      "sha256": "14e2b77350929de322eb0ddf8c1ceda3b95f29dfa7da8d711edb1eecbae1e3ec",
+      "tamanho_bytes": 17,
+      "versao": "controle-1"
+    },
+    {
+      "arquivo": "definicoes-comuns.md",
+      "papel": "definicoes-comuns",
+      "revisao_conteudo": {
+        "data": "2026-10-27",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "controle sintetico"
+      },
+      "sha256": "14e2b77350929de322eb0ddf8c1ceda3b95f29dfa7da8d711edb1eecbae1e3ec",
+      "tamanho_bytes": 17,
+      "versao": "controle-1"
+    },
+    {
+      "arquivo": "requisitos-baseline.md",
+      "papel": "requisitos-baseline",
+      "revisao_conteudo": {
+        "data": "2026-10-27",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "controle sintetico"
+      },
+      "sha256": "14e2b77350929de322eb0ddf8c1ceda3b95f29dfa7da8d711edb1eecbae1e3ec",
+      "tamanho_bytes": 17,
+      "versao": "controle-1"
+    },
+    {
+      "arquivo": "catalogo-baseline.md",
+      "papel": "catalogo-baseline",
+      "revisao_conteudo": {
+        "data": "2026-10-27",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "controle sintetico"
+      },
+      "sha256": "14e2b77350929de322eb0ddf8c1ceda3b95f29dfa7da8d711edb1eecbae1e3ec",
+      "tamanho_bytes": 17,
+      "versao": "controle-1"
+    },
+    {
+      "arquivo": "mudanca.md",
+      "papel": "mudanca",
+      "revisao_conteudo": {
+        "data": "2026-10-27",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "controle sintetico"
+      },
+      "sha256": "14e2b77350929de322eb0ddf8c1ceda3b95f29dfa7da8d711edb1eecbae1e3ec",
+      "tamanho_bytes": 17,
+      "versao": "controle-1"
+    },
+    {
+      "arquivo": "notas.md",
+      "papel": "notas",
+      "revisao_conteudo": {
+        "data": "2026-10-27",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "controle sintetico"
+      },
+      "sha256": "81663e82efbd43bbbe6b42f498b61ade09ab47419e003672d4ab4d14e0ae4e60",
+      "tamanho_bytes": 28,
+      "versao": "controle-1"
+    },
+    {
+      "arquivo": "pedido.txt",
+      "papel": "pedido",
+      "revisao_conteudo": {
+        "data": "2026-10-27",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "controle sintetico"
+      },
+      "sha256": "7b6a3706cd87f509e40761e3a534ab9dc83671aaad1249beec01f70cd35ab4ba",
+      "tamanho_bytes": 6,
+      "versao": "controle-1"
+    },
+    {
+      "arquivo": "schema_saida.json",
+      "papel": "schema_saida",
+      "revisao_conteudo": {
+        "data": "2026-10-27",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "controle sintetico"
+      },
+      "sha256": "14e2b77350929de322eb0ddf8c1ceda3b95f29dfa7da8d711edb1eecbae1e3ec",
+      "tamanho_bytes": 17,
+      "versao": "controle-1"
+    }
+  ],
+  "fronteira": "conteudo_textual_sem_ferramentas",
+  "instante_utc": "2026-11-02T00:29:21.463640+00:00",
+  "isolamento_por_SO_alegado": false,
+  "liberado_para_pesquisa": false,
+  "manifesto_sha256": "1262b144fd61654c6f056e8296f6089a03fa19058beec6ba4c98a864324306a5",
+  "montador_sha256": "4277041f87a57073cf75279a885b3c4800fc882d975c4b8bf9ba1a26458a632a",
+  "mudanca": "MC-01",
+  "pacote_id": "D1",
+  "payload_sha256": "2f30395cc1155bfffcf0872bafec6ec10e48bcb03bd2a7f9e72ac1c328cf74b2",
+  "payload_tamanho": 524,
+  "preparacao_id": "bee210abf94b48baa700bcb53f4c5dcc",
+  "status": "PREPARADO_LOCAL_NAO_ENVIADO",
+  "status_notas": "RASCUNHO_NAO_REVISADO",
+  "versao_pacote": "1"
+}

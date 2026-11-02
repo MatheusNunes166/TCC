@@ -1,0 +1,133 @@
+{
+  "politica": "ids-proposta-004-v2",
+  "familias": [
+    {
+      "familia": "S-01",
+      "objetivo": "exata",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    },
+    {
+      "familia": "S-02",
+      "objetivo": "parcial",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    },
+    {
+      "familia": "S-03",
+      "objetivo": "todos",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    },
+    {
+      "familia": "S-04",
+      "objetivo": "vazias",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    },
+    {
+      "familia": "S-05",
+      "objetivo": "duplicatas e ordem",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    },
+    {
+      "familia": "S-06",
+      "objetivo": "desconhecidos",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    },
+    {
+      "familia": "S-07",
+      "objetivo": "sem normalizacao",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    },
+    {
+      "familia": "S-08",
+      "objetivo": "dimensoes trocadas",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    },
+    {
+      "familia": "S-09",
+      "objetivo": "JSON estrito",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    },
+    {
+      "familia": "S-10",
+      "objetivo": "independencia",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    },
+    {
+      "familia": "S-11",
+      "objetivo": "falhas tecnicas",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    },
+    {
+      "familia": "S-12",
+      "objetivo": "referencia",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    },
+    {
+      "familia": "S-13",
+      "objetivo": "integridade",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    },
+    {
+      "familia": "S-14",
+      "objetivo": "montagem e acesso",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "PENDENTE, ver isolamento/ambiente.json"
+    },
+    {
+      "familia": "S-15",
+      "objetivo": "Jaccard",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    },
+    {
+      "familia": "S-16",
+      "objetivo": "resumos e convencoes",
+      "origem": "sintetica",
+      "oraculo": "esperados.json e literais nos testes, definidos antes da implementacao",
+      "fonte_contrato": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md, secao 7",
+      "isolamento_identidade": "nao aplicavel"
+    }
+  ]
+}

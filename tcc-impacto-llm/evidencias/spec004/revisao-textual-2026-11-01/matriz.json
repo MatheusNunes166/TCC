@@ -1,0 +1,1396 @@
+{
+  "origem": "sintetica",
+  "contrato_montagem": "spec004-v3",
+  "politica": "ids-proposta-004-v2",
+  "familias": [
+    {
+      "familia": "S-01",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-02",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "cli-incorreta-nao-falha",
+          "conforme": true,
+          "esperado": 0,
+          "familia": "S-02",
+          "observado": 0,
+          "origem": "sintetica"
+        }
+      ],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-03",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-04",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-05",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-06",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-07",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-08",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-09",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-10",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-11",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "0",
+          "conforme": true,
+          "esperado": [
+            1,
+            "falha_tecnica",
+            null
+          ],
+          "familia": "S-11",
+          "observado": [
+            1,
+            "falha_tecnica",
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "1",
+          "conforme": true,
+          "esperado": [
+            1,
+            "falha_tecnica",
+            null
+          ],
+          "familia": "S-11",
+          "observado": [
+            1,
+            "falha_tecnica",
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "2",
+          "conforme": true,
+          "esperado": [
+            1,
+            "falha_tecnica",
+            null
+          ],
+          "familia": "S-11",
+          "observado": [
+            1,
+            "falha_tecnica",
+            null
+          ],
+          "origem": "sintetica"
+        }
+      ],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-12",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-13",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [
+        {
+          "execucao": "montagem-revisada",
+          "caso": "montagem-sem-falso-fechamento",
+          "conforme": true,
+          "esperado": [
+            false,
+            "BLOQUEADO"
+          ],
+          "familia": "S-13",
+          "observado": [
+            false,
+            "BLOQUEADO"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "cli-pasta-repetida",
+          "conforme": true,
+          "esperado": 2,
+          "familia": "S-13",
+          "observado": 2,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "arquivo-removido",
+          "conforme": true,
+          "esperado": [
+            2,
+            false,
+            null
+          ],
+          "familia": "S-13",
+          "observado": [
+            2,
+            false,
+            null
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "path-declarado-bloqueado-C:arquivo",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-13",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "path-declarado-bloqueado-\\arquivo",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-13",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "path-declarado-bloqueado-\\\\servidor\\pasta\\x",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-13",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "path-declarado-bloqueado-\\\\?\\C:\\x",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-13",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "path-declarado-bloqueado-../x",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-13",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "path-declarado-bloqueado-p/../x",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-13",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "path-declarado-bloqueado-p//x",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-13",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "path-declarado-bloqueado-p/./x",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-13",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "path-declarado-bloqueado-p/x:fluxo",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-13",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "path-declarado-bloqueado-NUL",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-13",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "path-declarado-bloqueado-x.",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-13",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "path-declarado-bloqueado-x ",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-13",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "path-declarado-posix",
+          "conforme": true,
+          "esperado": "C:\\Users\\User\\AppData\\Local\\Temp\\tmp25p5q3if\\documentos\\x.json",
+          "familia": "S-13",
+          "observado": "C:\\Users\\User\\AppData\\Local\\Temp\\tmp25p5q3if\\documentos\\x.json",
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "path-declarado-windows",
+          "conforme": true,
+          "esperado": "C:\\Users\\User\\AppData\\Local\\Temp\\tmp25p5q3if\\documentos\\x.json",
+          "familia": "S-13",
+          "observado": "C:\\Users\\User\\AppData\\Local\\Temp\\tmp25p5q3if\\documentos\\x.json",
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "escrita-parcial",
+          "conforme": true,
+          "esperado": [
+            2,
+            false
+          ],
+          "familia": "S-13",
+          "observado": [
+            2,
+            false
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "vinculo-quebrado",
+          "conforme": true,
+          "esperado": 2,
+          "familia": "S-13",
+          "observado": 2,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "registro-nao-objeto-0",
+          "conforme": true,
+          "esperado": [
+            2,
+            false
+          ],
+          "familia": "S-13",
+          "observado": [
+            2,
+            false
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "registro-nao-objeto-1",
+          "conforme": true,
+          "esperado": [
+            2,
+            false
+          ],
+          "familia": "S-13",
+          "observado": [
+            2,
+            false
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "registro-nao-objeto-2",
+          "conforme": true,
+          "esperado": [
+            2,
+            false
+          ],
+          "familia": "S-13",
+          "observado": [
+            2,
+            false
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "original-invalido-exato",
+          "conforme": true,
+          "esperado": "6e616f2065204a534f4e0d0a",
+          "familia": "S-13",
+          "observado": "6e616f2065204a534f4e0d0a",
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "reavaliacao-vinculada",
+          "conforme": true,
+          "esperado": "0a2a8b9614d24eeeb79207df556598c0",
+          "familia": "S-13",
+          "observado": "0a2a8b9614d24eeeb79207df556598c0",
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "rechecagem-final",
+          "conforme": true,
+          "esperado": [
+            2,
+            false,
+            "erro_integridade"
+          ],
+          "familia": "S-13",
+          "observado": [
+            2,
+            false,
+            "erro_integridade"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "cli-lista-hash",
+          "conforme": true,
+          "esperado": 2,
+          "familia": "S-13",
+          "observado": 2,
+          "origem": "sintetica"
+        }
+      ],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-14",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "parcial",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-01-D0",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "5fc7d32f08c7b290a85d950cce10a06248bece5314c5f23a97a1e228ae7e339d"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "5fc7d32f08c7b290a85d950cce10a06248bece5314c5f23a97a1e228ae7e339d"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-01-D1",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "a887990cf0ceda3d0b2c877601d24fae8f3ef1fa4b44ec53f0be57be2e2cbb89"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "a887990cf0ceda3d0b2c877601d24fae8f3ef1fa4b44ec53f0be57be2e2cbb89"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-01-E0",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "b54712dd6dd8045943f9363a300a8e66d9cf23235edeea1711c5128e55698f9e"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "b54712dd6dd8045943f9363a300a8e66d9cf23235edeea1711c5128e55698f9e"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-01-E1",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "04fe5a5f4e827eb0314c9717d898bab4f04f149ec7dfaf501055a97435861486"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "04fe5a5f4e827eb0314c9717d898bab4f04f149ec7dfaf501055a97435861486"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-02-D0",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "13a894fec71f81a1062719dfb1662d4da09339e947792ed852b5a099b611255c"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "13a894fec71f81a1062719dfb1662d4da09339e947792ed852b5a099b611255c"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-02-D1",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "f02e0d012407fd3b96539aae4ef3dfce675db2a37c8d4d27fbc35b0f1bdcd66c"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "f02e0d012407fd3b96539aae4ef3dfce675db2a37c8d4d27fbc35b0f1bdcd66c"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-02-E0",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "061099e0386105df43582169b3b58756281aa70803adaafd0f03e7b2ae4f59c2"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "061099e0386105df43582169b3b58756281aa70803adaafd0f03e7b2ae4f59c2"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-02-E1",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "497181e0f6757eb706dfef1318f951f40361faae2206ff24ac45201736ea564e"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "497181e0f6757eb706dfef1318f951f40361faae2206ff24ac45201736ea564e"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-03-D0",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "f70e844b50acb634ec370f764c5ee7f9537153af75ad2fbff3f77cee86e6a158"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "f70e844b50acb634ec370f764c5ee7f9537153af75ad2fbff3f77cee86e6a158"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-03-D1",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "b649b0a6d55ac630fe5e1905f987e8fb52c1a8769c82b3708f8a7db39ecc8fa7"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "b649b0a6d55ac630fe5e1905f987e8fb52c1a8769c82b3708f8a7db39ecc8fa7"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-03-E0",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "82a34bbbf33acc9df63b95041d6ea5d959e362b13e423474184f0b5fd7e012bc"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "82a34bbbf33acc9df63b95041d6ea5d959e362b13e423474184f0b5fd7e012bc"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-03-E1",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "3d1f6efed8d59b18995732055af8ca25fb42cae4e34cb1d0ea5341fd1e1bd92f"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "3d1f6efed8d59b18995732055af8ca25fb42cae4e34cb1d0ea5341fd1e1bd92f"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-04-v2-D0",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "af3937a8de3dfe51119c3bd033b78abd6041701ed9acbbc292d705e1ea59c656"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "af3937a8de3dfe51119c3bd033b78abd6041701ed9acbbc292d705e1ea59c656"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-04-v2-D1",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "c7a79bf6cc5a83fe96cbbbdd745312d28e911ebb5ca387902de3752b8997d58d"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "c7a79bf6cc5a83fe96cbbbdd745312d28e911ebb5ca387902de3752b8997d58d"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-04-v2-E0",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "1e4531711e065e7c46a8ebc00ee46a45bb3d776daba7a41c6d4ec6f93a086b38"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "1e4531711e065e7c46a8ebc00ee46a45bb3d776daba7a41c6d4ec6f93a086b38"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "entrega-MC-04-v2-E1",
+          "conforme": true,
+          "esperado": [
+            [],
+            false,
+            "141ed0c64bbb747e633e5a4c804a8bceb7a883e148c69e793de2ebb81cfe6ae6"
+          ],
+          "familia": "S-14",
+          "observado": [
+            [],
+            false,
+            "141ed0c64bbb747e633e5a4c804a8bceb7a883e148c69e793de2ebb81cfe6ae6"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "dezesseis-controles-comuns",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "seletor-ambiguo-bloqueado",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "sem-proibidos-MC-01",
+          "conforme": true,
+          "esperado": false,
+          "familia": "S-14",
+          "observado": false,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "sem-proibidos-MC-02",
+          "conforme": true,
+          "esperado": false,
+          "familia": "S-14",
+          "observado": false,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "sem-proibidos-MC-03",
+          "conforme": true,
+          "esperado": false,
+          "familia": "S-14",
+          "observado": false,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "sem-proibidos-MC-04-v2",
+          "conforme": true,
+          "esperado": false,
+          "familia": "S-14",
+          "observado": false,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "sem-nota-D0",
+          "conforme": true,
+          "esperado": false,
+          "familia": "S-14",
+          "observado": false,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "recortes-primeira",
+          "caso": "fontes-abertas",
+          "conforme": true,
+          "esperado": [
+            "documentacao/qualidade-e-testes.md",
+            "documentacao/requisitos.md",
+            "materiais/04_NOTAS_E_PROMPTS.md",
+            "materiais/07_DEFINICOES_COMUNS.md",
+            "materiais/modelos/schema_saida.json",
+            "specs/003-mudancas-controladas/spec.md"
+          ],
+          "familia": "S-14",
+          "observado": [
+            "documentacao/qualidade-e-testes.md",
+            "documentacao/requisitos.md",
+            "materiais/04_NOTAS_E_PROMPTS.md",
+            "materiais/07_DEFINICOES_COMUNS.md",
+            "materiais/modelos/schema_saida.json",
+            "specs/003-mudancas-controladas/spec.md"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "conteudo-nao-autorizado-mesmo-com-hash-atualizado",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "path-bloqueado-C:relativo",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "path-bloqueado-D:relativo",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "path-bloqueado-\\\\servidor\\pasta\\fonte",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "path-bloqueado-\\\\?\\C:\\fonte",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "path-bloqueado-C:\\pasta\\arquivo:fluxo",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "path-local-relativo",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "cli-local",
+          "conforme": true,
+          "esperado": 0,
+          "familia": "S-14",
+          "observado": 0,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "payload-D0",
+          "conforme": true,
+          "esperado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a64697265746f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "familia": "S-14",
+          "observado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a64697265746f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "status-D0",
+          "conforme": true,
+          "esperado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "ausentes"
+          ],
+          "familia": "S-14",
+          "observado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "ausentes"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "payload-D1",
+          "conforme": true,
+          "esperado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a6e6f7461733e3e3e0a6e6f74612073696e74657469636120656d2072617363756e686f0d0a0a3c3c3c66696d3a6e6f7461733e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a64697265746f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "familia": "S-14",
+          "observado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a6e6f7461733e3e3e0a6e6f74612073696e74657469636120656d2072617363756e686f0d0a0a3c3c3c66696d3a6e6f7461733e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a64697265746f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "status-D1",
+          "conforme": true,
+          "esperado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "RASCUNHO_NAO_REVISADO"
+          ],
+          "familia": "S-14",
+          "observado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "RASCUNHO_NAO_REVISADO"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "payload-E0",
+          "conforme": true,
+          "esperado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a657374727574757261646f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "familia": "S-14",
+          "observado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a657374727574757261646f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "status-E0",
+          "conforme": true,
+          "esperado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "ausentes"
+          ],
+          "familia": "S-14",
+          "observado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "ausentes"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "payload-E1",
+          "conforme": true,
+          "esperado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a6e6f7461733e3e3e0a6e6f74612073696e74657469636120656d2072617363756e686f0d0a0a3c3c3c66696d3a6e6f7461733e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a657374727574757261646f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "familia": "S-14",
+          "observado": "3c3c3c696e6963696f3a73697374656d613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a73697374656d613e3e3e0a3c3c3c696e6963696f3a646566696e69636f65732d636f6d756e733e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a646566696e69636f65732d636f6d756e733e3e3e0a3c3c3c696e6963696f3a72657175697369746f732d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a72657175697369746f732d626173656c696e653e3e3e0a3c3c3c696e6963696f3a636174616c6f676f2d626173656c696e653e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a636174616c6f676f2d626173656c696e653e3e3e0a3c3c3c696e6963696f3a6d7564616e63613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a6d7564616e63613e3e3e0a3c3c3c696e6963696f3a6e6f7461733e3e3e0a6e6f74612073696e74657469636120656d2072617363756e686f0d0a0a3c3c3c66696d3a6e6f7461733e3e3e0a3c3c3c696e6963696f3a70656469646f3e3e3e0a657374727574757261646f0a3c3c3c66696d3a70656469646f3e3e3e0a3c3c3c696e6963696f3a736368656d615f73616964613e3e3e0a636f6d756d2073696e74657469636f0d0a0a3c3c3c66696d3a736368656d615f73616964613e3e3e0a",
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "status-E1",
+          "conforme": true,
+          "esperado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "RASCUNHO_NAO_REVISADO"
+          ],
+          "familia": "S-14",
+          "observado": [
+            "PREPARADO_LOCAL_NAO_ENVIADO",
+            false,
+            "RASCUNHO_NAO_REVISADO"
+          ],
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "equivalencia-condicoes",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "nota-diferente-diagnosticada",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "junction-real-interno",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "junction-real-externo",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "bit-reparse-logico",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "pendente",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "gabarito-ficticio-reprovado",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "duplicado",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "hash",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "tamanho",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "versao",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "condicao",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "liberacao",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "rascunho",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "absoluto",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "traversal",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "subdiretorio",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "extra",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "ausente",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "nota-D0",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        },
+        {
+          "execucao": "montagem-revisada",
+          "caso": "nota-ausente-D1",
+          "conforme": true,
+          "esperado": true,
+          "familia": "S-14",
+          "observado": true,
+          "origem": "sintetica"
+        }
+      ],
+      "fundamento": "Recortes/fontes, autorizacao, caminhos, byte a byte e demonstracao persistente",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-15",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    },
+    {
+      "familia": "S-16",
+      "estado": "conforme_no_escopo_offline_D29",
+      "evidencia_anterior": {
+        "arquivo": "../revisao-parcial/matriz.json",
+        "sha256": "35223553154835c87108bd768cfac32cf97a3b02cb46d578be2c0d92b5bb633f",
+        "estado_na_epoca": "conforme_no_escopo_offline",
+        "nao_reexecutada": true
+      },
+      "registros_atuais": [
+        {
+          "execucao": "entrada-avaliador",
+          "caso": "cli-resumo-local",
+          "conforme": true,
+          "esperado": 0,
+          "familia": "S-16",
+          "observado": 0,
+          "origem": "sintetica"
+        }
+      ],
+      "fundamento": "Oraculos/controles anteriores preservados; AST de pontuacao inalterada; alteracoes de importacao/caminhos reconferidas",
+      "limite": "Sem resultado de LLM. Identidade Windows/symlink privilegiado substituidos, nao aprovados."
+    }
+  ],
+  "execucoes_atuais": {
+    "recortes-primeira": {
+      "retorno": 0,
+      "comando": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_fontes_autorizadas.py",
+        "-v"
+      ],
+      "fontes_atuais_confrontadas": [
+        "montagem_entradas.py",
+        "fontes_autorizadas.py",
+        "tests/test_montagem_entradas.py",
+        "tests/test_fontes_autorizadas.py"
+      ],
+      "comando_sha256": "49a018f661f2406295a4e211ea2d2faf2bbab0180a030a268e7dd7a4e38c6567"
+    },
+    "montagem-revisada": {
+      "retorno": 0,
+      "comando": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_montagem_entradas.py",
+        "-v"
+      ],
+      "fontes_atuais_confrontadas": [
+        "montagem_entradas.py",
+        "avaliacao_ids.py",
+        "fontes_autorizadas.py",
+        "tests/test_montagem_entradas.py",
+        "tests/test_avaliacao_ids.py",
+        "tests/test_fontes_autorizadas.py"
+      ],
+      "comando_sha256": "4040b4d01d9c547451d0c4498c600c4ed6ac6c9cd3358237d5b216b3c5532bc4"
+    },
+    "entrada-avaliador": {
+      "retorno": 0,
+      "comando": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_avaliacao_ids.py",
+        "-k",
+        "S13",
+        "-k",
+        "S11",
+        "-k",
+        "cli",
+        "-v"
+      ],
+      "fontes_atuais_confrontadas": [
+        "montagem_entradas.py",
+        "avaliacao_ids.py",
+        "fontes_autorizadas.py",
+        "tests/test_montagem_entradas.py",
+        "tests/test_avaliacao_ids.py",
+        "tests/test_fontes_autorizadas.py"
+      ],
+      "comando_sha256": "5c28b5b2c8e3347f07e4c127ddeecefcd4662a2aec3f4f563fb2df1c9aa6891f"
+    },
+    "prova-comando": {
+      "retorno": 0,
+      "comando": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "evidencias/spec004/revisao-textual-2026-11-01/provar.py"
+      ],
+      "fontes_atuais_confrontadas": [
+        "montagem_entradas.py",
+        "avaliacao_ids.py",
+        "fontes_autorizadas.py",
+        "tests/test_montagem_entradas.py",
+        "tests/test_avaliacao_ids.py",
+        "tests/test_fontes_autorizadas.py"
+      ],
+      "comando_sha256": "ebeee2adbd94c73084b7fed64495b34c768fd6b1cfc48a7ae8e29e63957b6527"
+    }
+  },
+  "prova_textual": "demonstracao-textual-001/confrontos.json",
+  "fechamento": "engenharia_offline_D29",
+  "envio_realizado": false,
+  "isolamento_SO": false,
+  "provas_substituidas_nao_aprovadas": [
+    "T014",
+    "T015",
+    "criacao_privilegiada_symlink"
+  ]
+}

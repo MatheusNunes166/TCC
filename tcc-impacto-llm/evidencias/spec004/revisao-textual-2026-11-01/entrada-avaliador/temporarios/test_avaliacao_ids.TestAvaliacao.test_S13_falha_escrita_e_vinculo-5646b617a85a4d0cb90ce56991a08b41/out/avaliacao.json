@@ -1,0 +1,17 @@
+{
+  "avaliacao_id": "0a251ffe13d8437c9b69f0274fe5dae3",
+  "avaliador_sha256": "e429fb429be9e628bc4992fc6f731a778159d0b121be2775fe366fa459dd1d2a",
+  "causa": "controle escrita",
+  "completo": false,
+  "instante_utc": "2026-11-02T00:29:29.083127+00:00",
+  "modelo_reportado": null,
+  "origem": "sintetica",
+  "politica": {
+    "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+    "status": "CANDIDATA_REVISAO_CIENTIFICA_PENDENTE",
+    "versao": "ids-proposta-004-v2"
+  },
+  "requisitos": null,
+  "status_avaliacao": "erro_integridade",
+  "testes": null
+}

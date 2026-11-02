@@ -1,0 +1,315 @@
+{
+  "data": "2026-11-01",
+  "spec": "004-preparacao-avaliacao-ids",
+  "vigentes_concluidas": 49,
+  "substituidas_nao_aprovadas": 2,
+  "tarefas": [
+    {
+      "id": "T001",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "2a9cacdc1195932faaddb4442c6a138b42bd03f4154025cfd491f92265c825fd"
+    },
+    {
+      "id": "T002",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "51cb0d48d7c295ee6bd3aa348ec32d2be83b2ea1e07d424e8415a7a04f5f4c33"
+    },
+    {
+      "id": "T003",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "7995b2f13a2165a79061bbf1398d878578242d99064a15ae787ec4aa799692f2"
+    },
+    {
+      "id": "T004",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "eb65115948b1f213549291d4f9c936cdf3a86d934eb64e9862738aca9b2a2416"
+    },
+    {
+      "id": "T005",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "2340a717da045c6417e07c8d4999b2efbfa3f06014918a8f596d99cb133d25ce"
+    },
+    {
+      "id": "T006",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "896594edce73477e10019f818b56bd71245152185aecde41c884b4fda7c6a597"
+    },
+    {
+      "id": "T007",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "c50f0e063ae80317228007abd34cb1b38f26c0d6bca5aa6a8ee8180b8ce1e992"
+    },
+    {
+      "id": "T008",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "46b50bfceda2737755c9a8cd63c93d4d7d3ef9ca40f5735b5dbfbf60df3d9b37"
+    },
+    {
+      "id": "T009",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "c0f5f9f6d3b12c124921b8615628fe4faa67a6b51177bb23a27c5b7119e0c9f1"
+    },
+    {
+      "id": "T010",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "e4242270d35de00649b1b95cf71d7b447111fd19b21e2b032a6ea6cfaf448d1d"
+    },
+    {
+      "id": "T011",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "e96018a58585413678fe71ccb5602db6a660a73fa3085f9b752fc9eccb0feb6c"
+    },
+    {
+      "id": "T012",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "110de809b64390a9b4f281166961510bfc7c2793e18e705f61f683fc300ff4d9"
+    },
+    {
+      "id": "T013",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "bd71b18cf12fbc83ee0f1bcad2fc08fba95d7fa61b69774042918980aab442e8"
+    },
+    {
+      "id": "T014",
+      "estado": "substituida_nao_executada_nao_aprovada",
+      "evidencia": "contrato_antigo_substituido_D29_nao_executado",
+      "texto_sha256": "d6266e2d4aed33461c39b9d75a387db5cdb71df0a2f5f3dbd680af30ba4c1545"
+    },
+    {
+      "id": "T015",
+      "estado": "substituida_nao_executada_nao_aprovada",
+      "evidencia": "contrato_antigo_substituido_D29_nao_executado",
+      "texto_sha256": "0572b5cabf449ac17203185cae3fcda0d1d075a8a0c5c1d33c2fb4ae46cc63be"
+    },
+    {
+      "id": "T016",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "2c3b40bc9ab1a3de83de9f1b30e2e1cf15ff853a75603c6a933f75eacd903010"
+    },
+    {
+      "id": "T017",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "6a391d6f62d7ce14c3428f7a2770179d4bc2b4b1d08b3b9bbba1776b5d46b602"
+    },
+    {
+      "id": "T018",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "28f38ad5f5b5efb1ea816ecebc315fcb02b429133bdda65719315b6030141464"
+    },
+    {
+      "id": "T019",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "5d291885da952088068fae4cf155105d1153a12d39352c2fa23d6bd33b5561d6"
+    },
+    {
+      "id": "T020",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "e950313ec7c2e4a80277680bf2e66c287aa02d5907b6240ce5ee7bf482b9e760"
+    },
+    {
+      "id": "T021",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "452cb4dcd86f90fec72a83b8b68772b7ab0a0aaab8a90af4ef2aef82d819931a"
+    },
+    {
+      "id": "T022",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "a93c7d0c41f892c39404920615156a38c145edf7fc3cb58d02f8bf9e990b6505"
+    },
+    {
+      "id": "T023",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "10776dab1940d523bae8c272ab6d236d54fad9fa847df12b6e7c8f6c0efa9849"
+    },
+    {
+      "id": "T024",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "df98569033b039cc9c46504425d295995ce1cc01591fe8c14bd42ad5de945012"
+    },
+    {
+      "id": "T025",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "fdbd8ac202bfd67e4d822dc2892d0c4e9dec3fb2316a562813f771f0d11a0df9"
+    },
+    {
+      "id": "T026",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "f90866c84f540ea979b2dd7bee0ce8a3ca9f14f1bdb89eea63f4ac1b1de62e13"
+    },
+    {
+      "id": "T027",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "10bbdb8ccb0fff39b9d88923bf0138d2d502e83160df84e53bd3abcdb5e590a6"
+    },
+    {
+      "id": "T028",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "81ab14489e1ad6f9feb020921625eb1f50a8f37a62358c37615b3e24ce569d4f"
+    },
+    {
+      "id": "T029",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "cd5848de0ea6c49ff63e68a459c684c130ff568cb9c57dd531fd22f243662928"
+    },
+    {
+      "id": "T030",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "c622a673f7c5090854f56e967d27698db863728cbfe9933b6535b4681189410b"
+    },
+    {
+      "id": "T031",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "1c72e0370251017b2e6342f63a575d8aee4d7371d095307e935b8064f468bc97"
+    },
+    {
+      "id": "T032",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "ced4f31e686c6f55fe81b22967fc8a783ef348307258a9178098c8b948029f05"
+    },
+    {
+      "id": "T033",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "d8641032e10101bcece682c14910ae3c711947009db895fd39e98e8e57d75dc9"
+    },
+    {
+      "id": "T034",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "9f54c318e2552c6309eadbe2249f025bc32a698f00595264bb0b4eda06abf7c4"
+    },
+    {
+      "id": "T035",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "a365f173ec3fd585bf58bd8a02bd93b33778ef0a5bbfa0045629eac8c62e8ee4"
+    },
+    {
+      "id": "T036",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "05037421b33c4041f92b10d912b33d5793a615531321b174b493a15744f836fc"
+    },
+    {
+      "id": "T037",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "10334e9d7ca4f3d5fa40957db912d3b0d8bf53b8e84bd9dc5276d434049bbb01"
+    },
+    {
+      "id": "T038",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "39106febe47a3bff85ab1bb985607dfd7863f3fd22d5bad4c00b63dd700bedb2"
+    },
+    {
+      "id": "T039",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "9ebb12f3101b5fadd7e591a85201ddfa09262538be81a4a15eab2c2c771a634b"
+    },
+    {
+      "id": "T040",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "2bb48f92d605be2aad79d75f37821790df9ac048e902780f4a0854191b1a5de8"
+    },
+    {
+      "id": "T041",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "../revisao-parcial/estado-tarefas.json; matriz.json",
+      "texto_sha256": "7cd7ee04325caf0d384dce6c862b30dc75f19e543a2ecd320954f0a7baf37639"
+    },
+    {
+      "id": "T042",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "relatorio.md; matriz.json; preservacao.json",
+      "texto_sha256": "b609d3d129fadb7f34d3affcfab2917e835bee5ccd6a74b1d0a53f42952f5c5e"
+    },
+    {
+      "id": "T043",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "relatorio.md; matriz.json; preservacao.json",
+      "texto_sha256": "fc4787fb0dfbf828c603a6a2b08cde701a71ea3f83f6db8a3108002ef2039d80"
+    },
+    {
+      "id": "T044",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "relatorio.md; matriz.json; preservacao.json",
+      "texto_sha256": "9fe4725f66e6a01800e3eaaf85ad2244ae6098a4647cd53c3f97b5aa90ca360a"
+    },
+    {
+      "id": "T045",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "relatorio.md; matriz.json; preservacao.json",
+      "texto_sha256": "31148a8f6bddae25bda05215056de7e308d1984b13ffe1dc036c19de086d7a4c"
+    },
+    {
+      "id": "T046",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "relatorio.md; matriz.json; preservacao.json",
+      "texto_sha256": "f6c5211a4fcc2262ef6520cfc8faca2c6945784e4a7b8e653a5c1706341af966"
+    },
+    {
+      "id": "T047",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "relatorio.md; matriz.json; preservacao.json",
+      "texto_sha256": "dc41615d02507c84858d875a5be2791ede16386d537ee4c775be233d1deb3f11"
+    },
+    {
+      "id": "T048",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "relatorio.md; matriz.json; preservacao.json",
+      "texto_sha256": "a483c54a165a877107df12409cc3d34c931d335af9877d7ffc8924bccf082ff6"
+    },
+    {
+      "id": "T049",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "relatorio.md; matriz.json; preservacao.json",
+      "texto_sha256": "11b4a559b1167e1fd575983f29389b991b3414fa3b9a8485d74dab711af1ed9b"
+    },
+    {
+      "id": "T050",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "relatorio.md; matriz.json; preservacao.json",
+      "texto_sha256": "6343040b6e35095ebe492269feccbc09caefa179c86c306b0370fe562cb27ce0"
+    },
+    {
+      "id": "T051",
+      "estado": "concluida_engenharia_offline",
+      "evidencia": "relatorio.md; matriz.json; preservacao.json",
+      "texto_sha256": "d9d3ccde5ef465d2d5f22d6766c34413debc8e33f665c4294b7d0c63927a58ad"
+    }
+  ],
+  "limite": "Fechamento de engenharia offline D29; entrega real, revisao cientifica e piloto pendentes."
+}

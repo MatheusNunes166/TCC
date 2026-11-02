@@ -1,0 +1,19 @@
+{
+  "observacao_id": "controle-D29",
+  "tentativa_id": "tentativa-D29",
+  "tentativa_anterior": null,
+  "origem": "sintetica",
+  "modelo_reportado": null,
+  "configuracao_id": "texto-autorizado-D29",
+  "mudanca": "MC-01",
+  "condicao": "D0",
+  "repeticao_sintetica": 1,
+  "estado_tecnico": "concluida",
+  "fragmento": false,
+  "preparacao_id": "c4077bd4732a44c4994bbd2487886a3d",
+  "preparacao_sha256": "7c9ba69ed52f62d8e4c8e5d6a42be6e30581c64c68bf8612d3d29d6f037e81ae",
+  "payload_sha256": "f438d33e8a4a86e59bb239b20da9e37de764561c748ae594613710acc46c73ae",
+  "resposta_arquivo": "resposta.bin",
+  "resposta_sha256": "eed31eeea1ce515e6e21597f6157fe8cafbce00ada22c8b5d9eb78079115818d",
+  "resposta_tamanho": 49
+}

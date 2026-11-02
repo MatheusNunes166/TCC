@@ -1,0 +1,26 @@
+{
+  "status": "SINTETICA_NAO_EXPERIMENTAL",
+  "versao": "sintetica-1",
+  "mudancas": [
+    {
+      "id": "MC-01",
+      "rfs": [
+        "RF-02"
+      ],
+      "tests": [
+        "T04",
+        "T12"
+      ]
+    },
+    {
+      "id": "MC-04-v2",
+      "rfs": [
+        "RF-02"
+      ],
+      "tests": [
+        "T04",
+        "T12"
+      ]
+    }
+  ]
+}

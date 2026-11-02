@@ -1,0 +1,23 @@
+{
+  "origem": "sintetica",
+  "politica": "ids-proposta-004-v2",
+  "revisao": "Assistente, 27/10/2026: valores literais conferidos pelo contrato antes do codigo; sem aprovacao cientifica",
+  "referencia": {"status":"SINTETICA_NAO_EXPERIMENTAL","versao":"sintetica-1","mudancas":[{"id":"MC-01","rfs":["RF-02"],"tests":["T04","T12"]},{"id":"MC-04-v2","rfs":["RF-02"],"tests":["T04","T12"]}]},
+  "casos": [
+    {"familia":"S-01","caso":"exata","resposta":{"requisitos":["RF-02"],"testes":["T04","T12"]},"rf":[1,0,0],"t":[2,0,0],"prf_rf":["1","1","1"],"prf_t":["1","1","1"]},
+    {"familia":"S-02","caso":"parcial","resposta":{"requisitos":["RF-02"],"testes":["T04"]},"rf":[1,0,0],"t":[1,0,1],"prf_rf":["1","1","1"],"prf_t":["1","1/2","2/3"]},
+    {"familia":"S-03","caso":"todos","resposta":{"requisitos":["RF-01","RF-02","RF-03","RF-04"],"testes":["T01","T02","T03","T04","T05","T06","T07","T08","T09","T10","T11","T12"]},"rf":[1,3,0],"t":[2,10,0],"prf_rf":["1/4","1","2/5"],"prf_t":["1/6","1","2/7"]},
+    {"familia":"S-04","caso":"vazias","resposta":{"requisitos":[],"testes":[]},"rf":[0,0,1],"t":[0,0,2],"prf_rf":["0","0","0"],"prf_t":["0","0","0"]},
+    {"familia":"S-05","caso":"duplicadas","resposta":{"requisitos":["RF-02","RF-02"],"testes":["T12","T04","T04"]},"rf":[1,0,0],"t":[2,0,0],"prf_rf":["1","1","1"],"prf_t":["1","1","1"]},
+    {"familia":"S-06","caso":"desconhecidos","resposta":{"requisitos":["RF-02","RF-99","RF-99"],"testes":["T04","T12","T99","T99"]},"rf":[1,1,0],"t":[2,1,0],"prf_rf":["1/2","1","2/3"],"prf_t":["2/3","1","4/5"]},
+    {"familia":"S-07","caso":"sem_normalizar","resposta":{"requisitos":["rf-02"],"testes":["T4"]},"rf":[0,1,1],"t":[0,1,2],"prf_rf":["0","0","0"],"prf_t":["0","0","0"]},
+    {"familia":"S-08","caso":"trocadas","resposta":{"requisitos":["T04"],"testes":["RF-02"]},"rf":[0,1,1],"t":[0,1,2],"prf_rf":["0","0","0"],"prf_t":["0","0","0"]},
+    {"familia":"S-10","caso":"independencia","resposta":{"requisitos":[],"testes":["T04","T12"]},"rf":[0,0,1],"t":[2,0,0],"prf_rf":["0","0","0"],"prf_t":["1","1","1"]}
+  ],
+  "jaccard_tres": {"requisitos":"1/3","testes":"1/6","observacoes":3,"pares":3},
+  "resumo_A": {"N":3,"A":3,"C":2,"V":1,"I":1,"T":1,"K":1,"validade":"1/2","completude":"2/3","validas_prf":"1","operacional_prf":"1/2"},
+  "resumo_B": {"N":1,"A":2,"C":1,"V":1,"I":0,"T":0,"K":1},
+  "PONT-01": "mistura_diagnosticada_grupos_separados_sem_combinado",
+  "PONT-02": "duplicidade_bloqueia_celula_sem_escolha",
+  "S-14-isolamento": "PENDENTE: runner sob identidade separada nao provisionado; nao simular prova"
+}

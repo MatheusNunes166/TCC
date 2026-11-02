@@ -1,0 +1,1 @@
+{"preparacao_id": "c4077bd4732a44c4994bbd2487886a3d", "status": "PREPARADO_LOCAL_NAO_ENVIADO"}

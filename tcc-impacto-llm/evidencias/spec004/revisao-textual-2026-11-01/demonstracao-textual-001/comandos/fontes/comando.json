@@ -1,0 +1,16 @@
+{
+  "comando": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "-B",
+    "fontes_autorizadas.py",
+    "--raiz",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+    "--saida",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\editorial"
+  ],
+  "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+  "retorno": 0,
+  "esperado": 0,
+  "origem": "verificacao_local",
+  "LLM": false
+}
