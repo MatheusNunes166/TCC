@@ -1,0 +1,157 @@
+{
+  "condicao": "D0",
+  "fase": "exploratorio",
+  "origem": "llm_exploratoria",
+  "incluido_piloto": false,
+  "incluido_coleta_principal": false,
+  "sessao_id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+  "turn_id": "01a1aeb8-3a60-7561-9db9-accf9900a9f5",
+  "cwd_registrado": "D:\\Tcc-ensaio",
+  "modelo_registrado": "gpt-6-astra",
+  "effort_registrado": "medium",
+  "origem_sessao_arquivo": "C:\\Users\\User\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T23-32-42-01a1aeb3-83c5-7f20-b121-c20efd4d2a6e.jsonl",
+  "origem_sessao_sha256": "d9924e50ad2f9f76af46ab77103a25fa207c9f611e21ba778f5a467ff63d8ef2",
+  "origem_sessao_snapshot": "origens/01a1aeb3-83c5-7f20-b121-c20efd4d2a6e.jsonl",
+  "mensagem_linha": 38,
+  "resposta_linha": 42,
+  "contexto_linha": 37,
+  "task_complete_linha": 45,
+  "timestamp_mensagem_utc": "2026-11-06T02:37:51.727Z",
+  "timestamp_resposta_utc": "2026-11-06T02:37:55.131Z",
+  "timestamp_mensagem_local_UTC_menos_03": "2026-11-05T23:37:51.727000-03:00",
+  "timestamp_resposta_local_UTC_menos_03": "2026-11-05T23:37:55.131000-03:00",
+  "inicio_tarefa_utc": "2026-11-06T02:37:51+00:00",
+  "fim_tarefa_utc": "2026-11-06T02:37:55+00:00",
+  "duration_ms_registrada_tarefa": 3524,
+  "time_to_first_token_ms_registrada": 3005,
+  "usage_registrado_turno": [
+    {
+      "linha": 43,
+      "timestamp": "2026-11-06T02:37:55.144Z",
+      "payload": {
+        "thread_id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+        "turn_id": "01a1aeb8-3a60-7561-9db9-accf9900a9f5",
+        "session_id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+        "root_turn_id": "01a1aeb8-3a60-7561-9db9-accf9900a9f5",
+        "response_id": "resp_05bbc16cccfb78e1016aed3d80122087d2a7bb787b543c8a0e",
+        "usage": {
+          "input_tokens": 15270,
+          "cached_input_tokens": 13440,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 66,
+          "reasoning_output_tokens": 28,
+          "total_tokens": 15336
+        },
+        "turn_token_usage": {
+          "input_tokens": 15270,
+          "cached_input_tokens": 13440,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 66,
+          "reasoning_output_tokens": 28,
+          "total_tokens": 15336
+        },
+        "thread_token_usage": {
+          "input_tokens": 67126,
+          "cached_input_tokens": 51328,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 246,
+          "reasoning_output_tokens": 28,
+          "total_tokens": 67372
+        }
+      }
+    }
+  ],
+  "custo": null,
+  "temperatura": null,
+  "top_p": null,
+  "seed": null,
+  "representacao": "Texto decodificado dos campos text do registro, salvo UTF-8 sem acrescentar/remover caracteres; linhas JSONL originais e snapshot integral preservados. Nao e captura de bytes HTTP.",
+  "mensagem_sha256": "da721339d0c00b0576c298915eeb15e3dbb3152baf7bb96d3b9b67f1f53dff99",
+  "payload_enviado_sha256": "a7705049b162d13a1fcb5b4af5972d445c1cb830a82435a11f6a04369e00b1e5",
+  "resposta_sha256": "de222366daab666836523c33cf49232a62792c911513556b342d4f61cf11c686",
+  "resposta_bytes": 73,
+  "payload_preparado_sha256": "e6a85c90e4840407c512f4245e4db01f194ab4eff9dfe778bafc003bdd29a743",
+  "payload_preparado_bytes": 6515,
+  "payload_enviado_bytes": 6490,
+  "igualdade_literal_preparado_enviado": false,
+  "identificacao_por_conteudo": true,
+  "regra_identificacao": "correspondencia unica das quatro entradas apos equivalencia CRLF/LF e desconsideracao de LF terminais somente para identificar; originais nunca normalizados",
+  "blocos_textuais_conferem_apos_EOL": true,
+  "CRLF_preparado": 26,
+  "CRLF_enviado": 0,
+  "LF_terminais_preparado": 1,
+  "LF_terminais_enviado": 2,
+  "prefixo_ide_literal": "# Context from my IDE setup:\n\n## Open tabs:\n- config.toml: .codex/config.toml\n\n## My request:\n",
+  "prefixo_ide_bytes": 94,
+  "ferramentas_invocadas_sessao": [
+    {
+      "linha": 16,
+      "timestamp": "2026-11-06T02:32:48.426Z",
+      "type": "response_item",
+      "payload": {
+        "type": "custom_tool_call",
+        "id": "ctc_05bbc16cccfb78e1016aed3c4ffa3887d2ad0707208302cbb3",
+        "status": "completed",
+        "call_id": "call_38a9196fb9a7450b82555c6f243f91c4",
+        "name": "exec",
+        "input": "text(ALL_TOOLS.filter(x=>/exec_command|read_file/.test(x.name)));\n",
+        "internal_chat_message_metadata_passthrough": {
+          "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+          "create_time": 1793932367.9855056
+        }
+      }
+    },
+    {
+      "linha": 20,
+      "timestamp": "2026-11-06T02:32:51.166Z",
+      "type": "response_item",
+      "payload": {
+        "type": "custom_tool_call",
+        "id": "ctc_05bbc16cccfb78e1016aed3c52b42487d2bdaaacd70cea1ce2",
+        "status": "completed",
+        "call_id": "call_5b9c069a1b05447abd21833a025618c9",
+        "name": "exec",
+        "input": "text(ALL_TOOLS.filter(x=>/file|directory|powershell|terminal/i.test(x.description+\" \"+x.name)));\n",
+        "internal_chat_message_metadata_passthrough": {
+          "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+          "create_time": 1793932370.711612
+        }
+      }
+    },
+    {
+      "linha": 24,
+      "timestamp": "2026-11-06T02:32:53.761Z",
+      "type": "response_item",
+      "payload": {
+        "type": "custom_tool_call",
+        "id": "ctc_05bbc16cccfb78e1016aed3c551da087d28005c821dc89190f",
+        "status": "completed",
+        "call_id": "call_1866109e7f704531a2586d7015696a3c",
+        "name": "exec",
+        "input": "const results = await Promise.allSettled([tools.list_mcp_resources({}),tools.list_mcp_resource_templates({})]); results.forEach(text);\n",
+        "internal_chat_message_metadata_passthrough": {
+          "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+          "create_time": 1793932373.1210916
+        }
+      }
+    }
+  ],
+  "ferramentas_invocadas_turno_payload": 0,
+  "ausencia_de_ferramentas_disponiveis_comprovada": false,
+  "acesso_a_repositorio_alheio_comprovado": false,
+  "finais_anteriores": [
+    {
+      "entrada_linha": 12,
+      "resposta_linha": 31,
+      "timestamp_entrada": "2026-11-06T02:32:44.945Z",
+      "timestamp_resposta": "2026-11-06T02:32:59.143Z",
+      "entrada_tipo": "referencia a anexo, sem texto integral no corpo do pedido",
+      "resposta_arquivo": "D0/preliminar/resposta-final.txt",
+      "historia_anterior_ao_payload_completo": true
+    }
+  ],
+  "numero_task_complete_sessao": 2,
+  "conformidade_texto_apenas_sem_contexto_adicional": false,
+  "resumo_controlado_D0_bloqueado": true,
+  "motivo_bloqueio_D0": "dois retornos concluidos e historia anterior; nao escolher silenciosamente uma resposta como unica execucao"
+}

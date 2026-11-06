@@ -1,0 +1,24 @@
+{
+  "data_registro": "2026-11-05",
+  "fase": "exploratorio",
+  "configuracao_coleta_id": "exploratorio-mc04-codex-astra-medio-relato-001",
+  "execucoes_declaradas": 4,
+  "respostas_originais_recebidas": 0,
+  "avaliacoes_executadas": 0,
+  "validade": null,
+  "comparacao_entre_condicoes": null,
+  "requisitos": null,
+  "testes": null,
+  "consistencia": "nao calculada; uma execucao por condicao",
+  "estado": "AGUARDANDO_ORIGINAIS",
+  "pendencias": [
+    "originais de D0/D1/E0/E1, com mapeamento inequ?voco das condi??es",
+    "conteudo efetivamente enviado ou declaracao delimitada sobre correspondencia com o preparado",
+    "datas/horarios somente se disponiveis; manter desconhecidos se indisponiveis",
+    "recursos/ferramentas e demais metadados nao informados devem permanecer desconhecidos"
+  ],
+  "limite_procedimento": "AVALIAR.md exige datas de inicio/fim e copia do conteudo enviado. Datas desconhecidas nao serao inventadas para passar nas assercoes; eventual adequacao documental devera explicitar a falta de metadados sem mudar a pontuacao.",
+  "CLI_sintetica_utilizada": false,
+  "resultado_esperado_usado_para_reconstruir_resposta": false,
+  "chamadas_novas": 0
+}

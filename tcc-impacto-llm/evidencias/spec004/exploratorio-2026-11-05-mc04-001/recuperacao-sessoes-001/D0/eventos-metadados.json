@@ -1,0 +1,798 @@
+[
+  {
+    "linha": 2,
+    "timestamp": "2026-11-06T02:32:43.900Z",
+    "type": "event_msg",
+    "payload": {
+      "type": "task_started",
+      "turn_attribution": {
+        "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+        "turn_trigger": "composer",
+        "parent_turn_id": null,
+        "initiating_agent_path": null,
+        "root_turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b"
+      },
+      "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "root_turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "started_at": 1793932363,
+      "model_context_window": 258400,
+      "collaboration_mode_kind": "default"
+    }
+  },
+  {
+    "linha": 8,
+    "timestamp": "2026-11-06T02:32:44.530Z",
+    "type": "turn_context",
+    "payload": {
+      "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "root_turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "disabled_plugin_ids": [],
+      "cwd": "D:\\Tcc-ensaio",
+      "workspace_roots": [
+        "D:\\Tcc-ensaio"
+      ],
+      "current_date": "2026-11-05",
+      "timezone": "America/Sao_Paulo",
+      "approval_policy": "on-request",
+      "approvals_reviewer": "user",
+      "sandbox_policy": {
+        "type": "workspace-write",
+        "network_access": false,
+        "exclude_tmpdir_env_var": false,
+        "exclude_slash_tmp": false
+      },
+      "permission_profile": {
+        "type": "managed",
+        "file_system": {
+          "type": "restricted",
+          "entries": [
+            {
+              "path": {
+                "type": "special",
+                "value": {
+                  "kind": "root"
+                }
+              },
+              "access": "read"
+            },
+            {
+              "path": {
+                "type": "path",
+                "path": "D:\\Tcc-ensaio"
+              },
+              "access": "write"
+            },
+            {
+              "path": {
+                "type": "special",
+                "value": {
+                  "kind": "slash_tmp"
+                }
+              },
+              "access": "write"
+            },
+            {
+              "path": {
+                "type": "special",
+                "value": {
+                  "kind": "tmpdir"
+                }
+              },
+              "access": "write"
+            },
+            {
+              "path": {
+                "type": "path",
+                "path": "D:\\Tcc-ensaio\\.git"
+              },
+              "access": "read",
+              "missing_path_behavior": "skip"
+            },
+            {
+              "path": {
+                "type": "path",
+                "path": "D:\\Tcc-ensaio\\.agents"
+              },
+              "access": "read",
+              "missing_path_behavior": "skip"
+            },
+            {
+              "path": {
+                "type": "path",
+                "path": "D:\\Tcc-ensaio\\.codex"
+              },
+              "access": "read",
+              "missing_path_behavior": "skip"
+            },
+            {
+              "path": {
+                "type": "path",
+                "path": "D:\\Tcc-ensaio\\.aws"
+              },
+              "access": "read",
+              "missing_path_behavior": "skip"
+            }
+          ]
+        },
+        "network": "restricted"
+      },
+      "active_permission_profile": {
+        "id": ":workspace"
+      },
+      "file_system_sandbox_policy": {
+        "kind": "restricted",
+        "entries": [
+          {
+            "path": {
+              "type": "special",
+              "value": {
+                "kind": "root"
+              }
+            },
+            "access": "read"
+          },
+          {
+            "path": {
+              "type": "path",
+              "path": "D:\\Tcc-ensaio"
+            },
+            "access": "write"
+          },
+          {
+            "path": {
+              "type": "special",
+              "value": {
+                "kind": "slash_tmp"
+              }
+            },
+            "access": "write"
+          },
+          {
+            "path": {
+              "type": "special",
+              "value": {
+                "kind": "tmpdir"
+              }
+            },
+            "access": "write"
+          },
+          {
+            "path": {
+              "type": "path",
+              "path": "D:\\Tcc-ensaio\\.git"
+            },
+            "access": "read",
+            "missing_path_behavior": "skip"
+          },
+          {
+            "path": {
+              "type": "path",
+              "path": "D:\\Tcc-ensaio\\.agents"
+            },
+            "access": "read",
+            "missing_path_behavior": "skip"
+          },
+          {
+            "path": {
+              "type": "path",
+              "path": "D:\\Tcc-ensaio\\.codex"
+            },
+            "access": "read",
+            "missing_path_behavior": "skip"
+          },
+          {
+            "path": {
+              "type": "path",
+              "path": "D:\\Tcc-ensaio\\.aws"
+            },
+            "access": "read",
+            "missing_path_behavior": "skip"
+          }
+        ]
+      },
+      "model": "gpt-6-astra",
+      "comp_hash": "3000",
+      "personality": "friendly",
+      "collaboration_mode": {
+        "mode": "default",
+        "settings": {
+          "model": "gpt-6-astra",
+          "reasoning_effort": "medium",
+          "developer_instructions": "# Collaboration Mode: Default\r\n\r\nYou are now in Default mode. Any previous instructions for other modes (e.g. Plan mode) are no longer active.\r\n\r\nYour active mode changes only when new developer instructions with a different `<collaboration_mode>...</collaboration_mode>` change it; user requests or tool descriptions do not change mode by themselves. Known mode names are Default and Plan.\r\n\r\n## request_user_input availability\r\n\r\nUse the `request_user_input` tool only when it is listed in the available tools for this turn.\r\n\r\nIn Default mode, strongly prefer making reasonable assumptions and executing the user's request rather than stopping to ask questions.\r\n\r\nUse the `request_user_input` tool only for optional questions where the answer would materially improve the quality of the work.\r\n\r\nIf `request_user_input` returns no answers, continue with best judgment instead of asking again or treating the turn as blocked.\r\n\r\nNever use the `request_user_input` tool for permission requests or permission-related escalations.\r\n\r\nIf explicit user input is required for another reason before progress can safely continue, do not use the `request_user_input` tool. Ask the user directly with one concise plain-text question instead. Never write a multiple choice question as a textual assistant message.\r\n"
+        }
+      },
+      "multi_agent_version": "v2",
+      "realtime_active": false,
+      "effort": "medium",
+      "summary": "none"
+    }
+  },
+  {
+    "linha": 17,
+    "timestamp": "2026-11-06T02:32:48.449Z",
+    "type": "token_usage_record",
+    "payload": {
+      "thread_id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+      "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "session_id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+      "root_turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "response_id": "resp_05bbc16cccfb78e1016aed3c4db75087d2b184006d7ea58edf",
+      "usage": {
+        "input_tokens": 12306,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 52,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 12358
+      },
+      "turn_token_usage": {
+        "input_tokens": 12306,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 52,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 12358
+      },
+      "thread_token_usage": {
+        "input_tokens": 12306,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 52,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 12358
+      }
+    }
+  },
+  {
+    "linha": 21,
+    "timestamp": "2026-11-06T02:32:51.204Z",
+    "type": "token_usage_record",
+    "payload": {
+      "thread_id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+      "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "session_id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+      "root_turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "response_id": "resp_05bbc16cccfb78e1016aed3c50c75487d285492fe622b839d1",
+      "usage": {
+        "input_tokens": 12382,
+        "cached_input_tokens": 12160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 36,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 12418
+      },
+      "turn_token_usage": {
+        "input_tokens": 24688,
+        "cached_input_tokens": 12160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 88,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 24776
+      },
+      "thread_token_usage": {
+        "input_tokens": 24688,
+        "cached_input_tokens": 12160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 88,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 24776
+      }
+    }
+  },
+  {
+    "linha": 25,
+    "timestamp": "2026-11-06T02:32:53.826Z",
+    "type": "token_usage_record",
+    "payload": {
+      "thread_id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+      "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "session_id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+      "root_turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "response_id": "resp_05bbc16cccfb78e1016aed3c5385f487d2b898f8adde4a2131",
+      "usage": {
+        "input_tokens": 13540,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 40,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 13580
+      },
+      "turn_token_usage": {
+        "input_tokens": 38228,
+        "cached_input_tokens": 24448,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 128,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 38356
+      },
+      "thread_token_usage": {
+        "input_tokens": 38228,
+        "cached_input_tokens": 24448,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 128,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 38356
+      }
+    }
+  },
+  {
+    "linha": 26,
+    "timestamp": "2026-11-06T02:32:53.827Z",
+    "type": "event_msg",
+    "payload": {
+      "type": "mcp_tool_call_end",
+      "call_id": "exec-7d9a3e18-23ec-48c3-ba20-04bda51a75ac",
+      "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "invocation": {
+        "server": "codex",
+        "tool": "list_mcp_resources",
+        "arguments": {}
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 1156600
+      },
+      "result": {
+        "Ok": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"resources\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    }
+  },
+  {
+    "linha": 27,
+    "timestamp": "2026-11-06T02:32:53.828Z",
+    "type": "event_msg",
+    "payload": {
+      "type": "mcp_tool_call_end",
+      "call_id": "exec-0b058771-9953-409a-b9c5-a419ae9502bf",
+      "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "invocation": {
+        "server": "codex",
+        "tool": "list_mcp_resource_templates",
+        "arguments": {}
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 1124100
+      },
+      "result": {
+        "Ok": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"resourceTemplates\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    }
+  },
+  {
+    "linha": 32,
+    "timestamp": "2026-11-06T02:32:59.144Z",
+    "type": "token_usage_record",
+    "payload": {
+      "thread_id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+      "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "session_id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+      "root_turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "response_id": "resp_05bbc16cccfb78e1016aed3c561fc887d2bf6df68b16baf5b1",
+      "usage": {
+        "input_tokens": 13628,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 52,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 13680
+      },
+      "turn_token_usage": {
+        "input_tokens": 51856,
+        "cached_input_tokens": 37888,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 180,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 52036
+      },
+      "thread_token_usage": {
+        "input_tokens": 51856,
+        "cached_input_tokens": 37888,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 180,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 52036
+      }
+    }
+  },
+  {
+    "linha": 34,
+    "timestamp": "2026-11-06T02:32:59.164Z",
+    "type": "event_msg",
+    "payload": {
+      "type": "task_complete",
+      "root_turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+      "last_agent_message": "Recebi apenas o caminho do arquivo `Pasted text.txt`; seu conte\u00fado n\u00e3o apareceu na conversa, e n\u00e3o tenho uma ferramenta dispon\u00edvel para l\u00ea-lo neste ambiente.\n\nCole aqui o texto com a tarefa e o material fornecido para eu responder.",
+      "started_at": 1793932363,
+      "completed_at": 1793932379,
+      "duration_ms": 15268,
+      "time_to_first_token_ms": 4073
+    }
+  },
+  {
+    "linha": 35,
+    "timestamp": "2026-11-06T02:37:51.609Z",
+    "type": "event_msg",
+    "payload": {
+      "type": "thread_settings_applied",
+      "thread_id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+      "thread_settings": {
+        "model": "gpt-6-astra",
+        "model_provider_id": "openai",
+        "service_tier": "default",
+        "approval_policy": "on-request",
+        "approvals_reviewer": "user",
+        "permission_profile": {
+          "type": "managed",
+          "file_system": {
+            "type": "restricted",
+            "entries": [
+              {
+                "path": {
+                  "type": "special",
+                  "value": {
+                    "kind": "root"
+                  }
+                },
+                "access": "read"
+              },
+              {
+                "path": {
+                  "type": "path",
+                  "path": "D:\\Tcc-ensaio"
+                },
+                "access": "write"
+              },
+              {
+                "path": {
+                  "type": "special",
+                  "value": {
+                    "kind": "slash_tmp"
+                  }
+                },
+                "access": "write"
+              },
+              {
+                "path": {
+                  "type": "special",
+                  "value": {
+                    "kind": "tmpdir"
+                  }
+                },
+                "access": "write"
+              },
+              {
+                "path": {
+                  "type": "path",
+                  "path": "D:\\Tcc-ensaio\\.git"
+                },
+                "access": "read",
+                "missing_path_behavior": "skip"
+              },
+              {
+                "path": {
+                  "type": "path",
+                  "path": "D:\\Tcc-ensaio\\.agents"
+                },
+                "access": "read",
+                "missing_path_behavior": "skip"
+              },
+              {
+                "path": {
+                  "type": "path",
+                  "path": "D:\\Tcc-ensaio\\.codex"
+                },
+                "access": "read",
+                "missing_path_behavior": "skip"
+              },
+              {
+                "path": {
+                  "type": "path",
+                  "path": "D:\\Tcc-ensaio\\.aws"
+                },
+                "access": "read",
+                "missing_path_behavior": "skip"
+              }
+            ]
+          },
+          "network": "restricted"
+        },
+        "active_permission_profile": {
+          "id": ":workspace"
+        },
+        "cwd": "D:\\Tcc-ensaio",
+        "runtime_workspace_roots": [
+          "d:\\Tcc-ensaio"
+        ],
+        "reasoning_effort": "medium",
+        "reasoning_summary": "none",
+        "personality": "friendly",
+        "collaboration_mode": {
+          "mode": "default",
+          "settings": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "medium",
+            "developer_instructions": "# Collaboration Mode: Default\r\n\r\nYou are now in Default mode. Any previous instructions for other modes (e.g. Plan mode) are no longer active.\r\n\r\nYour active mode changes only when new developer instructions with a different `<collaboration_mode>...</collaboration_mode>` change it; user requests or tool descriptions do not change mode by themselves. Known mode names are Default and Plan.\r\n\r\n## request_user_input availability\r\n\r\nUse the `request_user_input` tool only when it is listed in the available tools for this turn.\r\n\r\nIn Default mode, strongly prefer making reasonable assumptions and executing the user's request rather than stopping to ask questions.\r\n\r\nUse the `request_user_input` tool only for optional questions where the answer would materially improve the quality of the work.\r\n\r\nIf `request_user_input` returns no answers, continue with best judgment instead of asking again or treating the turn as blocked.\r\n\r\nNever use the `request_user_input` tool for permission requests or permission-related escalations.\r\n\r\nIf explicit user input is required for another reason before progress can safely continue, do not use the `request_user_input` tool. Ask the user directly with one concise plain-text question instead. Never write a multiple choice question as a textual assistant message.\r\n"
+          }
+        },
+        "disabled_plugin_ids": []
+      }
+    }
+  },
+  {
+    "linha": 36,
+    "timestamp": "2026-11-06T02:37:51.650Z",
+    "type": "event_msg",
+    "payload": {
+      "type": "task_started",
+      "turn_attribution": {
+        "turn_id": "01a1aeb8-3a60-7561-9db9-accf9900a9f5",
+        "turn_trigger": "composer",
+        "parent_turn_id": null,
+        "initiating_agent_path": null,
+        "root_turn_id": "01a1aeb8-3a60-7561-9db9-accf9900a9f5"
+      },
+      "turn_id": "01a1aeb8-3a60-7561-9db9-accf9900a9f5",
+      "root_turn_id": "01a1aeb8-3a60-7561-9db9-accf9900a9f5",
+      "started_at": 1793932671,
+      "model_context_window": 258400,
+      "collaboration_mode_kind": "default"
+    }
+  },
+  {
+    "linha": 37,
+    "timestamp": "2026-11-06T02:37:51.696Z",
+    "type": "turn_context",
+    "payload": {
+      "turn_id": "01a1aeb8-3a60-7561-9db9-accf9900a9f5",
+      "root_turn_id": "01a1aeb8-3a60-7561-9db9-accf9900a9f5",
+      "disabled_plugin_ids": [],
+      "cwd": "D:\\Tcc-ensaio",
+      "workspace_roots": [
+        "D:\\Tcc-ensaio"
+      ],
+      "current_date": "2026-11-05",
+      "timezone": "America/Sao_Paulo",
+      "approval_policy": "on-request",
+      "approvals_reviewer": "user",
+      "sandbox_policy": {
+        "type": "workspace-write",
+        "network_access": false,
+        "exclude_tmpdir_env_var": false,
+        "exclude_slash_tmp": false
+      },
+      "permission_profile": {
+        "type": "managed",
+        "file_system": {
+          "type": "restricted",
+          "entries": [
+            {
+              "path": {
+                "type": "special",
+                "value": {
+                  "kind": "root"
+                }
+              },
+              "access": "read"
+            },
+            {
+              "path": {
+                "type": "path",
+                "path": "D:\\Tcc-ensaio"
+              },
+              "access": "write"
+            },
+            {
+              "path": {
+                "type": "special",
+                "value": {
+                  "kind": "slash_tmp"
+                }
+              },
+              "access": "write"
+            },
+            {
+              "path": {
+                "type": "special",
+                "value": {
+                  "kind": "tmpdir"
+                }
+              },
+              "access": "write"
+            },
+            {
+              "path": {
+                "type": "path",
+                "path": "D:\\Tcc-ensaio\\.git"
+              },
+              "access": "read",
+              "missing_path_behavior": "skip"
+            },
+            {
+              "path": {
+                "type": "path",
+                "path": "D:\\Tcc-ensaio\\.agents"
+              },
+              "access": "read",
+              "missing_path_behavior": "skip"
+            },
+            {
+              "path": {
+                "type": "path",
+                "path": "D:\\Tcc-ensaio\\.codex"
+              },
+              "access": "read",
+              "missing_path_behavior": "skip"
+            },
+            {
+              "path": {
+                "type": "path",
+                "path": "D:\\Tcc-ensaio\\.aws"
+              },
+              "access": "read",
+              "missing_path_behavior": "skip"
+            }
+          ]
+        },
+        "network": "restricted"
+      },
+      "active_permission_profile": {
+        "id": ":workspace"
+      },
+      "file_system_sandbox_policy": {
+        "kind": "restricted",
+        "entries": [
+          {
+            "path": {
+              "type": "special",
+              "value": {
+                "kind": "root"
+              }
+            },
+            "access": "read"
+          },
+          {
+            "path": {
+              "type": "path",
+              "path": "D:\\Tcc-ensaio"
+            },
+            "access": "write"
+          },
+          {
+            "path": {
+              "type": "special",
+              "value": {
+                "kind": "slash_tmp"
+              }
+            },
+            "access": "write"
+          },
+          {
+            "path": {
+              "type": "special",
+              "value": {
+                "kind": "tmpdir"
+              }
+            },
+            "access": "write"
+          },
+          {
+            "path": {
+              "type": "path",
+              "path": "D:\\Tcc-ensaio\\.git"
+            },
+            "access": "read",
+            "missing_path_behavior": "skip"
+          },
+          {
+            "path": {
+              "type": "path",
+              "path": "D:\\Tcc-ensaio\\.agents"
+            },
+            "access": "read",
+            "missing_path_behavior": "skip"
+          },
+          {
+            "path": {
+              "type": "path",
+              "path": "D:\\Tcc-ensaio\\.codex"
+            },
+            "access": "read",
+            "missing_path_behavior": "skip"
+          },
+          {
+            "path": {
+              "type": "path",
+              "path": "D:\\Tcc-ensaio\\.aws"
+            },
+            "access": "read",
+            "missing_path_behavior": "skip"
+          }
+        ]
+      },
+      "model": "gpt-6-astra",
+      "comp_hash": "3000",
+      "personality": "friendly",
+      "collaboration_mode": {
+        "mode": "default",
+        "settings": {
+          "model": "gpt-6-astra",
+          "reasoning_effort": "medium",
+          "developer_instructions": "# Collaboration Mode: Default\r\n\r\nYou are now in Default mode. Any previous instructions for other modes (e.g. Plan mode) are no longer active.\r\n\r\nYour active mode changes only when new developer instructions with a different `<collaboration_mode>...</collaboration_mode>` change it; user requests or tool descriptions do not change mode by themselves. Known mode names are Default and Plan.\r\n\r\n## request_user_input availability\r\n\r\nUse the `request_user_input` tool only when it is listed in the available tools for this turn.\r\n\r\nIn Default mode, strongly prefer making reasonable assumptions and executing the user's request rather than stopping to ask questions.\r\n\r\nUse the `request_user_input` tool only for optional questions where the answer would materially improve the quality of the work.\r\n\r\nIf `request_user_input` returns no answers, continue with best judgment instead of asking again or treating the turn as blocked.\r\n\r\nNever use the `request_user_input` tool for permission requests or permission-related escalations.\r\n\r\nIf explicit user input is required for another reason before progress can safely continue, do not use the `request_user_input` tool. Ask the user directly with one concise plain-text question instead. Never write a multiple choice question as a textual assistant message.\r\n"
+        }
+      },
+      "multi_agent_version": "v2",
+      "realtime_active": false,
+      "effort": "medium",
+      "summary": "none"
+    }
+  },
+  {
+    "linha": 43,
+    "timestamp": "2026-11-06T02:37:55.144Z",
+    "type": "token_usage_record",
+    "payload": {
+      "thread_id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+      "turn_id": "01a1aeb8-3a60-7561-9db9-accf9900a9f5",
+      "session_id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+      "root_turn_id": "01a1aeb8-3a60-7561-9db9-accf9900a9f5",
+      "response_id": "resp_05bbc16cccfb78e1016aed3d80122087d2a7bb787b543c8a0e",
+      "usage": {
+        "input_tokens": 15270,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 66,
+        "reasoning_output_tokens": 28,
+        "total_tokens": 15336
+      },
+      "turn_token_usage": {
+        "input_tokens": 15270,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 66,
+        "reasoning_output_tokens": 28,
+        "total_tokens": 15336
+      },
+      "thread_token_usage": {
+        "input_tokens": 67126,
+        "cached_input_tokens": 51328,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 246,
+        "reasoning_output_tokens": 28,
+        "total_tokens": 67372
+      }
+    }
+  },
+  {
+    "linha": 45,
+    "timestamp": "2026-11-06T02:37:55.174Z",
+    "type": "event_msg",
+    "payload": {
+      "type": "task_complete",
+      "root_turn_id": "01a1aeb8-3a60-7561-9db9-accf9900a9f5",
+      "turn_id": "01a1aeb8-3a60-7561-9db9-accf9900a9f5",
+      "last_agent_message": "{\"requisitos\":[\"RF-03\",\"RF-04\"],\"testes\":[\"T05\",\"T07\",\"T08\",\"T10\",\"T12\"]}",
+      "started_at": 1793932671,
+      "completed_at": 1793932675,
+      "duration_ms": 3524,
+      "time_to_first_token_ms": 3005
+    }
+  }
+]

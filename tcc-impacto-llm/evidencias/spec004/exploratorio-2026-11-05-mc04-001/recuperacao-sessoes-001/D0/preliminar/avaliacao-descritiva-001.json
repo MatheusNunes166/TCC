@@ -1,0 +1,30 @@
+{
+  "fase": "exploratorio",
+  "origem": "llm_exploratoria",
+  "tipo": "retorno preliminar adicional; preservado, sem substituicao pelo posterior",
+  "resultado": {
+    "mudanca_pedida": "MC-04-v2",
+    "mudanca": "MC-04-v2",
+    "status_avaliacao": "resposta_formato_invalido",
+    "json_sintatico": "invalido",
+    "formato_contrato": "invalido",
+    "somente_ids_conhecidos": null,
+    "requisitos": null,
+    "testes": null,
+    "causa": "Expecting value: line 1 column 1 (char 0)"
+  },
+  "resposta_sha256": "c422b658e7620dd1037272dfaca2853b2f04d56c8a271c8069a8ac6b3a50f4f7",
+  "referencia": {
+    "arquivo": "materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+    "versao": "0.2",
+    "sha256": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80",
+    "status": "CANDIDATO_NAO_REVISADO",
+    "revisor": null,
+    "data_revisao": null
+  },
+  "avaliador_sha256": "e429fb429be9e628bc4992fc6f731a778159d0b121be2775fe366fa459dd1d2a",
+  "politica": "ids-proposta-004-v2",
+  "imputacao": false,
+  "incluido_piloto": false,
+  "incluido_coleta_principal": false
+}

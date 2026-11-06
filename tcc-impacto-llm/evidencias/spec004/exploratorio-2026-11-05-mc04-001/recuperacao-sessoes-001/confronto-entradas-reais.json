@@ -1,0 +1,17 @@
+{
+  "comuns_textuais_iguais": [
+    "catalogo-baseline",
+    "definicoes-comuns",
+    "mudanca",
+    "requisitos-baseline",
+    "schema_saida",
+    "sistema"
+  ],
+  "mesmas_notas_D1_E1": true,
+  "notas_ausentes_D0_E0": true,
+  "pedidos_pares_iguais": true,
+  "igualdade_literal_com_preparados": false,
+  "identificacao_segura_das_condicoes": true,
+  "desvios": "CRLF/LF, LF terminal extra e prefixo IDE nos quatro; historia/retorno anterior e ferramentas em D0",
+  "limite": "igualdade dos blocos nao demonstra igualdade de todo contexto da plataforma ou ausencia de ferramentas"
+}

@@ -1,0 +1,141 @@
+[
+  {
+    "linha": 16,
+    "timestamp": "2026-11-06T02:32:48.426Z",
+    "type": "response_item",
+    "payload": {
+      "type": "custom_tool_call",
+      "id": "ctc_05bbc16cccfb78e1016aed3c4ffa3887d2ad0707208302cbb3",
+      "status": "completed",
+      "call_id": "call_38a9196fb9a7450b82555c6f243f91c4",
+      "name": "exec",
+      "input": "text(ALL_TOOLS.filter(x=>/exec_command|read_file/.test(x.name)));\n",
+      "internal_chat_message_metadata_passthrough": {
+        "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+        "create_time": 1793932367.9855056
+      }
+    }
+  },
+  {
+    "linha": 18,
+    "timestamp": "2026-11-06T02:32:48.516Z",
+    "type": "response_item",
+    "payload": {
+      "type": "custom_tool_call_output",
+      "id": "ctco_01a1aeb3-9a84-7f02-b5e4-c5aef0618424",
+      "call_id": "call_38a9196fb9a7450b82555c6f243f91c4",
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.0 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "[]"
+        }
+      ],
+      "internal_chat_message_metadata_passthrough": {
+        "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+        "create_time": 1793932368.516601
+      }
+    },
+    "metadata": {
+      "client_authored": false,
+      "fallback_token_limit_override": 12000
+    }
+  },
+  {
+    "linha": 20,
+    "timestamp": "2026-11-06T02:32:51.166Z",
+    "type": "response_item",
+    "payload": {
+      "type": "custom_tool_call",
+      "id": "ctc_05bbc16cccfb78e1016aed3c52b42487d2bdaaacd70cea1ce2",
+      "status": "completed",
+      "call_id": "call_5b9c069a1b05447abd21833a025618c9",
+      "name": "exec",
+      "input": "text(ALL_TOOLS.filter(x=>/file|directory|powershell|terminal/i.test(x.description+\" \"+x.name)));\n",
+      "internal_chat_message_metadata_passthrough": {
+        "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+        "create_time": 1793932370.711612
+      }
+    }
+  },
+  {
+    "linha": 22,
+    "timestamp": "2026-11-06T02:32:51.205Z",
+    "type": "response_item",
+    "payload": {
+      "type": "custom_tool_call_output",
+      "id": "ctco_01a1aeb3-a504-7221-a046-2a22cddd88c5",
+      "call_id": "call_5b9c069a1b05447abd21833a025618c9",
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.0 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "[{\"name\":\"apply_patch\",\"description\":\"The `apply_patch` tool can be used to edit files. This is a FREEFORM tool, so do not wrap the patch in JSON.\\n\\nexec tool declaration:\\n```ts\\ndeclare const tools: { apply_patch(input: string): Promise<unknown>; };\\n```\"},{\"name\":\"image_gen__imagegen\",\"description\":\"Tools in the image_gen namespace.\\n\\nThe `image_gen.imagegen` tool enables image generation from descriptions and editing of existing images based on specific instructions. Use it when:\\r\\n\\r\\n- The user requests an image based on a scene description, such as a diagram, portrait, comic, meme, or any other visual.\\r\\n- The user wants to modify an attached or previously generated image with specific changes, including adding or removing elements, altering colors, improving quality/resolution, or transforming the style (e.g., cartoon, oil painting).\\r\\n\\r\\nGuidelines:\\r\\n- imagegen needs a few minutes to finish. In code-mode, use the first-line @exec directive to give the initial call 120 seconds and the same yield for any waits that follow. Once it finishes, return the image with generatedImage(result).\\r\\n- Avoid printing the full result or its base64 image data with `text()` or `notify()`; print only small metadata when needed.\\r\\n- Set `transparent_background` to true when the request calls for a transparent background, including background removal or a cutout; set it to false otherwise. For edits, preserve existing transparency unless the user asks to change it.\\r\\n- Omit both `referenced_image_paths` and `num_last_images_to_include` when generating a brand new image.\\r\\n- For edits, use `referenced_image_paths` when every target image has a local file path.\\r\\n- If you have not seen a local image yet, use `view_image` to inspect it before editing.\\r\\n- Use `num_last_images_to_include` only when at least one target image has no local file path.\\r\\n- Set `num_last_images_to_include` to the smallest number of recent conversation images that includes every target image, up to 5.\\r\\n- Never provide both `referenced_image_paths` and `num_last_images_to_include`.\\r\\n- If neither mechanism can include every target image, ask the user to attach the missing images again.\\r\\n- Directly generate the image without reconfirmation or clarification unless required images must be attached again.\\r\\n- Always use this tool for image editing unless the user explicitly requests otherwise. Do not use the `python` tool for image editing unless specifically instructed.\\r\\n\\n\\nexec tool declaration:\\n```ts\\ndeclare const tools: { image_gen__imagegen(args: {\\n  num_last_images_to_include?: number | null;\\n  prompt: string;\\n  referenced_image_paths?: Array<string> | null;\\n  // Whether the output should have a transparent background. Defaults to false.\\n  transparent_background?: boolean;\\n}): Promise<unknown>; };\\n```\"},{\"name\":\"list_mcp_resource_templates\",\"description\":\"Lists resource templates provided by MCP servers. Parameterized resource templates allow servers to share data that takes parameters and provides context to language models, such as files, database schemas, or application-specific information. Prefer resource templates over web search when possible.\\n\\nexec tool declaration:\\n```ts\\ndeclare const tools: { list_mcp_resource_templates(args: {\\n  // Opaque cursor from a previous list_mcp_resource_templates call; omit for the first page.\\n  cursor?: string;\\n  // MCP server name. Omit to list resource templates from every configured server.\\n  server?: string;\\n}): Promise<unknown>; };\\n```\"},{\"name\":\"list_mcp_resources\",\"description\":\"Lists resources provided by MCP servers. Resources allow servers to share data that provides context to language models, such as files, database schemas, or application-specific information. Prefer resources over web search when possible.\\n\\nexec tool declaration:\\n```ts\\ndeclare const tools: { list_mcp_resources(args: {\\n  // Opaque cursor from a previous list_mcp_resources call; omit for the first page.\\n  cursor?: string;\\n  // MCP server name. Omit to list resources from every configured server.\\n  server?: string;\\n}): Promise<unknown>; };\\n```\"},{\"name\":\"view_image\",\"description\":\"View a local image file from the filesystem when visual inspection is needed. Use this for images already available on disk.\\n\\nexec tool declaration:\\n```ts\\ndeclare const tools: { view_image(args: {\\n  // Image detail level. Defaults to `high`; use `original` to preserve exact resolution.\\n  detail?: \\\"high\\\" | \\\"original\\\";\\n  // Local filesystem path to an image file.\\n  path: string;\\n}): Promise<{\\n  // Image detail hint returned by view_image. Returns `high` for default resized behavior or `original` when original resolution is preserved.\\n  detail: \\\"high\\\" | \\\"original\\\";\\n  // Data URL for the loaded image.\\n  image_url: string;\\n}>; };\\n```\"}]"
+        }
+      ],
+      "internal_chat_message_metadata_passthrough": {
+        "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+        "create_time": 1793932371.2049546
+      }
+    },
+    "metadata": {
+      "client_authored": false,
+      "fallback_token_limit_override": 12000
+    }
+  },
+  {
+    "linha": 24,
+    "timestamp": "2026-11-06T02:32:53.761Z",
+    "type": "response_item",
+    "payload": {
+      "type": "custom_tool_call",
+      "id": "ctc_05bbc16cccfb78e1016aed3c551da087d28005c821dc89190f",
+      "status": "completed",
+      "call_id": "call_1866109e7f704531a2586d7015696a3c",
+      "name": "exec",
+      "input": "const results = await Promise.allSettled([tools.list_mcp_resources({}),tools.list_mcp_resource_templates({})]); results.forEach(text);\n",
+      "internal_chat_message_metadata_passthrough": {
+        "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+        "create_time": 1793932373.1210916
+      }
+    }
+  },
+  {
+    "linha": 28,
+    "timestamp": "2026-11-06T02:32:53.843Z",
+    "type": "response_item",
+    "payload": {
+      "type": "custom_tool_call_output",
+      "id": "ctco_01a1aeb3-af53-7c50-a716-9ebc6a45d9e9",
+      "call_id": "call_1866109e7f704531a2586d7015696a3c",
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"status\":\"fulfilled\",\"value\":\"{\\\"resources\\\":[]}\"}"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"status\":\"fulfilled\",\"value\":\"{\\\"resourceTemplates\\\":[]}\"}"
+        }
+      ],
+      "internal_chat_message_metadata_passthrough": {
+        "turn_id": "01a1aeb3-8870-7761-a989-86e4e4b8957b",
+        "create_time": 1793932373.8436906
+      }
+    },
+    "metadata": {
+      "client_authored": false,
+      "fallback_token_limit_override": 12000
+    }
+  }
+]

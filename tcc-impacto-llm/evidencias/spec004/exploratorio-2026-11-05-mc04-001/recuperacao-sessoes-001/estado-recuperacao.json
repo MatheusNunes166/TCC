@@ -1,0 +1,54 @@
+{
+  "data_registro_local": "2026-11-06",
+  "fase": "exploratorio",
+  "estado": "RECUPERADO_E_AVALIADO_DESCRITIVAMENTE_COM_DESVIOS",
+  "origem": "llm_exploratoria",
+  "sessoes_recuperadas": 4,
+  "envios_textuais_completos": 4,
+  "finais_desses_envios": 4,
+  "retorno_preliminar_D0_adicional": 1,
+  "respostas_reconstruidas": false,
+  "ordem_verificada": [
+    "D0",
+    "D1",
+    "E0",
+    "E1"
+  ],
+  "identificacao": "conteudo dos payloads, sem gabarito/ordem/titulo para determinar condicao",
+  "identificadores": {
+    "D0": {
+      "sessao": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+      "turno": "01a1aeb8-3a60-7561-9db9-accf9900a9f5"
+    },
+    "D1": {
+      "sessao": "01a1aeba-14c8-7121-903e-99a6d6a054ae",
+      "turno": "01a1aeba-1aac-74e3-a288-5df3dadf32de"
+    },
+    "E0": {
+      "sessao": "01a1aebb-667a-7623-b559-1fdaa6091f35",
+      "turno": "01a1aebb-6acc-7213-b5eb-b1703daf0404"
+    },
+    "E1": {
+      "sessao": "01a1aebc-26c9-7702-9200-143d39f2c127",
+      "turno": "01a1aebc-2be3-75a2-ba77-ddc05925e76e"
+    }
+  },
+  "CLI_sintetica_usada": false,
+  "funcao_reusada": "avaliacao_ids.avaliar_resposta",
+  "resumo_controlado_D0_bloqueado": true,
+  "resumo_controlado_ou_agregado_produzido": false,
+  "consistencia_calculada": false,
+  "incluido_piloto": false,
+  "incluido_coleta_principal": false,
+  "chamadas_novas_pelo_assistente": 0,
+  "notas_gabarito_modulos_preservados": true,
+  "revisao_cientifica": "PENDENTE",
+  "limites": [
+    "D0 possui historia preliminar, dois finais e ferramentas antes do texto completo",
+    "prefixo IDE e contexto da plataforma",
+    "CRLF/LF e LF terminal adicional: preparado/enviado nao sao identicos em bytes",
+    "nao comprova indisponibilidade de ferramentas",
+    "custo/build/parametros nao reportados permanecem desconhecidos"
+  ],
+  "relatorio": "RELATORIO.md"
+}

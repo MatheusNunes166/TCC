@@ -1,0 +1,21 @@
+{
+  "data_registro_local": "2026-11-06",
+  "comandos": [
+    {
+      "comando": "python -B evidencias/spec004/exploratorio-2026-11-05-mc04-001/recuperacao-sessoes-001/recuperar.py",
+      "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+      "retorno": 1,
+      "efeito": "entradas/historicos/finais/identificacao preservados; importacao de avaliador falhou antes de pontuar",
+      "diagnostico": "ModuleNotFoundError: No module named 'avaliacao_ids'"
+    },
+    {
+      "comando": "python -B evidencias/spec004/exploratorio-2026-11-05-mc04-001/recuperacao-sessoes-001/avaliar-recuperados.py",
+      "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+      "retorno": 0,
+      "efeito": "avaliacao descritiva pela funcao existente, quatro finais e preliminar D0, preservacao conferida"
+    }
+  ],
+  "chamadas_novas_modelo": 0,
+  "CLI_sintetica_utilizada": false,
+  "instantes_nao_capturados": "Nao reconstruidos; instantes das avaliacoes constam dos JSONs derivados."
+}

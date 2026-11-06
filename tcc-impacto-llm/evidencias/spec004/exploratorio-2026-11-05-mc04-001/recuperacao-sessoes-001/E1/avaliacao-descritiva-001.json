@@ -1,0 +1,153 @@
+{
+  "fase": "exploratorio",
+  "origem": "llm_exploratoria",
+  "condicao": "E1",
+  "sessao_id": "01a1aebc-26c9-7702-9200-143d39f2c127",
+  "turn_id": "01a1aebc-2be3-75a2-ba77-ddc05925e76e",
+  "instante_avaliacao_utc": "2026-11-06T03:05:54.391307+00:00",
+  "resposta_sha256": "d17606307c47b7fe1d4ab99550c883fb44a994167ae41ddc0d110a3db74257b1",
+  "registro_sha256": "fb636e9b6ae03440c2fee5cef4c522bc214f4d47ebba8fb7e92707f6776ee7bf",
+  "mensagem_sha256": "5a1a3e7d483254b557bf4a10b14c5321e2c111f11ebd9c4de7e7e82cd861cbc7",
+  "payload_enviado_sha256": "59eeab3cffbebdcffaafa0314df6dbdbff5bdbe70bd8a869e66cdabe05acb12a",
+  "referencia": {
+    "arquivo": "materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+    "versao": "0.2",
+    "sha256": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80",
+    "status": "CANDIDATO_NAO_REVISADO",
+    "revisor": null,
+    "data_revisao": null
+  },
+  "avaliador_sha256": "e429fb429be9e628bc4992fc6f731a778159d0b121be2775fe366fa459dd1d2a",
+  "politica": {
+    "versao": "ids-proposta-004-v2",
+    "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+    "status": "CANDIDATA_REVISAO_CIENTIFICA_PENDENTE"
+  },
+  "resultado": {
+    "mudanca_pedida": "MC-04-v2",
+    "mudanca": "MC-04-v2",
+    "status_avaliacao": "avaliada",
+    "json_sintatico": "valido",
+    "formato_contrato": "valido",
+    "somente_ids_conhecidos": true,
+    "requisitos": {
+      "lista_original": [
+        "RF-03",
+        "RF-04"
+      ],
+      "S": [
+        "RF-03",
+        "RF-04"
+      ],
+      "G": [
+        "RF-03",
+        "RF-04"
+      ],
+      "acertos": [
+        "RF-03",
+        "RF-04"
+      ],
+      "excedentes": [],
+      "omissoes": [],
+      "desconhecidos": [],
+      "duplicatas": [],
+      "TP": 2,
+      "FP": 0,
+      "FN": 0,
+      "metricas_propostas": {
+        "precisao": {
+          "numerador": 1,
+          "denominador": 1,
+          "fracao": "1",
+          "decimal": "1.000000"
+        },
+        "revocacao": {
+          "numerador": 1,
+          "denominador": 1,
+          "fracao": "1",
+          "decimal": "1.000000"
+        },
+        "f1": {
+          "numerador": 1,
+          "denominador": 1,
+          "fracao": "1",
+          "decimal": "1.000000"
+        },
+        "selecao_completa": 1,
+        "correspondencia_exata": 1
+      }
+    },
+    "testes": {
+      "lista_original": [
+        "T05",
+        "T07",
+        "T08",
+        "T10",
+        "T12"
+      ],
+      "S": [
+        "T05",
+        "T07",
+        "T08",
+        "T10",
+        "T12"
+      ],
+      "G": [
+        "T05",
+        "T07",
+        "T08",
+        "T10",
+        "T12"
+      ],
+      "acertos": [
+        "T05",
+        "T07",
+        "T08",
+        "T10",
+        "T12"
+      ],
+      "excedentes": [],
+      "omissoes": [],
+      "desconhecidos": [],
+      "duplicatas": [],
+      "TP": 5,
+      "FP": 0,
+      "FN": 0,
+      "metricas_propostas": {
+        "precisao": {
+          "numerador": 1,
+          "denominador": 1,
+          "fracao": "1",
+          "decimal": "1.000000"
+        },
+        "revocacao": {
+          "numerador": 1,
+          "denominador": 1,
+          "fracao": "1",
+          "decimal": "1.000000"
+        },
+        "f1": {
+          "numerador": 1,
+          "denominador": 1,
+          "fracao": "1",
+          "decimal": "1.000000"
+        },
+        "selecao_completa": 1,
+        "correspondencia_exata": 1
+      }
+    },
+    "causa": null,
+    "ids_conhecidos_por_dimensao": {
+      "requisitos": true,
+      "testes": true
+    }
+  },
+  "avaliacao": "descritiva do final ligado ao envio textual integral, sem atestar conformidade do protocolo",
+  "regra_vinculo": "turno da mensagem com blocos completos identificado antes de consultar gabarito; nunca escolha pela pontuacao",
+  "igualdade_bytes_preparado_enviado": false,
+  "desvios_registrados": true,
+  "resumo_controlado_D0_bloqueado": false,
+  "incluido_piloto": false,
+  "incluido_coleta_principal": false,
+  "consistencia_entre_repeticoes_calculada": false
+}

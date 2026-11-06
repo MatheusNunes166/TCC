@@ -1,0 +1,2 @@
+Primeira execucao local de recuperar.py: as quatro sessoes, entradas, respostas, metadados e identificacao foram persistidos. A etapa de avaliacao nao iniciou: ModuleNotFoundError: No module named 'avaliacao_ids'. Python iniciou sys.path pela pasta do script, nao pela raiz do projeto.
+Nao houve alteracao ou sobrescrita das origens/copias. A continuacao em avaliar-recuperados.py importa o modulo existente pela raiz explicita, valida os hashes dos arquivos recuperados e preserva esta tentativa. Nenhum erro foi convertido em resposta do modelo ou pontuacao zero.

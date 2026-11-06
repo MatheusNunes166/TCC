@@ -1,0 +1,50 @@
+{
+  "modo_sqlite": "mode=ro; query_only=ON",
+  "filtro": "quatro IDs selecionados por cwd D:/Tcc-ensaio, modelo e effort; sem leitura de outras conversas",
+  "sessoes": [
+    {
+      "id": "01a1aeb3-83c5-7f20-b121-c20efd4d2a6e",
+      "rollout_path": "C:\\Users\\User\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T23-32-42-01a1aeb3-83c5-7f20-b121-c20efd4d2a6e.jsonl",
+      "cwd": "\\\\?\\D:\\Tcc-ensaio",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "medium",
+      "created_at_ms": 1793932362714,
+      "updated_at_ms": 1793932675174,
+      "cli_version": "0.162.0-alpha.17.2",
+      "source": "vscode"
+    },
+    {
+      "id": "01a1aeba-14c8-7121-903e-99a6d6a054ae",
+      "rollout_path": "C:\\Users\\User\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T23-39-53-01a1aeba-14c8-7121-903e-99a6d6a054ae.jsonl",
+      "cwd": "\\\\?\\D:\\Tcc-ensaio",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "medium",
+      "created_at_ms": 1793932793036,
+      "updated_at_ms": 1793932799116,
+      "cli_version": "0.162.0-alpha.17.2",
+      "source": "vscode"
+    },
+    {
+      "id": "01a1aebb-667a-7623-b559-1fdaa6091f35",
+      "rollout_path": "C:\\Users\\User\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T23-41-19-01a1aebb-667a-7623-b559-1fdaa6091f35.jsonl",
+      "cwd": "\\\\?\\D:\\Tcc-ensaio",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "medium",
+      "created_at_ms": 1793932879485,
+      "updated_at_ms": 1793932885729,
+      "cli_version": "0.162.0-alpha.17.2",
+      "source": "vscode"
+    },
+    {
+      "id": "01a1aebc-26c9-7702-9200-143d39f2c127",
+      "rollout_path": "C:\\Users\\User\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T23-42-08-01a1aebc-26c9-7702-9200-143d39f2c127.jsonl",
+      "cwd": "\\\\?\\D:\\Tcc-ensaio",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "medium",
+      "created_at_ms": 1793932928716,
+      "updated_at_ms": 1793932934083,
+      "cli_version": "0.162.0-alpha.17.2",
+      "source": "vscode"
+    }
+  ]
+}

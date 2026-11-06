@@ -1,0 +1,13 @@
+# Context from my IDE setup:
+
+## Open tabs:
+- config.toml: .codex/config.toml
+
+# Files pasted by the user:
+
+## "<<<inicio:sistema>>> responder à tarefa usando apenas o material fornecido, sem…": C:\Users\User\.codex/attachments/05541469-7056-4824-8035-e4b8c0e4d3ca/Pasted text.txt
+
+Pasted text contains the user's request.
+
+## My request:
+
