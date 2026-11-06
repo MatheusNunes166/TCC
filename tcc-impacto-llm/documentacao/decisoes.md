@@ -1,5 +1,17 @@
 # Decisões, propostas e pendências
 
+## Preparação de ensaio exploratório MC-04 — 05/11/2026
+
+**D-32 — Pedido explícito do pesquisador nesta conversa; preparação local pelo assistente.** Preparar MC-04-v2 × D0/D1/E0/E1 × uma execução, quatro chamadas previstas e nenhuma autorizada/realizada nesta etapa. Ensaio exploratório separado do piloto/coleta principal, sem transferência automática futura. [Pacotes, roteiro e pendências](../evidencias/spec004/exploratorio-2026-11-05-mc04-001/LEIA-PRIMEIRO.md). Spec 004 reutilizada, sem outra Spec, infraestrutura, modelo selecionado ou alteração dos módulos.
+
+Quatro comandos reais do montador spec004-v3 geraram novas preparações a partir dos quatro pacotes/autorização de MC-04 já existentes. Conferência atual das seis fontes/recortes e dos bytes preparados; seis pares diferem somente nas notas/pedidos previstos. Notas rascunho e referência candidata 0.2 preservadas, com hashes/status locais. Revisão do pesquisador e revisão profissional/científica permanecem pendentes; preparação técnica não é aprovação do conteúdo.
+
+Fichas planejadas preservam origem efetiva ainda nula, datas de chamadas/respostas ausentes e campos de ferramenta/modelo/configuração/ordem a definir. Roteiro exige quatro contextos independentes, sem ferramentas/repositório/histórico adicional, e preservação de conteúdo efetivamente enviado e resposta integral. Todo resultado futuro terá fase exploratória e exclusão explícita do piloto/principal. Uma observação por condição não estima efeito ou consistência por repetições; Jaccard por célula não calculável.
+
+**Limitação encontrada e registrada antes das chamadas:** a CLI `avaliacao_ids.py avaliar` implementada aceita apenas origem sintética/modelo nulo; não pode importar respostas reais sem falsear a proveniência. Não alterar sua validação nem rotular respostas exploratórias como sintéticas. O [comando documentado de avaliação local](../evidencias/spec004/exploratorio-2026-11-05-mc04-001/AVALIAR.md) reutiliza a função existente `avaliar_resposta`, com arquivos brutos preservados e saída identificada como exploratória; não é o fluxo completo de persistência da CLI nem foi executado com respostas inexistentes. Futuro suporte de importação real pela CLI exigiria decisão própria.
+
+Pendentes antes de enviar: conferência do pesquisador, ferramenta/modalidade/modelo/versão, parâmetros disponíveis e não expostos, entrega/papéis/instruções conhecidas, verificação de recursos/contextos independentes, ordem e captura de dados/desvios. Nenhuma chamada, piloto, coleta, gabarito/notas alterados ou revisão concluída nesta preparação. D-29/D-30/D-31 mantidos no restante do escopo; fundamentação científica, notas definitivas e desenho final do piloto continuam pendentes.
+
 ## Pacote para revisão profissional — 01/11/2026
 
 **D-31 — Autorização documental do pesquisador nesta conversa; preparação pelo assistente de IA.** Organizado o [pacote 1.0 para revisão profissional](revisao-profissional-spec004-v1/LEIA-PRIMEIRO.md), com contexto/notas, referência candidata e ficha em branco. Conteúdo autossuficiente: quatro requisitos/dependências/mudanças, catálogo T01–T12, definições, nota literal rascunho e origem documental; conjuntos candidatos, 60 expectativas e justificativas de inclusão/exclusão. Fontes/versões identificadas por SHA-256, sem logs extensos.

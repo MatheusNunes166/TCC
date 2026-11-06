@@ -1,0 +1,63 @@
+{
+  "id": "exploratorio-2026-11-05-mc04-001",
+  "data_preparacao": "2026-11-05",
+  "fase": "exploratorio",
+  "mudanca": "MC-04-v2",
+  "rotulo_solicitado": "MC-04",
+  "execucoes_por_condicao": 1,
+  "chamadas_previstas": 4,
+  "chamadas_realizadas": 0,
+  "incluido_piloto": false,
+  "incluido_coleta_principal": false,
+  "revisao_pesquisador": {
+    "estado": "PENDENTE",
+    "responsavel": null,
+    "data": null
+  },
+  "envio_autorizado_nesta_etapa": false,
+  "ferramenta": null,
+  "modelo_reportado": null,
+  "configuracao_coleta_id": null,
+  "ordem_execucao": null,
+  "modalidade_envio_e_papeis_mensagem": null,
+  "retentativas": "nenhuma automatica prevista; registrar falha sem substituir resposta",
+  "observacoes_planejadas": [
+    {
+      "id": "exploratorio-20261105-MC04-D0-r1",
+      "condicao": "D0",
+      "preparacao": "preparados/D0/preparacao.json",
+      "payload": "preparados/D0/payload.txt",
+      "payload_sha256": "e6a85c90e4840407c512f4245e4db01f194ab4eff9dfe778bafc003bdd29a743",
+      "registro_planejado": "registros/D0/registro-planejado.json",
+      "estado": "NAO_ENVIADO"
+    },
+    {
+      "id": "exploratorio-20261105-MC04-D1-r1",
+      "condicao": "D1",
+      "preparacao": "preparados/D1/preparacao.json",
+      "payload": "preparados/D1/payload.txt",
+      "payload_sha256": "933c0577aeb3e8bb2218576bf7f2b9ee06ab20b750a0ddd7592a07748c85fd3f",
+      "registro_planejado": "registros/D1/registro-planejado.json",
+      "estado": "NAO_ENVIADO"
+    },
+    {
+      "id": "exploratorio-20261105-MC04-E0-r1",
+      "condicao": "E0",
+      "preparacao": "preparados/E0/preparacao.json",
+      "payload": "preparados/E0/payload.txt",
+      "payload_sha256": "2a3b7b93645f58f66e63e5871a9ecbbd3b204d7bd3bca92ada56650320353c9f",
+      "registro_planejado": "registros/E0/registro-planejado.json",
+      "estado": "NAO_ENVIADO"
+    },
+    {
+      "id": "exploratorio-20261105-MC04-E1-r1",
+      "condicao": "E1",
+      "preparacao": "preparados/E1/preparacao.json",
+      "payload": "preparados/E1/payload.txt",
+      "payload_sha256": "c34aab8cfa3133d50dc026e1d619c0d0233d60f128dde13cf098972da05e1685",
+      "registro_planejado": "registros/E1/registro-planejado.json",
+      "estado": "NAO_ENVIADO"
+    }
+  ],
+  "limite": "Um resultado por condicao nao estima efeito ou consistencia por repeticoes; Jaccard nao calculavel por celula com menos de duas observacoes."
+}

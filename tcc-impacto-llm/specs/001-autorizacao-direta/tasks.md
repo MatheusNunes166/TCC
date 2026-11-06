@@ -1,4 +1,4 @@
-﻿# Tasks: Autorização direta com bloqueio por estado
+﻿ # Tasks: Autorização direta com bloqueio por estado
 
 > Fechamento em 16/10/2026: 17/17 tarefas concluídas por D-10. Evidências reais em [evidencias.md](evidencias.md) e resumo em [quickstart.md](quickstart.md). T001: Python 3.13.3; T002–T007: domínio, testes US1 antes/depois e estado; T008–T013: testes US2 antes, concessões e integrada; T014–T017: revisão e reconciliação documental. As descrições de todas pendentes e restrições de autorização abaixo são históricas da geração em 14/10, superadas pelo pedido atual.
 

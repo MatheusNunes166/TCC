@@ -1,0 +1,167 @@
+{
+  "fase": "exploratorio",
+  "data_local": "2026-11-05",
+  "criterio": "Bytes de fontes/recortes autorizados, arquivos e payloads; sem chamada ao modelo",
+  "fontes_conferidas_com_autorizacoes": true,
+  "documentos_comuns": [
+    {
+      "arquivo": "sistema.txt",
+      "sha256": "863d5e523f64b4c0a79898d7aa1529fd3488264ac62459d5b047393362efaf11"
+    },
+    {
+      "arquivo": "definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "requisitos-baseline.md",
+      "sha256": "6167072a77a6018717afea1bc51681113a7bb02e55e0966c3d8f74dc4a3c3478"
+    },
+    {
+      "arquivo": "catalogo-baseline.md",
+      "sha256": "b7261fd6b24a0eca7f1e4abcb4a8ffcbf092e071931be6c4f086646d82242c76"
+    },
+    {
+      "arquivo": "mudanca.md",
+      "sha256": "448dbc894b81bbf9430f46c44edeb4442519b1db77b78c91c30c4b2576d2a6ed"
+    },
+    {
+      "arquivo": "schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    }
+  ],
+  "mesmas_notas_D1_E1": true,
+  "notas_ausentes_D0_E0": true,
+  "nota_sha256": "5f82ec8421a7ec27a92a718d27deb2a74cdb7538e12a80c662f27038c2f3cc34",
+  "nota_status": "RASCUNHO_NAO_REVISADO",
+  "pedidos_D0_D1_iguais": true,
+  "pedidos_E0_E1_iguais": true,
+  "pedidos_literais": {
+    "D": "> Identifique os requisitos impactados pela mudan\u00e7a e selecione os testes existentes relevantes conforme as defini\u00e7\u00f5es e a pol\u00edtica de sele\u00e7\u00e3o fornecidas. Retorne somente os dois conjuntos de identificadores no JSON exigido.\r\n",
+    "E": "> Organize a an\u00e1lise em etapas: examine a regra alterada; verifique as depend\u00eancias funcionais; determine os requisitos impactados; aplique a pol\u00edtica de sele\u00e7\u00e3o aos casos existentes; confira as duas listas. Retorne somente os dois conjuntos de identificadores no JSON exigido.\r\n"
+  },
+  "diferencas": [
+    {
+      "par": [
+        "D0",
+        "D1"
+      ],
+      "arquivos_diferentes": [
+        "notas.md"
+      ],
+      "esperado": [
+        "notas.md"
+      ],
+      "conforme": true
+    },
+    {
+      "par": [
+        "D0",
+        "E0"
+      ],
+      "arquivos_diferentes": [
+        "pedido.txt"
+      ],
+      "esperado": [
+        "pedido.txt"
+      ],
+      "conforme": true
+    },
+    {
+      "par": [
+        "D0",
+        "E1"
+      ],
+      "arquivos_diferentes": [
+        "notas.md",
+        "pedido.txt"
+      ],
+      "esperado": [
+        "notas.md",
+        "pedido.txt"
+      ],
+      "conforme": true
+    },
+    {
+      "par": [
+        "D1",
+        "E0"
+      ],
+      "arquivos_diferentes": [
+        "notas.md",
+        "pedido.txt"
+      ],
+      "esperado": [
+        "notas.md",
+        "pedido.txt"
+      ],
+      "conforme": true
+    },
+    {
+      "par": [
+        "D1",
+        "E1"
+      ],
+      "arquivos_diferentes": [
+        "pedido.txt"
+      ],
+      "esperado": [
+        "pedido.txt"
+      ],
+      "conforme": true
+    },
+    {
+      "par": [
+        "E0",
+        "E1"
+      ],
+      "arquivos_diferentes": [
+        "notas.md"
+      ],
+      "esperado": [
+        "notas.md"
+      ],
+      "conforme": true
+    }
+  ],
+  "payloads_exatos": [
+    {
+      "id": "exploratorio-20261105-MC04-D0-r1",
+      "condicao": "D0",
+      "preparacao": "preparados/D0/preparacao.json",
+      "payload": "preparados/D0/payload.txt",
+      "payload_sha256": "e6a85c90e4840407c512f4245e4db01f194ab4eff9dfe778bafc003bdd29a743",
+      "registro_planejado": "registros/D0/registro-planejado.json",
+      "estado": "NAO_ENVIADO"
+    },
+    {
+      "id": "exploratorio-20261105-MC04-D1-r1",
+      "condicao": "D1",
+      "preparacao": "preparados/D1/preparacao.json",
+      "payload": "preparados/D1/payload.txt",
+      "payload_sha256": "933c0577aeb3e8bb2218576bf7f2b9ee06ab20b750a0ddd7592a07748c85fd3f",
+      "registro_planejado": "registros/D1/registro-planejado.json",
+      "estado": "NAO_ENVIADO"
+    },
+    {
+      "id": "exploratorio-20261105-MC04-E0-r1",
+      "condicao": "E0",
+      "preparacao": "preparados/E0/preparacao.json",
+      "payload": "preparados/E0/payload.txt",
+      "payload_sha256": "2a3b7b93645f58f66e63e5871a9ecbbd3b204d7bd3bca92ada56650320353c9f",
+      "registro_planejado": "registros/E0/registro-planejado.json",
+      "estado": "NAO_ENVIADO"
+    },
+    {
+      "id": "exploratorio-20261105-MC04-E1-r1",
+      "condicao": "E1",
+      "preparacao": "preparados/E1/preparacao.json",
+      "payload": "preparados/E1/payload.txt",
+      "payload_sha256": "c34aab8cfa3133d50dc026e1d619c0d0233d60f128dde13cf098972da05e1685",
+      "registro_planejado": "registros/E1/registro-planejado.json",
+      "estado": "NAO_ENVIADO"
+    }
+  ],
+  "revisao_usuario_concluida": false,
+  "envios_realizados": 0,
+  "isolamento_SO_alegado": false
+}

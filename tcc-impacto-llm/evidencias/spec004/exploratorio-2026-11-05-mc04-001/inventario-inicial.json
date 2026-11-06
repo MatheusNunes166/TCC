@@ -1,0 +1,20 @@
+{
+  "data_local": "2026-11-05",
+  "fontes_protegidas_sha256": {
+    "materiais/04_NOTAS_E_PROMPTS.md": "2c0b651fb0e7b95358e2c466a18d0116c4342a477c3cacace7d68468de0d8021",
+    "materiais/07_DEFINICOES_COMUNS.md": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e",
+    "documentacao/requisitos.md": "d2d47f932a2e30143097e09873e84cb18dee53c4ea63423794a64edc2b45b957",
+    "documentacao/qualidade-e-testes.md": "68079106fb4f0adc34ae27837810b80e8c963c11fcfa6275a913df0deca59682",
+    "specs/003-mudancas-controladas/spec.md": "80d59b1846dbd677094c1d24603c80888379613de3d10a414f1de71216c14a98",
+    "materiais/modelos/schema_saida.json": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21",
+    "montagem_entradas.py": "4277041f87a57073cf75279a885b3c4800fc882d975c4b8bf9ba1a26458a632a",
+    "fontes_autorizadas.py": "2a68859c64bcf98d09b651d7d07d12bb3ab0d2960d14338971794891e67b5fdf",
+    "avaliacao_ids.py": "e429fb429be9e628bc4992fc6f731a778159d0b121be2775fe366fa459dd1d2a",
+    "materiais/modelos/registro_execucao.json": "f84b4fbf53663368c97a6556881475f4608f2592b84a1debe56d5a3bab0b9a7f",
+    "materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80",
+    "specs/001-autorizacao-direta/tasks.md": "76cd29e2815ac004c7940fc12d7dc342e3ca80dd106274941c472a3d576c2429",
+    "specs/004-preparacao-avaliacao-ids/tasks.md": "f92a2dea1686b3f031461646f0dac3c9cd1edcfd9eab8ba5f4646d67b72f6010"
+  },
+  "ensaios_anteriores_preservados": true,
+  "nota": "Preparacao de quatro entradas; nenhuma chamada, piloto ou coleta."
+}

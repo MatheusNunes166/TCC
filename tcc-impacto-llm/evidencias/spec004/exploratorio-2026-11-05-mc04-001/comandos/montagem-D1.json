@@ -1,0 +1,21 @@
+{
+  "condicao": "D1",
+  "comando": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "-B",
+    "montagem_entradas.py",
+    "--pacote",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\editorial\\pacotes\\MC-04-v2-D1",
+    "--manifesto",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\editorial\\pacotes\\MC-04-v2-D1\\manifesto.json",
+    "--autorizacao",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\revisao-textual-2026-11-01\\demonstracao-textual-001\\editorial\\autorizacoes\\MC-04-v2-D1.json",
+    "--saida",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\evidencias\\spec004\\exploratorio-2026-11-05-mc04-001\\preparados\\D1"
+  ],
+  "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+  "instante_utc": "2026-11-06T01:42:37.198719+00:00",
+  "retorno": 0,
+  "stdout": "{\"preparacao_id\": \"b9bb7a9fd0f04521b4c3768050d97f2a\", \"status\": \"PREPARADO_LOCAL_NAO_ENVIADO\"}\r\n",
+  "stderr": ""
+}

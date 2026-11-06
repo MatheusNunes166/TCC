@@ -1,0 +1,40 @@
+{
+  "montador": {
+    "contrato": "spec004-v3",
+    "sha256": "4277041f87a57073cf75279a885b3c4800fc882d975c4b8bf9ba1a26458a632a"
+  },
+  "recortes": {
+    "receita": "recortes-D29-v1",
+    "sha256_modulo": "2a68859c64bcf98d09b651d7d07d12bb3ab0d2960d14338971794891e67b5fdf"
+  },
+  "nota": {
+    "fonte": "materiais/04_NOTAS_E_PROMPTS.md secao 4.2",
+    "sha256_bloco_literal": "5f82ec8421a7ec27a92a718d27deb2a74cdb7538e12a80c662f27038c2f3cc34",
+    "status": "RASCUNHO_NAO_REVISADO",
+    "origem_declarada": "pesquisador no papel de analista, segundo materiais/04 secao 4.1; sem revisao profissional registrada"
+  },
+  "referencia": {
+    "arquivo": "materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+    "versao": "0.2",
+    "sha256": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80",
+    "status": "CANDIDATO_NAO_REVISADO",
+    "revisor": null,
+    "data_revisao": null
+  },
+  "avaliador": {
+    "arquivo": "avaliacao_ids.py",
+    "sha256": "e429fb429be9e628bc4992fc6f731a778159d0b121be2775fe366fa459dd1d2a",
+    "politica": "ids-proposta-004-v2",
+    "status": "CANDIDATA_REVISAO_CIENTIFICA_PENDENTE",
+    "CLI_avaliar": "somente sintetica; nao usar para resposta real",
+    "funcao_existente": "avaliar_resposta"
+  },
+  "fontes_sha256": {
+    "materiais/04_NOTAS_E_PROMPTS.md": "2c0b651fb0e7b95358e2c466a18d0116c4342a477c3cacace7d68468de0d8021",
+    "materiais/07_DEFINICOES_COMUNS.md": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e",
+    "documentacao/requisitos.md": "d2d47f932a2e30143097e09873e84cb18dee53c4ea63423794a64edc2b45b957",
+    "documentacao/qualidade-e-testes.md": "68079106fb4f0adc34ae27837810b80e8c963c11fcfa6275a913df0deca59682",
+    "specs/003-mudancas-controladas/spec.md": "80d59b1846dbd677094c1d24603c80888379613de3d10a414f1de71216c14a98",
+    "materiais/modelos/schema_saida.json": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+  }
+}
