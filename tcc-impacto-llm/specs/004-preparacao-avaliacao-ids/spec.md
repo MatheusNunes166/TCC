@@ -1,3 +1,5 @@
+> Operação vigente: [complemento D-35 do contrato](contracts/preparacao-avaliacao.md#complemento-vigente-d-35--importação-real-e-preparação-06112026) e [estado central](../../ESTADO_ATUAL.md). As restrições históricas a importação somente sintética/revisão externa são superadas nesse alcance; planejamento original abaixo preservado.
+
 # Feature Specification: Preparação de entradas e avaliação separada de IDs
 
 > Contrato vigente — 01/11/2026 (D-29): o modelo recebe somente texto preparado, sem ferramentas, repositório, código, comandos, gabarito, resultados de variantes ou histórico. Exigências de identidade/ACL do Windows de T014/T015 substituídas, sem execução ou aprovação retroativa. Permanecem validação de arquivos/caminhos, autorização de conteúdo, integridade, equivalência de condições e avaliação separada. Notas representam conhecimento de analista de testes; texto definitivo e revisão profissional pendentes. Não se avaliam juniores, novos testes ou defeitos reais. Sem modelo escolhido, envio, chamadas externas ou piloto; revisão científica pendente. Histórico preservado em evidencias/spec004/revisao-textual-2026-11-01/originais.

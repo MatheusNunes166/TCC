@@ -115,7 +115,7 @@ def caminho_seguro(path):
     w=PureWindowsPath(os.fspath(path))
     if w.drive.startswith('\\\\') or (w.drive and not w.root):raise ValueError('UNC/dispositivo/drive relativo nao suportado')
     if os.name=='nt' and w.root and not w.drive:raise ValueError('raiz sem drive nao suportada')
-    parts=[p for p in w.parts if p!=w.anchor]
+    parts=[p for p in w.parts if p!=w.anchor and p not in ('.','..')]
     if any(':' in p or p.endswith(('.', ' ')) for p in parts):raise ValueError('fluxo alternativo/alias nao suportado')
     devices={'CON','PRN','AUX','NUL'}|{f'{p}{i}' for p in ('COM','LPT') for i in range(1,10)}
     if any(p.split('.')[0].upper() in devices for p in parts):raise ValueError('dispositivo nao suportado')
@@ -170,7 +170,8 @@ def finalizar(out,result,code,tracked,filename):
     try:
         salvar(out/filename,serial(result),tracked)
         manifest={'completo':result.get('completo',False),'retorno':code,
-          'origem':'sintetica','arquivos':[{'arquivo':str(p.relative_to(out)),'sha256':h} for p,h in tracked if p.is_relative_to(out)],
+          'origem':result.get('origem'),'fase':result.get('fase'),
+          'arquivos':[{'arquivo':str(p.relative_to(out)),'sha256':h} for p,h in tracked if p.is_relative_to(out)],
           'fontes':[{'arquivo':str(p),'sha256':h} for p,h in tracked if not p.is_relative_to(out)]}
         revalidar(tracked)
         salvar(out/'manifesto.json',serial(manifest),[])
@@ -181,22 +182,35 @@ def finalizar(out,result,code,tracked,filename):
         except OSError:pass
     return result,code
 
+def repeticao(record):
+    return record.get('repeticao' if record.get('origem')=='real' else 'repeticao_sintetica')
+
+def validar_origem(record,origem,fase):
+    if not isinstance(record,dict):raise ValueError('registro deve ser objeto')
+    if origem not in ('sintetica','real'):raise ValueError('origem invalida')
+    if record.get('origem')!=origem:raise ValueError('origem divergente; controles e respostas reais separados')
+    if origem=='sintetica':
+        if record.get('modelo_reportado') is not None or record.get('fase') not in (None,'verificacao_sintetica'):
+            raise ValueError('controle sintetico com modelo/fase real')
+    elif fase not in ('exploratoria','piloto','principal') or record.get('fase')!=fase:
+        raise ValueError('fase real ausente/divergente; nao combinar fases')
+
 def identidade(record):
     if not isinstance(record,dict):raise ValueError('registro de observacao deve ser objeto')
     for field in ('configuracao_id','observacao_id'):
         if not texto(record.get(field)):raise ValueError('identidade sem '+field)
-    repeat=record.get('repeticao_sintetica')
+    repeat=repeticao(record)
     if type(repeat) is not int or repeat<1:raise ValueError('repeticao deve ser inteiro positivo')
     change=canonica(record.get('mudanca'))
     if change not in MUDANCAS or record.get('condicao') not in ('D0','D1','E0','E1'):raise ValueError('celula invalida')
     return (record['configuracao_id'],change,record['condicao'],repeat)
 
-def avaliar(preparacao,tentativa,referencia,saida,avaliacao_anterior=None):
+def avaliar(preparacao,tentativa,referencia,saida,avaliacao_anterior=None,origem='sintetica',fase=None):
     inputs=[Path(preparacao),Path(tentativa),Path(referencia)]
     if avaliacao_anterior:inputs.append(Path(avaliacao_anterior))
     out=nova_saida(saida,inputs);tracked=[]
     result={'avaliacao_id':uuid.uuid4().hex,'instante_utc':datetime.now(timezone.utc).isoformat(),
-      'completo':False,'origem':'sintetica','modelo_reportado':None,
+      'completo':False,'origem':origem,'fase':fase,'modelo_reportado':None,
       'politica':{'versao':POLITICA,'sha256':POLITICA_SHA,'status':'CANDIDATA_REVISAO_CIENTIFICA_PENDENTE'},
       'avaliador_sha256':sha(Path(__file__).read_bytes()),'requisitos':None,'testes':None}
     code=2
@@ -206,9 +220,31 @@ def avaliar(preparacao,tentativa,referencia,saida,avaliacao_anterior=None):
         salvar(out/'preparacao-original.json',prepraw,tracked);salvar(out/'tentativa-original.json',traw,tracked)
         prep=json_estrito(prepraw);t=json_estrito(traw);identidade(t)
         if not isinstance(prep,dict):raise ValueError('preparacao deve ser objeto')
-        if (t.get('origem')!='sintetica' or t.get('modelo_reportado') is not None
-            or not texto(t.get('tentativa_id')) or t.get('estado_tecnico') not in ('concluida','falha_tecnica')):
-            raise ValueError('registro sintetico/estado tecnico invalido')
+        validar_origem(t,origem,fase)
+        if not texto(t.get('tentativa_id')) or t.get('estado_tecnico') not in ('concluida','falha_tecnica'):
+            raise ValueError('tentativa/estado tecnico invalido')
+        if origem=='real':
+            if 'repeticao_sintetica' in t:raise ValueError('resposta real nao usa repeticao sintetica')
+            for field in ('origem_resposta','instante_execucao','modelo_reportado'):
+                if not texto(t.get(field)):raise ValueError('proveniencia real sem '+field)
+            for field in ('configuracao','versoes'):
+                if not isinstance(t.get(field),dict) or not t[field]:raise ValueError('registro real sem '+field)
+            if (t.get('conformidade_protocolo') not in ('pendente','conforme','desvio')
+                or not isinstance(t.get('desvios'),list) or any(not texto(d) for d in t['desvios'])):
+                raise ValueError('conformidade/desvios invalidos')
+            if (t['conformidade_protocolo']=='conforme' and t['desvios']) or (t['conformidade_protocolo']=='desvio' and not t['desvios']):
+                raise ValueError('declaracao de conformidade contraditoria')
+            if t.get('entrada_enviada_arquivo') is not None:
+                effective=ler(relativo(tentativa.parent,t['entrada_enviada_arquivo']),tracked)
+                salvar(out/'entrada-enviada-original.bin',effective,tracked)
+                if sha(effective)!=t.get('entrada_enviada_sha256'):raise ValueError('entrada enviada com hash divergente')
+                if sha(effective)!=prep.get('payload_sha256') and t['conformidade_protocolo']!='desvio':
+                    raise ValueError('entrada enviada difere do preparado; registrar desvio')
+            elif t['estado_tecnico']!='falha_tecnica' or t.get('entrada_enviada_sha256') is not None:
+                raise ValueError('entrada efetivamente enviada ausente/inconsistente')
+            for field in ('repeticao','origem_resposta','instante_execucao','modelo_reportado','configuracao','versoes',
+                          'conformidade_protocolo','desvios','entrada_enviada_sha256'):
+                result[field]=t[field]
         if t['estado_tecnico']=='falha_tecnica' and not texto(t.get('causa')):raise ValueError('falha sem causa')
         if prep.get('completo') is not True or prep.get('status')!='PREPARADO_LOCAL_NAO_ENVIADO':raise ValueError('preparacao nao utilizavel')
         if (t.get('preparacao_sha256')!=sha(prepraw) or t.get('preparacao_id')!=prep.get('preparacao_id')
@@ -237,11 +273,12 @@ def avaliar(preparacao,tentativa,referencia,saida,avaliacao_anterior=None):
         for k in ('observacao_id','tentativa_id','tentativa_anterior','configuracao_id','mudanca','condicao',
                   'repeticao_sintetica','payload_sha256','estado_tecnico','fragmento'):
             result[k]=t.get(k)
+        if origem=='real':result.pop('repeticao_sintetica',None)
         result['causa_tecnica']=t.get('causa');result['resposta_sha256']=t.get('resposta_sha256')
         if avaliacao_anterior:
             prevraw=ler(avaliacao_anterior,tracked);prev=json_estrito(prevraw)
             if not isinstance(prev,dict):raise ValueError('avaliacao anterior deve ser objeto')
-            if any(prev.get(k)!=result.get(k) for k in ('observacao_id','tentativa_id','payload_sha256','resposta_sha256')):
+            if any(prev.get(k)!=result.get(k) for k in ('origem','fase','observacao_id','tentativa_id','payload_sha256','resposta_sha256')):
                 raise ValueError('reavaliacao anterior de outra tentativa/resposta')
             salvar(out/'avaliacao-anterior.json',prevraw,tracked);result['avaliacao_anterior']=prev['avaliacao_id']
         else:result['avaliacao_anterior']=None
@@ -262,6 +299,8 @@ def _versao(record):
     p=record['politica'];r=record['referencia']
     signature=(p['versao'],p['sha256'],r['versao'],r['sha256'])
     if any(not texto(s) for s in signature):raise ValueError('versao/hash ausente')
+    if record.get('origem')=='real':
+        signature += (sha(serial(record['configuracao'])),sha(serial(record['versoes'])),record['payload_sha256'])
     return signature
 
 def _celula(key):return {'configuracao_id':key[0],'mudanca':key[1],'condicao':key[2]}
@@ -269,7 +308,7 @@ def _celula(key):return {'configuracao_id':key[0],'mudanca':key[1],'condicao':ke
 def jaccard(regs,dim):
     pairs=[]
     for x,y in combinations(regs,2):
-        if x['repeticao_sintetica']==y['repeticao_sintetica']:raise ValueError('repeticao duplicada nao adjudicada')
+        if repeticao(x)==repeticao(y):raise ValueError('repeticao duplicada nao adjudicada')
         s=set(x[dim]['S']);t=set(y[dim]['S']);u=s|t
         pairs.append({'observacoes':[x['observacao_id'],y['observacao_id']],
           'intersecao':len(s&t),'uniao':len(u),'valor':numero(Fraction(len(s&t),len(u)) if u else 1)})
@@ -312,9 +351,12 @@ def _grupo(regs,plans,imputar):
         group['imputacoes']=[{'observacao_id':r['observacao_id'],'P_RF_T':0,'R_RF_T':0,'F1_RF_T':0,'origem':'imputacao_nao_observacao'} for r in invalid]
     return group,1 if i or t or len(finals)<n else 0
 
-def resumir_registros(avaliacoes,planejadas,imputar=False):
-    result={'origem':'sintetica','politica':POLITICA,'completo':True,'celulas':[]}
+def resumir_registros(avaliacoes,planejadas,imputar=False,origem='sintetica',fase=None):
+    result={'origem':origem,'fase':fase,'politica':POLITICA,'completo':True,'celulas':[]}
     if not isinstance(avaliacoes,list) or not isinstance(planejadas,list):raise ValueError('listas explicitas requeridas')
+    for r in avaliacoes:validar_origem(r,origem,fase)
+    if origem=='real':
+        for r in planejadas:validar_origem(r,origem,fase)
     cells={};global_obs={};global_attempt={};bad_cells=set()
     for kind,entries in [('plans',planejadas),('regs',avaliacoes)]:
         for r in entries:
@@ -338,8 +380,9 @@ def resumir_registros(avaliacoes,planejadas,imputar=False):
             if len(set(planids))!=len(planids) or len(set(plankeys))!=len(plankeys):raise ValueError('observacao planejada duplicada')
             observed={}
             for r in regs:
-                if (r.get('origem')!='sintetica' or r.get('modelo_reportado') is not None or r.get('completo') is not True):
-                    raise ValueError('registro nao sintetico ou incompleto')
+                if r.get('completo') is not True:raise ValueError('registro incompleto')
+                if origem=='real' and (r.get('conformidade_protocolo')!='conforme' or r.get('desvios')):
+                    raise ValueError('resposta real com desvio/revisao pendente; resumo controlado bloqueado')
                 if r['observacao_id'] not in planids:raise ValueError('observacao nao planejada')
                 plan=plans[planids.index(r['observacao_id'])]
                 if identidade(plan)!=identidade(r) or plan.get('payload_sha256')!=r.get('payload_sha256'):raise ValueError('identidade/payload divergente')
@@ -362,9 +405,9 @@ def resumir_registros(avaliacoes,planejadas,imputar=False):
     result['completo']=code!=2
     return result,code
 
-def resumir(avaliacoes,observacoes,saida,imputar=False):
+def resumir(avaliacoes,observacoes,saida,imputar=False,origem='sintetica',fase=None):
     out=nova_saida(saida,[Path(avaliacoes),Path(observacoes)]);tracked=[]
-    result={'completo':False,'origem':'sintetica','celulas':[]};code=2
+    result={'completo':False,'origem':origem,'fase':fase,'celulas':[]};code=2
     try:
         path=caminho_seguro(avaliacoes)
         lraw=ler(path,tracked);praw=ler(observacoes,tracked)
@@ -377,7 +420,7 @@ def resumir(avaliacoes,observacoes,saida,imputar=False):
             salvar(out/f'avaliacoes/{i:04}.json',data,tracked)
             if sha(data)!=entry.get('sha256'):raise ValueError('hash de avaliacao divergente')
             regs.append(json_estrito(data))
-        result,code=resumir_registros(regs,plans,imputar)
+        result,code=resumir_registros(regs,plans,imputar,origem,fase)
         result.update(resumo_id=uuid.uuid4().hex,instante_utc=datetime.now(timezone.utc).isoformat(),avaliador_sha256=sha(Path(__file__).read_bytes()))
     except (OSError,ValueError,TypeError,KeyError) as e:
         result.update(completo=False,causa=str(e));code=2
@@ -391,10 +434,17 @@ def main(argv=None):
     su=commands.add_parser('resumir')
     for k in ('avaliacoes','observacoes','saida'):su.add_argument('--'+k,required=True)
     su.add_argument('--imputar-invalidas',action='store_true')
+    for command in (ev,su):
+        command.add_argument('--origem',choices=('sintetica','real'),default='sintetica')
+        command.add_argument('--fase',choices=('verificacao_sintetica','exploratoria','piloto','principal'))
     args=parser.parse_args(argv)
+    if args.origem=='real' and args.fase not in ('exploratoria','piloto','principal'):
+        parser.error('--origem real exige --fase exploratoria/piloto/principal')
+    if args.origem=='sintetica' and args.fase not in (None,'verificacao_sintetica'):
+        parser.error('origem sintetica exige fase verificacao_sintetica ou omitida')
     try:
-        if args.comando=='avaliar':r,code=avaliar(args.preparacao,args.tentativa,args.referencia,args.saida,args.avaliacao_anterior)
-        else:r,code=resumir(args.avaliacoes,args.observacoes,args.saida,args.imputar_invalidas)
+        if args.comando=='avaliar':r,code=avaliar(args.preparacao,args.tentativa,args.referencia,args.saida,args.avaliacao_anterior,args.origem,args.fase)
+        else:r,code=resumir(args.avaliacoes,args.observacoes,args.saida,args.imputar_invalidas,args.origem,args.fase)
         print(json.dumps({'retorno':code,'completo':r['completo']}));return code
     except (OSError,ValueError) as e:print(str(e),file=sys.stderr);return 2
 

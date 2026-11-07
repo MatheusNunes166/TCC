@@ -85,12 +85,13 @@ PROIBIDO_GABARITO
 
     def test_S14_exportacao_autorizacao_e_texto_exato(self):
         output=self.root/'editorial'
-        records=f.exportar(self.repo,output)
+        records=f.exportar(self.repo,output,configuracao_id='controle-configuracao-explicita')
         self.assertEqual(len(records),16)
         prepared=[]
         for r in records:
             p=output/r['pacote'];auth=output/r['autorizacao']
             result=m.preparar(p,p/'manifesto.json',self.root/'preparados'/r['id'],auth)
+            self.assertEqual(result['configuracao_id'],'controle-configuracao-explicita')
             delivery=json.loads((self.root/'preparados'/r['id']/'entrega-textual.json').read_bytes())
             data=(self.root/'preparados'/r['id']/'payload.txt').read_bytes()
             self.checar('S-14','entrega-'+r['id'],[delivery['ferramentas'],delivery['envio_realizado'],delivery['payload_sha256']],[[],False,hashlib.sha256(data).hexdigest()])

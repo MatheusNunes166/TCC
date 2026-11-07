@@ -1,14 +1,10 @@
-> Escopo vigente — 01/11/2026, D-29: o LLM recebe somente pacote textual autorizado, sem ferramentas ou acesso a repositório/código/comandos/gabarito/variantes/histórico. Avaliam-se IDs de requisitos impactados e testes existentes, sem participantes juniores, novos testes ou descoberta de defeitos reais. Notas representam conhecimento de analista de testes; texto atual preservado, conteúdo definitivo e revisão profissional pendentes. Preparação verificável e entrega sem acesso adicional substituem a exigência de identidade restrita do Windows; provas antigas não executadas não foram aprovadas. Sem contas/permissões novas, modelo escolhido, chamadas externas ou piloto. Entrega real ao modelo ainda não exercitada; revisão científica permanece pendente.
-
-> Estado vigente — 21/10/2026 (D-20/D-21): Spec 003 implementada e verificada; 35/35 tarefas concluídas com evidências. Quatro variantes independentes de B `aec474bcb54d6dae2afceff8e5b9226991386490`, uma edição por fonte, diffs/AST e revisão registrados. Python 3.13.3: suíte original 18 métodos OK, baseline 12/12 pares e variantes 48/48 conformes por decisão/motivo, zero divergências/erros/lacunas; 17 métodos sintéticos separados da bancada. Baseline, testes, materiais, referência candidata 0.2 e seleções 2/4/8/5 preservados. Evidências e diagnóstico do mecanismo: `specs/003-mudancas-controladas/evidencias.md` (desde a raiz). P-01/P-02/P-03, revisão das expectativas T12 e adoção constitucional pendentes; T12 já adotado/verificado em B. Revisão profissional, possíveis novos modelos e métricas aguardam transcrição da orientação e decisão explícita. Sem piloto, coleta ou LLM. Próxima ação: revisão humana das evidências e da referência candidata, seguida de detalhamento da orientação; nenhuma etapa experimental liberada. Registros anteriores abaixo são históricos.
-
 # Qualidade e testes da bancada
 
-> Estado vigente — 19/10/2026 (D-15/D-16): T12 adotado pelo pesquisador e verificado na versão inicial como negar/conflito. Python 3.13.3: teste isolado OK; suíte integrada com 18 métodos OK, T01–T12 12/12 e controles anteriores preservados. Catálogo: 12 testes; referência candidata: 48 pares teste × mudança, 60 expectativas incluindo a versão inicial; seleções 2/4/8/5. Variantes não implementadas nem executadas; sem piloto ou LLM experimental. A adoção é autorização do pesquisador, sem aprovação científica atribuída ao orientador. Revisão científica e adoção formal da constituição continuam pendentes. Evidências: `documentacao/evidencias-t12.md` (caminho desde a raiz).
+Estado, capacidades e pendências: [ponto de entrada](../ESTADO_ATUAL.md). Registros datados anteriores preservados em [histórico](historico/pre-piloto-2026-11-06/LEIA_PRIMEIRO.md).
 
 ## Estratégia de verificação
 
-Revisar primeiro regras, precedência, entradas e expectativas com o revisor a combinar. Futuramente, verificar cada capacidade pequena, registrar evidências reais e reconciliar resultados com o contrato antes de avançar. Divergência entre implementação e expectativa exige análise das regras; nenhuma das duas deve ser promovida automaticamente a verdade.
+O pesquisador registra sua revisão de regras, precedência, entradas e expectativas com alcance explícito; sem revisor externo nesta etapa (D-35). Usar as evidências existentes de baseline/variantes e verificar somente capacidades afetadas pelas alterações. Divergência entre implementação e expectativa exige análise das regras; nenhuma das duas deve ser promovida automaticamente a verdade.
 
 Verificar decisão e motivo. A suíte completa só é exigida após herança e incompatibilidade; o primeiro incremento verifica o subconjunto compatível com sua capacidade. A suíte é pequena e não promete cobertura total de RBAC. Os vínculos abaixo indicam comportamentos exercitados, sem substituir a política de impacto experimental.
 
@@ -37,7 +33,7 @@ Antes da coleta, verificar parser e pontuação com exemplos sintéticos de sele
 
 **Redução nominal só pode ser interpretada favoravelmente em resposta válida, com seleção completa dos testes relevantes (revocação de testes = 1) e sem IDs inexistentes.** Não implica economia real de tempo ou detecção de defeitos. Omissões e revocação têm prioridade de apresentação.
 
-Documentação preparada não libera o piloto: ainda são necessárias baseline/variantes verificadas, referência e notas revisadas, coleta rastreável, isolamento demonstrado e avaliador conferido. Critérios completos em [piloto/coleta](../materiais/05_PILOTO_E_COLETA.md); sequência em [roadmap.md](roadmap.md).
+Documentação preparada não libera o piloto: ainda são necessárias baseline/variantes verificadas, referência e notas revisadas, coleta rastreável, fronteira textual e ausência de ferramentas/acesso adicional verificadas e avaliador conferido. Critérios completos em [piloto/coleta](../materiais/05_PILOTO_E_COLETA.md); sequência em [roadmap.md](roadmap.md).
 
 
 ## Adoção de T12 — P-04/D-15
@@ -46,4 +42,4 @@ T12 foi adotado pelo pesquisador em 19/10/2026 e executado na versão inicial, c
 
 Expectativas candidatas: MC-01 negar/conflito, preservação selecionada; MC-02 permitir/permissao_direta, mudança selecionada; MC-03 negar/conflito, excluído por operação; MC-04-v2 permitir/permissao_direta, mudança selecionada. MC-04 nesta etapa designa MC-04-v2 (retirada de herança), preservando o ID do JSON.
 
-São 12 testes, 48 pares teste × mudança e 60 expectativas incluindo a versão inicial; seleções 2/4/8/5. Conjuntos, justificativas e matriz em [referência candidata](referencia-candidata-proxima-etapa.md) e [material 02](../materiais/02_REQUISITOS_TESTES_E_REFERENCIA.md). Versão anterior preservada em [histórico pré-T12](historico/pre-t12-2026-10-19/LEIA_PRIMEIRO.md). Variantes não implementadas nem executadas.
+São 12 testes, 48 pares teste × mudança e 60 expectativas incluindo a versão inicial; seleções 2/4/8/5. Conjuntos, justificativas e matriz em [referência candidata](referencia-candidata-proxima-etapa.md) e [material 02](../materiais/02_REQUISITOS_TESTES_E_REFERENCIA.md). Versão anterior preservada em [histórico pré-T12](historico/pre-t12-2026-10-19/LEIA_PRIMEIRO.md). Variantes implementadas e verificadas em D-20/D-21; ver evidências da Spec 003. Nenhuma nova rodada foi necessária nesta preparação.

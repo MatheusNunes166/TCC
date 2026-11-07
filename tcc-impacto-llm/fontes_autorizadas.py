@@ -79,7 +79,8 @@ def gravar(path,value):
     with path.open('x',encoding='utf-8',newline='\n') as f:
         json.dump(value,f,ensure_ascii=True,sort_keys=True,indent=2);f.write('\n')
 
-def exportar(raiz,saida):
+def exportar(raiz,saida,configuracao_id='preparacao-D35-configuracao-piloto-pendente'):
+    if not isinstance(configuracao_id,str) or not configuracao_id.strip():raise ValueError('configuracao_id vazio')
     root=sem_links(raiz);out=sem_links(saida)
     if out==root or root.is_relative_to(out):raise ValueError('saida sobreposta as fontes')
     if out.exists():raise ValueError('saida existente')
@@ -95,21 +96,24 @@ def exportar(raiz,saida):
             entries=[]
             for name in names:
                 blob=docs[name];(folder/name).write_bytes(blob)
-                entries.append({'papel':name.split('.')[0],'arquivo':name,'versao':'recorte-D29-2026-11-01',
+                entries.append({'papel':name.split('.')[0],'arquivo':name,'versao':'recorte-D35-2026-11-06',
                   'sha256':sha(blob),'tamanho_bytes':len(blob),'revisao_conteudo':{
-                    'estado':'conferido_tecnicamente','responsavel':'assistente; recorte editorial autorizado D29',
-                    'data':'2026-11-01','alcance':'rastreabilidade do recorte; revisao profissional/cientifica pendente'}})
-            manifest={'versao_contrato':CONTRATO,'pacote_id':ident,'versao_pacote':'D29-2026-11-01',
-              'configuracao_id':'texto-autorizado-D29','mudanca':change,'condicao':cond,
+                    'estado':'conferido_tecnicamente','responsavel':'assistente de IA; recorte editorial autorizado D35',
+                    'data':'2026-11-06','alcance':'rastreabilidade tecnica; novo texto para conferencia do pesquisador, sem revisor externo'}})
+            manifest={'versao_contrato':CONTRATO,'pacote_id':ident,'versao_pacote':'D35-2026-11-06',
+              'configuracao_id':configuracao_id,'mudanca':change,'condicao':cond,
               'status':'RASCUNHO_PREPARACAO','liberado_para_pesquisa':False,'documentos':entries,
               'status_notas':'RASCUNHO_NAO_REVISADO' if cond in ('D1','E1') else 'ausentes',
-              'origem_notas':'pesquisador, representa conhecimento de analista; revisao profissional pendente' if cond in ('D1','E1') else 'ausentes'}
+              'origem_notas':'simuladas por Matheus Henrique Braun Nunes com apoio de IA; inspiradas em heuristicas de analista experiente; sem coleta de especialistas' if cond in ('D1','E1') else 'ausentes',
+              'versao_notas':'0.2-local' if cond in ('D1','E1') else None,
+              'data_notas':'2026-11-06' if cond in ('D1','E1') else None,
+              'revisao_notas':'novo texto para conferencia do pesquisador; sem revisao externa nesta etapa' if cond in ('D1','E1') else None}
             gravar(folder/'manifesto.json',manifest)
             auth=out/'autorizacoes'/(ident+'.json')
             gravar(auth,{'versao':'autorizacao-textual-v1','status':'CONFERIDO_TECNICAMENTE_RASCUNHO',
               'manifesto_sha256':sha((folder/'manifesto.json').read_bytes()),
               'documentos':[{'arquivo':e['arquivo'],'sha256':e['sha256']} for e in entries],
-              'fontes':provenance,'receita':'recortes-D29-v1','revisao_cientifica':'pendente',
+              'fontes':provenance,'receita':'recortes-D35-v1','revisao_cientifica':'sem aprovacao externa; conferir alcance em D35',
               'regras_de_recorte':'sistema/pedido/nota: blocos literais; requisitos: contrato inicial; catalogo: seis primeiras colunas da baseline; mudanca: somente descricao; definicoes/schema integrais'})
             records.append({'id':ident,'pacote':folder.relative_to(out).as_posix(),'autorizacao':auth.relative_to(out).as_posix()})
     gravar(out/'indice.json',{'contrato':CONTRATO,'origem':'preparacao_local_nao_enviada','pacotes':records,
@@ -118,8 +122,9 @@ def exportar(raiz,saida):
 
 def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--raiz',required=True);p.add_argument('--saida',required=True)
+    p.add_argument('--configuracao-id',default='preparacao-D35-configuracao-piloto-pendente')
     args=p.parse_args(argv)
-    try:records=exportar(args.raiz,args.saida);print(json.dumps({'pacotes':len(records),'envio_realizado':False}));return 0
+    try:records=exportar(args.raiz,args.saida,args.configuracao_id);print(json.dumps({'pacotes':len(records),'envio_realizado':False}));return 0
     except (OSError,ValueError) as exc:print(str(exc),file=sys.stderr);return 2
 
 if __name__=='__main__':raise SystemExit(main())

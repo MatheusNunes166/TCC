@@ -1,0 +1,148 @@
+{
+  "head": "310c9f28f4267bc6e052f6b93910400cd0e31bc2",
+  "git_diff_check": 0,
+  "arquivos_fontes_alterados_ou_criados": [
+    {
+      "arquivo": ".gitignore",
+      "sha256": "cb5e2cbd4f99ec61505dfbf8720882b189f46ade214e127e5d3a7c1ee7191553"
+    },
+    {
+      "arquivo": "AGENTS.md",
+      "sha256": "b4a913949079fc9dc1febb11cdc61afd3a35c31b78902adee0fc4f1a89ad798a"
+    },
+    {
+      "arquivo": "BLOQUEIOS.md",
+      "sha256": "4fee57fa78df5b631d4700a9b8a9e0cfcf8588804466909dee559f7b8de1661a"
+    },
+    {
+      "arquivo": "ESTADO_ATUAL.md",
+      "sha256": "9cad089581afb4786484b7007975055b61bf69c09ee73d3a414ed44a8885e9ea"
+    },
+    {
+      "arquivo": "HANDOFF.md",
+      "sha256": "1b3c15cd1480ede4c448df16cf94d364d12eb698193416b85b488f0e3549b9a7"
+    },
+    {
+      "arquivo": "avaliacao_ids.py",
+      "sha256": "2e2cf99c21b0ea461d20b675350ea3329db1c93d8fff6aa271c32b7345985f14"
+    },
+    {
+      "arquivo": "documentacao/arquitetura.md",
+      "sha256": "92f56401d88b9aa8ee38185b0d44d89299df270154229d8fb850585d420aa3aa"
+    },
+    {
+      "arquivo": "documentacao/contexto-e-escopo.md",
+      "sha256": "23f97be1770ee356c06d978bf3ae626a9ce66081eb04a76333587f2a03dfd2bc"
+    },
+    {
+      "arquivo": "documentacao/decisoes.md",
+      "sha256": "9215ab2d296203165919b56b4dfa5381653130310892e1e9b744f29ff849750b"
+    },
+    {
+      "arquivo": "documentacao/qualidade-e-testes.md",
+      "sha256": "da5479446bba732d07987b2be80072e0394dd727000d022e9535cf3e4ef6fd53"
+    },
+    {
+      "arquivo": "documentacao/referencia-candidata-proxima-etapa.md",
+      "sha256": "ac89a0986fb979d8c23f553b2c37ac184fe9a7b5433e363eebdd0e13d19de57c"
+    },
+    {
+      "arquivo": "documentacao/roadmap.md",
+      "sha256": "424c652f7df05c5fcc9e7843947a729f37fa97ea3fb12f411087a7b9e79d3c74"
+    },
+    {
+      "arquivo": "fontes_autorizadas.py",
+      "sha256": "65f0c5a134d874d9382330e880a9037d47c60ca7dd159a7729b43943ddd7fa3c"
+    },
+    {
+      "arquivo": "materiais/01_PROTOCOLO.md",
+      "sha256": "5c294519ecfdf67ab4e1a9e1059baaa143f054605cc66b3face4d7c5b968b533"
+    },
+    {
+      "arquivo": "materiais/02_REQUISITOS_TESTES_E_REFERENCIA.md",
+      "sha256": "8a6b2bfc715ca62e36115b8062cfb45bdd2573502c29c0e46d92bd56140afe69"
+    },
+    {
+      "arquivo": "materiais/04_NOTAS_E_PROMPTS.md",
+      "sha256": "fabb668cf6c7af5242f292fea33e25abcd6957056fd5a2de5b1b23e78e436aba"
+    },
+    {
+      "arquivo": "materiais/05_PILOTO_E_COLETA.md",
+      "sha256": "aa996beecd203d757a5e07246fe51c881140e24bfd207eec9bf3e66e310bf0b3"
+    },
+    {
+      "arquivo": "materiais/LEIA_PRIMEIRO.md",
+      "sha256": "a3186275a7fd5b5bf909dabef9bfea13302238e4ab6d897dfc97e47985c3230e"
+    },
+    {
+      "arquivo": "materiais/modelos/registro_execucao.json",
+      "sha256": "b743dc2cbfda79280b6b2d1aa7994a0250dacb8ed8b28e17a2ad5f7e3adce025"
+    },
+    {
+      "arquivo": "montagem_entradas.py",
+      "sha256": "c49b4cd192d2cba8e65ad87888b342483f8b2bd49dfb2e19f383b034f63e0c03"
+    },
+    {
+      "arquivo": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md",
+      "sha256": "0caa0e0e63f90523a6512bfc78d83324a28fef344eef52aa3ebf8e359e7505ed"
+    },
+    {
+      "arquivo": "specs/004-preparacao-avaliacao-ids/data-model.md",
+      "sha256": "a8cc37a39f9a91688da902289d6a6ae7599f8bef408a0070b7200bb8da3b2bd7"
+    },
+    {
+      "arquivo": "specs/004-preparacao-avaliacao-ids/plan.md",
+      "sha256": "4384c7d834866b2d02b7d6b126310b9b3cd9693904f1fe0fcc6a26361312b922"
+    },
+    {
+      "arquivo": "specs/004-preparacao-avaliacao-ids/quickstart.md",
+      "sha256": "c21f506367329956f12424430172191fc7ee7c22e80ea4acfd15cdb41d94a232"
+    },
+    {
+      "arquivo": "specs/004-preparacao-avaliacao-ids/spec.md",
+      "sha256": "72a2bea81575f65994ff7ee7fa8c40db4afb212bf28add7be7f6d386ef96832e"
+    },
+    {
+      "arquivo": "materiais/modelos/ordenar_piloto.py",
+      "sha256": "a8b0e67e1bb3f9fd8d54b07670dbb67605c8ad18970f376930e16e23fd30ed1f"
+    },
+    {
+      "arquivo": "materiais/modelos/plano_piloto.json",
+      "sha256": "e7a0c31be3f580a3b61d9e6adbe06ed42e08384e98636e17adf49a91a9a83dea"
+    },
+    {
+      "arquivo": "tests/test_avaliacao_real.py",
+      "sha256": "283b961f60abd41259b263e5e5e8b00c38c978cdfb1cd2366d0732677bba40ed"
+    },
+    {
+      "arquivo": "evidencias/spec004/preparacao-piloto-2026-11-06/verificar_preparacao.py",
+      "sha256": "24598bd1408541de99d83374d7a785221b38eb32ad269376f520e44df8f0027f"
+    },
+    {
+      "arquivo": "tests/test_fontes_autorizadas.py",
+      "sha256": "67014962d6d2c82a736212657f7a637c1c07ec24e6d21e95b3406726dfeea7c7"
+    }
+  ],
+  "comparador_parser_e_formulas_AST_preservados": [
+    "comparar",
+    "avaliar_resposta",
+    "parse_resposta",
+    "numero",
+    "quociente",
+    "_grupo"
+  ],
+  "historicos_conferidos": 20,
+  "evidencias_anteriores_e_bancada_sem_diff": true,
+  "referencia_json_sha256": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80",
+  "caminho_pai_antes": "fluxo alternativo/alias nao suportado",
+  "caminho_pai_agora": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+  "fontes_dos_16_pacotes_coincidem_com_vigentes": true,
+  "blocos_comuns_entre_mudancas": {
+    "sistema.txt": "8b0f88ccf7681e1e6adcd8787a40933f9680819b48f8ee13989752935bf4531b",
+    "definicoes-comuns.md": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e",
+    "requisitos-baseline.md": "6167072a77a6018717afea1bc51681113a7bb02e55e0966c3d8f74dc4a3c3478",
+    "catalogo-baseline.md": "b7261fd6b24a0eca7f1e4abcb4a8ffcbf092e071931be6c4f086646d82242c76",
+    "schema_saida.json": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+  },
+  "hash_unico_notas": "458c465868d8359acdf40a4b5389252086e32fd6a23d59b3335f54c16569d63d"
+}

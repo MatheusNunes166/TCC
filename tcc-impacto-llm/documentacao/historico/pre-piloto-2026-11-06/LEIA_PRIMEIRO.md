@@ -1,0 +1,2 @@
+# Histórico anterior à consolidação do piloto
+Cópias literais dos documentos e modelos relacionados no manifesto antes de D-35, em 06/11/2026. Os caminhos de origem e hashes constam em [manifesto.json](manifesto.json); links internos nas cópias mantêm os caminhos de origem e podem depender da raiz original. Não são instruções vigentes. Nenhum parecer foi preenchido retrospectivamente. Estado e navegação atuais: [ESTADO_ATUAL.md](../../../ESTADO_ATUAL.md).

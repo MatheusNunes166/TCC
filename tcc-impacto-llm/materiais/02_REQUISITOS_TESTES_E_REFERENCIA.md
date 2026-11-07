@@ -1,6 +1,6 @@
 # 2. Baseline e referência candidata
 
-**Situação:** proposta para revisão; não é gabarito aprovado. Expectativas derivadas dos requisitos. A versão inicial T01–T12 foi conferida em execução local; as 48 expectativas das variantes não foram executadas. Isso não valida cientificamente a referência. Atualização 0.2 autorizada pelo pesquisador em D-15, em 19/10/2026; histórico 0.1 preservado em `../documentacao/historico/pre-t12-2026-10-19/`.
+**Situação:** proposta para revisão; não é gabarito aprovado. Expectativas derivadas dos requisitos. A versão inicial T01–T12 foi conferida em execução local; as 48 expectativas das variantes foram conferidas por decisão/motivo em D-20/D-21, sem nova execução nesta etapa. Isso não valida cientificamente a referência. Atualização 0.2 autorizada pelo pesquisador em D-15, em 19/10/2026; histórico 0.1 preservado em `../documentacao/historico/pre-t12-2026-10-19/`.
 
 ## 2.1 Contrato da bancada
 
@@ -48,7 +48,7 @@ A regra é operacionalizada por tipo de alteração:
 
 Esta política e essas três regras entram no contexto de TODAS as condições, sem exemplos resolvidos e sem IDs corretos. O gabarito apenas aplica a política. Assim, o modelo conhece o critério de relevância, mas precisa identificar os casos e os impactos.
 
-A política é conservadora e específica da bancada. Ela incorpora testes de preservação sem escolher controles arbitrários depois de observar respostas. Não é uma seleção mínima, uma garantia de detectar todos os defeitos ou uma definição universal de regressão. Antes do piloto, verificar se o orientador considera esse alvo compatível com o objetivo do TCC.
+A política é conservadora e específica da bancada. Ela incorpora testes de preservação sem escolher controles arbitrários depois de observar respostas. Não é uma seleção mínima, uma garantia de detectar todos os defeitos ou uma definição universal de regressão. Antes do piloto, o pesquisador deve registrar a conferência de compatibilidade desse alvo com o objetivo do TCC, sem atribuir aprovação ao orientador ou exigir revisor externo nesta etapa (D-35).
 
 ## 2.4 Mudanças independentes e conjuntos candidatos
 
@@ -107,7 +107,7 @@ T07 evidencia por que verificar só “permitir/negar” é insuficiente para MC
 
 ## 2.5 Revisão e limitações da referência
 
-Revisor e data: **a combinar**. Conferir: precedência; valores intermediários que justificam cada RF; os doze casos nas quatro variantes; inclusões/exclusões pela política; notas sem respostas; ausência de dependência de um resultado do LLM. Registrar cada divergência e resolvê-la antes do piloto.
+Revisão própria declarada: **pesquisador, 06/11/2026, D-35**. Sem revisor externo nesta etapa. Alcance geral declarado; não atesta revisão individual de cada expectativa, inclusão ou exclusão. Os campos de aprovação do JSON candidato permanecem nulos. Conferir: precedência; valores intermediários que justificam cada RF; os doze casos nas quatro variantes; inclusões/exclusões pela política; notas sem respostas; ausência de dependência de um resultado do LLM. Registrar cada divergência e resolvê-la antes do piloto.
 
 A suíte pequena não pretende cobrir todo RBAC. O número de testes relevantes difere (2, 4, 8 e 5), e a seleção de MC-03 pode ser mais óbvia ou extensa. Essas diferenças limitam comparações entre tipos de mudança; não invalidam a comparação entre condições aplicada à mesma mudança. Se houver efeito de teto, relatar e discutir com o orientador antes de ampliar a bancada.
 

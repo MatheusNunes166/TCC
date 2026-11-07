@@ -1,2 +1,5 @@
 __pycache__/
 *.py[cod]
+
+# Somente futuras saídas locais regeneráveis; evidências versionadas preservadas.
+/saidas-locais/

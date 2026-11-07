@@ -1,0 +1,86 @@
+{
+  "head_inicial": "310c9f28f4267bc6e052f6b93910400cd0e31bc2",
+  "git_status_inicial": "limpo",
+  "arquivos": [
+    {
+      "arquivo": "AGENTS.md",
+      "sha256": "27bccb292a916de303fdc300dac8f396642018fa7ea335fa427faca06276d859"
+    },
+    {
+      "arquivo": "BLOQUEIOS.md",
+      "sha256": "5690064c9cc89c658563b6b3c48dd878da462e0604d9e9037344d420da9b9401"
+    },
+    {
+      "arquivo": "documentacao/arquitetura.md",
+      "sha256": "3cc75f8a5daa21a0441b4167fb4103e34e3ecbc980f81842f48e38f9c255975f"
+    },
+    {
+      "arquivo": "documentacao/contexto-e-escopo.md",
+      "sha256": "093eb6880ecee12166cc021c7852eb703e068e0fb607c6d7e6aed4571ad58324"
+    },
+    {
+      "arquivo": "documentacao/qualidade-e-testes.md",
+      "sha256": "68079106fb4f0adc34ae27837810b80e8c963c11fcfa6275a913df0deca59682"
+    },
+    {
+      "arquivo": "documentacao/referencia-candidata-proxima-etapa.md",
+      "sha256": "ee357f3bb9d10f84e6245df3f4f38c1a56d7a37b307ea6e882486f4b66ee4a5b"
+    },
+    {
+      "arquivo": "documentacao/roadmap.md",
+      "sha256": "911efcb230ba714426adb3ad787623330f314db31ff4696bb6139468e45934e9"
+    },
+    {
+      "arquivo": "ESTADO_ATUAL.md",
+      "sha256": "e7543c6fba2c4967630d61bf8e160e759688b6299aa2489d16fc9fa46e7b14b8"
+    },
+    {
+      "arquivo": "HANDOFF.md",
+      "sha256": "9e9f5e41f607689162978d5f49700d250de89434c61830d76759e7952a1a1cce"
+    },
+    {
+      "arquivo": "materiais/01_PROTOCOLO.md",
+      "sha256": "bcc92a8a3b9430db6d033e9d27409579981b2547eaa9af2e17e499aba8a364a2"
+    },
+    {
+      "arquivo": "materiais/02_REQUISITOS_TESTES_E_REFERENCIA.md",
+      "sha256": "4134ad6bc64f251b6542ab6885ad682231282f63d5c44bca7b942ac5bfc1c7c8"
+    },
+    {
+      "arquivo": "materiais/04_NOTAS_E_PROMPTS.md",
+      "sha256": "2c0b651fb0e7b95358e2c466a18d0116c4342a477c3cacace7d68468de0d8021"
+    },
+    {
+      "arquivo": "materiais/05_PILOTO_E_COLETA.md",
+      "sha256": "b21d4f77f44a22003f0338b19e4bbd7e894f5517774caad2eeba500aafc009d7"
+    },
+    {
+      "arquivo": "materiais/LEIA_PRIMEIRO.md",
+      "sha256": "80f71ee280674325330145f36647007e0f08cb475a9500888a69076005debd3a"
+    },
+    {
+      "arquivo": "materiais/modelos/registro_execucao.json",
+      "sha256": "f84b4fbf53663368c97a6556881475f4608f2592b84a1debe56d5a3bab0b9a7f"
+    },
+    {
+      "arquivo": "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md",
+      "sha256": "5050cb298f6aacd4a57d5a7d26653f44336981bd27f752f69e13ddfe282448aa"
+    },
+    {
+      "arquivo": "specs/004-preparacao-avaliacao-ids/data-model.md",
+      "sha256": "3083be5d3bc153fee6bcb420ef9648ca8b744934a86264001e696057d6e20f65"
+    },
+    {
+      "arquivo": "specs/004-preparacao-avaliacao-ids/plan.md",
+      "sha256": "a0b57f25d482cdb211454b851a45162f27ffac8a4115c43843f11bc462413069"
+    },
+    {
+      "arquivo": "specs/004-preparacao-avaliacao-ids/quickstart.md",
+      "sha256": "2bf73fef41bf6cb60b062ecc0a9b4abbd35533c2cb17c492e22593334bc67573"
+    },
+    {
+      "arquivo": "specs/004-preparacao-avaliacao-ids/spec.md",
+      "sha256": "88b0b4e97ac4fcc6cfad9ba9d7a9a34d25e3bec0f7e698afde65675345044c01"
+    }
+  ]
+}

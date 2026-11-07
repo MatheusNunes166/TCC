@@ -1,0 +1,71 @@
+[
+  {
+    "comando": [
+      "C:\\Program Files\\Python313\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_avaliacao*.py",
+      "-v"
+    ],
+    "retorno": 0,
+    "stdout": "avaliacao-stdout.txt",
+    "stderr": "avaliacao-stderr.txt"
+  },
+  {
+    "comando": [
+      "C:\\Program Files\\Python313\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_fontes_autorizadas.py",
+      "-v"
+    ],
+    "retorno": 0,
+    "stdout": "fontes-stdout.txt",
+    "stderr": "fontes-stderr.txt"
+  },
+  {
+    "comando": [
+      "C:\\Program Files\\Python313\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_montagem_entradas.py",
+      "-v"
+    ],
+    "retorno": 0,
+    "stdout": "montagem-stdout.txt",
+    "stderr": "montagem-stderr.txt"
+  },
+  {
+    "comando": [
+      "C:\\Program Files\\Python313\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_fontes_autorizadas.py",
+      "-v"
+    ],
+    "retorno": 0,
+    "motivo": "nova opcao configuracao_id explicita; demais suites sem novas alteracoes",
+    "stdout": "fontes-configuracao-stdout.txt",
+    "stderr": "fontes-configuracao-stderr.txt"
+  }
+]

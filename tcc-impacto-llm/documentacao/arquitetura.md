@@ -1,31 +1,16 @@
-> Escopo vigente — 01/11/2026, D-29: o LLM recebe somente pacote textual autorizado, sem ferramentas ou acesso a repositório/código/comandos/gabarito/variantes/histórico. Avaliam-se IDs de requisitos impactados e testes existentes, sem participantes juniores, novos testes ou descoberta de defeitos reais. Notas representam conhecimento de analista de testes; texto atual preservado, conteúdo definitivo e revisão profissional pendentes. Preparação verificável e entrega sem acesso adicional substituem a exigência de identidade restrita do Windows; provas antigas não executadas não foram aprovadas. Sem contas/permissões novas, modelo escolhido, chamadas externas ou piloto. Entrega real ao modelo ainda não exercitada; revisão científica permanece pendente.
+# Arquitetura mínima proposta
 
-> Estado vigente — 21/10/2026 (D-20/D-21): Spec 003 implementada e verificada; 35/35 tarefas concluídas com evidências. Quatro variantes independentes de B `aec474bcb54d6dae2afceff8e5b9226991386490`, uma edição por fonte, diffs/AST e revisão registrados. Python 3.13.3: suíte original 18 métodos OK, baseline 12/12 pares e variantes 48/48 conformes por decisão/motivo, zero divergências/erros/lacunas; 17 métodos sintéticos separados da bancada. Baseline, testes, materiais, referência candidata 0.2 e seleções 2/4/8/5 preservados. Evidências e diagnóstico do mecanismo: `specs/003-mudancas-controladas/evidencias.md` (desde a raiz). P-01/P-02/P-03, revisão das expectativas T12 e adoção constitucional pendentes; T12 já adotado/verificado em B. Revisão profissional, possíveis novos modelos e métricas aguardam transcrição da orientação e decisão explícita. Sem piloto, coleta ou LLM. Próxima ação: revisão humana das evidências e da referência candidata, seguida de detalhamento da orientação; nenhuma etapa experimental liberada. Registros anteriores abaixo são históricos.
-
-> Estado vigente — 19/10/2026 (D-15/D-16): T12 adotado pelo pesquisador e verificado na versão inicial como negar/conflito. Python 3.13.3: teste isolado OK; suíte integrada com 18 métodos OK, T01–T12 12/12 e controles anteriores preservados. Catálogo: 12 testes; referência candidata: 48 pares teste × mudança, 60 expectativas incluindo a versão inicial; seleções 2/4/8/5. Variantes não implementadas nem executadas; sem piloto ou LLM experimental. A adoção é autorização do pesquisador, sem aprovação científica atribuída ao orientador. Revisão científica e adoção formal da constituição continuam pendentes. Evidências: `documentacao/evidencias-t12.md` (caminho desde a raiz).
-
-## Estado anterior preservado — 18/10/2026
-
-> Estado histórico — 18/10/2026 (D-13/D-14): Spec 002 implementada com Python 3.13.3 + unittest. RF-01–RF-04 integrados; 17 métodos aprovados, T01–T11 11/11 em decisão/motivo e 55 subtestes auxiliares conformes, zero falhas/erros/ignorados. Três estados, oito subconjuntos e duas operações no domínio válido; verificação dirigida, sem matriz que inclua T12. Evidências em `specs/002-heranca-incompatibilidade/quickstart.md` (caminho desde a raiz). T12 somente proposta; catálogo 11/44 e gabarito preservados. Sem variantes, piloto ou LLM experimental. Adoção constitucional e pendências científicas permanecem abertas. Trechos datados anteriores abaixo são históricos e não descrevem a capacidade atual.
-
-﻿# Arquitetura mínima proposta
-
-> Atualização vigente — 16/10/2026: RF-01/RF-02 implementados e verificados com Python 3.13.3 + unittest, sem terceiros. Sete casos de aceitação conformes, três concessões próprias, 32 combinações de estado e controle Auditoria/visualizar; 10 métodos, zero falhas/erros/ignorados. Evidências em `specs/001-autorizacao-direta/evidencias.md` (caminho desde a raiz). D-09/D-10 registram recorte aceito e autorização. Domínio ativo parcial somente Consulta ou Auditoria isoladamente; RF-03/RF-04 permanecem futuros. Afirmações de ausência de autorização/implementação nos registros de 14/10 abaixo são históricas, superadas somente nesse alcance. Constituição não formalmente adotada; referência, notas, prompts, métricas e piloto pendentes. Nenhum piloto ou LLM experimental executado.
-
-
-Estado: desenho documental; componentes e tecnologias não implementados. Limites em [contexto-e-escopo.md](contexto-e-escopo.md), contrato em [requisitos.md](requisitos.md).
-
-Implementado: núcleo local em autorizacao.py e suíte em tests/test_autorizacao.py, sem terceiros. obter_papeis_efetivos expande Supervisão→Consulta; ha_incompatibilidade verifica Consulta+Auditoria efetivos. Consulta direta preservada. Demais componentes experimentais abaixo permanecem propostos.
+Estado, capacidades e pendências: [ponto de entrada](../ESTADO_ATUAL.md). Registros datados anteriores preservados em [histórico](historico/pre-piloto-2026-11-06/LEIA_PRIMEIRO.md).
 
 ## Componentes e responsabilidades
 
-| Componente futuro | Responsabilidade |
+| Componente | Responsabilidade |
 |---|---|
 | Política e núcleo de autorização local | Representar a baseline e produzir decisão/motivo para uma entrada, sem serviços externos. |
 | Testes da bancada | Conferir os doze casos, precedência e variantes isoladas contra expectativas humanas revisadas. |
 | Preparação de variantes | Aplicar uma mudança por vez à mesma baseline, preservando a versão inicial. |
 | Montador de payload | Exportar somente blocos permitidos: definições, regras, catálogo da baseline, uma mudança, pedido e notas quando previstas. |
-| Cliente e registrador da coleta | Fazer chamadas independentes e preservar payload, resposta/erro, configuração, versões e ordem. |
+| Procedimento de coleta a configurar (sem cliente de rede implementado) | Fazer chamadas independentes e preservar payload, resposta/erro, configuração, versões e ordem. |
 | Avaliador local | Ler registros e referência separada; validar formato, extrair conjuntos e calcular métricas de RF e testes separadamente. |
 
 Fluxo proposto: política → núcleo → testes; pacote permitido → montador → cliente LLM → registros; registros + referência separada → avaliador → tabelas.
@@ -39,7 +24,7 @@ Uma pasta privada ou .gitignore não define o contexto do modelo. Pelo contrato 
 ## Escolhas técnicas e pendências
 
 - Confirmados pelo usuário para o incremento 1: Python + unittest e organização mínima em `autorizacao.py` e `tests/test_autorizacao.py`, sem dependências externas (D-07 em [decisoes.md](decisoes.md)). pytest permanece alternativa histórica não adotada.
-- O [plano 001](../specs/001-autorizacao-direta/plan.md) detalha o desenho local parcial. Representação de variantes e formatos dos futuros registros experimentais continuam pendentes; JSON é proposta para esses registros, não requisito de persistência do núcleo.
+- O [plano 001](../specs/001-autorizacao-direta/plan.md) detalha o desenho local parcial. Variantes estão implementadas; o contrato da Spec 004 define registros JSON para preparação e avaliação offline, sem alterar a persistência do núcleo.
 - Provedor, modelo/versão, modalidade de API, parâmetros suportados, limite de saída e orçamento.
 - Uso uniforme de saída estruturada forçada e verificação futura da entrega textual sem ferramentas/anexos; identidade de SO deixou de ser exigida em D-29.
 - Ferramentas e versões de desenvolvimento, inclusive Spec Kit, a confirmar antes de uso; sua utilização não escolhe o modelo avaliado.

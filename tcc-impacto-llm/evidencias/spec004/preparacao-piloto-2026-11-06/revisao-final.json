@@ -1,0 +1,10 @@
+{
+  "links_locais_fontes_e_relatorio": "sem destinos ausentes",
+  "hashes_fontes_finais": "conferidos",
+  "historicos_literais": 20,
+  "tabelas_referencia_intactas": true,
+  "git_diff_check": 0,
+  "chamadas_llm": 0,
+  "piloto_executado": false,
+  "commit_push": false
+}

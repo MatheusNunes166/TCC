@@ -1,0 +1,35 @@
+{
+  "status": "MODELO_NAO_EXECUTADO",
+  "run_id": null,
+  "fase": null,
+  "bloco": null,
+  "ordem": null,
+  "mudanca": null,
+  "condicao": null,
+  "repeticao": null,
+  "instante_utc": null,
+  "manifesto_hash": null,
+  "payload_arquivo": null,
+  "payload_sha256": null,
+  "resposta_bruta_arquivo": null,
+  "resposta_sha256": null,
+  "modelo_reportado": null,
+  "tentativas_transporte": null,
+  "status_tecnico": null,
+  "json_valido": null,
+  "motivo_invalidade": null,
+  "ids_extraidos": {
+    "requisitos": null,
+    "testes": null
+  },
+  "duplicatas": null,
+  "ids_desconhecidos": null,
+  "metricas": {
+    "requisitos": null,
+    "testes": null
+  },
+  "latencia_ms": null,
+  "tokens_entrada": null,
+  "tokens_saida": null,
+  "custo": null
+}

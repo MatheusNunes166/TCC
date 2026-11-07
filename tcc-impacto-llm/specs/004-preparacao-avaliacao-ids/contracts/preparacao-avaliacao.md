@@ -1,5 +1,54 @@
 # Contrato local proposto — montagem e avaliação de IDs
 
+## Complemento vigente D-35 — importação real e preparação, 06/11/2026
+
+Este complemento atualiza a operação abaixo; seções datadas D-26–D-30 são históricas onde houver divergência. Estado e decisões: [entrada central](../../../ESTADO_ATUAL.md), [D-35](../../../documentacao/decisoes.md). Notas 0.2-local simuladas pelo pesquisador com apoio de IA; revisão própria declarada, sem revisor externo nesta etapa e sem aprovação individual inferida das expectativas. Novo texto para conferência; `RASCUNHO_NAO_REVISADO` identifica esse novo texto, não nega a declaração geral do pesquisador. Exportador usa receita `recortes-D35-v1`, versão `D35-2026-11-06`; preserva anteriores. Nenhum piloto ou congelamento principal.
+
+A pontuação `ids-proposta-004-v2` e os conjuntos candidatos não mudam. Inválidas: extrações e medidas observadas **nulas**, sem listas vazias inventadas. Vazias válidas: seleções observadas, P/R/F = 0 com G não vazio. Falhas técnicas: sem escore. Imputação só por opção explícita, em visão separada. N/A/C/V/I/T/K e denominadores continuam conforme §6 e [protocolo vigente](../../../materiais/01_PROTOCOLO.md#16-saídas-inválidas-e-falhas).
+
+### Preparar e conferir os 16 pacotes
+
+Da raiz do repositório, em PowerShell/Python 3.13.3, sem dependências externas:
+
+```powershell
+python -B evidencias/spec004/preparacao-piloto-2026-11-06/verificar_preparacao.py --saida saidas-locais/conferencia-nova
+```
+
+O comando recorta as fontes, monta quatro mudanças × quatro condições, confere igualdade de documentos/notas, compara catálogo/justificativas/matriz/JSON e exercita ordenação com sementes artificiais, sem escolher ordem do piloto. Não executa baseline/variantes, não acessa rede e não chama LLM. A saída deve ser nova. Para apenas exportar: `python -B fontes_autorizadas.py --raiz . --saida saidas-locais/recortes-novos`. Após definir a configuração real, usar `--configuracao-id ID_ESCOLHIDO` no exportador e uma pasta nova; o valor segue para os manifestos/autorizações/preparações sem alterar o conteúdo textual. A opção não aprova a configuração nem escolhe modelo. Montagem individual continua pelo comando do §2. Caminhos de CLI locais podem conter `..` e são resolvidos/inspecionados; caminhos declarados dentro dos JSONs continuam relativos, sem traversal, aliases, UNC, dispositivos ou links/reparse.
+
+### Avaliar uma resposta real preservada
+
+Preencher uma cópia de [registro_execucao.json](../../../materiais/modelos/registro_execucao.json), nunca o modelo em si. Arquivar por fase: captura, payload preparado, entrada efetivamente enviada, resposta/erro e avaliação. Os comandos abaixo são o procedimento **futuro**, com caminhos exemplificativos; não criam nem executam chamadas:
+
+```powershell
+python -B avaliacao_ids.py avaliar --origem real --fase piloto --preparacao captura/piloto/PIL-MC-01-D0-R01/preparacao/preparacao.json --tentativa captura/piloto/PIL-MC-01-D0-R01/tentativa.json --referencia materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json --saida avaliados/piloto/PIL-MC-01-D0-R01
+python -B avaliacao_ids.py resumir --origem real --fase piloto --avaliacoes avaliados/piloto/lista.json --observacoes captura/piloto/observacoes.json --saida avaliados/piloto/resumo-novo
+```
+
+`--origem real` exige `--fase exploratoria|piloto|principal` coerente com cada registro. A omissão de `--origem` mantém o modo sintético e recusa registros reais. `--imputar-invalidas` pode ser acrescentado somente ao resumo para a convenção analítica separada. Os comandos são locais; origem real descreve o material importado, não uma chamada feita pela CLI. Uma rodada de controles usa artefatos artificiais em diretórios temporários e nunca se torna dado de pesquisa.
+
+Campos de importação real:
+
+| Grupo | Campos e regras |
+|---|---|
+| Identidade | `observacao_id`, `tentativa_id`, `tentativa_anterior` (nulo na primeira), `configuracao_id`, `mudanca`, `condicao`, `repeticao` inteiro positivo. Não usar `repeticao_sintetica`. |
+| Proveniência | `origem=real`, `fase`, `origem_resposta` (arquivo/exportação e sessão/turno ou recibo), `instante_execucao` com fuso, `modelo_reportado` tal como disponível; não inventar build. |
+| Configuração e versões | Objetos `configuracao` e `versoes`, preservados integralmente. Preencher versão do pacote, notas ou ausência, prompts, baseline, schema/hash; preparação preserva manifesto e hashes de todos os documentos. Modelo, parâmetros conhecidos e não expostos devem ser registrados; valores desconhecidos permanecem nulos com identificação da indisponibilidade. |
+| Preparação | `preparacao_id`, `preparacao_sha256`, `payload_sha256`; configuração/mudança/condição devem coincidir com a preparação explícita. |
+| Entrada efetiva | `entrada_enviada_arquivo` relativo à tentativa e seu SHA-256; arquivo original preservado. Só podem ser nulos em falha técnica antes de haver texto enviado recuperável, com causa. Diferença de bytes frente ao preparado exige desvio declarado. |
+| Resposta | `resposta_arquivo`, `resposta_sha256`, `resposta_tamanho`; nulos se ausente. Zero bytes recebidos é uma resposta presente, inválida. `fragmento` booleano; concluída exige resposta integral. |
+| Técnica e protocolo | `estado_tecnico=concluida|falha_tecnica`, `causa` em falha; `conformidade_protocolo=pendente|conforme|desvio`, lista `desvios`. `conforme` exige lista vazia; `desvio` exige causa. Conferência humana não é deduzida do escore. |
+
+A CLI copia bytes da entrada efetiva, tentativa, preparação e resposta antes da pontuação e revalida hashes no fechamento. `avaliacao.json` e `manifesto.json` conservam origem/fase; incluem versão/hash da referência, política e avaliador. Avaliação descritiva de um desvio é possível, mas o resumo controlado da célula fica bloqueado, assim como quando a conformidade permanece pendente. Os arquivos originais não são reparados para coincidirem com o preparado.
+
+`lista.json` é uma lista explícita de objetos `arquivo` (relativo à própria lista) e `sha256` do `avaliacao.json` escolhido. `observacoes.json` é a lista de observações planejadas, com `origem`, `fase`, `observacao_id`, `configuracao_id`, `mudanca`, `condicao`, `repeticao` e `payload_sha256`. Extrair do plano preenchido, não de resultados selecionados. Reavaliações exigem seleção explícita de uma versão por tentativa; `--avaliacao-anterior` vincula a anterior sem sobrescrevê-la.
+
+Nunca combinar controles sintéticos e respostas reais, fases distintas ou configurações/versões/payloads distintos numa mesma célula. Para reais, a assinatura de versões inclui também os objetos de configuração/versões e hash do payload preparado, impedindo a reutilização de um ID de configuração para misturar conteúdos. PONT-02 continua bloqueando duplicidades e duas respostas concluídas para uma observação, sem escolher a melhor. Falha técnica admite no máximo uma tentativa vinculada com o mesmo payload; não aumenta N. Para resumir somente uma fase, usar lista planejada própria dessa fase; não renomear exploração como piloto.
+
+A verificação offline não demonstra a entrega ou indisponibilidade real de ferramentas na plataforma. Conferências ainda necessárias estão no [plano do piloto](../../../materiais/05_PILOTO_E_COLETA.md) e no estado central. Nenhuma aprovação externa foi presumida.
+
+## Contrato anterior e regras mantidas
+
 > Contrato vigente — 01/11/2026 (D-29): o modelo recebe somente texto preparado, sem ferramentas, repositório, código, comandos, gabarito, resultados de variantes ou histórico. Exigências de identidade/ACL do Windows de T014/T015 substituídas, sem execução ou aprovação retroativa. Permanecem validação de arquivos/caminhos, autorização de conteúdo, integridade, equivalência de condições e avaliação separada. Notas representam conhecimento de analista de testes; texto definitivo e revisão profissional pendentes. Não se avaliam juniores, novos testes ou defeitos reais. Sem modelo escolhido, envio, chamadas externas ou piloto; revisão científica pendente. Histórico preservado em evidencias/spec004/revisao-textual-2026-11-01/originais.
 
 > Convenções vigentes — 27/10/2026, D-26/D-27: o pesquisador adotou PONT-01/PONT-02 como convenções técnicas candidatas, ainda sujeitas à revisão científica. Política `ids-proposta-004-v2`: célula base por configuração/mudança/condição; versões de política ou referência distintas impedem resultado combinado, com diagnóstico e grupos separados por versão. Identidade lógica única por configuração/mudança/condição/repetição; duplicidades bloqueiam o resumo afetado sem escolha automática. Tentativas técnicas vinculadas não são repetições. Jaccard somente entre repetições distintas elegíveis, com número de observações/pares; menos de duas: **não calculável**. I1 corrigido: rejeitar links simbólicos internos/externos, junctions e todos os reparse points. Implementação e controles independentes autorizados, sem LLM/piloto. Registro de 27/10: isolamento por SO não demonstrado; exigência substituída por D-29, sem aprovação retroativa. Textos datados de somente planejamento/sem tarefas abaixo são históricos; originais preservados em evidências.
@@ -25,7 +74,7 @@ python -B avaliacao_ids.py avaliar --preparacao <preparacao.json> --tentativa <t
 python -B avaliacao_ids.py resumir --avaliacoes <lista-explicita.json> --observacoes <lista-planejada.json> --saida <pasta-nova> [--imputar-invalidas]
 ```
 
-Arquivos de lista enumeram caminhos/IDs/hashes exatos, sem glob ou busca recursiva. O manifesto determina mudança/condição; não permitir argumento que as substitua silenciosamente. `tentativa.json` aponta original/fragmento e origem sintética ou falha sem resposta. Não há `--modelo`, `--provedor`, credenciais ou comando de envio/retentativa automática.
+Arquivos de lista enumeram caminhos/IDs/hashes exatos, sem glob ou busca recursiva. O manifesto determina mudança/condição; não permitir argumento que as substitua silenciosamente. `tentativa.json` aponta original/fragmento e origem sintética ou real explicitamente selecionada, inclusive falha sem resposta. Não há `--modelo`, `--provedor`, credenciais ou comando de envio/retentativa automática.
 
 Retornos propostos:
 
@@ -98,7 +147,7 @@ Conservar frações exatas, inclusive médias, e decimal derivado sem arredondam
 
 ### Resumos e ausências — distinção que afeta escores
 
-O material histórico §1.6 propõe vazios/zero no resumo operacional. A Spec 004 determina que isso não é extração observada: resposta inválida mantém extração/TP/FP/FN/métricas **nulos**. Por padrão, só resumo de respostas de formato válido; opção explícita `--imputar-invalidas` acrescenta visão operacional separada de P/R/F com zeros identificados por observação. Não inferir seleção completa/exatidão/Jaccard a partir desses zeros e não inventar listas observadas vazias. Falhas técnicas não recebem escore, mesmo nessa visão.
+O protocolo §1.6 foi harmonizado em D-35; a antiga proposta de vazios/zero está preservada no histórico. Pela convenção vigente, resposta inválida mantém extração/TP/FP/FN/métricas **nulos**. Por padrão, só resumo de respostas de formato válido; opção explícita `--imputar-invalidas` acrescenta visão operacional separada de P/R/F com zeros identificados por observação. Não inferir seleção completa/exatidão/Jaccard a partir desses zeros e não inventar listas observadas vazias. Falhas técnicas não recebem escore, mesmo nessa visão.
 
 Por célula: lista planejada contém N observações únicas; A tentativas; C observações tecnicamente concluídas com integridade/referência válidas; V de formato válido; I de formato inválido; T falhas técnicas finais. V+I=C; ausências/erros adicionais são relatados, sem forçar C+T=N. Taxas V/C, K/V (IDs conhecidos) e C/N usam contagens explícitas; denominador zero dá indisponível. P/R/F no resumo válido usam V; operacional usa V+I, não A ou N. Não produzir resumo geral entre mudanças.
 
@@ -131,7 +180,7 @@ O detalhamento de S-16 adiciona diagnóstico de contrato/identidade; não execut
 
 ## 8. Gates e limites
 
-Saída íntegra/conforme de controle demonstra comportamento técnico local. Não aprova referência, notas, políticas ou medidas. Antes de pesquisa: revisão profissional/científica registrada, notas definitivas, fundamentação/revisão das convenções, fronteira de acesso demonstrada e desenho final do piloto/configuração/orçamento/congelamento próprios. T12 já adotado em B; sem novo pedido de adoção. Sem modelos, rede, coleta, interface/API ou código nesta entrega.
+Saída íntegra/conforme de controle demonstra comportamento técnico local. Não aprova referência, notas, políticas ou medidas. Antes de pesquisa: alcance da revisão própria do pesquisador registrado, sem revisor externo nesta etapa (D-35), notas conferidas, fundamentação/revisão das convenções, fronteira de acesso demonstrada e desenho final do piloto/configuração/orçamento; congelamento principal somente depois do piloto. T12 já adotado em B; sem novo pedido de adoção. Sem modelos, rede, coleta, interface/API ou código nesta entrega.
 
 ## 9. Convenções candidatas adotadas — D-26
 

@@ -16,7 +16,7 @@ Cada observação é uma resposta de **mudança × condição × repetição**. 
 - **Teste relevante:** caso incluído pela política de seleção da seção 2.3. Pode ter resultado alterado ou verificar a preservação de um comportamento relacionado.
 - **Melhora:** maior completude da seleção e menos indicações excedentes em relação à referência, com estabilidade entre repetições. Resultados podem mostrar empate ou compensações; não é obrigatório declarar um vencedor único.
 
-O estudo mede concordância com uma referência local revisada. Não mede compreensão interna do modelo, segurança de produção, cobertura de código, detecção de defeitos ou redução real do tempo de regressão. Uma alteração correta de resultado esperado não é, por si, um defeito. Para medir detecção de falhas seria necessário outro desenho com defeitos e oráculos, fora deste recorte.
+O estudo avaliará a seleção de requisitos impactados e testes existentes pelo LLM, em comparação com a referência local candidata. Apoiar analistas juniores permanece como motivação: não há participantes juniores nem comprovação de melhoria do desempenho deles. Não mede compreensão interna do modelo, segurança de produção, cobertura de código, detecção de defeitos ou redução real do tempo de regressão. Uma alteração correta de resultado esperado não é, por si, um defeito. Para medir detecção de falhas seria necessário outro desenho com defeitos e oráculos, fora deste recorte.
 
 ## 1.3 Quatro condições e controles
 
@@ -33,7 +33,7 @@ Todas recebem os mesmos requisitos, política inicial, dependências, catálogo 
 
 Fixar: provedor, ID e versão disponível do modelo, modalidade de API, parâmetros realmente suportados, limite de saída, mensagem de sistema, textos integrais, ordem e versão dos documentos, esquema JSON, ferramentas desativadas e regras de falha. Registrar parâmetros indisponíveis como “não suportado”, sem simular controle. Temperatura baixa ou zero não garante determinismo.
 
-**Recomendação de ambiente:** chamadas isoladas por API, sem histórico ou recuperação automática de arquivos. A IDE usada para construir o módulo pode ler o projeto; o modelo avaliado recebe apenas um pacote por lista permitida. Uma pasta chamada “privado” e um .gitignore não impedem que um agente leia o gabarito. Separar fisicamente o ambiente de execução e verificar o payload final. Não indexar gabarito, notas ausentes ou histórico no ambiente experimental.
+**Recomendação de ambiente:** chamadas isoladas por API, sem histórico ou recuperação automática de arquivos. A IDE usada para construir o módulo pode ler o projeto; o modelo avaliado recebe apenas um pacote por lista permitida. Uma pasta chamada “privado” e um .gitignore não impedem que um agente leia o gabarito. Verificar o texto integral efetivamente enviado e a ausência de acesso adicional ao projeto e ferramentas na plataforma; não se exige nem se alega isolamento por sistema operacional (D-29). Não indexar gabarito, notas ausentes ou histórico no ambiente experimental.
 
 ## 1.4 Como construir e revisar o gabarito
 
@@ -41,8 +41,8 @@ Fixar: provedor, ID e versão disponível do modelo, modalidade de API, parâmet
 2. Aplicar, em papel, cada mudança isoladamente; obter saídas esperadas dos doze casos.
 3. Identificar a regra alterada e os valores dependentes que mudam. Justificar cada RF incluído e cada exclusão contestável.
 4. Aplicar a mesma política de seleção aos doze casos; marcar por que cada teste entra ou fica fora.
-5. Implementar e executar futuramente os testes da baseline e das variantes como verificação adicional. A implementação não é a única fonte de verdade: confrontá-la com regras e expectativas revisadas.
-6. Solicitar revisão humana do gabarito e das notas. Proposta: pesquisador prepara e orientador revisa; combinar isso explicitamente. Registrar divergências, resolução, revisor e data.
+5. Usar os registros de implementação/verificação da baseline e variantes já concluídos (D-20/D-21) como verificação adicional. A implementação não é a única fonte de verdade: confrontá-la com regras e expectativas revisadas.
+6. Registrar a revisão própria declarada pelo pesquisador (D-35, 06/11/2026), sem revisor externo nesta etapa ou aprovação atribuída ao orientador/profissional. A declaração geral não atesta cada expectativa individualmente: registrar versão, alcance efetivo, divergências e resolução; o novo texto das notas permanece para conferência.
 7. Gerar versão e hash dos artefatos; guardar a referência fora do contexto do LLM avaliado.
 
 A checklist comprova que essa preparação foi feita. Ela **não** é uma nota de qualidade das respostas. As respostas recebem os números abaixo.
@@ -83,7 +83,9 @@ Precisão usa como denominador o que o modelo selecionou; revocação, o que dev
 
 Exigir JSON com exatamente duas listas de strings, `requisitos` e `testes`. Guardar a resposta original sempre. Não corrigir manualmente IDs aproximados ou texto livre. Duplicatas são removidas para calcular conjuntos e registradas como ocorrência. IDs inexistentes contam como FP; reportar sua quantidade separadamente.
 
-JSON inválido, truncado ou fora do esquema conta como falha de formato, sem nova tentativa de “melhorar a resposta”. Para o resumo operacional, essa execução recebe conjuntos vazios e escores zero; informar a taxa de validade e apresentar também o resumo das respostas válidas, com os denominadores. Não interpretar esses zeros como seleções vazias deliberadas.
+JSON inválido, truncado ou fora do esquema permanece inválido, sem nova tentativa de “melhorar a resposta”. Extrações, TP/FP/FN e medidas observadas são nulos (ausentes, não zero). Listas vazias válidas são seleções observadas e recebem P/R/F = 0 quando G não é vazio. Falhas técnicas permanecem separadas, sem escore. Opcionalmente, `--imputar-invalidas` acrescenta P/R/F = 0 em visão analítica identificada, sem substituir os originais, inventar listas ou incluir falhas técnicas.
+
+Apresentar por configuração/mudança/condição: N observações planejadas; A tentativas; C respostas tecnicamente concluídas e íntegras; V válidas; I inválidas; T falhas técnicas finais. V + I = C. Validade = V/C, completude operacional = C/N e IDs conhecidos = K/V; denominador zero é indisponível. Médias observadas usam V; visão imputada usa V + I. Jaccard só usa repetições válidas distintas, com número de observações e pares; menos de duas é não calculável. Ausências e erros de integridade são explícitos. Misturas de fase/origem/configuração/versões não geram resumo combinado.
 
 Erro de transporte pode ter no máximo uma nova tentativa com o mesmo payload, registrada. Se falhar novamente, marcar falha técnica, sem inventar resposta. Mostrar executadas/planejadas e não declarar uma coleta completa com células faltantes. Corrigir indisponibilidade antes de retomar o lote; nunca repetir apenas respostas ruins.
 
@@ -91,6 +93,6 @@ Erro de transporte pode ter no máximo uma nova tentativa com o mesmo payload, r
 
 Montar uma linha por execução e dois blocos de métricas, RF e testes. Para cada mudança e condição, mostrar TP/FP/FN, média, mediana e amplitude dos escores, taxa de seleção completa, correspondência exata e validade. Com cinco repetições há dez pares para Jaccard em cada célula; esses dez pares não são dez observações independentes. Informar quantos pares válidos foram usados.
 
-Comparações planejadas dentro da mesma mudança: E0−D0 e E1−D1 para organização; D1−D0 e E1−E0 para notas. Se os efeitos diferirem, descrever a interação, sem atribuir causalidade além dos fatores controlados. Um resumo geral dá peso igual a cada mudança e sempre vem acompanhado das quatro linhas individuais.
+Comparações planejadas dentro da mesma mudança: E0−D0 e E1−D1 para organização; D1−D0 e E1−E0 para notas. Se os efeitos diferirem, descrever a interação, sem atribuir causalidade além dos fatores controlados. A implementação produz resumos por mudança/condição, sem resumo geral entre mudanças. Qualquer síntese posterior exige convenção explícita, mantendo denominadores e linhas individuais.
 
 A análise inicial é descritiva, sem teste de significância ou promessa de generalização. Oitenta chamadas não representam oitenta sistemas independentes. Diretas e propagadas têm tamanhos de referência diferentes: comparar condições dentro de cada mudança; não concluir que “propagação é mais difícil” somente pela diferença entre os grupos. O piloto pode revelar efeito de teto (todas acertam) ou piso; isso é achado, não motivo para dificultar regras até surgir a vantagem desejada.

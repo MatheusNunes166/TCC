@@ -29,7 +29,7 @@ def sem_links(path):
     if w.drive.startswith('\\\\') or (w.drive and not w.root):
         raise ValueError('UNC/dispositivo/drive relativo nao suportado')
     if os.name=='nt' and w.root and not w.drive:raise ValueError('raiz sem drive nao suportada')
-    parts=[p for p in w.parts if p!=w.anchor]
+    parts=[p for p in w.parts if p!=w.anchor and p not in ('.','..')]
     if any(':' in p or p.endswith(('.', ' ')) for p in parts):raise ValueError('fluxo alternativo/alias de caminho nao suportado')
     devices={'CON','PRN','AUX','NUL'}|{f'{p}{i}' for p in ('COM','LPT') for i in range(1,10)}
     if any(p.split('.')[0].upper() in devices for p in parts):raise ValueError('dispositivo nao suportado')

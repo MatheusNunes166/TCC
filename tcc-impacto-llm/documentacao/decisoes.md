@@ -1,5 +1,21 @@
 # Decisões, propostas e pendências
 
+## Consolidação para o piloto — 06/11/2026
+
+**D-35 — Decisões explícitas do pesquisador no pedido desta etapa.** Responsável: Matheus Henrique Braun Nunes; evidência: solicitação anexada nesta conversa (`0179d902-954f-41e3-9a1e-290a7f7274bf/Pasted text.txt`). Autoriza ajustes documentais, de montagem/avaliação e verificações offline pertinentes. Não autoriza chamadas externas, piloto, coleta principal ou commit/push. Estado inicial: Git limpo, branch main, HEAD `310c9f28f4267bc6e052f6b93910400cd0e31bc2`.
+
+As notas serão simuladas pelo pesquisador com apoio de IA, inspiradas em observações e heurísticas de analista de testes experiente; podem salientar riscos/interações não literais, compatíveis com as regras comuns. Não são conhecimento tácito coletado de especialistas reais. Não haverá revisor externo nesta etapa. Registra-se revisão própria **declarada pelo pesquisador**, no alcance geral informado; não há evidência de revisão individual de todas as expectativas, nem aprovação do orientador/profissional. A nova redação produzida agora permanece para sua conferência. Essa decisão substitui a exigência operacional de encaminhar o pacote profissional de D-31, mantendo-o histórico e com ficha em branco.
+
+O estudo avalia seleção de requisitos impactados e testes existentes pelo LLM, incluindo mudança e preservação relacionada. Apoio a analistas juniores é motivação, sem participantes juniores ou demonstração de melhora de desempenho deles. Não solicitar testes novos, código, raciocínio interno ou descoberta de defeitos reais.
+
+Inválidas permanecem inválidas, com extrações e medidas observadas nulas. Validade e denominadores separados. Imputação opcional é convenção analítica identificada, sem substituir dados observados. Falhas técnicas e listas vazias válidas continuam distintas. Protocolo alinhado ao comparador existente; fórmulas e conjuntos não foram ajustados ao desempenho do modelo.
+
+Busca local por nomes e conteúdo no workspace não localizou reformulação prévia das notas v0.2; a candidata 0.2 é a referência. Consolidada **notas/prompts 0.2-local**, sem alegar integração de arquivo inexistente. Originais preservados em [histórico desta preparação](historico/pre-piloto-2026-11-06/LEIA_PRIMEIRO.md). A reformulação ocorre após o exploratório conhecido D-34; não houve iteração guiada por acertos/erros nem nova chamada para escolher notas vantajosas. Essa exposição prévia é limitação metodológica, não desaparece com a revisão.
+
+Autorizado adaptar a CLI existente à avaliação offline de respostas reais com proveniência, fase e versões, sem rotulá-las sintéticas, e preparar 16 pacotes. Mantida proposta **MC-01/MC-03 × quatro condições × duas repetições = 16 chamadas**, distinta dos 16 pacotes de quatro mudanças. Configuração e ordem ainda por definir; a do exploratório não é aprovação do piloto. Referência 0.2, quatro RFs, T01–T12, mudanças, expectativas e seleções 2/4/8/5 preservadas. Nenhuma aprovação retrospectiva ou congelamento principal.
+
+Estado central e próximos cuidados: [ESTADO_ATUAL](../ESTADO_ATUAL.md). Verificações técnicas, arquivos e limitações: [relatório](../evidencias/spec004/preparacao-piloto-2026-11-06/RELATORIO.md). D-29 continua vigente quanto à fronteira textual, sem ferramentas/acesso adicional e sem exigência de identidade/ACL do Windows. Registros abaixo continuam históricos nos respectivos alcances; declarações antigas de impossibilidade de alterar notas/CLI são superadas somente por esta autorização.
+
 ## Recuperação das sessões e descrição dos resultados MC-04 — 06/11/2026
 
 **D-34 — Recuperação autorizada pelo pesquisador nesta conversa, limitada às quatro sessões de D:\Tcc-ensaio.** Consulta de índice em modo somente leitura, filtrada pelo cwd (incluindo o prefixo Windows `\\?\`), modelo gpt-6-astra e effort medium; somente os quatro históricos correspondentes foram abertos. Condições identificadas unicamente pelo conteúdo de cada payload enviado, antes de ler o gabarito; ordem e títulos não determinaram o mapeamento. [Relatório, IDs, origens e avaliação](../evidencias/spec004/exploratorio-2026-11-05-mc04-001/recuperacao-sessoes-001/RELATORIO.md). Cópias byte a byte dos quatro históricos, mensagens/finais literais, linhas JSONL, metadados e anexo de D0 preservados; fontes originais sem alteração.
