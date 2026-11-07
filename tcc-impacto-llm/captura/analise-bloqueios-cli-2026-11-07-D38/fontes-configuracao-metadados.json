@@ -1,0 +1,47 @@
+[
+  {
+    "arquivo": "C:\\ProgramData\\OpenAI\\Codex\\config.toml",
+    "existe": false
+  },
+  {
+    "arquivo": "C:\\ProgramData\\OpenAI\\Codex\\requirements.toml",
+    "existe": false
+  },
+  {
+    "arquivo": "C:\\Users\\User\\.codex\\config.toml",
+    "chaves_raiz": [
+      "model",
+      "model_reasoning_effort",
+      "projects",
+      "windows"
+    ],
+    "existe": true,
+    "instrucoes": {
+      "additional_developer_instructions": {
+        "presente": false,
+        "sha256": null
+      },
+      "developer_instructions": {
+        "presente": false,
+        "sha256": null
+      },
+      "instructions": {
+        "presente": false,
+        "sha256": null
+      },
+      "model_instructions_file": {
+        "presente": false,
+        "sha256": null
+      }
+    },
+    "sha256": "affa22f9c42c230c2685d0a2bc2dd938285bcc4f0cc7df4f33beaa023606c801"
+  },
+  {
+    "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\.codex\\config.toml",
+    "existe": false
+  },
+  {
+    "arquivo": "D:\\TCC-Projeto\\TCC\\.codex\\config.toml",
+    "existe": false
+  }
+]

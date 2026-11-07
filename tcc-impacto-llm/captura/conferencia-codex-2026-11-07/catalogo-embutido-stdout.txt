@@ -1,0 +1,39 @@
+{
+  "apply_patch_tool_type": "freeform",
+  "base_instructions_presente": true,
+  "base_instructions_sha256": "b1dd8718c037906c53a305c5cbccb4a4be35ccbb7837461ec349bfc495412f0d",
+  "default_reasoning_level": "medium",
+  "experimental_supported_tools": [
+    "send_user_message_async",
+    "clock"
+  ],
+  "shell_type": "unified_exec",
+  "slug": "gpt-6-sol",
+  "supported_reasoning_levels": [
+    {
+      "description": "Fast responses with lighter reasoning",
+      "effort": "low"
+    },
+    {
+      "description": "Balances speed and reasoning depth for everyday tasks",
+      "effort": "medium"
+    },
+    {
+      "description": "Greater reasoning depth for complex problems",
+      "effort": "high"
+    },
+    {
+      "description": "Extra high reasoning depth for complex problems",
+      "effort": "xhigh"
+    },
+    {
+      "description": "Maximum reasoning depth for the hardest problems",
+      "effort": "max"
+    },
+    {
+      "description": "Maximum reasoning with automatic task delegation",
+      "effort": "ultra"
+    }
+  ],
+  "tool_mode": "code_mode_only"
+}

@@ -1,0 +1,119 @@
+{
+  "causa": null,
+  "condicao": "E1",
+  "configuracao": {
+    "bloqueios_envio": [
+      "Fronteira D-29 nao demonstrada: sem inventario efetivo que comprove tools=[].",
+      "Codex injeta instrucoes de agente (base_instructions no catalogo embutido); entrega somente do payload e ausencia de contexto adicional nao demonstradas.",
+      "Disponibilidade remota de gpt-6-sol/medium, revisao dos materiais, orcamento e autorizacao operacional de inicio ainda pendentes.",
+      "Desativacao das retentativas internas de transporte da CLI ainda nao demonstrada nesta versao; nao presumir que um processo corresponde a uma requisicao."
+    ],
+    "esforco_solicitado": "medium",
+    "ferramentas_desativadas_verificado": false,
+    "ferramentas_desativar_solicitadas": [
+      "shell_tool",
+      "view_image",
+      "apps",
+      "plugins",
+      "multi_agent",
+      "browser_use",
+      "computer_use",
+      "image_generation",
+      "goals",
+      "sleep_tool",
+      "hooks",
+      "skill_search",
+      "workspace_dependencies",
+      "memories",
+      "skill_mcp_dependency_install",
+      "remote_plugin",
+      "unbounded_connection_retries"
+    ],
+    "historico_sessao": "novo codex exec; nunca resume/fork",
+    "id": "piloto-codex-gpt-6-sol-medium-D37",
+    "interface": "codex exec",
+    "limite_saida": null,
+    "mensagem_usuario": "payload completo via stdin; sem acrescimos",
+    "modelo_reportado": null,
+    "modelo_solicitado": "gpt-6-sol",
+    "orcamento": null,
+    "parametros_nao_verificados": [
+      "modelo remoto",
+      "limite de saida",
+      "fronteira D-29",
+      "retentativas internas CLI"
+    ],
+    "saida_estruturada_forcada": false,
+    "seed_modelo": null,
+    "temperatura": null,
+    "top_p": null
+  },
+  "configuracao_id": "piloto-codex-gpt-6-sol-medium-D37",
+  "conformidade_protocolo": "pendente",
+  "desvios": [],
+  "entrada_enviada_arquivo": "entrada.bin",
+  "entrada_enviada_sha256": "7cfdfe7c2695ac65df180a802efd931fe2b8d4ef1037dc75a6cc4036bd0ea975",
+  "estado_tecnico": "concluida",
+  "fase": "verificacao_sintetica",
+  "fragmento": false,
+  "instante_execucao": "2026-11-07T15:06:06.334334+00:00",
+  "instante_fim": "2026-11-07T15:06:06.530336+00:00",
+  "interrompida": false,
+  "modelo_reportado": null,
+  "modelo_reportado_indisponibilidade": "controle local nao representa modelo",
+  "modelo_solicitado": "gpt-6-sol",
+  "mudanca": "MC-03",
+  "observacao_id": "PIL-MC-03-E1-R01",
+  "origem": "sintetica",
+  "origem_resposta": "CONTROLE ARTIFICIAL; processo substituto local; sem LLM",
+  "payload_sha256": "7cfdfe7c2695ac65df180a802efd931fe2b8d4ef1037dc75a6cc4036bd0ea975",
+  "preparacao_id": "522dd758091b4afaaa1680da86272340",
+  "preparacao_sha256": "e7d3dc282d6b6b46f0d3388582bf15807ededf3bf600e1f4c7a1ac363ea5b6cd",
+  "repeticao_sintetica": 1,
+  "resposta_arquivo": "resposta.bin",
+  "resposta_sha256": "f3e30f47c01afc8a0060e10acec80e0dc951ffb35dab6793c9603e173edb94f6",
+  "resposta_tamanho": 35,
+  "retorno_processo": 0,
+  "sessao": "ea5be7ad77424cd89ca0e72901824e24",
+  "tentativa_anterior": null,
+  "tentativa_id": "PIL-MC-03-E1-R01-T01",
+  "texto_extraido_de": "ultimo item.completed agent_message.text",
+  "versoes": {
+    "coletor": "coletor-piloto-v1",
+    "documentos": {
+      "catalogo-baseline.md": {
+        "sha256": "b7261fd6b24a0eca7f1e4abcb4a8ffcbf092e071931be6c4f086646d82242c76",
+        "versao": "recorte-D36-lf-2026-11-06"
+      },
+      "definicoes-comuns.md": {
+        "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e",
+        "versao": "recorte-D36-lf-2026-11-06"
+      },
+      "mudanca.md": {
+        "sha256": "a2a646f6a3945f4e033006b390b6db8558ff80e06ff8933a1215a93239d77314",
+        "versao": "recorte-D36-lf-2026-11-06"
+      },
+      "notas.md": {
+        "sha256": "5e209b6e58ba986df05846f6d36c9464fbc3d669f70ab97d8d0014872dc00add",
+        "versao": "recorte-D36-lf-2026-11-06"
+      },
+      "pedido.txt": {
+        "sha256": "3898440d3b28447dfff6a1ac6782b299575e0b5bde15d8ebaa7cc9da08e23774",
+        "versao": "recorte-D36-lf-2026-11-06"
+      },
+      "requisitos-baseline.md": {
+        "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a",
+        "versao": "recorte-D36-lf-2026-11-06"
+      },
+      "schema_saida.json": {
+        "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21",
+        "versao": "recorte-D36-lf-2026-11-06"
+      },
+      "sistema.txt": {
+        "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053",
+        "versao": "recorte-D36-lf-2026-11-06"
+      }
+    },
+    "pacote": "D36-2026-11-06-v2-lf"
+  }
+}

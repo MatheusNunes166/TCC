@@ -1,0 +1,27 @@
+test_S01_S02_S09_cli (test_avaliacao_ids.TestAvaliacao.test_S01_S02_S09_cli) ... ok
+test_S01_a_S10_oraculos_literais (test_avaliacao_ids.TestAvaliacao.test_S01_a_S10_oraculos_literais) ... ok
+test_S07_espacos_vazio_caixa (test_avaliacao_ids.TestAvaliacao.test_S07_espacos_vazio_caixa) ... ok
+test_S09_invalida_sem_reparo (test_avaliacao_ids.TestAvaliacao.test_S09_invalida_sem_reparo) ... ok
+test_S11_ausente_fragmento_original (test_avaliacao_ids.TestAvaliacao.test_S11_ausente_fragmento_original) ... ok
+test_S12_referencia_e_alias (test_avaliacao_ids.TestAvaliacao.test_S12_referencia_e_alias) ... ok
+test_S13_arquivo_removido_antes_fechamento (test_avaliacao_ids.TestAvaliacao.test_S13_arquivo_removido_antes_fechamento) ... ok
+test_S13_caminhos_de_entrada_reais (test_avaliacao_ids.TestAvaliacao.test_S13_caminhos_de_entrada_reais) ... ok
+test_S13_falha_escrita_e_vinculo (test_avaliacao_ids.TestAvaliacao.test_S13_falha_escrita_e_vinculo) ... ok
+test_S13_originais_fechamento_reavaliacao (test_avaliacao_ids.TestAvaliacao.test_S13_originais_fechamento_reavaliacao) ... ok
+test_S15_jaccard_observacoes_pares (test_avaliacao_ids.TestAvaliacao.test_S15_jaccard_observacoes_pares) ... ok
+test_S16_PONT01_versoes_separadas (test_avaliacao_ids.TestAvaliacao.test_S16_PONT01_versoes_separadas) ... ok
+test_S16_PONT02_duplicidades_tentativas (test_avaliacao_ids.TestAvaliacao.test_S16_PONT02_duplicidades_tentativas) ... ok
+test_S16_cli_listas_hashed (test_avaliacao_ids.TestAvaliacao.test_S16_cli_listas_hashed) ... ok
+test_S16_resumo_A_B_ausencia (test_avaliacao_ids.TestAvaliacao.test_S16_resumo_A_B_ausencia) ... ok
+test_caminhos_locais_com_pai_sem_relaxar_declarados (test_avaliacao_real.TestImportacaoReal.test_caminhos_locais_com_pai_sem_relaxar_declarados) ... ok
+test_desvio_preservado_sem_resumo_controlado (test_avaliacao_real.TestImportacaoReal.test_desvio_preservado_sem_resumo_controlado) ... ok
+test_invalida_vazia_e_tecnica_distintas (test_avaliacao_real.TestImportacaoReal.test_invalida_vazia_e_tecnica_distintas) ... ok
+test_mistura_origem_fase_e_versoes_bloqueada (test_avaliacao_real.TestImportacaoReal.test_mistura_origem_fase_e_versoes_bloqueada) ... ok
+test_modelo_nao_reportado_permanece_nulo_com_causa (test_avaliacao_real.TestImportacaoReal.test_modelo_nao_reportado_permanece_nulo_com_causa) ... ok
+test_originais_proveniencia_cli_e_diretorio_externo (test_avaliacao_real.TestImportacaoReal.test_originais_proveniencia_cli_e_diretorio_externo) ... ok
+test_real_recusada_no_modo_sintetico_e_hash_adulterado (test_avaliacao_real.TestImportacaoReal.test_real_recusada_no_modo_sintetico_e_hash_adulterado) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 3.141s
+
+OK

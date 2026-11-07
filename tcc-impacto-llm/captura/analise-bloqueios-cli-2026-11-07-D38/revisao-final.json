@@ -1,0 +1,30 @@
+{
+  "alternativa_API_implementada": false,
+  "avaliacoes_D37_revalidadas": true,
+  "bloqueio_ferramentas_contexto": "PENDENTE",
+  "bloqueio_retentativas_cli": "PENDENTE",
+  "capturas_D37_revalidadas": 16,
+  "configuracoes_nativas_conferidas": true,
+  "diff_check_retorno": 0,
+  "erros": 0,
+  "escopo": "D38_OFFLINE_SEM_LLM",
+  "exec_modelo_iniciado": false,
+  "falhas": 0,
+  "fonte_D37_preservada": true,
+  "instante": "2026-11-07T15:45:20.939561+00:00",
+  "links_relatorio_validos": true,
+  "ordem_e_payloads_preservados": true,
+  "plano_D37_hashes_preservados": true,
+  "schemas_nativos_preservados": [
+    {
+      "arquivo": "v2/ConfigReadParams.json",
+      "sha256": "257c54a423b47c1d209ff1076765a1564d82322fd5161670fd489a2874de1bac"
+    },
+    {
+      "arquivo": "v2/ConfigReadResponse.json",
+      "sha256": "4ec77e1a3eed746037149799c3b6bb8fe7b4b593e5930fc9f410e6282de9df50"
+    }
+  ],
+  "testes_aprovados": 16,
+  "trava_incondicional_preservada": true
+}

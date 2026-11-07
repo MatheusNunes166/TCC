@@ -1,0 +1,106 @@
+{
+  "tipo": "CONTROLE_ARTIFICIAL_SEM_LLM",
+  "consultas": [
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "coletor_piloto.py",
+        "--help"
+      ],
+      "retorno": 0,
+      "esperado": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "coletor_piloto.py",
+        "simular",
+        "--plano",
+        "captura/planejamento-piloto-2026-11-07/plano.json"
+      ],
+      "retorno": 0,
+      "esperado": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "coletor_piloto.py",
+        "iniciar",
+        "--plano",
+        "captura/planejamento-piloto-2026-11-07/plano.json",
+        "--lote",
+        "captura/piloto/NAO_CRIAR"
+      ],
+      "retorno": 2,
+      "esperado": 2
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "coletor_piloto.py",
+        "iniciar",
+        "--plano",
+        "captura/planejamento-piloto-2026-11-07/plano.json",
+        "--lote",
+        "captura/piloto/NAO_CRIAR",
+        "--enviar-real"
+      ],
+      "retorno": 2,
+      "esperado": 2
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "coletor_piloto.py",
+        "controle",
+        "--plano",
+        "captura/planejamento-piloto-2026-11-07/plano.json",
+        "--lote",
+        "captura/controles-cli-2026-11-07",
+        "--limite",
+        "3"
+      ],
+      "retorno": 0,
+      "esperado": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "coletor_piloto.py",
+        "controle",
+        "--plano",
+        "captura/planejamento-piloto-2026-11-07/plano.json",
+        "--lote",
+        "captura/controles-cli-2026-11-07",
+        "--continuar"
+      ],
+      "retorno": 0,
+      "esperado": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "coletor_piloto.py",
+        "avaliar",
+        "--lote",
+        "captura/controles-cli-2026-11-07",
+        "--referencia",
+        "materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+        "--saida",
+        "avaliados/controles-cli-2026-11-07"
+      ],
+      "retorno": 0,
+      "esperado": 0
+    }
+  ],
+  "capturas_sinteticas": 16,
+  "sessoes_substituto_distintas": 16,
+  "plano_sha256": "c0e17f8d6a85dd58ad20fd3b9200b64252030ae41c44c11d05ad5d448b61346a"
+}

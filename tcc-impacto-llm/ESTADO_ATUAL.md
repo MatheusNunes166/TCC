@@ -1,5 +1,9 @@
-# Estado atual — 06/11/2026
-Comece aqui. Decisões e alcance: [D-36 e D-35](documentacao/decisoes.md). A correção D-36 trata somente da preservação dos arquivos; não iniciou piloto, chamadas externas ou coleta principal e não congelou a coleta.
+# Estado atual — 07/11/2026
+Comece aqui. Decisões e alcance: [D-38, D-37, D-36 e D-35](documentacao/decisoes.md). Coletor implementado e verificado offline; **envio real bloqueado**, nenhum piloto/chamada ao LLM/coleta principal ou congelamento realizado.
+
+- Novo [coletor Python](coletor_piloto.py): conferência local, plano/ordem registrados, simulação, captura sequencial, pausa/continuação, recuperação conservadora e avaliação separada. [Comandos de operação](materiais/05_PILOTO_E_COLETA.md#511-coletor-offline-d-37-07112026).
+- Configuração solicitada: **GPT-6 Sol / medium**, sem substituição por GPT-6.1 Sol. CLI `0.162.0-alpha.17.2`, autenticação ChatGPT ativa e medium no catálogo embutido; acesso remoto não testado. [Consultas locais](captura/conferencia-codex-2026-11-07/ambiente.json).
+- [Plano offline D-38](captura/planejamento-piloto-2026-11-07-D38/plano.json): mesma ordem D-37 (semente original 20261106), 16 observações/oito payloads v2-LF únicos. Coletor v1.1-D38 acrescenta controles aceitos de skills/memórias/provider/auth e validação estrita; conserva a trava. Dezesseis testes afetados aprovados. [Análise dos dois bloqueios](captura/analise-bloqueios-cli-2026-11-07-D38/RELATORIO.md). O [plano D-37](captura/planejamento-piloto-2026-11-07/plano.json) e suas evidências permanecem preservados; o código novo o recusa por diferença de hash/configuração.
 
 - Notas **0.2-local** simuladas pelo pesquisador com apoio de IA, posteriores ao exploratório conhecido; [texto integral e comparação](materiais/04_NOTAS_E_PROMPTS.md). Revisão própria declarada, sem revisor externo. Novo texto para conferência; nenhuma aprovação individual de todas as expectativas foi inferida.
 - Referência **0.2 candidata**, quatro RFs, T01–T12, mudanças independentes e conjuntos 2/4/8/5 preservados. Baseline e variantes já implementadas/verificadas em D-20/D-21; [evidências 003](specs/003-mudancas-controladas/evidencias.md). Não reexecutadas nesta consolidação.
@@ -9,7 +13,7 @@ Comece aqui. Decisões e alcance: [D-36 e D-35](documentacao/decisoes.md). A cor
 - O estudo mede seleção de requisitos e testes existentes pelo LLM. Apoio a juniores é motivação, sem participantes juniores nem comprovação de melhoria de desempenho deles.
 
 ## Antes de qualquer chamada do piloto
-O pesquisador ainda precisa conferir o novo texto e os payloads, registrar o alcance da revisão da referência/política/medidas e resolver divergências; definir modelo/modalidade/configuração suportada/orçamento e ordem; demonstrar conversa nova com mensagem completa, ferramentas desativadas e sem acesso ao projeto; preparar captura dos originais e dos desvios. Aprovação operacional de início não foi registrada. Adoção constitucional continua pendente, sem confundir essa pendência com revisão científica.
+O pesquisador ainda precisa conferir o novo texto e os payloads, registrar o alcance da revisão da referência/política/medidas e resolver divergências; confirmar disponibilidade remota de GPT-6 Sol/medium, parâmetros/limite e orçamento, e revisar a ordem já preparada. D-38 demonstra controles parciais, mas o render local mantém mensagens adicionais e não fornece inventário real de tools/instructions da rota exec. Na rota ChatGPT, o provedor embutido openai é reservado e rejeita os overrides de request_max_retries/stream_max_retries; aceitar zero em custom provider não prova seu efeito na coleta. Ambos os bloqueios permanecem pendentes. [Causas, evidências e alternativa mínima apenas proposta](captura/analise-bloqueios-cli-2026-11-07-D38/RELATORIO.md). Captura/retomada foram exercitadas somente com substituto artificial; nenhum exec/modelo foi iniciado nos diagnósticos. A trava permanece incondicional, inclusive com opção explícita. Aprovação operacional de início e adoção constitucional continuam pendentes, sem confundir esta última com revisão científica.
 
 ## Navegação
 | Conteúdo | Local vigente |
@@ -19,7 +23,7 @@ O pesquisador ainda precisa conferir o novo texto e os payloads, registrar o alc
 | Notas e prompts | [material 04](materiais/04_NOTAS_E_PROMPTS.md) |
 | Referência privada e justificativas | [material 02](materiais/02_REQUISITOS_TESTES_E_REFERENCIA.md), [revisão detalhada](documentacao/referencia-candidata-proxima-etapa.md), [JSON candidato](materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json) |
 | Plano do piloto e operação | [material 05](materiais/05_PILOTO_E_COLETA.md) |
-| Núcleo, montagem e avaliação | [autorizacao.py](autorizacao.py), [fontes_autorizadas.py](fontes_autorizadas.py), [montagem_entradas.py](montagem_entradas.py), [avaliacao_ids.py](avaliacao_ids.py) |
+| Núcleo, montagem, coleta e avaliação | [autorizacao.py](autorizacao.py), [fontes_autorizadas.py](fontes_autorizadas.py), [montagem_entradas.py](montagem_entradas.py), [coletor_piloto.py](coletor_piloto.py), [avaliacao_ids.py](avaliacao_ids.py) |
 | Testes, variantes e verificador | [tests](tests/), [variantes](variantes/), [verificacao_variantes.py](verificacao_variantes.py) |
 | Desenvolvimento e evidências | [specs](specs/), [evidencias](evidencias/); Spec 004 ativa |
 | Índice dos materiais | [LEIA_PRIMEIRO](materiais/LEIA_PRIMEIRO.md) |

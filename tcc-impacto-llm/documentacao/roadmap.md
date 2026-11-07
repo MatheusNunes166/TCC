@@ -1,5 +1,7 @@
 # Roadmap incremental
 
+D-37, 07/11/2026: coletor mínimo implementado/verificado offline, com ordem registrada e captura/avaliação separadas. A passagem à etapa 5 continua bloqueada pelos controles experimentais da CLI; [evidências e limites](../captura/controles-coletor-2026-11-07/RELATORIO.md). Nenhum piloto executado.
+
 Estado, capacidades e pendências: [ponto de entrada](../ESTADO_ATUAL.md). Registros datados anteriores preservados em [histórico](historico/pre-piloto-2026-11-06/LEIA_PRIMEIRO.md).
 
 ## Ciclo de cada capacidade

@@ -225,8 +225,14 @@ def avaliar(preparacao,tentativa,referencia,saida,avaliacao_anterior=None,origem
             raise ValueError('tentativa/estado tecnico invalido')
         if origem=='real':
             if 'repeticao_sintetica' in t:raise ValueError('resposta real nao usa repeticao sintetica')
-            for field in ('origem_resposta','instante_execucao','modelo_reportado'):
+            for field in ('origem_resposta','instante_execucao'):
                 if not texto(t.get(field)):raise ValueError('proveniencia real sem '+field)
+            # D-37: nao converter modelo solicitado em modelo efetivamente reportado.
+            # CLI pode nao expor esse dado; preservar nulo e a indisponibilidade.
+            if 'modelo_reportado' not in t or (t['modelo_reportado'] is not None and not texto(t['modelo_reportado'])):
+                raise ValueError('modelo reportado deve ser texto ou nulo explicito')
+            if t['modelo_reportado'] is None and not texto(t.get('modelo_reportado_indisponibilidade')):
+                raise ValueError('modelo desconhecido exige causa de indisponibilidade')
             for field in ('configuracao','versoes'):
                 if not isinstance(t.get(field),dict) or not t[field]:raise ValueError('registro real sem '+field)
             if (t.get('conformidade_protocolo') not in ('pendente','conforme','desvio')
@@ -245,6 +251,7 @@ def avaliar(preparacao,tentativa,referencia,saida,avaliacao_anterior=None,origem
             for field in ('repeticao','origem_resposta','instante_execucao','modelo_reportado','configuracao','versoes',
                           'conformidade_protocolo','desvios','entrada_enviada_sha256'):
                 result[field]=t[field]
+            result['modelo_reportado_indisponibilidade']=t.get('modelo_reportado_indisponibilidade')
         if t['estado_tecnico']=='falha_tecnica' and not texto(t.get('causa')):raise ValueError('falha sem causa')
         if prep.get('completo') is not True or prep.get('status')!='PREPARADO_LOCAL_NAO_ENVIADO':raise ValueError('preparacao nao utilizavel')
         if (t.get('preparacao_sha256')!=sha(prepraw) or t.get('preparacao_id')!=prep.get('preparacao_id')

@@ -1,0 +1,22 @@
+{
+  "adaptador_arquivos": [
+    {
+      "arquivo": "C:\\Program Files\\Python313\\python.exe",
+      "sha256": "d87063e5597f257004c731b66c59c56c91038861c6877b1a3dca6b8c4e919125"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\tests\\substituto_coletor.py",
+      "sha256": "f60ac7a7c3688c57d3a47300ca94dc2d06ef9f95892b3d6ae8852b8343bd62ba"
+    }
+  ],
+  "coletor_sha256": "30a2c5943d1e17afce4be20c8caa0527c833434ba2e4989fcebb6ee1ca778105",
+  "fase": "verificacao_sintetica",
+  "origem": "sintetica",
+  "plano_sha256": "c0e17f8d6a85dd58ad20fd3b9200b64252030ae41c44c11d05ad5d448b61346a",
+  "substituto": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "-B",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\tests\\substituto_coletor.py"
+  ],
+  "versao": "coletor-piloto-v1"
+}

@@ -100,6 +100,19 @@ class TestImportacaoReal(unittest.TestCase):
             self.assertEqual(len(group['imputacoes']),int(expected=='resposta_formato_invalido'))
         self.root=base
 
+    def test_modelo_nao_reportado_permanece_nulo_com_causa(self):
+        t = self.entrada()
+        t.update(modelo_reportado=None, modelo_reportado_indisponibilidade='CONTROLE: CLI nao expoe modelo efetivo')
+        self.attempt.write_bytes(a.serial(t))
+        result, code = self.avaliar()
+        self.assertEqual(code, 0)
+        self.assertIsNone(result['modelo_reportado'])
+        self.assertEqual(result['modelo_reportado_indisponibilidade'], t['modelo_reportado_indisponibilidade'])
+        del t['modelo_reportado_indisponibilidade']
+        self.attempt.write_bytes(a.serial(t))
+        result, code = self.avaliar('sem-causa')
+        self.assertEqual(code, 2)
+
     def test_mistura_origem_fase_e_versoes_bloqueada(self):
         self.entrada();r,_=self.avaliar()
         with self.assertRaises(ValueError):a.resumir_registros([r],self.planned(r))

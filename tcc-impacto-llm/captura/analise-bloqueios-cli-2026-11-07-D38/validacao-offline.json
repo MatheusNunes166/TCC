@@ -1,0 +1,83 @@
+{
+  "consultas": [
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_controles_cli.py",
+        "-v"
+      ],
+      "esperado": 0,
+      "retorno": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_coletor_piloto.py",
+        "-v"
+      ],
+      "esperado": 0,
+      "retorno": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "coletor_piloto.py",
+        "simular",
+        "--plano",
+        "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\planejamento-piloto-2026-11-07-D38\\plano.json"
+      ],
+      "esperado": 0,
+      "retorno": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "coletor_piloto.py",
+        "iniciar",
+        "--plano",
+        "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\planejamento-piloto-2026-11-07-D38\\plano.json",
+        "--lote",
+        "captura/piloto/D38-NAO-CRIAR",
+        "--enviar-real"
+      ],
+      "esperado": 2,
+      "retorno": 2
+    }
+  ],
+  "envio_real_bloqueado": true,
+  "fontes": [
+    {
+      "arquivo": "coletor_piloto.py",
+      "sha256": "619d742f98cf9cc87f135f716a09ed432ba8e51af7837e811bea97363ed09c48"
+    },
+    {
+      "arquivo": "tests/test_controles_cli.py",
+      "sha256": "e4477c0837b08cbe3be839a30773f17db94a2458c8dd5145b674a07d6bef5b25"
+    },
+    {
+      "arquivo": "tests/test_coletor_piloto.py",
+      "sha256": "357196c59634d4e0e95741f631f83f8bc5478c52c48545aa51cc5e9ed611ed5a"
+    }
+  ],
+  "ordem_anterior_preservada": true,
+  "payloads_anteriores_preservados": true,
+  "plano_arquivo": "captura/planejamento-piloto-2026-11-07-D38/plano.json",
+  "plano_sha256": "399651d2cc638206f05bc5ebe510677d842a8979e84911de1da9cf105e9ed798",
+  "tipo": "CONTROLES_ARTIFICIAIS_SEM_LLM"
+}

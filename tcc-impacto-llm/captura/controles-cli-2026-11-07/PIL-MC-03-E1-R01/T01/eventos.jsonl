@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "ea5be7ad77424cd89ca0e72901824e24"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"type": "agent_message", "text": " \r\n{\"requisitos\":[],\"testes\":[]}\r\n "}}
+{"type": "turn.completed", "usage": {"input_tokens": null, "output_tokens": null}}

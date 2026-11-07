@@ -1,0 +1,16 @@
+test_16_capturas_bytes_repeticoes_e_continuacao_sem_reenvio (test_coletor_piloto.TestColetor.test_16_capturas_bytes_repeticoes_e_continuacao_sem_reenvio) ... ok
+test_ambiente_nao_herda_contexto_ou_credenciais (test_coletor_piloto.TestColetor.test_ambiente_nao_herda_contexto_ou_credenciais) ... ok
+test_avaliacao_separada_pelos_arquivos (test_coletor_piloto.TestColetor.test_avaliacao_separada_pelos_arquivos) ... ok
+test_envio_real_sempre_bloqueado_inclusive_com_flag (test_coletor_piloto.TestColetor.test_envio_real_sempre_bloqueado_inclusive_com_flag) ... ok
+test_falha_antes_do_processo_e_recuperacao_sem_reenvio (test_coletor_piloto.TestColetor.test_falha_antes_do_processo_e_recuperacao_sem_reenvio) ... ok
+test_falha_tecnica_so_uma_retentativa_vinculada (test_coletor_piloto.TestColetor.test_falha_tecnica_so_uma_retentativa_vinculada) ... ok
+test_ferramentas_modelo_e_turnos_como_desvios (test_coletor_piloto.TestColetor.test_ferramentas_modelo_e_turnos_como_desvios) ... ok
+test_integridade_tamper_configuracao_e_caminhos (test_coletor_piloto.TestColetor.test_integridade_tamper_configuracao_e_caminhos) ... ok
+test_interrupcao_e_morte_apos_fechamento_sem_duplicacao (test_coletor_piloto.TestColetor.test_interrupcao_e_morte_apos_fechamento_sem_duplicacao) ... ok
+test_invalida_e_vazia_nao_geram_retry (test_coletor_piloto.TestColetor.test_invalida_e_vazia_nao_geram_retry) ... ok
+test_plano_simulacao_sem_invocacao_e_ordem_registrada (test_coletor_piloto.TestColetor.test_plano_simulacao_sem_invocacao_e_ordem_registrada) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 27.039s
+
+OK

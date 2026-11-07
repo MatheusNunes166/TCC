@@ -1,0 +1,26 @@
+usage: coletor_piloto.py [-h]
+                         {ambiente,preparar,simular,iniciar,controle,recuperar,avaliar} ...
+
+Coletor sequencial do piloto. Ajuda, preparacao e simulacao nunca enviam
+prompts. A CLI instalada ainda nao demonstra a fronteira D-29; iniciar
+--enviar-real permanece bloqueado. O mesmo motor de captura e exercitado com
+processo local. Somente o comando avaliar importa o avaliador e abre a
+referencia privada.
+
+positional arguments:
+  {ambiente,preparar,simular,iniciar,controle,recuperar,avaliar}
+    ambiente            consultas locais; nunca envia prompts
+    preparar            registra ordem e remonta oito pacotes v2-LF
+    simular             confere bytes e mostra argv; nenhum modelo/processo
+                        iniciado
+    iniciar             futuro piloto; BLOQUEADO pelos controles D-29
+                        pendentes
+    controle            APENAS processo substituto fixo, sintetico, local e
+                        sem rede
+    recuperar           recupera arquivos locais sem enviar ou retomar
+                        conversa
+    avaliar             etapa separada; importa respostas preservadas e chama
+                        avaliador existente
+
+options:
+  -h, --help            show this help message and exit

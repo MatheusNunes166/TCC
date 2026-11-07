@@ -1,0 +1,196 @@
+{
+  "argv": [
+    "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+    "app-server",
+    "--strict-config",
+    "--listen",
+    "stdio://",
+    "-c",
+    "analytics.enabled=false",
+    "-c",
+    "web_search=\"disabled\"",
+    "-c",
+    "project_doc_max_bytes=0",
+    "-c",
+    "skills.include_instructions=false",
+    "-c",
+    "memories.generate_memories=false",
+    "-c",
+    "memories.use_memories=false",
+    "-c",
+    "model_provider=\"openai\"",
+    "--disable",
+    "shell_tool",
+    "--disable",
+    "view_image",
+    "--disable",
+    "apps",
+    "--disable",
+    "plugins",
+    "--disable",
+    "multi_agent",
+    "--disable",
+    "browser_use",
+    "--disable",
+    "computer_use",
+    "--disable",
+    "image_generation",
+    "--disable",
+    "goals",
+    "--disable",
+    "sleep_tool",
+    "--disable",
+    "hooks",
+    "--disable",
+    "skill_search",
+    "--disable",
+    "workspace_dependencies",
+    "--disable",
+    "memories",
+    "--disable",
+    "skill_mcp_dependency_install",
+    "--disable",
+    "remote_plugin",
+    "--disable",
+    "unbounded_connection_retries"
+  ],
+  "diagnostico": null,
+  "limite": "config/read de app-server; nao e exec --ignore-user-config nem prova do transporte",
+  "resultado": {
+    "config": {
+      "features": {
+        "api_key_cyber_access_programs": false,
+        "api_key_model_discovery": true,
+        "apps": false,
+        "auth_elicitation": true,
+        "background_paginated_rollout_migration": false,
+        "browser_use": false,
+        "codex_apps_mcp_2026_07_28": false,
+        "computer_use": false,
+        "goals": false,
+        "hooks": false,
+        "image_generation": false,
+        "mcp_2026_07_28": false,
+        "memories": false,
+        "mentions_v2": true,
+        "multi_agent": false,
+        "network_proxy": null,
+        "plugins": false,
+        "remote_control": false,
+        "remote_plugin": false,
+        "shell_tool": false,
+        "skill_mcp_dependency_install": false,
+        "skill_search": false,
+        "sleep_tool": false,
+        "tool_suggest": true,
+        "unbounded_connection_retries": false,
+        "view_image": false,
+        "windows_sandbox_service": false,
+        "workspace_dependencies": false
+      },
+      "instrucoes_configuradas": {
+        "developer_instructions": {
+          "presente": false,
+          "sha256": null
+        },
+        "instructions": {
+          "presente": false,
+          "sha256": null
+        },
+        "model_instructions_file": {
+          "presente": false,
+          "sha256": null
+        }
+      },
+      "mcp": {},
+      "memories": {
+        "consolidation_model": null,
+        "dedicated_tools": null,
+        "disable_on_external_context": null,
+        "dual_write": null,
+        "extract_model": null,
+        "generate_memories": false,
+        "max_raw_memories_for_consolidation": null,
+        "max_rollout_age_days": null,
+        "max_rollouts_per_startup": null,
+        "max_unused_days": null,
+        "min_rate_limit_remaining_percent": null,
+        "min_rollout_idle_hours": null,
+        "use_memories": false,
+        "version": null
+      },
+      "model": "gpt-6.1-sol",
+      "model_provider": "openai",
+      "model_reasoning_effort": "high",
+      "plugins_configurados": [],
+      "project_doc_max_bytes": 0,
+      "providers": {},
+      "sandbox_mode": null,
+      "skills": {
+        "include_instructions": false
+      },
+      "web_search": "disabled"
+    },
+    "layers": [
+      {
+        "disabledReason": null,
+        "source": {
+          "type": "sessionFlags"
+        }
+      },
+      {
+        "disabledReason": null,
+        "source": {
+          "file": "C:\\Users\\User\\.codex\\config.toml",
+          "profile": null,
+          "type": "user"
+        }
+      },
+      {
+        "disabledReason": null,
+        "source": {
+          "file": "C:\\ProgramData\\OpenAI\\Codex\\config.toml",
+          "type": "system"
+        }
+      }
+    ],
+    "origins": {
+      "model": {
+        "name": {
+          "file": "C:\\Users\\User\\.codex\\config.toml",
+          "profile": null,
+          "type": "user"
+        },
+        "version": "sha256:68eeb4815e101229c9c46302d1ab9cb01e8b20698b2c53c7e2069b627efc2597"
+      },
+      "model_provider": {
+        "name": {
+          "type": "sessionFlags"
+        },
+        "version": "sha256:8e534790b321192a19331ff9754b60b9d8cb9cfcc6f520b33a2c705371dd70fc"
+      },
+      "model_reasoning_effort": {
+        "name": {
+          "file": "C:\\Users\\User\\.codex\\config.toml",
+          "profile": null,
+          "type": "user"
+        },
+        "version": "sha256:68eeb4815e101229c9c46302d1ab9cb01e8b20698b2c53c7e2069b627efc2597"
+      },
+      "project_doc_max_bytes": {
+        "name": {
+          "type": "sessionFlags"
+        },
+        "version": "sha256:8e534790b321192a19331ff9754b60b9d8cb9cfcc6f520b33a2c705371dd70fc"
+      },
+      "web_search": {
+        "name": {
+          "type": "sessionFlags"
+        },
+        "version": "sha256:8e534790b321192a19331ff9754b60b9d8cb9cfcc6f520b33a2c705371dd70fc"
+      }
+    }
+  },
+  "retorno": 0,
+  "stderr": ""
+}

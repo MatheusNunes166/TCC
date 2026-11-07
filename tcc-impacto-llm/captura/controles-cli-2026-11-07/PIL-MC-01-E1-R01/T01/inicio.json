@@ -1,0 +1,74 @@
+{
+  "ambiente_chaves_permitidas": [
+    "APPDATA",
+    "COMSPEC",
+    "HOMEDRIVE",
+    "HOMEPATH",
+    "LANG",
+    "LOCALAPPDATA",
+    "PATH",
+    "PATHEXT",
+    "PROGRAMDATA",
+    "SYSTEMROOT",
+    "TEMP",
+    "TMP",
+    "USERPROFILE",
+    "WINDIR"
+  ],
+  "argv": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "-B",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\tests\\substituto_coletor.py"
+  ],
+  "configuracao": {
+    "bloqueios_envio": [
+      "Fronteira D-29 nao demonstrada: sem inventario efetivo que comprove tools=[].",
+      "Codex injeta instrucoes de agente (base_instructions no catalogo embutido); entrega somente do payload e ausencia de contexto adicional nao demonstradas.",
+      "Disponibilidade remota de gpt-6-sol/medium, revisao dos materiais, orcamento e autorizacao operacional de inicio ainda pendentes.",
+      "Desativacao das retentativas internas de transporte da CLI ainda nao demonstrada nesta versao; nao presumir que um processo corresponde a uma requisicao."
+    ],
+    "esforco_solicitado": "medium",
+    "ferramentas_desativadas_verificado": false,
+    "ferramentas_desativar_solicitadas": [
+      "shell_tool",
+      "view_image",
+      "apps",
+      "plugins",
+      "multi_agent",
+      "browser_use",
+      "computer_use",
+      "image_generation",
+      "goals",
+      "sleep_tool",
+      "hooks",
+      "skill_search",
+      "workspace_dependencies",
+      "memories",
+      "skill_mcp_dependency_install",
+      "remote_plugin",
+      "unbounded_connection_retries"
+    ],
+    "historico_sessao": "novo codex exec; nunca resume/fork",
+    "id": "piloto-codex-gpt-6-sol-medium-D37",
+    "interface": "codex exec",
+    "limite_saida": null,
+    "mensagem_usuario": "payload completo via stdin; sem acrescimos",
+    "modelo_reportado": null,
+    "modelo_solicitado": "gpt-6-sol",
+    "orcamento": null,
+    "parametros_nao_verificados": [
+      "modelo remoto",
+      "limite de saida",
+      "fronteira D-29",
+      "retentativas internas CLI"
+    ],
+    "saida_estruturada_forcada": false,
+    "seed_modelo": null,
+    "temperatura": null,
+    "top_p": null
+  },
+  "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\controles-cli-2026-11-07\\PIL-MC-01-E1-R01\\T01\\ambiente",
+  "fase": "verificacao_sintetica",
+  "instante": "2026-11-07T15:06:00.636360+00:00",
+  "origem": "sintetica"
+}

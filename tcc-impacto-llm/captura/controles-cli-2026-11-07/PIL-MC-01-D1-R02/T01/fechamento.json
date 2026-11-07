@@ -1,0 +1,88 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "ambiente/stdin-recebido.bin",
+      "sha256": "70847bd4addf3250bfb64e45a826c4bd70d887f27138c153a921434ce32a41f4"
+    },
+    {
+      "arquivo": "entrada.bin",
+      "sha256": "70847bd4addf3250bfb64e45a826c4bd70d887f27138c153a921434ce32a41f4"
+    },
+    {
+      "arquivo": "eventos.jsonl",
+      "sha256": "a84e3821c2ff837be283972268cdec9b2d9f859b7169e06d7dc66b9015e4b8ba"
+    },
+    {
+      "arquivo": "inicio.json",
+      "sha256": "979ca6232e4b3ae6df4603e05cb6434dd1dae072a4ddd4783f40371f789d7501"
+    },
+    {
+      "arquivo": "mensagem-01.bin",
+      "sha256": "f3e30f47c01afc8a0060e10acec80e0dc951ffb35dab6793c9603e173edb94f6"
+    },
+    {
+      "arquivo": "preparacao/autorizacao-original.json",
+      "sha256": "06386341c41a89fe6f55a13f702989a6e76cf8206fe8cf5ca056f03efe8f036b"
+    },
+    {
+      "arquivo": "preparacao/documentos/catalogo-baseline.md",
+      "sha256": "b7261fd6b24a0eca7f1e4abcb4a8ffcbf092e071931be6c4f086646d82242c76"
+    },
+    {
+      "arquivo": "preparacao/documentos/definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "preparacao/documentos/mudanca.md",
+      "sha256": "2533dc368d1ba56c6151f470606438fe1e8d4ccda9773bcc907098099d4f852e"
+    },
+    {
+      "arquivo": "preparacao/documentos/notas.md",
+      "sha256": "5e209b6e58ba986df05846f6d36c9464fbc3d669f70ab97d8d0014872dc00add"
+    },
+    {
+      "arquivo": "preparacao/documentos/pedido.txt",
+      "sha256": "358a5921dd5c415a6fe012a59fdbfdeed74c6c997e71a4a5dc62655944abe795"
+    },
+    {
+      "arquivo": "preparacao/documentos/requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "preparacao/documentos/schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "preparacao/documentos/sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "preparacao/entrega-textual.json",
+      "sha256": "a645f4938e7f4f06363b418f5cbf206d1387513f06f98a2018744df48de90a10"
+    },
+    {
+      "arquivo": "preparacao/manifesto-original.json",
+      "sha256": "053567dc4bb454ac580122ed76db66073481f19503c20575456f8558e6dd286b"
+    },
+    {
+      "arquivo": "preparacao/payload.txt",
+      "sha256": "70847bd4addf3250bfb64e45a826c4bd70d887f27138c153a921434ce32a41f4"
+    },
+    {
+      "arquivo": "preparacao/preparacao.json",
+      "sha256": "82815c54bbd0cd647dfc575f1da3ce8dc784ff791548961cca0486c168678ca1"
+    },
+    {
+      "arquivo": "resposta.bin",
+      "sha256": "f3e30f47c01afc8a0060e10acec80e0dc951ffb35dab6793c9603e173edb94f6"
+    },
+    {
+      "arquivo": "stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "arquivo": "tentativa.json",
+      "sha256": "d5266e43908f87fa1880892c57dddaaf3c2ca35851013eced74f8eaeaddf30ed"
+    }
+  ]
+}

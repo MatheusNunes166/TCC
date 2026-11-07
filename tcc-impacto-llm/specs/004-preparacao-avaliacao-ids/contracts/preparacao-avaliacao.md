@@ -1,5 +1,21 @@
 # Contrato local proposto — montagem e avaliação de IDs
 
+## Complemento D-38 — análise dos bloqueios, 07/11/2026
+
+[Relatório delimitado](../../../captura/analise-bloqueios-cli-2026-11-07-D38/RELATORIO.md) e [decisão D-38](../../../documentacao/decisoes.md). Coletor v1.1-D38/configuração D-38 mantém GPT-6 Sol/medium e copia a ordem/payloads D-37 em plano novo, preservando anteriores. Acrescenta controles aceitos de skills/memórias/provedor/auth e strict-config; nenhum falso `tools=[]` ou retry=0 para a rota embutida. Ambas as pendências permanecem e a trava é incondicional.
+
+Eventos genéricos error não identificam por si retry HTTP, geração ou nova observação. Se houver final íntegro e turn.completed no mesmo turno, o coletor conserva conclusão/texto com desvio e bloqueio de continuação; não o reenvia como falha técnica. Retentativas de transporte observadas permanecem nulas quando não expostas; contagem de erros/turnos é registrada separadamente. Pontuação/avaliação e regra de retentativa técnica T02 permanecem iguais. Instruções adicionais no render local e rejeição de model_providers.openai são limitações concretas, não autorização para alterar D-29 ou migrar a API automaticamente.
+
+## Complemento D-37 — coletor offline, 07/11/2026
+
+Novo ponto de operação: [material 05, seção 5.11](../../../materiais/05_PILOTO_E_COLETA.md#511-coletor-offline-d-37-07112026), [coletor](../../../coletor_piloto.py), [decisão D-37](../../../documentacao/decisoes.md). `ambiente`, `preparar`, `simular`, `controle`, `recuperar`, `iniciar` e `avaliar` são comandos separados. Somente `avaliar` importa o avaliador e recebe caminho da referência. O ramo de envio não lê gabarito/fontes privadas. Originais de captura/avaliação permanecem nos caminhos protegidos D-36; saídas novas e criação exclusiva, sem sobrescrita.
+
+Modelo solicitado GPT-6 Sol/medium, 16 observações MC-01/MC-03 × D0/D1/E0/E1 × duas repetições. Plano/ordem registrados pelo ordenador existente, semente local 20261106 e Python/algoritmo, oito payloads v2-LF idênticos aos preparados. Configuração é solicitada e bloqueada, sem autorização de execução. `simular` verifica tudo e mostra argv/pendências sem iniciar processo LLM. `iniciar` exige `--enviar-real`, mas retorna 2 mesmo com essa flag enquanto D-29 e retentativas internas da CLI não forem demonstrados. Nenhuma opção ignora o gate.
+
+O motor preserva entrada, fluxo JSONL/stderr bruto, mensagens e final extraídos sem limpeza, instantes, retorno e metadados; inicia processo/sessão novos por tentativa, fixa modelo/esforço e congela hashes de plano/código/adaptador. Retentativa técnica única é vinculada e só ocorre em continuação explícita após corrigir indisponibilidade. Inválidas/conclusões não são reenviadas. Interrupção ambígua/desvio bloqueiam continuação automática. Controles usam sempre origem sintética/fase de verificação, nunca piloto; leitura do plano de pesquisa não promove esses controles a reais.
+
+Ajuste do importador: `modelo_reportado` pode ser **nulo explícito**, com `modelo_reportado_indisponibilidade` textual obrigatório nesse caso; o campo e a causa são preservados na avaliação. Texto vazio ou campo ausente continuam inválidos. Não copiar o solicitado para o reportado. Esse complemento substitui somente a exigência anterior de texto não vazio para modelo efetivo; demais regras D-35/D-36 e política de pontuação permanecem iguais. Conformidade real continua pendente até conferência independente da captura, sem certificação por escore.
+
 ## Complemento vigente D-36 — preservação dos arquivos, 06/11/2026
 
 Este complemento substitui as afirmações anteriores de cópia literal **das fontes para os documentos exportados**. O conteúdo experimental D-35, notas 0.2-local, seletores, condições, schema e métricas permanecem iguais. Montagem `spec004-v3` continua copiando literalmente os documentos já exportados; não normaliza entradas efetivamente enviadas, respostas ou fragmentos recebidos. Referência, capturas e evidências anteriores não são regravadas.

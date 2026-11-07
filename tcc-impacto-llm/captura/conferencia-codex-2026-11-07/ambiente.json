@@ -1,0 +1,57 @@
+{
+  "bloqueios_envio": [
+    "Fronteira D-29 nao demonstrada: sem inventario efetivo que comprove tools=[].",
+    "Codex injeta instrucoes de agente (base_instructions no catalogo embutido); entrega somente do payload e ausencia de contexto adicional nao demonstradas.",
+    "Disponibilidade remota de gpt-6-sol/medium, revisao dos materiais, orcamento e autorizacao operacional de inicio ainda pendentes."
+  ],
+  "consultas": [
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "--version"
+      ],
+      "consulta": "versao",
+      "retorno": 0
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "--help"
+      ],
+      "consulta": "ajuda",
+      "retorno": 0
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "exec",
+        "--help"
+      ],
+      "consulta": "exec-ajuda",
+      "retorno": 0
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "login",
+        "status"
+      ],
+      "consulta": "autenticacao",
+      "retorno": 0
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "debug",
+        "models",
+        "--bundled"
+      ],
+      "consulta": "catalogo-embutido",
+      "retorno": 0
+    }
+  ],
+  "esforco_solicitado": "medium",
+  "executable": "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+  "instante": "2026-11-07T14:54:11.991526+00:00",
+  "modelo_solicitado": "gpt-6-sol"
+}

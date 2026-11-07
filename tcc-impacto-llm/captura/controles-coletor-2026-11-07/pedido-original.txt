@@ -1,0 +1,93 @@
+Leia a governança, o estado atual e o contrato de coleta/avaliação. Implemente um coletor pequeno para automatizar o piloto existente, reutilizando a preparação v2-LF e o avaliador.
+
+Esta autorização permite implementação e verificações offline. Não realizar chamadas reais ao LLM, executar o piloto, fazer commit ou push.
+
+1. Conferir a integração disponível
+
+Verifique a instalação local do Codex CLI, sua versão, ajuda e autenticação disponível, sem expor credenciais ou enviar prompts ao modelo.
+
+Use `codex exec` para a integração, conforme os recursos efetivamente suportados pela versão instalada. Não invente flags, não instale outra ferramenta ou contrate API automaticamente.
+
+Confira como configurar contexto independente, modelo, esforço, ferramentas e captura de eventos. Uma pasta vazia ou sandbox somente leitura não comprova ausência de ferramentas. Não declare essa restrição verificada apenas porque nenhuma ferramenta foi utilizada.
+
+Se a CLI não permitir satisfazer algum controle experimental, identifique a limitação concreta e mantenha o envio real bloqueado. Continue os trabalhos offline independentes.
+
+2. Implementar o executor mínimo
+
+Preferencialmente, criar um módulo Python com biblioteca padrão, utilizando subprocessos e o fluxo existente.
+
+O coletor deverá:
+
+- Ler o plano e a ordem registrada das 16 observações.
+- Conferir identidade, configuração, arquivos e hashes antes dos envios.
+- Executar sequencialmente, uma observação por vez.
+- Iniciar uma sessão nova para cada observação, sem compartilhar histórico.
+- Fornecer o payload completo, sem instruções adicionais que alterem o experimento.
+- Manter fixos modelo e esforço durante o lote.
+- Preservar entrada, resposta original, eventos completos, erros, códigos de retorno, horários e configuração.
+- Distinguir modelo solicitado do modelo efetivamente reportado; valores não disponíveis permanecem desconhecidos.
+- Mostrar progresso e localização dos arquivos gerados.
+
+Modelo escolhido: GPT-6 Sol, sem substituir por GPT-6.1 Sol. Esforço inicialmente proposto: médio, sujeito à conferência da disponibilidade local.
+
+O ambiente experimental não poderá receber código, gabarito, histórico de desenvolvimento ou resultados das variantes. As ferramentas devem seguir a restrição já definida no protocolo.
+
+Não usar a conversa de desenvolvimento como contexto da execução experimental.
+
+3. Preservar o procedimento experimental
+
+O lote terá:
+
+MC-01 e MC-03 × D0/D1/E0/E1 × duas repetições = 16 observações.
+
+Reutilize o plano/ordenador existente. Caso a ordem ainda não esteja registrada, prepare-a com semente local 20261106, identificando algoritmo e versão do Python. Essa semente controla somente a ordem.
+
+As repetições devem usar os mesmos bytes de payload e a mesma configuração.
+
+- Não pedir explicações, reparos ou uma resposta melhor.
+- Não repetir respostas por estarem erradas ou inválidas.
+- Aplicar somente a retentativa técnica prevista no protocolo, com vínculo à tentativa original.
+- Registrar ferramentas, turnos adicionais e mudanças de configuração como desvios, preservando as evidências.
+- Não incorporar os resultados exploratórios anteriores ao piloto.
+
+Permitir interromper e continuar o lote sem repetir observações concluídas. Continuar o lote significa recuperar o estado do coletor; não significa retomar a conversa anterior do modelo.
+
+4. Separar captura e avaliação
+
+O coletor de envio não deve consultar o gabarito.
+
+Depois da captura, disponibilizar um comando separado que utilize o avaliador existente para importar as respostas reais e gerar os resumos. Nunca devolver resultados da avaliação ao modelo.
+
+Preservar textos originais sem trim, correção, remoção de cercas ou reserialização do JSON da resposta. Se a CLI fornecer eventos, guardar o fluxo original e identificar o texto final extraído.
+
+Usar registros compatíveis com origem real e fase piloto somente quando chamadas reais ocorrerem. Controles artificiais devem permanecer claramente separados.
+
+Guardar capturas e avaliações nos caminhos protegidos pela política de preservação. Não sobrescrever evidências existentes.
+
+5. Criar modo de conferência sem chamadas
+
+Disponibilizar um comando de simulação que:
+
+- Não invoque o modelo nem envie requisições.
+- Confira os 16 itens, os oito payloads únicos, hashes e caminhos.
+- Mostre os comandos/configurações que seriam utilizados, sem credenciais.
+- Identifique parâmetros e controles ainda não verificados.
+
+Teste o coletor com um processo substituto local, sem rede, exercitando resposta válida, inválida, falha técnica, interrupção e continuação do lote.
+
+Não apresentar esses controles como respostas de LLM ou piloto executado.
+
+6. Entregar uma operação simples
+
+Documente no ponto de entrada existente:
+
+- Como conferir o ambiente.
+- O comando de simulação.
+- O comando para iniciar o piloto real.
+- Como continuar um lote interrompido.
+- O comando de avaliação.
+- Onde encontrar entradas, respostas, eventos e tabelas.
+
+Ao concluir, apresente arquivos alterados, verificações realizadas, controles efetivamente demonstrados e pendências concretas.
+
+O envio real deve exigir uma opção explícita. Nenhuma chamada pode ocorrer por padrão, durante testes ou ao consultar a ajuda.

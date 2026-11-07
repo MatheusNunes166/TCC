@@ -1,5 +1,9 @@
 # Qualidade e testes da bancada
 
+D-38: [validação offline](../captura/analise-bloqueios-cli-2026-11-07-D38/validacao-offline.json), quatro testes de controles CLI e doze do coletor aprovados, sem LLM. Inclui a preservação de final após erro de cliente, ausência de reenvio dessa conclusão, configuração sem overrides inválidos e trava que continua bloqueando com lista de bloqueios vazia. Não equivale a comprovar transporte/ferramentas de uma chamada real.
+
+D-37, 07/11/2026: [controles do coletor](../tests/test_coletor_piloto.py) exercitam processos substitutos locais, identidade/hashes, bytes literais, respostas válidas/inválidas, falha técnica, pausa, interrupção e continuação. São artefatos artificiais, sem chamadas ao LLM e sem comprovação da fronteira real D-29. [Execução registrada](../captura/controles-coletor-2026-11-07/testes.json).
+
 Estado, capacidades e pendências: [ponto de entrada](../ESTADO_ATUAL.md). Registros datados anteriores preservados em [histórico](historico/pre-piloto-2026-11-06/LEIA_PRIMEIRO.md).
 
 ## Estratégia de verificação

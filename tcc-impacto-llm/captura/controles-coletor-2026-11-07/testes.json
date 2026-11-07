@@ -1,0 +1,100 @@
+{
+  "tipo": "CONTROLES_ARTIFICIAIS_SEM_LLM",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "consultas": [
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_coletor_piloto.py",
+        "-v"
+      ],
+      "retorno": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "5a93115d51e7439d29184b914c5046896e21a0805c142680233a5735842e78ee"
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_avaliacao*.py",
+        "-v"
+      ],
+      "retorno": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "fe8de313de95552d197df1a951ae481aada21be3b2e7a667349083d9f5fac537"
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_montagem_entradas.py",
+        "-v"
+      ],
+      "retorno": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "0721556ea8444599064158c04ef874c2d372aca14cb2527e0ce1696f011368ab"
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_fontes_autorizadas.py",
+        "-v"
+      ],
+      "retorno": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "9f17f78739e274a9d3f5908668496b91a40f1e58356888828cfce749ef17549b"
+    }
+  ],
+  "fontes": [
+    {
+      "arquivo": "coletor_piloto.py",
+      "sha256": "30a2c5943d1e17afce4be20c8caa0527c833434ba2e4989fcebb6ee1ca778105"
+    },
+    {
+      "arquivo": "avaliacao_ids.py",
+      "sha256": "8b8e15b548c63b31712498a56e9f374d83d5b387123868339ab354e7c8f1dd95"
+    },
+    {
+      "arquivo": "montagem_entradas.py",
+      "sha256": "ed1d1fc0f2b4839d7079c35687058ee24bc0d2767b04ba188fe02f32f5d56d94"
+    },
+    {
+      "arquivo": "tests/test_coletor_piloto.py",
+      "sha256": "a0fc559fba789ef6dd3279fe839033d7b82fa2b46ed818d709b224971c9d8222"
+    },
+    {
+      "arquivo": "tests/substituto_coletor.py",
+      "sha256": "f60ac7a7c3688c57d3a47300ca94dc2d06ef9f95892b3d6ae8852b8343bd62ba"
+    },
+    {
+      "arquivo": "tests/test_avaliacao_real.py",
+      "sha256": "43671aefb6a91dcdaf28a7719da60e29c4b2de3f2a82dba58a55e0b43846e560"
+    }
+  ]
+}

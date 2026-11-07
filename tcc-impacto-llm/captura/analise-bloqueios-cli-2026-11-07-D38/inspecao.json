@@ -1,0 +1,228 @@
+{
+  "ambiente_chaves": [
+    "APPDATA",
+    "COMSPEC",
+    "HOMEDRIVE",
+    "HOMEPATH",
+    "LANG",
+    "LOCALAPPDATA",
+    "PATH",
+    "PATHEXT",
+    "PROGRAMDATA",
+    "SYSTEMROOT",
+    "TEMP",
+    "TMP",
+    "USERPROFILE",
+    "WINDIR"
+  ],
+  "binary": "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+  "binary_sha256": "f5521b058ca08e249afd3b25b4681e81100181d92e73aa6b94bb8e75c2aa487b",
+  "consultas": [
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "--version"
+      ],
+      "nome": "versao",
+      "retorno": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7747b1c26798719d98cac787dfc2c425f845f347a443492894a0d739fae8ca0d"
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "exec",
+        "--help"
+      ],
+      "nome": "exec-ajuda",
+      "retorno": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "df0d864ca2076f7654288c6a1e3394e3eaa2ea8f15021df2524efdd90c70986c"
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "login",
+        "status"
+      ],
+      "nome": "autenticacao",
+      "retorno": 0,
+      "stderr_sha256": "16118df3eb3595e44a4721878cef0f79910e6564e10ff0e78e451e7c4e478947",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "features",
+        "list"
+      ],
+      "nome": "features",
+      "retorno": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "893521bd9b4eaa8c732995723c7d93e7ddbb5c3c8f82a2d0513fb0be9dde5589"
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "--strict-config",
+        "-c",
+        "model_providers.openai.request_max_retries=0",
+        "-c",
+        "model_providers.openai.stream_max_retries=0",
+        "features",
+        "list"
+      ],
+      "nome": "builtin-retries-zero",
+      "retorno": 1,
+      "stderr_sha256": "ef6a7bfe1f25398b8b23921d9cbd8093f2952a46260f7ce91a1149d08200a0fd",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "--strict-config",
+        "-c",
+        "model_providers.controle.name=\"Controle local sem chamadas\"",
+        "-c",
+        "model_providers.controle.base_url=\"http://127.0.0.1:1/v1\"",
+        "-c",
+        "model_providers.controle.request_max_retries=0",
+        "-c",
+        "model_providers.controle.stream_max_retries=0",
+        "features",
+        "list"
+      ],
+      "nome": "custom-zero",
+      "retorno": 1,
+      "stderr_sha256": "ef6a7bfe1f25398b8b23921d9cbd8093f2952a46260f7ce91a1149d08200a0fd",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "--strict-config",
+        "-c",
+        "model_providers.controle.name=\"Controle local sem chamadas\"",
+        "-c",
+        "model_providers.controle.request_max_retries=1",
+        "-c",
+        "model_providers.controle.stream_max_retries=1",
+        "features",
+        "list"
+      ],
+      "nome": "custom-one",
+      "retorno": 1,
+      "stderr_sha256": "ef6a7bfe1f25398b8b23921d9cbd8093f2952a46260f7ce91a1149d08200a0fd",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "--strict-config",
+        "-c",
+        "model_providers.controle.name=\"Controle local sem chamadas\"",
+        "-c",
+        "model_providers.controle.request_max_retries=-1",
+        "features",
+        "list"
+      ],
+      "nome": "custom-negative",
+      "retorno": 1,
+      "stderr_sha256": "ef6a7bfe1f25398b8b23921d9cbd8093f2952a46260f7ce91a1149d08200a0fd",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "--strict-config",
+        "-c",
+        "model_providers.controle.name=\"Controle local sem chamadas\"",
+        "-c",
+        "model_providers.controle.stream_max_retries=-1",
+        "features",
+        "list"
+      ],
+      "nome": "custom-stream-negative",
+      "retorno": 1,
+      "stderr_sha256": "ef6a7bfe1f25398b8b23921d9cbd8093f2952a46260f7ce91a1149d08200a0fd",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "--strict-config",
+        "-c",
+        "model_providers.controle.name=\"Controle local sem chamadas\"",
+        "-c",
+        "model_providers.controle.request_max_retries=\"zero\"",
+        "features",
+        "list"
+      ],
+      "nome": "custom-string",
+      "retorno": 1,
+      "stderr_sha256": "ef6a7bfe1f25398b8b23921d9cbd8093f2952a46260f7ce91a1149d08200a0fd",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "--strict-config",
+        "-c",
+        "D38_chave_deliberadamente_inexistente=true",
+        "features",
+        "list"
+      ],
+      "nome": "controle-chave-inexistente",
+      "retorno": 1,
+      "stderr_sha256": "ef6a7bfe1f25398b8b23921d9cbd8093f2952a46260f7ce91a1149d08200a0fd",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "--strict-config",
+        "-c",
+        "skills.include_instructions=false",
+        "features",
+        "list"
+      ],
+      "nome": "skills-instructions",
+      "retorno": 1,
+      "stderr_sha256": "ef6a7bfe1f25398b8b23921d9cbd8093f2952a46260f7ce91a1149d08200a0fd",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "--strict-config",
+        "-c",
+        "memories.generate_memories=false",
+        "-c",
+        "memories.use_memories=false",
+        "features",
+        "list"
+      ],
+      "nome": "memory-controls",
+      "retorno": 1,
+      "stderr_sha256": "ef6a7bfe1f25398b8b23921d9cbd8093f2952a46260f7ce91a1149d08200a0fd",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "c:\\Users\\User\\.vscode\\extensions\\openai.chatgpt-26.1007.21434-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+        "--strict-config",
+        "-c",
+        "model_provider=\"openai\"",
+        "features",
+        "list"
+      ],
+      "nome": "provider-openai",
+      "retorno": 1,
+      "stderr_sha256": "ef6a7bfe1f25398b8b23921d9cbd8093f2952a46260f7ce91a1149d08200a0fd",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "instante": "2026-11-07T15:22:43.730590+00:00",
+  "limite": "features list valida parsing, nao prova aplicacao na rota exec nem semantica de transporte",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]"
+}
