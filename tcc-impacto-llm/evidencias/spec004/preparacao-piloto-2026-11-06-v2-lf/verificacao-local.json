@@ -1,0 +1,16 @@
+{
+  "arquivo_inventario_adicional": 1,
+  "arquivos_hash_tamanho": 361,
+  "copias_documentos": 120,
+  "divergencias": [],
+  "documentos_exportados": 120,
+  "ferramentas_modelo_exercitadas": false,
+  "fluxo_offline_pacotes": 16,
+  "fontes_originais": 6,
+  "hash_inventario": "a2278d5254f6014962bb8e838342a998894100efacf8435ac272bed185326590",
+  "limite_vazamento": "recortes fixos rederivados das seis fontes e negativos; sem detector semantico universal",
+  "payloads": 16,
+  "plataforma": "win32",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "status": "CONFERIDO"
+}

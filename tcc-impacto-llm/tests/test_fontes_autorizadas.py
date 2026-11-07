@@ -99,3 +99,34 @@ PROIBIDO_GABARITO
             self.assertNotIn(b'autorizacao_sha256',data)
             prepared.append(result)
         self.checar('S-14','dezesseis-controles-comuns',m.conferir_condicoes(prepared),True)
+
+    def test_normalizacao_antes_dos_hashes_sem_alterar_fontes(self):
+        source=self.repo/'materiais/07_DEFINICOES_COMUNS.md'
+        original=b'\xef\xbb\xbf  definicoes\r\nlinha\rfinal  \n'
+        source.write_bytes(original)
+        output=self.root/'normalizados'
+        f.exportar(self.repo,output)
+        expected=b'  definicoes\nlinha\nfinal  \n'
+        package=output/'pacotes/MC-01-D0'
+        manifest=json.loads((package/'manifesto.json').read_bytes())
+        entry=next(e for e in manifest['documentos'] if e['arquivo']=='definicoes-comuns.md')
+        self.assertEqual((package/'definicoes-comuns.md').read_bytes(),expected)
+        self.assertEqual(entry['sha256'],hashlib.sha256(expected).hexdigest())
+        self.assertEqual(entry['tamanho_bytes'],len(expected))
+        self.assertEqual(entry['recorte_antes_normalizacao'],{
+            'sha256':hashlib.sha256(original).hexdigest(),'tamanho_bytes':len(original)})
+        self.assertEqual(source.read_bytes(),original)
+        self.assertEqual((output/'fontes-originais/materiais/07_DEFINICOES_COMUNS.md').read_bytes(),original)
+        self.assertEqual(f.normalizar_documento(expected),expected)
+        # Mesmo com hashes/autorizacao refeitos, declarar LF nao aceita CRLF.
+        bad=b'  definicoes\r\nlinha\r\nfinal  \r\n'
+        (package/'definicoes-comuns.md').write_bytes(bad)
+        entry.update(sha256=f.sha(bad),tamanho_bytes=len(bad))
+        (package/'manifesto.json').write_bytes((json.dumps(manifest)+'\n').encode())
+        authpath=output/'autorizacoes/MC-01-D0.json'
+        auth=json.loads(authpath.read_bytes())
+        auth.update(manifesto_sha256=f.sha((package/'manifesto.json').read_bytes()),
+                    documentos=[{'arquivo':e['arquivo'],'sha256':e['sha256']} for e in manifest['documentos']])
+        authpath.write_bytes((json.dumps(auth)+'\n').encode())
+        with self.assertRaisesRegex(ValueError,'politica UTF-8'):
+            m.preparar(package,package/'manifesto.json',self.root/'recusado',authpath)

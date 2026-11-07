@@ -85,6 +85,9 @@ def preparar(pacote,manifesto,saida,autorizacao=None):
         for field in ('versao_contrato','pacote_id','versao_pacote','configuracao_id'):
             if not _text(m.get(field)):raise ValueError('campo obrigatorio: '+field)
         if m['versao_contrato']!=CONTRATO:raise ValueError('versao de contrato incompativel')
+        if m.get('politica_bytes') not in (None,'utf8-sem-bom-lf-v1'):
+            raise ValueError('politica de bytes incompativel')
+        if 'politica_bytes' in m:base['politica_bytes']=m['politica_bytes']
         if m.get('mudanca') not in MUDANCAS or m.get('condicao') not in CONDICOES:raise ValueError('mudanca/condicao invalida')
         if m.get('status')!='RASCUNHO_PREPARACAO' or m.get('liberado_para_pesquisa') is not False:
             raise ValueError('pacote nao e preparacao local em rascunho')
@@ -114,6 +117,8 @@ def preparar(pacote,manifesto,saida,autorizacao=None):
             if not all(_text(revision.get(k)) for k in ('responsavel','data')):raise ValueError('revisao sem responsavel/data')
             if not _text(e.get('versao')):raise ValueError('documento sem versao')
             blob=p.read_bytes();blob.decode('utf-8')
+            if m.get('politica_bytes')=='utf8-sem-bom-lf-v1' and (blob.startswith(b'\xef\xbb\xbf') or b'\r' in blob):
+                raise ValueError('documento diverge da politica UTF-8 sem BOM/LF')
             if e.get('sha256')!=sha(blob) or type(e.get('tamanho_bytes')) is not int or e['tamanho_bytes']!=len(blob):
                 raise ValueError('hash/tamanho divergente')
             tracked.append((p,sha(blob)));blobs.append((e,blob))

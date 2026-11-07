@@ -1,0 +1,40 @@
+{
+  "chamadas_externas": 0,
+  "checkouts": [
+    {
+      "ambiente": "false-lf",
+      "arquivos_hash_tamanho": 361,
+      "divergencias": [],
+      "payloads": 16
+    },
+    {
+      "ambiente": "true-crlf",
+      "arquivos_hash_tamanho": 361,
+      "divergencias": [],
+      "payloads": 16
+    },
+    {
+      "ambiente": "input-lf",
+      "arquivos_hash_tamanho": 361,
+      "divergencias": [],
+      "payloads": 16
+    },
+    {
+      "ambiente": "false-crlf",
+      "arquivos_hash_tamanho": 361,
+      "divergencias": [],
+      "payloads": 16
+    }
+  ],
+  "commit_no_projeto": false,
+  "commit_snapshot_temporario": "c355e299aafe23e3428b87dc7e5450f6e2743f6e",
+  "configuracao_global_e_sistema_inalterada": true,
+  "controles_brutos": "dois arquivos artificiais em captura/avaliados; nenhuma resposta de modelo",
+  "inventario_snapshot_sha256": "a2278d5254f6014962bb8e838342a998894100efacf8435ac272bed185326590",
+  "nao_verificados": [
+    "Linux",
+    "macOS",
+    "transporte remoto GitHub; prova local de blobs/checkouts Git"
+  ],
+  "repositorio_temporario": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\saidas-locais\\transporte-git-lf-v2-001\\snapshot"
+}

@@ -1,0 +1,8 @@
+test_S14_condicoes_payload_literal (test_montagem_entradas.TestMontagem.test_S14_condicoes_payload_literal) ... ok
+test_S14_autorizacao_externa_necessaria (test_montagem_entradas.TestMontagem.test_S14_autorizacao_externa_necessaria) ... ok
+test_S13_integridade_fechamento_e_pastas (test_montagem_entradas.TestMontagem.test_S13_integridade_fechamento_e_pastas) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.386s
+
+OK

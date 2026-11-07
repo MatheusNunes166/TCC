@@ -1,0 +1,32 @@
+[
+  {
+    "comando": [
+      "C:\\Program Files\\Python313\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_fontes_autorizadas.py",
+      "-v"
+    ],
+    "retorno": 0,
+    "PYTHONPATH": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\tests"
+  },
+  {
+    "comando": [
+      "C:\\Program Files\\Python313\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "-v",
+      "test_montagem_entradas.TestMontagem.test_S14_condicoes_payload_literal",
+      "test_montagem_entradas.TestMontagem.test_S14_autorizacao_externa_necessaria",
+      "test_montagem_entradas.TestMontagem.test_S13_integridade_fechamento_e_pastas"
+    ],
+    "retorno": 0,
+    "PYTHONPATH": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\tests"
+  }
+]

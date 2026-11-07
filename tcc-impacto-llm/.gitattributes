@@ -1,0 +1,5 @@
+# Artefatos v2: o exportador normaliza antes dos hashes; Git preserva esses bytes.
+/evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/** -text -filter -ident
+# Caminhos futuros do procedimento de captura/avaliacao: originais sempre literais.
+/captura/** -text -filter -ident
+/avaliados/** -text -filter -ident

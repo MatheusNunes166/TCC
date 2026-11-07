@@ -8,6 +8,15 @@ import sys
 
 from montagem_entradas import CONTRATO, NOMES, MUDANCAS, CONDICOES, sem_links
 
+POLITICA_BYTES='utf8-sem-bom-lf-v1'
+
+def normalizar_documento(data):
+    """Somente preparacao editorial: UTF-8 sem BOM e CRLF/CR -> LF, sem trim.
+
+    Nao usar esta transformacao em entradas enviadas ou respostas recebidas.
+    """
+    return data.decode('utf-8-sig').replace('\r\n','\n').replace('\r','\n').encode('utf-8')
+
 FONTES=(
     'materiais/04_NOTAS_E_PROMPTS.md',
     'materiais/07_DEFINICOES_COMUNS.md',
@@ -30,7 +39,7 @@ def secao(data,inicio,fim):
 def quote(data):
     lines=[l for l in data.splitlines(keepends=True) if l.startswith(b'> ')]
     if len(lines)!=1:raise ValueError('bloco literal de nota/pedido ambiguo')
-    return lines[0]  # Preserve the exact note, including Markdown prefix and line ending.
+    return lines[0]  # Recorte original; a normalizacao ocorre apenas na exportacao.
 
 def reunir_fontes(raiz,mudanca,condicao):
     if mudanca not in MUDANCAS or condicao not in CONDICOES:raise ValueError('mudanca/condicao invalida')
@@ -86,21 +95,32 @@ def exportar(raiz,saida,configuracao_id='preparacao-D35-configuracao-piloto-pend
     if out.exists():raise ValueError('saida existente')
     # Output may be in the workspace, but never in any of the declared source directories.
     if any(out.is_relative_to((root/p).parent) for p in FONTES):raise ValueError('saida dentro de fonte autorizada')
-    out.mkdir(parents=True,exist_ok=False);records=[]
+    out.mkdir(parents=True,exist_ok=False);records=[];source_inventory=None
     for change in sorted(MUDANCAS):
         for cond in CONDICOES:
             docs,provenance=reunir_fontes(root,change,cond)
+            if source_inventory is None:
+                source_inventory=provenance
+                for source in provenance:
+                    original=sem_links(root/source['arquivo']).read_bytes()
+                    if sha(original)!=source['sha256']:raise ValueError('fonte alterada durante exportacao')
+                    dest=out/'fontes-originais'/source['arquivo'];dest.parent.mkdir(parents=True,exist_ok=True)
+                    dest.write_bytes(original)
+            elif provenance!=source_inventory:raise ValueError('fontes alteradas entre pacotes')
             ident=change+'-'+cond;folder=out/'pacotes'/ident;folder.mkdir(parents=True)
             names=list(NOMES)
             if cond in ('D1','E1'):names.insert(5,'notas.md')
             entries=[]
             for name in names:
-                blob=docs[name];(folder/name).write_bytes(blob)
-                entries.append({'papel':name.split('.')[0],'arquivo':name,'versao':'recorte-D35-2026-11-06',
-                  'sha256':sha(blob),'tamanho_bytes':len(blob),'revisao_conteudo':{
-                    'estado':'conferido_tecnicamente','responsavel':'assistente de IA; recorte editorial autorizado D35',
-                    'data':'2026-11-06','alcance':'rastreabilidade tecnica; novo texto para conferencia do pesquisador, sem revisor externo'}})
-            manifest={'versao_contrato':CONTRATO,'pacote_id':ident,'versao_pacote':'D35-2026-11-06',
+                original=docs[name];blob=normalizar_documento(original);(folder/name).write_bytes(blob)
+                entries.append({'papel':name.split('.')[0],'arquivo':name,'versao':'recorte-D36-lf-2026-11-06',
+                  'sha256':sha(blob),'tamanho_bytes':len(blob),
+                  'recorte_antes_normalizacao':{'sha256':sha(original),'tamanho_bytes':len(original)},
+                  'transformacao':POLITICA_BYTES,'revisao_conteudo':{
+                    'estado':'conferido_tecnicamente','responsavel':'assistente de IA; preservacao autorizada D36',
+                    'data':'2026-11-06','alcance':'normalizacao de codificacao/quebras; conteudo experimental D35 preservado'}})
+            manifest={'versao_contrato':CONTRATO,'pacote_id':ident,'versao_pacote':'D36-2026-11-06-v2-lf',
+              'politica_bytes':POLITICA_BYTES,
               'configuracao_id':configuracao_id,'mudanca':change,'condicao':cond,
               'status':'RASCUNHO_PREPARACAO','liberado_para_pesquisa':False,'documentos':entries,
               'status_notas':'RASCUNHO_NAO_REVISADO' if cond in ('D1','E1') else 'ausentes',
@@ -113,10 +133,12 @@ def exportar(raiz,saida,configuracao_id='preparacao-D35-configuracao-piloto-pend
             gravar(auth,{'versao':'autorizacao-textual-v1','status':'CONFERIDO_TECNICAMENTE_RASCUNHO',
               'manifesto_sha256':sha((folder/'manifesto.json').read_bytes()),
               'documentos':[{'arquivo':e['arquivo'],'sha256':e['sha256']} for e in entries],
-              'fontes':provenance,'receita':'recortes-D35-v1','revisao_cientifica':'sem aprovacao externa; conferir alcance em D35',
-              'regras_de_recorte':'sistema/pedido/nota: blocos literais; requisitos: contrato inicial; catalogo: seis primeiras colunas da baseline; mudanca: somente descricao; definicoes/schema integrais'})
+              'fontes':provenance,'fontes_arquivo_base':'fontes-originais','politica_bytes':POLITICA_BYTES,
+              'receita':'recortes-D36-lf-v2','revisao_cientifica':'sem aprovacao externa; conferir alcance em D35',
+              'regras_de_recorte':'mesmos seletores editoriais D35; recortes normalizados para UTF-8 sem BOM/LF antes dos hashes; fontes-originais preservam bytes anteriores a transformacao'})
             records.append({'id':ident,'pacote':folder.relative_to(out).as_posix(),'autorizacao':auth.relative_to(out).as_posix()})
-    gravar(out/'indice.json',{'contrato':CONTRATO,'origem':'preparacao_local_nao_enviada','pacotes':records,
+    gravar(out/'indice.json',{'contrato':CONTRATO,'origem':'preparacao_local_nao_enviada',
+      'politica_bytes':POLITICA_BYTES,'fontes_originais':source_inventory,'pacotes':records,
       'instante_utc':datetime.now(timezone.utc).isoformat(),'envio_realizado':False})
     return records
 

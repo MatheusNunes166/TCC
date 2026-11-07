@@ -1,5 +1,37 @@
 # Contrato local proposto — montagem e avaliação de IDs
 
+## Complemento vigente D-36 — preservação dos arquivos, 06/11/2026
+
+Este complemento substitui as afirmações anteriores de cópia literal **das fontes para os documentos exportados**. O conteúdo experimental D-35, notas 0.2-local, seletores, condições, schema e métricas permanecem iguais. Montagem `spec004-v3` continua copiando literalmente os documentos já exportados; não normaliza entradas efetivamente enviadas, respostas ou fragmentos recebidos. Referência, capturas e evidências anteriores não são regravadas.
+
+### Política `utf8-sem-bom-lf-v1`
+
+O exportador decodifica os recortes editoriais como UTF-8, remove somente eventual BOM inicial e converte CRLF e CR em LF. Não faz trim, reformatação de JSON, troca de palavras ou inclusão/remoção de linha terminal. Essa transformação ocorre **antes** do hash/tamanho de cada documento e de todos os manifestos/autorizações/preparações derivados. Delimitadores do payload continuam LF, compostos com esses bytes normalizados.
+
+`fontes-originais/` preserva literalmente os seis arquivos-fonte lidos. `fontes[].sha256/tamanho_bytes` descrevem essas fontes originais, não uma suposta cópia normalizada. Cada entrada de documento registra `recorte_antes_normalizacao` (hash e tamanho do recorte editorial anterior à transformação), `transformacao`, e `sha256/tamanho_bytes` dos bytes efetivamente exportados. Catálogo/mudança continuam sendo recortes editoriais pelas mesmas regras D-35; não se alega que já fossem cópias integrais das fontes. O inventário liga todos os arquivos aos respectivos hashes e tamanhos. Cópias do montador/exportador usados ficam em `fontes-ferramentas/`, permitindo conferir o hash do produtor mesmo em checkout que converta o código-fonte da raiz.
+
+Manifesto, autorização, índice e preparação identificam a política; documentos que declaram essa política e contêm BOM ou CR são recusados pelo montador. Pacotes históricos sem esse campo continuam tendo o contrato literal anterior, sem reparo automático. O exportador atual usa receita `recortes-D36-lf-v2` e versão `D36-2026-11-06-v2-lf`.
+
+### Git e originais de coleta
+
+`.gitattributes` aplica `-text -filter -ident` exclusivamente à nova pasta `evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/**` e aos caminhos futuros `captura/**` e `avaliados/**`. Nos artefatos gerados, LF é garantido pela preparação; Git transporta os bytes sem conversão. Nas capturas, a mesma proteção conserva literalmente CRLF, BOM ou bytes não UTF-8 que tenham sido recebidos. A rotina de avaliação existente não foi alterada e continua lendo/gravando bytes originais. Capturas arquivadas em outros caminhos precisarão de regra específica equivalente antes de versionar; não normalizar originais para fazê-los coincidir com um payload preparado.
+
+As regras não abrangem outras evidências, fontes experimentais ou históricos. `core.autocrlf`/`core.eol` globais e do projeto não são alterados; não há normalização em massa nem `git add --renormalize`.
+
+### Preparar e verificar a versão vigente
+
+Da raiz, com Python/biblioteca padrão e pastas novas:
+
+```powershell
+python -B evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/verificar_preservacao.py gerar --saida saidas-locais/pacotes-lf-novos
+python -B evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/verificar_preservacao.py verificar --artefatos saidas-locais/pacotes-lf-novos --recompor-em saidas-locais/recomposicao-nova --relatorio saidas-locais/conferencia-lf.json
+python -B evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/verificar_preservacao.py transporte --temporario saidas-locais/transporte-git-novo --relatorios saidas-locais/relatorios-transporte-novos
+```
+
+`gerar` confere equivalência textual com a preparação D-35 preservada e cria inventário; `verificar` confere hashes/tamanhos, origem/normalização, vínculos, composição, condições, exclusões e remonta os 16 pacotes pelo fluxo existente. `transporte` testa os artefatos v2-LF já gerados na pasta de evidências deste script, incluindo os arquivos novos no snapshot; não testa somente HEAD antigo. Exige que eles existam e cria stage/commit **apenas** num Git temporário sob `saidas-locais/`. Usa configuração isolada/local, checkout limpo em quatro modos e dois controles artificiais de captura bruta. Não faz stage/commit/push no projeto, rede ou chamadas ao modelo. Usar pastas novas em cada execução; os snapshots temporários são mantidos para inspeção.
+
+Resultados e limites efetivamente verificados: [relatório v2-LF](../../../evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/RELATORIO.md). A preparação D-35 anterior permanece histórica, com a causa da divergência registrada; seus manifestos não foram corrigidos retrospectivamente. Pendências científicas/operacionais do piloto continuam no estado central.
+
 ## Complemento vigente D-35 — importação real e preparação, 06/11/2026
 
 Este complemento atualiza a operação abaixo; seções datadas D-26–D-30 são históricas onde houver divergência. Estado e decisões: [entrada central](../../../ESTADO_ATUAL.md), [D-35](../../../documentacao/decisoes.md). Notas 0.2-local simuladas pelo pesquisador com apoio de IA; revisão própria declarada, sem revisor externo nesta etapa e sem aprovação individual inferida das expectativas. Novo texto para conferência; `RASCUNHO_NAO_REVISADO` identifica esse novo texto, não nega a declaração geral do pesquisador. Exportador usa receita `recortes-D35-v1`, versão `D35-2026-11-06`; preserva anteriores. Nenhum piloto ou congelamento principal.

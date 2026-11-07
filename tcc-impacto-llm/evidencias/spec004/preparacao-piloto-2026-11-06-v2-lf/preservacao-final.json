@@ -1,0 +1,48 @@
+{
+  "status": "CONFERIDO",
+  "branch_e_HEAD_preservados": true,
+  "indice_do_projeto_sem_stage_ou_commit": true,
+  "configuracoes_do_projeto_e_sistema_preservadas": true,
+  "grupos_protegidos_iguais_ao_inicio": {
+    "preparacao_anterior": {
+      "arquivos": 367,
+      "bytes": 733609,
+      "inventario_sha256": "6ab21db3d5b43aa486d099e355ae2e449cbe722aaf0d916451224731712f4636"
+    },
+    "todas_evidencias_anteriores": {
+      "arquivos": 4162,
+      "bytes": 8468496,
+      "inventario_sha256": "5c22caedba1aae9c4f521bcca9cf02432b12bcfdce5e842f19a470b136fce12c"
+    },
+    "historicos": {
+      "arquivos": 39,
+      "bytes": 383649,
+      "inventario_sha256": "43e024ca385eca9ac3f0b577dd9050d7ded1df9e221fe2fc5001669eb7808400"
+    },
+    "conteudo_experimental": {
+      "arquivos": 39,
+      "bytes": 1177984,
+      "inventario_sha256": "1c34b783e01f323cf27a6d4af565e6872c54652412816fd7e06b9a5484905dcc"
+    }
+  },
+  "inventario_identico_nos_quatro_checkouts": "a2278d5254f6014962bb8e838342a998894100efacf8435ac272bed185326590",
+  "git_diff_check": 0,
+  "arquivos_versionados_alterados": [
+    "AGENTS.md",
+    "ESTADO_ATUAL.md",
+    "HANDOFF.md",
+    "documentacao/decisoes.md",
+    "fontes_autorizadas.py",
+    "montagem_entradas.py",
+    "specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md",
+    "tests/test_fontes_autorizadas.py"
+  ],
+  "novos": [
+    ".gitattributes",
+    "evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/"
+  ],
+  "chamadas_LLM": 0,
+  "piloto": false,
+  "coleta_principal": false,
+  "bancada_reexecutada": false
+}

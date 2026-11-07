@@ -1,0 +1,23 @@
+{
+  "ambiente": "true-crlf",
+  "arquivo_inventario_adicional": 1,
+  "arquivos_hash_tamanho": 361,
+  "atributos": "tcc-impacto-llm/evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/artefatos/preparados/MC-01-D0/payload.txt: text: unset\ntcc-impacto-llm/evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/artefatos/preparados/MC-01-D0/payload.txt: eol: unspecified\ntcc-impacto-llm/evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/artefatos/preparados/MC-01-D0/payload.txt: filter: unset\ntcc-impacto-llm/evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/artefatos/preparados/MC-01-D0/payload.txt: ident: unset\ntcc-impacto-llm/captura/controle-artificial-entrada.bin: text: unset\ntcc-impacto-llm/captura/controle-artificial-entrada.bin: eol: unspecified\ntcc-impacto-llm/captura/controle-artificial-entrada.bin: filter: unset\ntcc-impacto-llm/captura/controle-artificial-entrada.bin: ident: unset\ntcc-impacto-llm/avaliados/controle-artificial-resposta.bin: text: unset\ntcc-impacto-llm/avaliados/controle-artificial-resposta.bin: eol: unspecified\ntcc-impacto-llm/avaliados/controle-artificial-resposta.bin: filter: unset\ntcc-impacto-llm/avaliados/controle-artificial-resposta.bin: ident: unset\ntcc-impacto-llm/evidencias/spec004/preparacao-piloto-2026-11-06/artefatos/preparados/MC-01-D0/payload.txt: text: unspecified\ntcc-impacto-llm/evidencias/spec004/preparacao-piloto-2026-11-06/artefatos/preparados/MC-01-D0/payload.txt: eol: unspecified\ntcc-impacto-llm/evidencias/spec004/preparacao-piloto-2026-11-06/artefatos/preparados/MC-01-D0/payload.txt: filter: unspecified\ntcc-impacto-llm/evidencias/spec004/preparacao-piloto-2026-11-06/artefatos/preparados/MC-01-D0/payload.txt: ident: unspecified\n",
+  "checkout_limpo_antes_verificacao": true,
+  "commit_snapshot": "c355e299aafe23e3428b87dc7e5450f6e2743f6e",
+  "controles_brutos_artificiais_preservados": 2,
+  "copias_documentos": 120,
+  "core_autocrlf": "true",
+  "core_eol": "crlf",
+  "divergencias": [],
+  "documentos_exportados": 120,
+  "ferramentas_modelo_exercitadas": false,
+  "fluxo_offline_pacotes": 16,
+  "fontes_originais": 6,
+  "hash_inventario": "a2278d5254f6014962bb8e838342a998894100efacf8435ac272bed185326590",
+  "limite_vazamento": "recortes fixos rederivados das seis fontes e negativos; sem detector semantico universal",
+  "payloads": 16,
+  "plataforma": "win32",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "status": "CONFERIDO"
+}

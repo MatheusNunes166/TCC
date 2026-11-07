@@ -1,5 +1,15 @@
 # Decisões, propostas e pendências
 
+## Correção da preservação dos arquivos — 06/11/2026
+
+**D-36 — Autorização e política solicitadas explicitamente pelo pesquisador nesta conversa.** Responsável: Matheus Henrique Braun Nunes; execução técnica pelo assistente. Escopo exclusivo: corrigir preservação/normalização e comprovar integridade após transporte Git. Sem alteração de redação experimental, notas 0.2-local, requisitos, catálogo T01–T12, mudanças, referência/conjuntos candidatos, fatores ou métricas; sem chamadas externas, piloto/coleta ou stage/commit/push no repositório de trabalho. Um commit local somente em Git temporário isolado foi expressamente autorizado para essa prova.
+
+Estado inicial: branch `main`, HEAD `8920756d9a82daa244add102c299ed53f0655ad8`, árvore limpa; `core.autocrlf=true` da configuração de sistema do Git, sem regra `.gitattributes` de preservação. Confirmado pelos blobs locais desse commit: os 16 payloads publicados divergem dos hashes registrados; em todos os casos, converter CRLF em LF dos arquivos locais reproduz exatamente o blob. A composição anterior misturava delimitadores LF com recortes CRLF; hashes foram calculados antes da conversão do Git. Não houve mudança textual. [Diagnóstico](../evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/diagnostico-anterior.json); nenhuma consulta externa ao GitHub foi necessária.
+
+Adotada política `utf8-sem-bom-lf-v1`: normalizar somente os novos documentos editoriais antes dos hashes/tamanhos/vínculos, sem trim ou mudança de conteúdo. Guardar fontes originais literalmente e distinguir seus hashes daqueles dos recortes anteriores à transformação e dos documentos exportados. Montagem copia os documentos já normalizados; entrada enviada e resposta recebida continuam literais. Regras `-text -filter -ident` restritas à pasta v2-LF e aos caminhos futuros `captura/` e `avaliados/`, sem abranger evidências históricas ou normalizar o repositório em massa.
+
+Nova versão vigente: [preparacao-piloto-2026-11-06-v2-lf](../evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/RELATORIO.md), 16 pacotes. Preparação D-35 anterior preservada integralmente como histórica, inclusive seus hashes divergentes após publicação. Resultados exploratórios, capturas/dados brutos, históricos e conteúdo experimental preservados. O [relatório](../evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/RELATORIO.md) registra inventários, comandos, snapshot novo e quatro checkouts limpos com/sob conversão CRLF/LF, sem inferir aprovação de ambientes não exercitados. D-35 e pendências anteriores permanecem no restante do escopo; documentação não inicia o piloto.
+
 ## Consolidação para o piloto — 06/11/2026
 
 **D-35 — Decisões explícitas do pesquisador no pedido desta etapa.** Responsável: Matheus Henrique Braun Nunes; evidência: solicitação anexada nesta conversa (`0179d902-954f-41e3-9a1e-290a7f7274bf/Pasted text.txt`). Autoriza ajustes documentais, de montagem/avaliação e verificações offline pertinentes. Não autoriza chamadas externas, piloto, coleta principal ou commit/push. Estado inicial: Git limpo, branch main, HEAD `310c9f28f4267bc6e052f6b93910400cd0e31bc2`.
