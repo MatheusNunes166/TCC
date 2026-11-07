@@ -112,6 +112,8 @@ Não preencher conformidade como `conforme` apenas porque a resposta acertou. Co
 
 ## 5.11 Coletor offline D-37 — 07/11/2026
 
+D-39: há agora uma [rota API independente preparada offline](../documentacao/operacao-api.md), com transporte corrigido e revisão externa de conformidade. Ela conserva os oito payloads/ordem, sem alterar o coletor Codex ou a trava descritos abaixo. A integração não autoriza chamada paga, conexão ou piloto. Os comandos próprios de simulação/conexão futura/revisão estão naquele ponto de operação, sem copiar parâmetros artificiais para a pesquisa.
+
 Atualização operacional D-38: [análise dos bloqueios](../captura/analise-bloqueios-cli-2026-11-07-D38/RELATORIO.md). O coletor v1.1 usa nova configuração/plano D-38, preservando integralmente D-37, ordem e payloads. Os comandos abaixo apontam agora para D-38; o plano antigo é recusado pelo código novo por diferença de hash/configuração. Não editar os registros antigos para contornar essa conferência.
 
 Implementação: [coletor_piloto.py](../coletor_piloto.py), Python 3.13.3/biblioteca padrão. A integração solicitada é `codex exec`, **GPT-6 Sol (`gpt-6-sol`) / medium**, sem troca automática de modelo. A CLI instalada `0.162.0-alpha.17.2` reconhece sessão efêmera, entrada por stdin, seleção de modelo/esforço e eventos JSONL; login ChatGPT ativo e medium presente no catálogo embutido. Isso não prova acesso remoto nem conformidade D-29. [Consultas locais](../captura/conferencia-codex-2026-11-07/ambiente.json), [testes e limites](../captura/controles-coletor-2026-11-07/RELATORIO.md).

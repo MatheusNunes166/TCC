@@ -1,0 +1,1227 @@
+{
+  "avaliador_sha256": "8b8e15b548c63b31712498a56e9f374d83d5b387123868339ab354e7c8f1dd95",
+  "celulas": [
+    {
+      "condicao": "E1",
+      "configuracao_id": "piloto-api-22dffb588d448368",
+      "diagnosticos": [],
+      "grupos": [
+        {
+          "ausentes": [],
+          "avaliacoes": [
+            "0b1edda0cd2d486aa5f453fda13118cd",
+            "b901da3d90ac423da8f9595c8f50b287"
+          ],
+          "contagens": {
+            "A": 2,
+            "C": 2,
+            "I": 0,
+            "K": 2,
+            "N": 2,
+            "T": 0,
+            "V": 2
+          },
+          "exclusoes": [],
+          "jaccard": {
+            "requisitos": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-01-E1-R01",
+                    "PIL-MC-01-E1-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            },
+            "testes": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-01-E1-R01",
+                    "PIL-MC-01-E1-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            }
+          },
+          "taxas": {
+            "completude": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "ids_conhecidos": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "validade": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "validas": {
+            "requisitos": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            },
+            "testes": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            }
+          },
+          "versoes": [
+            "ids-proposta-004-v2",
+            "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+            "0.2",
+            "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80"
+          ]
+        }
+      ],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D0",
+      "configuracao_id": "piloto-api-22dffb588d448368",
+      "diagnosticos": [],
+      "grupos": [
+        {
+          "ausentes": [],
+          "avaliacoes": [
+            "84f135e6838441d495074026c08a77ee",
+            "c72f218d6dbd4f41933708e8dc75cbdd"
+          ],
+          "contagens": {
+            "A": 2,
+            "C": 2,
+            "I": 0,
+            "K": 2,
+            "N": 2,
+            "T": 0,
+            "V": 2
+          },
+          "exclusoes": [],
+          "jaccard": {
+            "requisitos": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-03-D0-R01",
+                    "PIL-MC-03-D0-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            },
+            "testes": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-03-D0-R01",
+                    "PIL-MC-03-D0-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            }
+          },
+          "taxas": {
+            "completude": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "ids_conhecidos": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "validade": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "validas": {
+            "requisitos": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            },
+            "testes": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            }
+          },
+          "versoes": [
+            "ids-proposta-004-v2",
+            "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+            "0.2",
+            "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80"
+          ]
+        }
+      ],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E0",
+      "configuracao_id": "piloto-api-22dffb588d448368",
+      "diagnosticos": [],
+      "grupos": [
+        {
+          "ausentes": [],
+          "avaliacoes": [
+            "f6486f97b03c47d294cce95cff1f2cdd",
+            "b34ccb96a05a4fe8a2d1198ea573e0c4"
+          ],
+          "contagens": {
+            "A": 2,
+            "C": 2,
+            "I": 0,
+            "K": 2,
+            "N": 2,
+            "T": 0,
+            "V": 2
+          },
+          "exclusoes": [],
+          "jaccard": {
+            "requisitos": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-01-E0-R01",
+                    "PIL-MC-01-E0-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            },
+            "testes": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-01-E0-R01",
+                    "PIL-MC-01-E0-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            }
+          },
+          "taxas": {
+            "completude": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "ids_conhecidos": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "validade": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "validas": {
+            "requisitos": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            },
+            "testes": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            }
+          },
+          "versoes": [
+            "ids-proposta-004-v2",
+            "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+            "0.2",
+            "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80"
+          ]
+        }
+      ],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E0",
+      "configuracao_id": "piloto-api-22dffb588d448368",
+      "diagnosticos": [],
+      "grupos": [
+        {
+          "ausentes": [],
+          "avaliacoes": [
+            "808df931d97d4786ade085f324e7703e",
+            "8c8660eabd784acd8f6b02ae8ce94869"
+          ],
+          "contagens": {
+            "A": 2,
+            "C": 2,
+            "I": 0,
+            "K": 2,
+            "N": 2,
+            "T": 0,
+            "V": 2
+          },
+          "exclusoes": [],
+          "jaccard": {
+            "requisitos": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-03-E0-R01",
+                    "PIL-MC-03-E0-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            },
+            "testes": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-03-E0-R01",
+                    "PIL-MC-03-E0-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            }
+          },
+          "taxas": {
+            "completude": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "ids_conhecidos": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "validade": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "validas": {
+            "requisitos": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            },
+            "testes": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            }
+          },
+          "versoes": [
+            "ids-proposta-004-v2",
+            "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+            "0.2",
+            "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80"
+          ]
+        }
+      ],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D1",
+      "configuracao_id": "piloto-api-22dffb588d448368",
+      "diagnosticos": [],
+      "grupos": [
+        {
+          "ausentes": [],
+          "avaliacoes": [
+            "86797fb3bfac4ee2b7a9db14ba00bff6",
+            "77c5f9fc77d44295bdeea27588509f7f"
+          ],
+          "contagens": {
+            "A": 2,
+            "C": 2,
+            "I": 0,
+            "K": 2,
+            "N": 2,
+            "T": 0,
+            "V": 2
+          },
+          "exclusoes": [],
+          "jaccard": {
+            "requisitos": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-03-D1-R01",
+                    "PIL-MC-03-D1-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            },
+            "testes": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-03-D1-R01",
+                    "PIL-MC-03-D1-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            }
+          },
+          "taxas": {
+            "completude": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "ids_conhecidos": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "validade": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "validas": {
+            "requisitos": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            },
+            "testes": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            }
+          },
+          "versoes": [
+            "ids-proposta-004-v2",
+            "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+            "0.2",
+            "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80"
+          ]
+        }
+      ],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D1",
+      "configuracao_id": "piloto-api-22dffb588d448368",
+      "diagnosticos": [],
+      "grupos": [
+        {
+          "ausentes": [],
+          "avaliacoes": [
+            "92516fb6f3cf490da7d0b0c3499d6cd2",
+            "817adb31bcb44f6e81e0a682747dcd30"
+          ],
+          "contagens": {
+            "A": 2,
+            "C": 2,
+            "I": 0,
+            "K": 2,
+            "N": 2,
+            "T": 0,
+            "V": 2
+          },
+          "exclusoes": [],
+          "jaccard": {
+            "requisitos": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-01-D1-R01",
+                    "PIL-MC-01-D1-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            },
+            "testes": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-01-D1-R01",
+                    "PIL-MC-01-D1-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            }
+          },
+          "taxas": {
+            "completude": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "ids_conhecidos": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "validade": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "validas": {
+            "requisitos": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            },
+            "testes": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            }
+          },
+          "versoes": [
+            "ids-proposta-004-v2",
+            "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+            "0.2",
+            "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80"
+          ]
+        }
+      ],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E1",
+      "configuracao_id": "piloto-api-22dffb588d448368",
+      "diagnosticos": [],
+      "grupos": [
+        {
+          "ausentes": [],
+          "avaliacoes": [
+            "ba09594ac54c4b06a717ac50556e3c6e",
+            "faa26bee43884d09a2e161de275b80e0"
+          ],
+          "contagens": {
+            "A": 2,
+            "C": 2,
+            "I": 0,
+            "K": 2,
+            "N": 2,
+            "T": 0,
+            "V": 2
+          },
+          "exclusoes": [],
+          "jaccard": {
+            "requisitos": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-03-E1-R01",
+                    "PIL-MC-03-E1-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            },
+            "testes": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-03-E1-R01",
+                    "PIL-MC-03-E1-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            }
+          },
+          "taxas": {
+            "completude": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "ids_conhecidos": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "validade": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "validas": {
+            "requisitos": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            },
+            "testes": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            }
+          },
+          "versoes": [
+            "ids-proposta-004-v2",
+            "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+            "0.2",
+            "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80"
+          ]
+        }
+      ],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D0",
+      "configuracao_id": "piloto-api-22dffb588d448368",
+      "diagnosticos": [],
+      "grupos": [
+        {
+          "ausentes": [],
+          "avaliacoes": [
+            "cbf9340042a34fd9b245869471f9ecf2",
+            "89b4b09ed258478d95cca11176d04ecc"
+          ],
+          "contagens": {
+            "A": 2,
+            "C": 2,
+            "I": 0,
+            "K": 2,
+            "N": 2,
+            "T": 0,
+            "V": 2
+          },
+          "exclusoes": [],
+          "jaccard": {
+            "requisitos": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-01-D0-R01",
+                    "PIL-MC-01-D0-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            },
+            "testes": {
+              "estado": "calculavel",
+              "motivo": null,
+              "numero_pares": 1,
+              "observacoes": 2,
+              "pares": [
+                {
+                  "intersecao": 0,
+                  "observacoes": [
+                    "PIL-MC-01-D0-R01",
+                    "PIL-MC-01-D0-R02"
+                  ],
+                  "uniao": 0,
+                  "valor": {
+                    "decimal": "1.000000",
+                    "denominador": 1,
+                    "fracao": "1",
+                    "numerador": 1
+                  }
+                }
+              ],
+              "valor": {
+                "decimal": "1.000000",
+                "denominador": 1,
+                "fracao": "1",
+                "numerador": 1
+              }
+            }
+          },
+          "taxas": {
+            "completude": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "ids_conhecidos": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "validade": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "validas": {
+            "requisitos": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            },
+            "testes": {
+              "f1": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "precisao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              },
+              "revocacao": {
+                "decimal": "0.000000",
+                "denominador": 1,
+                "fracao": "0",
+                "numerador": 0
+              }
+            }
+          },
+          "versoes": [
+            "ids-proposta-004-v2",
+            "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+            "0.2",
+            "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80"
+          ]
+        }
+      ],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    }
+  ],
+  "completo": true,
+  "fase": "verificacao_sintetica",
+  "instante_utc": "2026-11-07T17:17:00.602862+00:00",
+  "origem": "sintetica",
+  "politica": "ids-proposta-004-v2",
+  "resumo_id": "1a3cef3a7bc74100b788705930d5eb46"
+}

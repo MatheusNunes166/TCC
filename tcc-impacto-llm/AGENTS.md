@@ -1,5 +1,7 @@
 # Orientações para agentes
 
+Atualização D-39: integração do patch API e testes offline autorizados nesta conversa. Ler [operação API](documentacao/operacao-api.md). Essa autorização não permite chamada real, consulta autenticada, conexão paga, piloto, commit ou push. A rota API tem identidade própria; o coletor Codex e sua trava permanecem preservados. Não importar como fatos relatos históricos do patch sobre consulta/modelos, outro Word ou testes ainda não reproduzidos. A conformidade depende de decisão externa vinculada a hashes, sem editar brutos; orçamento é declaração, não teto monetário. D-38 abaixo permanece vigente para a rota Codex.
+
 ## Ordem de leitura
 
 1. Este arquivo e [.specify/memory/constitution.md](.specify/memory/constitution.md).

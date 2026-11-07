@@ -1,0 +1,20 @@
+{
+  "id": "controle-daa89e1d862844e78b898731f3ee8f7d",
+  "model": "gpt-6-sol",
+  "output": [
+    {
+      "content": [
+        {
+          "text": "{\"requisitos\":[],\"testes\":[]}",
+          "type": "output_text"
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "status": "completed",
+  "tool_choice": "none",
+  "tools": []
+}

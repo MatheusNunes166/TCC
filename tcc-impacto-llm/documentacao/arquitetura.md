@@ -1,5 +1,7 @@
 # Arquitetura mínima proposta
 
+D-39: [rota API integrada offline](operacao-api.md), identidade própria, sem modificar Codex ou sua trava. Transporte HTTPS direto, captura e avaliação separadas; revisão humana externa ligada a hashes em `revisao_conformidade.py`, sem editar brutos ou mudar fórmulas. Integração/testes não autorizam conexão paga ou piloto.
+
 D-38: [análise delimitada de ferramentas/contexto e retries](../captura/analise-bloqueios-cli-2026-11-07-D38/RELATORIO.md). Coletor v1.1 acrescenta controles nativos aceitos, conservando a trava. O parser rejeita redefinir o provedor embutido openai e o render mantém contexto adicional; nenhuma migração de API foi implementada.
 
 Estado, capacidades e pendências: [ponto de entrada](../ESTADO_ATUAL.md). Registros datados anteriores preservados em [histórico](historico/pre-piloto-2026-11-06/LEIA_PRIMEIRO.md).

@@ -1,0 +1,49 @@
+{
+  "avaliador_inalterado": true,
+  "branch": "main",
+  "bytes_e_ordem_preservados": true,
+  "capturas_sinteticas": 16,
+  "chamadas_reais": 0,
+  "codex_trava_inalterada": true,
+  "commit": "873f0a7285c4610335eda5c3a3d88ca2e13cdc8f",
+  "consultas_autenticadas": 0,
+  "diff_check_retorno": 0,
+  "fontes_anteriores_preservadas": true,
+  "instante_utc": "2026-11-07T17:22:49.310378+00:00",
+  "links_historicos_ausentes_anteriores_sem_alteracao": [
+    {
+      "alvo": "evidencias/spec004/preparacao-piloto-2026-11-06/RELATORIO.md",
+      "documento": "ESTADO_ATUAL.md",
+      "ja_presente_em_HEAD": true
+    },
+    {
+      "alvo": "../evidencias/spec004/preparacao-piloto-2026-11-06/RELATORIO.md",
+      "documento": "documentacao/decisoes.md",
+      "ja_presente_em_HEAD": true
+    }
+  ],
+  "modulos": {
+    "coletor_api.py": "139a7acc0c276e09a5ffed80c57b18e593edc6cdbca45388d037321484b300ee",
+    "revisao_conformidade.py": "7a5e55d78a82035e8df7374c3990257b1447b9888f6833ee576e5a85b2d995bd",
+    "tests/test_coletor_api.py": "0ce060fa7b5e88ea347af07d446c0ae9e6c221c12ade91384cb36e9304ccc1dc",
+    "tests/test_revisao_conformidade.py": "ff55bcdb67d4b5576d9492b3d46922e63d209ecc01635587e5e6987648365f08",
+    "tests/test_transporte_api.py": "d2662dbbe8cc32caefb29c7d5a2c6c34521a536702a3e0690a189df3c5de9d43"
+  },
+  "observacoes_planejadas": 16,
+  "orcamento_e_tokens_dos_controles_nao_sao_escolhas_de_pesquisa": true,
+  "payloads_unicos": 8,
+  "piloto_executado": false,
+  "plano_api_sha256": "90436cc395b8ccc74cc91ec709f2ae4a0e616e94d56222dbc44b5d312825eec3",
+  "politica_bytes_aplicada": true,
+  "testes_aprovados": 52,
+  "testes_originais_patch_reproduzidos": 13,
+  "testes_patch_nao_reproduzidos": [],
+  "testes_por_grupo": {
+    "test_avaliacao_real": 7,
+    "test_coletor_api": 13,
+    "test_coletor_piloto": 12,
+    "test_controles_cli": 4,
+    "test_revisao_conformidade": 7,
+    "test_transporte_api": 9
+  }
+}

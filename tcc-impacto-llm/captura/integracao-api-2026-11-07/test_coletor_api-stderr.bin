@@ -1,0 +1,20 @@
+test_conexao_neutra_separada_e_explicita (test_coletor_api.TestAPI.test_conexao_neutra_separada_e_explicita) ... conexao gera custo; exige --enviar-real
+ok
+test_controle_sem_rede_credencial_e_avaliacao_separada (test_coletor_api.TestAPI.test_controle_sem_rede_credencial_e_avaliacao_separada) ... ok
+test_hash_tamper_retomada_e_orcamento (test_coletor_api.TestAPI.test_hash_tamper_retomada_e_orcamento) ... ok
+test_iniciar_sem_flag_ou_chave_nao_chama_rede (test_coletor_api.TestAPI.test_iniciar_sem_flag_ou_chave_nao_chama_rede) ... envio exige --enviar-real; nenhuma chamada realizada
+ok
+test_lote_sintetico_16_e_avaliacao_integrada_sem_rede (test_coletor_api.TestAPI.test_lote_sintetico_16_e_avaliacao_integrada_sem_rede) ... ok
+test_ordem_textos_configuracao_e_fase_separados (test_coletor_api.TestAPI.test_ordem_textos_configuracao_e_fase_separados) ... ok
+test_output_tools_modelo_historico_e_mensagens_extras_sao_desvios (test_coletor_api.TestAPI.test_output_tools_modelo_historico_e_mensagens_extras_sao_desvios) ... ok
+test_parse_preserva_texto_recusa_invalida_e_incompleta (test_coletor_api.TestAPI.test_parse_preserva_texto_recusa_invalida_e_incompleta) ... ok
+test_real_simulada_uma_chamada_chave_nao_persistida_e_sem_reenvio (test_coletor_api.TestAPI.test_real_simulada_uma_chamada_chave_nao_persistida_e_sem_reenvio) ... ok
+test_redirect_e_http_error_sem_retry (test_coletor_api.TestAPI.test_redirect_e_http_error_sem_retry) ... ok
+test_requisicao_so_texto_sem_historico_ferramentas_ou_segredo (test_coletor_api.TestAPI.test_requisicao_so_texto_sem_historico_ferramentas_ou_segredo) ... ok
+test_response_id_duplicado_interrompe_sem_escolher_resultado (test_coletor_api.TestAPI.test_response_id_duplicado_interrompe_sem_escolher_resultado) ... ok
+test_timeout_preservado_e_continuacao_bloqueada (test_coletor_api.TestAPI.test_timeout_preservado_e_continuacao_bloqueada) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 10.084s
+
+OK

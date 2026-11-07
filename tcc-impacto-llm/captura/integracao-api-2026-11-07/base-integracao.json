@@ -1,0 +1,20 @@
+{
+  "branch": "main",
+  "commit": "873f0a7285c4610335eda5c3a3d88ca2e13cdc8f",
+  "arvore_inicial_limpa": true,
+  "patch_sha256": "f0f8ee1e0e12fd921f7b7d89772b9f6ec8fb23de69dc3efbab1cd02490acad2f",
+  "git_apply_check": 0,
+  "arquivos_novos_extraidos": {
+    "coletor_api.py": "48cb4fc67a0efe90b368a63d34e7587ebbd19117153d9e57f3db204d6b457c4d",
+    "tests/test_coletor_api.py": "0ce060fa7b5e88ea347af07d446c0ae9e6c221c12ade91384cb36e9304ccc1dc",
+    "documentacao/operacao-api.md": "cc9fd52e581f035141be332a8cceed0b0a261398e16183d6696fb1db9856cf19"
+  },
+  "fontes_anteriores": {
+    "coletor_piloto.py": "619d742f98cf9cc87f135f716a09ed432ba8e51af7837e811bea97363ed09c48",
+    "montagem_entradas.py": "ed1d1fc0f2b4839d7079c35687058ee24bc0d2767b04ba188fe02f32f5d56d94",
+    "avaliacao_ids.py": "8b8e15b548c63b31712498a56e9f374d83d5b387123868339ab354e7c8f1dd95",
+    "materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80",
+    "captura/planejamento-piloto-2026-11-07-D38/plano.json": "399651d2cc638206f05bc5ebe510677d842a8979e84911de1da9cf105e9ed798"
+  },
+  "documentacao_integrada_automaticamente": false
+}

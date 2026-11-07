@@ -1,0 +1,22 @@
+{
+  "observacoes": 16,
+  "configuracao": {
+    "endpoint": "https://api.openai.com/v1/responses",
+    "esforco_solicitado": "medium",
+    "id": "piloto-api-22dffb588d448368",
+    "interface": "Responses API HTTP direto",
+    "limite_garantia": "requisicao do cliente; nao controla instrucoes ou transporte internos do provedor",
+    "limite_orcamento": "declaracao do pesquisador; nao e teto monetario imposto pelo script",
+    "max_output_tokens": 512,
+    "modelo_solicitado": "gpt-6-sol",
+    "orcamento_declarado_usd": "1",
+    "retries_automaticos_cliente": 0,
+    "store": false,
+    "stream": false,
+    "timeout_segundos": 120,
+    "tool_choice": "none",
+    "tools": []
+  },
+  "rede_utilizada": false,
+  "fase": "preparacao_offline"
+}

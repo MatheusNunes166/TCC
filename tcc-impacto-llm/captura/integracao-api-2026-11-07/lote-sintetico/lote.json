@@ -1,0 +1,7 @@
+{
+  "coletor_sha256": "139a7acc0c276e09a5ffed80c57b18e593edc6cdbca45388d037321484b300ee",
+  "fase": "verificacao_sintetica",
+  "interface": "Responses API",
+  "origem": "sintetica",
+  "plano_sha256": "90436cc395b8ccc74cc91ec709f2ae4a0e616e94d56222dbc44b5d312825eec3"
+}

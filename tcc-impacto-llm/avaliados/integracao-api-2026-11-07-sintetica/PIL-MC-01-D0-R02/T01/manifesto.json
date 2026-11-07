@@ -1,0 +1,138 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "preparacao-original.json",
+      "sha256": "aa4ff2949e9ce36435a73f4be8371d281a7db3104ac54e2fd293c22ab64e1e4e"
+    },
+    {
+      "arquivo": "tentativa-original.json",
+      "sha256": "f3fef3a907d3938e91238a3dad7af0bf43e6840371c75076397ce38efc31005c"
+    },
+    {
+      "arquivo": "entrada\\manifesto-original.json",
+      "sha256": "fcfd29e826eb8bd822899abc450eda82c0bcb332b9b3ec936ffad31a21502e93"
+    },
+    {
+      "arquivo": "entrada\\autorizacao-original.json",
+      "sha256": "a4d23ab47395889629cc3cfb6ccadd7d2b5029b2ca3df70d63bfc39e6f343de3"
+    },
+    {
+      "arquivo": "entrada\\documentos\\sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "entrada\\documentos\\definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "entrada\\documentos\\requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "entrada\\documentos\\catalogo-baseline.md",
+      "sha256": "b7261fd6b24a0eca7f1e4abcb4a8ffcbf092e071931be6c4f086646d82242c76"
+    },
+    {
+      "arquivo": "entrada\\documentos\\mudanca.md",
+      "sha256": "2533dc368d1ba56c6151f470606438fe1e8d4ccda9773bcc907098099d4f852e"
+    },
+    {
+      "arquivo": "entrada\\documentos\\pedido.txt",
+      "sha256": "358a5921dd5c415a6fe012a59fdbfdeed74c6c997e71a4a5dc62655944abe795"
+    },
+    {
+      "arquivo": "entrada\\documentos\\schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "entrada\\payload.txt",
+      "sha256": "f71d37fb28035d24748e2c5504a652b5415ddbe1b0c3c4e267a98c9efdcedf03"
+    },
+    {
+      "arquivo": "entrada\\entrega-textual.json",
+      "sha256": "e654d218538d5bdca2155c36d8a628afddf3077f7463f949b21f2a3f9edba447"
+    },
+    {
+      "arquivo": "resposta-original.bin",
+      "sha256": "8ab4edb3d58f709e6427f2a8026dae08e2379a7c708c459b9a3996312e914710"
+    },
+    {
+      "arquivo": "referencia-privada.json",
+      "sha256": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80"
+    },
+    {
+      "arquivo": "politica-candidata.json",
+      "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c"
+    },
+    {
+      "arquivo": "avaliacao.json",
+      "sha256": "5d678ddc66269133f077d967129be8bf91698812b47321553b89f3cc4d7c9fc1"
+    }
+  ],
+  "completo": true,
+  "fase": "verificacao_sintetica",
+  "fontes": [
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\integracao-api-2026-11-07\\lote-sintetico\\PIL-MC-01-D0-R02\\T01\\preparacao\\preparacao.json",
+      "sha256": "aa4ff2949e9ce36435a73f4be8371d281a7db3104ac54e2fd293c22ab64e1e4e"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\integracao-api-2026-11-07\\lote-sintetico\\PIL-MC-01-D0-R02\\T01\\tentativa.json",
+      "sha256": "f3fef3a907d3938e91238a3dad7af0bf43e6840371c75076397ce38efc31005c"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\integracao-api-2026-11-07\\lote-sintetico\\PIL-MC-01-D0-R02\\T01\\preparacao\\manifesto-original.json",
+      "sha256": "fcfd29e826eb8bd822899abc450eda82c0bcb332b9b3ec936ffad31a21502e93"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\integracao-api-2026-11-07\\lote-sintetico\\PIL-MC-01-D0-R02\\T01\\preparacao\\autorizacao-original.json",
+      "sha256": "a4d23ab47395889629cc3cfb6ccadd7d2b5029b2ca3df70d63bfc39e6f343de3"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\integracao-api-2026-11-07\\lote-sintetico\\PIL-MC-01-D0-R02\\T01\\preparacao\\documentos\\sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\integracao-api-2026-11-07\\lote-sintetico\\PIL-MC-01-D0-R02\\T01\\preparacao\\documentos\\definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\integracao-api-2026-11-07\\lote-sintetico\\PIL-MC-01-D0-R02\\T01\\preparacao\\documentos\\requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\integracao-api-2026-11-07\\lote-sintetico\\PIL-MC-01-D0-R02\\T01\\preparacao\\documentos\\catalogo-baseline.md",
+      "sha256": "b7261fd6b24a0eca7f1e4abcb4a8ffcbf092e071931be6c4f086646d82242c76"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\integracao-api-2026-11-07\\lote-sintetico\\PIL-MC-01-D0-R02\\T01\\preparacao\\documentos\\mudanca.md",
+      "sha256": "2533dc368d1ba56c6151f470606438fe1e8d4ccda9773bcc907098099d4f852e"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\integracao-api-2026-11-07\\lote-sintetico\\PIL-MC-01-D0-R02\\T01\\preparacao\\documentos\\pedido.txt",
+      "sha256": "358a5921dd5c415a6fe012a59fdbfdeed74c6c997e71a4a5dc62655944abe795"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\integracao-api-2026-11-07\\lote-sintetico\\PIL-MC-01-D0-R02\\T01\\preparacao\\documentos\\schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\integracao-api-2026-11-07\\lote-sintetico\\PIL-MC-01-D0-R02\\T01\\preparacao\\payload.txt",
+      "sha256": "f71d37fb28035d24748e2c5504a652b5415ddbe1b0c3c4e267a98c9efdcedf03"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\integracao-api-2026-11-07\\lote-sintetico\\PIL-MC-01-D0-R02\\T01\\preparacao\\entrega-textual.json",
+      "sha256": "e654d218538d5bdca2155c36d8a628afddf3077f7463f949b21f2a3f9edba447"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\integracao-api-2026-11-07\\lote-sintetico\\PIL-MC-01-D0-R02\\T01\\resposta.bin",
+      "sha256": "8ab4edb3d58f709e6427f2a8026dae08e2379a7c708c459b9a3996312e914710"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\modelos\\referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+      "sha256": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80"
+    }
+  ],
+  "origem": "sintetica",
+  "retorno": 0
+}

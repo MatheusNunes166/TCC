@@ -1,0 +1,811 @@
+diff --git a/tcc-impacto-llm/AGENTS.md b/tcc-impacto-llm/AGENTS.md
+index 1bb23e2..12548e9 100644
+--- a/tcc-impacto-llm/AGENTS.md
++++ b/tcc-impacto-llm/AGENTS.md
+@@ -1,5 +1,7 @@
+ # Orientações para agentes
+ 
++Atualização D-39: o pesquisador escolheu API nesta conversa. Rota independente `coletor_api.py` preparada e testada offline; operação em `documentacao/operacao-api.md`. Somente arquivos/controles locais foram executados, sem chamadas pagas ou piloto. A trava Codex D-38 permanece; a restrição histórica de migração automática abaixo foi superada somente para preparar a API solicitada. Conferir geração real/medium, orçamento, materiais e alcance do piloto antes de chamadas. Não imprimir credenciais, misturar configurações ou promover controles artificiais a dados reais.
++
+ ## Ordem de leitura
+ 
+ 1. Este arquivo e [.specify/memory/constitution.md](.specify/memory/constitution.md).
+diff --git a/tcc-impacto-llm/BLOQUEIOS.md b/tcc-impacto-llm/BLOQUEIOS.md
+index a4efd3c..6be5f94 100644
+--- a/tcc-impacto-llm/BLOQUEIOS.md
++++ b/tcc-impacto-llm/BLOQUEIOS.md
+@@ -1,5 +1,7 @@
+ # Pendências
+ 
++Atualização D-39/API: preparação offline implementada por escolha explícita do pesquisador; operação em `documentacao/operacao-api.md`. Pendente comprovar geração de gpt-6-sol/medium na conta local, definir preço/orçamento/limite, conferir materiais e resolver desenho do piloto. Nenhum envio pago foi feito. A consulta de modelos não prova esses itens. A nova rota não depende de remover a trava Codex; os bloqueios D-38 abaixo continuam válidos para Codex.
++
+ D-38: **ambos continuam pendentes**, agora delimitados: contexto adicional no render/inventário tools não demonstrado; provedor embutido openai rejeita redefinição de retries. Chaves de skills/memórias/provedor/auth e strict-config aceitas foram aplicadas, sem retirar a trava. [Tabela e evidências](captura/analise-bloqueios-cli-2026-11-07-D38/RELATORIO.md). O registro D-37 abaixo permanece como estado anterior.
+ 
+ D-37: envio por `codex exec` bloqueado em código. Faltam demonstração de `tools=[]`/contexto textual D-29 e controle das retentativas internas da CLI; autenticação e catálogo local não comprovam acesso remoto ao modelo. [Evidências e limites](captura/controles-coletor-2026-11-07/RELATORIO.md). Não há bloqueio para simulação, controles locais ou avaliação offline.
+diff --git a/tcc-impacto-llm/ESTADO_ATUAL.md b/tcc-impacto-llm/ESTADO_ATUAL.md
+index cd455cf..03612ea 100644
+--- a/tcc-impacto-llm/ESTADO_ATUAL.md
++++ b/tcc-impacto-llm/ESTADO_ATUAL.md
+@@ -1,4 +1,13 @@
+ # Estado atual — 07/11/2026
++
++## Atualização API — D-39
++
++API escolhida pelo pesquisador; `gpt-6-sol` consta da lista fornecida por ele, sem comprovação de geração/medium ou saldo. Novo `coletor_api.py` preserva oito textos/ordem D-38 e registra configuração própria. Preparar/simular/controle são offline; conexão neutra e início real exigem opção explícita e geram custo. Nenhuma chamada paga foi feita. Verificação: 13 métodos API + 12 coletor anterior + quatro controles CLI + sete avaliação real aprovados, 36 no total; lote artificial de 16 integrado à avaliação. [Operação e pendências](documentacao/operacao-api.md).
++
++Código Codex, trava, notas, referência e evidências anteriores permanecem intactos. Orçamento no plano é declaração, não teto automático de cobrança. Conformidade real começa pendente/desvio e não é aprovada por sucesso HTTP. O estado D-38 abaixo descreve a rota Codex. Próximo passo: conferir conexão, preço/configuração, materiais e copiar/revisar os arquivos no computador do usuário antes dos comandos. A chave permanece somente no terminal dele. Teste neutro não conta como piloto; diferenças entre Word e planejamento do repositório precisam ser resolvidas antes do desenho final.
++
++## Rota Codex — registro D-38 preservado
++
+ Comece aqui. Decisões e alcance: [D-38, D-37, D-36 e D-35](documentacao/decisoes.md). Coletor implementado e verificado offline; **envio real bloqueado**, nenhum piloto/chamada ao LLM/coleta principal ou congelamento realizado.
+ 
+ - Novo [coletor Python](coletor_piloto.py): conferência local, plano/ordem registrados, simulação, captura sequencial, pausa/continuação, recuperação conservadora e avaliação separada. [Comandos de operação](materiais/05_PILOTO_E_COLETA.md#511-coletor-offline-d-37-07112026).
+diff --git a/tcc-impacto-llm/HANDOFF.md b/tcc-impacto-llm/HANDOFF.md
+index 3b0bd7f..9a9dc9e 100644
+--- a/tcc-impacto-llm/HANDOFF.md
++++ b/tcc-impacto-llm/HANDOFF.md
+@@ -1,4 +1,6 @@
+ # Continuidade
++
++Prioridade D-39: ler `documentacao/operacao-api.md`, `coletor_api.py` e `tests/test_coletor_api.py`. API escolhida pelo usuário, gpt-6-sol listado por ele, somente testes artificiais nesta entrega (36 métodos aprovados). Nenhuma chave recebida, chamada paga ou piloto. Conferir conexão neutra separada, custo/configuração/material e disponibilidade dos arquivos no computador do usuário. Não remover a trava antiga nem aplicar API sobre lote Codex existente. Planos API têm nova identidade e conservam ordem/payloads. Conformidade real/revisão científica não foram presumidas. D-38 abaixo permanece válido para a rota Codex.
+ Leia [AGENTS](AGENTS.md), [estado central](ESTADO_ATUAL.md) e [D-38/D-37/D-36/D-35](documentacao/decisoes.md). Use os pacotes v2-LF, o [plano D-38](captura/planejamento-piloto-2026-11-07-D38/plano.json), a [operação do coletor](materiais/05_PILOTO_E_COLETA.md#511-coletor-offline-d-37-07112026) e o [contrato](specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md).
+ 
+ D-38: [análise delimitada](captura/analise-bloqueios-cli-2026-11-07-D38/RELATORIO.md), 16 testes afetados aprovados. Controles adicionais aceitos não resolvem D-29 nem retries da rota ChatGPT. Não usar custom provider com zero como prova da rota openai; ela rejeita redefinição. Não tratar render local como envelope completo do request. Código anterior e D-37 preservados; plano D-38 mantém ordem/payloads e novo ID/hash. Nenhum exec/LLM, piloto ou migração de API. A alternativa mínima permanece proposta.
+diff --git a/tcc-impacto-llm/documentacao/decisoes.md b/tcc-impacto-llm/documentacao/decisoes.md
+index 596bd81..4b601a0 100644
+--- a/tcc-impacto-llm/documentacao/decisoes.md
++++ b/tcc-impacto-llm/documentacao/decisoes.md
+@@ -1,5 +1,17 @@
+ # Decisões, propostas e pendências
+ 
++## Preparação da rota API — 07/11/2026
++
++**D-39 — Escolha explícita do pesquisador nesta conversa:** “ok vamos tentar por API”. Após configurar autenticação local, o pesquisador forneceu uma lista de `/v1/models` que inclui `gpt-6-sol`. Autoriza a preparação técnica da integração, mantendo o modelo solicitado e sem chamadas pagas nesta tarefa. Esse relato não comprova suporte de geração, medium, saldo, preço ou aprovação científica. A chave não foi recebida pelo assistente e não foi lida de credenciais do Codex.
++
++Implementada rota independente em `coletor_api.py`: Responses API via biblioteca padrão/HTTPS, texto integral como input, tools=[], tool_choice=none, sem histórico/instructions adicionais fornecidos pelo cliente, sem retries automáticos/redirects. Preparação recebe nova configuração, preserva ordem/textos D-38 e originais. Controles artificiais e teste neutro de conexão são fases distintas do piloto. Captura guarda requisição sem Authorization, resposta HTTP, texto literal, IDs, uso quando reportado e falhas; não trata modelo solicitado como modelo reportado. A API não garante controle das instruções/transporte internos do provedor.
++
++O coletor Codex e sua trava, notas, referência, dados e planos existentes foram preservados. Não houve chamadas de geração, piloto, alteração de conta/faturamento, stage, commit ou push. Comandos de envio existem sob opção explícita e custo futuro; não foram executados. Modelo/configuração e orçamento real, conexão, revisão dos materiais/alcance do piloto continuam pendentes. Orçamento declarado no plano não é teto de cobrança imposto pelo código. [Operação, comandos e limitações](operacao-api.md).
++
++Verificação offline desta entrega: 13 métodos novos de API, 12 do coletor anterior, quatro de controles CLI e sete de avaliação real aprovados (36 métodos). O controle integrado gerou e avaliou 16 respostas artificiais, origem sintética explícita. Inclui preservação/retomada, HTTP mockado, chave fictícia não persistida, timeout sem retry, IDs duplicados e chamada neutra simulada separada. Não demonstra disponibilidade remota ou prontidão científica.
++
++Esta autorização supera a proibição histórica de migração automática somente quanto à preparação de uma rota API escolhida pelo pesquisador; não relaxa D-29 para a rota Codex, não aprova expectativas e não libera piloto automaticamente. Divergências entre proposta Word/repositório sobre repetições e cenário de piloto permanecem para decisão explícita; nenhum desenho principal foi modificado.
++
+ ## Análise delimitada dos bloqueios da CLI — 07/11/2026
+ 
+ **D-38 — Autorização explícita do pesquisador nesta conversa.** Responsável: Matheus Henrique Braun Nunes; execução técnica pelo assistente. Autoriza análise de ferramentas/contexto e retentativas, ajustes locais comprovados e testes offline. Proíbe chamadas ao LLM, piloto, commit/push e retirada da trava por simples booleano. Não autoriza migração automática de autenticação/provedor ou contratação de API.
+diff --git a/tcc-impacto-llm/coletor_api.py b/tcc-impacto-llm/coletor_api.py
+new file mode 100644
+index 0000000..9e4611d
+--- /dev/null
++++ b/tcc-impacto-llm/coletor_api.py
+@@ -0,0 +1,442 @@
++"""Coleta pela Responses API. Preparar/simular/controle sao offline; iniciar exige --enviar-real.
++
++Biblioteca padrao, HTTPS verificado, sem ferramentas, conversa anterior ou retries
++automaticos. A chave e lida apenas de OPENAI_API_KEY no inicio de uma coleta real.
++Nao importa o avaliador nem abre o gabarito durante a captura.
++"""
++import argparse
++from datetime import datetime, timezone
++from decimal import Decimal, InvalidOperation
++import json
++import os
++from pathlib import Path
++import urllib.error
++import urllib.request
++import uuid
++
++import coletor_piloto as base
++import montagem_entradas as montagem
++
++VERSAO = 'coletor-responses-v1'
++ENDPOINT = 'https://api.openai.com/v1/responses'
++MODELO = 'gpt-6-sol'
++
++
++def sha(data):
++    return montagem.sha(data)
++
++
++def bytes_json(value):
++    return (json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2) + '\n').encode('utf-8')
++
++
++def agora():
++    return datetime.now(timezone.utc).isoformat()
++
++
++def chave_api():
++    key = os.environ.get('OPENAI_API_KEY', '')
++    if not key or key != key.strip() or any(not 33 <= ord(c) <= 126 for c in key):
++        raise ValueError('OPENAI_API_KEY ausente ou malformada; nao informar chave no chat')
++    return key
++
++
++def salvar(path, value):
++    path.parent.mkdir(parents=True, exist_ok=True)
++    with path.open('xb') as stream:
++        stream.write(value)
++
++
++def salvar_json(path, value):
++    salvar(path, bytes_json(value))
++
++
++def requisicao(payload, config):
++    text = payload.decode('utf-8')
++    if payload.startswith(b'\xef\xbb\xbf') or b'\r' in payload:
++        raise ValueError('entrada deve preservar a politica UTF-8 sem BOM/LF')
++    return bytes_json({'model': config['modelo_solicitado'], 'input': text,
++                       'reasoning': {'effort': config['esforco_solicitado']},
++                       'max_output_tokens': config['max_output_tokens'],
++                       'tools': [], 'tool_choice': 'none', 'store': False, 'stream': False})
++
++
++class SemRedirecionar(urllib.request.HTTPRedirectHandler):
++    def redirect_request(self, req, fp, code, msg, headers, newurl):
++        return None
++
++
++def enviar(body, key, timeout):
++    """Uma tentativa HTTP; nunca persiste Authorization e nunca segue redirect."""
++    req = urllib.request.Request(ENDPOINT, data=body, method='POST', headers={
++        'Authorization': 'Bearer ' + key, 'Content-Type': 'application/json'})
++    opener = urllib.request.build_opener(SemRedirecionar())
++    try:
++        with opener.open(req, timeout=timeout) as response:
++            return response.status, response.read(), response.headers.get('x-request-id')
++    except urllib.error.HTTPError as error:
++        return error.code, error.read(), error.headers.get('x-request-id')
++
++
++def interpretar(raw, http_status, config):
++    """Preserva texto do assistente, inclusive recusa, cercas e JSON invalido."""
++    result = {'concluida': False, 'texto': None, 'modelo_reportado': None,
++              'response_id': None, 'usage': None, 'desvios': [], 'causa': None}
++    if not 200 <= http_status < 300:
++        result['causa'] = 'HTTP ' + str(http_status) + '; original preservado; sem retry automatico'
++        return result
++    try:
++        data = montagem._json(raw)
++        if not isinstance(data, dict) or not isinstance(data.get('output'), list):
++            raise ValueError('envelope sem output')
++        result.update(modelo_reportado=data.get('model'), response_id=data.get('id'), usage=data.get('usage'))
++        messages = []
++        for item in data['output']:
++            if not isinstance(item, dict):
++                raise ValueError('item de output invalido')
++            if item.get('type') == 'reasoning':
++                continue
++            if item.get('type') != 'message' or item.get('role') != 'assistant':
++                result['desvios'].append('output contem item adicional: ' + str(item.get('type')))
++                continue
++            parts = []
++            for content in item.get('content', []):
++                if content.get('type') == 'output_text' and isinstance(content.get('text'), str):
++                    parts.append(content['text'])
++                elif content.get('type') == 'refusal' and isinstance(content.get('refusal'), str):
++                    parts.append(content['refusal'])
++                else:
++                    result['desvios'].append('conteudo de mensagem nao textual')
++            messages.append(''.join(parts))
++            if item.get('status') != 'completed':
++                result['desvios'].append('mensagem nao concluida')
++        if messages:
++            result['texto'] = ''.join(messages).encode('utf-8')
++        if len(messages) != 1:
++            result['desvios'].append('esperada exatamente uma mensagem de assistente')
++        if not isinstance(result['response_id'], str) or not result['response_id']:
++            result['desvios'].append('response_id ausente')
++        if result['modelo_reportado'] != config['modelo_solicitado']:
++            result['desvios'].append('modelo reportado diferente/ausente; conferir alias e versao')
++        if data.get('tools') != [] or data.get('tool_choice') != 'none':
++            result['desvios'].append('envelope nao confirma tools=[] e tool_choice=none')
++        if data.get('instructions') is not None or data.get('previous_response_id') is not None:
++            result['desvios'].append('envelope reporta instrucoes/historico adicionais')
++        result['concluida'] = data.get('status') == 'completed' and len(messages) == 1
++        if not result['concluida']:
++            result['causa'] = 'resposta incompleta/incompativel: ' + str(data.get('status'))
++    except (ValueError, KeyError, TypeError, AttributeError) as error:
++        result['causa'] = 'envelope invalido: ' + type(error).__name__
++    return result
++
++
++def preparar(origem, saida, limite_saida, orcamento, timeout=120):
++    original = base.conferir_plano(origem)
++    if type(limite_saida) is not int or limite_saida < 1 or type(timeout) is not int or timeout < 1:
++        raise ValueError('limite de saida e timeout devem ser inteiros positivos')
++    try:
++        budget = Decimal(str(orcamento))
++        if not budget.is_finite() or budget <= 0:
++            raise ValueError('orcamento declarado deve ser positivo')
++    except InvalidOperation as error:
++        raise ValueError('orcamento invalido') from error
++    out = base.protegida(saida, 'captura')
++    if out.exists():
++        raise ValueError('saida existente; preservar plano anterior')
++    config = {'modelo_solicitado': MODELO, 'esforco_solicitado': 'medium',
++              'interface': 'Responses API HTTP direto', 'endpoint': ENDPOINT,
++              'max_output_tokens': limite_saida, 'timeout_segundos': timeout,
++              'orcamento_declarado_usd': str(budget), 'retries_automaticos_cliente': 0,
++              'tools': [], 'tool_choice': 'none', 'store': False, 'stream': False,
++              'limite_garantia': 'requisicao do cliente; nao controla instrucoes ou transporte internos do provedor',
++              'limite_orcamento': 'declaracao do pesquisador; nao e teto monetario imposto pelo script'}
++    config['id'] = 'piloto-api-' + sha(bytes_json(config))[:16]
++    out.mkdir(parents=True)
++    salvar(out / 'plano-cli-original.json', Path(origem).read_bytes())
++    plan = {k: v for k, v in original.items() if k not in ('configuracao', 'observacoes')}
++    plan.update(coletor=VERSAO, coletor_sha256=sha(Path(__file__).read_bytes()),
++                montador_sha256=sha(Path(montagem.__file__).read_bytes()),
++                auxiliar_sha256=sha(Path(base.__file__).read_bytes()),
++                ordem_origem_sha256=sha(Path(origem).read_bytes()),
++                configuracao_id=config['id'], configuracao=config, modelo=MODELO,
++                status='PREPARADO_API_NAO_ENVIADO', observacoes=[])
++    prepared = {}
++    for row in original['observacoes']:
++        key = row['mudanca'] + '-' + row['condicao']
++        if key not in prepared:
++            source = base.relativo(Path(origem).parent, row['preparacao'])
++            old = base.conferir_preparacao(source)
++            package = out / 'pacotes' / key
++            package.mkdir(parents=True)
++            for e in old['documentos']:
++                salvar(package / e['arquivo'], (source.parent / 'documentos' / e['arquivo']).read_bytes())
++            manifest = base.ler(source.parent / 'manifesto-original.json')
++            manifest['configuracao_id'] = config['id']
++            salvar_json(package / 'manifesto.json', manifest)
++            auth = base.ler(source.parent / 'autorizacao-original.json')
++            auth['manifesto_sha256'] = sha((package / 'manifesto.json').read_bytes())
++            authpath = out / 'autorizacoes' / (key + '.json')
++            salvar_json(authpath, auth)
++            dest = out / 'preparados' / key
++            new = montagem.preparar(package, package / 'manifesto.json', dest, authpath)
++            if new['payload_sha256'] != old['payload_sha256']:
++                raise ValueError('transporte API alterou o texto experimental')
++            prepared[key] = dest / 'preparacao.json'
++        prep = prepared[key]
++        plan['observacoes'].append({**row, 'configuracao_id': config['id'],
++                                   'preparacao': prep.relative_to(out).as_posix(),
++                                   'preparacao_sha256': sha(prep.read_bytes())})
++    salvar_json(out / 'plano.json', plan)
++    return out / 'plano.json'
++
++
++def conferir(path):
++    path = montagem.sem_links(path)
++    plan = base.ler(path)
++    if (plan.get('coletor') != VERSAO or plan.get('coletor_sha256') != sha(Path(__file__).read_bytes())
++            or plan.get('montador_sha256') != sha(Path(montagem.__file__).read_bytes())
++            or plan.get('auxiliar_sha256') != sha(Path(base.__file__).read_bytes())):
++        raise ValueError('versao/hash mudou; preparar novo plano API')
++    config = plan['configuracao']
++    signature = {k: v for k, v in config.items() if k != 'id'}
++    if (config['id'] != 'piloto-api-' + sha(bytes_json(signature))[:16]
++            or config['modelo_solicitado'] != MODELO or config['endpoint'] != ENDPOINT
++            or config['esforco_solicitado'] != 'medium' or config['tools'] != []
++            or config['tool_choice'] != 'none' or config['store'] is not False
++            or config['stream'] is not False or config['retries_automaticos_cliente'] != 0):
++        raise ValueError('configuracao API divergente')
++    rows = plan['observacoes']
++    oldraw = (path.parent / 'plano-cli-original.json').read_bytes()
++    original_rows = montagem._json(oldraw)['observacoes']
++    if (sha(oldraw) != plan['ordem_origem_sha256']
++            or [(r['observacao_id'], r['payload_sha256']) for r in rows]
++            != [(r['observacao_id'], r['payload_sha256']) for r in original_rows]):
++        raise ValueError('ordem/textos diferem do planejamento preservado')
++    if (plan['configuracao_id'] != config['id'] or type(config['max_output_tokens']) is not int
++            or config['max_output_tokens'] < 1 or type(config['timeout_segundos']) is not int
++            or config['timeout_segundos'] < 1):
++        raise ValueError('limites/configuracao invalidos')
++    expected = {(m, c, r) for m in ('MC-01', 'MC-03') for c in montagem.CONDICOES for r in (1, 2)}
++    if (len(rows) != 16 or {(r['mudanca'], r['condicao'], r['repeticao']) for r in rows} != expected
++            or [r['ordem'] for r in rows] != list(range(1, 17))
++            or len({r['observacao_id'] for r in rows}) != 16):
++        raise ValueError('ordem/identidades do piloto divergentes')
++    preps = {}
++    for row in rows:
++        if (row['observacao_id'] != f"PIL-{row['mudanca']}-{row['condicao']}-R{row['repeticao']:02}"
++                or row['bloco'] != row['repeticao']
++                or row['repeticao'] != (1 if row['ordem'] <= 8 else 2)
++                or row['status'] != 'PLANEJADA_NAO_EXECUTADA'):
++            raise ValueError('identidade/bloco/fase divergente')
++        p = base.relativo(path.parent, row['preparacao'])
++        if sha(p.read_bytes()) != row['preparacao_sha256']:
++            raise ValueError('hash da preparacao divergente')
++        prep = base.conferir_preparacao(p)
++        if any(row[k] != prep[k] for k in ('configuracao_id', 'mudanca', 'condicao', 'payload_sha256')):
++            raise ValueError('preparacao/configuracao divergente')
++        if row['configuracao_id'] != config['id'] or row['origem'] != 'real' or row['fase'] != 'piloto':
++            raise ValueError('origem/fase/configuracao divergente')
++        preps[(row['mudanca'], row['condicao'])] = prep
++    if len(preps) != 8 or not montagem.conferir_condicoes(list(preps.values())):
++        raise ValueError('condicoes divergentes')
++    return plan
++
++
++def capturar(path, lote, limite, continuar=False, real=False, sender=enviar):
++    plan = conferir(path)
++    if type(limite) is not int or not 1 <= limite <= 16:
++        raise ValueError('--limite deve estar entre 1 e 16')
++    key = None
++    if real:
++        key = chave_api()
++    out = base.protegida(lote, 'captura')
++    origin, phase = ('real', 'piloto') if real else ('sintetica', 'verificacao_sintetica')
++    header = {'origem': origin, 'fase': phase, 'interface': 'Responses API',
++              'plano_sha256': sha(Path(path).read_bytes()), 'coletor_sha256': sha(Path(__file__).read_bytes())}
++    if not continuar:
++        out.mkdir(parents=True, exist_ok=False)
++        salvar(out / 'plano-original.json', Path(path).read_bytes())
++        salvar_json(out / 'lote.json', header)
++    if (base.ler(out / 'lote.json') != header or (out / 'plano-original.json').read_bytes() != Path(path).read_bytes()):
++        raise ValueError('configuracao/origem/plano mudou; nao continuar este lote')
++    lock = out / 'coletor.lock'
++    with lock.open('x') as f:
++        f.write(str(os.getpid()))
++    count = 0
++    response_ids = set()
++    try:
++        for row in plan['observacoes']:
++            attempt = out / row['observacao_id'] / 'T01'
++            if attempt.exists():
++                previous = base.conferir_fechamento(attempt)
++                if previous['estado_tecnico'] != 'concluida' or previous['desvios']:
++                    raise ValueError('tentativa incompleta/ambigua/com desvio; conferir sem reenvio automatico')
++                if previous['response_id'] in response_ids:
++                    raise ValueError('response_id repetido entre observacoes')
++                response_ids.add(previous['response_id'])
++                continue
++            if count >= limite:
++                break
++            conferir(path)
++            prepfile = base.relativo(Path(path).parent, row['preparacao'])
++            prep = base.conferir_preparacao(prepfile)
++            attempt.mkdir(parents=True)
++            for name in ['preparacao.json'] + [x['arquivo'] for x in prep['arquivos']]:
++                salvar(attempt / 'preparacao' / name, (prepfile.parent / name).read_bytes())
++            payload = (prepfile.parent / 'payload.txt').read_bytes()
++            body = requisicao(payload, plan['configuracao'])
++            salvar(attempt / 'entrada.bin', payload)
++            salvar(attempt / 'requisicao.json', body)
++            start = agora()
++            salvar_json(attempt / 'inicio.json', {'instante': start, 'origem': origin,
++                        'endpoint': ENDPOINT, 'requisicao_sha256': sha(body), 'authorization': 'NAO_PERSISTIDA'})
++            parsed = None
++            request_id = None
++            status = None
++            try:
++                if real:
++                    status, raw, request_id = sender(body, key, plan['configuracao']['timeout_segundos'])
++                else:
++                    status, raw = 200, bytes_json({'id': 'controle-' + uuid.uuid4().hex,
++                        'model': MODELO, 'status': 'completed', 'tools': [], 'tool_choice': 'none',
++                        'output': [{'type': 'message', 'role': 'assistant', 'status': 'completed',
++                                    'content': [{'type': 'output_text', 'text': '{"requisitos":[],"testes":[]}'}]}]})
++                salvar(attempt / 'resposta-http.bin', raw)
++                parsed = interpretar(raw, status, plan['configuracao'])
++            except (OSError, TimeoutError, ValueError) as error:
++                # Sem texto da excecao: pode conter dados de transporte/credenciais.
++                partial = getattr(error, 'partial', None)
++                if isinstance(partial, bytes):
++                    salvar(attempt / 'resposta-http-parcial.bin', partial)
++                parsed = {'concluida': False, 'texto': None, 'modelo_reportado': None,
++                          'response_id': None, 'usage': None, 'desvios': [],
++                          'causa': type(error).__name__ + '; estado remoto desconhecido; nao reenviar'}
++            except KeyboardInterrupt:
++                # inicio.json preservado; ausencia de fechamento bloqueia toda retomada.
++                return 130
++            text = parsed['texto']
++            if parsed['response_id'] in response_ids:
++                parsed['desvios'].append('response_id repetido entre observacoes')
++            if parsed['response_id'] is not None:
++                response_ids.add(parsed['response_id'])
++            if text is not None:
++                salvar(attempt / 'resposta.bin', text)
++            record = {k: row[k] for k in ('observacao_id', 'configuracao_id', 'mudanca', 'condicao', 'payload_sha256')}
++            record.update(origem=origin, fase=phase, tentativa_id=row['observacao_id'] + '-T01', tentativa_anterior=None,
++                preparacao_id=prep['preparacao_id'], preparacao_sha256=row['preparacao_sha256'],
++                entrada_enviada_arquivo='entrada.bin', entrada_enviada_sha256=sha(payload),
++                resposta_arquivo='resposta.bin' if text is not None else None,
++                resposta_sha256=sha(text) if text is not None else None, resposta_tamanho=len(text) if text is not None else None,
++                estado_tecnico='concluida' if parsed['concluida'] else 'falha_tecnica', fragmento=not parsed['concluida'],
++                causa=parsed['causa'], instante_execucao=start, instante_fim=agora(),
++                origem_resposta='Responses API; envelope bruto preservado' if real else 'CONTROLE ARTIFICIAL; sem rede/modelo',
++                modelo_reportado=parsed['modelo_reportado'] if real else None,
++                modelo_reportado_indisponibilidade=None if real and parsed['modelo_reportado'] else 'nao reportado; controle ou falha',
++                configuracao=plan['configuracao'], versoes={'coletor': VERSAO, 'coletor_sha256': header['coletor_sha256']},
++                conformidade_protocolo='desvio' if parsed['desvios'] else 'pendente', desvios=parsed['desvios'],
++                http_status=status, request_id=request_id, response_id=parsed['response_id'], usage=parsed['usage'],
++                requisicao_sha256=sha(body), retentativas_cliente=0,
++                texto_extraido_de='output/message/content/output_text ou refusal; sem trim ou reparo')
++            record['repeticao' if real else 'repeticao_sintetica'] = row['repeticao']
++            salvar_json(attempt / 'tentativa.json', record)
++            salvar_json(attempt / 'fechamento.json', {'arquivos': base.inventariar(attempt)})
++            count += 1
++            print(row['observacao_id'], record['estado_tecnico'], flush=True)
++            if not parsed['concluida'] or parsed['desvios']:
++                return 2
++        return 0
++    finally:
++        lock.unlink()
++
++
++def conexao(saida, limite_saida, timeout=120, sender=enviar):
++    """Uma chamada paga neutra, separada de qualquer observacao do piloto."""
++    if type(limite_saida) is not int or limite_saida < 1 or type(timeout) is not int or timeout < 1:
++        raise ValueError('limite e timeout devem ser positivos')
++    key = chave_api()
++    out = base.protegida(saida, 'captura')
++    if out.exists():
++        raise ValueError('saida existente; nao sobrescrever teste de conexao')
++    config = {'modelo_solicitado': MODELO, 'esforco_solicitado': 'medium', 'max_output_tokens': limite_saida}
++    payload = b'Responda apenas OK.\n'
++    body = requisicao(payload, config)
++    out.mkdir(parents=True)
++    salvar(out / 'entrada.bin', payload)
++    salvar(out / 'requisicao.json', body)
++    salvar_json(out / 'inicio.json', {'fase': 'verificacao_conexao', 'instante': agora(),
++                                     'configuracao': config, 'endpoint': ENDPOINT, 'authorization': 'NAO_PERSISTIDA'})
++    try:
++        status, raw, request_id = sender(body, key, timeout)
++        salvar(out / 'resposta-http.bin', raw)
++        result = interpretar(raw, status, config)
++        if result['texto'] is not None:
++            salvar(out / 'resposta.bin', result['texto'])
++        summary = {k: v for k, v in result.items() if k != 'texto'}
++        summary.update(fase='verificacao_conexao', http_status=status, request_id=request_id,
++                       incluido_piloto=False, incluido_coleta_principal=False,
++                       orcamento='chamada paga isolada; uso em usage quando reportado')
++    except OSError as error:
++        partial = getattr(error, 'partial', None)
++        if isinstance(partial, bytes):
++            salvar(out / 'resposta-http-parcial.bin', partial)
++        summary = {'fase': 'verificacao_conexao', 'concluida': False, 'causa': type(error).__name__,
++                   'estado_remoto': 'desconhecido; sem retentativa automatica', 'incluido_piloto': False}
++    salvar_json(out / 'resultado.json', summary)
++    return 0 if summary.get('concluida') and not summary.get('desvios') else 2
++
++
++def main(argv=None):
++    parser = argparse.ArgumentParser(description=__doc__)
++    sub = parser.add_subparsers(dest='comando', required=True)
++    p = sub.add_parser('preparar', help='offline: copia ordem e bytes para novo plano API')
++    p.add_argument('--ordem', required=True, type=Path)
++    p.add_argument('--saida', required=True, type=Path)
++    p.add_argument('--limite-saida', required=True, type=int)
++    p.add_argument('--orcamento-usd', required=True)
++    p.add_argument('--timeout', type=int, default=120)
++    p = sub.add_parser('simular', help='offline: valida entradas, sem chave/rede')
++    p.add_argument('--plano', required=True, type=Path)
++    p = sub.add_parser('conexao', help='UMA chamada paga neutra, fora do piloto; exige --enviar-real')
++    p.add_argument('--saida', required=True, type=Path)
++    p.add_argument('--limite-saida', required=True, type=int)
++    p.add_argument('--timeout', type=int, default=120)
++    p.add_argument('--enviar-real', action='store_true')
++    for name in ('controle', 'iniciar'):
++        p = sub.add_parser(name, help='offline sintetico' if name == 'controle' else 'chamadas pagas; requer --enviar-real')
++        p.add_argument('--plano', required=True, type=Path)
++        p.add_argument('--lote', required=True, type=Path)
++        p.add_argument('--limite', required=True, type=int)
++        p.add_argument('--continuar', action='store_true')
++        if name == 'iniciar':
++            p.add_argument('--enviar-real', action='store_true')
++    p = sub.add_parser('avaliar', help='offline: mesma avaliacao existente em etapa separada')
++    p.add_argument('--lote', required=True, type=Path)
++    p.add_argument('--referencia', required=True, type=Path)
++    p.add_argument('--saida', required=True, type=Path)
++    args = parser.parse_args(argv)
++    try:
++        if args.comando == 'preparar':
++            print(preparar(args.ordem, args.saida, args.limite_saida, args.orcamento_usd, args.timeout))
++        elif args.comando == 'simular':
++            plan = conferir(args.plano)
++            print(json.dumps({'observacoes': len(plan['observacoes']), 'configuracao': plan['configuracao'],
++                              'rede_utilizada': False, 'fase': 'preparacao_offline'}, ensure_ascii=False, indent=2))
++        elif args.comando == 'conexao':
++            if not args.enviar_real:
++                raise ValueError('conexao gera custo; exige --enviar-real')
++            return conexao(args.saida, args.limite_saida, args.timeout)
++        elif args.comando in ('controle', 'iniciar'):
++            real = args.comando == 'iniciar'
++            if real and not args.enviar_real:
++                raise ValueError('envio exige --enviar-real; nenhuma chamada realizada')
++            return capturar(args.plano, args.lote, args.limite, args.continuar, real)
++        elif args.comando == 'avaliar':
++            return base.avaliar_lote(args.lote, args.referencia, args.saida)
++        return 0
++    except (ValueError, OSError, KeyError, TypeError) as error:
++        print(str(error), file=__import__('sys').stderr)
++        return 2
++
++
++if __name__ == '__main__':
++    raise SystemExit(main())
+diff --git a/tcc-impacto-llm/tests/test_coletor_api.py b/tcc-impacto-llm/tests/test_coletor_api.py
+new file mode 100644
+index 0000000..794832d
+--- /dev/null
++++ b/tcc-impacto-llm/tests/test_coletor_api.py
+@@ -0,0 +1,186 @@
++"""Respostas artificiais; nunca abrem a rede ou leem chave real."""
++import copy
++import json
++import os
++from pathlib import Path
++import tempfile
++import unittest
++from unittest.mock import patch
++import urllib.error
++
++import coletor_api as api
++
++
++def resposta(text=' {"requisitos":[],"testes":[]}\r\n', **extras):
++    data = {'id': 'resp-controle', 'model': 'gpt-6-sol', 'status': 'completed',
++            'tools': [], 'tool_choice': 'none', 'usage': {'input_tokens': 10, 'output_tokens': 5},
++            'output': [{'type': 'message', 'role': 'assistant', 'status': 'completed',
++                        'content': [{'type': 'output_text', 'text': text}]}]}
++    data.update(extras)
++    return api.bytes_json(data)
++
++
++class TestAPI(unittest.TestCase):
++    @classmethod
++    def setUpClass(cls):
++        cls.temp = tempfile.TemporaryDirectory()
++        cls.root = Path(cls.temp.name)
++        cls.origem = api.base.RAIZ / 'captura/planejamento-piloto-2026-11-07-D38/plano.json'
++        with patch.object(api.base, 'protegida', side_effect=lambda p, zona: Path(p)):
++            cls.plano = api.preparar(cls.origem, cls.root / 'plano', 512, '1')
++        cls.config = api.conferir(cls.plano)['configuracao']
++
++    @classmethod
++    def tearDownClass(cls):
++        cls.temp.cleanup()
++
++    def setUp(self):
++        self.temp_case = tempfile.TemporaryDirectory(dir=self.root)
++        self.addCleanup(self.temp_case.cleanup)
++        self.out = Path(self.temp_case.name)
++
++    def capturar(self, **kwargs):
++        with patch.object(api.base, 'protegida', side_effect=lambda p, zona: Path(p)):
++            return api.capturar(self.plano, self.out / 'lote', 1, **kwargs)
++
++    def tentativa(self):
++        return next((self.out / 'lote').glob('PIL-*/T01'))
++
++    def test_ordem_textos_configuracao_e_fase_separados(self):
++        old = api.base.conferir_plano(self.origem)
++        new = api.conferir(self.plano)
++        self.assertEqual([r['observacao_id'] for r in old['observacoes']], [r['observacao_id'] for r in new['observacoes']])
++        self.assertEqual([r['payload_sha256'] for r in old['observacoes']], [r['payload_sha256'] for r in new['observacoes']])
++        self.assertNotEqual(old['configuracao_id'], new['configuracao_id'])
++        self.assertEqual(new['configuracao']['retries_automaticos_cliente'], 0)
++
++    def test_requisicao_so_texto_sem_historico_ferramentas_ou_segredo(self):
++        raw = 'ação\ntexto integral\n'.encode()
++        body = api.requisicao(raw, self.config)
++        value = json.loads(body)
++        self.assertEqual(value['input'].encode(), raw)
++        self.assertEqual(set(value), {'model','input','reasoning','max_output_tokens','tools','tool_choice','store','stream'})
++        self.assertEqual(value['tools'], [])
++        self.assertEqual(value['tool_choice'], 'none')
++        self.assertFalse(value['store'])
++        self.assertFalse(value['stream'])
++
++    def test_parse_preserva_texto_recusa_invalida_e_incompleta(self):
++        for text in ('', 'nao posso responder', '```json\n{}\n```', ' \r\n{"requisitos":[],"testes":[]}\r\n '):
++            r = api.interpretar(resposta(text), 200, self.config)
++            self.assertTrue(r['concluida'])
++            self.assertEqual(r['texto'], text.encode())
++        refused = json.loads(resposta())
++        refused['output'][0]['content'] = [{'type': 'refusal', 'refusal': 'recusa literal'}]
++        self.assertEqual(api.interpretar(api.bytes_json(refused),200,self.config)['texto'], b'recusa literal')
++        self.assertFalse(api.interpretar(resposta(status='incomplete'),200,self.config)['concluida'])
++        self.assertFalse(api.interpretar(b'nao e JSON',200,self.config)['concluida'])
++        self.assertFalse(api.interpretar(resposta(),429,self.config)['concluida'])
++
++    def test_output_tools_modelo_historico_e_mensagens_extras_sao_desvios(self):
++        for extra in ({'model':'outro'}, {'tools':[{'type':'function'}]}, {'instructions':'extra'},
++                      {'previous_response_id':'outra'}, {'tool_choice':'auto'}):
++            self.assertTrue(api.interpretar(resposta(**extra),200,self.config)['desvios'])
++        raw = json.loads(resposta())
++        raw['output'].append(copy.deepcopy(raw['output'][0]))
++        self.assertFalse(api.interpretar(api.bytes_json(raw),200,self.config)['concluida'])
++
++    def test_controle_sem_rede_credencial_e_avaliacao_separada(self):
++        with patch.object(api, 'enviar', side_effect=AssertionError('rede proibida')):
++            self.assertEqual(self.capturar(), 0)
++        record = api.base.ler(self.tentativa() / 'tentativa.json')
++        self.assertEqual((record['origem'],record['fase']), ('sintetica','verificacao_sintetica'))
++        self.assertIsNone(record['modelo_reportado'])
++        with patch.object(api.base, 'protegida', side_effect=lambda p, zona: Path(p)):
++            api.base.avaliar_lote(self.out/'lote',api.base.RAIZ/'materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json', self.out/'avaliados')
++        self.assertEqual(len(list((self.out/'avaliados').glob('PIL-*/T*/avaliacao.json'))),1)
++
++    def test_real_simulada_uma_chamada_chave_nao_persistida_e_sem_reenvio(self):
++        sent=[]
++        def sender(body, key, timeout):
++            sent.append(body)
++            self.assertEqual(key,'SEGREDO-FICTICIO')
++            return 200,resposta('JSON INVALIDO preservado',id='resp-controle-'+str(len(sent))), 'req-controle'
++        with patch.dict(os.environ,OPENAI_API_KEY='SEGREDO-FICTICIO'):
++            self.assertEqual(self.capturar(real=True,sender=sender),0)
++            self.assertEqual(self.capturar(real=True,sender=sender,continuar=True),0)
++        self.assertEqual(len(sent),2)  # primeira + proxima observacao; nao reenviou a primeira
++        for p in (self.out/'lote').rglob('*'):
++            if p.is_file():self.assertNotIn(b'SEGREDO-FICTICIO',p.read_bytes())
++        self.assertEqual((self.tentativa()/'resposta.bin').read_bytes(),b'JSON INVALIDO preservado')
++
++    def test_timeout_preservado_e_continuacao_bloqueada(self):
++        count=[]
++        def timeout(*args):
++            count.append(1)
++            raise TimeoutError('SEGREDO-FICTICIO')
++        with patch.dict(os.environ,OPENAI_API_KEY='SEGREDO-FICTICIO'):
++            self.assertEqual(self.capturar(real=True,sender=timeout),2)
++            with self.assertRaises(ValueError):self.capturar(real=True,sender=timeout,continuar=True)
++        self.assertEqual(len(count),1)
++        self.assertTrue((self.tentativa()/'requisicao.json').exists())
++        self.assertNotIn('SEGREDO-FICTICIO',(self.tentativa()/'tentativa.json').read_text())
++
++    def test_hash_tamper_retomada_e_orcamento(self):
++        self.assertEqual(self.capturar(),0)
++        (self.tentativa()/'resposta.bin').write_bytes(b'alterada')
++        with self.assertRaises(ValueError):self.capturar(continuar=True)
++        for value in ('0','-1','NaN','Infinity','x'):
++            with patch.object(api.base,'protegida',side_effect=lambda p,z:Path(p)):
++                with self.assertRaises(ValueError):api.preparar(self.origem,self.out/'invalido',512,value)
++
++    def test_iniciar_sem_flag_ou_chave_nao_chama_rede(self):
++        with patch.object(api,'enviar',side_effect=AssertionError('rede proibida')):
++            self.assertEqual(api.main(['iniciar','--plano',str(self.plano),'--lote',str(self.out/'x'),'--limite','1']),2)
++            with patch.dict(os.environ,OPENAI_API_KEY=''):
++                with self.assertRaises(ValueError):self.capturar(real=True)
++        self.assertFalse((self.out/'lote').exists())
++
++    def test_redirect_e_http_error_sem_retry(self):
++        self.assertIsNone(api.SemRedirecionar().redirect_request(None,None,302,'',{},'https://outro'))
++        import io
++        err=urllib.error.HTTPError(api.ENDPOINT,429,'limited',{'x-request-id':'controle'},io.BytesIO(b'{"error":{}}'))
++        with patch.object(api.urllib.request,'build_opener') as factory:
++            factory.return_value.open.side_effect=err
++            status,body,request_id=api.enviar(b'{}','SEGREDO-FICTICIO',1)
++            self.assertEqual((status,body,request_id),(429,b'{"error":{}}','controle'))
++            self.assertEqual(factory.return_value.open.call_count,1)
++
++    def test_conexao_neutra_separada_e_explicita(self):
++        sent=[]
++        def sender(body,key,timeout):
++            data=json.loads(body)
++            self.assertEqual(data['input'],'Responda apenas OK.\n')
++            self.assertNotIn('RF-',data['input'])
++            sent.append(body)
++            return 200,resposta('OK'),'req-conexao-controle'
++        with patch.dict(os.environ,OPENAI_API_KEY='SEGREDO-FICTICIO'):
++            with patch.object(api.base,'protegida',side_effect=lambda p,z:Path(p)):
++                self.assertEqual(api.conexao(self.out/'conexao',512,sender=sender),0)
++                with self.assertRaises(ValueError):api.conexao(self.out/'conexao',512,sender=sender)
++        result=api.base.ler(self.out/'conexao/resultado.json')
++        self.assertFalse(result['incluido_piloto'])
++        self.assertEqual(len(sent),1)
++        self.assertEqual(api.main(['conexao','--saida',str(self.out/'nao-criar'),'--limite-saida','512']),2)
++        self.assertFalse((self.out/'nao-criar').exists())
++
++    def test_response_id_duplicado_interrompe_sem_escolher_resultado(self):
++        def sender(*args):return 200,resposta(),'req-controle'
++        with patch.dict(os.environ,OPENAI_API_KEY='SEGREDO-FICTICIO'):
++            self.assertEqual(self.capturar(real=True,sender=sender),0)
++            self.assertEqual(self.capturar(real=True,sender=sender,continuar=True),2)
++            with self.assertRaises(ValueError):self.capturar(real=True,sender=sender,continuar=True)
++        self.assertEqual(len(list((self.out/'lote').glob('PIL-*/T01/tentativa.json'))),2)
++
++    def test_lote_sintetico_16_e_avaliacao_integrada_sem_rede(self):
++        with patch.object(api.base,'protegida',side_effect=lambda p,z:Path(p)):
++            self.assertEqual(api.capturar(self.plano,self.out/'lote',16),0)
++            originals={p:p.read_bytes() for p in (self.out/'lote').glob('PIL-*/T01/tentativa.json')}
++            self.assertEqual(len(originals),16)
++            self.assertEqual(api.capturar(self.plano,self.out/'lote',16,continuar=True),0)
++            self.assertEqual(originals,{p:p.read_bytes() for p in originals})
++            status=api.base.avaliar_lote(self.out/'lote',api.base.RAIZ/'materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json',self.out/'avaliados')
++        self.assertEqual(status,0)
++        evaluations=list((self.out/'avaliados').glob('PIL-*/T*/avaliacao.json'))
++        self.assertEqual(len(evaluations),16)
++        self.assertTrue(all(api.base.ler(p)['origem']=='sintetica' for p in evaluations))
+diff --git a/tcc-impacto-llm/documentacao/operacao-api.md b/tcc-impacto-llm/documentacao/operacao-api.md
+new file mode 100644
+index 0000000..776e099
+--- /dev/null
++++ b/tcc-impacto-llm/documentacao/operacao-api.md
+@@ -0,0 +1,90 @@
++# Operação pela Responses API — preparação offline
++
++O pesquisador escolheu tentar API nesta conversa e informou que `gpt-6-sol` aparece em sua consulta autenticada a `/v1/models`. Isso comprova a consulta relatada, não geração, suporte a `medium`, preço ou saldo disponível. A chave permanece no computador do pesquisador. Não houve chamada paga nesta implementação.
++
++## O que mudou
++
++`coletor_api.py` acrescenta uma rota independente. O coletor Codex D-38, sua trava, planos, fontes experimentais e evidências antigas permanecem intactos. A nova rota reaproveita validação dos preparados, oito textos v2-LF, ordem D-38, captura em arquivos e avaliação existente. Requer Python 3.11+ e biblioteca padrão, sem instalação de SDK.
++
++O pedido HTTP contém exatamente model, input (texto integral), reasoning.effort, max_output_tokens, tools=[], tool_choice=none, store=false e stream=false. Não fornece instructions, histórico, previous_response_id, arquivos, gabarito ou ferramentas. Mantém o bloco de sistema dentro do mesmo texto, como nos preparados; não muda papéis/estrutura entre condições. Não força schema de saída na API: o schema textual já está no payload.
++
++Endpoint fixo HTTPS `https://api.openai.com/v1/responses`, com validação TLS padrão e redirects recusados. O cabeçalho Authorization só existe em memória. Não registra a chave nem cabeçalhos de autenticação. Falhas de transporte são registradas por tipo sem texto potencialmente sensível. Não altera autenticação do Codex nem lê tokens de sua sessão.
++
++O cliente não implementa retries: uma tentativa HTTP por observação. HTTP inválido, timeout, resposta incompleta, modelo divergente ou envelope com ferramentas causa pausa, preservando originais. Não é garantia sobre mecanismos internos do provedor. Não escolher resposta melhor nem repetir JSON inválido. Um resultado final fora do JSON é preservado e pontuado como formato inválido pelo avaliador.
++
++## 1. Arquivos desta implementação
++
++- `coletor_api.py`: preparar, simular, controle, conexao, iniciar e avaliar.
++- `tests/test_coletor_api.py`: HTTP simulado, preservação de bytes, origem, ausência de segredo, falhas, retomada, duplicações e integração de 16 controles com avaliação.
++- Esta instrução e registro D-39 em decisões.
++
++As mudanças estão no workspace desta tarefa, sem commit/push. Para executar em `D:\TCC-Projeto\TCC\tcc-impacto-llm`, os arquivos precisam primeiro estar disponíveis nessa cópia local. Não supor que um `git pull` traz alterações ainda não publicadas.
++
++## 2. Consulta já feita e próxima conferência
++
++O usuário listou os modelos com sucesso usando sua chave local. `gpt-6-sol` consta da lista, permitindo manter o nome solicitado sem selecionar GPT-6.1 Sol silenciosamente. A compatibilidade real com Responses, medium e limites deve ser conferida por uma chamada neutra separada. Não se fez essa chamada daqui.
++
++Na sessão PowerShell que contém OPENAI_API_KEY, e somente quando desejar autorizar o custo de uma chamada, o comando é:
++
++```powershell
++python -B coletor_api.py conexao --saida captura/conexao-api-001 --limite-saida 1024 --enviar-real
++```
++
++Essa chamada envia somente `Responda apenas OK.`; não usa nenhum cenário, nota ou referência. O limite 1024 é um exemplo de cap de saída para conexão, não um parâmetro científico escolhido para o piloto. Esse cap pode incluir tokens de raciocínio; resposta incompleta exige revisar a configuração, sem assumir erro de autenticação ou suporte ao modelo. Campo usage é preservado quando reportado. Preço e orçamento precisam ser conferidos pelo pesquisador antes de enviar.
++
++Antes de executar, o usuário deve confirmar faturamento/créditos e o custo aceitável. Não colocar a Secret Key no comando, código, chat ou Git. Um novo terminal exige configurar novamente a variável se ela foi definida só na sessão anterior.
++
++Resultado em `captura/conexao-api-001/resultado.json`; corpo HTTP original em `resposta-http.bin`. O retorno zero indica envelope concluído e sem desvios detectados, não revisão científica ou autorização para o lote. Todos os testes reais posteriores usam diretórios novos. Não modificar o modelo, effort ou modalidade automaticamente em resposta a erros. Um 401/403/429 precisa de diagnóstico do erro preservado, sem falsificar resposta de LLM.
++
++## 3. Preparar e testar o fluxo local — sem API
++
++Na raiz do projeto, os comandos seguintes usam valores **de controle**, não selecionam orçamento/limite para a pesquisa. Nenhuma chave ou chamada de rede é usada:
++
++```powershell
++python -B coletor_api.py preparar --ordem captura/planejamento-piloto-2026-11-07-D38/plano.json --saida captura/plano-api-controle-001 --limite-saida 512 --orcamento-usd 1.00
++python -B coletor_api.py simular --plano captura/plano-api-controle-001/plano.json
++python -B coletor_api.py controle --plano captura/plano-api-controle-001/plano.json --lote captura/controle-api-001 --limite 16
++python -B coletor_api.py avaliar --lote captura/controle-api-001 --referencia materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json --saida avaliados/controle-api-001
++```
++
++Os controles retornam listas vazias artificiais: podem ter pontuação zero e ainda comprovar funcionamento da captura/avaliação. Origem `sintetica`, fase `verificacao_sintetica`, modelo reportado nulo. Nunca pertencem ao piloto. Os arquivos de saída já existentes são recusados, não sobrescritos. Usar nomes novos em uma nova rodada.
++
++O plano API recebe ID próprio e hashes do coletor, auxiliar e montador; guarda a ordem CLI original e exige os mesmos IDs/ordem/textos. Não mistura coortes Codex/API. Mudança de código/configuração exige plano novo. A preparação técnica conserva o piloto proposto no repositório (MC-01/MC-03, 16 observações); não resolve automaticamente as diferenças entre essa proposta e o Word anexado (cenário separado e coleta principal de 48).
++
++## 4. Plano de piloto real — escolhas ainda pendentes
++
++Escolher e registrar antes da geração do plano real: orçamento aceitável, limite de saída, timeout, revisão dos materiais, ordem e alcance do piloto. `--orcamento-usd` registra uma declaração: **não impõe um teto de cobrança**. O programa limita quantidade de chamadas e tokens de saída, mas não calcula preço nem impede cobrança até o valor declarado. Usar também os controles reais disponíveis na conta, com seus limites conhecidos. Não presumir que um alerta do provedor seja um bloqueio de gasto.
++
++Após escolher os valores, criar um plano em destino novo, em vez de promover o controle anterior a real:
++
++```text
++python -B coletor_api.py preparar --ordem captura/planejamento-piloto-2026-11-07-D38/plano.json --saida captura/plano-api-piloto-001 --limite-saida <LIMITE_ESCOLHIDO> --orcamento-usd <ORCAMENTO_ESCOLHIDO>
++```
++
++Os marcadores `<...>` devem ser substituídos antes de executar; não são sintaxe PowerShell.
++
++## 5. Envio real futuro, limitado e explícito
++
++Somente após conferir conexão, configuração, materiais e custo, com chave local configurada:
++
++```powershell
++python -B coletor_api.py iniciar --plano captura/plano-api-piloto-001/plano.json --lote captura/piloto-api-001 --limite 1 --enviar-real
++```
++
++Este comando **gera custo e envia a primeira observação real do piloto**. Não foi executado nesta implementação. `--limite 1` limita esta invocação a uma observação; não é sondagem neutra. Para conexão, usar o comando conexao separado. Depois de uma observação concluída sem desvio, `--continuar` ignora registros já concluídos e avança na ordem. Uma invocação com `--limite 16` pode executar todo o restante: o número é um limite por invocação, não um total monetário.
++
++Falha/incompletude/desvio bloqueia continuação automática. Ausência de fechamento após interrupção também bloqueia: o estado remoto não é conhecido e não se deve gerar outra observação silenciosamente. Não há T02 automático nesta rota. Isso respeita o máximo de uma retentativa técnica do protocolo, sem obrigar a fazê-la. Uma política adicional de recuperação/retry real precisaria de procedimento explícito e evidências.
++
++## 6. Arquivos e avaliação
++
++Cada T01 preserva preparação, entrada.bin, requisicao.json (sem segredo), início, resposta HTTP original, texto extraído sem trim/reparo, IDs, modelo reportado, uso e fechamento/hash. Recusa e cercas de código permanecem no texto. Mensagens adicionais/ferramentas, IDs de resposta duplicados e divergência do modelo são diagnósticos; não selecionar outra mensagem.
++
++O campo de conformidade real começa `pendente` ou `desvio`, sem aprovação automática de um experimento por um sucesso HTTP. A avaliação pode descrever as seleções, mas não promove registros pendentes a um resumo controlado. A resolução de elegibilidade do pesquisador deve ser separada e rastreável, sem editar brutos/fechamentos para fazê-los passar.
++
++O comando avaliar é offline e reutiliza o avaliador atual. A referência só é aberta nessa etapa. Não devolver resultado/gabarito ao contexto do LLM. Como toda entrada da API é registrada, ela pode ser comparada a input no JSON enviado; essa é uma prova sobre o cliente, não sobre todo o contexto interno do provedor.
++
++## 7. Fontes técnicas e limites de prontidão
++
++Campos confrontados, por leitura HTTPS, com os tipos oficiais do SDK em `openai/openai-python`: `src/openai/types/responses/response_create_params.py` e `src/openai/types/responses/response.py`. Referências: https://platform.openai.com/docs/api-reference/responses/create e https://github.com/openai/openai-python . Essa leitura não garante suporte do modelo/account; o teste real continua necessário.
++
++Os testes desta entrega são exclusivamente artificiais. Não verificam preço, saldo, permissões de geração, comportamento do provedor, adequação científica do gabarito/notas ou conclusão do piloto. O coletor Codex e suas travas não foram alterados.

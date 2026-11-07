@@ -1,0 +1,12 @@
+test_descritiva_pendente_e_resumo_controlado_bloqueado (test_revisao_conformidade.TestRevisaoConformidade.test_descritiva_pendente_e_resumo_controlado_bloqueado) ... ok
+test_desvio_nao_pode_ser_lavado_por_inclusao (test_revisao_conformidade.TestRevisaoConformidade.test_desvio_nao_pode_ser_lavado_por_inclusao) ... ok
+test_exclusao_nao_apaga_captura_ou_denominador (test_revisao_conformidade.TestRevisaoConformidade.test_exclusao_nao_apaga_captura_ou_denominador) ... ok
+test_hash_responsavel_data_e_decisao_preservada (test_revisao_conformidade.TestRevisaoConformidade.test_hash_responsavel_data_e_decisao_preservada) ... ok
+test_lista_nao_pode_omitir_captura_para_ocultar_exclusao (test_revisao_conformidade.TestRevisaoConformidade.test_lista_nao_pode_omitir_captura_para_ocultar_exclusao) ... ok
+test_revisao_ainda_pendente_nao_libera_resumo (test_revisao_conformidade.TestRevisaoConformidade.test_revisao_ainda_pendente_nao_libera_resumo) ... ok
+test_revisao_explicita_inclui_e_preserva_originais (test_revisao_conformidade.TestRevisaoConformidade.test_revisao_explicita_inclui_e_preserva_originais) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 19.879s
+
+OK

@@ -1,0 +1,14 @@
+test_ajuda_simulacao_preparacao_nao_leem_chave_ou_enviam (test_transporte_api.TestTransporteAPI.test_ajuda_simulacao_preparacao_nao_leem_chave_ou_enviam) ... ok
+test_conexao_incomplete_read_preserva_fragmento_e_fechamento (test_transporte_api.TestTransporteAPI.test_conexao_incomplete_read_preserva_fragmento_e_fechamento) ... ok
+test_corpo_http_error_tambem_preserva_incomplete_read (test_transporte_api.TestTransporteAPI.test_corpo_http_error_tambem_preserva_incomplete_read) ... ok
+test_defeito_de_programacao_nao_vira_falha_de_transporte (test_transporte_api.TestTransporteAPI.test_defeito_de_programacao_nao_vira_falha_de_transporte) ... ok
+test_eof_antes_de_content_length_e_falha_tecnica (test_transporte_api.TestTransporteAPI.test_eof_antes_de_content_length_e_falha_tecnica) ... ok
+test_excecoes_http_oserror_sem_texto_segredo_ou_retry (test_transporte_api.TestTransporteAPI.test_excecoes_http_oserror_sem_texto_segredo_ou_retry) ... ok
+test_incomplete_read_200_com_prefixo_fecha_e_nao_reenvia (test_transporte_api.TestTransporteAPI.test_incomplete_read_200_com_prefixo_fecha_e_nao_reenvia) ... ok
+test_interrupcao_com_fragmento_em_captura_e_conexao (test_transporte_api.TestTransporteAPI.test_interrupcao_com_fragmento_em_captura_e_conexao) ... ok
+test_tls_verificado_headers_sem_segredo_e_um_unico_open (test_transporte_api.TestTransporteAPI.test_tls_verificado_headers_sem_segredo_e_um_unico_open) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 5.409s
+
+OK

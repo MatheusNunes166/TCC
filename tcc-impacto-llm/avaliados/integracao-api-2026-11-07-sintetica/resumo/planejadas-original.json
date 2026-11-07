@@ -1,0 +1,162 @@
+[
+  {
+    "condicao": "E1",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-01",
+    "observacao_id": "PIL-MC-01-E1-R01",
+    "origem": "sintetica",
+    "payload_sha256": "776f8b865367bf43ab11b9a8366715fbfdd0b8a4781b101fa680ae3b659c6b31",
+    "repeticao_sintetica": 1
+  },
+  {
+    "condicao": "D0",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-03",
+    "observacao_id": "PIL-MC-03-D0-R01",
+    "origem": "sintetica",
+    "payload_sha256": "30e4d07e7bc0edb9d7474bd3d97f77f81dae17c1757f132e75c7325e7a8f16ec",
+    "repeticao_sintetica": 1
+  },
+  {
+    "condicao": "E0",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-01",
+    "observacao_id": "PIL-MC-01-E0-R01",
+    "origem": "sintetica",
+    "payload_sha256": "514386970d032f35498e2bc22b27bfe2cf956d040a65e830102bf736e7e90df4",
+    "repeticao_sintetica": 1
+  },
+  {
+    "condicao": "E0",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-03",
+    "observacao_id": "PIL-MC-03-E0-R01",
+    "origem": "sintetica",
+    "payload_sha256": "d137bc82aacea8a442d7e828249397f8c4ee73c46b9ffe1fc25fee0b7709fc44",
+    "repeticao_sintetica": 1
+  },
+  {
+    "condicao": "D1",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-03",
+    "observacao_id": "PIL-MC-03-D1-R01",
+    "origem": "sintetica",
+    "payload_sha256": "5ade02dbc4a551e687e41ecbaa102cab079892ebdf4089a962f89043cb752d85",
+    "repeticao_sintetica": 1
+  },
+  {
+    "condicao": "D1",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-01",
+    "observacao_id": "PIL-MC-01-D1-R01",
+    "origem": "sintetica",
+    "payload_sha256": "70847bd4addf3250bfb64e45a826c4bd70d887f27138c153a921434ce32a41f4",
+    "repeticao_sintetica": 1
+  },
+  {
+    "condicao": "E1",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-03",
+    "observacao_id": "PIL-MC-03-E1-R01",
+    "origem": "sintetica",
+    "payload_sha256": "7cfdfe7c2695ac65df180a802efd931fe2b8d4ef1037dc75a6cc4036bd0ea975",
+    "repeticao_sintetica": 1
+  },
+  {
+    "condicao": "D0",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-01",
+    "observacao_id": "PIL-MC-01-D0-R01",
+    "origem": "sintetica",
+    "payload_sha256": "f71d37fb28035d24748e2c5504a652b5415ddbe1b0c3c4e267a98c9efdcedf03",
+    "repeticao_sintetica": 1
+  },
+  {
+    "condicao": "D1",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-01",
+    "observacao_id": "PIL-MC-01-D1-R02",
+    "origem": "sintetica",
+    "payload_sha256": "70847bd4addf3250bfb64e45a826c4bd70d887f27138c153a921434ce32a41f4",
+    "repeticao_sintetica": 2
+  },
+  {
+    "condicao": "E1",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-03",
+    "observacao_id": "PIL-MC-03-E1-R02",
+    "origem": "sintetica",
+    "payload_sha256": "7cfdfe7c2695ac65df180a802efd931fe2b8d4ef1037dc75a6cc4036bd0ea975",
+    "repeticao_sintetica": 2
+  },
+  {
+    "condicao": "E1",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-01",
+    "observacao_id": "PIL-MC-01-E1-R02",
+    "origem": "sintetica",
+    "payload_sha256": "776f8b865367bf43ab11b9a8366715fbfdd0b8a4781b101fa680ae3b659c6b31",
+    "repeticao_sintetica": 2
+  },
+  {
+    "condicao": "D0",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-03",
+    "observacao_id": "PIL-MC-03-D0-R02",
+    "origem": "sintetica",
+    "payload_sha256": "30e4d07e7bc0edb9d7474bd3d97f77f81dae17c1757f132e75c7325e7a8f16ec",
+    "repeticao_sintetica": 2
+  },
+  {
+    "condicao": "D0",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-01",
+    "observacao_id": "PIL-MC-01-D0-R02",
+    "origem": "sintetica",
+    "payload_sha256": "f71d37fb28035d24748e2c5504a652b5415ddbe1b0c3c4e267a98c9efdcedf03",
+    "repeticao_sintetica": 2
+  },
+  {
+    "condicao": "D1",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-03",
+    "observacao_id": "PIL-MC-03-D1-R02",
+    "origem": "sintetica",
+    "payload_sha256": "5ade02dbc4a551e687e41ecbaa102cab079892ebdf4089a962f89043cb752d85",
+    "repeticao_sintetica": 2
+  },
+  {
+    "condicao": "E0",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-01",
+    "observacao_id": "PIL-MC-01-E0-R02",
+    "origem": "sintetica",
+    "payload_sha256": "514386970d032f35498e2bc22b27bfe2cf956d040a65e830102bf736e7e90df4",
+    "repeticao_sintetica": 2
+  },
+  {
+    "condicao": "E0",
+    "configuracao_id": "piloto-api-22dffb588d448368",
+    "fase": "verificacao_sintetica",
+    "mudanca": "MC-03",
+    "observacao_id": "PIL-MC-03-E0-R02",
+    "origem": "sintetica",
+    "payload_sha256": "d137bc82aacea8a442d7e828249397f8c4ee73c46b9ffe1fc25fee0b7709fc44",
+    "repeticao_sintetica": 2
+  }
+]

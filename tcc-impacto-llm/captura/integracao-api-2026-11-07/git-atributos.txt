@@ -1,0 +1,9 @@
+captura/integracao-api-2026-11-07/plano-api-controle/plano.json: text: unset
+captura/integracao-api-2026-11-07/plano-api-controle/plano.json: filter: unset
+captura/integracao-api-2026-11-07/plano-api-controle/plano.json: ident: unset
+captura/integracao-api-2026-11-07/lote-sintetico/entrada.bin: text: unset
+captura/integracao-api-2026-11-07/lote-sintetico/entrada.bin: filter: unset
+captura/integracao-api-2026-11-07/lote-sintetico/entrada.bin: ident: unset
+avaliados/integracao-api-2026-11-07-sintetica/resumo/resumo.json: text: unset
+avaliados/integracao-api-2026-11-07-sintetica/resumo/resumo.json: filter: unset
+avaliados/integracao-api-2026-11-07-sintetica/resumo/resumo.json: ident: unset

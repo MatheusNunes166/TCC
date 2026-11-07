@@ -1,5 +1,11 @@
 # Contrato local proposto — montagem e avaliação de IDs
 
+## Complemento D-39 — API e conformidade externa, 07/11/2026
+
+[Operação API](../../../documentacao/operacao-api.md), [decisão](../../../documentacao/decisoes.md) e [verificações offline](../../../captura/integracao-api-2026-11-07/verificacao.json). Identidade/configuração API próprias; textos/ordem/avaliador/Codex preservados. Falhas HTTPException/IncompleteRead/I/O/interrupção guardam bytes parciais e estado remoto desconhecido, sem Authorization/texto de exceção e sem reenvio. Orçamento é declaração, sem teto monetário; limite de saída de pesquisa não é escolhido pelos exemplos artificiais. Nenhuma chamada real/consulta autenticada autorizada ou executada nesta integração.
+
+`avaliar` permanece descritivo com conformidade real pendente e bloqueia o resumo controlado. Novos comandos offline `revisao-modelo`, `revisar`, `resumir-revisado` registram decisão externa com responsável/data com fuso/justificativa/inclusão-exclusão-pendência. Vinculam hashes de cada observação e das fontes, exigem lista com todas as capturas e não alteram tentativas/fechamentos/avaliações originais. Desvio registrado não pode ser promovido a conforme por essa revisão. O resumo usa as fórmulas existentes sobre visão transitória dos elegíveis, conserva N planejado original, contagens operacionais originais e exclusões, distinguindo-as de ausências. Revisão pendente retorna 2; exclusão/ausência mantém cobertura incompleta explícita (1); elegibilidade completa permite 0. Não há aprovação automática por sucesso HTTP ou pontuação.
+
 ## Complemento D-38 — análise dos bloqueios, 07/11/2026
 
 [Relatório delimitado](../../../captura/analise-bloqueios-cli-2026-11-07-D38/RELATORIO.md) e [decisão D-38](../../../documentacao/decisoes.md). Coletor v1.1-D38/configuração D-38 mantém GPT-6 Sol/medium e copia a ordem/payloads D-37 em plano novo, preservando anteriores. Acrescenta controles aceitos de skills/memórias/provedor/auth e strict-config; nenhum falso `tools=[]` ou retry=0 para a rota embutida. Ambas as pendências permanecem e a trava é incondicional.

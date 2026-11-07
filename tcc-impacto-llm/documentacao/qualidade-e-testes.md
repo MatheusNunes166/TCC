@@ -1,5 +1,7 @@
 # Qualidade e testes da bancada
 
+D-39: [52 testes offline aprovados e comandos registrados](../captura/integracao-api-2026-11-07/verificacao.json). Inclui os 13 do patch e regressões, HTTP inteiramente simulado/chave fictícia, TLS/redirect, IncompleteRead em sucesso/HTTPError, prefixos/EOF/interrupção sem retry, não ocultação de defeito e revisão explícita de conformidade. Pendência bloqueia resumo; inclusão/exclusão conserva originais e N planejado. Nenhuma consulta autenticada ou chamada real. [Procedimento](operacao-api.md).
+
 D-38: [validação offline](../captura/analise-bloqueios-cli-2026-11-07-D38/validacao-offline.json), quatro testes de controles CLI e doze do coletor aprovados, sem LLM. Inclui a preservação de final após erro de cliente, ausência de reenvio dessa conclusão, configuração sem overrides inválidos e trava que continua bloqueando com lista de bloqueios vazia. Não equivale a comprovar transporte/ferramentas de uma chamada real.
 
 D-37, 07/11/2026: [controles do coletor](../tests/test_coletor_piloto.py) exercitam processos substitutos locais, identidade/hashes, bytes literais, respostas válidas/inválidas, falha técnica, pausa, interrupção e continuação. São artefatos artificiais, sem chamadas ao LLM e sem comprovação da fronteira real D-29. [Execução registrada](../captura/controles-coletor-2026-11-07/testes.json).

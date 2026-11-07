@@ -1,0 +1,12 @@
+test_caminhos_locais_com_pai_sem_relaxar_declarados (test_avaliacao_real.TestImportacaoReal.test_caminhos_locais_com_pai_sem_relaxar_declarados) ... ok
+test_desvio_preservado_sem_resumo_controlado (test_avaliacao_real.TestImportacaoReal.test_desvio_preservado_sem_resumo_controlado) ... ok
+test_invalida_vazia_e_tecnica_distintas (test_avaliacao_real.TestImportacaoReal.test_invalida_vazia_e_tecnica_distintas) ... ok
+test_mistura_origem_fase_e_versoes_bloqueada (test_avaliacao_real.TestImportacaoReal.test_mistura_origem_fase_e_versoes_bloqueada) ... ok
+test_modelo_nao_reportado_permanece_nulo_com_causa (test_avaliacao_real.TestImportacaoReal.test_modelo_nao_reportado_permanece_nulo_com_causa) ... ok
+test_originais_proveniencia_cli_e_diretorio_externo (test_avaliacao_real.TestImportacaoReal.test_originais_proveniencia_cli_e_diretorio_externo) ... ok
+test_real_recusada_no_modo_sintetico_e_hash_adulterado (test_avaliacao_real.TestImportacaoReal.test_real_recusada_no_modo_sintetico_e_hash_adulterado) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.921s
+
+OK

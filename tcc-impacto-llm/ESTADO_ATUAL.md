@@ -1,4 +1,17 @@
 # Estado atual — 07/11/2026
+
+## Integração API offline — D-39
+
+Patch integrado à base `main`/`873f0a7285c4610335eda5c3a3d88ca2e13cdc8f`, inicialmente limpa e compatível com o diff. [Operação API](documentacao/operacao-api.md), [comandos/testes/hashes](captura/integracao-api-2026-11-07/verificacao.json). **Somente integração e verificações offline; nenhuma chamada real, consulta autenticada, conexão paga ou piloto.** Os relatos históricos do patch sobre disponibilidade da conta, outra conversa ou outro Word não foram adotados como evidência ou pendência nova.
+
+- `coletor_api.py` usa configuração/ID próprios e preserva GPT-6 Sol/medium, os oito payloads v2-LF e as 16 posições da ordem D-38. Captura/avaliação seguem separadas; o código Codex e sua trava, montador, avaliador e referência permanecem inalterados.
+- Transporte trata IncompleteRead/HTTPException, falhas de I/O e interrupções; preserva fragmentos, tipo e estado remoto desconhecido, sem gravar segredo ou reenviar automaticamente. TLS verificado, redirects recusados e sem proxies/retries herdados. Limite de saída deve ser escolhido para raciocínio+final; 512 dos testes não é escolha do piloto. Orçamento é declaração sem teto automático.
+- `revisao_conformidade.py` registra responsável/data/justificativa/inclusão-exclusão com hashes. Avaliação pendente é descritiva; resumo controlado só após revisão explícita, preservando exclusões/dados/N planejado. Desvio registrado não é convertido em conforme por edição de captura.
+- **52 testes offline aprovados**, incluindo os 13 originais e as regressões citadas no patch (12 coletor, 4 controles CLI, 7 avaliação real), mais 9 de transporte e 7 de revisão. Lote sintético de 16 capturado/continuado/avaliado; não são resultados de LLM.
+
+Antes de qualquer chamada paga: obter autorização operacional distinta, escolher limite/configuração e orçamento/preço aceitáveis, conferir acesso real GPT-6 Sol/medium e as revisões de materiais/referência/política/medidas já pendentes. Não se executaram os comandos futuros de conexão ou envio. A autorização de integração não autoriza gasto. O estado D-38 abaixo continua descrevendo a rota Codex.
+
+## Rota Codex — D-38 preservada
 Comece aqui. Decisões e alcance: [D-38, D-37, D-36 e D-35](documentacao/decisoes.md). Coletor implementado e verificado offline; **envio real bloqueado**, nenhum piloto/chamada ao LLM/coleta principal ou congelamento realizado.
 
 - Novo [coletor Python](coletor_piloto.py): conferência local, plano/ordem registrados, simulação, captura sequencial, pausa/continuação, recuperação conservadora e avaliação separada. [Comandos de operação](materiais/05_PILOTO_E_COLETA.md#511-coletor-offline-d-37-07112026).
