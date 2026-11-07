@@ -1,5 +1,12 @@
 __pycache__/
-*.py[cod]
+*.pyc
+*.pyo
 
-# Somente futuras saídas locais regeneráveis; evidências versionadas preservadas.
+# Área local preexistente: revisar o conteúdo antes de limpar; pode conter
+# ferramentas e repositórios preservados para conferir evidências históricas.
+# Não criar dados de pesquisa aqui. Capturas e avaliações ficam fora desta regra.
 /saidas-locais/
+
+# Caches futuros de testes; não ignorar temporários genericamente em evidências.
+/.pytest_cache/
+/.ruff_cache/

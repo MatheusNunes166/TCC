@@ -1,8 +1,6 @@
 # Operação da rota API — integração offline D-39
 
-Autorização vigente: integrar o patch anexado e verificar offline. **Não autoriza gasto, consulta autenticada, conexão real ou piloto.** Nenhum comando de envio foi executado nesta integração. O adaptador mantém comandos futuros sob `--enviar-real`; a presença deles não constitui autorização de uso. [Estado central](../ESTADO_ATUAL.md), [D-39](decisoes.md).
-
-Base conferida antes da integração: branch `main`, commit `873f0a7285c4610335eda5c3a3d88ca2e13cdc8f`, árvore limpa. `git apply --check --verbose` aceitou o patch na raiz Git. Os três arquivos novos do diff não existiam. Código/testes novos foram extraídos e reconciliados; os textos históricos não foram aplicados automaticamente. O relato do patch sobre consulta de modelos, outra conversa ou outro Word não é evidência local e não gerou pendência nova. O desenho preservado é MC-01/MC-03 × D0/D1/E0/E1 × duas repetições, na ordem já registrada.
+Situação e pendências vigentes: [estado atual](../ESTADO_ATUAL.md). Este é o procedimento do adaptador integrado em D-39; exemplos com caminhos NOVO/NOVA não autorizam envio. A integração foi offline; evidências de base, patch e 52 testes estão em [D-39](decisoes.md) e [verificação](../captura/integracao-api-2026-11-07/verificacao.json). Os registros reais posteriores são localizados pelo estado central.
 
 ## Arquivos e fronteiras
 
@@ -48,7 +46,7 @@ python -B coletor_api.py avaliar --lote captura/controle-api-NOVO --referencia m
 
 Controles têm `origem=sintetica`, `fase=verificacao_sintetica`, modelo reportado nulo e nunca entram no piloto. Os testes do ramo real usam metadados simulados apenas em temporários, claramente identificados como artificiais. `--continuar` em controle/conclusão íntegra pula observações já fechadas, sem repetir resposta inválida ou pontuação baixa.
 
-## Conexão neutra futura — não executada
+## Operações reais — autorização própria
 
 Após autorização **distinta** para uma chamada paga e chave configurada localmente, o comando seria:
 
@@ -56,7 +54,7 @@ Após autorização **distinta** para uma chamada paga e chave configurada local
 python -B coletor_api.py conexao --saida captura/conexao-api-NOVA --limite-saida <TOKENS_CONEXAO_ESCOLHIDOS> --enviar-real
 ```
 
-Envia somente `Responda apenas OK.` com LF final, fora de qualquer observação. Sua fase é `verificacao_conexao`, explicitamente excluída de piloto/coleta principal. Não demonstra preço, saldo, referência validada ou adequação do limite do piloto. A capacidade real de gerar com GPT-6 Sol/medium permanece **não verificada**; nenhuma lista de `/v1/models` foi consultada nesta integração.
+Envia somente `Responda apenas OK.` com LF final, fora de qualquer observação. Sua fase é `verificacao_conexao`, explicitamente excluída de piloto/coleta principal. Não demonstra preço, saldo, referência validada ou adequação do limite do piloto. A evidência da conexão já realizada está no [estado atual](../ESTADO_ATUAL.md); nenhuma lista de `/v1/models` foi consultada na integração D-39.
 
 O envio futuro do piloto também exige autorização distinta, plano científico conferido e `--enviar-real`; exemplo apenas documental:
 
@@ -89,7 +87,7 @@ Authorization existe somente em memória. O corpo HTTP recebido é a evidência 
 
 O sucesso HTTP ou a resposta correta **não aprova conformidade**. Capturas reais começam pendentes/desvio. O comando avaliar reutiliza o avaliador atual, importa os originais e gera avaliação descritiva mesmo quando o resumo controlado fica bloqueado por revisão pendente (retorno 2 com diagnósticos no resumo). Não devolver resultados ao modelo.
 
-Depois de uma captura real futura, em caminhos novos:
+Para avaliar capturas e preparar uma revisão, usar caminhos novos. O lote real existente já foi avaliado; localizar seus arquivos no [estado atual](../ESTADO_ATUAL.md) antes de executar qualquer comando:
 
 ```text
 python -B coletor_api.py avaliar --lote captura/piloto-api-NOVO --referencia materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json --saida avaliados/api-NOVO
@@ -111,4 +109,4 @@ Se alguma decisão continuar pendente, o resumo controlado permanece bloqueado (
 
 [Base/diff](../captura/integracao-api-2026-11-07/base-integracao.json), [comandos, logs e hashes](../captura/integracao-api-2026-11-07/verificacao.json). Os 13 métodos originais do patch foram reproduzidos; o total final inclui controles adicionais de transporte e revisão, além das regressões que o patch citava. Nenhum resultado de teste é resposta de LLM. A evidência de HTTP aqui é somente simulada.
 
-Antes de qualquer chamada paga faltam autorização operacional específica, configuração/limite que comporte raciocínio+final, preço/orçamento aceitável e acesso real na conta, conferência dos materiais/referência/política/medidas no alcance já registrado e revisão dos registros para elegibilidade. Não se adicionou pendência baseada em outro Word/conversa. A preparação API não resolve automaticamente esses pontos nem libera o piloto.
+Pendências atuais e próximos passos: [estado atual](../ESTADO_ATUAL.md#próximas-tarefas-e-limites). Exemplos operacionais não autorizam chamadas pagas nem coleta principal. Não repetir comandos sobre caminhos existentes ou editar registros para ultrapassar bloqueios.
