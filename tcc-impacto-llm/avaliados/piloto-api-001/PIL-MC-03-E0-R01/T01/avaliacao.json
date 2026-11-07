@@ -1,0 +1,187 @@
+{
+  "avaliacao_anterior": null,
+  "avaliacao_id": "955b565d3364471090356f55ffd37f7c",
+  "avaliador_sha256": "8b8e15b548c63b31712498a56e9f374d83d5b387123868339ab354e7c8f1dd95",
+  "causa": null,
+  "causa_tecnica": null,
+  "completo": true,
+  "condicao": "E0",
+  "configuracao": {
+    "endpoint": "https://api.openai.com/v1/responses",
+    "esforco_solicitado": "medium",
+    "id": "piloto-api-74180c81329ee360",
+    "interface": "Responses API HTTP direto",
+    "limite_garantia": "requisicao do cliente; nao controla instrucoes ou transporte internos do provedor",
+    "limite_orcamento": "declaracao do pesquisador; nao e teto monetario imposto pelo script",
+    "max_output_tokens": 4096,
+    "modelo_solicitado": "gpt-6-sol",
+    "orcamento_declarado_usd": "1.00",
+    "retries_automaticos_cliente": 0,
+    "store": false,
+    "stream": false,
+    "timeout_segundos": 120,
+    "tool_choice": "none",
+    "tools": []
+  },
+  "configuracao_id": "piloto-api-74180c81329ee360",
+  "conformidade_protocolo": "pendente",
+  "desvios": [],
+  "entrada_enviada_sha256": "d137bc82aacea8a442d7e828249397f8c4ee73c46b9ffe1fc25fee0b7709fc44",
+  "estado_tecnico": "concluida",
+  "fase": "piloto",
+  "formato_contrato": "valido",
+  "fragmento": false,
+  "ids_conhecidos_por_dimensao": {
+    "requisitos": true,
+    "testes": true
+  },
+  "instante_execucao": "2026-11-07T17:36:03.023467+00:00",
+  "instante_utc": "2026-11-07T17:38:02.405751+00:00",
+  "json_sintatico": "valido",
+  "modelo_reportado": "gpt-6-sol",
+  "modelo_reportado_indisponibilidade": null,
+  "mudanca": "MC-03",
+  "mudanca_pedida": "MC-03",
+  "observacao_id": "PIL-MC-03-E0-R01",
+  "origem": "real",
+  "origem_resposta": "Responses API; envelope bruto preservado",
+  "payload_sha256": "d137bc82aacea8a442d7e828249397f8c4ee73c46b9ffe1fc25fee0b7709fc44",
+  "politica": {
+    "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+    "status": "CANDIDATA_REVISAO_CIENTIFICA_PENDENTE",
+    "versao": "ids-proposta-004-v2"
+  },
+  "referencia": {
+    "sha256": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80",
+    "status": "CANDIDATO_NAO_REVISADO",
+    "versao": "0.2"
+  },
+  "repeticao": 1,
+  "requisitos": {
+    "FN": 0,
+    "FP": 0,
+    "G": [
+      "RF-02",
+      "RF-03"
+    ],
+    "S": [
+      "RF-02",
+      "RF-03"
+    ],
+    "TP": 2,
+    "acertos": [
+      "RF-02",
+      "RF-03"
+    ],
+    "desconhecidos": [],
+    "duplicatas": [],
+    "excedentes": [],
+    "lista_original": [
+      "RF-02",
+      "RF-03"
+    ],
+    "metricas_propostas": {
+      "correspondencia_exata": 1,
+      "f1": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "precisao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "revocacao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "selecao_completa": 1
+    },
+    "omissoes": []
+  },
+  "resposta_sha256": "a74d75d42b268f15d7c926ce11e125a842c62746ca5bb6250d2d75eb81562608",
+  "somente_ids_conhecidos": true,
+  "status_avaliacao": "avaliada",
+  "tentativa_anterior": null,
+  "tentativa_id": "PIL-MC-03-E0-R01-T01",
+  "testes": {
+    "FN": 0,
+    "FP": 0,
+    "G": [
+      "T01",
+      "T02",
+      "T05",
+      "T06",
+      "T07",
+      "T09",
+      "T10",
+      "T11"
+    ],
+    "S": [
+      "T01",
+      "T02",
+      "T05",
+      "T06",
+      "T07",
+      "T09",
+      "T10",
+      "T11"
+    ],
+    "TP": 8,
+    "acertos": [
+      "T01",
+      "T02",
+      "T05",
+      "T06",
+      "T07",
+      "T09",
+      "T10",
+      "T11"
+    ],
+    "desconhecidos": [],
+    "duplicatas": [],
+    "excedentes": [],
+    "lista_original": [
+      "T01",
+      "T02",
+      "T05",
+      "T06",
+      "T07",
+      "T09",
+      "T10",
+      "T11"
+    ],
+    "metricas_propostas": {
+      "correspondencia_exata": 1,
+      "f1": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "precisao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "revocacao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "selecao_completa": 1
+    },
+    "omissoes": []
+  },
+  "versoes": {
+    "coletor": "coletor-responses-v1.1-integrado",
+    "coletor_sha256": "139a7acc0c276e09a5ffed80c57b18e593edc6cdbca45388d037321484b300ee"
+  }
+}

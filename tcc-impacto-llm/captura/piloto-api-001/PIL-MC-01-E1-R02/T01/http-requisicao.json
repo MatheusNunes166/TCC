@@ -1,0 +1,16 @@
+{
+  "corpo_arquivo": "requisicao.json",
+  "corpo_sha256": "a22599d3d3541a0d01e7d6f683663023d13d53f35365c69d9f8ae05f95a0d03e",
+  "corpo_tamanho": 7946,
+  "headers": {
+    "Accept": "application/json",
+    "Accept-Encoding": "identity",
+    "Connection": "close",
+    "Content-Length": "7946",
+    "Content-Type": "application/json",
+    "Host": "api.openai.com",
+    "User-Agent": "tcc-coletor-responses/1.1"
+  },
+  "metodo": "POST",
+  "url": "https://api.openai.com/v1/responses"
+}

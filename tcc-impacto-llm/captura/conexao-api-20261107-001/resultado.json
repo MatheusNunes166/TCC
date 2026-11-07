@@ -1,0 +1,27 @@
+{
+  "causa": null,
+  "concluida": true,
+  "desvios": [],
+  "estado_remoto": "resposta_http_recebida",
+  "falha_transporte": null,
+  "fase": "verificacao_conexao",
+  "http_status": 200,
+  "incluido_coleta_principal": false,
+  "incluido_piloto": false,
+  "modelo_reportado": "gpt-6-sol",
+  "orcamento": "chamada paga isolada; uso em usage quando reportado",
+  "request_id": "req_8156a193ddbe430b9087d6e8e0d7b918",
+  "response_id": "resp_02dd5581aca91f39016aef6003811487d19278571a6ef93b4a",
+  "usage": {
+    "input_tokens": 12,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 5,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17
+  }
+}

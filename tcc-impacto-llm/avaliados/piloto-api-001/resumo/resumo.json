@@ -1,0 +1,91 @@
+{
+  "avaliador_sha256": "8b8e15b548c63b31712498a56e9f374d83d5b387123868339ab354e7c8f1dd95",
+  "celulas": [
+    {
+      "condicao": "E1",
+      "configuracao_id": "piloto-api-74180c81329ee360",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D0",
+      "configuracao_id": "piloto-api-74180c81329ee360",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E0",
+      "configuracao_id": "piloto-api-74180c81329ee360",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E0",
+      "configuracao_id": "piloto-api-74180c81329ee360",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D1",
+      "configuracao_id": "piloto-api-74180c81329ee360",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D1",
+      "configuracao_id": "piloto-api-74180c81329ee360",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E1",
+      "configuracao_id": "piloto-api-74180c81329ee360",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D0",
+      "configuracao_id": "piloto-api-74180c81329ee360",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    }
+  ],
+  "completo": false,
+  "fase": "piloto",
+  "instante_utc": "2026-11-07T17:38:03.789333+00:00",
+  "origem": "real",
+  "politica": "ids-proposta-004-v2",
+  "resumo_id": "39c93c4de41f4d60b0d38ae6d1ac9747"
+}

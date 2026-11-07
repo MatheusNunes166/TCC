@@ -1,0 +1,12 @@
+{
+  "input": "Responda apenas OK.\n",
+  "max_output_tokens": 4096,
+  "model": "gpt-6-sol",
+  "reasoning": {
+    "effort": "medium"
+  },
+  "store": false,
+  "stream": false,
+  "tool_choice": "none",
+  "tools": []
+}

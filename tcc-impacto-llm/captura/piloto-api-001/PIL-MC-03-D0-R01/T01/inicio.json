@@ -1,0 +1,7 @@
+{
+  "credenciais_persistidas": false,
+  "endpoint": "https://api.openai.com/v1/responses",
+  "instante": "2026-11-07T17:35:57.554254+00:00",
+  "origem": "real",
+  "requisicao_sha256": "b22e70204ed8b43a1397f2934b916db60b2214ac299e16172a16d290cb0eb7b9"
+}

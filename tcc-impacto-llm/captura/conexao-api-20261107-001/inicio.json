@@ -1,0 +1,11 @@
+{
+  "configuracao": {
+    "esforco_solicitado": "medium",
+    "max_output_tokens": 4096,
+    "modelo_solicitado": "gpt-6-sol"
+  },
+  "credenciais_persistidas": false,
+  "endpoint": "https://api.openai.com/v1/responses",
+  "fase": "verificacao_conexao",
+  "instante": "2026-11-07T17:29:38.471933+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Resposta de seleção de IDs",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "requisitos",
+    "testes"
+  ],
+  "properties": {
+    "requisitos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "testes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "causa": null,
+  "condicao": "E1",
+  "configuracao": {
+    "endpoint": "https://api.openai.com/v1/responses",
+    "esforco_solicitado": "medium",
+    "id": "piloto-api-74180c81329ee360",
+    "interface": "Responses API HTTP direto",
+    "limite_garantia": "requisicao do cliente; nao controla instrucoes ou transporte internos do provedor",
+    "limite_orcamento": "declaracao do pesquisador; nao e teto monetario imposto pelo script",
+    "max_output_tokens": 4096,
+    "modelo_solicitado": "gpt-6-sol",
+    "orcamento_declarado_usd": "1.00",
+    "retries_automaticos_cliente": 0,
+    "store": false,
+    "stream": false,
+    "timeout_segundos": 120,
+    "tool_choice": "none",
+    "tools": []
+  },
+  "configuracao_id": "piloto-api-74180c81329ee360",
+  "conformidade_protocolo": "pendente",
+  "desvios": [],
+  "entrada_enviada_arquivo": "entrada.bin",
+  "entrada_enviada_sha256": "776f8b865367bf43ab11b9a8366715fbfdd0b8a4781b101fa680ae3b659c6b31",
+  "estado_remoto": "resposta_http_recebida",
+  "estado_tecnico": "concluida",
+  "falha_transporte": null,
+  "fase": "piloto",
+  "fragmento": false,
+  "http_status": 200,
+  "instante_execucao": "2026-11-07T17:34:35.015661+00:00",
+  "instante_fim": "2026-11-07T17:34:38.469077+00:00",
+  "modelo_reportado": "gpt-6-sol",
+  "modelo_reportado_indisponibilidade": null,
+  "mudanca": "MC-01",
+  "observacao_id": "PIL-MC-01-E1-R01",
+  "origem": "real",
+  "origem_resposta": "Responses API; envelope bruto preservado",
+  "payload_sha256": "776f8b865367bf43ab11b9a8366715fbfdd0b8a4781b101fa680ae3b659c6b31",
+  "preparacao_id": "3ba86a52a9984274be37361671644807",
+  "preparacao_sha256": "76c102c02ce1e8d79e4c8fcab36c269a3753a3e2ed29f713fd632dea5a310fb9",
+  "repeticao": 1,
+  "request_id": "req_72290d59ce1b489f987c4214be31c19c",
+  "requisicao_sha256": "a22599d3d3541a0d01e7d6f683663023d13d53f35365c69d9f8ae05f95a0d03e",
+  "response_id": "resp_0b1c4f6e4c50b722016aef6129fa4887d182de5a6cd73076fa",
+  "resposta_arquivo": "resposta.bin",
+  "resposta_sha256": "2a9e670b676299fffd37d6fb902bdb38568a5ca83d741f1d6ac407dd3e283f4e",
+  "resposta_tamanho": 47,
+  "retentativas_cliente": 0,
+  "tentativa_anterior": null,
+  "tentativa_id": "PIL-MC-01-E1-R01-T01",
+  "texto_extraido_de": "output/message/content/output_text ou refusal; sem trim ou reparo",
+  "usage": {
+    "input_tokens": 1783,
+    "input_tokens_details": {
+      "cache_write_tokens": 1780,
+      "cached_tokens": 0
+    },
+    "output_tokens": 173,
+    "output_tokens_details": {
+      "reasoning_tokens": 148
+    },
+    "total_tokens": 1956
+  },
+  "versoes": {
+    "coletor": "coletor-responses-v1.1-integrado",
+    "coletor_sha256": "139a7acc0c276e09a5ffed80c57b18e593edc6cdbca45388d037321484b300ee"
+  }
+}
