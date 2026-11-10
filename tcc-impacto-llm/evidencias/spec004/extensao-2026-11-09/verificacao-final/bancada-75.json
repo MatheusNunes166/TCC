@@ -1,0 +1,981 @@
+{
+  "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+  "resultados": [
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T01",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T02",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T03",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T04",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "teste": "T05",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "teste": "T06",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "teste": "T07",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T08",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T09",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T10",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T11",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "teste": "T12",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T13",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "teste": "T14",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T15",
+      "versao": "BASELINE"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T01",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T02",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T03",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T04",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "teste": "T05",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "teste": "T06",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "teste": "T07",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T08",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T09",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T10",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T11",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "teste": "T12",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T13",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "teste": "T14",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T15",
+      "versao": "MC-01"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T01",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T02",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T03",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T04",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "teste": "T05",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T06",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "teste": "T07",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T08",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T09",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T10",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T11",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T12",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T13",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T14",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T15",
+      "versao": "MC-02"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T01",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T02",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T03",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T04",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T05",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "teste": "T06",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "teste": "T07",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T08",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T09",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T10",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T11",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "teste": "T12",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T13",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "teste": "T14",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T15",
+      "versao": "MC-03"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T01",
+      "versao": "MC-04-v2"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T02",
+      "versao": "MC-04-v2"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T03",
+      "versao": "MC-04-v2"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T04",
+      "versao": "MC-04-v2"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T05",
+      "versao": "MC-04-v2"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "teste": "T06",
+      "versao": "MC-04-v2"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T07",
+      "versao": "MC-04-v2"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "teste": "T08",
+      "versao": "MC-04-v2"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T09",
+      "versao": "MC-04-v2"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T10",
+      "versao": "MC-04-v2"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T11",
+      "versao": "MC-04-v2"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T12",
+      "versao": "MC-04-v2"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "observado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "teste": "T13",
+      "versao": "MC-04-v2"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "teste": "T14",
+      "versao": "MC-04-v2"
+    },
+    {
+      "conforme": true,
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "observado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "teste": "T15",
+      "versao": "MC-04-v2"
+    }
+  ],
+  "tipo": "execucao_local_bancada_sem_LLM"
+}

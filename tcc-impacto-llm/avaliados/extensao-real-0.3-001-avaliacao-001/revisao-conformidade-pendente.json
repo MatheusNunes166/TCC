@@ -1,0 +1,657 @@
+{
+  "data": null,
+  "fontes": {
+    "avaliacoes": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\\lista.json",
+    "avaliacoes_sha256": "1e51908b8aa542562b1ba4f07506ecdcbedace20626926226617b6c30a279016",
+    "fase": "exploratoria",
+    "lote": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001",
+    "lote_header_sha256": "a272a717b5011bf3ae9f7a8c0ec73e62b8720afe21b8d108719c6f1a8df65e44",
+    "observacoes": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\\observacoes.json",
+    "observacoes_sha256": "43ef59df9abc1a529f7472f9b1a5cc8244c6eb07d8e4ace7eebe322131cd4b09",
+    "origem": "real"
+  },
+  "observacoes": [
+    {
+      "avaliacao_sha256": "fd240d2c7170b4af0988892cb426eb122e80f33a1616c3d3e267b89c14a2a8c6",
+      "decisao": "pendente",
+      "fechamento_sha256": "889e0db761d66a290872c1a8eea2b1fa7def4306829deea326bfff8b034a8693",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-E1-SOL-R01",
+      "payload_sha256": "14a538aa8c5fafbcbb61a25cd4d4fc4be339edd0d7082310931a153968e75b5e",
+      "resposta_sha256": "bbf68c69327e6a76442c56465f8c6d5a37ae91253c1a2b09682e87ee5189cba7",
+      "tentativa_sha256": "1f3d4a5eb1cddb25c32fdd746d882b742e588d7144f19f231e620cde88bd7df8"
+    },
+    {
+      "avaliacao_sha256": "e7f10ba75cb59d48971d9473066a0f9e20f6b7d9b3b9d5986e0f83db74fd7f72",
+      "decisao": "pendente",
+      "fechamento_sha256": "8851df10baffff6feb554c7b41c2f2a19acc61a5877e00b7016752e33d5e5ef7",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-D0-SOL-R01",
+      "payload_sha256": "7684532d990227fe7259715782cc2f8d7890a56597bc7dba372144a5db6cb275",
+      "resposta_sha256": "efbba12d1d006f6335762fe54f76efe0f3b2dcce96ae58b58106f412accf47c5",
+      "tentativa_sha256": "20c0eaf2eeeb7abb5bcf70dd4f5bb2fc18151c0bd7e476e1863e5910d84b3513"
+    },
+    {
+      "avaliacao_sha256": "28e4d4ac954a88bcd2e01af3bfe92068289deec946bd201ad99555a347c5eb35",
+      "decisao": "pendente",
+      "fechamento_sha256": "e988118a197032b16e52410d1c2ecd329ebc6894bb2a984e9f0cf3b274d34923",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-D0-ASTRA-R01",
+      "payload_sha256": "090466600f445a673325a1d83eea1cf6da3a1845f64722b471fabd94c91238c8",
+      "resposta_sha256": "48625043a89a5a9e1732641109b04758d76e2596c4cb60dcc15020c96490cbde",
+      "tentativa_sha256": "612c942956e06077e095bcbe77b4be73e25c6068cbe8a4b5cdc6e2834d1e5eed"
+    },
+    {
+      "avaliacao_sha256": "34df7625d3dab8976e2f39156479b802dd6ccb59db9c8fe1d029a996d0b32c76",
+      "decisao": "pendente",
+      "fechamento_sha256": "152d7b29c7a6c24eb614f0c26f2abb9679fdc455fc96a536bc1592ba588f52ed",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-E1-SOL-R01",
+      "payload_sha256": "c2830ec02c381617b0aaadf79483ef83d1aa6f3c8969df9c6f81ee7372c39b57",
+      "resposta_sha256": "efbba12d1d006f6335762fe54f76efe0f3b2dcce96ae58b58106f412accf47c5",
+      "tentativa_sha256": "0f14f44043469f0953d021f203a73060a0ef05beff71d3c513457ab0eff531bd"
+    },
+    {
+      "avaliacao_sha256": "710173047418cbccfa69819ed41c247ecb57603013f8acc2809a4a883b48415b",
+      "decisao": "pendente",
+      "fechamento_sha256": "0ff594e15408b5ea299248ede235bc88b75dda88f95e74caef99e07f9876f3c2",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-E1-ASTRA-R01",
+      "payload_sha256": "1c46cc61639a33b0fcad6ad00755b9c16d29e8801a91268dbc82ab7d5017aeb5",
+      "resposta_sha256": "2f34b61b2a0457fd7ed03a30fcb59539f21952d377fd145333fc0892a1c28694",
+      "tentativa_sha256": "2fcfa44cdca18325938f976c944162910ba8992d58ed1725622e03eac64719d2"
+    },
+    {
+      "avaliacao_sha256": "cb6be892e3901cb961dd25eb690e79b496b3bfae877aa6b22bbac985337b2fbd",
+      "decisao": "pendente",
+      "fechamento_sha256": "85f15eb3f38305566aee0737d45756d2829953be3c1813bd2ad2a73740078d3f",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-D0-SOL-R01",
+      "payload_sha256": "1f39acc820e09bd1a911d90bef408ff3fb6353e17e5e81a8df27957c29d7c190",
+      "resposta_sha256": "0190892cc7ebb1ef97cb26d72795b7cec79c07bce8678deef49e7d9bda352171",
+      "tentativa_sha256": "9ee3658f3770cbccc48b2630a60368a6a06db30d92fa875e4dee00882744cd31"
+    },
+    {
+      "avaliacao_sha256": "ed149a6ea9f6a818b5ce1ff6111502c9b18bdb8107a16cc0fd3a099d373713e9",
+      "decisao": "pendente",
+      "fechamento_sha256": "41af97835b02245909d707d05d96f9e9a07131e79ba75802f8b0d97f96155125",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-E0-SOL-R01",
+      "payload_sha256": "7b64138181e294df3cb7a344250adb7fdb2faddb74e080d00354f6780039bd9a",
+      "resposta_sha256": "6537ffee050109abd3a4c187edfd47c4b47e2782eac86a16f962a25053485d91",
+      "tentativa_sha256": "d5379ea8143b522ed1fa21a580341798a49a1239eb3658c60d4ab9e9867d35b8"
+    },
+    {
+      "avaliacao_sha256": "c9aa3525f6f9b295ddd537b95a1dc46e764ff11a32f21ed6ccb14e213d7ee4c1",
+      "decisao": "pendente",
+      "fechamento_sha256": "353236cb06d3bb527dcfedf42199a0f26c10fd7c79f19909cb9b5e6aa4f4ed25",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-E0-SOL-R01",
+      "payload_sha256": "02ae79a073347542e0ea1b39630cd6a46f26a51280260f5e94fa7d3f914cc402",
+      "resposta_sha256": "633d93a0ee3defeda59cc280851ed776abe36b5dc65509ed03f1d2fc359e4676",
+      "tentativa_sha256": "6ae1fae4cf748d6e24f4e6ff364e2af94db872cc29857d7802f3dbcce8f6ef23"
+    },
+    {
+      "avaliacao_sha256": "cb7e253414f10ba4acbb4ee8ed346050a6b29bf91612ffac0032f3a14095629b",
+      "decisao": "pendente",
+      "fechamento_sha256": "b83d1d6d8a050df03d715bd31df620b144e8376160dda613b24ba26baf07cbeb",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-E0-SOL-R01",
+      "payload_sha256": "fed2bc891d256ce6b51bd72e30a7daedf04944d0a45b31a376d3edf7018c7dd9",
+      "resposta_sha256": "48625043a89a5a9e1732641109b04758d76e2596c4cb60dcc15020c96490cbde",
+      "tentativa_sha256": "270dcc571d5a08c01d841ac20d5506587b37916839f13e013ff121eabfbaddfc"
+    },
+    {
+      "avaliacao_sha256": "a0e13fc5d6c3a2e331688efbab86452dffc99d9c6fa92dcd8a668731cfa877ad",
+      "decisao": "pendente",
+      "fechamento_sha256": "8b4d604090b5cdb0a6ed7f4d9c8ba8a8f6e9f0df737963b4528bcc193aad1ad3",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-D0-ASTRA-R01",
+      "payload_sha256": "7684532d990227fe7259715782cc2f8d7890a56597bc7dba372144a5db6cb275",
+      "resposta_sha256": "633d93a0ee3defeda59cc280851ed776abe36b5dc65509ed03f1d2fc359e4676",
+      "tentativa_sha256": "d1ea5c7a03f93e91b4e4482e41ed1d3a7f57824ec70cc29a56942b9771b653fa"
+    },
+    {
+      "avaliacao_sha256": "95cda05fd673d2cf2a2a1d8148484a718ce4eb013d2937a377395bbbc4ad59a7",
+      "decisao": "pendente",
+      "fechamento_sha256": "ebe4895dba852e0460b9033b1601977d0237adbab44d10315433daa3eff01a10",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-E0-ASTRA-R01",
+      "payload_sha256": "02ae79a073347542e0ea1b39630cd6a46f26a51280260f5e94fa7d3f914cc402",
+      "resposta_sha256": "633d93a0ee3defeda59cc280851ed776abe36b5dc65509ed03f1d2fc359e4676",
+      "tentativa_sha256": "7d3a48129c2fdd596826d28da0bca8fdb2e87c5293ace3869a56a212235cb639"
+    },
+    {
+      "avaliacao_sha256": "87de4a11990cb1c5574cf23f67d63dc2e704b82abf1c4edd3124f78da2a534ca",
+      "decisao": "pendente",
+      "fechamento_sha256": "099dd76f437f4102d90917c3b888518b80c2f8b4a1191f378518fedd29e4fb41",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-D1-SOL-R01",
+      "payload_sha256": "28c78e1ae440b37bb5b857828160dd9b7b3ce9c393a7cfd1426e80eafcfab35e",
+      "resposta_sha256": "623c77217e7d559080f4ac7dc78e4126714cd3c461c087db7175e5a572beb139",
+      "tentativa_sha256": "eea2feaab1d38695fb2b52fabba17e874f3378e40fc22fd03e2e067ee65e20d3"
+    },
+    {
+      "avaliacao_sha256": "a6b2fb34d145064978540a71a323f110e0bbf8965a019f235a9056ed18f4340f",
+      "decisao": "pendente",
+      "fechamento_sha256": "1cfe74f88cd47ea31304251074a88a12b8766161ddbf82dcf9eac967f0d95e35",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-D1-SOL-R01",
+      "payload_sha256": "78d734ddcf58823fb1fe9b8fe917043b6b1d98945c1f4f8bc358a12d0129bf15",
+      "resposta_sha256": "bbf68c69327e6a76442c56465f8c6d5a37ae91253c1a2b09682e87ee5189cba7",
+      "tentativa_sha256": "1e466fedf49353ce7ad6cfcb94cc0ed0283bc52381eb6d8f23825a273d765f4c"
+    },
+    {
+      "avaliacao_sha256": "de31a443af59dca934f4ca343e63c556c0c65767ed0e0f2bf618481f019023eb",
+      "decisao": "pendente",
+      "fechamento_sha256": "e85da24f1d356f192923b586de92f757c7dce15b9ad31f49df01193f6cf7bc85",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-D1-SOL-R01",
+      "payload_sha256": "506a6d0f779a904bc95245819bc059ba0e916576e0833fd9d2da87532e53a248",
+      "resposta_sha256": "0190892cc7ebb1ef97cb26d72795b7cec79c07bce8678deef49e7d9bda352171",
+      "tentativa_sha256": "f48e244c3ea10f166b957f766b807051aa9eee70317759c4160a5a737331694e"
+    },
+    {
+      "avaliacao_sha256": "7f33d7ec1c45ab00a7e2bd7146b82e4c211e3b013b62828c67a213c3cc87cb2f",
+      "decisao": "pendente",
+      "fechamento_sha256": "bc0c9f75043f315b622c9e60879fcf56b83d28cfc35c2871eaf95050c72e5c9f",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-D1-SOL-R01",
+      "payload_sha256": "ac2fb2beb8fd41647faef06295c7273b3b9e57b1787675bc0f52ae7ce20b1de6",
+      "resposta_sha256": "efbba12d1d006f6335762fe54f76efe0f3b2dcce96ae58b58106f412accf47c5",
+      "tentativa_sha256": "35045e986f9e9b933e97077737e710fd234a7e16edcc412e1597f24de305ad83"
+    },
+    {
+      "avaliacao_sha256": "decd134df2dc0ac9212d6beebfe083b8cc47f3944e5b388aaa4d76e6f18117e1",
+      "decisao": "pendente",
+      "fechamento_sha256": "666504c7f521599157dd8cf281b065d39536e0c43b33b0702faae5356850f31f",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-E1-ASTRA-R01",
+      "payload_sha256": "c2830ec02c381617b0aaadf79483ef83d1aa6f3c8969df9c6f81ee7372c39b57",
+      "resposta_sha256": "633d93a0ee3defeda59cc280851ed776abe36b5dc65509ed03f1d2fc359e4676",
+      "tentativa_sha256": "2a4f554bc04a7e3ec04c9ed465159d555760174ce5c8c69b8c017522d0cd5d23"
+    },
+    {
+      "avaliacao_sha256": "14a51718a59b2d26556476e0fada52f31642d868626089fdee575e4308fc0def",
+      "decisao": "pendente",
+      "fechamento_sha256": "44f02cd8f5e64fc9e370e449e117c76ad7bfbe89e3167f7b05e2b75dafca99e5",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-D0-SOL-R01",
+      "payload_sha256": "090466600f445a673325a1d83eea1cf6da3a1845f64722b471fabd94c91238c8",
+      "resposta_sha256": "bbf68c69327e6a76442c56465f8c6d5a37ae91253c1a2b09682e87ee5189cba7",
+      "tentativa_sha256": "61cfdfa52db433687f430ca7862c61cdc85af4d89ae63bdbc4cb5b0e4be4e7c4"
+    },
+    {
+      "avaliacao_sha256": "0eb21c0ca727f112aeba564ad8fdb72ec096bc128a612cd4a70a7cbce365b0e3",
+      "decisao": "pendente",
+      "fechamento_sha256": "c43b93a1afe9d3572771b07f74e36872b07336ad3ce27ac8d20d11700d1f9e4e",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-D1-ASTRA-R01",
+      "payload_sha256": "78d734ddcf58823fb1fe9b8fe917043b6b1d98945c1f4f8bc358a12d0129bf15",
+      "resposta_sha256": "48625043a89a5a9e1732641109b04758d76e2596c4cb60dcc15020c96490cbde",
+      "tentativa_sha256": "7687eda1cf54ee0be9812620d8109282e46733764a7bb260e2a4c958df7ea81a"
+    },
+    {
+      "avaliacao_sha256": "6059aacd121335af9100a6aa5ed11f762e95b8cb81ca2064d0e13bec5fa4f0ea",
+      "decisao": "pendente",
+      "fechamento_sha256": "1c660ec3e2dd95d63a15434f50c460f8e316c9ad9c317fac5307d8d29edca76e",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-E0-ASTRA-R01",
+      "payload_sha256": "fed2bc891d256ce6b51bd72e30a7daedf04944d0a45b31a376d3edf7018c7dd9",
+      "resposta_sha256": "48625043a89a5a9e1732641109b04758d76e2596c4cb60dcc15020c96490cbde",
+      "tentativa_sha256": "027c66048ce4f5fb855e0beb3637e6997778c23491b48c158e3f0e1db6c13253"
+    },
+    {
+      "avaliacao_sha256": "b4cf622fe4b95751672b4935a9863c704bc75fd8709f2a79daa77ac8957a1ed5",
+      "decisao": "pendente",
+      "fechamento_sha256": "f6959c20be90b74b3d943896bdc7acf83d5db309de2e5c5fbf0e62a09453f6f2",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-E1-SOL-R01",
+      "payload_sha256": "1c46cc61639a33b0fcad6ad00755b9c16d29e8801a91268dbc82ab7d5017aeb5",
+      "resposta_sha256": "623c77217e7d559080f4ac7dc78e4126714cd3c461c087db7175e5a572beb139",
+      "tentativa_sha256": "273cfda5e7af425bf56eddf200e5c4ab7a5c09e2ff9f812a0cee88696aef38aa"
+    },
+    {
+      "avaliacao_sha256": "47cff24a2eb6d03e3c9d58c404a1b12d482cd28b3c7c8abf22b4e09ddb57764b",
+      "decisao": "pendente",
+      "fechamento_sha256": "241996e3bbf49e6d66f0214ffba3bff3603c8d8a26dae250849fc94f9ec7e937",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-D1-ASTRA-R01",
+      "payload_sha256": "28c78e1ae440b37bb5b857828160dd9b7b3ce9c393a7cfd1426e80eafcfab35e",
+      "resposta_sha256": "2f34b61b2a0457fd7ed03a30fcb59539f21952d377fd145333fc0892a1c28694",
+      "tentativa_sha256": "d2aadbb4822ca2c596686bdedd12bcc872a528a283816ae0c87668967374f5f4"
+    },
+    {
+      "avaliacao_sha256": "d1c033c35bf23c4a4c4c66656dc7bbb73937564f2baa38fabd5d3b20f357e4fd",
+      "decisao": "pendente",
+      "fechamento_sha256": "4d79ddfd8148f7ae59fa809c7e863be9e4349077acf5a3311bea004786b98ea6",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-E1-SOL-R01",
+      "payload_sha256": "017d48bc0e358962792a419217cc74e7cc5d785ff2cf84e9a8b03c1649231f96",
+      "resposta_sha256": "6537ffee050109abd3a4c187edfd47c4b47e2782eac86a16f962a25053485d91",
+      "tentativa_sha256": "8564da57a594e7ec5909e59ae3ecfe9a6f187ec5b916b9c874c176bd469b0ad6"
+    },
+    {
+      "avaliacao_sha256": "016182e3026f4f78b39f6fe155d5b70bb08d7fa8aefed8c9c75372885baabe28",
+      "decisao": "pendente",
+      "fechamento_sha256": "f4527989ca1e636681745455b1954a20e5043773e6efabe2010fee5a88516b6a",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-D0-SOL-R01",
+      "payload_sha256": "e257faafe3ceb0f0710a5daab9485d8b4277137054cb5518c423bffa38205c12",
+      "resposta_sha256": "623c77217e7d559080f4ac7dc78e4126714cd3c461c087db7175e5a572beb139",
+      "tentativa_sha256": "ec56324d6305aa66f7386964f30955cf40376a54b336c8867f4e836b9d176085"
+    },
+    {
+      "avaliacao_sha256": "1dd1f18e476e645f44287e19469ab31c3d42fc25def14ac22d3112e1fc2f67e7",
+      "decisao": "pendente",
+      "fechamento_sha256": "3f68fd1cd62c24312e344d943c9cc087db37d6893e334fc30a7e65c3a7509bc5",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-E0-ASTRA-R01",
+      "payload_sha256": "9e702538b75a459562e4b91aa4d0dcc4c9c72afb4a4a02832bc9a1622c20d624",
+      "resposta_sha256": "2f34b61b2a0457fd7ed03a30fcb59539f21952d377fd145333fc0892a1c28694",
+      "tentativa_sha256": "e80de5e4ca32943ad9b9e01c4c7c0846807979b75789f8afc41ddb8882395aee"
+    },
+    {
+      "avaliacao_sha256": "4367ac73a1e1bcc7e4b8e240b732064c0553653445f3484323d2d699225e76db",
+      "decisao": "pendente",
+      "fechamento_sha256": "2b984806f31e242d1e35187d4c84867d691439623eff9f4ef8d1a5077798a05a",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-E1-ASTRA-R01",
+      "payload_sha256": "14a538aa8c5fafbcbb61a25cd4d4fc4be339edd0d7082310931a153968e75b5e",
+      "resposta_sha256": "48625043a89a5a9e1732641109b04758d76e2596c4cb60dcc15020c96490cbde",
+      "tentativa_sha256": "7c7eb1ada5fb78c1ee596e2c7f2523829e50d85be764874e7aeda690b3e3be83"
+    },
+    {
+      "avaliacao_sha256": "3dd807a39b041c3aba34992490fa424bf333a94a863a7fa06a1e42eedf855430",
+      "decisao": "pendente",
+      "fechamento_sha256": "64a7a0710eaf1e42fcc2a3ee3a46a83e08080a4b0410fe11ec89b710085733e0",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-E0-ASTRA-R01",
+      "payload_sha256": "7b64138181e294df3cb7a344250adb7fdb2faddb74e080d00354f6780039bd9a",
+      "resposta_sha256": "2a887e56318927c604c3b6ce001c832acf46bfdd841413d24b48797539cf3aa5",
+      "tentativa_sha256": "511f7cdd507f91b11fed52c6a858d9e659917de3d54b9e2cfdfc94211b54523d"
+    },
+    {
+      "avaliacao_sha256": "24bbd4f5c61bcaf9f601c095c0731204d5a3c36c9c57dd2bd5dd36c148c7fa35",
+      "decisao": "pendente",
+      "fechamento_sha256": "f039f7fc7a4272543d18c33ca3704a064fd455b53734fde5b363e4dae8b391b6",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-E0-SOL-R01",
+      "payload_sha256": "9e702538b75a459562e4b91aa4d0dcc4c9c72afb4a4a02832bc9a1622c20d624",
+      "resposta_sha256": "623c77217e7d559080f4ac7dc78e4126714cd3c461c087db7175e5a572beb139",
+      "tentativa_sha256": "5a5f52a8405bb23615df06cee5a103773a109585cbe0bb97e359fb1da23bf756"
+    },
+    {
+      "avaliacao_sha256": "49a05ad8a1998fba9af543a337f94aba3ffea7abfcb4e05eae6f04c8093cbad9",
+      "decisao": "pendente",
+      "fechamento_sha256": "1e4f7ab61ed83397c58b636c41223ea7048e4809fb6bcde5fa865e3911956104",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-D1-ASTRA-R01",
+      "payload_sha256": "ac2fb2beb8fd41647faef06295c7273b3b9e57b1787675bc0f52ae7ce20b1de6",
+      "resposta_sha256": "633d93a0ee3defeda59cc280851ed776abe36b5dc65509ed03f1d2fc359e4676",
+      "tentativa_sha256": "ea0e87dc88af090e37b0b4e1f783d57737e7aca77fa69d94b3bd0b7504d8668f"
+    },
+    {
+      "avaliacao_sha256": "3655395e54144791fb04ff6b355990aeedc7cb835500a3f14832326d562c244d",
+      "decisao": "pendente",
+      "fechamento_sha256": "c4db3172321a05e0c358ea9a1e1a809207ca0e5e7f855ce74bb3bf5bf269de08",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-D0-ASTRA-R01",
+      "payload_sha256": "1f39acc820e09bd1a911d90bef408ff3fb6353e17e5e81a8df27957c29d7c190",
+      "resposta_sha256": "2a887e56318927c604c3b6ce001c832acf46bfdd841413d24b48797539cf3aa5",
+      "tentativa_sha256": "bd46b4f416c092557da8a5483b50ac87fefa6bef81d4ef62d270b5a4442ce70f"
+    },
+    {
+      "avaliacao_sha256": "4d10bcc90f188696be89b0133fc362351fceff5ebe070e0020fe7ca3b9defbc3",
+      "decisao": "pendente",
+      "fechamento_sha256": "4909f011e30e30dfc0f7f79147c43653f4ac74bb673b58f0a3ed0423298e962c",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-E1-ASTRA-R01",
+      "payload_sha256": "017d48bc0e358962792a419217cc74e7cc5d785ff2cf84e9a8b03c1649231f96",
+      "resposta_sha256": "2a887e56318927c604c3b6ce001c832acf46bfdd841413d24b48797539cf3aa5",
+      "tentativa_sha256": "0a77785467caa129ac8c9c7722d523897de1861178901c19b6fae712511a50d0"
+    },
+    {
+      "avaliacao_sha256": "3b674c02fd01a76b2bc1c2ba301da714284d918d40a8455f85155a636ae85382",
+      "decisao": "pendente",
+      "fechamento_sha256": "2150753ff4d2de78cbf3585c188a16f4a4c8bb3b443f434cbe04da22bf527ad1",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-D0-ASTRA-R01",
+      "payload_sha256": "e257faafe3ceb0f0710a5daab9485d8b4277137054cb5518c423bffa38205c12",
+      "resposta_sha256": "2f34b61b2a0457fd7ed03a30fcb59539f21952d377fd145333fc0892a1c28694",
+      "tentativa_sha256": "221a74ee3b5af202f5dad8b4107e84c4da232d3dfde7beffae19771b817b7862"
+    },
+    {
+      "avaliacao_sha256": "7599aac1d3c68d96a50b966ec477e90f799f07142f90de35787e3749ec544c38",
+      "decisao": "pendente",
+      "fechamento_sha256": "78ff262292ea617b71177caf76e46fedcb60a26a8adbd011a03e9ac46ee45a82",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-D1-ASTRA-R01",
+      "payload_sha256": "506a6d0f779a904bc95245819bc059ba0e916576e0833fd9d2da87532e53a248",
+      "resposta_sha256": "2a887e56318927c604c3b6ce001c832acf46bfdd841413d24b48797539cf3aa5",
+      "tentativa_sha256": "bc30b95b70feec20384a32a62aa6793d498944bdd1e26f8f0e8729fdecd3bc04"
+    },
+    {
+      "avaliacao_sha256": "f4dce4cd8c0cf40f4a2d0155947af35ee494860cc515d470dc3893990f987d20",
+      "decisao": "pendente",
+      "fechamento_sha256": "d6e33c1175a030e4717997a2f04f853478af2e8862f6dc663552ec1cf1d4da9b",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-D0-SOL-R02",
+      "payload_sha256": "1f39acc820e09bd1a911d90bef408ff3fb6353e17e5e81a8df27957c29d7c190",
+      "resposta_sha256": "4a8e8c9233219195bc309040f24d355928bedb088a39c58ef0a6f4cce7bcc1b4",
+      "tentativa_sha256": "f3fe18cc7be46dfb91d0bbae314d59ce5f41f88d2cef74799b46d61ed4def809"
+    },
+    {
+      "avaliacao_sha256": "558bc16a1ff57e26336b120218c652074284d1e71abef8a4882eb65ca0a66921",
+      "decisao": "pendente",
+      "fechamento_sha256": "84b5d7ef858f7c33c50abb343d52f1110197c1f2d057c9a9b6f4ee7a5bd7d321",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-E0-ASTRA-R02",
+      "payload_sha256": "02ae79a073347542e0ea1b39630cd6a46f26a51280260f5e94fa7d3f914cc402",
+      "resposta_sha256": "633d93a0ee3defeda59cc280851ed776abe36b5dc65509ed03f1d2fc359e4676",
+      "tentativa_sha256": "6663a823fe19e89ac940b29a9bd7b7bea6566b9fa03dfc2148291879f9ca43dd"
+    },
+    {
+      "avaliacao_sha256": "1404dc4ad3db2ef572e118f907b1a4481b98f1f5e56d554d28db19149ae82774",
+      "decisao": "pendente",
+      "fechamento_sha256": "e2c4f37e0cc7f2074ae86a1378ada1994aa90502da2264c1501ef55f79b03cad",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-E0-ASTRA-R02",
+      "payload_sha256": "fed2bc891d256ce6b51bd72e30a7daedf04944d0a45b31a376d3edf7018c7dd9",
+      "resposta_sha256": "48625043a89a5a9e1732641109b04758d76e2596c4cb60dcc15020c96490cbde",
+      "tentativa_sha256": "367614c63502fb4c91d755084374e01712df50de7c23c2feb7ae94fd09409b4a"
+    },
+    {
+      "avaliacao_sha256": "20e9d5bdbe98b5b367c40904ad4b74b3548fc1520862f587493d4fd6da504235",
+      "decisao": "pendente",
+      "fechamento_sha256": "e218801b28cf75d043c6066bdbb1ae75ce77df381f69f64f27f388f49fadcdea",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-E1-SOL-R02",
+      "payload_sha256": "c2830ec02c381617b0aaadf79483ef83d1aa6f3c8969df9c6f81ee7372c39b57",
+      "resposta_sha256": "633d93a0ee3defeda59cc280851ed776abe36b5dc65509ed03f1d2fc359e4676",
+      "tentativa_sha256": "4e92fc160d0e98c0e65ef5d1b1298cff036e45990856b0799b78babe22dad441"
+    },
+    {
+      "avaliacao_sha256": "4e56c23a9f5b4df7a69df6ed7d8410c7a3a6b41d62dfb87a394f61f5d763dd1c",
+      "decisao": "pendente",
+      "fechamento_sha256": "5d76d7b6b8abbe596206b9a2453b5cc58d2e3caafb5882603ed55f91c3f84fb9",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-E1-ASTRA-R02",
+      "payload_sha256": "1c46cc61639a33b0fcad6ad00755b9c16d29e8801a91268dbc82ab7d5017aeb5",
+      "resposta_sha256": "2f34b61b2a0457fd7ed03a30fcb59539f21952d377fd145333fc0892a1c28694",
+      "tentativa_sha256": "999ee13ddac66d8a1592a632aec790ce288f17de2a82312d57dcbea7a8f90d40"
+    },
+    {
+      "avaliacao_sha256": "dd225ca24730cc0982957e421b64a23ebe2149f9efb0063c7bf18c81129f6f77",
+      "decisao": "pendente",
+      "fechamento_sha256": "6588b2d07f9aebb1896a31dc1f2e20d79891045ca79b953de41a3eda68cbae1c",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-E0-ASTRA-R02",
+      "payload_sha256": "7b64138181e294df3cb7a344250adb7fdb2faddb74e080d00354f6780039bd9a",
+      "resposta_sha256": "2a887e56318927c604c3b6ce001c832acf46bfdd841413d24b48797539cf3aa5",
+      "tentativa_sha256": "b55a8928cc59024aa6861ce09a719aefd091401492b2b6eda847bdb10b86b609"
+    },
+    {
+      "avaliacao_sha256": "c754eb31be7c26040f8521baaf77b8caedb48594ce0765a8138693d9bad10e50",
+      "decisao": "pendente",
+      "fechamento_sha256": "0558b189ccfa1d33b2d45dc3db59f0dd45b9db044bc401083b17c249e1d6cb66",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-D1-ASTRA-R02",
+      "payload_sha256": "ac2fb2beb8fd41647faef06295c7273b3b9e57b1787675bc0f52ae7ce20b1de6",
+      "resposta_sha256": "633d93a0ee3defeda59cc280851ed776abe36b5dc65509ed03f1d2fc359e4676",
+      "tentativa_sha256": "645e948fbd6de020022137d20a5ed4bcc02813fd784dafebaa4fa9c24aff0c61"
+    },
+    {
+      "avaliacao_sha256": "85bea588301b42315a8e6d3501ace40962204f0a32e636401984bba7074ad43b",
+      "decisao": "pendente",
+      "fechamento_sha256": "394ce9de656aebae604a8e7683fec4389ce5dfe34ed7360f3627e7ca4008ac7e",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-E1-ASTRA-R02",
+      "payload_sha256": "14a538aa8c5fafbcbb61a25cd4d4fc4be339edd0d7082310931a153968e75b5e",
+      "resposta_sha256": "48625043a89a5a9e1732641109b04758d76e2596c4cb60dcc15020c96490cbde",
+      "tentativa_sha256": "17e65afc542cc419e9bb00488fd1736919f259a2f2464a1ac49e67363f709be2"
+    },
+    {
+      "avaliacao_sha256": "9252632b1c992e4a35e1f43c7ce76da7764fc21a00f3482e05494747d887625d",
+      "decisao": "pendente",
+      "fechamento_sha256": "9b5e59155682d22c09807050ea5e348cde13b1dbec13ad47d3bb279b64ab2a6f",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-E0-SOL-R02",
+      "payload_sha256": "7b64138181e294df3cb7a344250adb7fdb2faddb74e080d00354f6780039bd9a",
+      "resposta_sha256": "4a8e8c9233219195bc309040f24d355928bedb088a39c58ef0a6f4cce7bcc1b4",
+      "tentativa_sha256": "7178c0f6659f8b489f7aa7a0c015c4127a63d60f87480d53d8a68db6c167210b"
+    },
+    {
+      "avaliacao_sha256": "b0b909217741e5036e6d385b845f60012db5d6cccfa0225bb1f0627c79c0a432",
+      "decisao": "pendente",
+      "fechamento_sha256": "4d6120e7abdbf20f9631564da4b4405bd91fbc347c8d8dbe27639d7c9fba0fb1",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-D1-ASTRA-R02",
+      "payload_sha256": "28c78e1ae440b37bb5b857828160dd9b7b3ce9c393a7cfd1426e80eafcfab35e",
+      "resposta_sha256": "2f34b61b2a0457fd7ed03a30fcb59539f21952d377fd145333fc0892a1c28694",
+      "tentativa_sha256": "4d7c79ec124ededc6d19b7de3caa470b688beb35b91fbc1736b132cd33ee69a1"
+    },
+    {
+      "avaliacao_sha256": "d1c95c89c91e46a0050e3fe22d93e647157b68be735605bd10c9e78d9ecd4fbc",
+      "decisao": "pendente",
+      "fechamento_sha256": "80dc5d95f9cce236a510d65c08f8e2b8b43a0c117a1b655dbb612f15d4e5f61a",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-D0-ASTRA-R02",
+      "payload_sha256": "090466600f445a673325a1d83eea1cf6da3a1845f64722b471fabd94c91238c8",
+      "resposta_sha256": "48625043a89a5a9e1732641109b04758d76e2596c4cb60dcc15020c96490cbde",
+      "tentativa_sha256": "1f214df187900c90a5a99b5881c827ee2c2a790eb1e1a16a987587edeff367aa"
+    },
+    {
+      "avaliacao_sha256": "6d735688620966d7994039ede54d79e8daa4951dc242037bb244e3ef98a35167",
+      "decisao": "pendente",
+      "fechamento_sha256": "03d027311553da50b6f9bd8558dfbd4aec2bff53c1c3e757fa03d358458abbb5",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-D1-SOL-R02",
+      "payload_sha256": "28c78e1ae440b37bb5b857828160dd9b7b3ce9c393a7cfd1426e80eafcfab35e",
+      "resposta_sha256": "623c77217e7d559080f4ac7dc78e4126714cd3c461c087db7175e5a572beb139",
+      "tentativa_sha256": "4901be2d9fde4296979857318493d87c1fe951966d0ea34b0369cce48e48f0da"
+    },
+    {
+      "avaliacao_sha256": "9333dd7a572006d73c3ef81ad6e8d60dbe43bf61e8b53e8112726ca413fe4721",
+      "decisao": "pendente",
+      "fechamento_sha256": "0a6e2407a21ef2ffb742545f7f79c492bb4f47922b7b429de5787598e9728ab8",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-D0-SOL-R02",
+      "payload_sha256": "e257faafe3ceb0f0710a5daab9485d8b4277137054cb5518c423bffa38205c12",
+      "resposta_sha256": "623c77217e7d559080f4ac7dc78e4126714cd3c461c087db7175e5a572beb139",
+      "tentativa_sha256": "fbde580334fbaedfea127a691c22f3501784f7b37e1e06421cab0a4fa5324de6"
+    },
+    {
+      "avaliacao_sha256": "277ecbd8d0b289478023e2703226e1cb205cc4c8151ce344c68238621f467a87",
+      "decisao": "pendente",
+      "fechamento_sha256": "b31ceaa9d989e88ed0b5a4c4d409912dafea577d9568a53e1421d3e3beeab5cc",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-D0-ASTRA-R02",
+      "payload_sha256": "e257faafe3ceb0f0710a5daab9485d8b4277137054cb5518c423bffa38205c12",
+      "resposta_sha256": "2f34b61b2a0457fd7ed03a30fcb59539f21952d377fd145333fc0892a1c28694",
+      "tentativa_sha256": "5f6fee577e1d08071d72272d48edbf3b57cd358038527ef69fa7d2e82b1bc221"
+    },
+    {
+      "avaliacao_sha256": "1adb2f9817d0c059eddf3941cdcdf8c4b1ffe1971d4994e0db3e1c6357539b04",
+      "decisao": "pendente",
+      "fechamento_sha256": "731a84331a79263f79651948a623342e556cd5773fb1d77d906187868e76cf74",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-E1-ASTRA-R02",
+      "payload_sha256": "c2830ec02c381617b0aaadf79483ef83d1aa6f3c8969df9c6f81ee7372c39b57",
+      "resposta_sha256": "633d93a0ee3defeda59cc280851ed776abe36b5dc65509ed03f1d2fc359e4676",
+      "tentativa_sha256": "f85987bc76322378e2dcac0a0456a38b2e356b738df3d14a2442e2e7ff105915"
+    },
+    {
+      "avaliacao_sha256": "407d28a20d086a430b88bd4323386a1a2de6cf81c1c9f5773190c87bb494992d",
+      "decisao": "pendente",
+      "fechamento_sha256": "836dee8fa660c6235c570aa6f9992f6f1f847d927ce4824570f8f1d2322ceba1",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-D0-SOL-R02",
+      "payload_sha256": "090466600f445a673325a1d83eea1cf6da3a1845f64722b471fabd94c91238c8",
+      "resposta_sha256": "bbf68c69327e6a76442c56465f8c6d5a37ae91253c1a2b09682e87ee5189cba7",
+      "tentativa_sha256": "4e8b8052bb5fa8be734bfdddb90c6bc156cbd8c3d1eb1c85a92302081c2feff5"
+    },
+    {
+      "avaliacao_sha256": "6cee2a12a0b8bd06861503d4764c5d51b204c1ab6fc5fda166cd31ac940f80e5",
+      "decisao": "pendente",
+      "fechamento_sha256": "f387d777c86a5ab1c04b414b759a26229cd4e39b2a2eed97d2707ff633b4fc5a",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-E1-SOL-R02",
+      "payload_sha256": "1c46cc61639a33b0fcad6ad00755b9c16d29e8801a91268dbc82ab7d5017aeb5",
+      "resposta_sha256": "623c77217e7d559080f4ac7dc78e4126714cd3c461c087db7175e5a572beb139",
+      "tentativa_sha256": "8eb83346d6d30ed790d9443573d01d2c590dc9097e5a07cd3cba5d663d637664"
+    },
+    {
+      "avaliacao_sha256": "2afe87e5051aece3f221065664718060617c1ad979fefc85f59f22f3394c0fc5",
+      "decisao": "pendente",
+      "fechamento_sha256": "bbe07307e099491e6089e17e7f853a01c363ec52f10a20b57152242de501a89d",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-D0-ASTRA-R02",
+      "payload_sha256": "7684532d990227fe7259715782cc2f8d7890a56597bc7dba372144a5db6cb275",
+      "resposta_sha256": "633d93a0ee3defeda59cc280851ed776abe36b5dc65509ed03f1d2fc359e4676",
+      "tentativa_sha256": "5e2f2fc29d22b84ec2eda216dc5fadf79c12af1240b805a8341fcaf7712d2e10"
+    },
+    {
+      "avaliacao_sha256": "cff2bf64de3fcea27e324dd6f5e83e82b1343bbd88db428b8a58e6378f0985df",
+      "decisao": "pendente",
+      "fechamento_sha256": "02085f39d3c992008676099697d14d37d5fba4adb5f9f82b52d4902d6534523c",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-D1-SOL-R02",
+      "payload_sha256": "78d734ddcf58823fb1fe9b8fe917043b6b1d98945c1f4f8bc358a12d0129bf15",
+      "resposta_sha256": "bbf68c69327e6a76442c56465f8c6d5a37ae91253c1a2b09682e87ee5189cba7",
+      "tentativa_sha256": "545f4fae5fba57a19286643df992f85454b1005a5118127b8edf0343358ea5b8"
+    },
+    {
+      "avaliacao_sha256": "f0c9d1346fc9cce4a96a234c58fe1d346e009a8a28a7129ec24db1753d457f2d",
+      "decisao": "pendente",
+      "fechamento_sha256": "e380b6f3b9bc0832b6129c6016a2954fb33a4d297f15384a08ea1e37aad69d15",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-E0-SOL-R02",
+      "payload_sha256": "fed2bc891d256ce6b51bd72e30a7daedf04944d0a45b31a376d3edf7018c7dd9",
+      "resposta_sha256": "bbf68c69327e6a76442c56465f8c6d5a37ae91253c1a2b09682e87ee5189cba7",
+      "tentativa_sha256": "651fcae741452108c826324a9f2c3774075edf426e871a1d915b5a577ccd73ab"
+    },
+    {
+      "avaliacao_sha256": "0de3b38ce12677efa47640e06e3bd16e8f5de65bd4451ab93070d81cbd085345",
+      "decisao": "pendente",
+      "fechamento_sha256": "f18bf946212daf88f5e57a5093be22364cc22d322fe30cc081325342727dee47",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-E1-SOL-R02",
+      "payload_sha256": "14a538aa8c5fafbcbb61a25cd4d4fc4be339edd0d7082310931a153968e75b5e",
+      "resposta_sha256": "bbf68c69327e6a76442c56465f8c6d5a37ae91253c1a2b09682e87ee5189cba7",
+      "tentativa_sha256": "6fac4b8bf349de5512b27118811943c976133c1e3f5590be97111dc4364ef407"
+    },
+    {
+      "avaliacao_sha256": "82cac7a32075a90aaf59cba33b810d3a7854b0bd7025bdea4993b76629228ca5",
+      "decisao": "pendente",
+      "fechamento_sha256": "637ff2487eddd6e4d93c5f73de4fcafeced71551293c69b0ddf79e53753f2751",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-E1-ASTRA-R02",
+      "payload_sha256": "017d48bc0e358962792a419217cc74e7cc5d785ff2cf84e9a8b03c1649231f96",
+      "resposta_sha256": "2a887e56318927c604c3b6ce001c832acf46bfdd841413d24b48797539cf3aa5",
+      "tentativa_sha256": "c9f1a81a318b5d55247a6cce510c5d8c405408dfdf7d6be147940aafb1766819"
+    },
+    {
+      "avaliacao_sha256": "e9fd7cae06191dab8f8387a3565e367aa0a24c6f205234e1bdd8f3b30d35eff6",
+      "decisao": "pendente",
+      "fechamento_sha256": "d3b2c286f75b6bafa07cd9cb5553f97e94c49cfa7ad9a6b775613f1a683a038a",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-E0-SOL-R02",
+      "payload_sha256": "02ae79a073347542e0ea1b39630cd6a46f26a51280260f5e94fa7d3f914cc402",
+      "resposta_sha256": "efbba12d1d006f6335762fe54f76efe0f3b2dcce96ae58b58106f412accf47c5",
+      "tentativa_sha256": "c4856f6fa23f006a6e8044df4f02df9640f8d668587fdc059d4c6030975fbcd7"
+    },
+    {
+      "avaliacao_sha256": "626ae942a2c405987b08c240386a7539a46cd15cc1f975e7dbd1272724baae5d",
+      "decisao": "pendente",
+      "fechamento_sha256": "48b15b86a32d4c0a33ef8721e08085e71ea056ce1a8081a05dc121d4ac5c794d",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-D1-ASTRA-R02",
+      "payload_sha256": "506a6d0f779a904bc95245819bc059ba0e916576e0833fd9d2da87532e53a248",
+      "resposta_sha256": "2a887e56318927c604c3b6ce001c832acf46bfdd841413d24b48797539cf3aa5",
+      "tentativa_sha256": "25523a3552fd4638f943c9e4dd69597e6e6160760f59c87a91ffc0d50da7eedd"
+    },
+    {
+      "avaliacao_sha256": "b55653bcae8a17650a3ff8d1bca768e1306b46638cb41349883456c7c1f3c408",
+      "decisao": "pendente",
+      "fechamento_sha256": "8222d105fdf5391cf1784e54c6f8213ecfef788e85a1f67c5affd9f2bcc56d7c",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-D1-SOL-R02",
+      "payload_sha256": "506a6d0f779a904bc95245819bc059ba0e916576e0833fd9d2da87532e53a248",
+      "resposta_sha256": "0190892cc7ebb1ef97cb26d72795b7cec79c07bce8678deef49e7d9bda352171",
+      "tentativa_sha256": "8e69980902b226594a8a7411aed4b4f8cf4eccb6c57a16eb4456650b670be8a8"
+    },
+    {
+      "avaliacao_sha256": "4d5525b5852bb8f97b8f343eb493b61ca9ec2daf874cffa23f016f11f26d65cd",
+      "decisao": "pendente",
+      "fechamento_sha256": "2548acca6b851f31bad8f9c2e903e746f890d2223e799be2acc1fdf44b916c74",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-D0-ASTRA-R02",
+      "payload_sha256": "1f39acc820e09bd1a911d90bef408ff3fb6353e17e5e81a8df27957c29d7c190",
+      "resposta_sha256": "2a887e56318927c604c3b6ce001c832acf46bfdd841413d24b48797539cf3aa5",
+      "tentativa_sha256": "60e81e2770d7d5dc7016be5462d7152f30720ca12791ba3e69aee15f02dbd91f"
+    },
+    {
+      "avaliacao_sha256": "ec3a8df09dc70dbe14b18e2cb961badb33e14d4ddcb2185a202ebb3b0ff0de7a",
+      "decisao": "pendente",
+      "fechamento_sha256": "69937fa42125e6005adebd0bff8ffb3960da95231fac80181c43670e58930fd0",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-E0-SOL-R02",
+      "payload_sha256": "9e702538b75a459562e4b91aa4d0dcc4c9c72afb4a4a02832bc9a1622c20d624",
+      "resposta_sha256": "2f34b61b2a0457fd7ed03a30fcb59539f21952d377fd145333fc0892a1c28694",
+      "tentativa_sha256": "a6cc334da382a732dc169aaa35620cc36a71be89585807f3200aee1056772347"
+    },
+    {
+      "avaliacao_sha256": "c530ea2f7ff5764a51f97f677e882edc41cdbc3a6b24de1dc47b48a8fc77fd1e",
+      "decisao": "pendente",
+      "fechamento_sha256": "e6658a816d17009fc6c323a6911700c9ef1fd57c291bdb39df7d474e6f1b1bdd",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-02-E1-SOL-R02",
+      "payload_sha256": "017d48bc0e358962792a419217cc74e7cc5d785ff2cf84e9a8b03c1649231f96",
+      "resposta_sha256": "0190892cc7ebb1ef97cb26d72795b7cec79c07bce8678deef49e7d9bda352171",
+      "tentativa_sha256": "6ac753a65ab3fbf00f52591e158e17614a9f6b4c177c19b46518aad73887091b"
+    },
+    {
+      "avaliacao_sha256": "3cc560a7f74f1eabcf45dc2c201e1f13012e869ff1b1130417a17a77d68f1257",
+      "decisao": "pendente",
+      "fechamento_sha256": "9f14148222fa86faa454b88aa42a6ebf5652675fd06a815e9d52dc4e893a6b00",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-04-v2-D1-ASTRA-R02",
+      "payload_sha256": "78d734ddcf58823fb1fe9b8fe917043b6b1d98945c1f4f8bc358a12d0129bf15",
+      "resposta_sha256": "48625043a89a5a9e1732641109b04758d76e2596c4cb60dcc15020c96490cbde",
+      "tentativa_sha256": "b29139793e4fbbf717c519f2794e5ea952c2a14f91d8eb2fb5c68da4259a9290"
+    },
+    {
+      "avaliacao_sha256": "6bc35cdedfffe42fa31016d3f390cf4a39cf0c71a7b4b378c8b70ba74d870332",
+      "decisao": "pendente",
+      "fechamento_sha256": "f245b92449069af79b68db65598bd85664fa70b8a85bcb4de3cadbc2c09953d4",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-D1-SOL-R02",
+      "payload_sha256": "ac2fb2beb8fd41647faef06295c7273b3b9e57b1787675bc0f52ae7ce20b1de6",
+      "resposta_sha256": "efbba12d1d006f6335762fe54f76efe0f3b2dcce96ae58b58106f412accf47c5",
+      "tentativa_sha256": "53de2b0c725a878b2edbed1f595fe0ce98a39d6e3d8455b0101ae81121884dd7"
+    },
+    {
+      "avaliacao_sha256": "38af359cbbf0de5f0c618d0d90d5341bb1902b1bc54e56d33597dbe9f4e713ca",
+      "decisao": "pendente",
+      "fechamento_sha256": "75f63fbef1d45006239213dad0d1392c6899eaeac296f2d9dd4206b972dea4dd",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-01-E0-ASTRA-R02",
+      "payload_sha256": "9e702538b75a459562e4b91aa4d0dcc4c9c72afb4a4a02832bc9a1622c20d624",
+      "resposta_sha256": "2f34b61b2a0457fd7ed03a30fcb59539f21952d377fd145333fc0892a1c28694",
+      "tentativa_sha256": "7255878a39b7ec19d4d2edffd087b27d3fbd07985610a8ac65e381301ee4f4c9"
+    },
+    {
+      "avaliacao_sha256": "14bca9f2a83a48e6218097af1949483b9b2091c66a3944cfe3c44ce62a8dad11",
+      "decisao": "pendente",
+      "fechamento_sha256": "15b905350a0f77c52b1f36a55afd2fa7a2d74507e21f97cd0ec113ae6c2ca907",
+      "justificativa": null,
+      "observacao_id": "EXT03-MC-03-D0-SOL-R02",
+      "payload_sha256": "7684532d990227fe7259715782cc2f8d7890a56597bc7dba372144a5db6cb275",
+      "resposta_sha256": "633d93a0ee3defeda59cc280851ed776abe36b5dc65509ed03f1d2fc359e4676",
+      "tentativa_sha256": "ed05cd754f3fac625f3ff2b99c1643e48cad1c01a6d7a30ae025e46e26d0c67c"
+    }
+  ],
+  "responsavel": null,
+  "versao": "decisoes-conformidade-v1"
+}

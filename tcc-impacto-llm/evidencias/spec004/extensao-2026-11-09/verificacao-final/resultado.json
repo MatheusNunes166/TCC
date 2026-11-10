@@ -1,0 +1,37 @@
+{
+  "baseline": 15,
+  "chave_real_utilizada": false,
+  "comando": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "-B",
+    "evidencias/spec004/extensao-2026-11-09/verificar_offline.py"
+  ],
+  "comparacoes": 75,
+  "conformes": 75,
+  "duracao_segundos": 302.453,
+  "erros": 0,
+  "falhas": 0,
+  "fontes_sha256": {
+    "autorizacao.py": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+    "avaliacao_ids.py": "a30077b5d8a3de06273e31c1d87d3f30c6af9e668951a48654114c08614c6b83",
+    "coletor_api.py": "413c907d07466adf7005624a6b51257d9ae8a4c6dcab2b030258ec3eef009406",
+    "extensao_exploratoria.py": "055f6c5198146925fc20b3570b9701293682014d35bdb9f3d1a5409c50d098e8",
+    "montagem_entradas.py": "ed1d1fc0f2b4839d7079c35687058ee24bc0d2767b04ba188fe02f32f5d56d94",
+    "tests/test_extensao_exploratoria.py": "4aca69e95ad1b56ce878c7893efb67cdeab2a5db141b2b0853f44b2acc8f2b59",
+    "variantes/mc01.py": "a4cb55e710cda2ddf29b46128f2494d1100e16dbbd3590b99f753f58f5609895",
+    "variantes/mc02.py": "c267731ef32d2024e7b420f23ede111c2eedb0304e2bb8e22fbdd932f7fe2baf",
+    "variantes/mc03.py": "b82c2013267ef826a5a403753b49a9cea20b5e1b8f3dcbe4eb6b251868eb411c",
+    "variantes/mc04.py": "bf98ddb5dd67c2c189c810e51fc592d8ff4cb8c62d04c75edecf00b574c1a1e4"
+  },
+  "ignorados": [
+    {
+      "motivo": "Criacao de symlink real indisponivel: [WinError 1314] O cliente n\u00e3o tem o privil\u00e9gio necess\u00e1rio: 'C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\tmpnvznrxph\\\\sym\\\\sistema.txt' -> 'C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\tmpnvznrxph\\\\sym\\\\sym-interno'",
+      "teste": "test_S14_symlinks_reais_quando_disponiveis (test_montagem_entradas.TestMontagem.test_S14_symlinks_reais_quando_disponiveis)"
+    }
+  ],
+  "metodos": 127,
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "rede_bloqueada_por_audit_hook": true,
+  "sucesso": true,
+  "variantes": 60
+}

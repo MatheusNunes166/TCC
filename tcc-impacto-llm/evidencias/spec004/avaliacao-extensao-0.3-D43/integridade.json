@@ -1,0 +1,26 @@
+{
+  "conforme_tecnicamente": true,
+  "conformidade_protocolo_aprovada": false,
+  "conformidade_registrada": {
+    "pendente": 64
+  },
+  "desvios_detectados": 0,
+  "modelos": {
+    "gpt-6-astra": 32,
+    "gpt-6-sol": 32
+  },
+  "observacoes": 64,
+  "ordem_temporal_conforme_plano": true,
+  "originais_inventariados": 6442,
+  "plano": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-20261109-003\\plano.json",
+  "plano_sha256": "e00fd77c23e3b018cb3781e5ebee9b0d1b765e36e7c53fdf9eba8588e45c2e3e",
+  "primeira_execucao": "2026-11-10T02:01:24.982992+00:00",
+  "rede": false,
+  "referencia": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\modelos\\referencia_candidata_0.3_NAO_ENVIAR_AO_LLM.json",
+  "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+  "repeticoes_por_celula": 2,
+  "request_ids_unicos": 64,
+  "response_ids_unicos": 64,
+  "ultima_conclusao": "2026-11-10T02:17:57.922961+00:00",
+  "vinculos_fechamentos_conferidos": 1312
+}

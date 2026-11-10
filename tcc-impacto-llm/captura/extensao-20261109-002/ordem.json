@@ -1,0 +1,584 @@
+{
+  "algoritmo": "random.Random(20261109).shuffle; um gerador, dois blocos sequenciais",
+  "enumeracao": "mudancas MC-01,MC-02,MC-03,MC-04-v2; condicoes D0,D1,E0,E1; modelos sol,astra",
+  "observacoes": [
+    {
+      "bloco": 1,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-E1-SOL-R01",
+      "ordem": 1,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-D0-SOL-R01",
+      "ordem": 2,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-D0-ASTRA-R01",
+      "ordem": 3,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-E1-SOL-R01",
+      "ordem": 4,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-E1-ASTRA-R01",
+      "ordem": 5,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-D0-SOL-R01",
+      "ordem": 6,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-E0-SOL-R01",
+      "ordem": 7,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-E0-SOL-R01",
+      "ordem": 8,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-E0-SOL-R01",
+      "ordem": 9,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-D0-ASTRA-R01",
+      "ordem": 10,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-E0-ASTRA-R01",
+      "ordem": 11,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-D1-SOL-R01",
+      "ordem": 12,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-D1-SOL-R01",
+      "ordem": 13,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-D1-SOL-R01",
+      "ordem": 14,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-D1-SOL-R01",
+      "ordem": 15,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-E1-ASTRA-R01",
+      "ordem": 16,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-D0-SOL-R01",
+      "ordem": 17,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-D1-ASTRA-R01",
+      "ordem": 18,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-E0-ASTRA-R01",
+      "ordem": 19,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-E1-SOL-R01",
+      "ordem": 20,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-D1-ASTRA-R01",
+      "ordem": 21,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-E1-SOL-R01",
+      "ordem": 22,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-D0-SOL-R01",
+      "ordem": 23,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-E0-ASTRA-R01",
+      "ordem": 24,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-E1-ASTRA-R01",
+      "ordem": 25,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-E0-ASTRA-R01",
+      "ordem": 26,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-E0-SOL-R01",
+      "ordem": 27,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-D1-ASTRA-R01",
+      "ordem": 28,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-D0-ASTRA-R01",
+      "ordem": 29,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-E1-ASTRA-R01",
+      "ordem": 30,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-D0-ASTRA-R01",
+      "ordem": 31,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-D1-ASTRA-R01",
+      "ordem": 32,
+      "repeticao": 1
+    },
+    {
+      "bloco": 2,
+      "condicao": "D0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-D0-SOL-R02",
+      "ordem": 33,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-E0-ASTRA-R02",
+      "ordem": 34,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-E0-ASTRA-R02",
+      "ordem": 35,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-E1-SOL-R02",
+      "ordem": 36,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-E1-ASTRA-R02",
+      "ordem": 37,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-E0-ASTRA-R02",
+      "ordem": 38,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-D1-ASTRA-R02",
+      "ordem": 39,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-E1-ASTRA-R02",
+      "ordem": 40,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-E0-SOL-R02",
+      "ordem": 41,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-D1-ASTRA-R02",
+      "ordem": 42,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-D0-ASTRA-R02",
+      "ordem": 43,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-D1-SOL-R02",
+      "ordem": 44,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-D0-SOL-R02",
+      "ordem": 45,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-D0-ASTRA-R02",
+      "ordem": 46,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-E1-ASTRA-R02",
+      "ordem": 47,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-D0-SOL-R02",
+      "ordem": 48,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-E1-SOL-R02",
+      "ordem": 49,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-D0-ASTRA-R02",
+      "ordem": 50,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-D1-SOL-R02",
+      "ordem": 51,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-E0-SOL-R02",
+      "ordem": 52,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-E1-SOL-R02",
+      "ordem": 53,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-E1-ASTRA-R02",
+      "ordem": 54,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-E0-SOL-R02",
+      "ordem": 55,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-D1-ASTRA-R02",
+      "ordem": 56,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-D1-SOL-R02",
+      "ordem": 57,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-D0-ASTRA-R02",
+      "ordem": 58,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-E0-SOL-R02",
+      "ordem": 59,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-E1-SOL-R02",
+      "ordem": 60,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "observacao_id": "EXT03-MC-04-v2-D1-ASTRA-R02",
+      "ordem": 61,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-D1-SOL-R02",
+      "ordem": 62,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E0",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-01",
+      "observacao_id": "EXT03-MC-01-E0-ASTRA-R02",
+      "ordem": 63,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D0",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-03",
+      "observacao_id": "EXT03-MC-03-D0-SOL-R02",
+      "ordem": 64,
+      "repeticao": 2
+    }
+  ],
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "semente_local": 20261109
+}

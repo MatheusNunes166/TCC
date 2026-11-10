@@ -1,0 +1,134 @@
+{
+  "data_consulta": "2026-11-09",
+  "moeda": "USD",
+  "fontes_publicas": [
+    "https://developers.openai.com/api/docs/models/gpt-6-sol",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://developers.openai.com/api/docs/pricing",
+    "https://developers.openai.com/api/docs/guides/reasoning"
+  ],
+  "precos_por_milhao": {
+    "gpt-6-sol": {
+      "entrada": 2,
+      "saida": 10
+    },
+    "gpt-6-astra": {
+      "entrada": 10,
+      "saida": 50
+    }
+  },
+  "modalidade": "Standard; contexto curto; sem descontos de cache",
+  "limite_saida": 4096,
+  "inclui_raciocinio_e_final": true,
+  "tokenizacao": "heuristica explicita por bytes UTF-8, sem tokenizer instalado; nao e contagem exata",
+  "hipoteses": "64 tentativas sem retries; sem ferramentas; sem taxas regionais/impostos; sem cache writes solicitados; um prompt textual independente. Nao pressupoe saldo anterior ou disponibilidade na conta. A API nao recebe service_tier explicito: confirmar Standard na conta antes de uso real.",
+  "orcamento_declarado_usd": null,
+  "teto_cobranca_garantido": false,
+  "interrupcao": "envio real bloqueado nesta preparacao; --limite restringe tentativas, nao dolares; timeout nao cancela faturamento remoto",
+  "cenarios": [
+    {
+      "nome": "central_1024_saida",
+      "bytes_por_token_hipotetico": 4,
+      "overhead_hipotetico_tokens_por_chamada": 128,
+      "modelos": {
+        "gpt-6-sol": {
+          "observacoes": 32,
+          "payload_bytes_total": 237672,
+          "tokens_entrada_estimados": 63528,
+          "tokens_saida_cenario": 32768,
+          "raciocinio_por_chamada_hipotetico": 768,
+          "final_por_chamada_hipotetico": 256,
+          "usd": 0.454736
+        },
+        "gpt-6-astra": {
+          "observacoes": 32,
+          "payload_bytes_total": 237672,
+          "tokens_entrada_estimados": 63528,
+          "tokens_saida_cenario": 32768,
+          "raciocinio_por_chamada_hipotetico": 768,
+          "final_por_chamada_hipotetico": 256,
+          "usd": 2.27368
+        }
+      },
+      "total_usd": 2.728416
+    },
+    {
+      "nome": "limite_saida_4096",
+      "bytes_por_token_hipotetico": 4,
+      "overhead_hipotetico_tokens_por_chamada": 128,
+      "modelos": {
+        "gpt-6-sol": {
+          "observacoes": 32,
+          "payload_bytes_total": 237672,
+          "tokens_entrada_estimados": 63528,
+          "tokens_saida_cenario": 131072,
+          "raciocinio_por_chamada_hipotetico": 3840,
+          "final_por_chamada_hipotetico": 256,
+          "usd": 1.437776
+        },
+        "gpt-6-astra": {
+          "observacoes": 32,
+          "payload_bytes_total": 237672,
+          "tokens_entrada_estimados": 63528,
+          "tokens_saida_cenario": 131072,
+          "raciocinio_por_chamada_hipotetico": 3840,
+          "final_por_chamada_hipotetico": 256,
+          "usd": 7.18888
+        }
+      },
+      "total_usd": 8.626656
+    },
+    {
+      "nome": "entrada_mais_densa_e_limite_saida",
+      "bytes_por_token_hipotetico": 2,
+      "overhead_hipotetico_tokens_por_chamada": 128,
+      "modelos": {
+        "gpt-6-sol": {
+          "observacoes": 32,
+          "payload_bytes_total": 237672,
+          "tokens_entrada_estimados": 122940,
+          "tokens_saida_cenario": 131072,
+          "raciocinio_por_chamada_hipotetico": 3840,
+          "final_por_chamada_hipotetico": 256,
+          "usd": 1.5566
+        },
+        "gpt-6-astra": {
+          "observacoes": 32,
+          "payload_bytes_total": 237672,
+          "tokens_entrada_estimados": 122940,
+          "tokens_saida_cenario": 131072,
+          "raciocinio_por_chamada_hipotetico": 3840,
+          "final_por_chamada_hipotetico": 256,
+          "usd": 7.783
+        }
+      },
+      "total_usd": 9.3396
+    },
+    {
+      "nome": "margem_um_token_por_byte",
+      "bytes_por_token_hipotetico": 1,
+      "overhead_hipotetico_tokens_por_chamada": 256,
+      "modelos": {
+        "gpt-6-sol": {
+          "observacoes": 32,
+          "payload_bytes_total": 237672,
+          "tokens_entrada_estimados": 245864,
+          "tokens_saida_cenario": 131072,
+          "raciocinio_por_chamada_hipotetico": 3840,
+          "final_por_chamada_hipotetico": 256,
+          "usd": 1.802448
+        },
+        "gpt-6-astra": {
+          "observacoes": 32,
+          "payload_bytes_total": 237672,
+          "tokens_entrada_estimados": 245864,
+          "tokens_saida_cenario": 131072,
+          "raciocinio_por_chamada_hipotetico": 3840,
+          "final_por_chamada_hipotetico": 256,
+          "usd": 9.01224
+        }
+      },
+      "total_usd": 10.814688
+    }
+  ]
+}

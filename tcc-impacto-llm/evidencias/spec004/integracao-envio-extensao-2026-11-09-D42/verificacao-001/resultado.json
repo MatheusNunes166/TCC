@@ -1,0 +1,42 @@
+{
+  "arquivos_anteriores_conferidos": 8543,
+  "captura_real_exercitada_somente_com_substituto_em_temporarios": true,
+  "chave_real_utilizada": false,
+  "comando": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "-B",
+    "evidencias/spec004/integracao-envio-extensao-2026-11-09-D42/verificar_offline.py"
+  ],
+  "conforme": true,
+  "divergencias_anteriores": [],
+  "duracao_segundos": 229.093,
+  "envios_api_reais": 0,
+  "erros": 0,
+  "falhas": 0,
+  "fontes_testadas_sha256": {
+    "coletor_api.py": "c26a3558a8b00b482cc6f34d8ed3add53ba31b25b1187737c3ad2a628b2001ed",
+    "coletor_piloto.py": "619d742f98cf9cc87f135f716a09ed432ba8e51af7837e811bea97363ed09c48",
+    "extensao_exploratoria.py": "6ce52a73b2cdac7aebdc79cf583ad29bfdb3d8541acb7d1ed3a7211418a70b9f",
+    "revisao_conformidade.py": "ba63d14293b6f68b9d93e667fcce709e624501ada8a1166011730ff0dd009bde",
+    "tests/test_envio_extensao.py": "efae0e9552d6417fb2ef3ca0a58a21dc75c47092bf15e3db736ad748ec4a52f7",
+    "tests/test_extensao_exploratoria.py": "4b13d49c271e3765676cba134fd3e0f5d07435b4742bbedcd5b88a056a763331"
+  },
+  "ignorados": 0,
+  "metodos": 52,
+  "modulos": [
+    "test_envio_extensao",
+    "test_extensao_exploratoria",
+    "test_coletor_api",
+    "test_transporte_api",
+    "test_revisao_conformidade",
+    "test_controles_cli"
+  ],
+  "orcamento_declarado_usd": "2",
+  "ordem_e_64_itens_payloads_preservados": true,
+  "ordem_json_literal_preservada": true,
+  "plano_vigente_sha256": "e00fd77c23e3b018cb3781e5ebee9b0d1b765e36e7c53fdf9eba8588e45c2e3e",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "rede_bloqueada_por_audit_hook": true,
+  "referencia_sha256_preservada": true,
+  "teto_monetario_implementado": false
+}

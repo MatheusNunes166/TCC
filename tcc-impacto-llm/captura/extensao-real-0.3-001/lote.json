@@ -1,0 +1,11 @@
+{
+  "catalogo_versao": "0.3",
+  "coletor_sha256": "c26a3558a8b00b482cc6f34d8ed3add53ba31b25b1187737c3ad2a628b2001ed",
+  "etapa": "extensao-0.3-D41",
+  "fase": "exploratoria",
+  "integracao": "envio-extensao-D42-v1",
+  "interface": "Responses API",
+  "origem": "real",
+  "plano_sha256": "e00fd77c23e3b018cb3781e5ebee9b0d1b765e36e7c53fdf9eba8588e45c2e3e",
+  "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9"
+}

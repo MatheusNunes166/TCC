@@ -1,0 +1,181 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "manifesto-original.json",
+      "sha256": "014df2ba580381dac8535f558e79859dac1cdfd8d7e9ed7c8377594fa1586824"
+    },
+    {
+      "arquivo": "autorizacao-original.json",
+      "sha256": "144d24763826a9a8606d8d3c765961c985602f75db2867bf011a9ab204a50b84"
+    },
+    {
+      "arquivo": "documentos/sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "documentos/definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "documentos/requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "documentos/catalogo-baseline.md",
+      "sha256": "45e67daac93905c6c88c67730b884e42c803113b3f7277c09ac0feba813ab5d4"
+    },
+    {
+      "arquivo": "documentos/mudanca.md",
+      "sha256": "2533dc368d1ba56c6151f470606438fe1e8d4ccda9773bcc907098099d4f852e"
+    },
+    {
+      "arquivo": "documentos/notas.md",
+      "sha256": "5e209b6e58ba986df05846f6d36c9464fbc3d669f70ab97d8d0014872dc00add"
+    },
+    {
+      "arquivo": "documentos/pedido.txt",
+      "sha256": "3898440d3b28447dfff6a1ac6782b299575e0b5bde15d8ebaa7cc9da08e23774"
+    },
+    {
+      "arquivo": "documentos/schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "payload.txt",
+      "sha256": "1c46cc61639a33b0fcad6ad00755b9c16d29e8801a91268dbc82ab7d5017aeb5"
+    },
+    {
+      "arquivo": "entrega-textual.json",
+      "sha256": "6f2dca026a3a1fc3f0676bf1072b2397c4bf37a3ad42757bb823b6a58d294171"
+    }
+  ],
+  "autorizacao_sha256": "144d24763826a9a8606d8d3c765961c985602f75db2867bf011a9ab204a50b84",
+  "catalogo_versao": "0.3",
+  "completo": true,
+  "condicao": "E1",
+  "configuracao_id": "ext-api-astra-1d9929c0ed2edab7",
+  "contrato": "spec004-v3",
+  "documentos": [
+    {
+      "arquivo": "sistema.txt",
+      "papel": "sistema",
+      "revisao_conteudo": {
+        "alcance": "catalogo ampliado conforme contratos; demais textos preservados; revisao cientifica pendente",
+        "data": "2026-11-09",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; preparacao autorizada D-41"
+      },
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053",
+      "tamanho_bytes": 354,
+      "versao": "recorte-D36-lf-2026-11-06"
+    },
+    {
+      "arquivo": "definicoes-comuns.md",
+      "papel": "definicoes-comuns",
+      "revisao_conteudo": {
+        "alcance": "catalogo ampliado conforme contratos; demais textos preservados; revisao cientifica pendente",
+        "data": "2026-11-09",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; preparacao autorizada D-41"
+      },
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e",
+      "tamanho_bytes": 2285,
+      "versao": "recorte-D36-lf-2026-11-06"
+    },
+    {
+      "arquivo": "requisitos-baseline.md",
+      "papel": "requisitos-baseline",
+      "revisao_conteudo": {
+        "alcance": "catalogo ampliado conforme contratos; demais textos preservados; revisao cientifica pendente",
+        "data": "2026-11-09",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; preparacao autorizada D-41"
+      },
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a",
+      "tamanho_bytes": 2114,
+      "versao": "recorte-D36-lf-2026-11-06"
+    },
+    {
+      "arquivo": "catalogo-baseline.md",
+      "papel": "catalogo-baseline",
+      "revisao_conteudo": {
+        "alcance": "catalogo ampliado conforme contratos; demais textos preservados; revisao cientifica pendente",
+        "data": "2026-11-09",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; preparacao autorizada D-41"
+      },
+      "sha256": "45e67daac93905c6c88c67730b884e42c803113b3f7277c09ac0feba813ab5d4",
+      "tamanho_bytes": 1186,
+      "versao": "catalogo-0.3"
+    },
+    {
+      "arquivo": "mudanca.md",
+      "papel": "mudanca",
+      "revisao_conteudo": {
+        "alcance": "catalogo ampliado conforme contratos; demais textos preservados; revisao cientifica pendente",
+        "data": "2026-11-09",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; preparacao autorizada D-41"
+      },
+      "sha256": "2533dc368d1ba56c6151f470606438fe1e8d4ccda9773bcc907098099d4f852e",
+      "tamanho_bytes": 40,
+      "versao": "recorte-D36-lf-2026-11-06"
+    },
+    {
+      "arquivo": "notas.md",
+      "papel": "notas",
+      "revisao_conteudo": {
+        "alcance": "catalogo ampliado conforme contratos; demais textos preservados; revisao cientifica pendente",
+        "data": "2026-11-09",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; preparacao autorizada D-41"
+      },
+      "sha256": "5e209b6e58ba986df05846f6d36c9464fbc3d669f70ab97d8d0014872dc00add",
+      "tamanho_bytes": 773,
+      "versao": "recorte-D36-lf-2026-11-06"
+    },
+    {
+      "arquivo": "pedido.txt",
+      "papel": "pedido",
+      "revisao_conteudo": {
+        "alcance": "catalogo ampliado conforme contratos; demais textos preservados; revisao cientifica pendente",
+        "data": "2026-11-09",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; preparacao autorizada D-41"
+      },
+      "sha256": "3898440d3b28447dfff6a1ac6782b299575e0b5bde15d8ebaa7cc9da08e23774",
+      "tamanho_bytes": 283,
+      "versao": "recorte-D36-lf-2026-11-06"
+    },
+    {
+      "arquivo": "schema_saida.json",
+      "papel": "schema_saida",
+      "revisao_conteudo": {
+        "alcance": "catalogo ampliado conforme contratos; demais textos preservados; revisao cientifica pendente",
+        "data": "2026-11-09",
+        "estado": "conferido_tecnicamente",
+        "responsavel": "assistente; preparacao autorizada D-41"
+      },
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21",
+      "tamanho_bytes": 430,
+      "versao": "recorte-D36-lf-2026-11-06"
+    }
+  ],
+  "fronteira": "conteudo_textual_sem_ferramentas",
+  "instante_utc": "2026-11-10T00:38:49.472346+00:00",
+  "isolamento_por_SO_alegado": false,
+  "liberado_para_pesquisa": false,
+  "manifesto_sha256": "014df2ba580381dac8535f558e79859dac1cdfd8d7e9ed7c8377594fa1586824",
+  "montador_sha256": "ed1d1fc0f2b4839d7079c35687058ee24bc0d2767b04ba188fe02f32f5d56d94",
+  "mudanca": "MC-01",
+  "pacote_id": "EXT03-gpt-6-astra-MC-01-E1",
+  "payload_sha256": "1c46cc61639a33b0fcad6ad00755b9c16d29e8801a91268dbc82ab7d5017aeb5",
+  "payload_tamanho": 7853,
+  "politica_bytes": "utf8-sem-bom-lf-v1",
+  "preparacao_id": "9840d3422df14296a009ff504bdec6a9",
+  "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+  "referencia_versao": "0.3",
+  "status": "PREPARADO_LOCAL_NAO_ENVIADO",
+  "status_notas": "RASCUNHO_NAO_REVISADO",
+  "versao_pacote": "extensao-0.3-D41"
+}

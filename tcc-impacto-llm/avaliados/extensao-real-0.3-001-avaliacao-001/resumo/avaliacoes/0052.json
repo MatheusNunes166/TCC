@@ -1,0 +1,191 @@
+{
+  "avaliacao_anterior": null,
+  "avaliacao_id": "d40f957b088b446d997f79e727c90866",
+  "avaliador_sha256": "a30077b5d8a3de06273e31c1d87d3f30c6af9e668951a48654114c08614c6b83",
+  "causa": null,
+  "causa_tecnica": null,
+  "completo": true,
+  "condicao": "E1",
+  "configuracao": {
+    "catalogo_versao": "0.3",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "esforco_solicitado": "medium",
+    "etapa": "extensao-0.3-D41",
+    "id": "ext-api-sol-c876e81f01df3a17",
+    "integracao": "envio-extensao-D42-v1",
+    "interface": "Responses API HTTP direto",
+    "limite_orcamento": "USD 2 de planejamento; risco aceito pelo pesquisador; sem controle automatico ou garantia de teto",
+    "limite_saida": "4096 inclui raciocinio e resposta final; proposta comum a ambos os modelos",
+    "max_output_tokens": 4096,
+    "modelo_solicitado": "gpt-6-sol",
+    "orcamento_declarado_usd": "2",
+    "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+    "retries_automaticos_cliente": 0,
+    "store": false,
+    "stream": false,
+    "timeout_segundos": 120,
+    "tool_choice": "none",
+    "tools": []
+  },
+  "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+  "conformidade_protocolo": "pendente",
+  "desvios": [],
+  "entrada_enviada_sha256": "14a538aa8c5fafbcbb61a25cd4d4fc4be339edd0d7082310931a153968e75b5e",
+  "estado_tecnico": "concluida",
+  "fase": "exploratoria",
+  "formato_contrato": "valido",
+  "fragmento": false,
+  "ids_conhecidos_por_dimensao": {
+    "requisitos": true,
+    "testes": true
+  },
+  "instante_execucao": "2026-11-10T02:17:18.279220+00:00",
+  "instante_utc": "2026-11-10T02:25:45.738934+00:00",
+  "json_sintatico": "valido",
+  "modelo_reportado": "gpt-6-sol",
+  "modelo_reportado_indisponibilidade": null,
+  "mudanca": "MC-04-v2",
+  "mudanca_pedida": "MC-04-v2",
+  "observacao_id": "EXT03-MC-04-v2-E1-SOL-R02",
+  "origem": "real",
+  "origem_resposta": "Responses API; envelope bruto preservado",
+  "payload_sha256": "14a538aa8c5fafbcbb61a25cd4d4fc4be339edd0d7082310931a153968e75b5e",
+  "politica": {
+    "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+    "status": "CANDIDATA_REVISAO_CIENTIFICA_PENDENTE",
+    "versao": "ids-proposta-004-v2"
+  },
+  "referencia": {
+    "sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+    "status": "CANDIDATO_NAO_REVISADO",
+    "versao": "0.3"
+  },
+  "repeticao": 2,
+  "requisitos": {
+    "FN": 0,
+    "FP": 0,
+    "G": [
+      "RF-03",
+      "RF-04"
+    ],
+    "S": [
+      "RF-03",
+      "RF-04"
+    ],
+    "TP": 2,
+    "acertos": [
+      "RF-03",
+      "RF-04"
+    ],
+    "desconhecidos": [],
+    "duplicatas": [],
+    "excedentes": [],
+    "lista_original": [
+      "RF-03",
+      "RF-04"
+    ],
+    "metricas_propostas": {
+      "correspondencia_exata": 1,
+      "f1": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "precisao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "revocacao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "selecao_completa": 1
+    },
+    "omissoes": []
+  },
+  "resposta_sha256": "bbf68c69327e6a76442c56465f8c6d5a37ae91253c1a2b09682e87ee5189cba7",
+  "somente_ids_conhecidos": true,
+  "status_avaliacao": "avaliada",
+  "tentativa_anterior": null,
+  "tentativa_id": "EXT03-MC-04-v2-E1-SOL-R02-T01",
+  "testes": {
+    "FN": 0,
+    "FP": 0,
+    "G": [
+      "T05",
+      "T07",
+      "T08",
+      "T10",
+      "T12",
+      "T13",
+      "T14",
+      "T15"
+    ],
+    "S": [
+      "T05",
+      "T07",
+      "T08",
+      "T10",
+      "T12",
+      "T13",
+      "T14",
+      "T15"
+    ],
+    "TP": 8,
+    "acertos": [
+      "T05",
+      "T07",
+      "T08",
+      "T10",
+      "T12",
+      "T13",
+      "T14",
+      "T15"
+    ],
+    "desconhecidos": [],
+    "duplicatas": [],
+    "excedentes": [],
+    "lista_original": [
+      "T05",
+      "T07",
+      "T08",
+      "T10",
+      "T12",
+      "T13",
+      "T14",
+      "T15"
+    ],
+    "metricas_propostas": {
+      "correspondencia_exata": 1,
+      "f1": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "precisao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "revocacao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "selecao_completa": 1
+    },
+    "omissoes": []
+  },
+  "versoes": {
+    "coletor": "coletor-responses-v1.3-D42",
+    "coletor_sha256": "c26a3558a8b00b482cc6f34d8ed3add53ba31b25b1187737c3ad2a628b2001ed"
+  }
+}

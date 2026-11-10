@@ -2,7 +2,13 @@
 
 Pesquisa sobre seleção de IDs de requisitos impactados e testes relevantes em uma bancada de permissões. Compara D0/D1/E0/E1, com e sem notas simuladas de analista, em mudanças independentes. Captura e avaliação são separadas; referência e justificativas são exclusivas do avaliador.
 
-**Comece pelo [estado atual e próximas tarefas](ESTADO_ATUAL.md).** Ele centraliza a situação do piloto e as pendências. Esta organização não autoriza chamadas externas ou coleta principal.
+**Comece pelo [estado atual e próximas tarefas](ESTADO_ATUAL.md).** Ele centraliza a situação do piloto e as pendências. A integração D-42 disponibiliza envio explícito da extensão; nenhuma chamada foi realizada na implementação.
+
+D-43: a captura real da extensão terminou e foi avaliada offline. [Relatório descritivo e comandos](avaliados/extensao-real-0.3-001-avaliacao-001/RELATORIO.md), [tabelas por modelo/mudança/condição](avaliados/extensao-real-0.3-001-avaliacao-001/TABELAS.md) e [revisão de conformidade pendente](avaliados/extensao-real-0.3-001-avaliacao-001/revisao-conformidade-pendente.json). São 64 respostas válidas; testes exatos 64/64; requisitos Sol 28/32 e Astra 32/32, com quatro excedentes em Sol/MC-02. Nenhuma conformidade foi aprovada automaticamente; o resumo controlado permanece bloqueado.
+
+Preparação offline D-41: [catálogo e referência candidata 0.3](documentacao/referencia-candidata-0.3.md), [plano de 64 observações](captura/extensao-20261109-002/plano.json) e [verificação offline, comandos e custo](evidencias/spec004/extensao-2026-11-09/RELATORIO.md). O catálogo 0.2 e os dados do piloto abaixo são preservados como versão anterior; a revisão do piloto foi declarada concluída pelo pesquisador. Essa entrega antecede a captura real descrita em D-43.
+
+D-42 integra o envio real mediante flag explícita, sem executar chamadas nesta implementação. Plano operacional vigente: [extensão 003](captura/extensao-20261109-003/plano.json), com mesmos textos e ordem do 002 e orçamento de planejamento USD 2, sem garantia de teto. [Relatório e comandos absolutos](evidencias/spec004/integracao-envio-extensao-2026-11-09-D42/RELATORIO.md).
 
 | Procurar | Caminho |
 |---|---|

@@ -1,0 +1,20 @@
+{
+  "gpt-6-astra": {
+    "cache_write_tokens_reportados_subconjunto_entrada": 28144,
+    "cached_tokens_subconjunto_entrada": 28144,
+    "input_tokens": 56384,
+    "observacoes": 32,
+    "output_tokens": 3373,
+    "reasoning_tokens_subconjunto_saida": 1693,
+    "total_tokens": 59757
+  },
+  "gpt-6-sol": {
+    "cache_write_tokens_reportados_subconjunto_entrada": 28144,
+    "cached_tokens_subconjunto_entrada": 28144,
+    "input_tokens": 56384,
+    "observacoes": 32,
+    "output_tokens": 5878,
+    "reasoning_tokens_subconjunto_saida": 4439,
+    "total_tokens": 62262
+  }
+}

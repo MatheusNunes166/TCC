@@ -2,6 +2,10 @@
 
 Situação operacional: [estado atual](../ESTADO_ATUAL.md). Integração API D-39 e análise CLI D-38: [decisões](decisoes.md), com evidências e limites datados. [Operação API](operacao-api.md).
 
+D-42: o comando `extensao_exploratoria.py iniciar --enviar-real` usa o mesmo motor API com configuração por observação e fase real exploratória; limita tentativas e retoma conclusões sem reenvio. O plano 003 preserva textos/ordem do 002 e registra orçamento USD 2 sem teto garantido. Avaliação em lote e revisão de conformidade aceitam essa fase em comandos separados. A fonte/trava da CLI não muda. [Integração e evidências](../evidencias/spec004/integracao-envio-extensao-2026-11-09-D42/RELATORIO.md). O bloco D-41 abaixo descreve a preparação anterior, preservada.
+
+D-41: `extensao_exploratoria.py` prepara o catálogo 0.3 em 32 preparações para dois modelos e 64 posições; reutiliza o montador e o motor de captura API. O motor seleciona a configuração identificada em cada observação e mantém envio real da extensão bloqueado. O avaliador reconhece os quinze IDs apenas na referência 0.3, ligada à preparação por hash/versão. [Artefatos e controles](../evidencias/spec004/extensao-2026-11-09/RELATORIO.md). As descrições de doze casos abaixo documentam a versão anterior, preservada.
+
 ## Componentes e responsabilidades
 
 | Componente | Responsabilidade |

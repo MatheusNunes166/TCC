@@ -1,0 +1,5772 @@
+{
+  "N_avaliacoes": 64,
+  "N_planejado": 64,
+  "acertos_omissoes_excedentes": "somados nas duas respostas por celula; nao sao denominadores da media macro",
+  "agregacao_PRF": "media aritmetica por resposta valida (macro), conforme _grupo existente; sem imputacao",
+  "celulas": [
+    {
+      "condicao": "D0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 2,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 8,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "3ceb435082ac43e8af6ec700f720c2c4",
+          "94b7f2c72c6a47b186dcec028209d3d6"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-01-D0-SOL-R01",
+                  "EXT03-MC-01-D0-SOL-R02"
+                ],
+                "uniao": 1,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 4,
+                "observacoes": [
+                  "EXT03-MC-01-D0-SOL-R01",
+                  "EXT03-MC-01-D0-SOL-R02"
+                ],
+                "uniao": 4,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-01",
+      "observacoes": [
+        "EXT03-MC-01-D0-SOL-R01",
+        "EXT03-MC-01-D0-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 2,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 8,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "ab9348b68e3c40aba689ef1a9e236e62",
+          "cc4368109e094428a258374ab25b36bb"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-01-D1-SOL-R01",
+                  "EXT03-MC-01-D1-SOL-R02"
+                ],
+                "uniao": 1,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 4,
+                "observacoes": [
+                  "EXT03-MC-01-D1-SOL-R01",
+                  "EXT03-MC-01-D1-SOL-R02"
+                ],
+                "uniao": 4,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-01",
+      "observacoes": [
+        "EXT03-MC-01-D1-SOL-R01",
+        "EXT03-MC-01-D1-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 2,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 8,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "bcffcff232c24feaa410e5b5da3d8e2a",
+          "c349337d6f894eaba110a747cea2739f"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-01-E0-SOL-R01",
+                  "EXT03-MC-01-E0-SOL-R02"
+                ],
+                "uniao": 1,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 4,
+                "observacoes": [
+                  "EXT03-MC-01-E0-SOL-R01",
+                  "EXT03-MC-01-E0-SOL-R02"
+                ],
+                "uniao": 4,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-01",
+      "observacoes": [
+        "EXT03-MC-01-E0-SOL-R01",
+        "EXT03-MC-01-E0-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 2,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 8,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "573f6f83c0564f1390e8c1cbd337d040",
+          "7f42e88cbd464a08870a9498e81bdf89"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-01-E1-SOL-R01",
+                  "EXT03-MC-01-E1-SOL-R02"
+                ],
+                "uniao": 1,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 4,
+                "observacoes": [
+                  "EXT03-MC-01-E1-SOL-R01",
+                  "EXT03-MC-01-E1-SOL-R02"
+                ],
+                "uniao": 4,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-01",
+      "observacoes": [
+        "EXT03-MC-01-E1-SOL-R01",
+        "EXT03-MC-01-E1-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 2,
+          "TP": 2,
+          "correspondencias_exatas": 1,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 12,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "d5e508cd1c9e4ee88bf8c5b909a6347a",
+          "cb28b1e1aa09467a9483e3e2f5dd0bff"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-02-D0-SOL-R01",
+                  "EXT03-MC-02-D0-SOL-R02"
+                ],
+                "uniao": 3,
+                "valor": {
+                  "decimal": "0.333333",
+                  "denominador": 3,
+                  "fracao": "1/3",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "0.333333",
+              "denominador": 3,
+              "fracao": "1/3",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 6,
+                "observacoes": [
+                  "EXT03-MC-02-D0-SOL-R01",
+                  "EXT03-MC-02-D0-SOL-R02"
+                ],
+                "uniao": 6,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "0.750000",
+              "denominador": 4,
+              "fracao": "3/4",
+              "numerador": 3
+            },
+            "precisao": {
+              "decimal": "0.666667",
+              "denominador": 3,
+              "fracao": "2/3",
+              "numerador": 2
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacoes": [
+        "EXT03-MC-02-D0-SOL-R01",
+        "EXT03-MC-02-D0-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 0,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 2,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 12,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "d54a5c5ce44d42cd98a4c995d8d17ce3",
+          "ace31b73f0674763a458da5ee0460d8e"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-02-D1-SOL-R01",
+                  "EXT03-MC-02-D1-SOL-R02"
+                ],
+                "uniao": 1,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 6,
+                "observacoes": [
+                  "EXT03-MC-02-D1-SOL-R01",
+                  "EXT03-MC-02-D1-SOL-R02"
+                ],
+                "uniao": 6,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacoes": [
+        "EXT03-MC-02-D1-SOL-R01",
+        "EXT03-MC-02-D1-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 4,
+          "TP": 2,
+          "correspondencias_exatas": 0,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 12,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "be8e52d95a304db4a9e6bbe814fe8813",
+          "8c0d1f53f0794688befa283f99c02579"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 3,
+                "observacoes": [
+                  "EXT03-MC-02-E0-SOL-R01",
+                  "EXT03-MC-02-E0-SOL-R02"
+                ],
+                "uniao": 3,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 6,
+                "observacoes": [
+                  "EXT03-MC-02-E0-SOL-R01",
+                  "EXT03-MC-02-E0-SOL-R02"
+                ],
+                "uniao": 6,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "0.500000",
+              "denominador": 2,
+              "fracao": "1/2",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "0.333333",
+              "denominador": 3,
+              "fracao": "1/3",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacoes": [
+        "EXT03-MC-02-E0-SOL-R01",
+        "EXT03-MC-02-E0-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 2,
+          "TP": 2,
+          "correspondencias_exatas": 1,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 12,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "ae170b398f3d4918b059f3aec447dc5b",
+          "d6d462c5a16a40ef8e13d88a5ce9aa72"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-02-E1-SOL-R01",
+                  "EXT03-MC-02-E1-SOL-R02"
+                ],
+                "uniao": 3,
+                "valor": {
+                  "decimal": "0.333333",
+                  "denominador": 3,
+                  "fracao": "1/3",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "0.333333",
+              "denominador": 3,
+              "fracao": "1/3",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 6,
+                "observacoes": [
+                  "EXT03-MC-02-E1-SOL-R01",
+                  "EXT03-MC-02-E1-SOL-R02"
+                ],
+                "uniao": 6,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "0.750000",
+              "denominador": 4,
+              "fracao": "3/4",
+              "numerador": 3
+            },
+            "precisao": {
+              "decimal": "0.666667",
+              "denominador": 3,
+              "fracao": "2/3",
+              "numerador": 2
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacoes": [
+        "EXT03-MC-02-E1-SOL-R01",
+        "EXT03-MC-02-E1-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 0,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 18,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "1055905bd4c444f18041750d547a2f79",
+          "215e9df442db4fab85f499ebaf03d90f"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-03-D0-SOL-R01",
+                  "EXT03-MC-03-D0-SOL-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 9,
+                "observacoes": [
+                  "EXT03-MC-03-D0-SOL-R01",
+                  "EXT03-MC-03-D0-SOL-R02"
+                ],
+                "uniao": 9,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-03",
+      "observacoes": [
+        "EXT03-MC-03-D0-SOL-R01",
+        "EXT03-MC-03-D0-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 18,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "3ac409d73cbb45a2b54321a9c495f370",
+          "9dc07d39f250400cb7dd28b336e85b02"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-03-D1-SOL-R01",
+                  "EXT03-MC-03-D1-SOL-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 9,
+                "observacoes": [
+                  "EXT03-MC-03-D1-SOL-R01",
+                  "EXT03-MC-03-D1-SOL-R02"
+                ],
+                "uniao": 9,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-03",
+      "observacoes": [
+        "EXT03-MC-03-D1-SOL-R01",
+        "EXT03-MC-03-D1-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 18,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "0645eb94b10f4c7090d630ef199cd27f",
+          "32e0a065a9e248a18063daabe0b2b5a7"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-03-E0-SOL-R01",
+                  "EXT03-MC-03-E0-SOL-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 9,
+                "observacoes": [
+                  "EXT03-MC-03-E0-SOL-R01",
+                  "EXT03-MC-03-E0-SOL-R02"
+                ],
+                "uniao": 9,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-03",
+      "observacoes": [
+        "EXT03-MC-03-E0-SOL-R01",
+        "EXT03-MC-03-E0-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 18,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "0a778422d61540b89a4aa36c00a208f0",
+          "75c25df1f6b34a67908fb56397c7e1bf"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-03-E1-SOL-R01",
+                  "EXT03-MC-03-E1-SOL-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 9,
+                "observacoes": [
+                  "EXT03-MC-03-E1-SOL-R01",
+                  "EXT03-MC-03-E1-SOL-R02"
+                ],
+                "uniao": 9,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-03",
+      "observacoes": [
+        "EXT03-MC-03-E1-SOL-R01",
+        "EXT03-MC-03-E1-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "5c003a54ad3042088b35425ddda81189",
+          "1cdce78fe28b4ace99b0ce938ba6b23d"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-04-v2-D0-SOL-R01",
+                  "EXT03-MC-04-v2-D0-SOL-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "EXT03-MC-04-v2-D0-SOL-R01",
+                  "EXT03-MC-04-v2-D0-SOL-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "observacoes": [
+        "EXT03-MC-04-v2-D0-SOL-R01",
+        "EXT03-MC-04-v2-D0-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "9f79939b23384929afbe7cb10e73f2ff",
+          "ddd90c6da1d84ae7b0883c515786eb4d"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-04-v2-D1-SOL-R01",
+                  "EXT03-MC-04-v2-D1-SOL-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "EXT03-MC-04-v2-D1-SOL-R01",
+                  "EXT03-MC-04-v2-D1-SOL-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "observacoes": [
+        "EXT03-MC-04-v2-D1-SOL-R01",
+        "EXT03-MC-04-v2-D1-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "0da3768b60cc465a82cf04973decf5e6",
+          "24c4696d3a7a4bd6a858f319cc3be55e"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-04-v2-E0-SOL-R01",
+                  "EXT03-MC-04-v2-E0-SOL-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "EXT03-MC-04-v2-E0-SOL-R01",
+                  "EXT03-MC-04-v2-E0-SOL-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "observacoes": [
+        "EXT03-MC-04-v2-E0-SOL-R01",
+        "EXT03-MC-04-v2-E0-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "a92578258dbd430a8a271486e9751183",
+          "d40f957b088b446d997f79e727c90866"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-04-v2-E1-SOL-R01",
+                  "EXT03-MC-04-v2-E1-SOL-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "EXT03-MC-04-v2-E1-SOL-R01",
+                  "EXT03-MC-04-v2-E1-SOL-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "observacoes": [
+        "EXT03-MC-04-v2-E1-SOL-R01",
+        "EXT03-MC-04-v2-E1-SOL-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 2,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 8,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "652fbd274ccb4cfb89a65fc372b95182",
+          "df13d8382e694ca4bbf1072acba9fd85"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-01-D0-ASTRA-R01",
+                  "EXT03-MC-01-D0-ASTRA-R02"
+                ],
+                "uniao": 1,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 4,
+                "observacoes": [
+                  "EXT03-MC-01-D0-ASTRA-R01",
+                  "EXT03-MC-01-D0-ASTRA-R02"
+                ],
+                "uniao": 4,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-01",
+      "observacoes": [
+        "EXT03-MC-01-D0-ASTRA-R01",
+        "EXT03-MC-01-D0-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 2,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 8,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "7ba1b76967104eb3b951e412a8475be1",
+          "b4ca34a3d5984ed8aaa5970177e9a3bb"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-01-D1-ASTRA-R01",
+                  "EXT03-MC-01-D1-ASTRA-R02"
+                ],
+                "uniao": 1,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 4,
+                "observacoes": [
+                  "EXT03-MC-01-D1-ASTRA-R01",
+                  "EXT03-MC-01-D1-ASTRA-R02"
+                ],
+                "uniao": 4,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-01",
+      "observacoes": [
+        "EXT03-MC-01-D1-ASTRA-R01",
+        "EXT03-MC-01-D1-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 2,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 8,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "c09399c595ae47d8b9bfbf2ae7aef13c",
+          "af2b9e6b57754ae58dbfec6b0ad096be"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-01-E0-ASTRA-R01",
+                  "EXT03-MC-01-E0-ASTRA-R02"
+                ],
+                "uniao": 1,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 4,
+                "observacoes": [
+                  "EXT03-MC-01-E0-ASTRA-R01",
+                  "EXT03-MC-01-E0-ASTRA-R02"
+                ],
+                "uniao": 4,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-01",
+      "observacoes": [
+        "EXT03-MC-01-E0-ASTRA-R01",
+        "EXT03-MC-01-E0-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 2,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 8,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "77e21c5e725f4cc98873713c45367fe1",
+          "117ddc0d9e554985995c69357800d834"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-01-E1-ASTRA-R01",
+                  "EXT03-MC-01-E1-ASTRA-R02"
+                ],
+                "uniao": 1,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 4,
+                "observacoes": [
+                  "EXT03-MC-01-E1-ASTRA-R01",
+                  "EXT03-MC-01-E1-ASTRA-R02"
+                ],
+                "uniao": 4,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-01",
+      "observacoes": [
+        "EXT03-MC-01-E1-ASTRA-R01",
+        "EXT03-MC-01-E1-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 2,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 12,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "1fbe5f073c1e4a62952e7dd9c1d95121",
+          "2a05ad2642384e1b8d49e98dcdf71c35"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-02-D0-ASTRA-R01",
+                  "EXT03-MC-02-D0-ASTRA-R02"
+                ],
+                "uniao": 1,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 6,
+                "observacoes": [
+                  "EXT03-MC-02-D0-ASTRA-R01",
+                  "EXT03-MC-02-D0-ASTRA-R02"
+                ],
+                "uniao": 6,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-02",
+      "observacoes": [
+        "EXT03-MC-02-D0-ASTRA-R01",
+        "EXT03-MC-02-D0-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 2,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 12,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "164f7bd82213454abf46f3ba720d870d",
+          "7ccc32a4638743058c639070ed329c31"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-02-D1-ASTRA-R01",
+                  "EXT03-MC-02-D1-ASTRA-R02"
+                ],
+                "uniao": 1,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 6,
+                "observacoes": [
+                  "EXT03-MC-02-D1-ASTRA-R01",
+                  "EXT03-MC-02-D1-ASTRA-R02"
+                ],
+                "uniao": 6,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-02",
+      "observacoes": [
+        "EXT03-MC-02-D1-ASTRA-R01",
+        "EXT03-MC-02-D1-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 2,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 12,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "4c066711f67945a49c8b15106a925b10",
+          "374f026340af41eea6edc25a69aaf54d"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-02-E0-ASTRA-R01",
+                  "EXT03-MC-02-E0-ASTRA-R02"
+                ],
+                "uniao": 1,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 6,
+                "observacoes": [
+                  "EXT03-MC-02-E0-ASTRA-R01",
+                  "EXT03-MC-02-E0-ASTRA-R02"
+                ],
+                "uniao": 6,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-02",
+      "observacoes": [
+        "EXT03-MC-02-E0-ASTRA-R01",
+        "EXT03-MC-02-E0-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 2,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 12,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "67c83446373544688fbc908aa2eb8fec",
+          "f102f9fbdb964507afb7a01b0bbfb162"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 1,
+                "observacoes": [
+                  "EXT03-MC-02-E1-ASTRA-R01",
+                  "EXT03-MC-02-E1-ASTRA-R02"
+                ],
+                "uniao": 1,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 6,
+                "observacoes": [
+                  "EXT03-MC-02-E1-ASTRA-R01",
+                  "EXT03-MC-02-E1-ASTRA-R02"
+                ],
+                "uniao": 6,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-02",
+      "observacoes": [
+        "EXT03-MC-02-E1-ASTRA-R01",
+        "EXT03-MC-02-E1-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 18,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "e8032f23ed0c46c98a79a00983fc91f0",
+          "f1991cc79ccb4940bc74f5e389c0cc1a"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-03-D0-ASTRA-R01",
+                  "EXT03-MC-03-D0-ASTRA-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 9,
+                "observacoes": [
+                  "EXT03-MC-03-D0-ASTRA-R01",
+                  "EXT03-MC-03-D0-ASTRA-R02"
+                ],
+                "uniao": 9,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-03",
+      "observacoes": [
+        "EXT03-MC-03-D0-ASTRA-R01",
+        "EXT03-MC-03-D0-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 18,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "9d02f5d284eb45e798cba1494eae5692",
+          "3486d6b35dfd4b608b8bc8b3b7565f7c"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-03-D1-ASTRA-R01",
+                  "EXT03-MC-03-D1-ASTRA-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 9,
+                "observacoes": [
+                  "EXT03-MC-03-D1-ASTRA-R01",
+                  "EXT03-MC-03-D1-ASTRA-R02"
+                ],
+                "uniao": 9,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-03",
+      "observacoes": [
+        "EXT03-MC-03-D1-ASTRA-R01",
+        "EXT03-MC-03-D1-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 18,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "5d00f886e09f4d71b1e056bc7b267e95",
+          "ace98450e8b64e64b6b04cdccd875d13"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-03-E0-ASTRA-R01",
+                  "EXT03-MC-03-E0-ASTRA-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 9,
+                "observacoes": [
+                  "EXT03-MC-03-E0-ASTRA-R01",
+                  "EXT03-MC-03-E0-ASTRA-R02"
+                ],
+                "uniao": 9,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-03",
+      "observacoes": [
+        "EXT03-MC-03-E0-ASTRA-R01",
+        "EXT03-MC-03-E0-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 18,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "76ecfcbf56ac4e5f80b21f93771614f2",
+          "65d114bb53fb415a9e1a0b42f7fdd0ef"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-03-E1-ASTRA-R01",
+                  "EXT03-MC-03-E1-ASTRA-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 9,
+                "observacoes": [
+                  "EXT03-MC-03-E1-ASTRA-R01",
+                  "EXT03-MC-03-E1-ASTRA-R02"
+                ],
+                "uniao": 9,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-03",
+      "observacoes": [
+        "EXT03-MC-03-E1-ASTRA-R01",
+        "EXT03-MC-03-E1-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "797b0018e82246caa15823b467202637",
+          "c6e8d583883c4b6c8a6c1650d8af96ca"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-04-v2-D0-ASTRA-R01",
+                  "EXT03-MC-04-v2-D0-ASTRA-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "EXT03-MC-04-v2-D0-ASTRA-R01",
+                  "EXT03-MC-04-v2-D0-ASTRA-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "observacoes": [
+        "EXT03-MC-04-v2-D0-ASTRA-R01",
+        "EXT03-MC-04-v2-D0-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "D1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "7cb9825b0f644ca99e96937439d481d4",
+          "ada76da4177243daa998a6271896fcd3"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-04-v2-D1-ASTRA-R01",
+                  "EXT03-MC-04-v2-D1-ASTRA-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "EXT03-MC-04-v2-D1-ASTRA-R01",
+                  "EXT03-MC-04-v2-D1-ASTRA-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "observacoes": [
+        "EXT03-MC-04-v2-D1-ASTRA-R01",
+        "EXT03-MC-04-v2-D1-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E0",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "3c04f392e7764e438b3818bef2d2b0aa",
+          "57e720b0bd0447368b4bf68892741ff1"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-04-v2-E0-ASTRA-R01",
+                  "EXT03-MC-04-v2-E0-ASTRA-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "EXT03-MC-04-v2-E0-ASTRA-R01",
+                  "EXT03-MC-04-v2-E0-ASTRA-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "observacoes": [
+        "EXT03-MC-04-v2-E0-ASTRA-R01",
+        "EXT03-MC-04-v2-E0-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    },
+    {
+      "condicao": "E1",
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "correspondencias_exatas": 2,
+          "denominador_exatas": 2,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "8e17a5297ff54b399262fe5e35b19051",
+          "9d07ef8dc9254d7c9848a82ef824b3f0"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "EXT03-MC-04-v2-E1-ASTRA-R01",
+                  "EXT03-MC-04-v2-E1-ASTRA-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "EXT03-MC-04-v2-E1-ASTRA-R01",
+                  "EXT03-MC-04-v2-E1-ASTRA-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "observacoes": [
+        "EXT03-MC-04-v2-E1-ASTRA-R01",
+        "EXT03-MC-04-v2-E1-ASTRA-R02"
+      ],
+      "pares_previstos": 1,
+      "pares_selecao_igual": {
+        "requisitos": 1,
+        "testes": 1
+      }
+    }
+  ],
+  "conformidade_aprovada": 0,
+  "conformidade_pendente": 64,
+  "consistencia": "um par por celula; Jaccard de conjuntos; igualdade nao significa acerto",
+  "criterios_alterados": false,
+  "divergencias": [
+    {
+      "G": [
+        "RF-04"
+      ],
+      "S": [
+        "RF-02",
+        "RF-03",
+        "RF-04"
+      ],
+      "acertos": [
+        "RF-04"
+      ],
+      "avaliacao_arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\\EXT03-MC-02-D0-SOL-R02\\T01\\avaliacao.json",
+      "condicao": "D0",
+      "desconhecidos": [],
+      "dimensao": "requisitos",
+      "duplicatas": [],
+      "excedentes": [
+        "RF-02",
+        "RF-03"
+      ],
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-D0-SOL-R02",
+      "omissoes": [],
+      "repeticao": 2
+    },
+    {
+      "G": [
+        "RF-04"
+      ],
+      "S": [
+        "RF-02",
+        "RF-03",
+        "RF-04"
+      ],
+      "acertos": [
+        "RF-04"
+      ],
+      "avaliacao_arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\\EXT03-MC-02-E0-SOL-R01\\T01\\avaliacao.json",
+      "condicao": "E0",
+      "desconhecidos": [],
+      "dimensao": "requisitos",
+      "duplicatas": [],
+      "excedentes": [
+        "RF-02",
+        "RF-03"
+      ],
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-E0-SOL-R01",
+      "omissoes": [],
+      "repeticao": 1
+    },
+    {
+      "G": [
+        "RF-04"
+      ],
+      "S": [
+        "RF-02",
+        "RF-03",
+        "RF-04"
+      ],
+      "acertos": [
+        "RF-04"
+      ],
+      "avaliacao_arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\\EXT03-MC-02-E0-SOL-R02\\T01\\avaliacao.json",
+      "condicao": "E0",
+      "desconhecidos": [],
+      "dimensao": "requisitos",
+      "duplicatas": [],
+      "excedentes": [
+        "RF-02",
+        "RF-03"
+      ],
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-E0-SOL-R02",
+      "omissoes": [],
+      "repeticao": 2
+    },
+    {
+      "G": [
+        "RF-04"
+      ],
+      "S": [
+        "RF-02",
+        "RF-03",
+        "RF-04"
+      ],
+      "acertos": [
+        "RF-04"
+      ],
+      "avaliacao_arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\\EXT03-MC-02-E1-SOL-R01\\T01\\avaliacao.json",
+      "condicao": "E1",
+      "desconhecidos": [],
+      "dimensao": "requisitos",
+      "duplicatas": [],
+      "excedentes": [
+        "RF-02",
+        "RF-03"
+      ],
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-02",
+      "observacao_id": "EXT03-MC-02-E1-SOL-R01",
+      "omissoes": [],
+      "repeticao": 1
+    }
+  ],
+  "fase": "exploratoria",
+  "natureza": "DESCRITIVO_CONFORMIDADE_PENDENTE",
+  "origem": "real",
+  "politica": "ids-proposta-004-v2",
+  "por_modelo": {
+    "gpt-6-astra": {
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 48,
+          "correspondencias_exatas": 32,
+          "denominador_exatas": 32,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 216,
+          "correspondencias_exatas": 32,
+          "denominador_exatas": 32,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "contagens": {
+          "A": 32,
+          "C": 32,
+          "I": 0,
+          "K": 32,
+          "N": 32,
+          "T": 0,
+          "V": 32
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      }
+    },
+    "gpt-6-sol": {
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 8,
+          "TP": 48,
+          "correspondencias_exatas": 28,
+          "denominador_exatas": 32,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 216,
+          "correspondencias_exatas": 32,
+          "denominador_exatas": 32,
+          "respostas_com_desconhecidos": 0,
+          "respostas_com_duplicatas": 0
+        }
+      },
+      "descritivo": {
+        "contagens": {
+          "A": 32,
+          "C": 32,
+          "I": 0,
+          "K": 32,
+          "N": 32,
+          "T": 0,
+          "V": 32
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "0.937500",
+              "denominador": 16,
+              "fracao": "15/16",
+              "numerador": 15
+            },
+            "precisao": {
+              "decimal": "0.916667",
+              "denominador": 12,
+              "fracao": "11/12",
+              "numerador": 11
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+  "referencia_versao": "0.3",
+  "tokens": {
+    "gpt-6-astra": {
+      "cache_write_tokens_reportados_subconjunto_entrada": 28144,
+      "cached_tokens_subconjunto_entrada": 28144,
+      "input_tokens": 56384,
+      "observacoes": 32,
+      "output_tokens": 3373,
+      "reasoning_tokens_subconjunto_saida": 1693,
+      "total_tokens": 59757
+    },
+    "gpt-6-sol": {
+      "cache_write_tokens_reportados_subconjunto_entrada": 28144,
+      "cached_tokens_subconjunto_entrada": 28144,
+      "input_tokens": 56384,
+      "observacoes": 32,
+      "output_tokens": 5878,
+      "reasoning_tokens_subconjunto_saida": 4439,
+      "total_tokens": 62262
+    }
+  }
+}

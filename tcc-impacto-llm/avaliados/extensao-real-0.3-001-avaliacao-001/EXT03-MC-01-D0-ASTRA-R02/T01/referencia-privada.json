@@ -1,0 +1,588 @@
+{
+  "status": "CANDIDATO_NAO_REVISADO",
+  "versao": "0.3",
+  "revisor": null,
+  "data_revisao": null,
+  "observacao": "D-41, 09/11/2026. Expectativas deduzidas dos contratos antes da execucao local; T01-T12 preservados. Referencia para revisao do pesquisador; sem aprovacao externa.",
+  "mudancas": [
+    {
+      "id": "MC-01",
+      "text": "Retirar Auditoria → exportar.",
+      "tipo": "Direto",
+      "rfs": [
+        "RF-02"
+      ],
+      "tests": [
+        "T04",
+        "T12",
+        "T14",
+        "T15"
+      ],
+      "changed": [
+        "T04"
+      ],
+      "preserved": [
+        "T12",
+        "T14",
+        "T15"
+      ],
+      "expected": {
+        "T01": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T02": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T03": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T04": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T05": {
+          "decisao": "permitir",
+          "motivo": "permissao_herdada"
+        },
+        "T06": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T07": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T08": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T09": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T10": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T11": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T12": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T13": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T14": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T15": {
+          "decisao": "negar",
+          "motivo": "estado"
+        }
+      },
+      "justificativas_adicionais": {
+        "T13": "Excluir: visualizar, nao exportar.",
+        "T14": "Preservacao: exportar/Auditoria efetivo; conflito precede permissao removida.",
+        "T15": "Preservacao: exportar/Auditoria efetivo; estado mascara conflito e concessao."
+      }
+    },
+    {
+      "id": "MC-02",
+      "text": "Retirar a incompatibilidade Consulta + Auditoria.",
+      "tipo": "Direto",
+      "rfs": [
+        "RF-04"
+      ],
+      "tests": [
+        "T06",
+        "T07",
+        "T11",
+        "T12",
+        "T14",
+        "T15"
+      ],
+      "changed": [
+        "T06",
+        "T07",
+        "T12",
+        "T14"
+      ],
+      "preserved": [
+        "T11",
+        "T15"
+      ],
+      "expected": {
+        "T01": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T02": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T03": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T04": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T05": {
+          "decisao": "permitir",
+          "motivo": "permissao_herdada"
+        },
+        "T06": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T07": {
+          "decisao": "permitir",
+          "motivo": "permissao_herdada"
+        },
+        "T08": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T09": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T10": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T11": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T12": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T13": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T14": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T15": {
+          "decisao": "negar",
+          "motivo": "estado"
+        }
+      },
+      "justificativas_adicionais": {
+        "T13": "Excluir: falta Auditoria no par efetivo.",
+        "T14": "Mudanca: retirado conflito, Auditoria concede exportar diretamente.",
+        "T15": "Preservacao: par efetivo presente; estado prevalece mesmo sem conflito."
+      }
+    },
+    {
+      "id": "MC-03",
+      "text": "Retirar Consulta → visualizar.",
+      "tipo": "Propagado",
+      "rfs": [
+        "RF-02",
+        "RF-03"
+      ],
+      "tests": [
+        "T01",
+        "T02",
+        "T05",
+        "T06",
+        "T07",
+        "T09",
+        "T10",
+        "T11",
+        "T13"
+      ],
+      "changed": [
+        "T02",
+        "T05",
+        "T13"
+      ],
+      "preserved": [
+        "T01",
+        "T06",
+        "T07",
+        "T09",
+        "T10",
+        "T11"
+      ],
+      "expected": {
+        "T01": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T02": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T03": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T04": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T05": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T06": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T07": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T08": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T09": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T10": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T11": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T12": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T13": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T14": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T15": {
+          "decisao": "negar",
+          "motivo": "estado"
+        }
+      },
+      "justificativas_adicionais": {
+        "T13": "Mudanca: visualizar/Consulta efetivo; perde concessoes direta e herdada.",
+        "T14": "Excluir: exportar, nao visualizar; conflito intacto.",
+        "T15": "Excluir: exportar, nao visualizar; estado prevalece."
+      }
+    },
+    {
+      "id": "MC-04-v2",
+      "text": "Retirar Supervisão → Consulta da herança.",
+      "tipo": "Propagado",
+      "rfs": [
+        "RF-03",
+        "RF-04"
+      ],
+      "tests": [
+        "T05",
+        "T07",
+        "T08",
+        "T10",
+        "T12",
+        "T13",
+        "T14",
+        "T15"
+      ],
+      "changed": [
+        "T05",
+        "T07",
+        "T12"
+      ],
+      "preserved": [
+        "T08",
+        "T10",
+        "T13",
+        "T14",
+        "T15"
+      ],
+      "expected": {
+        "T01": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T02": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T03": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T04": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T05": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T06": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T07": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T08": {
+          "decisao": "negar",
+          "motivo": "sem_permissao"
+        },
+        "T09": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T10": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T11": {
+          "decisao": "negar",
+          "motivo": "estado"
+        },
+        "T12": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T13": {
+          "decisao": "permitir",
+          "motivo": "permissao_direta"
+        },
+        "T14": {
+          "decisao": "negar",
+          "motivo": "conflito"
+        },
+        "T15": {
+          "decisao": "negar",
+          "motivo": "estado"
+        }
+      },
+      "justificativas_adicionais": {
+        "T13": "Preservacao: Supervisao atribuida; Consulta direto conserva visualizar.",
+        "T14": "Preservacao: Supervisao atribuida; Consulta direto conserva conflito com Auditoria.",
+        "T15": "Preservacao: Supervisao atribuida; estado mascara conflito e concessao."
+      }
+    }
+  ],
+  "historico_anterior": "referencia_candidata_NAO_ENVIAR_AO_LLM.json",
+  "quantidades": {
+    "testes_baseline": 15,
+    "pares_teste_mudanca": 60,
+    "expectativas_com_baseline": 75
+  },
+  "catalogo": [
+    {
+      "id": "T01",
+      "estado": "suspensa",
+      "papeis": [
+        "Consulta"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      }
+    },
+    {
+      "id": "T02",
+      "estado": "ativa",
+      "papeis": [
+        "Consulta"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      }
+    },
+    {
+      "id": "T03",
+      "estado": "ativa",
+      "papeis": [
+        "Consulta"
+      ],
+      "operacao": "exportar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      }
+    },
+    {
+      "id": "T04",
+      "estado": "ativa",
+      "papeis": [
+        "Auditoria"
+      ],
+      "operacao": "exportar",
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      }
+    },
+    {
+      "id": "T05",
+      "estado": "ativa",
+      "papeis": [
+        "Supervisão"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      }
+    },
+    {
+      "id": "T06",
+      "estado": "ativa",
+      "papeis": [
+        "Consulta",
+        "Auditoria"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      }
+    },
+    {
+      "id": "T07",
+      "estado": "ativa",
+      "papeis": [
+        "Supervisão",
+        "Auditoria"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      }
+    },
+    {
+      "id": "T08",
+      "estado": "ativa",
+      "papeis": [
+        "Supervisão"
+      ],
+      "operacao": "exportar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      }
+    },
+    {
+      "id": "T09",
+      "estado": "em_revisao",
+      "papeis": [
+        "Consulta"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      }
+    },
+    {
+      "id": "T10",
+      "estado": "em_revisao",
+      "papeis": [
+        "Supervisão"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      }
+    },
+    {
+      "id": "T11",
+      "estado": "em_revisao",
+      "papeis": [
+        "Consulta",
+        "Auditoria"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      }
+    },
+    {
+      "id": "T12",
+      "estado": "ativa",
+      "papeis": [
+        "Supervisão",
+        "Auditoria"
+      ],
+      "operacao": "exportar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      }
+    },
+    {
+      "id": "T13",
+      "estado": "ativa",
+      "papeis": [
+        "Consulta",
+        "Supervisão"
+      ],
+      "operacao": "visualizar",
+      "esperado": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      }
+    },
+    {
+      "id": "T14",
+      "estado": "ativa",
+      "papeis": [
+        "Consulta",
+        "Auditoria",
+        "Supervisão"
+      ],
+      "operacao": "exportar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      }
+    },
+    {
+      "id": "T15",
+      "estado": "em_revisao",
+      "papeis": [
+        "Consulta",
+        "Auditoria",
+        "Supervisão"
+      ],
+      "operacao": "exportar",
+      "esperado": {
+        "decisao": "negar",
+        "motivo": "estado"
+      }
+    }
+  ],
+  "catalogo_versao": "0.3",
+  "origem_sha256": "1756b8df83c58b541f33f77481e0c211957b6105d8f1b00da4a0d80cf5e01c80"
+}

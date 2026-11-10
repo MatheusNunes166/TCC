@@ -1,0 +1,154 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "preparacao-original.json",
+      "sha256": "b0b8ca2c4f3e0d6fa5aefd92024a515d000aad89d4d82f2259f4f37fcf1d7470"
+    },
+    {
+      "arquivo": "tentativa-original.json",
+      "sha256": "8564da57a594e7ec5909e59ae3ecfe9a6f187ec5b916b9c874c176bd469b0ad6"
+    },
+    {
+      "arquivo": "entrada-enviada-original.bin",
+      "sha256": "017d48bc0e358962792a419217cc74e7cc5d785ff2cf84e9a8b03c1649231f96"
+    },
+    {
+      "arquivo": "entrada\\manifesto-original.json",
+      "sha256": "b35916f241c6332731aa9278cdea23d55d50fdf9d57b2b25ded1ea78cb5d7b38"
+    },
+    {
+      "arquivo": "entrada\\autorizacao-original.json",
+      "sha256": "2419b321969f517a58213af176eca265e49039e61b975a6aacb695a2fed0d9b9"
+    },
+    {
+      "arquivo": "entrada\\documentos\\sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "entrada\\documentos\\definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "entrada\\documentos\\requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "entrada\\documentos\\catalogo-baseline.md",
+      "sha256": "45e67daac93905c6c88c67730b884e42c803113b3f7277c09ac0feba813ab5d4"
+    },
+    {
+      "arquivo": "entrada\\documentos\\mudanca.md",
+      "sha256": "c0b70bee5bfd505c694aa587e5cd8c1628701c300e053ed26ee57f5038a9b1a6"
+    },
+    {
+      "arquivo": "entrada\\documentos\\notas.md",
+      "sha256": "5e209b6e58ba986df05846f6d36c9464fbc3d669f70ab97d8d0014872dc00add"
+    },
+    {
+      "arquivo": "entrada\\documentos\\pedido.txt",
+      "sha256": "3898440d3b28447dfff6a1ac6782b299575e0b5bde15d8ebaa7cc9da08e23774"
+    },
+    {
+      "arquivo": "entrada\\documentos\\schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "entrada\\payload.txt",
+      "sha256": "017d48bc0e358962792a419217cc74e7cc5d785ff2cf84e9a8b03c1649231f96"
+    },
+    {
+      "arquivo": "entrada\\entrega-textual.json",
+      "sha256": "60146310f62b4b1c03eb168a228093deb502bf3833b03f6b6183eb8db0d4921d"
+    },
+    {
+      "arquivo": "resposta-original.bin",
+      "sha256": "6537ffee050109abd3a4c187edfd47c4b47e2782eac86a16f962a25053485d91"
+    },
+    {
+      "arquivo": "referencia-privada.json",
+      "sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9"
+    },
+    {
+      "arquivo": "politica-candidata.json",
+      "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c"
+    },
+    {
+      "arquivo": "avaliacao.json",
+      "sha256": "d1c033c35bf23c4a4c4c66656dc7bbb73937564f2baa38fabd5d3b20f357e4fd"
+    }
+  ],
+  "completo": true,
+  "fase": "exploratoria",
+  "fontes": [
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\preparacao\\preparacao.json",
+      "sha256": "b0b8ca2c4f3e0d6fa5aefd92024a515d000aad89d4d82f2259f4f37fcf1d7470"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\tentativa.json",
+      "sha256": "8564da57a594e7ec5909e59ae3ecfe9a6f187ec5b916b9c874c176bd469b0ad6"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\entrada.bin",
+      "sha256": "017d48bc0e358962792a419217cc74e7cc5d785ff2cf84e9a8b03c1649231f96"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\preparacao\\manifesto-original.json",
+      "sha256": "b35916f241c6332731aa9278cdea23d55d50fdf9d57b2b25ded1ea78cb5d7b38"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\preparacao\\autorizacao-original.json",
+      "sha256": "2419b321969f517a58213af176eca265e49039e61b975a6aacb695a2fed0d9b9"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\preparacao\\documentos\\sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\preparacao\\documentos\\definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\preparacao\\documentos\\requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\preparacao\\documentos\\catalogo-baseline.md",
+      "sha256": "45e67daac93905c6c88c67730b884e42c803113b3f7277c09ac0feba813ab5d4"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\preparacao\\documentos\\mudanca.md",
+      "sha256": "c0b70bee5bfd505c694aa587e5cd8c1628701c300e053ed26ee57f5038a9b1a6"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\preparacao\\documentos\\notas.md",
+      "sha256": "5e209b6e58ba986df05846f6d36c9464fbc3d669f70ab97d8d0014872dc00add"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\preparacao\\documentos\\pedido.txt",
+      "sha256": "3898440d3b28447dfff6a1ac6782b299575e0b5bde15d8ebaa7cc9da08e23774"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\preparacao\\documentos\\schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\preparacao\\payload.txt",
+      "sha256": "017d48bc0e358962792a419217cc74e7cc5d785ff2cf84e9a8b03c1649231f96"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\preparacao\\entrega-textual.json",
+      "sha256": "60146310f62b4b1c03eb168a228093deb502bf3833b03f6b6183eb8db0d4921d"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\\EXT03-MC-02-E1-SOL-R01\\T01\\resposta.bin",
+      "sha256": "6537ffee050109abd3a4c187edfd47c4b47e2782eac86a16f962a25053485d91"
+    },
+    {
+      "arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\modelos\\referencia_candidata_0.3_NAO_ENVIAR_AO_LLM.json",
+      "sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9"
+    }
+  ],
+  "origem": "real",
+  "retorno": 0
+}

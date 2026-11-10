@@ -19,7 +19,7 @@ import uuid
 import coletor_piloto as base
 import montagem_entradas as montagem
 
-VERSAO = 'coletor-responses-v1.1-integrado'
+VERSAO = 'coletor-responses-v1.3-D42'
 ENDPOINT = 'https://api.openai.com/v1/responses'
 MODELO = 'gpt-6-sol'
 MIN_OUTPUT_TOKENS = 16  # Restricao de formato da API, nao escolha do piloto.
@@ -334,17 +334,26 @@ def conferir(path):
     return plan
 
 
-def capturar(path, lote, limite, continuar=False, real=False, sender=enviar):
-    plan = conferir(path)
-    if type(limite) is not int or not 1 <= limite <= 16:
-        raise ValueError('--limite deve estar entre 1 e 16')
+def capturar(path, lote, limite, continuar=False, real=False, sender=enviar, *, conferidor=None, controle_http=None):
+    check = conferir if conferidor is None else conferidor
+    plan = check(path)
+    total = len(plan['observacoes'])
+    extension = plan.get('etapa') == 'extensao-0.3-D41'
+    if extension and real and (plan.get('integracao') != 'envio-extensao-D42-v1'
+                               or plan.get('envio_autorizado') is not True):
+        raise ValueError('plano da extensao sem integracao de envio D-42')
+    if type(limite) is not int or not 1 <= limite <= total:
+        raise ValueError('--limite deve estar entre 1 e ' + str(total))
     key = None
     if real:
         key = chave_api()
     out = base.protegida(lote, 'captura')
-    origin, phase = ('real', 'piloto') if real else ('sintetica', 'verificacao_sintetica')
+    origin, phase = ('real', 'exploratoria' if extension else 'piloto') if real else ('sintetica', 'verificacao_sintetica')
     header = {'origem': origin, 'fase': phase, 'interface': 'Responses API',
               'plano_sha256': sha(Path(path).read_bytes()), 'coletor_sha256': sha(Path(__file__).read_bytes())}
+    if extension:
+        header.update(etapa=plan['etapa'], integracao=plan['integracao'],
+                      catalogo_versao=plan['catalogo_versao'], referencia_sha256=plan['referencia_sha256'])
     if not continuar:
         out.mkdir(parents=True, exist_ok=False)
         salvar(out / 'plano-original.json', Path(path).read_bytes())
@@ -361,6 +370,12 @@ def capturar(path, lote, limite, continuar=False, real=False, sender=enviar):
             attempt = out / row['observacao_id'] / 'T01'
             if attempt.exists():
                 previous = base.conferir_fechamento(attempt)
+                if extension and (any(previous[k] != row[k] for k in (
+                    'observacao_id', 'configuracao_id', 'payload_sha256', 'preparacao_sha256', 'mudanca', 'condicao'))
+                    or previous['origem'] != origin or previous['fase'] != phase
+                    or previous.get('etapa') != plan['etapa']
+                    or previous.get('configuracao') != plan['configuracoes'][row['configuracao_id']]):
+                    raise ValueError('captura de outra observacao/configuracao/origem; nao continuar')
                 if previous['estado_tecnico'] != 'concluida' or previous['desvios']:
                     raise ValueError('tentativa incompleta/ambigua/com desvio; conferir sem reenvio automatico')
                 if previous['response_id'] in response_ids:
@@ -369,14 +384,15 @@ def capturar(path, lote, limite, continuar=False, real=False, sender=enviar):
                 continue
             if count >= limite:
                 break
-            conferir(path)
+            check(path)
+            config = plan['configuracoes'][row['configuracao_id']] if extension else plan['configuracao']
             prepfile = base.relativo(Path(path).parent, row['preparacao'])
             prep = base.conferir_preparacao(prepfile)
             attempt.mkdir(parents=True)
             for name in ['preparacao.json'] + [x['arquivo'] for x in prep['arquivos']]:
                 salvar(attempt / 'preparacao' / name, (prepfile.parent / name).read_bytes())
             payload = (prepfile.parent / 'payload.txt').read_bytes()
-            body = requisicao(payload, plan['configuracao'])
+            body = requisicao(payload, config)
             salvar(attempt / 'entrada.bin', payload)
             guardar_requisicao(attempt, body)
             start = agora()
@@ -387,14 +403,16 @@ def capturar(path, lote, limite, continuar=False, real=False, sender=enviar):
             status = None
             failure = None
             if real:
-                status, raw, request_id, failure = obter_http(sender, body, key, plan['configuracao']['timeout_segundos'])
+                status, raw, request_id, failure = obter_http(sender, body, key, config['timeout_segundos'])
+            elif controle_http is not None:
+                status, raw, request_id, failure = obter_http(controle_http, body, None, config['timeout_segundos'])
             else:
                 status, raw = 200, bytes_json({'id': 'controle-' + uuid.uuid4().hex,
-                        'model': MODELO, 'status': 'completed', 'tools': [], 'tool_choice': 'none',
+                        'model': config['modelo_solicitado'], 'status': 'completed', 'tools': [], 'tool_choice': 'none',
                         'output': [{'type': 'message', 'role': 'assistant', 'status': 'completed',
                                     'content': [{'type': 'output_text', 'text': '{"requisitos":[],"testes":[]}'}]}]})
             guardar_http(attempt, status, raw, request_id, failure)
-            parsed = falha_interpretada(failure) if failure else interpretar(raw, status, plan['configuracao'])
+            parsed = falha_interpretada(failure) if failure else interpretar(raw, status, config)
             text = parsed['texto']
             if parsed['response_id'] in response_ids:
                 parsed['desvios'].append('response_id repetido entre observacoes')
@@ -413,13 +431,17 @@ def capturar(path, lote, limite, continuar=False, real=False, sender=enviar):
                 origem_resposta='Responses API; envelope bruto preservado' if real else 'CONTROLE ARTIFICIAL; sem rede/modelo',
                 modelo_reportado=parsed['modelo_reportado'] if real else None,
                 modelo_reportado_indisponibilidade=None if real and parsed['modelo_reportado'] else 'nao reportado; controle ou falha',
-                configuracao=plan['configuracao'], versoes={'coletor': VERSAO, 'coletor_sha256': header['coletor_sha256']},
+                configuracao=config, versoes={'coletor': VERSAO, 'coletor_sha256': header['coletor_sha256']},
                 conformidade_protocolo='desvio' if parsed['desvios'] else 'pendente', desvios=parsed['desvios'],
                 http_status=status, request_id=request_id, response_id=parsed['response_id'], usage=parsed['usage'],
                 falha_transporte=failure, estado_remoto='desconhecido' if failure else 'resposta_http_recebida',
                 requisicao_sha256=sha(body), retentativas_cliente=0,
                 texto_extraido_de='output/message/content/output_text ou refusal; sem trim ou reparo')
             record['repeticao' if real else 'repeticao_sintetica'] = row['repeticao']
+            if extension:
+                record.update(etapa=plan['etapa'], integracao=plan['integracao'],
+                              bloco=row['bloco'], ordem=row['ordem'], plano_sha256=header['plano_sha256'],
+                              catalogo_versao=plan['catalogo_versao'], referencia_sha256=plan['referencia_sha256'])
             salvar_json(attempt / 'tentativa.json', record)
             salvar_json(attempt / 'fechamento.json', {'arquivos': base.inventariar(attempt)})
             count += 1
@@ -431,6 +453,49 @@ def capturar(path, lote, limite, continuar=False, real=False, sender=enviar):
         return 0
     finally:
         lock.unlink()
+
+
+def avaliar_lote(lote, referencia, saida):
+    """Adapta somente a fase exploratoria; reusa avaliacao/resumo, sem coleta.
+
+    A rota historica e delegada literalmente ao auxiliar anterior, cuja fonte
+    e trava Codex permanecem intactas.
+    """
+    root = montagem.sem_links(lote)
+    header = base.ler(root / 'lote.json')
+    if (header['origem'], header['fase']) != ('real', 'exploratoria'):
+        return base.avaliar_lote(lote, referencia, saida)
+    import avaliacao_ids as avaliador
+    raw = (root / 'plano-original.json').read_bytes()
+    plan = montagem._json(raw)
+    if (sha(raw) != header['plano_sha256'] or plan.get('etapa') != 'extensao-0.3-D41'
+        or header.get('etapa') != plan['etapa'] or header.get('referencia_sha256') != plan['referencia_sha256']
+        or sha(Path(referencia).read_bytes()) != plan['referencia_sha256']):
+        raise ValueError('lote/plano/referencia nao correspondem a extensao')
+    out = base.protegida(saida, 'avaliados')
+    out.mkdir(parents=True, exist_ok=False)
+    selected, observations = [], []
+    code = 0
+    for row in plan['observacoes']:
+        observations.append({**{k: row[k] for k in ('observacao_id', 'configuracao_id', 'mudanca', 'condicao', 'payload_sha256')},
+                             'origem': 'real', 'fase': 'exploratoria', 'repeticao': row['repeticao']})
+        attempt = root / row['observacao_id'] / 'T01'
+        if not attempt.exists():
+            continue
+        reg = base.conferir_fechamento(attempt)
+        if (reg['origem'] != 'real' or reg['fase'] != 'exploratoria' or reg.get('etapa') != plan['etapa']
+            or any(reg[k] != row[k] for k in ('observacao_id', 'configuracao_id', 'payload_sha256'))):
+            raise ValueError('captura de outra fase/observacao/configuracao')
+        target = out / row['observacao_id'] / 'T01'
+        _, status = avaliador.avaliar(attempt / 'preparacao/preparacao.json', attempt / 'tentativa.json',
+                                     referencia, target, origem='real', fase='exploratoria')
+        code = max(code, status)
+        selected.append({'arquivo': (target / 'avaliacao.json').relative_to(out).as_posix(),
+                         'sha256': sha((target / 'avaliacao.json').read_bytes())})
+    salvar_json(out / 'lista.json', selected)
+    salvar_json(out / 'observacoes.json', observations)
+    _, status = avaliador.resumir(out / 'lista.json', out / 'observacoes.json', out / 'resumo', origem='real', fase='exploratoria')
+    return max(code, status)
 
 
 def conexao(saida, limite_saida, timeout=120, sender=enviar):
@@ -521,7 +586,7 @@ def main(argv=None):
                 raise ValueError('envio exige --enviar-real; nenhuma chamada realizada')
             return capturar(args.plano, args.lote, args.limite, args.continuar, real)
         elif args.comando == 'avaliar':
-            return base.avaliar_lote(args.lote, args.referencia, args.saida)
+            return avaliar_lote(args.lote, args.referencia, args.saida)
         elif args.comando in ('revisao-modelo', 'revisar', 'resumir-revisado'):
             import revisao_conformidade as revisao
             if args.comando == 'revisao-modelo':

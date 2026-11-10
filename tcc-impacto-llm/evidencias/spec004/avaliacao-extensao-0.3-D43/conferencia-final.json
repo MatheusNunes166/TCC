@@ -1,0 +1,16 @@
+{
+  "conforme": true,
+  "avaliacoes_individuais": 64,
+  "celulas": 32,
+  "comparacoes_independentes_medias_jaccard": 268,
+  "originais_conferidos_sem_alteracao": 6442,
+  "divergencias_originais": [],
+  "revisoes_pendentes_ligadas_a_hashes": 64,
+  "raciocinio_reportado_nas_64_usage": true,
+  "arquivos_bytes_git_conferidos": 1330,
+  "links_locais_conferidos": 84,
+  "links_ausentes": [],
+  "git_diff_check": 0,
+  "alteracoes_coletor_planos_notas_referencia": false,
+  "novas_chamadas_API": 0
+}

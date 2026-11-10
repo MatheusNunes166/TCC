@@ -1,0 +1,318 @@
+{
+  "derivacao": "contratos RF-01 a RF-04; precedencia de documentacao/requisitos.md; politica conservadora 0.2",
+  "referencia": "materiais/modelos/referencia_candidata_0.3_NAO_ENVIAR_AO_LLM.json",
+  "sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+  "codigo_bancada_executado_nesta_receita": false,
+  "matriz": {
+    "MC-01": {
+      "T01": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T02": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "T03": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "T04": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "T05": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "T06": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "T07": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "T08": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "T09": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T10": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T11": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T12": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "T13": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "T14": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "T15": {
+        "decisao": "negar",
+        "motivo": "estado"
+      }
+    },
+    "MC-02": {
+      "T01": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T02": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "T03": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "T04": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "T05": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "T06": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "T07": {
+        "decisao": "permitir",
+        "motivo": "permissao_herdada"
+      },
+      "T08": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "T09": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T10": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T11": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T12": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "T13": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "T14": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "T15": {
+        "decisao": "negar",
+        "motivo": "estado"
+      }
+    },
+    "MC-03": {
+      "T01": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T02": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "T03": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "T04": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "T05": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "T06": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "T07": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "T08": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "T09": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T10": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T11": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T12": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "T13": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "T14": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "T15": {
+        "decisao": "negar",
+        "motivo": "estado"
+      }
+    },
+    "MC-04-v2": {
+      "T01": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T02": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "T03": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "T04": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "T05": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "T06": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "T07": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "T08": {
+        "decisao": "negar",
+        "motivo": "sem_permissao"
+      },
+      "T09": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T10": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T11": {
+        "decisao": "negar",
+        "motivo": "estado"
+      },
+      "T12": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "T13": {
+        "decisao": "permitir",
+        "motivo": "permissao_direta"
+      },
+      "T14": {
+        "decisao": "negar",
+        "motivo": "conflito"
+      },
+      "T15": {
+        "decisao": "negar",
+        "motivo": "estado"
+      }
+    }
+  },
+  "baseline": {
+    "T01": {
+      "decisao": "negar",
+      "motivo": "estado"
+    },
+    "T02": {
+      "decisao": "permitir",
+      "motivo": "permissao_direta"
+    },
+    "T03": {
+      "decisao": "negar",
+      "motivo": "sem_permissao"
+    },
+    "T04": {
+      "decisao": "permitir",
+      "motivo": "permissao_direta"
+    },
+    "T05": {
+      "decisao": "permitir",
+      "motivo": "permissao_herdada"
+    },
+    "T06": {
+      "decisao": "negar",
+      "motivo": "conflito"
+    },
+    "T07": {
+      "decisao": "negar",
+      "motivo": "conflito"
+    },
+    "T08": {
+      "decisao": "negar",
+      "motivo": "sem_permissao"
+    },
+    "T09": {
+      "decisao": "negar",
+      "motivo": "estado"
+    },
+    "T10": {
+      "decisao": "negar",
+      "motivo": "estado"
+    },
+    "T11": {
+      "decisao": "negar",
+      "motivo": "estado"
+    },
+    "T12": {
+      "decisao": "negar",
+      "motivo": "conflito"
+    },
+    "T13": {
+      "decisao": "permitir",
+      "motivo": "permissao_direta"
+    },
+    "T14": {
+      "decisao": "negar",
+      "motivo": "conflito"
+    },
+    "T15": {
+      "decisao": "negar",
+      "motivo": "estado"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+responder à tarefa usando apenas o material fornecido, sem ferramentas ou acesso a arquivos do projeto, no esquema exigido. Selecionar requisitos impactados e testes existentes relevantes, incluindo mudança e preservação de comportamento relacionado. Não propor novos testes, código ou descoberta de defeitos reais; não expor raciocínio interno.

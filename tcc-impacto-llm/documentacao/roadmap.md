@@ -2,6 +2,8 @@
 
 Situação operacional e próximas tarefas: [estado atual](../ESTADO_ATUAL.md). Este documento descreve critérios de passagem; não duplica o andamento nem autoriza execuções.
 
+D-41 (09/11/2026) acrescenta uma extensão exploratória após o piloto encerrado pelo pesquisador: quinze casos e 75 comparações locais; 64 observações novas com dois modelos nomeados, dois blocos de 32 e ordem própria. [Referência candidata 0.3](referencia-candidata-0.3.md) e [preparação/verificação](../evidencias/spec004/extensao-2026-11-09/RELATORIO.md). Isso não congela a coleta principal nem modifica os critérios históricos da versão 0.2 abaixo.
+
 ## Ciclo de trabalho
 
 Seguir a [metodologia](../materiais/03_DESENVOLVIMENTO_SPEC_KIT.md): delimitar capacidade → esclarecer contratos → especificar, planejar e decompor tarefas quando autorizado → analisar coerência → implementar quando autorizado → verificar → reconciliar evidências e decisões. Spec Kit é apoio de desenvolvimento, não condição experimental nem validação científica.

@@ -1,0 +1,105 @@
+{
+  "id": "resp_0b42d63688259ca9016af27bbabb5c87d295f9351a2a969963",
+  "object": "response",
+  "created_at": 1794276282,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794276284,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 4096,
+  "max_tool_calls": null,
+  "model": "gpt-6-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0b42d63688259ca9016af27bbb334487d2b6afc5b8740a643e",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq8nu8QDNX_Mki1XPM9-rMCFfX51fOR0kK2LH_6_3mszo3skA2cnsDFWgo29qn5zmh6oux02qJvyXf9sDkVp_pYQqBKJCe3BG7H6tc5B7lsz4deJVKBq-8XYwLFU6pS7Si4lFzhcffadPYfrqICNiZXgUqfpEHr3Sc4ptgtdd9h2XPtIAIM6BjqqzOHF7BjXBjx4rEB8UoN9j1LaOD6JYs0txR71rA4u5Dm2adaSpKGAUiuuh2oFC8GtFH-i1fC749h9O4h5V9XbaPonRghA2_P1Te2yduFw1mBPlMhRm4X3V5TNw51O9OvpI8wpkCBHNEvZr2j43w-ihoLJ66arv6fc5JX5W9ndB0FWOY5lHxRae42u_D7u8E4FMBo8lorYepBwJdSbgdmxIJjm8HTSaJR5_sHyARGgC3g801-lLW2RO9ygaWqcYscke-Y80Yril2Sa1-6n7gc66WyrBBeapKzsM9isXrs6VQ0_xRFLVYp8hfrzau2UvkTdPneErNxcilVPqQmp06p9UCZ-lCHWm1tQjbRxzzYKFGKYBccYi4MxzXLB-CfcT3vimhtvK15oG5G27FtpmCvmgYEsUiaHYsGnVbVPMNx8uhhuc98v3CaUJ9SKVpmlfM-lpZv0guIpJizbZc7iBv945WOyyM2GLUJa__lotrVrk4f_3pSDe2lwyWpkJg-Vkr4h37qOuLRNSPCQH06k16pYguITR0fop9kAE1EgYKldPga3lYj9MIbfgLH0Ar7rWHyJ1q3vctF_kKOrxIj79a5F-HFmKnD_mC_1eRYL_5iENXIH0nOuSFi5cTZYRofKwy7i1NcxNAAeJUmOYClXyO_dYQFW3EHe8vEYoGaXnQwMxHSTUL_Nh-IHohD7g9ZlNqcrmfDf8hzmR1pMJ28kxj0hfuPoWuqDxVOSHXCdL9WVlSPTX1VGadeCnJs8O2nfrLRLoDetE30t_aKAB_0CjceUAnxDyJincA-jO1nPHxlrWBRgS3yZ-43ToKd4i5JdEhTHq2kwJIK1OeDWOpInGi7_QXW334IkOwvnEfs6JR-1KYjk08eQS6uxwZcu-BVlAlhpbbJSVa3lDIWc6AaNkNIxIIiMnelRWPRc77U3cFmUSZoRgkgikcnQiSa_AcBZFwRS4QW3-WVChZRMznk-IiEBaOT9lHqTvmgC5LedsdUNfwnIOZsQSrnEi_LDIO3xpbS4y-NzOnKrm9zygqrhniDab4n426PLyrC0bg5rfsmvy75Pf39JRXCFXn6OjWAX5U5d_U6fHWQC3HMYq_dUFeYOcW3BvCAc-SuCj4vETRFHUHaBHWEQusOU9WCSnda0NwsZgI5nm6tfH8hNURoRu8yjvve0qZqF0rfKDaBFzgRKh2n8hv1iinoSU4qN_hs8gxXG5a4PhLYOWP9HOzdh4_HmQ1ux-uUBCZQpognreUlh3hGuNlYIJRAYr0Bq1eyDGxlBYQ9_FnFTmw330hmEoTw9HLnCXJaeRMr5EbAhkhKatZXpQPH5Ev0p0162_vCfSrstM1GIRP7ufJe3hwsW8z94dMQcBILJw3hLe3ZQum_D1m0i5I_ewWkwkOfOjoSGWHwkv5XYHf1OBZutTvGUGURgzBgPBUeOHlw72hA3myO_0u1qYQRdnpYewDr5A4Io4oesoyH7pCdRQzj7r5lhy99lg7RgL1olhR6oexP4x30p5jUi5NBZ8-rEFLoMEGp8HHcovNIvSQeqSnkSs4Qw9W9jWaAHqH0pE3sXKpVx2cyQtBx1zFzjyyZ73Zr6TnqL0ltA8t76AVuD4nAvXtVT4z3Tguv-Ovjub_Cpxo5eeWrhJTG_gJ6BkUcSvROUo0tyxy8VoNtqgTZwokUW10Ov3aCgZlA5hbRfshkQwz9_XGXa_wFz1s2O93os4thvuXb0Jm4STVNl71FVVK9GdzeDbL5jYK-FHquZmVdF3EQcp9gmD3dNkQLYu99SgzrmnwC8-Mjryq9_1o4YZDXR80FNk36FAF5cjDtCn6T-enBjlXE3BWFdfsYpZTEmwa7j57mGMeKcp3yY88mv8lNHpoP-Mn5hh5JlEZcrrdbxSn_gb61n3VlZX7dKJeyz1wfCpb9pt_j3CxK-EzJzD9YCDMqYhAiJKq_eyl86LGRepx4GHwRaquQSK-EvdItSv7M0g8s8J9ghdyBU_bpeV7X2vgBpZ8nmPA5BOlZTSH1g2mdCVte2lfRSQFk5WIv_rR4-TzygIcCGSSTmsTJq8dpIzEpDUufofj6N4FNciDILGHhw-LCdACDktYsZl22jIbigdXwHa9iy_rwVTvVDeS7JDY4fVeTrDOpWP_Wzjuv2xLQwoNJL1eVJRwlw1K32pR_TTbu6Z2seVFfy7wCPnbP3440C6GbYA3fJygWDMzv1nhxTB0vnHPiec0M3BU234YuenY7Fa-ZWdvE3dVzLJCYP7HCWZ9DVoBuD9B3e8rIqyC9hY8o1M8_gueIY76A1oW_j7B023agybUL_uvB6PIsI2jNX1_1lE2gewpBm8ozoOGDGDyUK598FlvXRLxbe_R8wke_3eeiBmcNvs92IeHJ-dgsZ0a_nXWq0y8RbGIhQj8ktQB2oI3SeSrnO5cqlBjZ8GhbyM_C-PPFWJ-dU9TcR9UFeyXoZ2ShZ1aQZT0IROjsRi_ApIFMk1aRyhvUrIPJqR1kPWjFWhPYSr82kAWPvrv5EHqWaYSyQuOKkiqHK05xwuPp8_ix3j29lKNM2Laco6NHisT8vpZDpujLC58gYvakPfoRkSwb5HtgWm-rYOYlJzkduoWVvc-VoriHpozXcgO_sTw0y9MrTeujmgbBSrfprza0qmEI0k41BaEAsnt2sGf6gddY9u-EgfUZHTgAsXlkUY0vVHj3Ws4kK6GBuQTcZ1_t3SzhFFBOniWnYNUn-xXgk9J8dYpDEXXCu3p4IRNxghakqj1Ve9g-pCaZzgdsm-F2qzglU2YFvO0OM1kGM1dpViCGRebCqB541bp5ElaCqjorgYY8JaB2KU4NnqEbK3fehvHWmOdbQSunr0JcJJZLILBRK411f1c8zm6YhWa6kBrd8nHky2buzVtjusL_7UU9XbsOCFt-kakl3CHCfYh_xNEeUtcCnxTk3KhMtmxqKflEoPinp9294j2wpDNAaKE2PoIuT6Ngn2wm7sMrfXqsK0icXGmNteGrgSGx4PsHnhHl8zcuGrfzYAVekQDrW3sRDjtHfVIzHUBeTofLp3-Oz3kly2IxKHdatcqmYl9jqYzG8-ztgBroFGevfN74gDEKhJt24r5qoXpAn7zP1ySLlXyhqCVaP_1EK62Ohx2l9N3bo_L2NLfHGnFzpVASSA3D06GvwSOMw4qUkNj6DxhRl638wMlSqnhU9NFSHGAKuEqJLCVDpb0PMOCo0j7e3j5QyIJ_9w8R0kRvZ4jcP1oR36HndutWcmbHtVzD4nMRsIvmj-defS0GjEQht-qQx722-bl-TlGP9bVaE6i7WG9Zr-HzE9CsB0CzM7iV9KCnbpj1fpZoThs4Kvx9Qboi0vvHiWqCJhPUc5IXcgzxv_F4Anrdi1X-C7xlWbty-fdOtNRd6EBkzgfBdIPj2QGwdu6G1DM6FRpu5WllwG22W86Ue214GGJgKolyVM65IQ8H0soxK9qsPJbz7PlBNqq",
+      "summary": []
+    },
+    {
+      "id": "msg_0b42d63688259ca9016af27bbc16fc87d284367edd3d98e472",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"requisitos\":[\"RF-02\"],\"testes\":[\"T04\",\"T12\",\"T14\",\"T15\"]}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "none",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1676,
+    "input_tokens_details": {
+      "cache_write_tokens": 1673,
+      "cached_tokens": 0
+    },
+    "output_tokens": 143,
+    "output_tokens_details": {
+      "reasoning_tokens": 112
+    },
+    "total_tokens": 1819
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,195 @@
+{
+  "avaliacao_anterior": null,
+  "avaliacao_id": "e8032f23ed0c46c98a79a00983fc91f0",
+  "avaliador_sha256": "a30077b5d8a3de06273e31c1d87d3f30c6af9e668951a48654114c08614c6b83",
+  "causa": null,
+  "causa_tecnica": null,
+  "completo": true,
+  "condicao": "D0",
+  "configuracao": {
+    "catalogo_versao": "0.3",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "esforco_solicitado": "medium",
+    "etapa": "extensao-0.3-D41",
+    "id": "ext-api-astra-9d2e238e64485a09",
+    "integracao": "envio-extensao-D42-v1",
+    "interface": "Responses API HTTP direto",
+    "limite_orcamento": "USD 2 de planejamento; risco aceito pelo pesquisador; sem controle automatico ou garantia de teto",
+    "limite_saida": "4096 inclui raciocinio e resposta final; proposta comum a ambos os modelos",
+    "max_output_tokens": 4096,
+    "modelo_solicitado": "gpt-6-astra",
+    "orcamento_declarado_usd": "2",
+    "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+    "retries_automaticos_cliente": 0,
+    "store": false,
+    "stream": false,
+    "timeout_segundos": 120,
+    "tool_choice": "none",
+    "tools": []
+  },
+  "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+  "conformidade_protocolo": "pendente",
+  "desvios": [],
+  "entrada_enviada_sha256": "7684532d990227fe7259715782cc2f8d7890a56597bc7dba372144a5db6cb275",
+  "estado_tecnico": "concluida",
+  "fase": "exploratoria",
+  "formato_contrato": "valido",
+  "fragmento": false,
+  "ids_conhecidos_por_dimensao": {
+    "requisitos": true,
+    "testes": true
+  },
+  "instante_execucao": "2026-11-10T02:04:01.864515+00:00",
+  "instante_utc": "2026-11-10T02:25:40.702805+00:00",
+  "json_sintatico": "valido",
+  "modelo_reportado": "gpt-6-astra",
+  "modelo_reportado_indisponibilidade": null,
+  "mudanca": "MC-03",
+  "mudanca_pedida": "MC-03",
+  "observacao_id": "EXT03-MC-03-D0-ASTRA-R01",
+  "origem": "real",
+  "origem_resposta": "Responses API; envelope bruto preservado",
+  "payload_sha256": "7684532d990227fe7259715782cc2f8d7890a56597bc7dba372144a5db6cb275",
+  "politica": {
+    "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+    "status": "CANDIDATA_REVISAO_CIENTIFICA_PENDENTE",
+    "versao": "ids-proposta-004-v2"
+  },
+  "referencia": {
+    "sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+    "status": "CANDIDATO_NAO_REVISADO",
+    "versao": "0.3"
+  },
+  "repeticao": 1,
+  "requisitos": {
+    "FN": 0,
+    "FP": 0,
+    "G": [
+      "RF-02",
+      "RF-03"
+    ],
+    "S": [
+      "RF-02",
+      "RF-03"
+    ],
+    "TP": 2,
+    "acertos": [
+      "RF-02",
+      "RF-03"
+    ],
+    "desconhecidos": [],
+    "duplicatas": [],
+    "excedentes": [],
+    "lista_original": [
+      "RF-02",
+      "RF-03"
+    ],
+    "metricas_propostas": {
+      "correspondencia_exata": 1,
+      "f1": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "precisao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "revocacao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "selecao_completa": 1
+    },
+    "omissoes": []
+  },
+  "resposta_sha256": "633d93a0ee3defeda59cc280851ed776abe36b5dc65509ed03f1d2fc359e4676",
+  "somente_ids_conhecidos": true,
+  "status_avaliacao": "avaliada",
+  "tentativa_anterior": null,
+  "tentativa_id": "EXT03-MC-03-D0-ASTRA-R01-T01",
+  "testes": {
+    "FN": 0,
+    "FP": 0,
+    "G": [
+      "T01",
+      "T02",
+      "T05",
+      "T06",
+      "T07",
+      "T09",
+      "T10",
+      "T11",
+      "T13"
+    ],
+    "S": [
+      "T01",
+      "T02",
+      "T05",
+      "T06",
+      "T07",
+      "T09",
+      "T10",
+      "T11",
+      "T13"
+    ],
+    "TP": 9,
+    "acertos": [
+      "T01",
+      "T02",
+      "T05",
+      "T06",
+      "T07",
+      "T09",
+      "T10",
+      "T11",
+      "T13"
+    ],
+    "desconhecidos": [],
+    "duplicatas": [],
+    "excedentes": [],
+    "lista_original": [
+      "T01",
+      "T02",
+      "T05",
+      "T06",
+      "T07",
+      "T09",
+      "T10",
+      "T11",
+      "T13"
+    ],
+    "metricas_propostas": {
+      "correspondencia_exata": 1,
+      "f1": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "precisao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "revocacao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "selecao_completa": 1
+    },
+    "omissoes": []
+  },
+  "versoes": {
+    "coletor": "coletor-responses-v1.3-D42",
+    "coletor_sha256": "c26a3558a8b00b482cc6f34d8ed3add53ba31b25b1187737c3ad2a628b2001ed"
+  }
+}

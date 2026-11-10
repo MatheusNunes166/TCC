@@ -1,0 +1,105 @@
+{
+  "id": "resp_0845be1b795ec8aa016af27e7627e887d2b414fb3cf9bc5ce4",
+  "object": "response",
+  "created_at": 1794276982,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794276984,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 4096,
+  "max_tool_calls": null,
+  "model": "gpt-6-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0845be1b795ec8aa016af27e76b72887d2823fb836bae0192d",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq8n54GH-v62isRDUzgQZ_DTvEnyxUoOUnyIa6YQP6SvBMa_dU49-6EOHuoMKSbB9gDjKjW4_V0kbPozrgeKjv08NfvrRg3KNyoWXSUQM2DXpEUdNZg_abaLQYk8aEDDg22s7vZgeXYtTVruc8JiJAHWukqMSi1YQ41mcBm_2IBVK4BM4Bqw_NN2v1szDnZcCcBORgB3uEnzcQl5pSWqPvG3VEvEafijg1xyOTWclWVO_c3CPXPEvKEGufpg_0J8APme8_BnmUGa-vX2hBsXlCUvEykA3j-P0IsMpQe_wXMnzBVI27pHz7JzXEfyPFuYkW02W0c2s5jhehhK4RTz0NK1drHEqpf5jjfchMLpyWSGH-71J8NvItG_TDtpQF1uOAuiXih5X7Bzs2QXDX1N_Yze66HKkBBZgLRjRj2h2rUr9RoskoPb5yp5rOIvDbrfoMEwfxoY9eE16j63o096VkmjWwamoX1YlbTShbGZ-8ogjXQFGBKHn1H_tUaDDmQ5JKXfbRXym2VFVWR9JWkAu_Z81XCbxdybvn3yAux6SsuSdzRbAdETMY5j5mEPDyVaFUn1Zfxs6vnRFiDOQ5v-qhbpJAXnK-tplRRfGTOqMzypW3BNINMXDTEgieiyJokWFPGOUHZkIG3CLgAKLW--7F6_tiUsbws0lT7pndSq6_9hSi0Mt6M8AxjMXcDbicQpj3vfz7jwrggPEMgDceX0Lk7T_hsZITYaNEIkcLMA3zzhL3ztvVYoxbhMmCzwxN7_CC5rsxvxfRNWHwleUWk1vkaViJ1yIYVZsMTTYFXlbsG7xH1J7n1sGypfw6pKZKssJf6pT31Vdt3DgFHJO8TD8Z8iVT_KjGpcqq8cA7X0V8B0RGT5BGSu53hgxmq2njh_aLQzV5T8ZDYw1euB98pvCC07gloG0MTl89vfxOce3uwqSJSJSZkBCcOto06oiVpNKtUzSDx-Hn17eBJA2hT30QZq0dRxtGuGDFwQefn5bShQJvsadElhmsGF31ophY9sAqfRyBRZz1m0VEHOzJ8rC1IPnXCIRqpe1b-vzHrg_Pmi7hClHESuFTfteaOHOv3c3C4tBochI1kRYszfhnlUcgjZrb1jW07zDRNXkJBNVlP0XJfs4FEWnbrnDs6Sj6QoRgpbuZ9FL5vdJg-sQddbNt9AeuqIJJhrqyvsjV49xycbm8R9SLyS-O6BO5E4_b0puV2dTtE4ScRXBE6Yq4b-6joeoR3mYKHgS-tA1ocw3bEmBn5-WkochuRaIaB6b1ILnz10JWxNKp3zgVoTCv_6W3OLQkk05lrWcWtLdu14-8U1xIyiqbbQgJd6WFcGyTdf8vYBUp9QucGuX2pTFHE6HVNMqTSi3KDjrBgPQzTxMWMtAkDs6Ac59fgObC-50QrBqCYSg9OajSnDvQZsg_Xx9PMPBZ0o-4UHHpdmq_OyDDM2fbI0aEQ1Y8bk_gFNlfML9QVCIVq-K9FkcBLKaYWiuBEEbT6dOTMF5MGCyR3-F5RoVnVseipPfAJ2j2OWbm-Mu1oSb1Yab5N0k9x8GW5oq0zxx9F3oRv73aeRODiYzU4LoT3_p0ZA8ikBuq9xpQTjS6XiYzBWTquhpJ1oBeHl3OEZww4iq8-C41toervHHegCwY10hPx1soGytJ4NsMrbr5ZTC01PBMhXC-7NYqRI4I4w230tzU1co4sRriZugx8Gqzoe3GZVtSmjFLArXDM3n3knvfhLb4KI1cXyoR6UkNB898-Mid-Q7hQu79n6B3yGEEmireqp46oVgeW0xzF-QUvsdUFOPvtex4RUvKounsgT2e9MS9-ccJFhM3BaatblQNty10Xb8ejun5_AkKdNeABrgmOpqYbnch4BWXT3ax6fAN_MNhcR9c_iJmHmk1yKFVlh5F8yLiGmbcexLO94JyiyvUTVkyG3giEShv_tUZTvSuj5QyzenrKxAuUY5bob3FhU64zRApiOdKNr9NM1JjcLY9BDkBWiJq0oiqQChFmLGdjbgQH-Z1ESWIkbhIe55Rkkeg1-IwYWsXIBUFwIMkS7lQciukA58jCgVaYjwAr9-lIZgP6UGeuIdaWiMGWx5x7n3zOv7xWu8DUiJ0KhCcgR9KY_hU4fKtKgvom5nweJBrMWJ8cKw4IMH7i2LyOsw1YQHWMYG3mSX08IuwX6hIs_osxCPB9Ky4fvvvXA0WA7aTV0f9kFX68KCoUo673NiLUZzzktIyDosEkNpr8Kyy_8jQAOgxeXGcQpfFl8EhQfs-rWulUzUWjk1VexkYnD7vmXVYeg9ixS0WlBYYBKz-GQLg98JqLh_GOYywrWka_BZVzK982SWrEJX8fyGDgrZB8h_1LLw8B-vaM0mik_oTfeCkxPujaUWsXmuwrgVj1zrvFVuvWzV73WvPKPVeEZMXe_2muQyjpOwCFoWf01o1_ThKG5i0Tmgc8GzGClBcQZOvUUGysr0GojzW5HXZpD3nrOUOsWCivCyCX3HaFw9VucirUDUmEgpqOIoaXA9HYTFRUakGNI_6uMw7hGfPB0UT8ZM8h9H7sZSz6MGRjBGUUjPWQwcZVaVtpPOd5h1TG-OmXb-WFgtI4WJB0gWRptIXPfHa30At8SszAIrkXZmcw72kGFN-g1s30Rx4qNmGbRmvKQcZcK3iADNNre_XR4wSF7lXR_kRFMiMdpOydIA2FeH712cKemjzwwEWUKzO9DTXaD-JFg7Eb8ADUZS4Y5brNY1kXoaaz93E4_JlD3PWqn0zH7rZYn5X0i9p53kkBstB4Csgg7OYWJjI6pXPldWR5yz_Gu1cHRR4klAh2fVVoe_qbvhQUsaPrPQ0DQWWfZLXHaR8Sk4GpGRw3pF84qdPNEi2qysn9mZhSbgvlB-tXjQG1WcneTb34-9A8jAIXzGwOWQjdi8ZviBguD5XDAxmsO85Pn0OsOVABb96Da5hHIBqt96VVk_Eo_fggFjHEcn_GEabvcBcJ22SEdBceB-1adik0z87SeGVZapRyqcNCll8fpEpogO5WHRIzvUZ5lzT6G5B1FKhv3-6bq9nHd6Zq62a5hF0N-wwyZd51vn1buM0sptOSBROXb7cs8CKTjzybc2g_VG78ajZXqpNXs16PoFtS1XMBUPCfUzxj-EUJksM2vgydeAlTdh5r3LuY3KN4vwrmQXqbRFov27vdAdErnCkTxtXC9-hPqLt2jU1nrKgi3mPsEgctXIv9po2wDHLxwfpzpsU2_8VHlgWw4MgPjDfWAWv7RkXYCQbT42xKFc29siO15KGJ8PktBW_K3NeHMBK6ECVMts6EoPMEhzx8BdkKS3CJl4g5mT3L5EZH6dLF2A57A8SAVJ_gZ0JpiXRsBdN56gajHhruw8GmU_GvWAbR76SN7YtPhCey9VdzoFbXUquym1IvxlCvikHvS_hoYbx4hHGvOBUC6n9HaY1bTLEeC3WtymU7ZbMAcDU1H-eVDkiC1DYUe2ut5gB64C3mmfWgT-yh8lRp00JUeNjTFQW0dsFiItivQCq1ACrN6xLdW0Ak6xc4DmCEpQxnFcrGkZonR1dg9B7YVh1-zCgzjVvn4nF8XtfX7s279uufINJ",
+      "summary": []
+    },
+    {
+      "id": "msg_0845be1b795ec8aa016af27e77abb887d28c91efc4b36987a4",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"requisitos\": [\"RF-02\", \"RF-03\"],\n  \"testes\": [\"T01\", \"T02\", \"T05\", \"T06\", \"T07\", \"T09\", \"T10\", \"T11\", \"T13\"]\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "none",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1847,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 1844
+    },
+    "output_tokens": 170,
+    "output_tokens_details": {
+      "reasoning_tokens": 106
+    },
+    "total_tokens": 2017
+  },
+  "user": null,
+  "metadata": {}
+}

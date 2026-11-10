@@ -1,0 +1,83 @@
+test_64_envios_simulados_configuracao_por_item_retomada_e_avaliacao (test_envio_extensao.TestEnvioExtensao.test_64_envios_simulados_configuracao_por_item_retomada_e_avaliacao) ... ok
+test_comando_sem_flag_nao_le_chave_nem_envia (test_envio_extensao.TestEnvioExtensao.test_comando_sem_flag_nao_le_chave_nem_envia) ... envio exige --enviar-real; nenhuma chamada realizada
+ok
+test_falha_e_modelo_divergente_sem_retry_ou_fallback (test_envio_extensao.TestEnvioExtensao.test_falha_e_modelo_divergente_sem_retry_ou_fallback) ... ok
+test_limites_invalidos_nao_leem_chave (test_envio_extensao.TestEnvioExtensao.test_limites_invalidos_nao_leem_chave) ... ok
+test_nova_versao_preserva_64_ordem_payloads_referencia_e_orcamento (test_envio_extensao.TestEnvioExtensao.test_nova_versao_preserva_64_ordem_payloads_referencia_e_orcamento) ... ok
+test_plano_anterior_recusado_sem_atualizar_seus_hashes (test_envio_extensao.TestEnvioExtensao.test_plano_anterior_recusado_sem_atualizar_seus_hashes) ... ok
+test_retomada_nao_mistura_controle_sintetico_com_real (test_envio_extensao.TestEnvioExtensao.test_retomada_nao_mistura_controle_sintetico_com_real) ... ok
+test_75_decisoes_motivos_e_60_anteriores_preservados (test_extensao_exploratoria.TestBancada03.test_75_decisoes_motivos_e_60_anteriores_preservados) ... ok
+test_novos_ids_sao_conhecidos_so_na_referencia_03 (test_extensao_exploratoria.TestBancada03.test_novos_ids_sao_conhecidos_so_na_referencia_03) ... ok
+test_piloto_16_mesma_interpretacao_no_avaliador_anterior (test_extensao_exploratoria.TestBancada03.test_piloto_16_mesma_interpretacao_no_avaliador_anterior) ... ok
+test_politica_conservadora_e_particoes_60_pares (test_extensao_exploratoria.TestBancada03.test_politica_conservadora_e_particoes_60_pares) ... ok
+test_64_capturas_retomada_e_avaliacao_separadas (test_extensao_exploratoria.TestExtensao.test_64_capturas_retomada_e_avaliacao_separadas) ... ok
+test_64_ordem_blocos_modelos_identidades_e_payloads (test_extensao_exploratoria.TestExtensao.test_64_ordem_blocos_modelos_identidades_e_payloads) ... ok
+test_avaliador_rejeita_referencia_antiga_para_preparacao_nova_e_inverso (test_extensao_exploratoria.TestExtensao.test_avaliador_rejeita_referencia_antiga_para_preparacao_nova_e_inverso) ... ok
+test_envio_real_extensao_exige_flag_antes_da_chave (test_extensao_exploratoria.TestExtensao.test_envio_real_extensao_exige_flag_antes_da_chave) ... ok
+test_falha_parcial_e_modelo_divergente_bloqueiam_reenvio (test_extensao_exploratoria.TestExtensao.test_falha_parcial_e_modelo_divergente_bloqueiam_reenvio) ... ok
+test_invalida_preserva_bytes_e_nao_repete (test_extensao_exploratoria.TestExtensao.test_invalida_preserva_bytes_e_nao_repete) ... ok
+test_textos_anteriores_preservados_e_catalogo_igual_nos_32 (test_extensao_exploratoria.TestExtensao.test_textos_anteriores_preservados_e_catalogo_igual_nos_32) ... ok
+test_versoes_e_configuracoes_nao_podem_ser_misturadas (test_extensao_exploratoria.TestExtensao.test_versoes_e_configuracoes_nao_podem_ser_misturadas) ... ok
+test_conexao_neutra_separada_e_explicita (test_coletor_api.TestAPI.test_conexao_neutra_separada_e_explicita) ... conexao gera custo; exige --enviar-real
+ok
+test_controle_sem_rede_credencial_e_avaliacao_separada (test_coletor_api.TestAPI.test_controle_sem_rede_credencial_e_avaliacao_separada) ... PIL-MC-01-E1-R01 concluida
+ok
+test_hash_tamper_retomada_e_orcamento (test_coletor_api.TestAPI.test_hash_tamper_retomada_e_orcamento) ... PIL-MC-01-E1-R01 concluida
+ok
+test_iniciar_sem_flag_ou_chave_nao_chama_rede (test_coletor_api.TestAPI.test_iniciar_sem_flag_ou_chave_nao_chama_rede) ... envio exige --enviar-real; nenhuma chamada realizada
+ok
+test_lote_sintetico_16_e_avaliacao_integrada_sem_rede (test_coletor_api.TestAPI.test_lote_sintetico_16_e_avaliacao_integrada_sem_rede) ... PIL-MC-01-E1-R01 concluida
+PIL-MC-03-D0-R01 concluida
+PIL-MC-01-E0-R01 concluida
+PIL-MC-03-E0-R01 concluida
+PIL-MC-03-D1-R01 concluida
+PIL-MC-01-D1-R01 concluida
+PIL-MC-03-E1-R01 concluida
+PIL-MC-01-D0-R01 concluida
+PIL-MC-01-D1-R02 concluida
+PIL-MC-03-E1-R02 concluida
+PIL-MC-01-E1-R02 concluida
+PIL-MC-03-D0-R02 concluida
+PIL-MC-01-D0-R02 concluida
+PIL-MC-03-D1-R02 concluida
+PIL-MC-01-E0-R02 concluida
+PIL-MC-03-E0-R02 concluida
+ok
+test_ordem_textos_configuracao_e_fase_separados (test_coletor_api.TestAPI.test_ordem_textos_configuracao_e_fase_separados) ... ok
+test_output_tools_modelo_historico_e_mensagens_extras_sao_desvios (test_coletor_api.TestAPI.test_output_tools_modelo_historico_e_mensagens_extras_sao_desvios) ... ok
+test_parse_preserva_texto_recusa_invalida_e_incompleta (test_coletor_api.TestAPI.test_parse_preserva_texto_recusa_invalida_e_incompleta) ... ok
+test_real_simulada_uma_chamada_chave_nao_persistida_e_sem_reenvio (test_coletor_api.TestAPI.test_real_simulada_uma_chamada_chave_nao_persistida_e_sem_reenvio) ... PIL-MC-01-E1-R01 concluida
+PIL-MC-03-D0-R01 concluida
+ok
+test_redirect_e_http_error_sem_retry (test_coletor_api.TestAPI.test_redirect_e_http_error_sem_retry) ... ok
+test_requisicao_so_texto_sem_historico_ferramentas_ou_segredo (test_coletor_api.TestAPI.test_requisicao_so_texto_sem_historico_ferramentas_ou_segredo) ... ok
+test_response_id_duplicado_interrompe_sem_escolher_resultado (test_coletor_api.TestAPI.test_response_id_duplicado_interrompe_sem_escolher_resultado) ... PIL-MC-01-E1-R01 concluida
+PIL-MC-03-D0-R01 concluida
+ok
+test_timeout_preservado_e_continuacao_bloqueada (test_coletor_api.TestAPI.test_timeout_preservado_e_continuacao_bloqueada) ... PIL-MC-01-E1-R01 falha_tecnica
+ok
+test_ajuda_simulacao_preparacao_nao_leem_chave_ou_enviam (test_transporte_api.TestTransporteAPI.test_ajuda_simulacao_preparacao_nao_leem_chave_ou_enviam) ... ok
+test_conexao_incomplete_read_preserva_fragmento_e_fechamento (test_transporte_api.TestTransporteAPI.test_conexao_incomplete_read_preserva_fragmento_e_fechamento) ... ok
+test_corpo_http_error_tambem_preserva_incomplete_read (test_transporte_api.TestTransporteAPI.test_corpo_http_error_tambem_preserva_incomplete_read) ... ok
+test_defeito_de_programacao_nao_vira_falha_de_transporte (test_transporte_api.TestTransporteAPI.test_defeito_de_programacao_nao_vira_falha_de_transporte) ... ok
+test_eof_antes_de_content_length_e_falha_tecnica (test_transporte_api.TestTransporteAPI.test_eof_antes_de_content_length_e_falha_tecnica) ... ok
+test_excecoes_http_oserror_sem_texto_segredo_ou_retry (test_transporte_api.TestTransporteAPI.test_excecoes_http_oserror_sem_texto_segredo_ou_retry) ... ok
+test_incomplete_read_200_com_prefixo_fecha_e_nao_reenvia (test_transporte_api.TestTransporteAPI.test_incomplete_read_200_com_prefixo_fecha_e_nao_reenvia) ... ok
+test_interrupcao_com_fragmento_em_captura_e_conexao (test_transporte_api.TestTransporteAPI.test_interrupcao_com_fragmento_em_captura_e_conexao) ... ok
+test_tls_verificado_headers_sem_segredo_e_um_unico_open (test_transporte_api.TestTransporteAPI.test_tls_verificado_headers_sem_segredo_e_um_unico_open) ... ok
+test_descritiva_pendente_e_resumo_controlado_bloqueado (test_revisao_conformidade.TestRevisaoConformidade.test_descritiva_pendente_e_resumo_controlado_bloqueado) ... ok
+test_desvio_nao_pode_ser_lavado_por_inclusao (test_revisao_conformidade.TestRevisaoConformidade.test_desvio_nao_pode_ser_lavado_por_inclusao) ... ok
+test_exclusao_nao_apaga_captura_ou_denominador (test_revisao_conformidade.TestRevisaoConformidade.test_exclusao_nao_apaga_captura_ou_denominador) ... ok
+test_hash_responsavel_data_e_decisao_preservada (test_revisao_conformidade.TestRevisaoConformidade.test_hash_responsavel_data_e_decisao_preservada) ... ok
+test_lista_nao_pode_omitir_captura_para_ocultar_exclusao (test_revisao_conformidade.TestRevisaoConformidade.test_lista_nao_pode_omitir_captura_para_ocultar_exclusao) ... ok
+test_revisao_ainda_pendente_nao_libera_resumo (test_revisao_conformidade.TestRevisaoConformidade.test_revisao_ainda_pendente_nao_libera_resumo) ... ok
+test_revisao_explicita_inclui_e_preserva_originais (test_revisao_conformidade.TestRevisaoConformidade.test_revisao_explicita_inclui_e_preserva_originais) ... ok
+test_argv_configura_somente_chaves_conferidas_sem_prompts_extras (test_controles_cli.TestControlesCLI.test_argv_configura_somente_chaves_conferidas_sem_prompts_extras) ... ok
+test_configuracao_nao_promove_false_a_indisponibilidade (test_controles_cli.TestControlesCLI.test_configuracao_nao_promove_false_a_indisponibilidade) ... ok
+test_erro_recuperado_nao_cria_turno_ou_gera_retry_de_final (test_controles_cli.TestControlesCLI.test_erro_recuperado_nao_cria_turno_ou_gera_retry_de_final) ... ok
+test_trava_nao_e_liberada_esvaziando_lista_de_bloqueios (test_controles_cli.TestControlesCLI.test_trava_nao_e_liberada_esvaziando_lista_de_bloqueios) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 217.253s
+
+OK

@@ -1,0 +1,331 @@
+{
+  "avaliador_sha256": "a30077b5d8a3de06273e31c1d87d3f30c6af9e668951a48654114c08614c6b83",
+  "celulas": [
+    {
+      "condicao": "E1",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-04-v2",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D0",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D0",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-04-v2",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E1",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E1",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D0",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-02",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E0",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-02",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E0",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E0",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-04-v2",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D0",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E0",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D1",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D1",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-04-v2",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D1",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-02",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D1",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E1",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D0",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-04-v2",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D1",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-04-v2",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E0",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-04-v2",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E1",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D1",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E1",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-02",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D0",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E0",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E1",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-04-v2",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E0",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-02",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E0",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D1",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-03",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D0",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-02",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "E1",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-02",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D0",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-01",
+      "resultado_combinado": null
+    },
+    {
+      "condicao": "D1",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "grupos": [],
+      "mudanca": "MC-02",
+      "resultado_combinado": null
+    }
+  ],
+  "completo": false,
+  "fase": "exploratoria",
+  "instante_utc": "2026-11-10T02:25:47.263123+00:00",
+  "origem": "real",
+  "politica": "ids-proposta-004-v2",
+  "resumo_id": "a7d0e9fa093a46ae980eae046fda27c9"
+}

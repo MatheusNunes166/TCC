@@ -1,0 +1,110 @@
+[
+  {
+    "G": [
+      "RF-04"
+    ],
+    "S": [
+      "RF-02",
+      "RF-03",
+      "RF-04"
+    ],
+    "acertos": [
+      "RF-04"
+    ],
+    "avaliacao_arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\\EXT03-MC-02-D0-SOL-R02\\T01\\avaliacao.json",
+    "condicao": "D0",
+    "desconhecidos": [],
+    "dimensao": "requisitos",
+    "duplicatas": [],
+    "excedentes": [
+      "RF-02",
+      "RF-03"
+    ],
+    "modelo": "gpt-6-sol",
+    "mudanca": "MC-02",
+    "observacao_id": "EXT03-MC-02-D0-SOL-R02",
+    "omissoes": [],
+    "repeticao": 2
+  },
+  {
+    "G": [
+      "RF-04"
+    ],
+    "S": [
+      "RF-02",
+      "RF-03",
+      "RF-04"
+    ],
+    "acertos": [
+      "RF-04"
+    ],
+    "avaliacao_arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\\EXT03-MC-02-E0-SOL-R01\\T01\\avaliacao.json",
+    "condicao": "E0",
+    "desconhecidos": [],
+    "dimensao": "requisitos",
+    "duplicatas": [],
+    "excedentes": [
+      "RF-02",
+      "RF-03"
+    ],
+    "modelo": "gpt-6-sol",
+    "mudanca": "MC-02",
+    "observacao_id": "EXT03-MC-02-E0-SOL-R01",
+    "omissoes": [],
+    "repeticao": 1
+  },
+  {
+    "G": [
+      "RF-04"
+    ],
+    "S": [
+      "RF-02",
+      "RF-03",
+      "RF-04"
+    ],
+    "acertos": [
+      "RF-04"
+    ],
+    "avaliacao_arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\\EXT03-MC-02-E0-SOL-R02\\T01\\avaliacao.json",
+    "condicao": "E0",
+    "desconhecidos": [],
+    "dimensao": "requisitos",
+    "duplicatas": [],
+    "excedentes": [
+      "RF-02",
+      "RF-03"
+    ],
+    "modelo": "gpt-6-sol",
+    "mudanca": "MC-02",
+    "observacao_id": "EXT03-MC-02-E0-SOL-R02",
+    "omissoes": [],
+    "repeticao": 2
+  },
+  {
+    "G": [
+      "RF-04"
+    ],
+    "S": [
+      "RF-02",
+      "RF-03",
+      "RF-04"
+    ],
+    "acertos": [
+      "RF-04"
+    ],
+    "avaliacao_arquivo": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\\EXT03-MC-02-E1-SOL-R01\\T01\\avaliacao.json",
+    "condicao": "E1",
+    "desconhecidos": [],
+    "dimensao": "requisitos",
+    "duplicatas": [],
+    "excedentes": [
+      "RF-02",
+      "RF-03"
+    ],
+    "modelo": "gpt-6-sol",
+    "mudanca": "MC-02",
+    "observacao_id": "EXT03-MC-02-E1-SOL-R01",
+    "omissoes": [],
+    "repeticao": 1
+  }
+]

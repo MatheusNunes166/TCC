@@ -15,9 +15,12 @@ def contexto(lote, avaliacoes, observacoes):
     plan = read(lote / 'plano-original.json')
     if (header.get('interface') != 'Responses API'
             or (header.get('origem'), header.get('fase')) not in (
-                ('real', 'piloto'), ('sintetica', 'verificacao_sintetica'))
+                ('real', 'piloto'), ('real', 'exploratoria'), ('sintetica', 'verificacao_sintetica'))
             or header['plano_sha256'] != a.sha((lote / 'plano-original.json').read_bytes())):
         raise ValueError('revisao requer lote API e plano integro')
+    if header['fase'] == 'exploratoria' and (plan.get('etapa') != 'extensao-0.3-D41'
+        or header.get('etapa') != plan['etapa'] or header.get('referencia_sha256') != plan['referencia_sha256']):
+        raise ValueError('revisao exploratoria exige identidade da extensao')
     entries, plans = read(avaliacoes), read(observacoes)
     if not isinstance(entries, list) or not isinstance(plans, list):
         raise ValueError('listas explicitas requeridas')

@@ -1,0 +1,38 @@
+{
+  "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+  "comandos": [
+    {
+      "comando": "python -B evidencias/spec004/avaliacao-extensao-0.3-D43/conferir_relatar.py conferir",
+      "saida_shell": 0,
+      "resultado": "integridade.json; referencia conferida antes da avaliacao"
+    },
+    {
+      "cmd": "python -B \"D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\coletor_api.py\" avaliar --lote \"D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\" --referencia \"D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\materiais\\modelos\\referencia_candidata_0.3_NAO_ENVIAR_AO_LLM.json\" --saida \"D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\"",
+      "chunk_id": "f33097",
+      "wall_time_seconds": 8.1956709,
+      "exit_code": 1,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "cmd": "python -B \"D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\coletor_api.py\" revisao-modelo --lote \"D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\extensao-real-0.3-001\" --avaliacoes \"D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\\lista.json\" --observacoes \"D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\\observacoes.json\" --saida \"D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\\revisao-conformidade-pendente.json\"",
+      "chunk_id": "68c652",
+      "wall_time_seconds": 2.6751754,
+      "exit_code": 0,
+      "original_token_count": 30,
+      "output": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\avaliados\\extensao-real-0.3-001-avaliacao-001\\revisao-conformidade-pendente.json\r\n"
+    },
+    {
+      "comando": "python -B evidencias/spec004/avaliacao-extensao-0.3-D43/conferir_relatar.py relatar",
+      "saida_shell": 1,
+      "resultado": "primeira tentativa recusada: repeticao duplicada nao adjudicada; nenhum descritivo publicado"
+    },
+    {
+      "comando": "python -B evidencias/spec004/avaliacao-extensao-0.3-D43/conferir_relatar.py relatar",
+      "saida_shell": 0,
+      "resultado": "relato corrigido: Jaccard somente por celula; medias por modelo ponderadas por V"
+    }
+  ],
+  "avaliacao_status_interpretado": "64 avaliacoes completas; resumo/manifesto.json retorno=2 por conformidade pendente. O shell reportou 1 para o comando nao zero.",
+  "novas_chamadas_API": 0
+}

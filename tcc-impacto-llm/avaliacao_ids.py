@@ -53,6 +53,16 @@ def parse_resposta(data):
 def texto(v):return isinstance(v,str) and bool(v.strip())
 def canonica(mudanca):return 'MC-04-v2' if mudanca=='MC-04' else mudanca
 
+def universos_referencia(ref):
+    # A referencia antiga continua interpretando T13-T15 como desconhecidos.
+    if ref.get('versao') != '0.3':return UNIVERSOS
+    ids={f'T{i:02}' for i in range(1,16)}
+    catalog=ref.get('catalogo',[])
+    if (ref.get('catalogo_versao')!='0.3' or len(catalog)!=15
+        or {c.get('id') for c in catalog}!=ids):
+        raise ValueError('catalogo 0.3 incompleto/divergente')
+    return {'requisitos':UNIVERSOS['requisitos'],'testes':ids}
+
 def referencia_da_mudanca(ref,mudanca):
     if not isinstance(ref,dict) or not texto(ref.get('versao')) or not texto(ref.get('status')):
         raise ValueError('referencia sem versao/status')
@@ -62,11 +72,11 @@ def referencia_da_mudanca(ref,mudanca):
     if any(not isinstance(i,str) for i in ids) or len(set(ids))!=len(ids):raise ValueError('mudanca duplicada/invalida')
     name=canonica(mudanca)
     if name not in MUDANCAS or ids.count(name)!=1:raise ValueError('mudanca ausente')
-    c=changes[ids.index(name)];expected={}
+    c=changes[ids.index(name)];expected={};universos=universos_referencia(ref)
     for dim,field in [('requisitos','rfs'),('testes','tests')]:
         values=c.get(field)
         if (not isinstance(values,list) or not values or any(not isinstance(v,str) for v in values)
-            or len(set(values))!=len(values) or not set(values)<=UNIVERSOS[dim]):
+            or len(set(values))!=len(values) or not set(values)<=universos[dim]):
             raise ValueError('conjunto esperado vazio/duplicado/desconhecido/tipo invalido: '+field)
         expected[dim]=set(values)
     return name,expected
@@ -77,13 +87,14 @@ def numero(value):
 
 def quociente(n,d):return numero(Fraction(n,d)) if d else None
 
-def comparar(lista,g,dim):
+def comparar(lista,g,dim,universos=None):
+    universos=UNIVERSOS if universos is None else universos
     selected=set(lista);positions={}
     for i,value in enumerate(lista):positions.setdefault(value,[]).append(i)
     tp=len(selected & g);fp=len(selected-g);fn=len(g-selected)
     return {'lista_original':lista,'S':sorted(selected),'G':sorted(g),
         'acertos':sorted(selected & g),'excedentes':sorted(selected-g),'omissoes':sorted(g-selected),
-        'desconhecidos':sorted(selected-UNIVERSOS[dim]),
+        'desconhecidos':sorted(selected-universos[dim]),
         'duplicatas':[{'id':k,'posicoes':p,'repeticoes':p[1:]} for k,p in positions.items() if len(p)>1],
         'TP':tp,'FP':fp,'FN':fn,'metricas_propostas':{
           'precisao':numero(Fraction(tp,tp+fp) if selected else 0),
@@ -106,7 +117,7 @@ def avaliar_resposta(data,referencia,mudanca='MC-01',estado_tecnico='concluida')
             json_sintatico='valido' if e.etapa=='contrato' else 'invalido',formato_contrato='invalido')
         return result
     result.update(status_avaliacao='avaliada',json_sintatico='valido',formato_contrato='valido')
-    for dim in UNIVERSOS:result[dim]=comparar(obj[dim],g[dim],dim)
+    for dim in UNIVERSOS:result[dim]=comparar(obj[dim],g[dim],dim,universos_referencia(referencia))
     result['somente_ids_conhecidos']=all(not result[d]['desconhecidos'] for d in UNIVERSOS)
     result['ids_conhecidos_por_dimensao']={d:not result[d]['desconhecidos'] for d in UNIVERSOS}
     return result
@@ -292,6 +303,12 @@ def avaliar(preparacao,tentativa,referencia,saida,avaliacao_anterior=None,origem
         refraw=ler(referencia,tracked);salvar(out/'referencia-privada.json',refraw,tracked)
         try:ref=json_estrito(refraw)
         except (ValueError,UnicodeError):ref=None
+        if (prep.get('referencia_versao') is not None
+            and (not isinstance(ref,dict) or prep['referencia_versao']!=ref.get('versao')
+                 or prep.get('referencia_sha256')!=sha(refraw))):
+            raise ValueError('referencia de outra versao/hash da preparacao')
+        if isinstance(ref,dict) and ref.get('versao')=='0.3' and prep.get('referencia_versao')!='0.3':
+            raise ValueError('referencia 0.3 exige preparacao identificada; nao misturar piloto')
         result.update(avaliar_resposta(response,ref,t['mudanca'],t['estado_tecnico']))
         result['referencia']={'sha256':sha(refraw),'versao':ref.get('versao') if isinstance(ref,dict) else None,
             'status':ref.get('status') if isinstance(ref,dict) else None}

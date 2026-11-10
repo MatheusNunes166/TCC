@@ -1,0 +1,1 @@
+> Organize a análise em etapas: examine a regra alterada; verifique as dependências funcionais; determine os requisitos impactados; aplique a política de seleção aos casos existentes; confira as duas listas. Retorne somente os dois conjuntos de identificadores no JSON exigido.

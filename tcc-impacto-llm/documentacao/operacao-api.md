@@ -2,6 +2,54 @@
 
 Situação e pendências vigentes: [estado atual](../ESTADO_ATUAL.md). Este é o procedimento do adaptador integrado em D-39; exemplos com caminhos NOVO/NOVA não autorizam envio. A integração foi offline; evidências de base, patch e 52 testes estão em [D-39](decisoes.md) e [verificação](../captura/integracao-api-2026-11-07/verificacao.json). Os registros reais posteriores são localizados pelo estado central.
 
+## Envio da extensão 0.3 — D-42
+
+Integração solicitada pelo pesquisador, validada sem chamadas reais. O novo comando `iniciar` exige `--enviar-real`, `--limite` inteiro entre 1 e 64 e um plano D-42. `--continuar` retoma o mesmo lote/plano sem reenviar conclusões; falha, estado remoto desconhecido ou desvio bloqueiam reenvio automático. A chave é lida de `OPENAI_API_KEY`, sem persistir seu valor. O orçamento de planejamento **USD 2 refere-se à rodada inteira**; o mesmo valor nas duas configurações é metadado compartilhado, sem somar dois orçamentos, contador automático ou garantia de teto. O pesquisador declarou aceitar esse risco.
+
+Plano vigente 003, gerado pelo preparador com `--origem` 002, preserva as 64 observações, ordem literal e payloads. Modelo/configuração são selecionados em cada linha; ambos usam medium e 4096. Capturas reais têm `origem=real`, `fase=exploratoria`, etapa da extensão, configuração e hashes. Não reutilizar lote do piloto ou de controle. A fonte e a trava do coletor Codex CLI permanecem intactas.
+
+Primeira observação somente — `EXT03-MC-04-v2-E1-SOL-R01`:
+
+```powershell
+python -B "D:\TCC-Projeto\TCC\tcc-impacto-llm\extensao_exploratoria.py" iniciar --plano "D:\TCC-Projeto\TCC\tcc-impacto-llm\captura\extensao-20261109-003\plano.json" --lote "D:\TCC-Projeto\TCC\tcc-impacto-llm\captura\extensao-real-0.3-001" --limite 1 --enviar-real
+```
+
+Continuação para somente **uma próxima observação pendente**, caso a anterior esteja concluída sem desvio:
+
+```powershell
+python -B "D:\TCC-Projeto\TCC\tcc-impacto-llm\extensao_exploratoria.py" iniciar --plano "D:\TCC-Projeto\TCC\tcc-impacto-llm\captura\extensao-20261109-003\plano.json" --lote "D:\TCC-Projeto\TCC\tcc-impacto-llm\captura\extensao-real-0.3-001" --limite 1 --continuar --enviar-real
+```
+
+`--limite` é a quantidade máxima **nova por invocação**, não a posição final da ordem nem um limite em dólares. Nenhum desses comandos foi executado nesta implementação. A avaliação permanece separada, após haver capturas, com saída nova por avaliação:
+
+```powershell
+python -B "D:\TCC-Projeto\TCC\tcc-impacto-llm\coletor_api.py" avaliar --lote "D:\TCC-Projeto\TCC\tcc-impacto-llm\captura\extensao-real-0.3-001" --referencia "D:\TCC-Projeto\TCC\tcc-impacto-llm\materiais\modelos\referencia_candidata_0.3_NAO_ENVIAR_AO_LLM.json" --saida "D:\TCC-Projeto\TCC\tcc-impacto-llm\avaliados\extensao-real-0.3-001-avaliacao-001"
+```
+
+O resumo controlado continua bloqueado enquanto houver revisão de conformidade pendente; a revisão separada existente passa a aceitar a fase exploratória identificada. [D-42, resultados e preservação](../evidencias/spec004/integracao-envio-extensao-2026-11-09-D42/RELATORIO.md). Os comandos e a trava D-41 abaixo são históricos, anteriores a essa integração; não editar os planos antigos para fazê-los passar pelo conferidor novo.
+
+## Extensão 0.3 — preparação D-41
+
+`extensao_exploratoria.py` reutiliza o motor API para a nova configuração de 64 posições, em ordem intercalada entre os modelos. `gpt-6-sol`/medium e `gpt-6-astra`/medium têm IDs próprios; limite comum 4096, sem fallback e sem orçamento declarado automaticamente. As capturas de controle sempre têm origem sintética, modelo efetivamente reportado nulo e envelopes explicitamente artificiais. A extensão não oferece comando de envio real; o motor também bloqueia essa opção antes de acessar credencial. Referência privada é aberta somente na avaliação separada.
+
+Na raiz do projeto, simulação somente de leitura:
+
+```powershell
+python -B extensao_exploratoria.py simular --plano captura/extensao-20261109-002/plano.json
+```
+
+Controle ARTIFICIAL e retomada em diretório novo (não são observações da pesquisa):
+
+```powershell
+python -B extensao_exploratoria.py controle --plano captura/extensao-20261109-002/plano.json --lote captura/CONTROLE-ARTIFICIAL-ext03-NOVO --limite 17
+python -B extensao_exploratoria.py controle --plano captura/extensao-20261109-002/plano.json --lote captura/CONTROLE-ARTIFICIAL-ext03-NOVO --limite 47 --continuar
+python -B coletor_api.py avaliar --lote captura/CONTROLE-ARTIFICIAL-ext03-NOVO --referencia materiais/modelos/referencia_candidata_0.3_NAO_ENVIAR_AO_LLM.json --saida avaliados/CONTROLE-ARTIFICIAL-ext03-NOVO
+```
+
+Preparações e avaliações nunca sobrescrevem diretórios existentes. O plano preserva 64 linhas planejadas; controles não o promovem a executado. Para preparar outra identidade após mudança de fontes, usar `python -B extensao_exploratoria.py preparar --saida captura/extensao-NOVA`. Não editar hashes de planos existentes. Reprodução do coletor anterior: fontes literais em `evidencias/spec004/extensao-2026-11-09/fontes-anteriores/`, com hashes do inventário inicial; as recusas por hash do script atual são deliberadas.
+
+[Referência candidata, conjuntos e justificativas](referencia-candidata-0.3.md); [verificações, preços e pendências](../evidencias/spec004/extensao-2026-11-09/RELATORIO.md). O restante deste documento conserva o procedimento da versão anterior.
+
 ## Arquivos e fronteiras
 
 - [coletor_api.py](../coletor_api.py): Responses API por biblioteca padrão; preparação, simulação, controle sintético, conexão neutra e coleta futura; avaliação importada somente no comando separado.

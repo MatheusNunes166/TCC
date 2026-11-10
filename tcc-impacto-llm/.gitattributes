@@ -3,3 +3,17 @@
 # Caminhos futuros do procedimento de captura/avaliacao: originais sempre literais.
 /captura/** -text -filter -ident
 /avaliados/** -text -filter -ident
+# D-41: novos documentos editoriais LF antes dos hashes; fontes funcionais vinculadas.
+/evidencias/spec004/extensao-2026-11-09/** -text -filter -ident
+/materiais/modelos/catalogo_baseline_0.3.* -text -filter -ident
+/materiais/modelos/referencia_candidata_0.3_NAO_ENVIAR_AO_LLM.json -text -filter -ident
+/extensao_exploratoria.py -text -filter -ident
+/coletor_api.py -text -filter -ident
+/avaliacao_ids.py -text -filter -ident
+/tests/test_extensao_exploratoria.py -text -filter -ident
+# D-42: integracao minima do envio da extensao e evidencias literais.
+/revisao_conformidade.py -text -filter -ident
+/tests/test_envio_extensao.py -text -filter -ident
+/evidencias/spec004/integracao-envio-extensao-2026-11-09-D42/** -text -filter -ident
+# D-43: novas evidencias da conferencia/avaliacao offline, sem alterar capturas.
+/evidencias/spec004/avaliacao-extensao-0.3-D43/** -text -filter -ident
