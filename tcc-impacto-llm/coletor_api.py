@@ -19,7 +19,7 @@ import uuid
 import coletor_piloto as base
 import montagem_entradas as montagem
 
-VERSAO = 'coletor-responses-v1.3-D42'
+VERSAO = 'coletor-responses-v1.4-D47'
 ENDPOINT = 'https://api.openai.com/v1/responses'
 MODELO = 'gpt-6-sol'
 MIN_OUTPUT_TOKENS = 16  # Restricao de formato da API, nao escolha do piloto.
@@ -334,12 +334,22 @@ def conferir(path):
     return plan
 
 
-def capturar(path, lote, limite, continuar=False, real=False, sender=enviar, *, conferidor=None, controle_http=None):
+def capturar(path, lote, limite, continuar=False, real=False, sender=enviar, *, conferidor=None, controle_http=None, autorizacao=None):
     check = conferir if conferidor is None else conferidor
     plan = check(path)
     total = len(plan['observacoes'])
-    extension = plan.get('etapa') == 'extensao-0.3-D41'
-    if extension and real and (plan.get('integracao') != 'envio-extensao-D42-v1'
+    notas = plan.get('etapa') == 'notas-mc04-0.3-D46'
+    extension = notas or plan.get('etapa') == 'extensao-0.3-D41'
+    authorization_raw = None
+    authorization_data = None
+    if notas and real:
+        # Antes de chave, lock, criacao do lote ou transporte.
+        from notas_exploratorias import validar_autorizacao
+        authorization_data = validar_autorizacao(path, autorizacao)
+        authorization_raw = Path(autorizacao).read_bytes()
+        if montagem._json(authorization_raw) != authorization_data:
+            raise ValueError('autorizacao mudou durante a validacao')
+    if extension and not notas and real and (plan.get('integracao') != 'envio-extensao-D42-v1'
                                or plan.get('envio_autorizado') is not True):
         raise ValueError('plano da extensao sem integracao de envio D-42')
     if type(limite) is not int or not 1 <= limite <= total:
@@ -354,12 +364,20 @@ def capturar(path, lote, limite, continuar=False, real=False, sender=enviar, *, 
     if extension:
         header.update(etapa=plan['etapa'], integracao=plan['integracao'],
                       catalogo_versao=plan['catalogo_versao'], referencia_sha256=plan['referencia_sha256'])
+    if notas:
+        header['bloco_exploratorio'] = plan['bloco_exploratorio']
+        if real:
+            header.update(autorizacao_sha256=sha(authorization_raw),
+                          orcamento_novo_declarado_usd=authorization_data['orcamento_usd'])
     if not continuar:
         out.mkdir(parents=True, exist_ok=False)
         salvar(out / 'plano-original.json', Path(path).read_bytes())
         salvar_json(out / 'lote.json', header)
+        if notas and real:salvar(out / 'autorizacao-envio-original.json',authorization_raw)
     if (base.ler(out / 'lote.json') != header or (out / 'plano-original.json').read_bytes() != Path(path).read_bytes()):
         raise ValueError('configuracao/origem/plano mudou; nao continuar este lote')
+    if notas and real and sha((out/'autorizacao-envio-original.json').read_bytes())!=header['autorizacao_sha256']:
+        raise ValueError('autorizacao original do lote divergente')
     lock = out / 'coletor.lock'
     with lock.open('x') as f:
         f.write(str(os.getpid()))
@@ -376,6 +394,8 @@ def capturar(path, lote, limite, continuar=False, real=False, sender=enviar, *, 
                     or previous.get('etapa') != plan['etapa']
                     or previous.get('configuracao') != plan['configuracoes'][row['configuracao_id']]):
                     raise ValueError('captura de outra observacao/configuracao/origem; nao continuar')
+                if notas and any(previous.get(k) != row[k] for k in ('nota_id', 'bloco_exploratorio')):
+                    raise ValueError('nota/bloco divergente na retomada')
                 if previous['estado_tecnico'] != 'concluida' or previous['desvios']:
                     raise ValueError('tentativa incompleta/ambigua/com desvio; conferir sem reenvio automatico')
                 if previous['response_id'] in response_ids:
@@ -388,6 +408,8 @@ def capturar(path, lote, limite, continuar=False, real=False, sender=enviar, *, 
             config = plan['configuracoes'][row['configuracao_id']] if extension else plan['configuracao']
             prepfile = base.relativo(Path(path).parent, row['preparacao'])
             prep = base.conferir_preparacao(prepfile)
+            if notas and any(prep.get(k) != row[k] for k in ('nota_id', 'bloco_exploratorio')):
+                raise ValueError('nota/bloco diverge da preparacao')
             attempt.mkdir(parents=True)
             for name in ['preparacao.json'] + [x['arquivo'] for x in prep['arquivos']]:
                 salvar(attempt / 'preparacao' / name, (prepfile.parent / name).read_bytes())
@@ -397,7 +419,8 @@ def capturar(path, lote, limite, continuar=False, real=False, sender=enviar, *, 
             guardar_requisicao(attempt, body)
             start = agora()
             salvar_json(attempt / 'inicio.json', {'instante': start, 'origem': origin,
-                        'endpoint': ENDPOINT, 'requisicao_sha256': sha(body), 'credenciais_persistidas': False})
+                        'endpoint': ENDPOINT, 'requisicao_sha256': sha(body), 'credenciais_persistidas': False,
+                        **({'nota_id':row['nota_id'],'bloco_exploratorio':row['bloco_exploratorio']} if notas else {})})
             parsed = None
             request_id = None
             status = None
@@ -442,6 +465,9 @@ def capturar(path, lote, limite, continuar=False, real=False, sender=enviar, *, 
                 record.update(etapa=plan['etapa'], integracao=plan['integracao'],
                               bloco=row['bloco'], ordem=row['ordem'], plano_sha256=header['plano_sha256'],
                               catalogo_versao=plan['catalogo_versao'], referencia_sha256=plan['referencia_sha256'])
+            if notas:
+                record.update(nota_id=row['nota_id'], bloco_exploratorio=row['bloco_exploratorio'], modelo=row['modelo'])
+                if real:record['autorizacao_sha256'] = header['autorizacao_sha256']
             salvar_json(attempt / 'tentativa.json', record)
             salvar_json(attempt / 'fechamento.json', {'arquivos': base.inventariar(attempt)})
             count += 1
@@ -463,6 +489,9 @@ def avaliar_lote(lote, referencia, saida):
     """
     root = montagem.sem_links(lote)
     header = base.ler(root / 'lote.json')
+    if header.get('etapa') == 'notas-mc04-0.3-D46':
+        from notas_exploratorias import avaliar_lote as avaliar_notas
+        return avaliar_notas(lote, referencia, saida)
     if (header['origem'], header['fase']) != ('real', 'exploratoria'):
         return base.avaliar_lote(lote, referencia, saida)
     import avaliacao_ids as avaliador

@@ -1,0 +1,9 @@
+{
+  "bloco_exploratorio": "notas-mc04-0.3-v1-D46",
+  "credenciais_persistidas": false,
+  "endpoint": "https://api.openai.com/v1/responses",
+  "instante": "2026-11-11T23:58:54.818432+00:00",
+  "nota_id": "N01",
+  "origem": "real",
+  "requisicao_sha256": "684b9554e295dbda07e597640a5fc360feea9a8b7ff78367e47f7efc540cfddc"
+}

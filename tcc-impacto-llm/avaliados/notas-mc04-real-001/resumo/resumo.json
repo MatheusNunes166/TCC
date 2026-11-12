@@ -1,0 +1,130 @@
+{
+  "N_planejado_original": 16,
+  "avaliador_sha256": "8448f07a7d5c1fd8596cde10deed9467544a75a7ce0f4a16ff8aca2d7689e516",
+  "bloco_exploratorio": "notas-mc04-0.3-v1-D46",
+  "celulas": [
+    {
+      "bloco_exploratorio": "notas-mc04-0.3-v1-D46",
+      "condicao": "D1",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "estrutura": "direta",
+      "grupos": [],
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N02",
+      "resultado_combinado": null
+    },
+    {
+      "bloco_exploratorio": "notas-mc04-0.3-v1-D46",
+      "condicao": "D1",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "estrutura": "direta",
+      "grupos": [],
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N01",
+      "resultado_combinado": null
+    },
+    {
+      "bloco_exploratorio": "notas-mc04-0.3-v1-D46",
+      "condicao": "D1",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "estrutura": "direta",
+      "grupos": [],
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N01",
+      "resultado_combinado": null
+    },
+    {
+      "bloco_exploratorio": "notas-mc04-0.3-v1-D46",
+      "condicao": "E1",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "estrutura": "estruturada",
+      "grupos": [],
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N02",
+      "resultado_combinado": null
+    },
+    {
+      "bloco_exploratorio": "notas-mc04-0.3-v1-D46",
+      "condicao": "D1",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "estrutura": "direta",
+      "grupos": [],
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N02",
+      "resultado_combinado": null
+    },
+    {
+      "bloco_exploratorio": "notas-mc04-0.3-v1-D46",
+      "condicao": "E1",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "estrutura": "estruturada",
+      "grupos": [],
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N01",
+      "resultado_combinado": null
+    },
+    {
+      "bloco_exploratorio": "notas-mc04-0.3-v1-D46",
+      "condicao": "E1",
+      "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "estrutura": "estruturada",
+      "grupos": [],
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N01",
+      "resultado_combinado": null
+    },
+    {
+      "bloco_exploratorio": "notas-mc04-0.3-v1-D46",
+      "condicao": "E1",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "diagnosticos": [
+        "resposta real com desvio/revisao pendente; resumo controlado bloqueado"
+      ],
+      "estrutura": "estruturada",
+      "grupos": [],
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N02",
+      "resultado_combinado": null
+    }
+  ],
+  "chave_agrupamento": [
+    "modelo",
+    "condicao",
+    "nota_id"
+  ],
+  "completo": false,
+  "fase": "exploratoria",
+  "instante_utc": "2026-11-12T00:07:43.997456+00:00",
+  "origem": "real",
+  "politica": "ids-proposta-004-v2",
+  "resumo_id": "1911f3acd53b4e85bde134c1ebb28583"
+}

@@ -1,0 +1,19 @@
+{
+  "anteriores_inventariados": 12319,
+  "anteriores_identicos": 12316,
+  "alteracoes_autorizadas_com_copias_literais": [
+    "captura/autorizacao-notas-mc04-001.json",
+    "notas_exploratorias.py",
+    "tests/test_integracao_notas.py"
+  ],
+  "hashes_arquivos_anteriores_preservados_nas_copias": true,
+  "plano_002_sha256": "c8363eb2daaac2b1d1d1538470458356a29504cfc378d17cb35c2188d43dc1bd",
+  "autorizacao_sha256": "6e11cb8ec2379ef5d832e4b76e78878bc2a1dc9a6b746fc54ea034cf9ea80e5a",
+  "fontes_revisao_sha256": "d043ff6af89a24ea844ee1b78ddbbf1c7a9c3572f70fa1017334493a3b59175f",
+  "orcamento_usd": null,
+  "ficha_64_sha256": "10bc74969683b1f3622d67e8efec47da838f9071ed561d6c83f210ed5bbe9307",
+  "motor_api_sha256": "70e5b583bc52af64bd40af27ac5c1b172e021a4e643c8b9dc11ee2a1b4972b39",
+  "lote_real_existe": false,
+  "chamadas_reais": 0,
+  "rede_bloqueada": true
+}

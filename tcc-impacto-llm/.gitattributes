@@ -17,3 +17,13 @@
 /evidencias/spec004/integracao-envio-extensao-2026-11-09-D42/** -text -filter -ident
 # D-43: novas evidencias da conferencia/avaliacao offline, sem alterar capturas.
 /evidencias/spec004/avaliacao-extensao-0.3-D43/** -text -filter -ident
+# D-46: novos produtores/testes/evidencias; artefatos anteriores nao normalizados.
+/preparar_bloco_notas.py -text -filter -ident
+/tests/test_bloco_notas.py -text -filter -ident
+/evidencias/spec004/notas-mc04-0.3-D46/** -text -filter -ident
+# D-47: integracao versionada e controles novos, sem normalizar registros anteriores.
+/notas_exploratorias.py -text -filter -ident
+/tests/test_integracao_notas.py -text -filter -ident
+/evidencias/spec004/integracao-notas-0.3-D47/** -text -filter -ident
+# D-50: conferencia e relato offline do bloco real de notas, bytes literais.
+/evidencias/spec004/avaliacao-notas-0.3-D50/** -text -filter -ident

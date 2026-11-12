@@ -1,0 +1,197 @@
+{
+  "avaliacao_anterior": null,
+  "avaliacao_id": "093724138da2486d94af37d00bf0bcd1",
+  "avaliador_sha256": "8448f07a7d5c1fd8596cde10deed9467544a75a7ce0f4a16ff8aca2d7689e516",
+  "bloco_exploratorio": "notas-mc04-0.3-v1-D46",
+  "causa": null,
+  "causa_tecnica": null,
+  "completo": true,
+  "condicao": "E1",
+  "configuracao": {
+    "catalogo_versao": "0.3",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "esforco_solicitado": "medium",
+    "etapa": "extensao-0.3-D41",
+    "id": "ext-api-sol-c876e81f01df3a17",
+    "integracao": "envio-extensao-D42-v1",
+    "interface": "Responses API HTTP direto",
+    "limite_orcamento": "USD 2 de planejamento; risco aceito pelo pesquisador; sem controle automatico ou garantia de teto",
+    "limite_saida": "4096 inclui raciocinio e resposta final; proposta comum a ambos os modelos",
+    "max_output_tokens": 4096,
+    "modelo_solicitado": "gpt-6-sol",
+    "orcamento_declarado_usd": "2",
+    "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+    "retries_automaticos_cliente": 0,
+    "store": false,
+    "stream": false,
+    "timeout_segundos": 120,
+    "tool_choice": "none",
+    "tools": []
+  },
+  "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+  "conformidade_protocolo": "pendente",
+  "desvios": [],
+  "entrada_enviada_sha256": "c9e103fa7911b2ba584d9e734e2b980c92ce85d85c4ef98b76ef8d07830b76c5",
+  "estado_tecnico": "concluida",
+  "etapa": "notas-mc04-0.3-D46",
+  "fase": "exploratoria",
+  "formato_contrato": "valido",
+  "fragmento": false,
+  "ids_conhecidos_por_dimensao": {
+    "requisitos": true,
+    "testes": true
+  },
+  "instante_execucao": "2026-11-11T23:58:42.501323+00:00",
+  "instante_utc": "2026-11-12T00:07:42.103768+00:00",
+  "integracao": "integracao-notas-v1-D47",
+  "json_sintatico": "valido",
+  "modelo": "gpt-6-sol",
+  "modelo_reportado": "gpt-6-sol",
+  "modelo_reportado_indisponibilidade": null,
+  "mudanca": "MC-04-v2",
+  "mudanca_pedida": "MC-04-v2",
+  "nota_id": "N02",
+  "observacao_id": "NOTA03-MC-04-v2-E1-N02-SOL-R01",
+  "origem": "real",
+  "origem_resposta": "Responses API; envelope bruto preservado",
+  "payload_sha256": "c9e103fa7911b2ba584d9e734e2b980c92ce85d85c4ef98b76ef8d07830b76c5",
+  "plano_sha256": "c8363eb2daaac2b1d1d1538470458356a29504cfc378d17cb35c2188d43dc1bd",
+  "politica": {
+    "sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+    "status": "CANDIDATA_REVISAO_CIENTIFICA_PENDENTE",
+    "versao": "ids-proposta-004-v2"
+  },
+  "referencia": {
+    "sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+    "status": "CANDIDATO_NAO_REVISADO",
+    "versao": "0.3"
+  },
+  "repeticao": 1,
+  "requisitos": {
+    "FN": 0,
+    "FP": 0,
+    "G": [
+      "RF-03",
+      "RF-04"
+    ],
+    "S": [
+      "RF-03",
+      "RF-04"
+    ],
+    "TP": 2,
+    "acertos": [
+      "RF-03",
+      "RF-04"
+    ],
+    "desconhecidos": [],
+    "duplicatas": [],
+    "excedentes": [],
+    "lista_original": [
+      "RF-03",
+      "RF-04"
+    ],
+    "metricas_propostas": {
+      "correspondencia_exata": 1,
+      "f1": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "precisao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "revocacao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "selecao_completa": 1
+    },
+    "omissoes": []
+  },
+  "resposta_sha256": "bbf68c69327e6a76442c56465f8c6d5a37ae91253c1a2b09682e87ee5189cba7",
+  "somente_ids_conhecidos": true,
+  "status_avaliacao": "avaliada",
+  "tentativa_anterior": null,
+  "tentativa_id": "NOTA03-MC-04-v2-E1-N02-SOL-R01-T01",
+  "testes": {
+    "FN": 0,
+    "FP": 0,
+    "G": [
+      "T05",
+      "T07",
+      "T08",
+      "T10",
+      "T12",
+      "T13",
+      "T14",
+      "T15"
+    ],
+    "S": [
+      "T05",
+      "T07",
+      "T08",
+      "T10",
+      "T12",
+      "T13",
+      "T14",
+      "T15"
+    ],
+    "TP": 8,
+    "acertos": [
+      "T05",
+      "T07",
+      "T08",
+      "T10",
+      "T12",
+      "T13",
+      "T14",
+      "T15"
+    ],
+    "desconhecidos": [],
+    "duplicatas": [],
+    "excedentes": [],
+    "lista_original": [
+      "T05",
+      "T07",
+      "T08",
+      "T10",
+      "T12",
+      "T13",
+      "T14",
+      "T15"
+    ],
+    "metricas_propostas": {
+      "correspondencia_exata": 1,
+      "f1": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "precisao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "revocacao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "selecao_completa": 1
+    },
+    "omissoes": []
+  },
+  "versoes": {
+    "coletor": "coletor-responses-v1.4-D47",
+    "coletor_sha256": "70e5b583bc52af64bd40af27ac5c1b172e021a4e643c8b9dc11ee2a1b4972b39"
+  }
+}

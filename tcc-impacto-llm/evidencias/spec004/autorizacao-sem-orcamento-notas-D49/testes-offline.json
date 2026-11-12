@@ -1,0 +1,9 @@
+{
+  "testes": 23,
+  "falhas": 0,
+  "erros": 0,
+  "ignorados": 0,
+  "rede_dns_bloqueados": true,
+  "http_artificial": true,
+  "segundos": 244.79
+}

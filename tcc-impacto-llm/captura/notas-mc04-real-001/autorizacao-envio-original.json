@@ -1,0 +1,20 @@
+{
+  "autoriza_envio_real": true,
+  "data": "2026-11-11T20:21:11-03:00",
+  "justificativa": "D-48: pesquisador revisou/aprovou par N01/N02 e plano integrado das 16 observacoes e autorizou chamadas previstas. D-49: decidiu explicitamente prosseguir sem definir orcamento monetario, reconhecendo chamadas pagas e aceitando ausencia de teto automatico. Orcamento permanece nulo; USD 2 historicos nao sao reutilizados. Primeira invocacao futura somente com --limite 1, seguida de conferencia de captura/modelo/completude/tokens/desvios, sem usar acerto como criterio. Nao executar chamadas no atendimento D-49; sem commit/push. Conformidade das 64 anteriores permanece pendente.",
+  "limite": "Sem orcamento monetario definido por decisao explicita D-49; chamadas pagas; ausencia de teto automatico aceita. --limite limita tentativas, nao custo.",
+  "orcamento_usd": null,
+  "plano_sha256": "c8363eb2daaac2b1d1d1538470458356a29504cfc378d17cb35c2188d43dc1bd",
+  "responsavel": "Matheus Henrique Braun Nunes",
+  "revisao_par_pacotes_ordem": true,
+  "versao": "autorizacao-envio-notas-v1",
+  "atualizacao_fontes_sha256": "d043ff6af89a24ea844ee1b78ddbbf1c7a9c3572f70fa1017334493a3b59175f",
+  "decisao_sem_orcamento": {
+    "prosseguir_sem_definir_orcamento": true,
+    "reconhece_chamadas_pagas": true,
+    "aceita_ausencia_teto_automatico": true,
+    "responsavel": "Matheus Henrique Braun Nunes",
+    "data": "2026-11-11T20:35:57-03:00",
+    "declaracao": "Decido prosseguir com o bloco de notas sem definir orçamento monetário. Reconheço que as chamadas são pagas e aceito a ausência de teto automático."
+  }
+}

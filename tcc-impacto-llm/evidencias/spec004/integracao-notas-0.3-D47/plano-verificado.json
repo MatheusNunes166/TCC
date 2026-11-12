@@ -1,0 +1,31 @@
+{
+  "autorizacao_modelo": {
+    "autoriza_envio_real": false,
+    "data": null,
+    "justificativa": null,
+    "limite": "USD 2 nas configuracoes e historico; orcamento declarado nao e teto automatico",
+    "orcamento_usd": null,
+    "plano_sha256": "c8363eb2daaac2b1d1d1538470458356a29504cfc378d17cb35c2188d43dc1bd",
+    "responsavel": null,
+    "revisao_par_pacotes_ordem": false,
+    "versao": "autorizacao-envio-notas-v1"
+  },
+  "capturas_reais_executadas": 0,
+  "envio_autorizado": false,
+  "fontes_integracao_sha256": {
+    "avaliacao_ids.py": "8448f07a7d5c1fd8596cde10deed9467544a75a7ce0f4a16ff8aca2d7689e516",
+    "coletor_api.py": "70e5b583bc52af64bd40af27ac5c1b172e021a4e643c8b9dc11ee2a1b4972b39",
+    "coletor_piloto.py": "619d742f98cf9cc87f135f716a09ed432ba8e51af7837e811bea97363ed09c48",
+    "montagem_entradas.py": "ed1d1fc0f2b4839d7079c35687058ee24bc0d2767b04ba188fe02f32f5d56d94",
+    "notas_exploratorias.py": "739af32de7d91bd152adc191c76cbb7ba3b7dbd521f1cddae373dbc5ef67e02a",
+    "revisao_conformidade.py": "4d0b1b3b80234324f92ab50e8a4068001daa90ad056e1b657dce87b4ef0b31d2"
+  },
+  "observacoes": 16,
+  "ordem_literal_preservada": true,
+  "payloads_configuracoes_referencia_preservados": true,
+  "plano": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\notas-mc04-0.3-002\\plano.json",
+  "plano_base_sha256": "f4b2cbf4bbeabd4fc199e9e29084956761279e70aeb3f35ddeb4e2f0b45d89a8",
+  "plano_sha256": "c8363eb2daaac2b1d1d1538470458356a29504cfc378d17cb35c2188d43dc1bd",
+  "primeira": "NOTA03-MC-04-v2-D1-N02-ASTRA-R01",
+  "rede_bloqueada": true
+}

@@ -1,0 +1,29 @@
+{
+  "comandos": [
+    {
+      "comando": "python -B evidencias/spec004/avaliacao-notas-0.3-D50/conferir_relatar.py conferir",
+      "retorno_shell": 0
+    },
+    {
+      "comando": "python -B notas_exploratorias.py avaliar --lote captura/notas-mc04-real-001 --referencia materiais/modelos/referencia_candidata_0.3_NAO_ENVIAR_AO_LLM.json --saida avaliados/notas-mc04-real-001",
+      "motivo": "16 avaliacoes completas; resumo controlado bloqueado por revisao de conformidade pendente; nao repetido",
+      "retorno_no_manifesto_do_avaliador": 2,
+      "retorno_reportado_pelo_shell": 1
+    },
+    {
+      "comando": "python -B coletor_api.py revisao-modelo --lote captura/notas-mc04-real-001 --avaliacoes avaliados/notas-mc04-real-001/lista.json --observacoes avaliados/notas-mc04-real-001/observacoes.json --saida avaliados/notas-mc04-real-001/revisao-conformidade-pendente.json",
+      "retorno_shell": 0
+    },
+    {
+      "comando": "python -B evidencias/spec004/avaliacao-notas-0.3-D50/conferir_relatar.py relatar",
+      "retorno_shell": 0
+    },
+    {
+      "comando": "python -B evidencias/spec004/avaliacao-notas-0.3-D50/conferir_relatar.py fechar",
+      "retorno_shell": 0
+    }
+  ],
+  "comandos_revisar_resumir_revisado_executados": false,
+  "cwd": "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm",
+  "rede": false
+}

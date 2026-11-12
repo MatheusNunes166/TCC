@@ -1,0 +1,143 @@
+{
+  "comparacoes": [
+    {
+      "antes": [
+        "gpt-6-sol",
+        "D1",
+        "N01"
+      ],
+      "depois": [
+        "gpt-6-sol",
+        "D1",
+        "N02"
+      ],
+      "diff": "--- antes/notas.md\n+++ depois/notas.md\n@@ -1 +1 @@\n-> Observações simuladas de análise de testes: hábitos de outros sistemas de autorização podem induzir suposições incompatíveis com uma política fechada. Uma dependência pode mudar o valor produzido por uma regra cujo texto permanece intacto; compartilhar um cenário, por si só, não demonstra esse impacto. Restrições de maior precedência podem ocultar uma alteração na saída final, sem retirar a relevância de um caso abrangido pela política de seleção. Uma decisão igual pode esconder mudança de motivo; conservar ambos também pode ser relevante, quando a entrada está abrangida pela política. Confundir papéis atribuídos com efetivos, ou usar a variante para decidir a aplicabilidade, pode omitir interações previstas na versão inicial. Uma mudança na herança pode alterar um conflito quando modifica os papéis efetivos.\n+> Observações simuladas de análise de testes: hábitos de outros sistemas de autorização podem induzir suposições incompatíveis com uma política fechada. Uma dependência pode mudar o valor produzido por uma regra cujo texto permanece intacto; compartilhar um cenário, por si só, não demonstra esse impacto. Restrições de maior precedência podem ocultar uma alteração na saída final, sem retirar a relevância de um caso abrangido pela política de seleção. Uma decisão igual pode esconder mudança de motivo; conservar ambos também pode ser relevante, quando a entrada está abrangida pela política. Confundir papéis atribuídos com efetivos, ou usar a variante para decidir a aplicabilidade, pode omitir interações previstas na versão inicial. Uma mudança na herança nunca altera um conflito, mesmo quando modifica os papéis efetivos.\n",
+      "documentos_diferentes": [
+        "notas.md"
+      ],
+      "tipo": "nota"
+    },
+    {
+      "antes": [
+        "gpt-6-sol",
+        "E1",
+        "N01"
+      ],
+      "depois": [
+        "gpt-6-sol",
+        "E1",
+        "N02"
+      ],
+      "diff": "--- antes/notas.md\n+++ depois/notas.md\n@@ -1 +1 @@\n-> Observações simuladas de análise de testes: hábitos de outros sistemas de autorização podem induzir suposições incompatíveis com uma política fechada. Uma dependência pode mudar o valor produzido por uma regra cujo texto permanece intacto; compartilhar um cenário, por si só, não demonstra esse impacto. Restrições de maior precedência podem ocultar uma alteração na saída final, sem retirar a relevância de um caso abrangido pela política de seleção. Uma decisão igual pode esconder mudança de motivo; conservar ambos também pode ser relevante, quando a entrada está abrangida pela política. Confundir papéis atribuídos com efetivos, ou usar a variante para decidir a aplicabilidade, pode omitir interações previstas na versão inicial. Uma mudança na herança pode alterar um conflito quando modifica os papéis efetivos.\n+> Observações simuladas de análise de testes: hábitos de outros sistemas de autorização podem induzir suposições incompatíveis com uma política fechada. Uma dependência pode mudar o valor produzido por uma regra cujo texto permanece intacto; compartilhar um cenário, por si só, não demonstra esse impacto. Restrições de maior precedência podem ocultar uma alteração na saída final, sem retirar a relevância de um caso abrangido pela política de seleção. Uma decisão igual pode esconder mudança de motivo; conservar ambos também pode ser relevante, quando a entrada está abrangida pela política. Confundir papéis atribuídos com efetivos, ou usar a variante para decidir a aplicabilidade, pode omitir interações previstas na versão inicial. Uma mudança na herança nunca altera um conflito, mesmo quando modifica os papéis efetivos.\n",
+      "documentos_diferentes": [
+        "notas.md"
+      ],
+      "tipo": "nota"
+    },
+    {
+      "antes": [
+        "gpt-6-sol",
+        "D1",
+        "N01"
+      ],
+      "depois": [
+        "gpt-6-sol",
+        "E1",
+        "N01"
+      ],
+      "diff": "--- antes/pedido.txt\n+++ depois/pedido.txt\n@@ -1 +1 @@\n-> Identifique os requisitos impactados pela mudança e selecione os testes existentes relevantes conforme as definições e a política de seleção fornecidas. Retorne somente os dois conjuntos de identificadores no JSON exigido.\n+> Organize a análise em etapas: examine a regra alterada; verifique as dependências funcionais; determine os requisitos impactados; aplique a política de seleção aos casos existentes; confira as duas listas. Retorne somente os dois conjuntos de identificadores no JSON exigido.\n",
+      "documentos_diferentes": [
+        "pedido.txt"
+      ],
+      "tipo": "estrutura"
+    },
+    {
+      "antes": [
+        "gpt-6-sol",
+        "D1",
+        "N02"
+      ],
+      "depois": [
+        "gpt-6-sol",
+        "E1",
+        "N02"
+      ],
+      "diff": "--- antes/pedido.txt\n+++ depois/pedido.txt\n@@ -1 +1 @@\n-> Identifique os requisitos impactados pela mudança e selecione os testes existentes relevantes conforme as definições e a política de seleção fornecidas. Retorne somente os dois conjuntos de identificadores no JSON exigido.\n+> Organize a análise em etapas: examine a regra alterada; verifique as dependências funcionais; determine os requisitos impactados; aplique a política de seleção aos casos existentes; confira as duas listas. Retorne somente os dois conjuntos de identificadores no JSON exigido.\n",
+      "documentos_diferentes": [
+        "pedido.txt"
+      ],
+      "tipo": "estrutura"
+    },
+    {
+      "antes": [
+        "gpt-6-astra",
+        "D1",
+        "N01"
+      ],
+      "depois": [
+        "gpt-6-astra",
+        "D1",
+        "N02"
+      ],
+      "diff": "--- antes/notas.md\n+++ depois/notas.md\n@@ -1 +1 @@\n-> Observações simuladas de análise de testes: hábitos de outros sistemas de autorização podem induzir suposições incompatíveis com uma política fechada. Uma dependência pode mudar o valor produzido por uma regra cujo texto permanece intacto; compartilhar um cenário, por si só, não demonstra esse impacto. Restrições de maior precedência podem ocultar uma alteração na saída final, sem retirar a relevância de um caso abrangido pela política de seleção. Uma decisão igual pode esconder mudança de motivo; conservar ambos também pode ser relevante, quando a entrada está abrangida pela política. Confundir papéis atribuídos com efetivos, ou usar a variante para decidir a aplicabilidade, pode omitir interações previstas na versão inicial. Uma mudança na herança pode alterar um conflito quando modifica os papéis efetivos.\n+> Observações simuladas de análise de testes: hábitos de outros sistemas de autorização podem induzir suposições incompatíveis com uma política fechada. Uma dependência pode mudar o valor produzido por uma regra cujo texto permanece intacto; compartilhar um cenário, por si só, não demonstra esse impacto. Restrições de maior precedência podem ocultar uma alteração na saída final, sem retirar a relevância de um caso abrangido pela política de seleção. Uma decisão igual pode esconder mudança de motivo; conservar ambos também pode ser relevante, quando a entrada está abrangida pela política. Confundir papéis atribuídos com efetivos, ou usar a variante para decidir a aplicabilidade, pode omitir interações previstas na versão inicial. Uma mudança na herança nunca altera um conflito, mesmo quando modifica os papéis efetivos.\n",
+      "documentos_diferentes": [
+        "notas.md"
+      ],
+      "tipo": "nota"
+    },
+    {
+      "antes": [
+        "gpt-6-astra",
+        "E1",
+        "N01"
+      ],
+      "depois": [
+        "gpt-6-astra",
+        "E1",
+        "N02"
+      ],
+      "diff": "--- antes/notas.md\n+++ depois/notas.md\n@@ -1 +1 @@\n-> Observações simuladas de análise de testes: hábitos de outros sistemas de autorização podem induzir suposições incompatíveis com uma política fechada. Uma dependência pode mudar o valor produzido por uma regra cujo texto permanece intacto; compartilhar um cenário, por si só, não demonstra esse impacto. Restrições de maior precedência podem ocultar uma alteração na saída final, sem retirar a relevância de um caso abrangido pela política de seleção. Uma decisão igual pode esconder mudança de motivo; conservar ambos também pode ser relevante, quando a entrada está abrangida pela política. Confundir papéis atribuídos com efetivos, ou usar a variante para decidir a aplicabilidade, pode omitir interações previstas na versão inicial. Uma mudança na herança pode alterar um conflito quando modifica os papéis efetivos.\n+> Observações simuladas de análise de testes: hábitos de outros sistemas de autorização podem induzir suposições incompatíveis com uma política fechada. Uma dependência pode mudar o valor produzido por uma regra cujo texto permanece intacto; compartilhar um cenário, por si só, não demonstra esse impacto. Restrições de maior precedência podem ocultar uma alteração na saída final, sem retirar a relevância de um caso abrangido pela política de seleção. Uma decisão igual pode esconder mudança de motivo; conservar ambos também pode ser relevante, quando a entrada está abrangida pela política. Confundir papéis atribuídos com efetivos, ou usar a variante para decidir a aplicabilidade, pode omitir interações previstas na versão inicial. Uma mudança na herança nunca altera um conflito, mesmo quando modifica os papéis efetivos.\n",
+      "documentos_diferentes": [
+        "notas.md"
+      ],
+      "tipo": "nota"
+    },
+    {
+      "antes": [
+        "gpt-6-astra",
+        "D1",
+        "N01"
+      ],
+      "depois": [
+        "gpt-6-astra",
+        "E1",
+        "N01"
+      ],
+      "diff": "--- antes/pedido.txt\n+++ depois/pedido.txt\n@@ -1 +1 @@\n-> Identifique os requisitos impactados pela mudança e selecione os testes existentes relevantes conforme as definições e a política de seleção fornecidas. Retorne somente os dois conjuntos de identificadores no JSON exigido.\n+> Organize a análise em etapas: examine a regra alterada; verifique as dependências funcionais; determine os requisitos impactados; aplique a política de seleção aos casos existentes; confira as duas listas. Retorne somente os dois conjuntos de identificadores no JSON exigido.\n",
+      "documentos_diferentes": [
+        "pedido.txt"
+      ],
+      "tipo": "estrutura"
+    },
+    {
+      "antes": [
+        "gpt-6-astra",
+        "D1",
+        "N02"
+      ],
+      "depois": [
+        "gpt-6-astra",
+        "E1",
+        "N02"
+      ],
+      "diff": "--- antes/pedido.txt\n+++ depois/pedido.txt\n@@ -1 +1 @@\n-> Identifique os requisitos impactados pela mudança e selecione os testes existentes relevantes conforme as definições e a política de seleção fornecidas. Retorne somente os dois conjuntos de identificadores no JSON exigido.\n+> Organize a análise em etapas: examine a regra alterada; verifique as dependências funcionais; determine os requisitos impactados; aplique a política de seleção aos casos existentes; confira as duas listas. Retorne somente os dois conjuntos de identificadores no JSON exigido.\n",
+      "documentos_diferentes": [
+        "pedido.txt"
+      ],
+      "tipo": "estrutura"
+    }
+  ],
+  "entre_modelos": "payloads identicos; requisicoes diferem somente no campo model",
+  "entre_repeticoes": "mesmo payload e mesma requisicao",
+  "natureza": "PRIVADO_NAO_ENVIAR"
+}

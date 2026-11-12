@@ -18,9 +18,13 @@ def contexto(lote, avaliacoes, observacoes):
                 ('real', 'piloto'), ('real', 'exploratoria'), ('sintetica', 'verificacao_sintetica'))
             or header['plano_sha256'] != a.sha((lote / 'plano-original.json').read_bytes())):
         raise ValueError('revisao requer lote API e plano integro')
-    if header['fase'] == 'exploratoria' and (plan.get('etapa') != 'extensao-0.3-D41'
+    notas=plan.get('etapa')=='notas-mc04-0.3-D46'
+    if (header['fase'] == 'exploratoria' or notas) and (plan.get('etapa') not in ('extensao-0.3-D41','notas-mc04-0.3-D46')
         or header.get('etapa') != plan['etapa'] or header.get('referencia_sha256') != plan['referencia_sha256']):
         raise ValueError('revisao exploratoria exige identidade da extensao')
+    if notas:
+        from notas_exploratorias import conferir_lote
+        conferir_lote(lote)
     entries, plans = read(avaliacoes), read(observacoes)
     if not isinstance(entries, list) or not isinstance(plans, list):
         raise ValueError('listas explicitas requeridas')
@@ -34,6 +38,8 @@ def contexto(lote, avaliacoes, observacoes):
                 or p[repeat] != r['repeticao']
                 or any(p[k] != r[k] for k in ('configuracao_id', 'mudanca', 'condicao', 'payload_sha256'))):
             raise ValueError('planejamento/origem/configuracao divergente')
+        if notas and any(p.get(k)!=r[k] for k in ('nota_id','bloco_exploratorio','modelo')):
+            raise ValueError('planejamento de outra nota/bloco/modelo')
     regs, signatures = [], []
     for entry in entries:
         path = a.relativo(avaliacoes.parent, entry['arquivo'])
@@ -57,12 +63,17 @@ def contexto(lote, avaliacoes, observacoes):
         if (a.ler(path.parent / 'tentativa-original.json', tracked) != attempt_raw
                 or any(attempt[k] != reg[k] for k in ('observacao_id', 'tentativa_id', 'payload_sha256', 'resposta_sha256'))):
             raise ValueError('avaliacao nao corresponde a captura original')
+        if notas and (any(attempt.get(k)!=reg.get(k) for k in ('nota_id','bloco_exploratorio','plano_sha256'))
+                      or reg.get('plano_sha256')!=header['plano_sha256']):
+            raise ValueError('avaliacao de outra nota/bloco/plano')
         for file in base.inventariar(root):
             a.ler(base.relativo(root, file['arquivo']), tracked)
         regs.append(reg)
         signatures.append({'observacao_id': oid, 'avaliacao_sha256': a.sha(raw),
             'tentativa_sha256': a.sha(attempt_raw), 'fechamento_sha256': a.sha(closing_raw),
             'payload_sha256': reg['payload_sha256'], 'resposta_sha256': reg['resposta_sha256']})
+        if notas:
+            signatures[-1].update(nota_id=reg['nota_id'],bloco_exploratorio=reg['bloco_exploratorio'],plano_sha256=reg['plano_sha256'])
     captured = {oid for oid in expected if base.relativo(lote, oid + '/T01').exists()}
     if {r['observacao_id'] for r in regs} != captured:
         raise ValueError('lista de avaliacoes deve preservar todas as capturas; excluir por decisao explicita')
@@ -168,8 +179,9 @@ def resumir(revisao, saida):
         result.update(summary)
         for cell in result['celulas']:
             key = (cell['configuracao_id'], cell['mudanca'], cell['condicao'])
-            original_regs = [r for r in regs if a.identidade(r)[:3] == key]
-            original_plans = [p for p in plans if a.identidade(p)[:3] == key]
+            if 'nota_id' in cell:key+=(cell['bloco_exploratorio'],cell['nota_id'])
+            original_regs = [r for r in regs if a.chave_celula(r) == key]
+            original_plans = [p for p in plans if a.chave_celula(p) == key]
             original, _ = a._grupo(original_regs, original_plans, False)
             cell['contagens_operacionais_originais'] = original['contagens']
             for group in cell['grupos']:

@@ -1,0 +1,469 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "autorizacao-modelo.json",
+      "sha256": "258bb9d114b171488667d4bac2e939bc2c38fda1391f682af5a414ce60eab389"
+    },
+    {
+      "arquivo": "ordem.json",
+      "sha256": "a93c9e7588641b3c52e7d96da7c853b48e5d94f69c77e7ff52e323a5888ec874"
+    },
+    {
+      "arquivo": "plano-base-original.json",
+      "sha256": "f4b2cbf4bbeabd4fc199e9e29084956761279e70aeb3f35ddeb4e2f0b45d89a8"
+    },
+    {
+      "arquivo": "plano.json",
+      "sha256": "c8363eb2daaac2b1d1d1538470458356a29504cfc378d17cb35c2188d43dc1bd"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N01/autorizacao-original.json",
+      "sha256": "a67aa583f27569ced85275ebb405db97cd93cf23c55571c98262d3d638745473"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N01/documentos/catalogo-baseline.md",
+      "sha256": "45e67daac93905c6c88c67730b884e42c803113b3f7277c09ac0feba813ab5d4"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N01/documentos/definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N01/documentos/mudanca.md",
+      "sha256": "448dbc894b81bbf9430f46c44edeb4442519b1db77b78c91c30c4b2576d2a6ed"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N01/documentos/notas.md",
+      "sha256": "e4f699fde739544eb851358e27aa9abeef0ec3584d97af9293d248441f71a68d"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N01/documentos/pedido.txt",
+      "sha256": "358a5921dd5c415a6fe012a59fdbfdeed74c6c997e71a4a5dc62655944abe795"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N01/documentos/requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N01/documentos/schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N01/documentos/sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N01/entrega-textual.json",
+      "sha256": "171747c74e4f22f5e6992865373086690defd60985ea696d5ff85f735baa68a9"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N01/manifesto-original.json",
+      "sha256": "f04fbaa82d84ce5790f87d1ef1a7c629bb5fafeb10caae6f770077132992b7b4"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N01/payload.txt",
+      "sha256": "df57578f3406dd82041970c50b3f8a0c2a5f342c703ef6824ab05e2c8d40ff6f"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N01/preparacao.json",
+      "sha256": "8305c63af09ba24e13f562fa5cd388a7a83e0abcb6c4be1a3cac6820180d7f18"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N02/autorizacao-original.json",
+      "sha256": "94d8bcf36f579ff6eef6f01eef91c154b3620838c8aefad67d6a0f10cd489bcf"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N02/documentos/catalogo-baseline.md",
+      "sha256": "45e67daac93905c6c88c67730b884e42c803113b3f7277c09ac0feba813ab5d4"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N02/documentos/definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N02/documentos/mudanca.md",
+      "sha256": "448dbc894b81bbf9430f46c44edeb4442519b1db77b78c91c30c4b2576d2a6ed"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N02/documentos/notas.md",
+      "sha256": "cde836ed09080c10ad9fe1f591e9a2186c074205f88feec33d68210e25d98b33"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N02/documentos/pedido.txt",
+      "sha256": "358a5921dd5c415a6fe012a59fdbfdeed74c6c997e71a4a5dc62655944abe795"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N02/documentos/requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N02/documentos/schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N02/documentos/sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N02/entrega-textual.json",
+      "sha256": "95e2db30661bdb168c34e4a5b82d9a30ef2c4f5c50b69d51919edb36a2b578fc"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N02/manifesto-original.json",
+      "sha256": "2118d934b326080a1460ee0f70a788925278adc82aee66ed48e19afa0683cf5f"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N02/payload.txt",
+      "sha256": "e78ab95b8e70be9261405dc2f9672c7bc4ea5faea19e63062294e66fa00e637b"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/D1-N02/preparacao.json",
+      "sha256": "4c372d337382322dcf33a3053addfdd73d4c34a7b5213713aa0eaf2e6119f676"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N01/autorizacao-original.json",
+      "sha256": "c102c74dae5c1c0033087e762e8d8a8cea7d5afbb5128d0ec2b291687ac66f63"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N01/documentos/catalogo-baseline.md",
+      "sha256": "45e67daac93905c6c88c67730b884e42c803113b3f7277c09ac0feba813ab5d4"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N01/documentos/definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N01/documentos/mudanca.md",
+      "sha256": "448dbc894b81bbf9430f46c44edeb4442519b1db77b78c91c30c4b2576d2a6ed"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N01/documentos/notas.md",
+      "sha256": "e4f699fde739544eb851358e27aa9abeef0ec3584d97af9293d248441f71a68d"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N01/documentos/pedido.txt",
+      "sha256": "3898440d3b28447dfff6a1ac6782b299575e0b5bde15d8ebaa7cc9da08e23774"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N01/documentos/requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N01/documentos/schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N01/documentos/sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N01/entrega-textual.json",
+      "sha256": "de149cce7226f0f47b3473e24d16ab1c2b9e2c416bfcf20e15c3b88fc9101d86"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N01/manifesto-original.json",
+      "sha256": "65532afe198ac45cf701889aec1d480f79ee9a207609be704b781a457a38e1c6"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N01/payload.txt",
+      "sha256": "7a1817a8b4fbcba98145bbb1c4a563c07c5407cc6f75a930b398991a26739af2"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N01/preparacao.json",
+      "sha256": "123f5b5df42fc2cc815814a0af55746206f4cc11302a0f0ba9dea154987d3be6"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N02/autorizacao-original.json",
+      "sha256": "4b59c0297f92a1640dec7d9bc8dca86e1bf7672b57d00667dfb0eacf21e60d58"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N02/documentos/catalogo-baseline.md",
+      "sha256": "45e67daac93905c6c88c67730b884e42c803113b3f7277c09ac0feba813ab5d4"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N02/documentos/definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N02/documentos/mudanca.md",
+      "sha256": "448dbc894b81bbf9430f46c44edeb4442519b1db77b78c91c30c4b2576d2a6ed"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N02/documentos/notas.md",
+      "sha256": "cde836ed09080c10ad9fe1f591e9a2186c074205f88feec33d68210e25d98b33"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N02/documentos/pedido.txt",
+      "sha256": "3898440d3b28447dfff6a1ac6782b299575e0b5bde15d8ebaa7cc9da08e23774"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N02/documentos/requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N02/documentos/schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N02/documentos/sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N02/entrega-textual.json",
+      "sha256": "fc45240b8e0cddbd2c1fba1640eae4afd2bafe5e0dd3d158c5daafb0daa35bf4"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N02/manifesto-original.json",
+      "sha256": "8415ea9aa86039a310362179448a96cc0970232108b261484e40042f1b3c56cb"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N02/payload.txt",
+      "sha256": "c9e103fa7911b2ba584d9e734e2b980c92ce85d85c4ef98b76ef8d07830b76c5"
+    },
+    {
+      "arquivo": "preparados/gpt-6-astra/E1-N02/preparacao.json",
+      "sha256": "4089e5321e12888ba4b330cbf2a9282c0397de9de7991f17a05bc5fd632f0581"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N01/autorizacao-original.json",
+      "sha256": "555dad32cad5848c22e0888471ef1a672809cfefbfbe95edf35de7cada910db9"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N01/documentos/catalogo-baseline.md",
+      "sha256": "45e67daac93905c6c88c67730b884e42c803113b3f7277c09ac0feba813ab5d4"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N01/documentos/definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N01/documentos/mudanca.md",
+      "sha256": "448dbc894b81bbf9430f46c44edeb4442519b1db77b78c91c30c4b2576d2a6ed"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N01/documentos/notas.md",
+      "sha256": "e4f699fde739544eb851358e27aa9abeef0ec3584d97af9293d248441f71a68d"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N01/documentos/pedido.txt",
+      "sha256": "358a5921dd5c415a6fe012a59fdbfdeed74c6c997e71a4a5dc62655944abe795"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N01/documentos/requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N01/documentos/schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N01/documentos/sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N01/entrega-textual.json",
+      "sha256": "171747c74e4f22f5e6992865373086690defd60985ea696d5ff85f735baa68a9"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N01/manifesto-original.json",
+      "sha256": "28bd1b2e35505ed8499dc23a405d867626f688bdc566f8970a3289e36bb9c84f"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N01/payload.txt",
+      "sha256": "df57578f3406dd82041970c50b3f8a0c2a5f342c703ef6824ab05e2c8d40ff6f"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N01/preparacao.json",
+      "sha256": "415a3024d0e1a18276cb0624d02721b9183b9f7934883c49ce661b9df245c524"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N02/autorizacao-original.json",
+      "sha256": "1ef081c06912d4e8a140b6a55387efa5900972206618d195ca3a6d994068a10c"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N02/documentos/catalogo-baseline.md",
+      "sha256": "45e67daac93905c6c88c67730b884e42c803113b3f7277c09ac0feba813ab5d4"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N02/documentos/definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N02/documentos/mudanca.md",
+      "sha256": "448dbc894b81bbf9430f46c44edeb4442519b1db77b78c91c30c4b2576d2a6ed"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N02/documentos/notas.md",
+      "sha256": "cde836ed09080c10ad9fe1f591e9a2186c074205f88feec33d68210e25d98b33"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N02/documentos/pedido.txt",
+      "sha256": "358a5921dd5c415a6fe012a59fdbfdeed74c6c997e71a4a5dc62655944abe795"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N02/documentos/requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N02/documentos/schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N02/documentos/sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N02/entrega-textual.json",
+      "sha256": "95e2db30661bdb168c34e4a5b82d9a30ef2c4f5c50b69d51919edb36a2b578fc"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N02/manifesto-original.json",
+      "sha256": "d37d1941642d65ca340e8fd7b428f2836747d593b40e545841d14b0ecdf2d8be"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N02/payload.txt",
+      "sha256": "e78ab95b8e70be9261405dc2f9672c7bc4ea5faea19e63062294e66fa00e637b"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/D1-N02/preparacao.json",
+      "sha256": "16875b66288b1a945c045220fbcea4d48604652904bb3d78691a973d54271dc5"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N01/autorizacao-original.json",
+      "sha256": "b89a10925be2bc88ce3b07a72fd7c5a90462985ee6d072fe0cfd811cd784ae32"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N01/documentos/catalogo-baseline.md",
+      "sha256": "45e67daac93905c6c88c67730b884e42c803113b3f7277c09ac0feba813ab5d4"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N01/documentos/definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N01/documentos/mudanca.md",
+      "sha256": "448dbc894b81bbf9430f46c44edeb4442519b1db77b78c91c30c4b2576d2a6ed"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N01/documentos/notas.md",
+      "sha256": "e4f699fde739544eb851358e27aa9abeef0ec3584d97af9293d248441f71a68d"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N01/documentos/pedido.txt",
+      "sha256": "3898440d3b28447dfff6a1ac6782b299575e0b5bde15d8ebaa7cc9da08e23774"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N01/documentos/requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N01/documentos/schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N01/documentos/sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N01/entrega-textual.json",
+      "sha256": "de149cce7226f0f47b3473e24d16ab1c2b9e2c416bfcf20e15c3b88fc9101d86"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N01/manifesto-original.json",
+      "sha256": "61e6ca5f4df5481252bad9000b3010cdcadfe506d12237692995e3d680034a13"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N01/payload.txt",
+      "sha256": "7a1817a8b4fbcba98145bbb1c4a563c07c5407cc6f75a930b398991a26739af2"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N01/preparacao.json",
+      "sha256": "b5c5a1fa2c1933cee4bd35a7a22705164fd5810e3d20ab0750659aef2911e154"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N02/autorizacao-original.json",
+      "sha256": "335e7a33c515d4e9c20e6b5ce99af900c19898c5ae23466e44bd34e3d0edcc9c"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N02/documentos/catalogo-baseline.md",
+      "sha256": "45e67daac93905c6c88c67730b884e42c803113b3f7277c09ac0feba813ab5d4"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N02/documentos/definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N02/documentos/mudanca.md",
+      "sha256": "448dbc894b81bbf9430f46c44edeb4442519b1db77b78c91c30c4b2576d2a6ed"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N02/documentos/notas.md",
+      "sha256": "cde836ed09080c10ad9fe1f591e9a2186c074205f88feec33d68210e25d98b33"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N02/documentos/pedido.txt",
+      "sha256": "3898440d3b28447dfff6a1ac6782b299575e0b5bde15d8ebaa7cc9da08e23774"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N02/documentos/requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N02/documentos/schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N02/documentos/sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N02/entrega-textual.json",
+      "sha256": "fc45240b8e0cddbd2c1fba1640eae4afd2bafe5e0dd3d158c5daafb0daa35bf4"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N02/manifesto-original.json",
+      "sha256": "ff1080ca89cdad3a7f844e6b6aa81968b3e16254f5df2af70c377a3427b847e7"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N02/payload.txt",
+      "sha256": "c9e103fa7911b2ba584d9e734e2b980c92ce85d85c4ef98b76ef8d07830b76c5"
+    },
+    {
+      "arquivo": "preparados/gpt-6-sol/E1-N02/preparacao.json",
+      "sha256": "a071b86913bf70f4f23324c903559c3f28e66fa4a3d88a381fe113b393fde7d4"
+    },
+    {
+      "arquivo": "requisicoes/gpt-6-astra/D1-N01.json",
+      "sha256": "7171193ebd3f6839b6454bb80f4216716b17126e426dd1dff97cdbd2c577f8a2"
+    },
+    {
+      "arquivo": "requisicoes/gpt-6-astra/D1-N02.json",
+      "sha256": "61093b3374b582ceb0fe10b0fa3e102d22c496327c8e88fe4a23725cc410324d"
+    },
+    {
+      "arquivo": "requisicoes/gpt-6-astra/E1-N01.json",
+      "sha256": "ff26e361b66c44c455359ca0050bb63dce4b282e9501e794a43af37496109976"
+    },
+    {
+      "arquivo": "requisicoes/gpt-6-astra/E1-N02.json",
+      "sha256": "c3766d17b406b3e7759a52ec0b62340427b6ce4a6af53ebe4e237a31e697df23"
+    },
+    {
+      "arquivo": "requisicoes/gpt-6-sol/D1-N01.json",
+      "sha256": "8b60be5a0a8fbf08cb72fb23c645e91c023fcf14527c7eb473c5369448d80531"
+    },
+    {
+      "arquivo": "requisicoes/gpt-6-sol/D1-N02.json",
+      "sha256": "b2577d8323795ed011f8a0e7b640dbe00923efad4889faf5e4a92773534dabaf"
+    },
+    {
+      "arquivo": "requisicoes/gpt-6-sol/E1-N01.json",
+      "sha256": "684b9554e295dbda07e597640a5fc360feea9a8b7ff78367e47f7efc540cfddc"
+    },
+    {
+      "arquivo": "requisicoes/gpt-6-sol/E1-N02.json",
+      "sha256": "08c70adf19db645fc5f9d9ca141b0e734498a0c9943e3fae1056420f29574c5d"
+    }
+  ],
+  "integracao": "integracao-notas-v1-D47"
+}

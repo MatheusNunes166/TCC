@@ -1,0 +1,17 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "RELATORIO.md",
+      "sha256": "2d276909c56d374a329b9591747f9194ee6a9f9fc144a9bc951c762bbf1a8d06"
+    },
+    {
+      "arquivo": "descritivo-pendente.json",
+      "sha256": "db2dc67676fc27424baa59a33e5d7b13e8b9059ea77d4878a1a9ed7341cc7561"
+    },
+    {
+      "arquivo": "tabelas-descritivas.csv",
+      "sha256": "8210d91c14a27602899df1a922431fa730dd914075ef94f5eadcd7ef5fa3490c"
+    }
+  ],
+  "status": "DESCRITIVO_COM_CONFORMIDADE_PENDENTE"
+}

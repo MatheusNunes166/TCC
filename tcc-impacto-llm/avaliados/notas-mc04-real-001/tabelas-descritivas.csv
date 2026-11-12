@@ -1,0 +1,9 @@
+modelo,estrutura,nota_id,N,A,C,V,I,T,K,requisitos_TP,requisitos_FN,requisitos_FP,requisitos_exatas,requisitos_denominador,requisitos_precisao,requisitos_revocacao,requisitos_f1,requisitos_jaccard,testes_TP,testes_FN,testes_FP,testes_exatas,testes_denominador,testes_precisao,testes_revocacao,testes_f1,testes_jaccard
+gpt-6-sol,D1,N01,2,2,2,2,0,0,2,4,0,0,2,2,1,1,1,1,16,0,0,2,2,1,1,1,1
+gpt-6-sol,D1,N02,2,2,2,2,0,0,2,4,0,0,2,2,1,1,1,1,16,0,0,2,2,1,1,1,1
+gpt-6-sol,E1,N01,2,2,2,2,0,0,2,4,0,0,2,2,1,1,1,1,16,0,0,2,2,1,1,1,1
+gpt-6-sol,E1,N02,2,2,2,2,0,0,2,4,0,0,2,2,1,1,1,1,16,0,0,2,2,1,1,1,1
+gpt-6-astra,D1,N01,2,2,2,2,0,0,2,4,0,0,2,2,1,1,1,1,16,0,0,2,2,1,1,1,1
+gpt-6-astra,D1,N02,2,2,2,2,0,0,2,4,0,0,2,2,1,1,1,1,16,0,0,2,2,1,1,1,1
+gpt-6-astra,E1,N01,2,2,2,2,0,0,2,4,0,0,2,2,1,1,1,1,16,0,0,2,2,1,1,1,1
+gpt-6-astra,E1,N02,2,2,2,2,0,0,2,4,0,0,2,2,1,1,1,1,16,0,0,2,2,1,1,1,1

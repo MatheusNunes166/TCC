@@ -1,0 +1,18 @@
+{
+  "CSV_conferido_com_avaliacoes": true,
+  "amostras_bytes_Git": 5,
+  "avaliacoes_conferidas_por_conjuntos": 16,
+  "celulas": 8,
+  "chamadas_executadas": 0,
+  "consistencia_conferida_por_conjuntos": true,
+  "ficha_16_pendentes_reconferida": true,
+  "ficha_pendente_sha256": "c70ced9c88d0fa6469c2d890c6d90f22f20440114a62a5b17e8c316ef2c9857d",
+  "formula_P_R_F1_conferida": true,
+  "manifesto_descritivo_sha256": "4358202b590b35afcfe9e3297c32497e285fd757b4ac12336b74353c1a1963eb",
+  "observacoes": 16,
+  "originais_identicos": 12685,
+  "politica_preservada_sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+  "rede": false,
+  "resumo_controlado_bloqueado": true,
+  "vinculos_manifestos_avaliador_conferidos": 613
+}

@@ -1,0 +1,11 @@
+{
+  "autoriza_envio_real": false,
+  "data": null,
+  "justificativa": null,
+  "limite": "USD 2 nas configuracoes e historico; orcamento declarado nao e teto automatico",
+  "orcamento_usd": null,
+  "plano_sha256": "c8363eb2daaac2b1d1d1538470458356a29504cfc378d17cb35c2188d43dc1bd",
+  "responsavel": null,
+  "revisao_par_pacotes_ordem": false,
+  "versao": "autorizacao-envio-notas-v1"
+}

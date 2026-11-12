@@ -1,0 +1,7 @@
+{
+  "versao": "atualizacao-autorizacao-notas-v1-D49",
+  "plano_sha256": "c8363eb2daaac2b1d1d1538470458356a29504cfc378d17cb35c2188d43dc1bd",
+  "anterior_sha256": "739af32de7d91bd152adc191c76cbb7ba3b7dbd521f1cddae373dbc5ef67e02a",
+  "atual_sha256": "bde47176c5534107a5ff093b6a217ad28dea1b3a85d36f25fff8395026669117",
+  "escopo": "Somente adaptador local: decisao explicita de prosseguir sem orcamento; demais fontes e plano preservados."
+}

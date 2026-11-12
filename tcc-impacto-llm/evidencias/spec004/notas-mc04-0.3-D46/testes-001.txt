@@ -1,0 +1,12 @@
+test_desenho_16_8_celulas_e_texto_igual_entre_modelos (tests.test_bloco_notas.TestBlocoNotas.test_desenho_16_8_celulas_e_texto_igual_entre_modelos) ... ok
+test_nao_sobrescreve_saida_e_nao_herda_autorizacao (tests.test_bloco_notas.TestBlocoNotas.test_nao_sobrescreve_saida_e_nao_herda_autorizacao) ... ok
+test_par_preserva_base_e_diferenca_somente_na_afirmacao (tests.test_bloco_notas.TestBlocoNotas.test_par_preserva_base_e_diferenca_somente_na_afirmacao) ... ok
+test_recusa_input_adicional_mesmo_com_hash_externo_recalculado (tests.test_bloco_notas.TestBlocoNotas.test_recusa_input_adicional_mesmo_com_hash_externo_recalculado) ... ok
+test_recusa_mistura_de_notas_nas_repeticoes (tests.test_bloco_notas.TestBlocoNotas.test_recusa_mistura_de_notas_nas_repeticoes) ... ok
+test_recusa_pacote_alterado_mesmo_com_hash_externo_recalculado (tests.test_bloco_notas.TestBlocoNotas.test_recusa_pacote_alterado_mesmo_com_hash_externo_recalculado) ... ok
+test_requisicoes_sem_rotulos_historico_gabarito_ou_ferramentas (tests.test_bloco_notas.TestBlocoNotas.test_requisicoes_sem_rotulos_historico_gabarito_ou_ferramentas) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 8.759s
+
+OK

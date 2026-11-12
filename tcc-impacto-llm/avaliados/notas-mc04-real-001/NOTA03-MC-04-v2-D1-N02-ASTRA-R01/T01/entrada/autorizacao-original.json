@@ -1,0 +1,45 @@
+{
+  "documentos": [
+    {
+      "arquivo": "sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "catalogo-baseline.md",
+      "sha256": "45e67daac93905c6c88c67730b884e42c803113b3f7277c09ac0feba813ab5d4"
+    },
+    {
+      "arquivo": "mudanca.md",
+      "sha256": "448dbc894b81bbf9430f46c44edeb4442519b1db77b78c91c30c4b2576d2a6ed"
+    },
+    {
+      "arquivo": "notas.md",
+      "sha256": "cde836ed09080c10ad9fe1f591e9a2186c074205f88feec33d68210e25d98b33"
+    },
+    {
+      "arquivo": "pedido.txt",
+      "sha256": "358a5921dd5c415a6fe012a59fdbfdeed74c6c997e71a4a5dc62655944abe795"
+    },
+    {
+      "arquivo": "schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    }
+  ],
+  "manifesto_sha256": "2118d934b326080a1460ee0f70a788925278adc82aee66ed48e19afa0683cf5f",
+  "preparacao_origem": {
+    "arquivo": "captura/extensao-20261109-003/preparados/gpt-6-astra/MC-04-v2-D1/preparacao.json",
+    "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+    "sha256": "1e4a5076bb12b16da16baea49e1098c17fda8b5823279297f02d38afbb5afb98"
+  },
+  "revisao_cientifica": "candidata; para revisao do pesquisador",
+  "status": "CONFERIDO_TECNICAMENTE_RASCUNHO",
+  "versao": "autorizacao-textual-v1"
+}

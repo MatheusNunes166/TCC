@@ -1,0 +1,181 @@
+{
+  "algoritmo": "random.Random(20261111).shuffle; um gerador, dois blocos sequenciais",
+  "enumeracao": {
+    "condicoes": [
+      "D1",
+      "E1"
+    ],
+    "modelos": [
+      "gpt-6-sol",
+      "gpt-6-astra"
+    ],
+    "notas": [
+      "N01",
+      "N02"
+    ]
+  },
+  "observacoes": [
+    {
+      "bloco": 1,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N02-ASTRA-R01",
+      "ordem": 1,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N01-SOL-R01",
+      "ordem": 2,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N01-ASTRA-R01",
+      "ordem": 3,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N02-SOL-R01",
+      "ordem": 4,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N02-SOL-R01",
+      "ordem": 5,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N01-ASTRA-R01",
+      "ordem": 6,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N01-SOL-R01",
+      "ordem": 7,
+      "repeticao": 1
+    },
+    {
+      "bloco": 1,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N02-ASTRA-R01",
+      "ordem": 8,
+      "repeticao": 1
+    },
+    {
+      "bloco": 2,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N01-ASTRA-R02",
+      "ordem": 9,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N02-ASTRA-R02",
+      "ordem": 10,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N02-SOL-R02",
+      "ordem": 11,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N02-SOL-R02",
+      "ordem": 12,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N02-ASTRA-R02",
+      "ordem": 13,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N01-SOL-R02",
+      "ordem": 14,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N01-ASTRA-R02",
+      "ordem": 15,
+      "repeticao": 2
+    },
+    {
+      "bloco": 2,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N01-SOL-R02",
+      "ordem": 16,
+      "repeticao": 2
+    }
+  ],
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "semente_local": 20261111
+}

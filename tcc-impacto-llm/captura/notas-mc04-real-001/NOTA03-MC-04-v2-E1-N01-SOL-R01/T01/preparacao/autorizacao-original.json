@@ -1,0 +1,45 @@
+{
+  "documentos": [
+    {
+      "arquivo": "sistema.txt",
+      "sha256": "31aba6816dae2f6a2dd78e41df2b55ebb5a8f17b9db240738d5e31666f5d6053"
+    },
+    {
+      "arquivo": "definicoes-comuns.md",
+      "sha256": "14d60b975109cce15613c66948f235e7572489ba7eb5ed0b4038869e5b43b37e"
+    },
+    {
+      "arquivo": "requisitos-baseline.md",
+      "sha256": "6f0eeab3dcfe4845028f1baa9bef9a91e0b872caf0c63c8a15d6f0b51fd1881a"
+    },
+    {
+      "arquivo": "catalogo-baseline.md",
+      "sha256": "45e67daac93905c6c88c67730b884e42c803113b3f7277c09ac0feba813ab5d4"
+    },
+    {
+      "arquivo": "mudanca.md",
+      "sha256": "448dbc894b81bbf9430f46c44edeb4442519b1db77b78c91c30c4b2576d2a6ed"
+    },
+    {
+      "arquivo": "notas.md",
+      "sha256": "e4f699fde739544eb851358e27aa9abeef0ec3584d97af9293d248441f71a68d"
+    },
+    {
+      "arquivo": "pedido.txt",
+      "sha256": "3898440d3b28447dfff6a1ac6782b299575e0b5bde15d8ebaa7cc9da08e23774"
+    },
+    {
+      "arquivo": "schema_saida.json",
+      "sha256": "f8b14b92ee0f5587dd6cb46104a29472cbd3cdf231e152e714387baaeabd2d21"
+    }
+  ],
+  "manifesto_sha256": "61e6ca5f4df5481252bad9000b3010cdcadfe506d12237692995e3d680034a13",
+  "preparacao_origem": {
+    "arquivo": "captura/extensao-20261109-003/preparados/gpt-6-sol/MC-04-v2-E1/preparacao.json",
+    "configuracao_id": "ext-api-sol-c876e81f01df3a17",
+    "sha256": "e1e1adb7ff9e1a6613b5340b9672e3eb2c3f96bc164e68092cb334dfe794c3c1"
+  },
+  "revisao_cientifica": "candidata; para revisao do pesquisador",
+  "status": "CONFERIDO_TECNICAMENTE_RASCUNHO",
+  "versao": "autorizacao-textual-v1"
+}

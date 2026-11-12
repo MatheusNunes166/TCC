@@ -206,6 +206,19 @@ def validar_origem(record,origem,fase):
     elif fase not in ('exploratoria','piloto','principal') or record.get('fase')!=fase:
         raise ValueError('fase real ausente/divergente; nao combinar fases')
 
+def chave_celula(record):
+    key=(record['configuracao_id'],canonica(record.get('mudanca')),record['condicao'])
+    notes=any(k in record for k in ('nota_id','bloco_exploratorio'))
+    if notes:
+        if (record.get('nota_id') not in ('N01','N02') or not texto(record.get('bloco_exploratorio'))
+            or not record.get('observacao_id','').startswith('NOTA03-')):
+            raise ValueError('nota/bloco ausente, invalido ou de outra coorte')
+        key+=(record['bloco_exploratorio'],record['nota_id'])
+    elif record.get('observacao_id','').startswith('NOTA03-'):
+        raise ValueError('observacao de notas sem nota_id/bloco')
+    return key
+
+
 def identidade(record):
     if not isinstance(record,dict):raise ValueError('registro de observacao deve ser objeto')
     for field in ('configuracao_id','observacao_id'):
@@ -214,7 +227,7 @@ def identidade(record):
     if type(repeat) is not int or repeat<1:raise ValueError('repeticao deve ser inteiro positivo')
     change=canonica(record.get('mudanca'))
     if change not in MUDANCAS or record.get('condicao') not in ('D0','D1','E0','E1'):raise ValueError('celula invalida')
-    return (record['configuracao_id'],change,record['condicao'],repeat)
+    return chave_celula(record)+(repeat,)
 
 def avaliar(preparacao,tentativa,referencia,saida,avaliacao_anterior=None,origem='sintetica',fase=None):
     inputs=[Path(preparacao),Path(tentativa),Path(referencia)]
@@ -269,6 +282,12 @@ def avaliar(preparacao,tentativa,referencia,saida,avaliacao_anterior=None,origem
             or t.get('payload_sha256')!=prep.get('payload_sha256')
             or any(t.get(k)!=prep.get(k) for k in ('configuracao_id','mudanca','condicao'))):
             raise ValueError('vinculo com preparacao divergente')
+        if 'nota_id' in t:
+            if any(t[k]!=prep.get(k) for k in ('nota_id','bloco_exploratorio')):
+                raise ValueError('nota/bloco da tentativa diverge da preparacao')
+            for k in ('nota_id','bloco_exploratorio','etapa','integracao','plano_sha256','modelo',
+                      'configuracao','versoes','conformidade_protocolo','desvios'):
+                result[k]=t[k]
         arquivos=prep.get('arquivos')
         if not isinstance(arquivos,list) or not arquivos:raise ValueError('preparacao sem arquivos')
         names=set()
@@ -325,11 +344,20 @@ def _versao(record):
     if any(not texto(s) for s in signature):raise ValueError('versao/hash ausente')
     if record.get('origem')=='real':
         signature += (sha(serial(record['configuracao'])),sha(serial(record['versoes'])),record['payload_sha256'])
+    if 'nota_id' in record:
+        signature += (record['bloco_exploratorio'],record['nota_id'],record['plano_sha256'])
     return signature
 
-def _celula(key):return {'configuracao_id':key[0],'mudanca':key[1],'condicao':key[2]}
+def _celula(key):
+    result={'configuracao_id':key[0],'mudanca':key[1],'condicao':key[2]}
+    if len(key)==5:
+        result.update(bloco_exploratorio=key[3],nota_id=key[4],
+                      estrutura='direta' if key[2]=='D1' else 'estruturada')
+    return result
 
 def jaccard(regs,dim):
+    if any('nota_id' in r for r in regs) and len({chave_celula(r) for r in regs})>1:
+        raise ValueError('Jaccard exige mesma celula de nota/modelo/estrutura')
     pairs=[]
     for x,y in combinations(regs,2):
         if repeticao(x)==repeticao(y):raise ValueError('repeticao duplicada nao adjudicada')
@@ -341,6 +369,8 @@ def jaccard(regs,dim):
       'pares':pairs,'valor':numero(sum(Fraction(p['valor']['fracao']) for p in pairs)/len(pairs)) if pairs else None}
 
 def _grupo(regs,plans,imputar):
+    if any('nota_id' in r for r in regs+plans) and len({chave_celula(r) for r in regs+plans})>1:
+        raise ValueError('grupo deve preservar nota/modelo/estrutura')
     obs={}
     for r in regs:obs.setdefault(r['observacao_id'],[]).append(r)
     finals=[]
@@ -379,15 +409,23 @@ def resumir_registros(avaliacoes,planejadas,imputar=False,origem='sintetica',fas
     result={'origem':origem,'fase':fase,'politica':POLITICA,'completo':True,'celulas':[]}
     if not isinstance(avaliacoes,list) or not isinstance(planejadas,list):raise ValueError('listas explicitas requeridas')
     for r in avaliacoes:validar_origem(r,origem,fase)
+    entries=avaliacoes+planejadas
+    modes={bool('nota_id' in r or 'bloco_exploratorio' in r or r.get('observacao_id','').startswith('NOTA03-')) for r in entries}
+    if len(modes)>1:raise ValueError('nao misturar bloco de notas com outras coortes')
+    if modes=={True}:
+        if len({(r.get('bloco_exploratorio'),r.get('plano_sha256')) for r in entries})!=1:
+            raise ValueError('nao misturar planos/blocos de notas')
+        result.update(bloco_exploratorio=entries[0]['bloco_exploratorio'],N_planejado_original=len(planejadas),
+                      chave_agrupamento=['modelo','condicao','nota_id'])
     if origem=='real':
         for r in planejadas:validar_origem(r,origem,fase)
     cells={};global_obs={};global_attempt={};bad_cells=set()
     for kind,entries in [('plans',planejadas),('regs',avaliacoes)]:
         for r in entries:
-            key=identidade(r);cell=key[:3]
+            key=identidade(r);cell=key[:-1]
             node=cells.setdefault(cell,{'plans':[],'regs':[]});node[kind].append(r)
             if r['observacao_id'] in global_obs and global_obs[r['observacao_id']]!=key:
-                bad_cells.update([cell,global_obs[r['observacao_id']][:3]])
+                bad_cells.update([cell,global_obs[r['observacao_id']][:-1]])
             global_obs[r['observacao_id']]=key
             if kind=='regs':
                 tid=r.get('tentativa_id')
@@ -398,6 +436,8 @@ def resumir_registros(avaliacoes,planejadas,imputar=False,origem='sintetica',fas
     for key,node in cells.items():
         cell={**_celula(key),'resultado_combinado':None,'grupos':[],'diagnosticos':[]}
         result['celulas'].append(cell);regs=node['regs'];plans=node['plans']
+        if 'nota_id' in cell:
+            cell['modelo']=next((r.get('modelo') for r in plans+regs if r.get('modelo')),None)
         try:
             if key in bad_cells:raise ValueError('identidade/tentativa duplicada')
             planids=[r['observacao_id'] for r in plans];plankeys=[identidade(r) for r in plans]

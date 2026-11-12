@@ -1,0 +1,14 @@
+{
+  "autorizacao_sha256": "6e11cb8ec2379ef5d832e4b76e78878bc2a1dc9a6b746fc54ea034cf9ea80e5a",
+  "bloco_exploratorio": "notas-mc04-0.3-v1-D46",
+  "catalogo_versao": "0.3",
+  "coletor_sha256": "70e5b583bc52af64bd40af27ac5c1b172e021a4e643c8b9dc11ee2a1b4972b39",
+  "etapa": "notas-mc04-0.3-D46",
+  "fase": "exploratoria",
+  "integracao": "integracao-notas-v1-D47",
+  "interface": "Responses API",
+  "orcamento_novo_declarado_usd": null,
+  "origem": "real",
+  "plano_sha256": "c8363eb2daaac2b1d1d1538470458356a29504cfc378d17cb35c2188d43dc1bd",
+  "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9"
+}

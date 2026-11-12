@@ -1,0 +1,3746 @@
+{
+  "N": 16,
+  "celulas": [
+    {
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "denominador": 2,
+          "exatas": 2
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "denominador": 2,
+          "exatas": 2
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "08734e56744a4092b18acff3a884e700",
+          "ea9a2fdf9ef140f9b46e03880838c331"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-D1-N01-SOL-R01",
+                  "NOTA03-MC-04-v2-D1-N01-SOL-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-D1-N01-SOL-R01",
+                  "NOTA03-MC-04-v2-D1-N01-SOL-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "estrutura": "D1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N01",
+      "observacoes": [
+        "NOTA03-MC-04-v2-D1-N01-SOL-R01",
+        "NOTA03-MC-04-v2-D1-N01-SOL-R02"
+      ]
+    },
+    {
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "denominador": 2,
+          "exatas": 2
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "denominador": 2,
+          "exatas": 2
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "e3dfd7bcffc9461e9784eb384c41c8ea",
+          "f0eef2e9af6747d3a01c85fc3444af43"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-D1-N02-SOL-R01",
+                  "NOTA03-MC-04-v2-D1-N02-SOL-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-D1-N02-SOL-R01",
+                  "NOTA03-MC-04-v2-D1-N02-SOL-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "estrutura": "D1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N02",
+      "observacoes": [
+        "NOTA03-MC-04-v2-D1-N02-SOL-R01",
+        "NOTA03-MC-04-v2-D1-N02-SOL-R02"
+      ]
+    },
+    {
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "denominador": 2,
+          "exatas": 2
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "denominador": 2,
+          "exatas": 2
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "84fe0d047f8d4e8dad732529fda627f0",
+          "4bbce7f56fd746a490e9a18e5b1c1090"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-E1-N01-SOL-R01",
+                  "NOTA03-MC-04-v2-E1-N01-SOL-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-E1-N01-SOL-R01",
+                  "NOTA03-MC-04-v2-E1-N01-SOL-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "estrutura": "E1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N01",
+      "observacoes": [
+        "NOTA03-MC-04-v2-E1-N01-SOL-R01",
+        "NOTA03-MC-04-v2-E1-N01-SOL-R02"
+      ]
+    },
+    {
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "denominador": 2,
+          "exatas": 2
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "denominador": 2,
+          "exatas": 2
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "093724138da2486d94af37d00bf0bcd1",
+          "771d19b3bfa7469f89564ba18becb434"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-E1-N02-SOL-R01",
+                  "NOTA03-MC-04-v2-E1-N02-SOL-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-E1-N02-SOL-R01",
+                  "NOTA03-MC-04-v2-E1-N02-SOL-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "estrutura": "E1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N02",
+      "observacoes": [
+        "NOTA03-MC-04-v2-E1-N02-SOL-R01",
+        "NOTA03-MC-04-v2-E1-N02-SOL-R02"
+      ]
+    },
+    {
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "denominador": 2,
+          "exatas": 2
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "denominador": 2,
+          "exatas": 2
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "4aed522103ff4662b47814e2c5309d1e",
+          "bfc8c37d250240eea691c346346de3bc"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-D1-N01-ASTRA-R01",
+                  "NOTA03-MC-04-v2-D1-N01-ASTRA-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-D1-N01-ASTRA-R01",
+                  "NOTA03-MC-04-v2-D1-N01-ASTRA-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "estrutura": "D1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N01",
+      "observacoes": [
+        "NOTA03-MC-04-v2-D1-N01-ASTRA-R01",
+        "NOTA03-MC-04-v2-D1-N01-ASTRA-R02"
+      ]
+    },
+    {
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "denominador": 2,
+          "exatas": 2
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "denominador": 2,
+          "exatas": 2
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "c0eccde4bc6346109c8811ddda4e1d6a",
+          "549a2c5913b34501a16408f75a825a21"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-D1-N02-ASTRA-R01",
+                  "NOTA03-MC-04-v2-D1-N02-ASTRA-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-D1-N02-ASTRA-R01",
+                  "NOTA03-MC-04-v2-D1-N02-ASTRA-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "estrutura": "D1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N02",
+      "observacoes": [
+        "NOTA03-MC-04-v2-D1-N02-ASTRA-R01",
+        "NOTA03-MC-04-v2-D1-N02-ASTRA-R02"
+      ]
+    },
+    {
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "denominador": 2,
+          "exatas": 2
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "denominador": 2,
+          "exatas": 2
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "cc100951af0e4cd8aef480fbd58dc9ff",
+          "8b829fa93d7d4add9c8317afb733a190"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-E1-N01-ASTRA-R01",
+                  "NOTA03-MC-04-v2-E1-N01-ASTRA-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-E1-N01-ASTRA-R01",
+                  "NOTA03-MC-04-v2-E1-N01-ASTRA-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "estrutura": "E1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N01",
+      "observacoes": [
+        "NOTA03-MC-04-v2-E1-N01-ASTRA-R01",
+        "NOTA03-MC-04-v2-E1-N01-ASTRA-R02"
+      ]
+    },
+    {
+      "contagens_ids": {
+        "requisitos": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 4,
+          "denominador": 2,
+          "exatas": 2
+        },
+        "testes": {
+          "FN": 0,
+          "FP": 0,
+          "TP": 16,
+          "denominador": 2,
+          "exatas": 2
+        }
+      },
+      "descritivo": {
+        "ausentes": [],
+        "avaliacoes": [
+          "ecdfd3ee9fab4f779339ba1ea9764274",
+          "ae5dc8a1dc7e4306ba5b8c454a6c0926"
+        ],
+        "contagens": {
+          "A": 2,
+          "C": 2,
+          "I": 0,
+          "K": 2,
+          "N": 2,
+          "T": 0,
+          "V": 2
+        },
+        "exclusoes": [],
+        "jaccard": {
+          "requisitos": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 2,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-E1-N02-ASTRA-R01",
+                  "NOTA03-MC-04-v2-E1-N02-ASTRA-R02"
+                ],
+                "uniao": 2,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "estado": "calculavel",
+            "motivo": null,
+            "numero_pares": 1,
+            "observacoes": 2,
+            "pares": [
+              {
+                "intersecao": 8,
+                "observacoes": [
+                  "NOTA03-MC-04-v2-E1-N02-ASTRA-R01",
+                  "NOTA03-MC-04-v2-E1-N02-ASTRA-R02"
+                ],
+                "uniao": 8,
+                "valor": {
+                  "decimal": "1.000000",
+                  "denominador": 1,
+                  "fracao": "1",
+                  "numerador": 1
+                }
+              }
+            ],
+            "valor": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        },
+        "taxas": {
+          "completude": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "ids_conhecidos": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "validade": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          }
+        },
+        "validas": {
+          "requisitos": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          },
+          "testes": {
+            "f1": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "precisao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            },
+            "revocacao": {
+              "decimal": "1.000000",
+              "denominador": 1,
+              "fracao": "1",
+              "numerador": 1
+            }
+          }
+        }
+      },
+      "estrutura": "E1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N02",
+      "observacoes": [
+        "NOTA03-MC-04-v2-E1-N02-ASTRA-R01",
+        "NOTA03-MC-04-v2-E1-N02-ASTRA-R02"
+      ]
+    }
+  ],
+  "comparacoes_N01_N02": [
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-D1-N01-SOL-R01",
+      "N02_observacao": "NOTA03-MC-04-v2-D1-N02-SOL-R01",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "D1",
+      "modelo": "gpt-6-sol",
+      "repeticao": 1
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-D1-N01-SOL-R01",
+      "N02_observacao": "NOTA03-MC-04-v2-D1-N02-SOL-R01",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "D1",
+      "modelo": "gpt-6-sol",
+      "repeticao": 1
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-D1-N01-SOL-R02",
+      "N02_observacao": "NOTA03-MC-04-v2-D1-N02-SOL-R02",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "D1",
+      "modelo": "gpt-6-sol",
+      "repeticao": 2
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-D1-N01-SOL-R02",
+      "N02_observacao": "NOTA03-MC-04-v2-D1-N02-SOL-R02",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "D1",
+      "modelo": "gpt-6-sol",
+      "repeticao": 2
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-E1-N01-SOL-R01",
+      "N02_observacao": "NOTA03-MC-04-v2-E1-N02-SOL-R01",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "E1",
+      "modelo": "gpt-6-sol",
+      "repeticao": 1
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-E1-N01-SOL-R01",
+      "N02_observacao": "NOTA03-MC-04-v2-E1-N02-SOL-R01",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "E1",
+      "modelo": "gpt-6-sol",
+      "repeticao": 1
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-E1-N01-SOL-R02",
+      "N02_observacao": "NOTA03-MC-04-v2-E1-N02-SOL-R02",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "E1",
+      "modelo": "gpt-6-sol",
+      "repeticao": 2
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-E1-N01-SOL-R02",
+      "N02_observacao": "NOTA03-MC-04-v2-E1-N02-SOL-R02",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "E1",
+      "modelo": "gpt-6-sol",
+      "repeticao": 2
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-D1-N01-ASTRA-R01",
+      "N02_observacao": "NOTA03-MC-04-v2-D1-N02-ASTRA-R01",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "D1",
+      "modelo": "gpt-6-astra",
+      "repeticao": 1
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-D1-N01-ASTRA-R01",
+      "N02_observacao": "NOTA03-MC-04-v2-D1-N02-ASTRA-R01",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "D1",
+      "modelo": "gpt-6-astra",
+      "repeticao": 1
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-D1-N01-ASTRA-R02",
+      "N02_observacao": "NOTA03-MC-04-v2-D1-N02-ASTRA-R02",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "D1",
+      "modelo": "gpt-6-astra",
+      "repeticao": 2
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-D1-N01-ASTRA-R02",
+      "N02_observacao": "NOTA03-MC-04-v2-D1-N02-ASTRA-R02",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "D1",
+      "modelo": "gpt-6-astra",
+      "repeticao": 2
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-E1-N01-ASTRA-R01",
+      "N02_observacao": "NOTA03-MC-04-v2-E1-N02-ASTRA-R01",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "E1",
+      "modelo": "gpt-6-astra",
+      "repeticao": 1
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-E1-N01-ASTRA-R01",
+      "N02_observacao": "NOTA03-MC-04-v2-E1-N02-ASTRA-R01",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "E1",
+      "modelo": "gpt-6-astra",
+      "repeticao": 1
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-E1-N01-ASTRA-R02",
+      "N02_observacao": "NOTA03-MC-04-v2-E1-N02-ASTRA-R02",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "E1",
+      "modelo": "gpt-6-astra",
+      "repeticao": 2
+    },
+    {
+      "N01_observacao": "NOTA03-MC-04-v2-E1-N01-ASTRA-R02",
+      "N02_observacao": "NOTA03-MC-04-v2-E1-N02-ASTRA-R02",
+      "apenas_N01": [],
+      "apenas_N02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "E1",
+      "modelo": "gpt-6-astra",
+      "repeticao": 2
+    }
+  ],
+  "diferencas_entre_repeticoes": [
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "D1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N01",
+      "observacoes": [
+        "NOTA03-MC-04-v2-D1-N01-SOL-R01",
+        "NOTA03-MC-04-v2-D1-N01-SOL-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "D1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N01",
+      "observacoes": [
+        "NOTA03-MC-04-v2-D1-N01-SOL-R01",
+        "NOTA03-MC-04-v2-D1-N01-SOL-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "D1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N02",
+      "observacoes": [
+        "NOTA03-MC-04-v2-D1-N02-SOL-R01",
+        "NOTA03-MC-04-v2-D1-N02-SOL-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "D1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N02",
+      "observacoes": [
+        "NOTA03-MC-04-v2-D1-N02-SOL-R01",
+        "NOTA03-MC-04-v2-D1-N02-SOL-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "E1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N01",
+      "observacoes": [
+        "NOTA03-MC-04-v2-E1-N01-SOL-R01",
+        "NOTA03-MC-04-v2-E1-N01-SOL-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "E1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N01",
+      "observacoes": [
+        "NOTA03-MC-04-v2-E1-N01-SOL-R01",
+        "NOTA03-MC-04-v2-E1-N01-SOL-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "E1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N02",
+      "observacoes": [
+        "NOTA03-MC-04-v2-E1-N02-SOL-R01",
+        "NOTA03-MC-04-v2-E1-N02-SOL-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "E1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N02",
+      "observacoes": [
+        "NOTA03-MC-04-v2-E1-N02-SOL-R01",
+        "NOTA03-MC-04-v2-E1-N02-SOL-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "D1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N01",
+      "observacoes": [
+        "NOTA03-MC-04-v2-D1-N01-ASTRA-R01",
+        "NOTA03-MC-04-v2-D1-N01-ASTRA-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "D1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N01",
+      "observacoes": [
+        "NOTA03-MC-04-v2-D1-N01-ASTRA-R01",
+        "NOTA03-MC-04-v2-D1-N01-ASTRA-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "D1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N02",
+      "observacoes": [
+        "NOTA03-MC-04-v2-D1-N02-ASTRA-R01",
+        "NOTA03-MC-04-v2-D1-N02-ASTRA-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "D1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N02",
+      "observacoes": [
+        "NOTA03-MC-04-v2-D1-N02-ASTRA-R01",
+        "NOTA03-MC-04-v2-D1-N02-ASTRA-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "E1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N01",
+      "observacoes": [
+        "NOTA03-MC-04-v2-E1-N01-ASTRA-R01",
+        "NOTA03-MC-04-v2-E1-N01-ASTRA-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "E1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N01",
+      "observacoes": [
+        "NOTA03-MC-04-v2-E1-N01-ASTRA-R01",
+        "NOTA03-MC-04-v2-E1-N01-ASTRA-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "requisitos",
+      "estrutura": "E1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N02",
+      "observacoes": [
+        "NOTA03-MC-04-v2-E1-N02-ASTRA-R01",
+        "NOTA03-MC-04-v2-E1-N02-ASTRA-R02"
+      ]
+    },
+    {
+      "apenas_R01": [],
+      "apenas_R02": [],
+      "comparavel": true,
+      "dimensao": "testes",
+      "estrutura": "E1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N02",
+      "observacoes": [
+        "NOTA03-MC-04-v2-E1-N02-ASTRA-R01",
+        "NOTA03-MC-04-v2-E1-N02-ASTRA-R02"
+      ]
+    }
+  ],
+  "divergencias_referencia": [],
+  "falhas_tecnicas": [],
+  "invalidas": [],
+  "observacoes": [
+    {
+      "causa": null,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N01-SOL-R01",
+      "repeticao": 1,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N01-SOL-R02",
+      "repeticao": 2,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N02-SOL-R01",
+      "repeticao": 1,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "D1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N02-SOL-R02",
+      "repeticao": 2,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N01-SOL-R01",
+      "repeticao": 1,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N01-SOL-R02",
+      "repeticao": 2,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N02-SOL-R01",
+      "repeticao": 1,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "E1",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N02-SOL-R02",
+      "repeticao": 2,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N01-ASTRA-R01",
+      "repeticao": 1,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N01-ASTRA-R02",
+      "repeticao": 2,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N02-ASTRA-R01",
+      "repeticao": 1,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "D1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N02-ASTRA-R02",
+      "repeticao": 2,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N01-ASTRA-R01",
+      "repeticao": 1,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N01-ASTRA-R02",
+      "repeticao": 2,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N02-ASTRA-R01",
+      "repeticao": 1,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    },
+    {
+      "causa": null,
+      "condicao": "E1",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N02-ASTRA-R02",
+      "repeticao": 2,
+      "requisitos": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "RF-03",
+          "RF-04"
+        ],
+        "S": [
+          "RF-03",
+          "RF-04"
+        ],
+        "TP": 2,
+        "acertos": [
+          "RF-03",
+          "RF-04"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "RF-03",
+          "RF-04"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      },
+      "status_avaliacao": "avaliada",
+      "testes": {
+        "FN": 0,
+        "FP": 0,
+        "G": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "S": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "TP": 8,
+        "acertos": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "desconhecidos": [],
+        "duplicatas": [],
+        "excedentes": [],
+        "lista_original": [
+          "T05",
+          "T07",
+          "T08",
+          "T10",
+          "T12",
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "metricas_propostas": {
+          "correspondencia_exata": 1,
+          "f1": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "precisao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "revocacao": {
+            "decimal": "1.000000",
+            "denominador": 1,
+            "fracao": "1",
+            "numerador": 1
+          },
+          "selecao_completa": 1
+        },
+        "omissoes": []
+      }
+    }
+  ],
+  "politica_sha256": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+  "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+  "revisao_humana_pendente": true,
+  "status": "DESCRITIVO_COM_CONFORMIDADE_PENDENTE",
+  "tokens_reportados": {
+    "gpt-6-astra": {
+      "input_tokens": 14868,
+      "observacoes": 8,
+      "output_tokens": 866,
+      "reasoning_tokens_incluidos_na_saida": 386,
+      "total_tokens": 15734
+    },
+    "gpt-6-sol": {
+      "input_tokens": 14868,
+      "observacoes": 8,
+      "output_tokens": 1464,
+      "reasoning_tokens_incluidos_na_saida": 1010,
+      "total_tokens": 16332
+    }
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "IDs_unicos": {
+    "request_id": 16,
+    "response_id": 16,
+    "tentativa_id": 16
+  },
+  "N_por_celula": 2,
+  "autorizacao_sha256": "6e11cb8ec2379ef5d832e4b76e78878bc2a1dc9a6b746fc54ea034cf9ea80e5a",
+  "celulas": 8,
+  "configuracao_reportada_medium_4096": true,
+  "conformidade": {
+    "pendente": 16
+  },
+  "conformidade_humana_aprovada": false,
+  "desvios": 0,
+  "modelos": {
+    "gpt-6-astra": 8,
+    "gpt-6-sol": 8
+  },
+  "observacoes": 16,
+  "ordem_temporal_conforme": true,
+  "originais_inventariados": 12685,
+  "plano_sha256": "c8363eb2daaac2b1d1d1538470458356a29504cfc378d17cb35c2188d43dc1bd",
+  "primeira_execucao": "2026-11-11T23:51:41.576802+00:00",
+  "rede": false,
+  "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+  "registros": [
+    {
+      "condicao": "D1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:51:41.576802+00:00",
+      "instante_fim": "2026-11-11T23:51:48.261127+00:00",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N02-ASTRA-R01",
+      "ordem": 1,
+      "repeticao": 1,
+      "usage": {
+        "input_tokens": 1852,
+        "input_tokens_details": {
+          "cache_write_tokens": 1849,
+          "cached_tokens": 0
+        },
+        "output_tokens": 106,
+        "output_tokens_details": {
+          "reasoning_tokens": 46
+        },
+        "total_tokens": 1958
+      }
+    },
+    {
+      "condicao": "D1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:58:31.709560+00:00",
+      "instante_fim": "2026-11-11T23:58:35.616220+00:00",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N01-SOL-R01",
+      "ordem": 2,
+      "repeticao": 1,
+      "usage": {
+        "input_tokens": 1850,
+        "input_tokens_details": {
+          "cache_write_tokens": 1847,
+          "cached_tokens": 0
+        },
+        "output_tokens": 158,
+        "output_tokens_details": {
+          "reasoning_tokens": 98
+        },
+        "total_tokens": 2008
+      }
+    },
+    {
+      "condicao": "D1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:58:36.362755+00:00",
+      "instante_fim": "2026-11-11T23:58:41.660801+00:00",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N01-ASTRA-R01",
+      "ordem": 3,
+      "repeticao": 1,
+      "usage": {
+        "input_tokens": 1850,
+        "input_tokens_details": {
+          "cache_write_tokens": 1847,
+          "cached_tokens": 0
+        },
+        "output_tokens": 140,
+        "output_tokens_details": {
+          "reasoning_tokens": 80
+        },
+        "total_tokens": 1990
+      }
+    },
+    {
+      "condicao": "E1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:58:42.501323+00:00",
+      "instante_fim": "2026-11-11T23:58:46.045301+00:00",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N02-SOL-R01",
+      "ordem": 4,
+      "repeticao": 1,
+      "usage": {
+        "input_tokens": 1867,
+        "input_tokens_details": {
+          "cache_write_tokens": 1864,
+          "cached_tokens": 0
+        },
+        "output_tokens": 214,
+        "output_tokens_details": {
+          "reasoning_tokens": 167
+        },
+        "total_tokens": 2081
+      }
+    },
+    {
+      "condicao": "D1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:58:46.883150+00:00",
+      "instante_fim": "2026-11-11T23:58:49.566721+00:00",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N02-SOL-R01",
+      "ordem": 5,
+      "repeticao": 1,
+      "usage": {
+        "input_tokens": 1852,
+        "input_tokens_details": {
+          "cache_write_tokens": 1849,
+          "cached_tokens": 0
+        },
+        "output_tokens": 144,
+        "output_tokens_details": {
+          "reasoning_tokens": 97
+        },
+        "total_tokens": 1996
+      }
+    },
+    {
+      "condicao": "E1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:58:50.810585+00:00",
+      "instante_fim": "2026-11-11T23:58:54.001300+00:00",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N01-ASTRA-R01",
+      "ordem": 6,
+      "repeticao": 1,
+      "usage": {
+        "input_tokens": 1865,
+        "input_tokens_details": {
+          "cache_write_tokens": 1862,
+          "cached_tokens": 0
+        },
+        "output_tokens": 99,
+        "output_tokens_details": {
+          "reasoning_tokens": 39
+        },
+        "total_tokens": 1964
+      }
+    },
+    {
+      "condicao": "E1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:58:54.818432+00:00",
+      "instante_fim": "2026-11-11T23:58:57.246376+00:00",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N01-SOL-R01",
+      "ordem": 7,
+      "repeticao": 1,
+      "usage": {
+        "input_tokens": 1865,
+        "input_tokens_details": {
+          "cache_write_tokens": 1862,
+          "cached_tokens": 0
+        },
+        "output_tokens": 164,
+        "output_tokens_details": {
+          "reasoning_tokens": 104
+        },
+        "total_tokens": 2029
+      }
+    },
+    {
+      "condicao": "E1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:58:58.076203+00:00",
+      "instante_fim": "2026-11-11T23:59:01.547814+00:00",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N02-ASTRA-R01",
+      "ordem": 8,
+      "repeticao": 1,
+      "usage": {
+        "input_tokens": 1867,
+        "input_tokens_details": {
+          "cache_write_tokens": 1864,
+          "cached_tokens": 0
+        },
+        "output_tokens": 111,
+        "output_tokens_details": {
+          "reasoning_tokens": 51
+        },
+        "total_tokens": 1978
+      }
+    },
+    {
+      "condicao": "D1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:59:02.485496+00:00",
+      "instante_fim": "2026-11-11T23:59:05.679411+00:00",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N01-ASTRA-R02",
+      "ordem": 9,
+      "repeticao": 2,
+      "usage": {
+        "input_tokens": 1850,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1847
+        },
+        "output_tokens": 109,
+        "output_tokens_details": {
+          "reasoning_tokens": 49
+        },
+        "total_tokens": 1959
+      }
+    },
+    {
+      "condicao": "E1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:59:06.634002+00:00",
+      "instante_fim": "2026-11-11T23:59:10.570011+00:00",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N02-ASTRA-R02",
+      "ordem": 10,
+      "repeticao": 2,
+      "usage": {
+        "input_tokens": 1867,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1864
+        },
+        "output_tokens": 107,
+        "output_tokens_details": {
+          "reasoning_tokens": 47
+        },
+        "total_tokens": 1974
+      }
+    },
+    {
+      "condicao": "D1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:59:12.207601+00:00",
+      "instante_fim": "2026-11-11T23:59:15.378887+00:00",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N02-SOL-R02",
+      "ordem": 11,
+      "repeticao": 2,
+      "usage": {
+        "input_tokens": 1852,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1849
+        },
+        "output_tokens": 230,
+        "output_tokens_details": {
+          "reasoning_tokens": 170
+        },
+        "total_tokens": 2082
+      }
+    },
+    {
+      "condicao": "E1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:59:16.278509+00:00",
+      "instante_fim": "2026-11-11T23:59:19.598920+00:00",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N02-SOL-R02",
+      "ordem": 12,
+      "repeticao": 2,
+      "usage": {
+        "input_tokens": 1867,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1864
+        },
+        "output_tokens": 215,
+        "output_tokens_details": {
+          "reasoning_tokens": 155
+        },
+        "total_tokens": 2082
+      }
+    },
+    {
+      "condicao": "D1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:59:20.636965+00:00",
+      "instante_fim": "2026-11-11T23:59:24.089124+00:00",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N02-ASTRA-R02",
+      "ordem": 13,
+      "repeticao": 2,
+      "usage": {
+        "input_tokens": 1852,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1849
+        },
+        "output_tokens": 98,
+        "output_tokens_details": {
+          "reasoning_tokens": 38
+        },
+        "total_tokens": 1950
+      }
+    },
+    {
+      "condicao": "D1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:59:24.996076+00:00",
+      "instante_fim": "2026-11-11T23:59:27.558720+00:00",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N01-SOL-R02",
+      "ordem": 14,
+      "repeticao": 2,
+      "usage": {
+        "input_tokens": 1850,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1847
+        },
+        "output_tokens": 145,
+        "output_tokens_details": {
+          "reasoning_tokens": 85
+        },
+        "total_tokens": 1995
+      }
+    },
+    {
+      "condicao": "E1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:59:28.309305+00:00",
+      "instante_fim": "2026-11-11T23:59:31.473666+00:00",
+      "modelo": "gpt-6-astra",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N01-ASTRA-R02",
+      "ordem": 15,
+      "repeticao": 2,
+      "usage": {
+        "input_tokens": 1865,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1862
+        },
+        "output_tokens": 96,
+        "output_tokens_details": {
+          "reasoning_tokens": 36
+        },
+        "total_tokens": 1961
+      }
+    },
+    {
+      "condicao": "E1",
+      "conformidade_protocolo": "pendente",
+      "desvios": [],
+      "estado_tecnico": "concluida",
+      "instante_execucao": "2026-11-11T23:59:32.236655+00:00",
+      "instante_fim": "2026-11-11T23:59:35.243567+00:00",
+      "modelo": "gpt-6-sol",
+      "nota_id": "N01",
+      "observacao_id": "NOTA03-MC-04-v2-E1-N01-SOL-R02",
+      "ordem": 16,
+      "repeticao": 2,
+      "usage": {
+        "input_tokens": 1865,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1862
+        },
+        "output_tokens": 194,
+        "output_tokens_details": {
+          "reasoning_tokens": 134
+        },
+        "total_tokens": 2059
+      }
+    }
+  ],
+  "retentativas_registradas": 0,
+  "tentativas_por_observacao": 1,
+  "ultima_conclusao": "2026-11-11T23:59:35.243567+00:00",
+  "vinculos_fechamentos": 336
+}

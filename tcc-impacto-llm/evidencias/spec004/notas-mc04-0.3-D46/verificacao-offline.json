@@ -1,0 +1,27 @@
+{
+  "N_planejado": 16,
+  "celulas": 8,
+  "comandos": [
+    "python -B preparar_bloco_notas.py preparar --saida captura/notas-mc04-0.3-001",
+    "python -B preparar_bloco_notas.py conferir --plano captura/notas-mc04-0.3-001/plano.json"
+  ],
+  "comparacoes_de_diferencas": 8,
+  "completo": true,
+  "envio_autorizado": false,
+  "execucao": "funcoes preparar/conferir invocadas por este wrapper offline; comandos CLI equivalentes, nao repetidos sobre destino existente",
+  "executadas": 0,
+  "limite": "preparacao offline; sem resultado de modelo ou aprovacao humana",
+  "manifesto_sha256": "85da6e044cad19de3926d1ca8f348b745c6bd676a886eebc84e9d7ffdb3260c7",
+  "notas_sha256": {
+    "N01": "e4f699fde739544eb851358e27aa9abeef0ec3584d97af9293d248441f71a68d",
+    "N02": "cde836ed09080c10ad9fe1f591e9a2186c074205f88feec33d68210e25d98b33"
+  },
+  "payloads_unicos": 4,
+  "plano_sha256": "f4b2cbf4bbeabd4fc199e9e29084956761279e70aeb3f35ddeb4e2f0b45d89a8",
+  "preparacoes": 8,
+  "rede_bloqueada": true,
+  "repeticoes_por_celula": 2,
+  "requisicoes_preparadas": 8,
+  "versao": "notas-mc04-0.3-v1-D46",
+  "vinculos_manifesto": 198
+}

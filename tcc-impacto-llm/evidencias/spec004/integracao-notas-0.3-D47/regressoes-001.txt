@@ -1,0 +1,72 @@
+test_avaliacao_ids (unittest.loader._FailedTest.test_avaliacao_ids) ... ERROR
+test_conexao_neutra_separada_e_explicita (tests.test_coletor_api.TestAPI.test_conexao_neutra_separada_e_explicita) ... ok
+test_controle_sem_rede_credencial_e_avaliacao_separada (tests.test_coletor_api.TestAPI.test_controle_sem_rede_credencial_e_avaliacao_separada) ... ok
+test_hash_tamper_retomada_e_orcamento (tests.test_coletor_api.TestAPI.test_hash_tamper_retomada_e_orcamento) ... ok
+test_iniciar_sem_flag_ou_chave_nao_chama_rede (tests.test_coletor_api.TestAPI.test_iniciar_sem_flag_ou_chave_nao_chama_rede) ... ok
+test_lote_sintetico_16_e_avaliacao_integrada_sem_rede (tests.test_coletor_api.TestAPI.test_lote_sintetico_16_e_avaliacao_integrada_sem_rede) ... ok
+test_ordem_textos_configuracao_e_fase_separados (tests.test_coletor_api.TestAPI.test_ordem_textos_configuracao_e_fase_separados) ... ok
+test_output_tools_modelo_historico_e_mensagens_extras_sao_desvios (tests.test_coletor_api.TestAPI.test_output_tools_modelo_historico_e_mensagens_extras_sao_desvios) ... ok
+test_parse_preserva_texto_recusa_invalida_e_incompleta (tests.test_coletor_api.TestAPI.test_parse_preserva_texto_recusa_invalida_e_incompleta) ... ok
+test_real_simulada_uma_chamada_chave_nao_persistida_e_sem_reenvio (tests.test_coletor_api.TestAPI.test_real_simulada_uma_chamada_chave_nao_persistida_e_sem_reenvio) ... ok
+test_redirect_e_http_error_sem_retry (tests.test_coletor_api.TestAPI.test_redirect_e_http_error_sem_retry) ... ok
+test_requisicao_so_texto_sem_historico_ferramentas_ou_segredo (tests.test_coletor_api.TestAPI.test_requisicao_so_texto_sem_historico_ferramentas_ou_segredo) ... ok
+test_response_id_duplicado_interrompe_sem_escolher_resultado (tests.test_coletor_api.TestAPI.test_response_id_duplicado_interrompe_sem_escolher_resultado) ... ok
+test_timeout_preservado_e_continuacao_bloqueada (tests.test_coletor_api.TestAPI.test_timeout_preservado_e_continuacao_bloqueada) ... ok
+test_ajuda_simulacao_preparacao_nao_leem_chave_ou_enviam (tests.test_transporte_api.TestTransporteAPI.test_ajuda_simulacao_preparacao_nao_leem_chave_ou_enviam) ... ok
+test_conexao_incomplete_read_preserva_fragmento_e_fechamento (tests.test_transporte_api.TestTransporteAPI.test_conexao_incomplete_read_preserva_fragmento_e_fechamento) ... ok
+test_corpo_http_error_tambem_preserva_incomplete_read (tests.test_transporte_api.TestTransporteAPI.test_corpo_http_error_tambem_preserva_incomplete_read) ... ok
+test_defeito_de_programacao_nao_vira_falha_de_transporte (tests.test_transporte_api.TestTransporteAPI.test_defeito_de_programacao_nao_vira_falha_de_transporte) ... ok
+test_eof_antes_de_content_length_e_falha_tecnica (tests.test_transporte_api.TestTransporteAPI.test_eof_antes_de_content_length_e_falha_tecnica) ... ok
+test_excecoes_http_oserror_sem_texto_segredo_ou_retry (tests.test_transporte_api.TestTransporteAPI.test_excecoes_http_oserror_sem_texto_segredo_ou_retry) ... ok
+test_incomplete_read_200_com_prefixo_fecha_e_nao_reenvia (tests.test_transporte_api.TestTransporteAPI.test_incomplete_read_200_com_prefixo_fecha_e_nao_reenvia) ... ok
+test_interrupcao_com_fragmento_em_captura_e_conexao (tests.test_transporte_api.TestTransporteAPI.test_interrupcao_com_fragmento_em_captura_e_conexao) ... ok
+test_tls_verificado_headers_sem_segredo_e_um_unico_open (tests.test_transporte_api.TestTransporteAPI.test_tls_verificado_headers_sem_segredo_e_um_unico_open) ... ok
+test_revisao_conformidade (unittest.loader._FailedTest.test_revisao_conformidade) ... ERROR
+test_64_envios_simulados_configuracao_por_item_retomada_e_avaliacao (tests.test_envio_extensao.TestEnvioExtensao.test_64_envios_simulados_configuracao_por_item_retomada_e_avaliacao) ... ok
+test_comando_sem_flag_nao_le_chave_nem_envia (tests.test_envio_extensao.TestEnvioExtensao.test_comando_sem_flag_nao_le_chave_nem_envia) ... ok
+test_falha_e_modelo_divergente_sem_retry_ou_fallback (tests.test_envio_extensao.TestEnvioExtensao.test_falha_e_modelo_divergente_sem_retry_ou_fallback) ... ok
+test_limites_invalidos_nao_leem_chave (tests.test_envio_extensao.TestEnvioExtensao.test_limites_invalidos_nao_leem_chave) ... ok
+test_nova_versao_preserva_64_ordem_payloads_referencia_e_orcamento (tests.test_envio_extensao.TestEnvioExtensao.test_nova_versao_preserva_64_ordem_payloads_referencia_e_orcamento) ... ok
+test_plano_anterior_recusado_sem_atualizar_seus_hashes (tests.test_envio_extensao.TestEnvioExtensao.test_plano_anterior_recusado_sem_atualizar_seus_hashes) ... ok
+test_retomada_nao_mistura_controle_sintetico_com_real (tests.test_envio_extensao.TestEnvioExtensao.test_retomada_nao_mistura_controle_sintetico_com_real) ... ok
+test_75_decisoes_motivos_e_60_anteriores_preservados (tests.test_extensao_exploratoria.TestBancada03.test_75_decisoes_motivos_e_60_anteriores_preservados) ... ok
+test_novos_ids_sao_conhecidos_so_na_referencia_03 (tests.test_extensao_exploratoria.TestBancada03.test_novos_ids_sao_conhecidos_so_na_referencia_03) ... ok
+test_piloto_16_mesma_interpretacao_no_avaliador_anterior (tests.test_extensao_exploratoria.TestBancada03.test_piloto_16_mesma_interpretacao_no_avaliador_anterior) ... ok
+test_politica_conservadora_e_particoes_60_pares (tests.test_extensao_exploratoria.TestBancada03.test_politica_conservadora_e_particoes_60_pares) ... ok
+test_64_capturas_retomada_e_avaliacao_separadas (tests.test_extensao_exploratoria.TestExtensao.test_64_capturas_retomada_e_avaliacao_separadas) ... ok
+test_64_ordem_blocos_modelos_identidades_e_payloads (tests.test_extensao_exploratoria.TestExtensao.test_64_ordem_blocos_modelos_identidades_e_payloads) ... ok
+test_avaliador_rejeita_referencia_antiga_para_preparacao_nova_e_inverso (tests.test_extensao_exploratoria.TestExtensao.test_avaliador_rejeita_referencia_antiga_para_preparacao_nova_e_inverso) ... ok
+test_envio_real_extensao_exige_flag_antes_da_chave (tests.test_extensao_exploratoria.TestExtensao.test_envio_real_extensao_exige_flag_antes_da_chave) ... ok
+test_falha_parcial_e_modelo_divergente_bloqueiam_reenvio (tests.test_extensao_exploratoria.TestExtensao.test_falha_parcial_e_modelo_divergente_bloqueiam_reenvio) ... ok
+test_invalida_preserva_bytes_e_nao_repete (tests.test_extensao_exploratoria.TestExtensao.test_invalida_preserva_bytes_e_nao_repete) ... ok
+test_textos_anteriores_preservados_e_catalogo_igual_nos_32 (tests.test_extensao_exploratoria.TestExtensao.test_textos_anteriores_preservados_e_catalogo_igual_nos_32) ... ok
+test_versoes_e_configuracoes_nao_podem_ser_misturadas (tests.test_extensao_exploratoria.TestExtensao.test_versoes_e_configuracoes_nao_podem_ser_misturadas) ... ok
+
+======================================================================
+ERROR: test_avaliacao_ids (unittest.loader._FailedTest.test_avaliacao_ids)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_avaliacao_ids
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_avaliacao_ids.py", line 10, in <module>
+    from suporte_spec004 import ControleCase, ESPERADOS
+ModuleNotFoundError: No module named 'suporte_spec004'
+
+
+======================================================================
+ERROR: test_revisao_conformidade (unittest.loader._FailedTest.test_revisao_conformidade)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_revisao_conformidade
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "D:\TCC-Projeto\TCC\tcc-impacto-llm\tests\test_revisao_conformidade.py", line 14, in <module>
+    from test_coletor_api import resposta
+ModuleNotFoundError: No module named 'test_coletor_api'
+
+
+----------------------------------------------------------------------
+Ran 43 tests in 227.641s
+
+FAILED (errors=2)

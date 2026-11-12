@@ -1,0 +1,30 @@
+{
+  "N_planejado": 16,
+  "amostras_git_bytes": 7,
+  "anteriores_identicos": 12238,
+  "arquivos_anteriores_inventariados": 12242,
+  "autorizacao_envio": "modelo pendente, nulo/falso; arquivo preenchido inexistente",
+  "capturas_reais_executadas": 0,
+  "celulas": 8,
+  "conformidade_64_anteriores": "64 pendentes; ficha literal preservada",
+  "erros_finais": 0,
+  "falhas_finais": 0,
+  "fontes_alteradas_com_copia_literal_anterior": [
+    "avaliacao_ids.py",
+    "coletor_api.py",
+    "revisao_conformidade.py",
+    "tests/test_bloco_notas.py"
+  ],
+  "ignorados": 0,
+  "invocacao_inicial_regressoes": "dois imports corrigidos incluindo tests no sys.path; 41 carregados +22 apos correcao",
+  "links_locais_validos_escopo": 85,
+  "metodos_aprovados": 80,
+  "nota_id_preservado_no_fluxo": true,
+  "ordem_payloads_configuracoes_referencia_preservados": true,
+  "plano_base_sha256": "f4b2cbf4bbeabd4fc199e9e29084956761279e70aeb3f35ddeb4e2f0b45d89a8",
+  "plano_sha256": "c8363eb2daaac2b1d1d1538470458356a29504cfc378d17cb35c2188d43dc1bd",
+  "politica_pontuacao_sha256_preservada": "232145fb21526825157a1093adcd02386419da65f7169ebc4d442b2cbc35214c",
+  "rede_bloqueada": true,
+  "repeticoes_por_celula": 2,
+  "todos_os_demais_anteriores_preservados": true
+}

@@ -1,0 +1,12 @@
+{
+  "modulos": [
+    "test_avaliacao_ids",
+    "test_revisao_conformidade"
+  ],
+  "executados": 22,
+  "falhas": 0,
+  "erros": 0,
+  "ignorados": 0,
+  "rede_bloqueada": true,
+  "ajuste_invocacao": "incluir tests no sys.path; fontes de teste nao alteradas"
+}

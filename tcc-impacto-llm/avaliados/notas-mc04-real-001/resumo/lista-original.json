@@ -1,0 +1,66 @@
+[
+  {
+    "arquivo": "NOTA03-MC-04-v2-D1-N02-ASTRA-R01/T01/avaliacao.json",
+    "sha256": "a30f4c4e3beadcb91bae53fb62feb4753307d8e5b2883589c311d07f27bc202e"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-D1-N01-SOL-R01/T01/avaliacao.json",
+    "sha256": "518cfb3c18f624746f9033eeafe0d7702a0ebccfd946771a5629e86020b695cc"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-D1-N01-ASTRA-R01/T01/avaliacao.json",
+    "sha256": "3f7e63264e401d5046dfc4d086d1cd0e0a9d01e57e112ea8375b6387ebcb56c3"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-E1-N02-SOL-R01/T01/avaliacao.json",
+    "sha256": "354ede60c9add286ec03fa0d4e08afe203b49224f259cc70460384e91c06a24b"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-D1-N02-SOL-R01/T01/avaliacao.json",
+    "sha256": "d1b0fdef1fbd677672ff707d405758a9f700e321be88b71004155d16d216329e"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-E1-N01-ASTRA-R01/T01/avaliacao.json",
+    "sha256": "b55d082d7e722767ab51c33bf77348885fa5a3abde89ada9df944457eefce313"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-E1-N01-SOL-R01/T01/avaliacao.json",
+    "sha256": "9710a041f8123e2a7bb6d8a54e5d6f8e553bf036325aed359c7b42381b191f10"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-E1-N02-ASTRA-R01/T01/avaliacao.json",
+    "sha256": "2646fb9570c9f7957dc391bac0671e3acab076eedcb5ebb132d2864f677a30e8"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-D1-N01-ASTRA-R02/T01/avaliacao.json",
+    "sha256": "0cc4d2d176aacb6b3e91905c50268d644f1c0d325217d41dceb24a489cd60d30"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-E1-N02-ASTRA-R02/T01/avaliacao.json",
+    "sha256": "cba80eb92ae7c1ea63494d2e2d9b455f9030684dc6489bf95f4d7fecc1c56604"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-D1-N02-SOL-R02/T01/avaliacao.json",
+    "sha256": "06df09a4531db22ac56a1ce134635b29238912e80493b25ba006c27a8d42b0fd"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-E1-N02-SOL-R02/T01/avaliacao.json",
+    "sha256": "5780dbf3239156f8187ed54d211a386c4ba925f18cbb918d03b193910e9c21a5"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-D1-N02-ASTRA-R02/T01/avaliacao.json",
+    "sha256": "a80186e0bbf47a07fde4fafbb2f6c25121c06b7b5f1cfe4b232612839ea10622"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-D1-N01-SOL-R02/T01/avaliacao.json",
+    "sha256": "e15121d0cdfdea737669b8908f4df4236e9fabb0e0eeaff72a29e12f96fdfe66"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-E1-N01-ASTRA-R02/T01/avaliacao.json",
+    "sha256": "2b810ad68afd4e63b990ee0f3895870a73f1aa092c3f04f488e48d684bb44740"
+  },
+  {
+    "arquivo": "NOTA03-MC-04-v2-E1-N01-SOL-R02/T01/avaliacao.json",
+    "sha256": "efb97df1a48ef7b2434aa664e82dc0c1d2db0a4475297654a98af804cc076c33"
+  }
+]

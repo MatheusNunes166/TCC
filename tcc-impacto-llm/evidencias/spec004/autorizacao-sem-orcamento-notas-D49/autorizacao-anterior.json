@@ -1,0 +1,11 @@
+{
+  "autoriza_envio_real": true,
+  "data": "2026-11-11T20:21:11-03:00",
+  "justificativa": "Declaracao explicita do pesquisador nesta conversa: revisou e aprovou o par N01/N02 e o plano integrado das 16 observacoes deste bloco exploratorio separado; autorizou as chamadas previstas. Primeira invocacao somente com --limite 1, seguida de conferencia tecnica de captura, modelo reportado, completude, tokens e desvios, sem usar acerto como criterio de continuidade. Nao autoriza commit/push nem altera a conformidade das 64 observacoes anteriores. Orcamento proprio ainda nao informado; registro nao habilita envio enquanto esse campo obrigatorio permanecer nulo.",
+  "limite": "USD 2 nas configuracoes e historico; orcamento declarado nao e teto automatico",
+  "orcamento_usd": null,
+  "plano_sha256": "c8363eb2daaac2b1d1d1538470458356a29504cfc378d17cb35c2188d43dc1bd",
+  "responsavel": "Matheus Henrique Braun Nunes",
+  "revisao_par_pacotes_ordem": true,
+  "versao": "autorizacao-envio-notas-v1"
+}

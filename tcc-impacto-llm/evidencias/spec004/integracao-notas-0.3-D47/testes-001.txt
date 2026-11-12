@@ -1,0 +1,21 @@
+test_autorizacao_outro_plano_sem_orcamento_ou_data_sem_fuso_recusada (tests.test_integracao_notas.TestIntegracaoNotas.test_autorizacao_outro_plano_sem_orcamento_ou_data_sem_fuso_recusada) ... ok
+test_captura_retomada_16_sem_reenvio_e_8_celulas (tests.test_integracao_notas.TestIntegracaoNotas.test_captura_retomada_16_sem_reenvio_e_8_celulas) ... ok
+test_falha_parcial_preservada_sem_retry_na_retomada (tests.test_integracao_notas.TestIntegracaoNotas.test_falha_parcial_preservada_sem_retry_na_retomada) ... ok
+test_formato_invalido_nao_reparado_e_sem_novas_tentativas (tests.test_integracao_notas.TestIntegracaoNotas.test_formato_invalido_nao_reparado_e_sem_novas_tentativas) ... ok
+test_preserva_original_16_ordem_textos_configuracoes (tests.test_integracao_notas.TestIntegracaoNotas.test_preserva_original_16_ordem_textos_configuracoes) ... ok
+test_ramo_real_http_simulado_revisao_pendente_exclusao_por_nota (tests.test_integracao_notas.TestIntegracaoNotas.test_ramo_real_http_simulado_revisao_pendente_exclusao_por_nota) ... ok
+test_recusa_nota_trocada_mesmo_com_fechamento_recalculado (tests.test_integracao_notas.TestIntegracaoNotas.test_recusa_nota_trocada_mesmo_com_fechamento_recalculado) ... ok
+test_resumo_recusa_coorte_antiga_nota_ausente_ou_plano_misto (tests.test_integracao_notas.TestIntegracaoNotas.test_resumo_recusa_coorte_antiga_nota_ausente_ou_plano_misto) ... ok
+test_trava_antes_da_chave_ignora_usd2_historicos (tests.test_integracao_notas.TestIntegracaoNotas.test_trava_antes_da_chave_ignora_usd2_historicos) ... ok
+test_desenho_16_8_celulas_e_texto_igual_entre_modelos (tests.test_bloco_notas.TestBlocoNotas.test_desenho_16_8_celulas_e_texto_igual_entre_modelos) ... ok
+test_nao_sobrescreve_saida_e_nao_herda_autorizacao (tests.test_bloco_notas.TestBlocoNotas.test_nao_sobrescreve_saida_e_nao_herda_autorizacao) ... ok
+test_par_preserva_base_e_diferenca_somente_na_afirmacao (tests.test_bloco_notas.TestBlocoNotas.test_par_preserva_base_e_diferenca_somente_na_afirmacao) ... ok
+test_recusa_input_adicional_mesmo_com_hash_externo_recalculado (tests.test_bloco_notas.TestBlocoNotas.test_recusa_input_adicional_mesmo_com_hash_externo_recalculado) ... ok
+test_recusa_mistura_de_notas_nas_repeticoes (tests.test_bloco_notas.TestBlocoNotas.test_recusa_mistura_de_notas_nas_repeticoes) ... ok
+test_recusa_pacote_alterado_mesmo_com_hash_externo_recalculado (tests.test_bloco_notas.TestBlocoNotas.test_recusa_pacote_alterado_mesmo_com_hash_externo_recalculado) ... ok
+test_requisicoes_sem_rotulos_historico_gabarito_ou_ferramentas (tests.test_bloco_notas.TestBlocoNotas.test_requisicoes_sem_rotulos_historico_gabarito_ou_ferramentas) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 96.019s
+
+OK

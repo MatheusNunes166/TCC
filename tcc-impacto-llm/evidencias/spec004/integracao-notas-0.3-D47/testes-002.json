@@ -1,0 +1,12 @@
+{
+  "modulos": [
+    "tests.test_integracao_notas",
+    "tests.test_bloco_notas"
+  ],
+  "executados": 17,
+  "falhas": 0,
+  "erros": 0,
+  "ignorados": 0,
+  "rede_bloqueada": true,
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]"
+}

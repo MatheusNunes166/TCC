@@ -1,0 +1,39 @@
+{
+  "argv": [
+    "python",
+    "-B",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\notas_exploratorias.py",
+    "simular",
+    "--plano",
+    "D:\\TCC-Projeto\\TCC\\tcc-impacto-llm\\captura\\notas-mc04-0.3-002\\plano.json"
+  ],
+  "rede": "comando simular instala audit hook; nenhuma chave ou envio",
+  "resultado": {
+    "N": 16,
+    "celulas": 8,
+    "envio_autorizado": false,
+    "primeira": {
+      "bloco": 1,
+      "bloco_exploratorio": "notas-mc04-0.3-v1-D46",
+      "condicao": "D1",
+      "configuracao_id": "ext-api-astra-9d2e238e64485a09",
+      "conformidade_protocolo": "pendente",
+      "fase": "exploratoria",
+      "modelo": "gpt-6-astra",
+      "mudanca": "MC-04-v2",
+      "nota_id": "N02",
+      "observacao_id": "NOTA03-MC-04-v2-D1-N02-ASTRA-R01",
+      "ordem": 1,
+      "origem": "real",
+      "payload_sha256": "e78ab95b8e70be9261405dc2f9672c7bc4ea5faea19e63062294e66fa00e637b",
+      "preparacao": "preparados/gpt-6-astra/D1-N02/preparacao.json",
+      "preparacao_sha256": "4c372d337382322dcf33a3053addfdd73d4c34a7b5213713aa0eaf2e6119f676",
+      "repeticao": 1,
+      "requisicao": "requisicoes/gpt-6-astra/D1-N02.json",
+      "requisicao_sha256": "61093b3374b582ceb0fe10b0fa3e102d22c496327c8e88fe4a23725cc410324d",
+      "status": "PLANEJADA_NAO_EXECUTADA"
+    },
+    "revisao_humana": "pendente"
+  },
+  "retorno": 0
+}
