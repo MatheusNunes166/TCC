@@ -1,0 +1,55 @@
+{
+  "folders": [{ "name": "Pesquisa TCC", "path": "." }],
+  "settings": {
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/.pytest_cache": true,
+      "**/.ruff_cache": true,
+      ".agents": true,
+      ".specify": true,
+      "captura": true,
+      "avaliados": true,
+      "evidencias": true,
+      "specs": true,
+      "documentacao/historico": true,
+      "coletor_api.py": true,
+      "coletor_piloto.py": true,
+      "extensao_exploratoria.py": true,
+      "notas_exploratorias.py": true,
+      "preparar_bloco_notas.py": true,
+      "montagem_entradas.py": true,
+      "fontes_autorizadas.py": true,
+      "avaliacao_ids.py": true,
+      "revisao_conformidade.py": true,
+      "verificacao_variantes.py": true
+    },
+    "explorer.compactFolders": false
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [{
+      "label": "TCC: abrir painel LLM",
+      "type": "process",
+      "command": "python",
+      "args": ["-B", "${workspaceFolder:Pesquisa TCC}/apresentar.py"],
+      "options": {
+        "cwd": "${workspaceFolder:Pesquisa TCC}",
+        "env": { "PYTHONIOENCODING": "utf-8" }
+      },
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    }, {
+      "label": "TCC: verificar bancada offline",
+      "type": "process",
+      "command": "python",
+      "args": ["-B", "${workspaceFolder:Pesquisa TCC}/apresentar.py", "verificar"],
+      "options": {
+        "cwd": "${workspaceFolder:Pesquisa TCC}",
+        "env": { "PYTHONIOENCODING": "utf-8" }
+      },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    }]
+  }
+}

@@ -1,6 +1,32 @@
-# Estado atual — 11/11/2026
+# Estado atual — 13/11/2026
 
 Fonte única da situação operacional; navegação no [README](README.md), decisões e autorizações em [decisoes.md](documentacao/decisoes.md). Registros datados descrevem seus incrementos, sem substituir este estado.
+
+## Painel único integrado e fluxo anterior removido — 13/11/2026, D-52
+
+Fluxo vigente: **`python apresentar.py`**, com telas **Executar** e **Resultados**, servidor em `127.0.0.1:8765` e envio somente por clique explícito. `python apresentar.py verificar` conserva os testes originais, a matriz e a leitura offline, sem gerar HTML. README e tarefas do workspace apontam para esses comandos. [Controles e limitações atuais](apresentacao/VERIFICACAO.md).
+
+A versão anterior estava integrada. `git apply --check` do patch de atualização encontrou conflitos nos registros locais posteriores (estado, decisões e verificação); integração manual das fontes necessárias, sem aplicar o patch completo ou substituir revisões. Removidos o template estático, seu gerador/opções exclusivos e duas pastas de relatórios descartáveis. Nenhum ZIP ou patch de integração foi encontrado dentro da entrega fora das áreas históricas protegidas. O pacote original permanece fora do repositório.
+
+Verificação offline no Windows: **41 testes descobertos, 40 aprovados, um ignorado** por privilégio de symlink (`WinError 1314`), sem falhas/erros; **75/75 comparações conformes**, **64 + 16 originais** e **324 hashes consumidos** conferidos. Fluxos JavaScript exercitados em DOM artificial com os 80 registros e 20 perfis preservados: filtros, detalhes, notas, preview, clique duplicado, falha de POST e ausência de chave. Os **13.064 arquivos anteriores nas áreas científicas** mantêm seus hashes; núcleo, transporte, avaliador e decisões humanas permanecem preservados.
+
+**Inspeção visual renderizada pendente:** a automação do Chrome não respondeu aos comandos de inspeção. Não se validou legibilidade no tamanho da apresentação. Ctrl+Shift+B, abertura nativa de pastas e Git Bash também não foram executados. Nenhuma chamada real/conexão externa, inclusão científica, decisão de conformidade, commit ou push. D-49 continua autorizando orçamento indefinido; o painel não exige valor positivo. Os registros datados abaixo descrevem fluxos anteriores, substituídos operacionalmente por esta seção.
+
+## Pacote de apresentação integrado no Windows — 13/11/2026, D-51
+
+Raiz Git confirmada em `D:\TCC-Projeto\TCC`, árvore inicialmente limpa e HEAD igual à base `97af9f093018973e423117ac9e19ab4e4e5074a2`. `git apply --check` e aplicação dos nove arquivos concluídos sem conflitos; nenhuma revisão local precisou ser substituída. Os registros científicos anteriores permanecem vigentes e preservados.
+
+Python 3.13.3 no PowerShell: dez testes da apresentação descobertos, **nove aprovados e um ignorado**, sem falhas/erros; o controle de symlink foi ignorado por `WinError 1314`. `python apresentar.py --sem-abrir` terminou com retorno 0: **18 métodos aprovados, 75/75 comparações conformes e 64 + 16 respostas originais somente lidas**. HTML/JSON coerentes, quatro seções presentes, 11 destinos locais existentes, 334 hashes de fontes conferidos, sintaxe JavaScript e configuração da tarefa padrão do workspace válidas. [Validação local e pendências](apresentacao/VERIFICACAO.md).
+
+Continuam pendentes a inspeção visual no navegador, Ctrl+Shift+B no VS Code, abertura nativa de pastas e execução no Git Bash. Nenhuma limpeza do projeto, chamada à API, decisão de conformidade, commit ou push foi realizada. A seção de 12/11 abaixo registra a preparação do pacote, não a execução local atual.
+
+## Organização para demonstração local — preparação do pacote em 12/11/2026
+
+Solicitação do pesquisador: simplificar a navegação e demonstrar os testes e resultados. [Comando curto e roteiro](README.md): `python apresentar.py` executa os 18 métodos da autorização e reutiliza a matriz existente de 75 comparações. Gera relatório HTML local com casos, diffs, payloads e respostas reais preservadas dos dois blocos, referência e resultados separados. Não coleta LLM, não usa chave, não altera métricas ou conformidades. Processos de testes com rede bloqueada; saídas novas somente em `apresentacao/saidas/`, ignoradas pelo Git e identificadas como demonstração.
+
+[Workspace da apresentação](Apresentacao-TCC.code-workspace) oferece tarefa por Ctrl+Shift+B e oculta pastas volumosas apenas nessa janela. Nenhuma captura, avaliação, evidência ou cópia histórica foi movida/excluída. A limpeza opcional só admite três caches não rastreados da raiz; recusa links/junctions e ausência de comprovação por Git. Não se promete eliminar os arquivos históricos que sustentam os hashes.
+
+Verificações locais: 10 controles da apresentação aprovados; 18 métodos da bancada aprovados; 75/75 comparações conformes; 80 respostas originais lidas sem novas chamadas. Lógica do painel conferida em DOM mínimo artificial, sem equivaler a renderização visual. A conferência visual e os recursos nativos de abertura no Windows permanecem para validação local: o ambiente desta preparação não permitiu abrir navegador sobre arquivo local. [Comandos, alcance e limites](apresentacao/VERIFICACAO.md). Não houve commit/push ou decisão científica. Conformidade dos blocos continua como nos registros separados abaixo.
 
 ## Bloco de notas capturado e avaliado offline; conformidade pendente — D-50
 

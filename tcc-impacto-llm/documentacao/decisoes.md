@@ -1,5 +1,36 @@
 # Decisões, propostas e pendências
 
+## Painel único para apresentação — 13/11/2026
+
+**D-52 — Solicitação explícita de Matheus Henrique Braun Nunes nesta conversa; integração pelo assistente.** Evidência: pedido anexado para integrar `tcc-painel-llm`, substituir a interface anterior, preservar revisões e evidências, limpar itens comprovadamente descartáveis e verificar offline. Não autoriza chamadas reais/testes de conexão, commit, push, conformidade ou aprovação científica. D-49 continua autorizando orçamento indefinido, sem exigência de valor positivo.
+
+Raiz Git `D:\TCC-Projeto\TCC`: quatro documentos modificados e cinco fontes da apresentação não rastreadas no início. A versão anterior estava integrada. `git apply --check` do patch de atualização encontrou conflitos em estado, decisões e verificação; integração manual somente das fontes necessárias. O patch completo não foi aplicado. Registros locais e decisões posteriores à base foram preservados.
+
+Painel único com Executar/Resultados; transporte e avaliador existentes, captura antes da avaliação e somente payloads preservados no envio. Chave no servidor, uma chamada por ação, sem retry; falha de confirmação do POST bloqueia nova ação até recarregar/consultar. Demonstrações novas permanecem separadas das 64 observações e 16 notas, inclusão científica falsa e conformidade pendente.
+
+Removidos template estático, gerador `demonstrar`, opções exclusivas e dez arquivos descartáveis de duas execuções de apresentação, após conferir identidade de demonstração, ausência de rastreamento e dependências científicas. Nenhum cache ou arquivo científico removido. `python apresentar.py verificar` mantém os 18 testes e 75 comparações sem gerar HTML. README e tarefas atualizados, sem cópias paralelas da interface.
+
+Verificação: 41 testes descobertos, 40 aprovados e um ignorado por privilégio de symlink; 75/75 comparações; 80 originais e 324 hashes consumidos conferidos. DOM artificial aprovado para filtros, detalhes, notas, preview, clique duplicado, falha de POST e ausência de chave. Inventário inicial de 17.380 arquivos; 13.064 nas áreas científicas com hashes preservados. [Controles e limites](../apresentacao/VERIFICACAO.md). Inspeção visual, atalho do VS Code, abertura nativa de pastas e Git Bash pendentes. Nenhuma chamada real/conexão externa, decisão humana, commit ou push.
+
+## Integração do pacote de apresentação no Windows — 13/11/2026
+
+**D-51 — Solicitação explícita do pesquisador nesta conversa.** Responsável pela solicitação: Matheus Henrique Braun Nunes; integração pelo assistente. Evidência: pedido para ler o pacote e a governança, identificar raiz/estado Git, executar `git apply --check`, integrar a apresentação preservando revisões e dados, executar os testes e `python apresentar.py --sem-abrir` e informar abertura e pendências no Windows. Não autoriza API, commit, push, reset ou sobrescrita forçada. A menção à limpeza opcional no pacote não foi executada no projeto.
+
+Raiz efetiva `D:\TCC-Projeto\TCC`, HEAD `97af9f093018973e423117ac9e19ab4e4e5074a2`, sem alterações locais iniciais ou staged. Patch de SHA-256 `e14eddc8bd76c7c4abe5c6d6b1c6ec8b0f2936e2bd4f0444c7304ad30ba10b06`, coincidente com `VALIDACAO.json`. Checagem e aplicação aprovadas sem conflitos. Inventário anterior inclui 16.363 arquivos locais, inclusive ignorados, 60.736.208 bytes; cópias literais dos quatro documentos anteriores e inventário por hashes em `D:\TCC-Projeto\integracao-apresentacao-20261113`. A exceção de propriedade Git usada pelo sandbox foi restrita aos comandos/processos desta tarefa, sem alterar configuração global.
+
+Validação real no Windows/PowerShell com Python 3.13.3: dez controles descobertos, nove aprovados, um ignorado por falta de privilégio de symlink (`WinError 1314`), zero falhas/erros; demonstração com retorno 0, 18 métodos de autorização aprovados e 75/75 comparações conformes. Leitura das 64 + 16 respostas preservadas, sem nova coleta ou reavaliação. Conferidos cinco arquivos gerados, quatro seções HTML, JSON incorporado, sintaxe JavaScript, 334 hashes consumidos, 11 destinos locais e tarefa padrão do workspace. [Relatório local e limites](../apresentacao/VERIFICACAO.md). Inspeção visual, atalhos do VS Code, abertura nativa de pastas e Git Bash não foram executados. Nenhuma decisão científica ou de conformidade foi alterada; D-50 e anteriores continuam íntegros. O registro de 12/11 a seguir pertence à preparação do pacote e conserva os limites daquele ambiente.
+
+## Organização e demonstração local — 12/11/2026
+
+Responsável pela solicitação: Matheus Henrique Braun Nunes, nesta conversa. O pesquisador pediu revisar excesso de conteúdo, simplificar comandos e mostrar testes, pastas e resultados visualmente. Autoriza engenharia local de apresentação e limpeza somente de itens comprovadamente descartáveis; não é autorização de nova coleta ou aprovação científica.
+
+Implementado `apresentar.py`, relatório estático em `apresentacao/painel.html` e workspace `Apresentacao-TCC.code-workspace`. A demonstração executa a suíte original de autorização e a função de matriz já existente; apenas lê as capturas/avaliações reais. Não duplica o avaliador ou coletor. Distingue explicitamente execução local nova de respostas LLM já coletadas. Logs e HTML ficam em área nova, não científica, ignorada pelo Git. A referência só aparece na visualização privada do avaliador.
+
+Inventário inicial: 13.227 arquivos versionados, 49.686.121 bytes; 13.003 arquivos em captura/avaliados/evidencias. Nenhum cache versionado encontrado. Nenhum histórico foi removido ou movido; simplificação do Explorer é própria da janela de apresentação. Limpeza opcional restrita aos três caches da raiz, com comprovação de que não são rastreados e recusa de links/junctions.
+
+Verificação: 10 testes novos aprovados, suíte original com 18 métodos aprovados, 75/75 comparações da matriz conformes e leitura das 64 + 16 respostas reais com hashes/identidades/note_id. Controles de lógica do painel usam DOM mínimo artificial; inspeção visual/abertura nativa no Windows continuam pendentes. O navegador deste ambiente recusou arquivo local; não se declarou inspeção visual concluída. [Evidências e comandos](../apresentacao/VERIFICACAO.md). Nenhuma chamada ao LLM, alteração de pontuação, preenchimento de conformidade, commit ou push.
+
+
 ## Avaliação offline do bloco real de notas — 11/11/2026
 
 **D-50 — Solicitação explícita de Matheus Henrique Braun Nunes nesta conversa.** O pesquisador informou concluído `captura/notas-mc04-real-001` e pediu conferência/avaliação pela integração existente, comparação N01/N02, identificação dos IDs, síntese e preparação da revisão de conformidade, sem novas chamadas, alteração dos materiais, commit ou push. Autoriza a descrição dos resultados enquanto a revisão humana estiver pendente; não autoriza preencher inclusão/exclusão ou misturar piloto/64 anteriores ao denominador.

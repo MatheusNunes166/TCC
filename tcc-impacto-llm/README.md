@@ -1,26 +1,53 @@
 # Impacto de mudanças com LLM
 
-Pesquisa sobre seleção de IDs de requisitos impactados e testes relevantes em uma bancada de permissões. Compara D0/D1/E0/E1, com e sem notas simuladas de analista, em mudanças independentes. Captura e avaliação são separadas; referência e justificativas são exclusivas do avaliador.
+Pesquisa sobre seleção de requisitos impactados e testes de regressão existentes em um módulo fictício de autorização. Compara pedidos diretos e estruturados, com e sem notas simuladas de análise, usando uma referência local. [Estado atual e pendências](ESTADO_ATUAL.md).
 
-**Comece pelo [estado atual e próximas tarefas](ESTADO_ATUAL.md).** Ele centraliza a situação do piloto e as pendências. A integração D-42 disponibiliza envio explícito da extensão; nenhuma chamada foi realizada na implementação.
+## Abrir o painel
 
-D-43: a captura real da extensão terminou e foi avaliada offline. [Relatório descritivo e comandos](avaliados/extensao-real-0.3-001-avaliacao-001/RELATORIO.md), [tabelas por modelo/mudança/condição](avaliados/extensao-real-0.3-001-avaliacao-001/TABELAS.md) e [revisão de conformidade pendente](avaliados/extensao-real-0.3-001-avaliacao-001/revisao-conformidade-pendente.json). São 64 respostas válidas; testes exatos 64/64; requisitos Sol 28/32 e Astra 32/32, com quatro excedentes em Sol/MC-02. Nenhuma conformidade foi aprovada automaticamente; o resumo controlado permanece bloqueado.
+Na pasta `tcc-impacto-llm`, execute:
 
-Preparação offline D-41: [catálogo e referência candidata 0.3](documentacao/referencia-candidata-0.3.md), [plano de 64 observações](captura/extensao-20261109-002/plano.json) e [verificação offline, comandos e custo](evidencias/spec004/extensao-2026-11-09/RELATORIO.md). O catálogo 0.2 e os dados do piloto abaixo são preservados como versão anterior; a revisão do piloto foi declarada concluída pelo pesquisador. Essa entrega antecede a captura real descrita em D-43.
+```text
+python apresentar.py
+```
 
-D-42 integra o envio real mediante flag explícita, sem executar chamadas nesta implementação. Plano operacional vigente: [extensão 003](captura/extensao-20261109-003/plano.json), com mesmos textos e ordem do 002 e orçamento de planejamento USD 2, sem garantia de teto. [Relatório e comandos absolutos](evidencias/spec004/integracao-envio-extensao-2026-11-09-D42/RELATORIO.md).
+O painel abre em **http://127.0.0.1:8765**, com duas telas: **Executar** e **Resultados**. Mantenha o terminal aberto; Ctrl+C encerra o servidor. Abrir a página, consultar resultados ou visualizar o payload não envia chamadas. Não exige pacotes externos.
 
-| Procurar | Caminho |
+Em **Executar**, escolha modelo, mudança, condição e nota aplicável. **Ver material enviado** apresenta o payload exato. **Executar chamada real** inicia uma única chamada paga, sem repetição automática. O painel preserva a captura antes de usar o avaliador existente. A chave `OPENAI_API_KEY` fica somente no ambiente do servidor; sem chave, os resultados continuam acessíveis e o envio fica desabilitado. Não há exigência de orçamento positivo nem teto monetário automático, conforme D-49.
+
+Em **Resultados**, escolha demonstrações novas, comparação de **64 observações** ou bloco de **16 notas**. Filtre por modelo, mudança e condição; em **Mais filtros**, use nota, resultado, requisito ou teste. IDs relacionados incluem esperados e selecionados, conservando omissões e excedentes. Abra uma linha para comparar requisitos/testes, mudança/preservação e métricas, consultar resposta original, payload, notas e metadados ou abrir as pastas. Informações extensas começam recolhidas.
+
+Novas chamadas são demonstrações `DEMO-...`, armazenadas em `captura/demonstracoes-painel/` e `avaliados/demonstracoes-painel/`. Não entram automaticamente nas coortes científicas; conformidade permanece pendente. Somente o payload preservado é enviado: sem referência, resultados anteriores, arquivos do projeto ou histórico da conversa. A referência é privada do avaliador.
+
+Para iniciar sem abrir o navegador: `python apresentar.py --sem-abrir`. Se a porta estiver ocupada: `python apresentar.py --porta 8766`.
+
+## Verificar offline
+
+```text
+python apresentar.py verificar
+```
+
+Executa os **18 métodos originais da aplicação**, reutiliza a matriz de **75 comparações** (15 casos × cinco versões) e confere os **64 + 16 originais** sem reavaliar. Os subprocessos ficam sem chave e com rede bloqueada. Não gera HTML, relatórios descartáveis ou novas capturas. Os controles do painel usam transporte e respostas artificiais; comandos e limitações em [verificação](apresentacao/VERIFICACAO.md).
+
+## Abrir pelo VS Code
+
+Abra [Apresentacao-TCC.code-workspace](Apresentacao-TCC.code-workspace) em **Arquivo → Abrir Workspace do Arquivo**. **Ctrl+Shift+B** inicia o painel. A tarefa **TCC: verificar bancada offline** executa o comando de verificação. O Explorer dessa janela oculta pastas volumosas, preservando seus caminhos e conteúdos; abrir a pasta normal mostra o projeto completo.
+
+## Limpeza segura e conservação
+
+`python apresentar.py limpar` apresenta uma prévia somente dos caches `__pycache__`, `.pytest_cache` e `.ruff_cache` **da raiz**. Para removê-los, use `python apresentar.py limpar --aplicar`. A operação recusa diretório rastreado, link/junction ou ausência de comprovação por Git. Não percorre capturas, avaliações ou evidências.
+
+O inventário desta organização encontrou **13.227 arquivos versionados**, aproximadamente **50 MB decimais**. Capturas, avaliações e evidências concentram 13.003 arquivos. Não havia caches versionados identificados para descarte imediato. As cópias históricas e os controles têm vínculos de caminho/hash; não foram tratados como lixo.
+
+| Procurar | Onde está |
 |---|---|
-| Objetivo, escopo e desenho | [Contexto](documentacao/contexto-e-escopo.md), [protocolo](materiais/01_PROTOCOLO.md), [piloto/coleta](materiais/05_PILOTO_E_COLETA.md) |
-| Requisitos, arquitetura, mudanças e testes | [Requisitos](documentacao/requisitos.md), [arquitetura](documentacao/arquitetura.md), [catálogo T01–T12](documentacao/qualidade-e-testes.md), [Specs](specs/), [variantes](variantes/) |
-| Notas e prompts utilizados | [Notas 0.2-local e prompts](materiais/04_NOTAS_E_PROMPTS.md), [definições comuns](materiais/07_DEFINICOES_COMUNS.md) |
-| Payloads e ordem utilizados no piloto | [Plano API 002](captura/plano-api-piloto-002/plano.json), [oito preparações](captura/plano-api-piloto-002/preparados/), [origem v2-LF e prova de bytes](evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/RELATORIO.md) |
-| Referência e justificativas — **não enviar ao LLM** | [Material privado](materiais/02_REQUISITOS_TESTES_E_REFERENCIA.md), [referência JSON](materiais/modelos/referencia_candidata_NAO_ENVIAR_AO_LLM.json), [rastreabilidade](documentacao/referencia-candidata-proxima-etapa.md) |
-| Código e testes offline | Módulos Python na raiz; [testes e fixtures](tests/); [verificação de variantes](verificacao_variantes.py) |
-| Operação do coletor e avaliador | [Rota API, transporte e revisão de conformidade](documentacao/operacao-api.md), [contrato de preparação/avaliação](specs/004-preparacao-avaliacao-ids/contracts/preparacao-avaliacao.md) |
-| Dados e resultados do piloto | [Capturas originais](captura/piloto-api-001/), [avaliações individuais](avaliados/piloto-api-001/lista.json), [resumo existente e seus diagnósticos](avaliados/piloto-api-001/resumo/resumo.json) |
-| Conexão neutra e exploratório — separados do piloto | [Conexão API](captura/conexao-api-20261107-001/), [exploratório MC-04](evidencias/spec004/exploratorio-2026-11-05-mc04-001/) |
-| Decisões, governança e histórico | [Decisões datadas](documentacao/decisoes.md), [AGENTS](AGENTS.md), [constituição](.specify/memory/constitution.md), [histórico documental](documentacao/historico/), [roadmap](documentacao/roadmap.md) |
+| Objetivo e desenho | [Contexto](documentacao/contexto-e-escopo.md), [protocolo](materiais/01_PROTOCOLO.md) e [arquitetura](documentacao/arquitetura.md) |
+| Requisitos e expectativas | [Requisitos](documentacao/requisitos.md), [catálogo 0.3](materiais/modelos/catalogo_baseline_0.3.md), [referência candidata 0.3](documentacao/referencia-candidata-0.3.md) |
+| Notas e pedidos | [Texto e origem](materiais/04_NOTAS_E_PROMPTS.md), [política comum](materiais/07_DEFINICOES_COMUNS.md) |
+| Comparação de 64 respostas | [Relatório](avaliados/extensao-real-0.3-001-avaliacao-001/RELATORIO.md), [análise das divergências](documentacao/analise-extensao-0.3.md) |
+| Bloco de 16 respostas de notas | [Relatório e limites](avaliados/notas-mc04-real-001/RELATORIO.md) |
+| Operação de pesquisa | [API e revisão](documentacao/operacao-api.md), [notas](documentacao/operacao-notas.md), [estado vigente](ESTADO_ATUAL.md) |
+| Desenvolvimento e histórico | [Specs](specs/), [decisões](documentacao/decisoes.md), [histórico](documentacao/historico/) |
 
-`captura/` conserva também planos anteriores, a rota Codex bloqueada e controles técnicos. `avaliados/` distingue os controles sintéticos do piloto real. `evidencias/` conserva versões, ferramentas, falhas e provas de reprodução; as cópias com caminhos/hashes próprios não são duplicatas descartáveis. [Classificação e critérios de conservação](ESTADO_ATUAL.md#conservação-do-repositório).
+O piloto de 16 chamadas permanece separado. Conformidade das execuções e revisão científica da referência/notas são decisões distintas: HTTP 200 ou acerto não aprovam nenhuma delas. A apresentação lê os resultados existentes sem substituir esses registros.
+
+Cronologias e comandos anteriores continuam no estado, nas decisões e nos relatórios originais. O [README anterior](https://github.com/MatheusNunes166/TCC/blob/97af9f093018973e423117ac9e19ab4e4e5074a2/tcc-impacto-llm/README.md) está preservado no Git.
