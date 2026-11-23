@@ -4,21 +4,57 @@ Pesquisa sobre seleção de requisitos impactados e testes de regressão existen
 
 ## Abrir o painel
 
-Na pasta `tcc-impacto-llm`, execute:
+Na pasta `tcc-impacto-llm`:
 
 ```text
 python apresentar.py
 ```
 
-O painel abre em **http://127.0.0.1:8765**, com duas telas: **Executar** e **Resultados**. Mantenha o terminal aberto; Ctrl+C encerra o servidor. Abrir a página, consultar resultados ou visualizar o payload não envia chamadas. Não exige pacotes externos.
+O painel abre em **http://127.0.0.1:8765**, com **Executar** e **Resultados**.
+Mantenha o terminal aberto; Ctrl+C encerra o servidor. Abertura, consulta,
+prévia e filtros não fazem chamadas. O painel usa somente a biblioteca padrão.
 
-Em **Executar**, escolha modelo, mudança, condição e nota aplicável. **Ver material enviado** apresenta o payload exato. **Executar chamada real** inicia uma única chamada paga, sem repetição automática. O painel preserva a captura antes de usar o avaliador existente. A chave `OPENAI_API_KEY` fica somente no ambiente do servidor; sem chave, os resultados continuam acessíveis e o envio fica desabilitado. Não há exigência de orçamento positivo nem teto monetário automático, conforme D-49.
+Em **Executar → Modo de execução → Pesquisa documental • 64 observações •
+D0/D1/E0/E1**, consulte plano fixo, configurações, próxima posição e progresso.
+**Ver payload da próxima posição** apresenta o material exato. Clique em
+**Executar próxima observação • 1 chamada paga** para enviar somente a primeira.
+Depois de conferir seus registros técnicos, escolha o limite e use **Continuar
+lote • N chamadas pagas** para enviar até esse número de pendentes, sequencialmente.
+Clique duplicado e execução concorrente são bloqueados; posições já iniciadas,
+inclusive falhas ou estado remoto desconhecido, não são reenviadas.
 
-Em **Resultados**, escolha demonstrações novas, comparação de **64 observações** ou bloco de **16 notas**. Filtre por modelo, mudança e condição; em **Mais filtros**, use nota, resultado, requisito ou teste. IDs relacionados incluem esperados e selecionados, conservando omissões e excedentes. Abra uma linha para comparar requisitos/testes, mudança/preservação e métricas, consultar resposta original, payload, notas e metadados ou abrir as pastas. Informações extensas começam recolhidas.
+O novo bloco tem **64 posições, 32 células N=2, dois blocos de 32 e 16 payloads**.
+D0/E0 sem notas; D1/E1 com a mesma nota original. CONSOLIDADA é literal;
+OPERACIONAL substitui somente requisitos pelos cinco documentos do pacote.
+Catálogo de quinze casos/seis colunas e política integral permanecem. A preparação
+anterior de 32 posições e seu produtor continuam preservados e conferíveis.
+[Operação completa, arquivos, avaliação e limites](documentacao/operacao-documentacao.md).
 
-Novas chamadas são demonstrações `DEMO-...`, armazenadas em `captura/demonstracoes-painel/` e `avaliados/demonstracoes-painel/`. Não entram automaticamente nas coortes científicas; conformidade permanece pendente. Somente o payload preservado é enviado: sem referência, resultados anteriores, arquivos do projeto ou histórico da conversa. A referência é privada do avaliador.
+Em **Resultados**, escolha **Pesquisa documental • 64 observações** no filtro
+Origem. Use os filtros de documentação/modelo/mudança/condição/nota/repetição/
+situação e requisitos/testes relacionados. Cada linha mostra seleção, referência,
+métricas, original, payload e metadados; a consistência é calculada por célula,
+com denominadores separados. Conformidade permanece pendente de revisão humana.
 
-Para iniciar sem abrir o navegador: `python apresentar.py --sem-abrir`. Se a porta estiver ocupada: `python apresentar.py --porta 8766`.
+**Demonstração livre** continua disponível no modo de execução, com controles
+próprios de perfil/modelo e identidades `DEMO-...`, fora das coortes de pesquisa.
+As 64 observações anteriores e as 16 notas continuam nos filtros originais.
+O bloco documental usa `DOCOP64-...`, fase/coorte próprias e pastas
+`captura/documentacao-operacional-64-real-001/` e
+`avaliados/documentacao-operacional-64-real-001/`.
+
+`OPENAI_API_KEY` fica somente no ambiente do servidor; sem chave, envio é
+desabilitado e consulta/prévia continuam disponíveis. Medium/4096 e demais
+parâmetros do plano são protegidos. Não há exigência de orçamento positivo ou
+garantia de teto monetário. A referência privada nunca entra no input.
+
+Nesta integração: **zero chamadas reais**, nenhum teste de conexão externa,
+conformidade preenchida, commit ou push. A ampliação é decisão do pesquisador,
+sem atribuição de aprovação científica ao orientador. Tratamento conjunto de
+distribuição, redação, explicações e extensão; não garante dificuldade maior.
+
+Sem abrir navegador: `python apresentar.py --sem-abrir`. Porta alternativa:
+`python apresentar.py --porta 8766`. [Verificações efetivas](apresentacao/VERIFICACAO.md).
 
 ## Verificar offline
 

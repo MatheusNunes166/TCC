@@ -1,0 +1,13 @@
+{
+  "corpo_sha256": "a6fd47d753eddef5f1302bd4ed5c4fb703a9ab58bfefc16e009482fd8acd3ba1",
+  "corpo_tamanho": 19,
+  "falha": {
+    "estado_remoto": "desconhecido",
+    "interrompida": false,
+    "retentativas_automaticas": 0,
+    "tipo": "IncompleteRead"
+  },
+  "http_status": 200,
+  "request_id": null,
+  "retentativas_cliente": 0
+}

@@ -1,0 +1,16 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "avaliacao.json",
+      "sha256": "eb261805285de85fb74f272184f4e11a9c21db4602e4a04af2672dc1cfca2294"
+    },
+    {
+      "arquivo": "resposta-original.bin",
+      "sha256": "623c77217e7d559080f4ac7dc78e4126714cd3c461c087db7175e5a572beb139"
+    },
+    {
+      "arquivo": "tentativa-original.json",
+      "sha256": "fbad4209b212ddaf48ab053fad7f58e204673f70ed4252eb69a4aa3ae4901fa7"
+    }
+  ]
+}

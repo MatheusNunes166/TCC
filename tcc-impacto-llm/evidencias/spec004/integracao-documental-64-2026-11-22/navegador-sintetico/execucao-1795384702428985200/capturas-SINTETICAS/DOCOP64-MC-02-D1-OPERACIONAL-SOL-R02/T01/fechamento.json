@@ -1,0 +1,40 @@
+{
+  "arquivos": [
+    {
+      "arquivo": "entrada.bin",
+      "sha256": "b8456cc26b53e34a7741d61a6648334d19bb1e053d1512af4ea624c9de6b18ca"
+    },
+    {
+      "arquivo": "envio-iniciado.json",
+      "sha256": "fedef9ddf5d41531a32fbf272ef569bc39750e162a8cd2ffc2ef731b40619dde"
+    },
+    {
+      "arquivo": "http-requisicao.json",
+      "sha256": "c024ddcf34717af4dea67d3fe1bbb56647a62d84c2ce5214bc662c471d5bc4bb"
+    },
+    {
+      "arquivo": "inicio.json",
+      "sha256": "f390b4ad31dca6ba529ebb6425019898d684b271a1d0d7ff75607dd578716f1c"
+    },
+    {
+      "arquivo": "requisicao.json",
+      "sha256": "a0ea5c1600330487af0052174578a8b703818789330e2f2a82d3e7392f4036c5"
+    },
+    {
+      "arquivo": "resposta-http.bin",
+      "sha256": "477802a46c2be37f77e4d4baa7e2d318cfd025f7e7583216ffde4ab0d4521987"
+    },
+    {
+      "arquivo": "resposta.bin",
+      "sha256": "623c77217e7d559080f4ac7dc78e4126714cd3c461c087db7175e5a572beb139"
+    },
+    {
+      "arquivo": "tentativa.json",
+      "sha256": "4b12a0416f286bc92f30e36e14d458a2335fc4f672062a88701559bca7116616"
+    },
+    {
+      "arquivo": "transporte.json",
+      "sha256": "8d9a54e3a73d5cedc6c5cee6846884447cab782fdfd04cd6f85530bdbd6bfce9"
+    }
+  ]
+}

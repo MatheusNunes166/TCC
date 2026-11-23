@@ -1,0 +1,11 @@
+{
+  "python": [
+    "preparar_documentacao_operacional_v2.py",
+    "documentacao_operacional.py",
+    "painel_documental.py",
+    "tests/test_documentacao_operacional_64.py",
+    "tests/validar_documental_navegador.py",
+    "tests/validar_integracao_documental.py"
+  ],
+  "javascript": "node --check: OK"
+}

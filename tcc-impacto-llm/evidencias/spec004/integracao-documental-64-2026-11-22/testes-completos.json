@@ -1,0 +1,18 @@
+{
+  "testes_descobertos": 196,
+  "aprovados": 192,
+  "falhas": 1,
+  "erros": 1,
+  "ignorados": [
+    {
+      "teste": "test_link_de_cache_nao_e_seguido (test_apresentacao.TestLimpezaApresentacao.test_link_de_cache_nao_e_seguido)",
+      "motivo": "Ambiente não permite criar symlink: [WinError 1314] O cliente não tem o privilégio necessário: 'C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\tmpzy4ig9em\\\\captura' -> 'C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\tmpzy4ig9em\\\\.ruff_cache'"
+    },
+    {
+      "teste": "test_S14_symlinks_reais_quando_disponiveis (test_montagem_entradas.TestMontagem.test_S14_symlinks_reais_quando_disponiveis)",
+      "motivo": "Criacao de symlink real indisponivel: [WinError 1314] O cliente não tem o privilégio necessário: 'C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\tmpa5sf0xlf\\\\sym\\\\sistema.txt' -> 'C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\tmpa5sf0xlf\\\\sym\\\\sym-interno'"
+    }
+  ],
+  "origem": "offline; HTTP artificial ou loopback; chave real removida",
+  "chamadas_reais": 0
+}

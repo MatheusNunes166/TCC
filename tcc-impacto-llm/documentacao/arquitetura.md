@@ -1,5 +1,18 @@
 # Arquitetura mínima proposta
 
+D-54 (22/11/2026): `painel_documental.py` estende o painel preservado e
+`documentacao_operacional.py` adapta captura/avaliação da coorte documental de 64
+posições. `preparar_documentacao_operacional_v2.py` cria/confronta 16 payloads e o
+plano 002, preservando o produtor/antecedente 001. O comando curto permanece
+`python apresentar.py`, com uma única interface Executar/Resultados. Transporte,
+extração, pontuação e Jaccard são funções existentes. Plano, documentação,
+condição, nota, modelo, mudança, repetição, origem/fase/coorte e hashes atravessam
+captura e avaliação. Trava do SO entre processos, registro de clique e reserva
+durável impedem reenvio de posições já iniciadas, inclusive após interrupção.
+[Contrato de operação](operacao-documentacao.md). As descrições D-47/D-49 abaixo
+continuam próprias da coorte de notas, sem impor seu contrato ao bloco documental.
+
+
 Situação operacional: [estado atual](../ESTADO_ATUAL.md). Integração API D-39 e análise CLI D-38: [decisões](decisoes.md), com evidências e limites datados. [Operação API](operacao-api.md).
 
 D-47/D-49: [adaptador de notas](../notas_exploratorias.py) integra a etapa própria de 16 observações ao motor API, avaliador e revisão existentes, preservando `nota_id`/bloco e a separação das oito células. Fontes anteriores foram arquivadas por hash antes de atualizar os módulos. Transporte e fórmulas não foram duplicados. Envio exige `--enviar-real`, `--limite` e autorização humana externa ligada ao plano, com orçamento próprio positivo ou decisão explícita D-49 de prosseguir sem defini-lo; não usa USD 2 histórico como autorização. D-49 conserva o plano integrado 002 e vincula por hashes sua fonte anterior arquivada, o adaptador revisado e a autorização, mantendo a conferência das demais fontes. [Contrato e comandos](operacao-notas.md).

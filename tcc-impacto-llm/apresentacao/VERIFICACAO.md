@@ -1,3 +1,84 @@
+# Verificação vigente — documental 64 — 22/11/2026, D-54
+
+Comando único: `python apresentar.py`. Em Executar, selecionar **Pesquisa
+documental • 64 observações • D0/D1/E0/E1**; prévia não envia; **Executar próxima
+observação • 1 chamada paga** restringe a primeira ação. Depois, **Continuar lote
+• N chamadas pagas** respeita o limite e as posições ainda não iniciadas.
+[Operação completa](../documentacao/operacao-documentacao.md).
+
+## Resultados efetivos
+
+- Preparação 002 conferida: **16 payloads únicos, 64 posições, 32 células N=2,
+  dois blocos de 32**. CONSOLIDADA literal dos perfis históricos; OPERACIONAL
+  troca somente requisitos. Quinze casos/seis colunas e política integral
+  preservados. D0/E0 sem notas, D1/E1 com a mesma nota original. Pedidos e schema
+  literais; modelo/repetição não alteram o texto. O 001 de 32 posições e seu
+  produtor continuam literais e conferíveis, sem execução.
+- **195 testes distintos aprovados, dois ignorados por WinError 1314**. A rodada
+  integral inicial descobriu 196 casos: 193 aprovados, dois ignorados e um caso
+  novo excedeu a espera de 15 s; a limpeza desse mesmo caso também registrou erro
+  porque a thread ainda estava ativa. Preservado o log inicial. Após reduzir
+  conferências repetidas e usar espera de 60 s, os **11 controles novos passaram**,
+  incluindo um controle adicional de captura sem fechamento. A união verificável
+  das execuções tem 197 identidades, 195 aprovadas e duas ignoradas, sem falhas
+  pendentes. Não se apresenta essa união como uma única rodada integral final.
+- `python -B apresentar.py verificar`: **18 métodos originais aprovados,
+  75/75 comparações conformes, 64 + 16 originais somente lidos, 324 hashes
+  consumidos conferidos**. Os seis controles do pacote passaram, incluindo
+  **240/240 pares decisão/motivo** extraídos dos fatos dos documentos operacionais
+  em 48 entradas × cinco versões.
+- `node tests/test_interface_painel.cjs`: aprovado com os 80 registros e 20 perfis
+  anteriores. É controle de DOM artificial; não é a evidência visual.
+- **Chrome 157 renderizado** em 1366×768 e tela estreita de 390×844, via CDP
+  local, com chave fictícia e transporte substituto. **64 capturas sintéticas
+  executadas pela interface**: 62 válidas, uma inválida e uma falha com fragmento;
+  uma válida reportou modelo divergente. As 32 células conservaram N=2; 30 pares
+  válidos por dimensão, sem juntar documentações/modelos/condições/coortes.
+  Esses números são controles artificiais, sem resultado de pesquisa.
+- Navegador: abertura/plano/prévia sem envio; primeira observação; clique
+  duplicado; continuidade com quantidade explícita; POST com confirmação perdida,
+  consulta e recarga sem reenvio; inválida/fragmento/divergência sem reparo;
+  filtros por coorte, documentação, modelo, mudança, condição, nota, repetição,
+  situação, RF e teste; detalhes de requisitos/testes, métricas e consistência;
+  separação da demonstração; chave fictícia ausente do HTML e arquivos. Captura
+  fechada antes de avaliar também verificada nos controles Python com HTTP local.
+- Capturas PNG foram inspecionadas pelo assistente: textos, botões, tabelas e
+  diálogos legíveis; rolagem para conteúdos extensos. Sem transbordamento da
+  página na tela estreita. O rótulo sintético permanece visível; isso não equivale
+  à revisão humana dos documentos, da referência ou da conformidade.
+- Sintaxe Python/JavaScript, manifestos, `git diff --check` e integridade de
+  fontes conferidos. Os arquivos anteriores modificados têm cópias integrais
+  ligadas por hash; áreas científicas anteriores permanecem idênticas. Nenhum
+  hash foi recalculado retroativamente.
+
+Evidências: [fechamento](../evidencias/spec004/integracao-documental-64-2026-11-22/verificacao-final.json),
+[testes consolidados](../evidencias/spec004/integracao-documental-64-2026-11-22/testes-consolidados.json),
+[log inicial](../evidencias/spec004/integracao-documental-64-2026-11-22/testes-completos.txt),
+[onze controles finais](../evidencias/spec004/integracao-documental-64-2026-11-22/testes-documentais-final.txt),
+[navegador sintético](../evidencias/spec004/integracao-documental-64-2026-11-22/navegador-sintetico/verificacao.json),
+[preservação](../evidencias/spec004/integracao-documental-64-2026-11-22/preservacao.json).
+Arquivos anteriores completos em `fontes-anteriores/` nessa área. Os novos
+arquivos importados do ZIP permanecem literais; somente os registros editoriais
+foram reconciliados. O contexto e as instruções do pacote são antecedentes;
+a solicitação atual do pesquisador é a autorização da ampliação e do painel.
+
+## Limites
+
+**Nenhuma chamada real, teste de conexão com o provedor, commit, push ou decisão
+de conformidade.** Pastas do lote real ainda inexistentes. A chave real não foi
+consultada nem persistida pelos controles; foi removida do ambiente dos testes.
+O painel lê somente sua disponibilidade local quando operado pelo pesquisador.
+
+A referência científica, os novos textos e a conformidade exigem revisão humana
+separada. Falhas e inválidas não recebem imputação; desempenho não decide
+inclusão. Avaliação parcial é preservada e exige diagnóstico em novo destino,
+sem sobrescrita. Não foram exercitados symlinks reais, tela física da banca,
+Ctrl+Shift+B, Git Bash ou abertura nativa de pastas. A automação de navegador
+dentro da restrição local inicialmente não respondeu; a execução local autorizada
+fora dessa restrição permitiu concluir a inspeção renderizada.
+
+As verificações datadas abaixo são históricas e permanecem preservadas.
+
 # Verificação do painel atual — 13/11/2026, D-52
 
 Abrir: `python apresentar.py`. Somente servidor: `python apresentar.py --sem-abrir`. Porta alternativa: `python apresentar.py --porta 8766`. Verificar offline: `python apresentar.py verificar`. Tarefa padrão do workspace abre o painel; a segunda tarefa verifica a bancada. Ctrl+C encerra sem reenviar chamadas.

@@ -1,5 +1,15 @@
 # Contexto e escopo
 
+D-54 (22/11/2026) amplia o bloco documental adotado pelo pesquisador para
+MC-02/MC-04-v2 × Sol/Astra × D0/D1/E0/E1 × CONSOLIDADA/OPERACIONAL × R01/R02:
+64 observações em coorte exploratória própria, 32 células N=2 e 16 payloads.
+O contraste substitui somente requisitos por cinco documentos; mantém catálogo
+completo e demais blocos literais. Distribuição, redação, explicações e extensão
+formam um tratamento conjunto, sem garantia de maior dificuldade. A ampliação
+vem da solicitação do pesquisador, sem aprovação científica atribuída ao
+orientador. [Operação e limitações](operacao-documentacao.md).
+
+
 Estado, capacidades e pendências: [ponto de entrada](../ESTADO_ATUAL.md). Registros datados anteriores preservados em [histórico](historico/pre-piloto-2026-11-06/LEIA_PRIMEIRO.md).
 
 ## Objetivo da pesquisa

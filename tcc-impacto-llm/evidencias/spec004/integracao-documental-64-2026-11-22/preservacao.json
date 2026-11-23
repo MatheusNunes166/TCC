@@ -1,0 +1,76 @@
+{
+  "arquivos_anteriores": 16370,
+  "identicos": 16359,
+  "ausentes": 0,
+  "alteracoes_com_copia_integral": [
+    {
+      "arquivo": ".gitattributes",
+      "anterior_sha256": "b9638a495d4810e6bba9851146f32dce8c528f408e034f394a1a6871b75ebafe",
+      "atual_sha256": "750dbf39fe24e284cf157dbeeb67aca0b45d0472f29301fad6b3671daed2881c",
+      "copia_anterior": "evidencias/spec004/integracao-documental-64-2026-11-22/fontes-anteriores/.gitattributes"
+    },
+    {
+      "arquivo": "apresentar.py",
+      "anterior_sha256": "e18b579ffb8f37ea868b11888df128e3eea9dd94738ecd4c50a2129ad83defed",
+      "atual_sha256": "14fbf4edde5707f8f47bbac6664be741c354ba0eb185efb6e05ded78a50f8ec5",
+      "copia_anterior": "evidencias/spec004/integracao-documental-64-2026-11-22/fontes-anteriores/apresentar.py"
+    },
+    {
+      "arquivo": "ESTADO_ATUAL.md",
+      "anterior_sha256": "075fdeb5fd636e6c61ca6d869b6c596f557c0c3d9abbefec52c3a1f5fa86b3ef",
+      "atual_sha256": "e487f822610fe58791b4bdee6e4ad1b059319b8b87610c15a6754a26304c2529",
+      "copia_anterior": "evidencias/spec004/integracao-documental-64-2026-11-22/fontes-anteriores/ESTADO_ATUAL.md"
+    },
+    {
+      "arquivo": "README.md",
+      "anterior_sha256": "e87168723a668c15f57bd9589f475c17115eeab82ac96ee8155edcad03e136c5",
+      "atual_sha256": "d75cd1817f403392ae35a6ac60f00e20b9ffd06c3d0d1700859862454cdb14f8",
+      "copia_anterior": "evidencias/spec004/integracao-documental-64-2026-11-22/fontes-anteriores/README.md"
+    },
+    {
+      "arquivo": "apresentacao/interface.html",
+      "anterior_sha256": "6cfa3aa95dcd4a8797f98fd6c2a08295a9980832195ae6dbb41ef71a26695c8f",
+      "atual_sha256": "f82159012c235798146d2b34793f121194d1c197d9a9158a1da6a28f3b26273e",
+      "copia_anterior": "evidencias/spec004/integracao-documental-64-2026-11-22/fontes-anteriores/apresentacao/interface.html"
+    },
+    {
+      "arquivo": "apresentacao/VERIFICACAO.md",
+      "anterior_sha256": "efc5c5dd92f977f00556023cd44e05880440f2ed5544fdbd9efd45819b73f4ae",
+      "atual_sha256": "2f93fbd1effbcd1d802bc7407d3f2467676860895182c26d245f774217a59e0c",
+      "copia_anterior": "evidencias/spec004/integracao-documental-64-2026-11-22/fontes-anteriores/apresentacao/VERIFICACAO.md"
+    },
+    {
+      "arquivo": "documentacao/arquitetura.md",
+      "anterior_sha256": "adcc820fd3416ab4221c58eb973a636b59ac67d0db941a16d02dfecfb99caab2",
+      "atual_sha256": "0e22d5cd74e786c2b2dd25db6f0b01fb914e5ad6bf6d27dcaf6500e11a36af7f",
+      "copia_anterior": "evidencias/spec004/integracao-documental-64-2026-11-22/fontes-anteriores/documentacao/arquitetura.md"
+    },
+    {
+      "arquivo": "documentacao/contexto-e-escopo.md",
+      "anterior_sha256": "043b529ba5fd7f1d35fd3cce33c2e7f479b2512e304fedc9e7701d975e8ce2d5",
+      "atual_sha256": "b20db76eb094c63166ed077e13f9743dcc93f5d4bcebbcd92a6340d9a3331208",
+      "copia_anterior": "evidencias/spec004/integracao-documental-64-2026-11-22/fontes-anteriores/documentacao/contexto-e-escopo.md"
+    },
+    {
+      "arquivo": "documentacao/decisoes.md",
+      "anterior_sha256": "31e96b7da33867d3baa44cc68a1963b7a9439601142fc86c63922164172da5d5",
+      "atual_sha256": "b087206e893f0f86533257bfc0955682516f537579b63ba69491030b1efd4ad9",
+      "copia_anterior": "evidencias/spec004/integracao-documental-64-2026-11-22/fontes-anteriores/documentacao/decisoes.md"
+    },
+    {
+      "arquivo": "documentacao/qualidade-e-testes.md",
+      "anterior_sha256": "7ed5a6ece6cc0d0f3d2cd91461789736681c5007ffc440daa240915026ad57cc",
+      "atual_sha256": "25b915ae950ab9d72af02603344da03e560fb13647e19a003a06cc9b20d02a27",
+      "copia_anterior": "evidencias/spec004/integracao-documental-64-2026-11-22/fontes-anteriores/documentacao/qualidade-e-testes.md"
+    },
+    {
+      "arquivo": "documentacao/roadmap.md",
+      "anterior_sha256": "3a95072e490201ceec634066c74ab34800dc3a747e0ecf52a82a69d2300080f5",
+      "atual_sha256": "1e6c742c17b6cceda8f70efb965f3ec07887c7ddc1b11374935cb5fd189fe203",
+      "copia_anterior": "evidencias/spec004/integracao-documental-64-2026-11-22/fontes-anteriores/documentacao/roadmap.md"
+    }
+  ],
+  "areas_cientificas_anteriores": 13030,
+  "areas_cientificas_identicas": 13030,
+  "hashes_retroativos_recalculados": false
+}

@@ -1,0 +1,21 @@
+{
+  "arquivos": {
+    "documentos-operacionais/01-especificacao-funcional.md": "111ea59163dc9e8a5ee0148159f417534dcdc998ba44d428d27d726623a7cba2",
+    "documentos-operacionais/02-cadastro-de-papeis.md": "5b374219ec95e49517e54fa072f45a7dc3adb633bee75826f08f77fbe44a6a27",
+    "documentos-operacionais/03-configuracao-de-heranca.md": "63e6a230ce5e77b0edf4d824da914391f82a4eb082cdd21cafc3207dbb96db98",
+    "documentos-operacionais/04-configuracao-de-incompatibilidades.md": "5708c6885ab95d1ae4cc0f399d4429fa2144355ce37a86898a38f0fd2db84dbb",
+    "documentos-operacionais/05-contrato-de-execucao.md": "52d63dd94f2b75b418cc8d17d61ff48cf2a36e6c1f509c41413328b1db4aefb0",
+    "payloads/MC-02-D0-CONSOLIDADA.txt": "1f39acc820e09bd1a911d90bef408ff3fb6353e17e5e81a8df27957c29d7c190",
+    "payloads/MC-02-D0-OPERACIONAL.txt": "e22afa7d4c7aeafa016883c3ccaa2f52d9757f37a343bc796c6efb1e9493de37",
+    "payloads/MC-02-D1-CONSOLIDADA.txt": "506a6d0f779a904bc95245819bc059ba0e916576e0833fd9d2da87532e53a248",
+    "payloads/MC-02-D1-OPERACIONAL.txt": "b8456cc26b53e34a7741d61a6648334d19bb1e053d1512af4ea624c9de6b18ca",
+    "payloads/MC-04-v2-D0-CONSOLIDADA.txt": "090466600f445a673325a1d83eea1cf6da3a1845f64722b471fabd94c91238c8",
+    "payloads/MC-04-v2-D0-OPERACIONAL.txt": "a36e76922a65ff8c380041eeac84b6d25c3f86753bdc69a5ad7a2e692017a5b2",
+    "payloads/MC-04-v2-D1-CONSOLIDADA.txt": "78d734ddcf58823fb1fe9b8fe917043b6b1d98945c1f4f8bc358a12d0129bf15",
+    "payloads/MC-04-v2-D1-OPERACIONAL.txt": "c052250683ee2bb0c74fb10f4a78f91991d4cdd55d0e95886141bcaef5461f80",
+    "plano.json": "cfff1ea65f069648031b3b00d3754b228073f5c4493d35b46969d60e1319f85a"
+  },
+  "chamadas_executadas": 0,
+  "preparador_sha256": "c2d26c8af0485c392d39023162a167c40bc1378decc6e50ae6edd63ff43fe4db",
+  "versao": "documentacao-operacional-0.3-v1"
+}

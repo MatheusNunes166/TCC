@@ -1,0 +1,34 @@
+{
+  "data": null,
+  "fontes": {
+    "coorte": "documentacao_operacional_64_sintetica",
+    "fase": "verificacao_sintetica",
+    "manifesto_sha256": "dca157f3aff6b5d1d468ba984d011d67ab3aa8a99ed35fdc404306e4bbed0431",
+    "origem": "sintetica",
+    "plano": "captura/documentacao-operacional-0.3-002/plano.json",
+    "plano_sha256": "cf0e6abddfb76ffdbbe5c1f853488fbe62ff2b9a7d9946f55949913552759c99"
+  },
+  "observacoes": [
+    {
+      "avaliacao_sha256": "7c39ffdf7cbd7a0bf89d36b6496bca22e53a1e2236d78caac230dfeb014fbb36",
+      "bloco": 1,
+      "condicao": "E1",
+      "decisao": "pendente",
+      "documentacao_id": "CONSOLIDADA",
+      "fechamento_sha256": "2e7c4fd48443a5419be3cff256d0a5329abe469a13822a20bef4fe137b19c5b8",
+      "justificativa": null,
+      "modelo_solicitado": "gpt-6-astra",
+      "mudanca": "MC-02",
+      "nota_id": "original",
+      "observacao_id": "DOCOP64-MC-02-E1-CONSOLIDADA-ASTRA-R01",
+      "ordem": 2,
+      "payload_sha256": "017d48bc0e358962792a419217cc74e7cc5d785ff2cf84e9a8b03c1649231f96",
+      "plano_sha256": "cf0e6abddfb76ffdbbe5c1f853488fbe62ff2b9a7d9946f55949913552759c99",
+      "repeticao": 1,
+      "resposta_sha256": "623c77217e7d559080f4ac7dc78e4126714cd3c461c087db7175e5a572beb139",
+      "tentativa_sha256": "cc30a62a80555ae13f0d8264e4672c1c243fc6eb495270ecbc660bd8fbe94e47"
+    }
+  ],
+  "responsavel": null,
+  "versao": "decisoes-conformidade-v1"
+}

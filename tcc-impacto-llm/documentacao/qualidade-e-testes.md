@@ -1,5 +1,14 @@
 # Qualidade e testes da bancada
 
+D-54 (22/11/2026): controles novos verificam 16 payloads/64 posições,
+notas E0/E1, catálogos/política literais, identidade documental, primeira chamada,
+continuidade, retomada, concorrência entre processos, fragmento, inválida e desvio,
+captura antes da avaliação e separação das células. HTTP é artificial; navegador
+renderizado também usa transporte sintético e registros separados. Mantidos os
+seis controles factuais do pacote (240 pares de decisão/motivo), os testes
+originais e a bancada de 75 comparações. [Resultados e limites efetivos](../apresentacao/VERIFICACAO.md).
+
+
 D-39: [52 testes offline aprovados e comandos registrados](../captura/integracao-api-2026-11-07/verificacao.json). Inclui os 13 do patch e regressões, HTTP inteiramente simulado/chave fictícia, TLS/redirect, IncompleteRead em sucesso/HTTPError, prefixos/EOF/interrupção sem retry, não ocultação de defeito e revisão explícita de conformidade. Pendência bloqueia resumo; inclusão/exclusão conserva originais e N planejado. Nenhuma consulta autenticada ou chamada real. [Procedimento](operacao-api.md).
 
 D-38: [validação offline](../captura/analise-bloqueios-cli-2026-11-07-D38/validacao-offline.json), quatro testes de controles CLI e doze do coletor aprovados, sem LLM. Inclui a preservação de final após erro de cliente, ausência de reenvio dessa conclusão, configuração sem overrides inválidos e trava que continua bloqueando com lista de bloqueios vazia. Não equivale a comprovar transporte/ferramentas de uma chamada real.

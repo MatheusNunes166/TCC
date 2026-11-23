@@ -1,5 +1,61 @@
 # Decisões, propostas e pendências
 
+## D-54 — ampliação e integração documental offline — 22/11/2026
+
+Responsável: **Matheus Henrique Braun Nunes**, por solicitação explícita nesta
+conversa: “quero incluir D0, D1, E0 e E1”, “64 observações”, com execução posterior
+pelo próprio pesquisador na interface. Autoriza integração e validação offline,
+incluindo HTTP artificial e navegador; proíbe chamadas reais à API, testes de
+conexão externa, commit e push durante a implementação. As instruções anteriores
+do ZIP de não alterar o painel e de usar somente D0/D1 descrevem o escopo antigo,
+superado por esta solicitação apenas no alcance necessário. Não são aprovação
+científica do orientador nem revisão humana dos textos ou das respostas futuras.
+
+Adotada preparação 002: MC-02/MC-04-v2 × Sol/Astra × D0/D1/E0/E1 × duas
+documentações × duas repetições = 64, 32 células de N=2, dois blocos de 32,
+16 payloads únicos. Antecedente 001 de 32 posições e produtor preservados,
+sem execução e sem recalcular seus hashes. D0/E0 não contêm notas; D1/E1 usam
+a mesma nota original. Pedidos históricos diretos/estruturados, política,
+catálogo completo com quinze casos/seis colunas, mudança e schema mantidos.
+Somente requisitos são substituídos pelos cinco documentos operacionais.
+Rótulos, plano, IDs e referência privada ficam fora do input.
+
+O patch passou em `git apply --check` na base `cd87842dbd8c317e6465e79a89bf600c5404f342`,
+árvore inicialmente limpa. Aplicação sem conflito; arquivos novos do pacote
+restaurados aos bytes literais de `fontes/` após detectar conversão CRLF feita
+pelo Git. Nenhum hash histórico foi atualizado. Fontes/documentos alterados
+têm versões anteriores integrais em
+`evidencias/spec004/integracao-documental-64-2026-11-22/fontes-anteriores/`.
+Núcleo, variantes, transporte, fórmulas, referência, notas, prompts, coletas,
+avaliações e evidências anteriores não foram editados.
+
+Mantido um único painel Executar/Resultados. Adaptadores próprios protegem plano,
+configurações e ordem, registram clique/limite/horário real/hashes e bloqueiam
+duplicidade/concorrência entre processos. Primeira ação somente uma chamada;
+continuidade envia apenas posições ainda não iniciadas. Captura é fechada antes
+da avaliação offline; falhas/fragmentos/invalidade/desvios permanecem sem reparo,
+retry ou imputação. Identidade/fase/coorte próprias, sem DEMO e sem misturar
+denominadores; conformidade humana começa pendente. Orçamento permanece nulo,
+sem exigência de valor positivo e sem garantia de teto monetário, coerente com D-49
+e com a solicitação atual.
+
+O fator documental reúne distribuição, redação, explicações e extensão, sem
+isolar componentes ou garantir maior dificuldade. Seleção das mudanças posterior
+a resultados anteriores já conhecidos, como registrado no pacote. Não alterar
+textos/modelos/repetições pelo desempenho; preservar inclusive empates. As 64 + 16
+observações anteriores e decisões humanas permanecem nas coortes originais.
+[Operação](operacao-documentacao.md) e [resultados técnicos efetivos](../apresentacao/VERIFICACAO.md).
+
+
+## Adoção do desenho documental operacional — 22/11/2026
+
+Responsável: Matheus Henrique Braun Nunes. Evidência nesta conversa, após a explicação da documentação operacional menos didática: “perfeito é isso ai mesmo que eu quero vamos fazer”. Autoriza implementar a preparação do desenho acordado: controle consolidado versus distribuição dos mesmos fatos necessários em documentos de especificação/configuração, com redução de explicações de consequências particulares. Não é aprovação externa, revisão dos novos textos já produzidos ou registro de chamada paga.
+
+[Textos e delimitação](revisao-documentacao-operacional.md). Mantidos catálogo com resultados baseline, política, entradas, IDs, notas originais, mudanças, pedidos e schema. Oito payloads e 32 posições, MC-02/MC-04 × dois modelos medium × D0/D1 × duas versões documentais × duas repetições, com controles novos. Não medir separadamente efeito de fragmentação, redação ou extensão, nem alegar dificuldade maior sem resultado. Escolha posterior aos resultados conhecidos explicitada; não ajustar até obter erro ou vantagem das notas.
+
+A proposta anterior de retirada das duas colunas não será executada neste bloco. Suas preparações, se existentes localmente, são históricas separadas. O novo preparador tem identidade e destino próprios; não sobrescreve os anteriores, o painel ou as fontes ligadas a coletas anteriores. Preparação conferida offline, sem chave, gabarito privado ou transporte. O confronto técnico dos fatos declarados não equivale a validação científica. Integração de envio e conferência dos textos novos permanecem pendentes; nenhuma nova aprovação de orçamento positivo é imposta em conflito com D-49. Conformidade anterior intocada; sem chamadas, commit ou push.
+
+
 ## Painel único para apresentação — 13/11/2026
 
 **D-52 — Solicitação explícita de Matheus Henrique Braun Nunes nesta conversa; integração pelo assistente.** Evidência: pedido anexado para integrar `tcc-painel-llm`, substituir a interface anterior, preservar revisões e evidências, limpar itens comprovadamente descartáveis e verificar offline. Não autoriza chamadas reais/testes de conexão, commit, push, conformidade ou aprovação científica. D-49 continua autorizando orçamento indefinido, sem exigência de valor positivo.

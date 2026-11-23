@@ -1,0 +1,16 @@
+test_abertura_previa_filtros_sem_envio_e_primeira_acao_restrita (test_documentacao_operacional_64.TestExecucaoDocumental64.test_abertura_previa_filtros_sem_envio_e_primeira_acao_restrita) ... ok
+test_clique_duplicado_concorrencia_entre_instancias_e_processos (test_documentacao_operacional_64.TestExecucaoDocumental64.test_clique_duplicado_concorrencia_entre_instancias_e_processos) ... ok
+test_continuidade_reinicio_ordem_64_e_consistencia_sem_mistura (test_documentacao_operacional_64.TestExecucaoDocumental64.test_continuidade_reinicio_ordem_64_e_consistencia_sem_mistura) ... ok
+test_fragmento_desconhecido_invalida_divergencia_sem_retry_ou_imputacao (test_documentacao_operacional_64.TestExecucaoDocumental64.test_fragmento_desconhecido_invalida_divergencia_sem_retry_ou_imputacao) ... ok
+test_http_interface_fluxo_completo_artificial_e_post_perdido (test_documentacao_operacional_64.TestExecucaoDocumental64.test_http_interface_fluxo_completo_artificial_e_post_perdido) ... ok
+test_interrupcao_e_avaliacao_falha_preservam_captura_e_retomada_offline (test_documentacao_operacional_64.TestExecucaoDocumental64.test_interrupcao_e_avaliacao_falha_preservam_captura_e_retomada_offline) ... ok
+test_primeira_captura_depois_avaliacao_e_metadados (test_documentacao_operacional_64.TestExecucaoDocumental64.test_primeira_captura_depois_avaliacao_e_metadados) ... ok
+test_tentativa_sem_fechamento_nao_promove_conclusao_ou_pontuacao (test_documentacao_operacional_64.TestExecucaoDocumental64.test_tentativa_sem_fechamento_nao_promove_conclusao_ou_pontuacao) ... ok
+test_bloco_rf_unico_catalogo_politica_pedidos_notas_literais (test_documentacao_operacional_64.TestPreparacao64.test_bloco_rf_unico_catalogo_politica_pedidos_notas_literais) ... ok
+test_dezesseis_payloads_64_posicoes_32_celulas_dois_blocos (test_documentacao_operacional_64.TestPreparacao64.test_dezesseis_payloads_64_posicoes_32_celulas_dois_blocos) ... ok
+test_preparar_e_conferir_sem_referencia_chave_transporte (test_documentacao_operacional_64.TestPreparacao64.test_preparar_e_conferir_sem_referencia_chave_transporte) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 17.864s
+
+OK

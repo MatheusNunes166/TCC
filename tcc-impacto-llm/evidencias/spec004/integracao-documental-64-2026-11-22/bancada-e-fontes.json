@@ -1,0 +1,22 @@
+{
+  "comando_executado": "python -B apresentar.py verificar",
+  "retorno": 0,
+  "testes_originais": 18,
+  "comparacoes_conformes": 75,
+  "comparacoes_total": 75,
+  "capturas_anteriores_lidas": [
+    64,
+    16
+  ],
+  "hashes_consumidos": 324,
+  "fatos_documentos_operacionais": {
+    "entradas_por_versao": 48,
+    "versoes": 5,
+    "pares_conformes": 240
+  },
+  "dom_anterior": {
+    "comando": "node tests/test_interface_painel.cjs",
+    "resultado": "APROVADO; DOM artificial, sem valor de inspeção visual"
+  },
+  "chamadas_reais": 0
+}

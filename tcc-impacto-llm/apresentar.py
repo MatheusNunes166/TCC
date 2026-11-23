@@ -200,7 +200,7 @@ def main(argv=None):
             return verificar()
         if not 1 <= args.porta <= 65535:
             parser.error('Escolha uma porta de 1 a 65535')
-        from painel_llm import servir
+        from painel_documental import servir
         servir(ROOT, porta=args.porta, sem_abrir=args.sem_abrir)
         return 0
     except (Exception, KeyboardInterrupt) as exc:

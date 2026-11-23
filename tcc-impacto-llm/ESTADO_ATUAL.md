@@ -1,6 +1,51 @@
-# Estado atual — 13/11/2026
+# Estado atual — 22/11/2026
+
+## Vigente — bloco documental de 64 observações, D-54
+
+Solicitação explícita de Matheus Henrique Braun Nunes em 22/11/2026: ampliar o
+pacote operacional para D0/D1/E0/E1 e integrar execução/acompanhamento ao painel.
+**64 posições, 32 células N=2, dois blocos balanceados de 32 e 16 payloads únicos**.
+[Operação e limites](documentacao/operacao-documentacao.md),
+[plano 002](captura/documentacao-operacional-0.3-002/plano.json) e
+[manifesto](captura/documentacao-operacional-0.3-002/manifesto.json).
+MC-02/MC-04-v2 × Sol/Astra × quatro condições × CONSOLIDADA/OPERACIONAL × R01/R02.
+D0/E0 sem notas; D1/E1 com a mesma nota original. Catálogo integral de quinze
+casos e seis colunas; política/pedidos/schema e demais blocos preservados.
+A preparação 001 de 32 posições, seu produtor e suas conferências continuam
+literais como antecedente não executado. A retirada de colunas não será executada.
+
+**`python apresentar.py` → Executar → Pesquisa documental • 64 observações**.
+Prévia sem envio; primeira ação restrita a uma chamada. Depois, Continuar lote
+mostra o limite explícito de chamadas pagas. Ordem fixa, trava entre processos,
+idempotência por ação e retomada apenas das posições nunca iniciadas. Falhas,
+fragmentos e estado remoto desconhecido ficam preservados, sem retry. Captura
+fechada antes da avaliação offline; transporte/extração/avaliador/Jaccard existentes.
+Resultados têm filtros de documentação e repetição, além dos anteriores, e
+consistência por célula. Coorte/fase/identidades documentais próprias; demonstrações
+DEMO e coletas anteriores continuam separadas. Medium/4096 e demais parâmetros
+preservados; chave somente no servidor, sem exigência de orçamento positivo.
+
+**Zero chamadas reais e zero observações científicas novas**. Conformidade futura
+começa pendente e exige revisão humana separada; decisões anteriores intocadas.
+Tratamento reúne distribuição, redação, explicações e extensão, sem garantir maior
+dificuldade. A ampliação é decisão do pesquisador, sem aprovação atribuída ao
+orientador e sem ajuste dos materiais pelo desempenho. Validação técnica e
+capturas renderizadas sintéticas em [VERIFICACAO](apresentacao/VERIFICACAO.md).
+As seções abaixo descrevem antecedentes datados; seus totais e pendências não
+substituem o fluxo vigente acima.
+
 
 Fonte única da situação operacional; navegação no [README](README.md), decisões e autorizações em [decisoes.md](documentacao/decisoes.md). Registros datados descrevem seus incrementos, sem substituir este estado.
+
+## Documentação consolidada × operacional — preparação de 22/11/2026
+
+Matheus Henrique Braun Nunes adotou nesta conversa a reformulação operacional, autorizando sua preparação: cinco documentos distribuem especificação, papéis, herança, incompatibilidade e contrato de execução. [Revisão e rastreabilidade factual](documentacao/revisao-documentacao-operacional.md). O catálogo permanece com seus quinze casos e seis colunas; a proposta anterior de retirar duas colunas foi substituída como desenho a seguir, sem execução e sem apagar preparações anteriores eventualmente existentes.
+
+Preparados cinco documentos e oito payloads, com 32 posições: MC-02/MC-04 × Sol/Astra × D0/D1 × CONSOLIDADA/OPERACIONAL × duas repetições. O controle é literal da extensão 0.3; no operacional, apenas o bloco de requisitos é substituído. Política comum, catálogo, notas originais, mudanças, pedidos e schema permanecem literais. Não se promete maior dificuldade ou efeito das notas; fragmentação, redação e extensão compõem uma intervenção documental conjunta.
+
+[Plano](captura/documentacao-operacional-0.3-001/plano.json), [manifesto](captura/documentacao-operacional-0.3-001/manifesto.json), [evidência](evidencias/spec004/documentacao-operacional-2026-11-22/verificacao.json). Preparador oferece somente preparar/conferir, sem chave, referência privada ou envio. Seis controles novos aprovados, incluindo 240 comparações técnicas dos fatos declarados com as cinco versões sobre 48 entradas válidas. A verificação original continua em 18 métodos e 75/75 pares, com 80 registros anteriores somente lidos.
+
+O desenho está adotado pelo pesquisador; conferência dos textos novos e integração específica de captura/avaliação/revisão/resumo continuam pendentes. Modelo/medium/4096 e demais parâmetros propostos preservados. documentacao_id será fator obrigatório, sem misturar coortes. Nenhuma chamada real, consulta autenticada, preenchimento de conformidade, commit ou push. As 64 + 16 conformidades anteriores permanecem como nas fontes atuais. A versão operacional e seus resultados futuros não aprovam cientificamente o gabarito.
 
 ## Painel único integrado e fluxo anterior removido — 13/11/2026, D-52
 

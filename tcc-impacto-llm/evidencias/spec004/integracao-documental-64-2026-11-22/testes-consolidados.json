@@ -1,0 +1,26 @@
+{
+  "testes_distintos": 197,
+  "aprovados": 195,
+  "ignorados": {
+    "test_link_de_cache_nao_e_seguido (test_apresentacao.TestLimpezaApresentacao.test_link_de_cache_nao_e_seguido)": "skipped \"Ambiente não permite criar symlink: [WinError 1314] O cliente não tem o privilégio necessário: 'C:\\\\\\\\Users\\\\\\\\User\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\tmpzy4ig9em\\\\\\\\captura' -> 'C:\\\\\\\\Users\\\\\\\\User\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\tmpzy4ig9em\\\\\\\\.ruff_cache'\"",
+    "test_S14_symlinks_reais_quando_disponiveis (test_montagem_entradas.TestMontagem.test_S14_symlinks_reais_quando_disponiveis)": "skipped \"Criacao de symlink real indisponivel: [WinError 1314] O cliente não tem o privilégio necessário: 'C:\\\\\\\\Users\\\\\\\\User\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\tmpa5sf0xlf\\\\\\\\sym\\\\\\\\sistema.txt' -> 'C:\\\\\\\\Users\\\\\\\\User\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\tmpa5sf0xlf\\\\\\\\sym\\\\\\\\sym-interno'\""
+  },
+  "falhas_pendentes": 0,
+  "erros_pendentes": 0,
+  "execucao_inicial": {
+    "descobertos": 196,
+    "aprovados_distintos": 193,
+    "ignorados": 2,
+    "caso_com_falha_e_erro_cleanup": "test_continuidade_reinicio_ordem_64_e_consistencia_sem_mistura",
+    "motivo": "Espera de 15 segundos insuficiente; limpeza iniciou enquanto thread ainda rodava."
+  },
+  "correcao": "Conferência integral no início da ação, hashes/plano/payload antes de cada envio; espera de teste de 60 s.",
+  "reexecucao_necessaria": {
+    "novos_controles": 11,
+    "aprovados": 11,
+    "arquivo": "testes-documentais-final.txt"
+  },
+  "criterio": "União por identidade do teste, com última execução aplicável; não representa uma única rodada integral final.",
+  "nota_relatorio_inicial": "O JSON inicial subtraiu FAIL e ERROR do mesmo caso duas vezes; contagem distinta correta é 193 aprovados.",
+  "chamadas_reais": 0
+}

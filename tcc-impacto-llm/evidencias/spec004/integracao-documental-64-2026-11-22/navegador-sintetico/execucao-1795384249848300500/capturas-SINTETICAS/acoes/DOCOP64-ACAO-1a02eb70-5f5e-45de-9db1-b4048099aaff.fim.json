@@ -1,0 +1,27 @@
+{
+  "enviadas": 1,
+  "etapa": "concluida",
+  "eventos": [
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-22T21:51:00.805806+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-22T21:51:00.819718+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-22T21:51:00.916679+00:00"
+    },
+    {
+      "etapa": "concluida",
+      "instante": "2026-11-22T21:51:00.968452+00:00"
+    }
+  ],
+  "finalizado": true,
+  "id": "DOCOP64-ACAO-1a02eb70-5f5e-45de-9db1-b4048099aaff",
+  "limite": 1,
+  "mensagem": "Lote interrompido por ocorrência técnica ou formato inválido. Originais preservados. Consulte os detalhes antes de continuar pendentes.",
+  "ultima_observacao": "DOCOP64-MC-02-D1-OPERACIONAL-SOL-R01"
+}

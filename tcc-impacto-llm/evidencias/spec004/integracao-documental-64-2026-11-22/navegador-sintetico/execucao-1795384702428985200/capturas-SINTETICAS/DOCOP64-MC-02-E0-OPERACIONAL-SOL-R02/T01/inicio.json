@@ -1,0 +1,51 @@
+{
+  "acao_id": "DOCOP64-ACAO-19d93a2b-c897-4120-964d-933a1f472798",
+  "bloco": 2,
+  "condicao": "E0",
+  "configuracao": {
+    "endpoint": "https://api.openai.com/v1/responses",
+    "esforco_solicitado": "medium",
+    "max_output_tokens": 4096,
+    "modelo_solicitado": "gpt-6-sol",
+    "orcamento_usd": null,
+    "retries_automaticos_cliente": 0,
+    "store": false,
+    "stream": false,
+    "timeout_segundos": 120,
+    "tool_choice": "none",
+    "tools": []
+  },
+  "conformidade_protocolo": "pendente",
+  "coorte": "documentacao_operacional_64_sintetica",
+  "documentacao_id": "OPERACIONAL",
+  "fase": "verificacao_sintetica",
+  "fontes_sha256": {
+    "coletor_api.py": "70e5b583bc52af64bd40af27ac5c1b172e021a4e643c8b9dc11ee2a1b4972b39",
+    "documentacao_operacional.py": "a03703963bcdbb12597b91e5416745c55c790fe791f8872668435520498c1770",
+    "preparar_documentacao_operacional_v2.py": "28e6ba272b4a889dda0503d66faf2938fa03ede238afb70c3fa1f0a7bfe90988"
+  },
+  "instante_execucao": "2026-11-22T21:58:37.520634+00:00",
+  "manifesto_sha256": "dca157f3aff6b5d1d468ba984d011d67ab3aa8a99ed35fdc404306e4bbed0431",
+  "modelo_solicitado": "gpt-6-sol",
+  "mudanca": "MC-02",
+  "nota_id": "sem",
+  "observacao_id": "DOCOP64-MC-02-E0-OPERACIONAL-SOL-R02",
+  "ordem": 33,
+  "origem": "sintetica",
+  "origem_payload": {
+    "payload_origem_sha256": "7b64138181e294df3cb7a344250adb7fdb2faddb74e080d00354f6780039bd9a",
+    "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+    "requisicao_origem": "captura/extensao-real-0.3-001/EXT03-MC-02-E0-SOL-R01/T01/requisicao.json",
+    "requisicao_sha256": "284abf83d78ad5b9838b344ccbd6f76097a5abab42e41f7925a0c34687e92e51"
+  },
+  "payload": "payloads/MC-02-E0-OPERACIONAL.txt",
+  "payload_sha256": "d6ad08c261e9c0cf4a405480a9c2d966699fc32ae93e1e1f834fcfe4b2703e64",
+  "plano": "captura/documentacao-operacional-0.3-002/plano.json",
+  "plano_sha256": "cf0e6abddfb76ffdbbe5c1f853488fbe62ff2b9a7d9946f55949913552759c99",
+  "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+  "repeticao": 2,
+  "requisicao_sha256": "879a087126265d9bdc6dfac90af42339ca9fde6c443e6d5827e1be0584492e17",
+  "retentativas_cliente": 0,
+  "status": "PLANEJADA_NAO_EXECUTADA",
+  "tentativa_id": "T01"
+}

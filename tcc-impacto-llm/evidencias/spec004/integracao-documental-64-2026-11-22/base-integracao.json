@@ -1,0 +1,8 @@
+{
+  "head": "cd87842dbd8c317e6465e79a89bf600c5404f342",
+  "git_status_anterior": " M tcc-impacto-llm/.gitattributes\n M tcc-impacto-llm/ESTADO_ATUAL.md\n M tcc-impacto-llm/README.md\n M tcc-impacto-llm/documentacao/decisoes.md\n?? tcc-impacto-llm/captura/documentacao-operacional-0.3-001/\n?? tcc-impacto-llm/documentacao/revisao-documentacao-operacional.md\n?? tcc-impacto-llm/evidencias/spec004/documentacao-operacional-2026-11-22/\n?? tcc-impacto-llm/evidencias/spec004/integracao-documental-64-2026-11-22/\n?? tcc-impacto-llm/preparar_documentacao_operacional.py\n?? tcc-impacto-llm/tests/test_documentacao_operacional.py\n",
+  "git_apply_check_retorno": 0,
+  "git_apply_check_saida": "",
+  "zip_sha256": "e39a941a08271d18d9601d70db7559da600aa98c22ad832ccd29c316cbdc64e6",
+  "arquivos_anteriores": 16370
+}

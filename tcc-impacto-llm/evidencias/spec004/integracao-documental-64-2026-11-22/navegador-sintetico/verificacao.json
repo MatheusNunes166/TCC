@@ -1,0 +1,38 @@
+{
+  "chamadas_reais": 0,
+  "checks": [
+    "Abertura, plano e prévia sem envio; 32 células e 64 posições renderizadas.",
+    "Primeira observação e clique duplicado: somente um envio artificial.",
+    "Continuidade com limite explícito de duas, ordem preservada.",
+    "Inválida, fragmento/estado desconhecido e divergência reportada, sem reparo/retry.",
+    "POST sem confirmação: bloqueio, consulta e recarga sem reenvio das sete posições iniciadas.",
+    "Filtros de coorte/documentação/modelo/mudança/condição/nota/repetição/situação/RF/teste e detalhes separados.",
+    "Lote completo pela interface: 64 capturas artificiais; 62 válidas, uma inválida, uma falha, 32 células N=2 e 30 pares válidos por dimensão.",
+    "Demonstração livre permanece separada; prévia E0 sem notas e retirada da chave não enviam chamadas.",
+    "Sem credencial no navegador/arquivos. Tela estreita sem transbordamento horizontal da página."
+  ],
+  "envios_artificiais": 64,
+  "execucao": "evidencias/spec004/integracao-documental-64-2026-11-22/navegador-sintetico/execucao-1795384702428985200",
+  "inspecao_visual_assistente": {
+    "realizada": true,
+    "arquivos": [
+      "01-executar-1366.png",
+      "02-primeira-capturada.png",
+      "03-resultados-1366.png",
+      "04-detalhes-1366.png",
+      "05-executar-390.png",
+      "06-consistencia-64.png"
+    ],
+    "avaliacao": "Texto, controles, tabelas e diálogos legíveis; rolagem necessária para plano e tabela de 32 células. Tela estreita sem transbordamento da página.",
+    "limite": "Chrome headless renderizado, não inspeção na tela física da banca; não é revisão humana de conformidade."
+  },
+  "navegador": {
+    "jsVersion": "15.7.112.23",
+    "product": "Chrome/157.0.8103.40",
+    "protocolVersion": "1.3",
+    "revision": "@6f75a8afa26ce5537c82b4887f152dfdc7183e05",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+  },
+  "pendentes": 0,
+  "tipo": "VALIDACAO_SINTETICA_EM_CHROME_RENDERIZADO"
+}

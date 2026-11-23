@@ -1,0 +1,12 @@
+{
+  "acao_id": "DOCOP64-ACAO-19d93a2b-c897-4120-964d-933a1f472798",
+  "coorte": "documentacao_operacional_64_sintetica",
+  "estado_remoto": "desconhecido",
+  "fase": "verificacao_sintetica",
+  "instante": "2026-11-22T21:58:38.732206+00:00",
+  "manifesto_sha256": "dca157f3aff6b5d1d468ba984d011d67ab3aa8a99ed35fdc404306e4bbed0431",
+  "origem": "sintetica",
+  "plano": "captura/documentacao-operacional-0.3-002/plano.json",
+  "plano_sha256": "cf0e6abddfb76ffdbbe5c1f853488fbe62ff2b9a7d9946f55949913552759c99",
+  "requisicao_sha256": "c82111184d9be33031a352a8d147114fa7fa6433a00a6a51388c358988320b54"
+}

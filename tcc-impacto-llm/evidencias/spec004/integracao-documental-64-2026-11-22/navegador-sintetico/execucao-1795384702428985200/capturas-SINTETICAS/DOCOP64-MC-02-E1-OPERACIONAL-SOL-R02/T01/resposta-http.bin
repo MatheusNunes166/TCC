@@ -1,0 +1,24 @@
+{
+  "id": "resp-artificial",
+  "model": "gpt-6-sol",
+  "output": [
+    {
+      "content": [
+        {
+          "text": "{\"requisitos\":[\"RF-02\"],\"testes\":[\"T04\",\"T12\",\"T14\",\"T15\"]}",
+          "type": "output_text"
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "status": "completed",
+  "tool_choice": "none",
+  "tools": [],
+  "usage": {
+    "input_tokens": 8,
+    "output_tokens": 9
+  }
+}

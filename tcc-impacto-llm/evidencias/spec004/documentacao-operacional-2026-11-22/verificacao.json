@@ -1,0 +1,95 @@
+{
+  "bancada_original": {
+    "comparacoes_conformes": 75,
+    "hashes_consumidos": 324,
+    "log": "1/3 Executando os 18 testes originais da autorização...\ntest_vazio_e_prioridade_direta (test_autorizacao.TestBordas.test_vazio_e_prioridade_direta) ... ok\ntest_T06 (test_autorizacao.TestConflito.test_T06) ... ok\ntest_T07 (test_autorizacao.TestConflito.test_T07) ... ok\ntest_T12 (test_autorizacao.TestConflito.test_T12) ... ok\ntest_incompatibilidade_oito_subconjuntos (test_autorizacao.TestConflito.test_incompatibilidade_oito_subconjuntos) ... ok\ntest_T02 (test_autorizacao.TestDiretas.test_T02) ... ok\ntest_T03 (test_autorizacao.TestDiretas.test_T03) ... ok\ntest_T04 (test_autorizacao.TestDiretas.test_T04) ... ok\ntest_auditoria_visualizar (test_autorizacao.TestDiretas.test_auditoria_visualizar) ... ok\ntest_concessoes_proprias (test_autorizacao.TestDiretas.test_concessoes_proprias) ... ok\ntest_T01 (test_autorizacao.TestEstado.test_T01) ... ok\ntest_T09 (test_autorizacao.TestEstado.test_T09) ... ok\ntest_T10 (test_autorizacao.TestEstado.test_T10) ... ok\ntest_T11 (test_autorizacao.TestEstado.test_T11) ... ok\ntest_estados_32_combinacoes (test_autorizacao.TestEstado.test_estados_32_combinacoes) ... ok\ntest_T05 (test_autorizacao.TestHeranca.test_T05) ... ok\ntest_T08 (test_autorizacao.TestHeranca.test_T08) ... ok\ntest_efetivos_oito_subconjuntos (test_autorizacao.TestHeranca.test_efetivos_oito_subconjuntos) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.001s\n\nOK\n2/3 Conferindo os 15 casos nas cinco versões...\nBancada: 75/75 comparações conformes\n3/3 Conferindo as 64 + 16 respostas preservadas, sem reavaliar...\nOriginais: 64 + 16; 324 hashes conferidos.\nNenhuma chamada à API, relatório HTML ou alteração de conformidade.\n",
+    "metodos": 18,
+    "registros_anteriores": 80
+  },
+  "base_git": "cd87842dbd8c317e6465e79a89bf600c5404f342",
+  "chave_lida": false,
+  "commit_push": false,
+  "consistencia_tecnica_documentos": {
+    "alcance": "Fatos extraidos dos documentos e confrontados com o codigo; nao prova de interpretacao ou revisao cientifica",
+    "entradas_por_versao": 48,
+    "pares_decisao_motivo_conformes": 240,
+    "versoes": 5
+  },
+  "data_contexto": "2026-11-22",
+  "fase": "PREPARACAO_OFFLINE",
+  "fontes_sha256": {
+    "autorizacao.py": "30f6be2990c3c6dca0bbb3afa66cad8d717e953197bf80fd0c5067b1ff233f69",
+    "avaliacao_ids.py": "8448f07a7d5c1fd8596cde10deed9467544a75a7ce0f4a16ff8aca2d7689e516",
+    "coletor_api.py": "70e5b583bc52af64bd40af27ac5c1b172e021a4e643c8b9dc11ee2a1b4972b39",
+    "painel_llm.py": "937c8b7d2a09866562d53eede42baea4e7558c4314955b446395bfcfcd0f3d5f",
+    "preparar_documentacao_operacional.py": "c2d26c8af0485c392d39023162a167c40bc1378decc6e50ae6edd63ff43fe4db",
+    "tests/test_documentacao_operacional.py": "fba0ff35c9dc7af87d5089f11d7de353794b02b833ff0fc5a7af5fa5ce3d7cda"
+  },
+  "manifesto_sha256": "51009919036e99073d5363244aa39cb93fc4ed2b5c3a6cdd1f964b9cd52b954f",
+  "preparacao": {
+    "celulas": 16,
+    "chamadas_executadas": 0,
+    "conferencia_dos_novos_textos": "PENDENTE",
+    "documentos_operacionais": 5,
+    "envio_autorizado": false,
+    "integracao_captura": "PENDENTE",
+    "observacoes_planejadas": 32,
+    "payloads": 8,
+    "repeticoes_por_celula": 2,
+    "status": "OK_PREPARACAO_OFFLINE"
+  },
+  "preservacao": {
+    "alterados_intencionalmente": [
+      ".gitattributes",
+      "ESTADO_ATUAL.md",
+      "README.md",
+      "documentacao/decisoes.md"
+    ],
+    "arquivos_anteriores": 13235,
+    "ausentes": [],
+    "identicos": 13231
+  },
+  "requisicoes_construidas_offline": 32,
+  "requisicoes_enviadas": 0,
+  "tamanhos_payloads": {
+    "MC-02-D0-CONSOLIDADA": {
+      "bytes": 7008,
+      "caracteres": 6826
+    },
+    "MC-02-D0-OPERACIONAL": {
+      "bytes": 7925,
+      "caracteres": 7714
+    },
+    "MC-02-D1-CONSOLIDADA": {
+      "bytes": 7817,
+      "caracteres": 7601
+    },
+    "MC-02-D1-OPERACIONAL": {
+      "bytes": 8734,
+      "caracteres": 8489
+    },
+    "MC-04-v2-D0-CONSOLIDADA": {
+      "bytes": 6994,
+      "caracteres": 6809
+    },
+    "MC-04-v2-D0-OPERACIONAL": {
+      "bytes": 7911,
+      "caracteres": 7697
+    },
+    "MC-04-v2-D1-CONSOLIDADA": {
+      "bytes": 7803,
+      "caracteres": 7584
+    },
+    "MC-04-v2-D1-OPERACIONAL": {
+      "bytes": 8720,
+      "caracteres": 8472
+    }
+  },
+  "testes_novos": {
+    "erros": 0,
+    "falhas": 0,
+    "log": "test_balanceamento_notas_modelos_e_ordem_reproduzivel (test_documentacao_operacional.TestDocumentacaoOperacional.test_balanceamento_notas_modelos_e_ordem_reproduzivel) ... ok\ntest_fatos_de_domino_niveis_precedencia_e_ids_preservados (test_documentacao_operacional.TestDocumentacaoOperacional.test_fatos_de_domino_niveis_precedencia_e_ids_preservados) ... ok\ntest_fatos_declarados_sustentam_240_decisoes_motivos (test_documentacao_operacional.TestDocumentacaoOperacional.test_fatos_declarados_sustentam_240_decisoes_motivos) ... ok\ntest_preparacao_sem_chave_referencia_privada_ou_transporte (test_documentacao_operacional.TestDocumentacaoOperacional.test_preparacao_sem_chave_referencia_privada_ou_transporte) ... ok\ntest_rejeita_origem_fora_de_versao_e_promocao_do_plano (test_documentacao_operacional.TestDocumentacaoOperacional.test_rejeita_origem_fora_de_versao_e_promocao_do_plano) ... ok\ntest_substituicao_somente_do_bloco_rf_e_catalogo_completo (test_documentacao_operacional.TestDocumentacaoOperacional.test_substituicao_somente_do_bloco_rf_e_catalogo_completo) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.140s\n\nOK\n",
+    "metodos": 6
+  },
+  "tokens_estimados": null
+}

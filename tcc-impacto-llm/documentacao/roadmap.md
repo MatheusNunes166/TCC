@@ -1,5 +1,13 @@
 # Roadmap incremental
 
+D-54 (22/11/2026) acrescenta integração offline do bloco documental de
+64 posições, quatro condições, 32 células N=2, dois blocos de 32 e 16 payloads.
+Captura futura pelo pesquisador na interface; nenhuma chamada real nesta
+implementação. Antecedente de 32 posições não executado e coortes anteriores
+preservados. Aprovação científica e conformidade humana continuam distintas.
+[Operação](operacao-documentacao.md); [verificação](../apresentacao/VERIFICACAO.md).
+
+
 Situação operacional e próximas tarefas: [estado atual](../ESTADO_ATUAL.md). Este documento descreve critérios de passagem; não duplica o andamento nem autoriza execuções.
 
 D-41 (09/11/2026) acrescenta uma extensão exploratória após o piloto encerrado pelo pesquisador: quinze casos e 75 comparações locais; 64 observações novas com dois modelos nomeados, dois blocos de 32 e ordem própria. [Referência candidata 0.3](referencia-candidata-0.3.md) e [preparação/verificação](../evidencias/spec004/extensao-2026-11-09/RELATORIO.md). Isso não congela a coleta principal nem modifica os critérios históricos da versão 0.2 abaixo.

@@ -1,0 +1,152 @@
+# Estado atual — 13/11/2026
+
+Fonte única da situação operacional; navegação no [README](README.md), decisões e autorizações em [decisoes.md](documentacao/decisoes.md). Registros datados descrevem seus incrementos, sem substituir este estado.
+
+## Painel único integrado e fluxo anterior removido — 13/11/2026, D-52
+
+Fluxo vigente: **`python apresentar.py`**, com telas **Executar** e **Resultados**, servidor em `127.0.0.1:8765` e envio somente por clique explícito. `python apresentar.py verificar` conserva os testes originais, a matriz e a leitura offline, sem gerar HTML. README e tarefas do workspace apontam para esses comandos. [Controles e limitações atuais](apresentacao/VERIFICACAO.md).
+
+A versão anterior estava integrada. `git apply --check` do patch de atualização encontrou conflitos nos registros locais posteriores (estado, decisões e verificação); integração manual das fontes necessárias, sem aplicar o patch completo ou substituir revisões. Removidos o template estático, seu gerador/opções exclusivos e duas pastas de relatórios descartáveis. Nenhum ZIP ou patch de integração foi encontrado dentro da entrega fora das áreas históricas protegidas. O pacote original permanece fora do repositório.
+
+Verificação offline no Windows: **41 testes descobertos, 40 aprovados, um ignorado** por privilégio de symlink (`WinError 1314`), sem falhas/erros; **75/75 comparações conformes**, **64 + 16 originais** e **324 hashes consumidos** conferidos. Fluxos JavaScript exercitados em DOM artificial com os 80 registros e 20 perfis preservados: filtros, detalhes, notas, preview, clique duplicado, falha de POST e ausência de chave. Os **13.064 arquivos anteriores nas áreas científicas** mantêm seus hashes; núcleo, transporte, avaliador e decisões humanas permanecem preservados.
+
+**Inspeção visual renderizada pendente:** a automação do Chrome não respondeu aos comandos de inspeção. Não se validou legibilidade no tamanho da apresentação. Ctrl+Shift+B, abertura nativa de pastas e Git Bash também não foram executados. Nenhuma chamada real/conexão externa, inclusão científica, decisão de conformidade, commit ou push. D-49 continua autorizando orçamento indefinido; o painel não exige valor positivo. Os registros datados abaixo descrevem fluxos anteriores, substituídos operacionalmente por esta seção.
+
+## Pacote de apresentação integrado no Windows — 13/11/2026, D-51
+
+Raiz Git confirmada em `D:\TCC-Projeto\TCC`, árvore inicialmente limpa e HEAD igual à base `97af9f093018973e423117ac9e19ab4e4e5074a2`. `git apply --check` e aplicação dos nove arquivos concluídos sem conflitos; nenhuma revisão local precisou ser substituída. Os registros científicos anteriores permanecem vigentes e preservados.
+
+Python 3.13.3 no PowerShell: dez testes da apresentação descobertos, **nove aprovados e um ignorado**, sem falhas/erros; o controle de symlink foi ignorado por `WinError 1314`. `python apresentar.py --sem-abrir` terminou com retorno 0: **18 métodos aprovados, 75/75 comparações conformes e 64 + 16 respostas originais somente lidas**. HTML/JSON coerentes, quatro seções presentes, 11 destinos locais existentes, 334 hashes de fontes conferidos, sintaxe JavaScript e configuração da tarefa padrão do workspace válidas. [Validação local e pendências](apresentacao/VERIFICACAO.md).
+
+Continuam pendentes a inspeção visual no navegador, Ctrl+Shift+B no VS Code, abertura nativa de pastas e execução no Git Bash. Nenhuma limpeza do projeto, chamada à API, decisão de conformidade, commit ou push foi realizada. A seção de 12/11 abaixo registra a preparação do pacote, não a execução local atual.
+
+## Organização para demonstração local — preparação do pacote em 12/11/2026
+
+Solicitação do pesquisador: simplificar a navegação e demonstrar os testes e resultados. [Comando curto e roteiro](README.md): `python apresentar.py` executa os 18 métodos da autorização e reutiliza a matriz existente de 75 comparações. Gera relatório HTML local com casos, diffs, payloads e respostas reais preservadas dos dois blocos, referência e resultados separados. Não coleta LLM, não usa chave, não altera métricas ou conformidades. Processos de testes com rede bloqueada; saídas novas somente em `apresentacao/saidas/`, ignoradas pelo Git e identificadas como demonstração.
+
+[Workspace da apresentação](Apresentacao-TCC.code-workspace) oferece tarefa por Ctrl+Shift+B e oculta pastas volumosas apenas nessa janela. Nenhuma captura, avaliação, evidência ou cópia histórica foi movida/excluída. A limpeza opcional só admite três caches não rastreados da raiz; recusa links/junctions e ausência de comprovação por Git. Não se promete eliminar os arquivos históricos que sustentam os hashes.
+
+Verificações locais: 10 controles da apresentação aprovados; 18 métodos da bancada aprovados; 75/75 comparações conformes; 80 respostas originais lidas sem novas chamadas. Lógica do painel conferida em DOM mínimo artificial, sem equivaler a renderização visual. A conferência visual e os recursos nativos de abertura no Windows permanecem para validação local: o ambiente desta preparação não permitiu abrir navegador sobre arquivo local. [Comandos, alcance e limites](apresentacao/VERIFICACAO.md). Não houve commit/push ou decisão científica. Conformidade dos blocos continua como nos registros separados abaixo.
+
+## Bloco de notas capturado e avaliado offline; conformidade pendente — D-50
+
+O pesquisador informou a conclusão em [captura/notas-mc04-real-001](captura/notas-mc04-real-001/). A conferência confirmou **16 capturas reais concluídas**, oito células modelo × estrutura × nota_id com duas execuções cada, um T01 por observação, 336 vínculos de fechamento íntegros, modelos reportados/medium/4096 coerentes, ordem preservada e nenhum desvio ou retry registrado. Período: 11/11/2026, 20:51:41–20:59:35, America/Sao_Paulo. Plano integrado 002, notas, payloads, configurações, referência 0.3 e regras utilizados permaneceram intactos.
+
+[Avaliações e relatório descritivo](avaliados/notas-mc04-real-001/RELATORIO.md), [oito células em CSV](avaliados/notas-mc04-real-001/tabelas-descritivas.csv) e [conjuntos/diferenças por observação](avaliados/notas-mc04-real-001/descritivo-pendente.json). **16/16 válidas, 0/16 inválidas e 0/16 falhas técnicas.** Requisitos e testes exatos em todas; em cada célula N01 ou N02: exatas 2/2, P/R/F1=1 e Jaccard entre repetições=1, separadamente nas duas dimensões. Todas selecionaram RF-03/RF-04 e T05/T07/T08/T10/T12/T13/T14/T15. Não houve IDs omitidos/excedentes ou diferenças entre R01/R02 e N01/N02.
+
+**Não houve alteração observável da seleção diante da nota incorreta em Sol/D1, Sol/E1, Astra/D1 ou Astra/E1.** Resultado local, uma mudança e somente duas repetições por célula; não demonstra reconhecimento explícito da contradição ou raciocínio interno. Os empates são preservados. Piloto e 64 execuções anteriores não entram nos denominadores deste bloco.
+
+[Ficha das 16 observações](avaliados/notas-mc04-real-001/revisao-conformidade-pendente.json) criada pelo mecanismo existente, com decisões/justificativas humanas pendentes e hashes individuais; responsável/data nulos. O resumo controlado permanece bloqueado por essa revisão (retorno 2 no manifesto), sem alterar conformidade para apresentar a descrição. A declaração de conclusão da coleta não aprova conformidade. As **64 decisões anteriores continuam pendentes**. [D-50 e evidências](documentacao/decisoes.md); nenhuma chamada externa/API, commit ou push neste atendimento. Não há novas chamadas a realizar neste lote.
+
+## Histórico: autorização sem orçamento definido — D-49
+
+Matheus Henrique Braun Nunes decidiu explicitamente prosseguir sem definir orçamento monetário, reconhecendo chamadas pagas e aceitando ausência de teto automático. [D-49](documentacao/decisoes.md) registra a declaração; a [autorização específica](captura/autorizacao-notas-mc04-001.json) contém responsável, texto, data/fuso e três flags dessa decisão, preservando a aprovação D-48 e **`orcamento_usd=null`**. O contrato aceita nulo somente com esse registro completo; não reutiliza USD 2 histórico.
+
+Plano 002, ordem, notas, payloads, modelos, configurações, referência e motor API preservados. Só o adaptador e seus testes são revisados; o [registro da atualização por hashes](evidencias/spec004/autorizacao-sem-orcamento-notas-D49/atualizacao-fontes.json), ligado à autorização, permite essa revisão exata sem alterar o plano nem dispensar a verificação das demais fontes. Validação offline da autorização específica aprovada. **23 métodos aprovados**, seis novos e 17 regressões, zero falhas/erros/ignorados, com rede/DNS bloqueados e HTTP/chave fictícios. [Log](evidencias/spec004/autorizacao-sem-orcamento-notas-D49/testes-offline.txt). [Preservação](evidencias/spec004/autorizacao-sem-orcamento-notas-D49/preservacao.json): 12.316 de 12.319 arquivos anteriores idênticos; os três atualizados têm cópias anteriores literais. [Fechamento D-49](evidencias/spec004/autorizacao-sem-orcamento-notas-D49/verificacao-final.json).
+
+**Nenhuma chamada neste atendimento; zero capturas reais no bloco.** O [comando existente](documentacao/operacao-notas.md) é para uso futuro do pesquisador, somente `NOTA03-MC-04-v2-D1-N02-ASTRA-R01` com `--limite 1` e `--enviar-real`. Exige chave local disponível; a última verificação D-48 indicava ausência, sem nova consulta em D-49. Após a primeira chamada, conferir captura, modelo reportado, completude, tokens e desvios antes de continuar, sem usar acerto. Sem commit/push. **Conformidade das 64 anteriores permanece pendente**; futuras capturas exigirão revisão própria.
+
+## Histórico: aprovação do par/plano; pendências então verificadas — D-48
+
+Matheus Henrique Braun Nunes aprovou explicitamente o par N01/N02 e o plano integrado das 16 observações, autorizando as chamadas previstas. [D-48](documentacao/decisoes.md) registra a declaração e seu alcance. [Autorização específica](captura/autorizacao-notas-mc04-001.json) preenchida com nome, flags verdadeiras e data `2026-11-11T20:21:11-03:00` (America/Sao_Paulo; horário do relógio no início do atendimento). Plano, ordem, notas, payloads, configurações e modelo original de autorização preservados.
+
+**Zero chamadas novas.** O registro aguarda `orcamento_usd` próprio, que não foi declarado; o validador offline recusou o campo nulo. A variável `OPENAI_API_KEY` está ausente no processo e nos escopos usuário/máquina verificados. Solicitados o valor e a disponibilização local da credencial, sem transmiti-la pelo chat. Não se presume USD 2 histórico nem se solicita novamente aprovação do par/chamadas.
+
+Quando esses itens estiverem disponíveis, executar somente `NOTA03-MC-04-v2-D1-N02-ASTRA-R01` com `--limite 1`, pelo [comando existente](documentacao/operacao-notas.md), e conferir captura/modelo/completude/tokens/desvios antes de continuar, sem usar acerto. Lote real ainda inexistente; nenhuma retentativa/conexão, commit ou push. **Conformidade das 64 anteriores continua pendente**, e capturas futuras também exigirão decisões próprias.
+
+## Histórico: bloco de notas integrado offline — D-47
+
+[Plano integrado 002](captura/notas-mc04-0.3-002/plano.json), ligado ao 001 imutável: **16 planejadas, zero capturas reais**. Preservados par de notas, IDs, ordem literal, payloads, referência 0.3 e configurações. [Adaptador](notas_exploratorias.py) reutiliza motor API, avaliador e revisão existentes. `nota_id`/bloco atravessam captura, início local, avaliação, ficha e resumo; oito células modelo × estrutura × nota, N=2 cada, sem misturar N01/N02 ou as 64 anteriores. Falhas/fragmentos, formato inválido e retomada sem reenvio permanecem rastreáveis; conformidade começa pendente.
+
+**80 métodos aprovados offline**, zero falhas/erros/ignorados na validação final: 17 de preparação/integração e 63 regressões. Dados artificiais somente em temporários, HTTP/chave fictícios e rede bloqueada. [D-47 e logs](documentacao/decisoes.md), [plano verificado](evidencias/spec004/integracao-notas-0.3-D47/plano-verificado.json), [simulação executada](evidencias/spec004/integracao-notas-0.3-D47/simulacao.json), [preservação final](evidencias/spec004/integracao-notas-0.3-D47/verificacao-final.json). Dos 12.242 arquivos anteriores inventariados, 12.238 ficaram idênticos e quatro fontes atualizadas têm cópias anteriores literais de hash coincidente. O coletor corrente tem versão v1.4-D47. As fórmulas e o hash da política de pontuação não mudaram.
+
+[Operação e comandos exatos](documentacao/operacao-notas.md). **Envio continua bloqueado:** faltam revisão humana e autorização específica com hash do plano, responsável/data, justificativa e orçamento próprio. O modelo de autorização está nulo/falso, separado das decisões posteriores de conformidade; USD 2 histórico não libera gasto. O comando futuro, ainda não executado, envia somente `NOTA03-MC-04-v2-D1-N02-ASTRA-R01` com limite 1 após autorização válida. Nenhuma chamada real/conexão, commit ou push. A conformidade das **64 anteriores continua pendente**, sem inclusão/exclusão.
+
+## Bloco de notas MC-04-v2 preparado offline — D-46
+
+[Plano separado](captura/notas-mc04-0.3-001/plano.json): MC-04-v2 × Sol/Astra medium × direta/estruturada × duas notas × duas repetições = **16 planejadas, zero executadas**. Oito células N=2, oito preparações, quatro payloads únicos, dois blocos de oito; ordem/algoritmo/semente local 20261111 registrados. Configurações técnicas anteriores preservadas, catálogo/referência 0.3 e formato requisitos/testes reutilizados. O fator `nota_id` deve permanecer explícito; não há mistura com as 64 execuções anteriores.
+
+[Par final e revisão privada](captura/notas-mc04-0.3-001/REVISAO-PRIVADA.md), [diffs efetivos](captura/notas-mc04-0.3-001/diferencas-payloads.json), [verificação](evidencias/spec004/notas-mc04-0.3-D46/verificacao-offline.json) e [sete testes offline aprovados](evidencias/spec004/notas-mc04-0.3-D46/testes-001.txt). A nota anterior é conservada como texto comum; só uma afirmação acrescentada difere no par. Rótulos e contradição deliberada ficam fora do input; nenhuma advertência exclusiva. São 198 vínculos de manifesto e zero chamadas. O [preparador](preparar_bloco_notas.py) reutiliza montador/validador/corpo API e oferece apenas preparação/conferência. Envio desautorizado; antes de executar futuramente faltam revisão humana e integração específica da nova etapa/fator à captura/avaliação, autorização e orçamento próprios. USD 2 nos snapshots das configurações anteriores não autoriza gasto novo.
+
+As **64 decisões anteriores continuam pendentes**, sem inclusões/exclusões. [D-46](documentacao/decisoes.md) não aprova a revisão D-45. A [análise existente](documentacao/analise-extensao-0.3.md#conferência-das-quatro-divergências) explicita que confundir participação com impacto é hipótese interpretativa, sem evidência do raciocínio interno do modelo. [12.036 arquivos anteriores preservados](evidencias/spec004/notas-mc04-0.3-D46/preservacao-final.json), incluindo dados, notas/pacotes antigos, referência, respostas, pontuação e fontes funcionais. Saídas futuras medirão seleção/omissões/excedentes; IDs não demonstram reconhecimento explícito da contradição.
+
+## Revisão assistida de conformidade — D-45, aguardando declaração
+
+O pesquisador solicitou realizar a revisão das 64 observações. [Conferência organizada e oito grupos de revisão](documentacao/analise-extensao-0.3.md#revisão-assistida-de-conformidade--d-45-aguardando-decisão-humana) acrescentados ao documento existente, com evidências, limites, metadados históricos de preparação, exceções e formato de declaração. Dezesseis payloads reconstruídos pelas fontes preservadas e confrontados com as 64 entregas; ficha/fontes/assinaturas, 6.442 hashes anteriores, 1.325 vínculos do manifesto e 1.312 de fechamento reconferidos, sem exceção técnica individual detectada. Nenhum critério de desempenho foi usado.
+
+**Ainda são 64 decisões pendentes, sem aprovação/exclusão.** O pedido de revisão não contém decisões de inclusão/exclusão. Aguardando declaração explícita do pesquisador para grupos/IDs, justificativas, responsável/data/alcance e ocorrências conhecidas fora dos registros. Depois dela, registrar cada decisão individual ligada aos hashes e executar `revisar` e `resumir-revisado` em destinos novos, preservando N=64 e originais. Não foram criados outra ficha, preenchimento ou resumo revisado; nenhuma chamada à API ou alteração dos materiais. [Autorização e limites D-45](documentacao/decisoes.md).
+
+## Fechamento analítico offline — D-44
+
+[Análise das quatro divergências, subsídios à ficha existente e síntese para o TCC](documentacao/analise-extensao-0.3.md), com os comandos futuros e os campos exatos que faltam para o resumo revisado. Originais, relatório D-43, ficha e hashes preservados: 6.442 hashes do inventário anterior, 1.325 vínculos do manifesto descritivo e 1.312 de fechamento reconferidos sem divergências, com rede bloqueada. MC-02 altera RF-04; RF-02/RF-03 conservam concessões/expansão e são excedentes nas quatro respostas originais pelo critério utilizado. Nenhuma inferência sobre raciocínio interno.
+
+**Continuam 64 decisões pendentes, zero aprovadas; nenhuma exclusão.** Faltam responsável/data com fuso e decisões/justificativas humanas por observação ligadas aos hashes, seu registro por `revisar` e a geração por `resumir-revisado`, em destinos novos. Não há falta de captura/avaliação ou implementação detectada. A revisão científica da referência/neutralidade das notas é separada e permanece pendente no alcance documentado. O [complemento](documentacao/analise-extensao-0.3.md) distingue o bloqueio do código dessas pendências científicas. Nenhuma nova chamada, alteração experimental, commit ou push; [D-44](documentacao/decisoes.md).
+
+## Extensão 0.3 capturada e avaliada offline — D-43
+
+O pesquisador informou a conclusão da captura em `captura/extensao-real-0.3-001`, pelo plano 003. A conferência offline confirmou **64 resultados reais concluídos**, 32 Sol/medium e 32 Astra/medium, limite comum 4096, duas repetições por combinação, ordem/identidades e 1.312 vínculos de fechamento conformes. Referência candidata 0.3 confirmada pelo hash `94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9`. Coletor, planos, dados, notas, prompts e referência foram preservados; nenhuma chamada nova à API foi feita nesta avaliação.
+
+Saída nova: [relatório descritivo](avaliados/extensao-real-0.3-001-avaliacao-001/RELATORIO.md), [tabelas por modelo/mudança/condição](avaliados/extensao-real-0.3-001-avaliacao-001/TABELAS.md), [64 avaliações](avaliados/extensao-real-0.3-001-avaliacao-001/lista.json). Formato válido 64/64; testes exatos 64/64. Requisitos exatos: Sol 28/32 e Astra 32/32. Quatro seleções de Sol/MC-02 excederam a referência com RF-02 e RF-03, sem omissões; nas demais mudanças e nos testes houve empate integral. Resultados locais descritivos, sem superioridade geral ou inferência estatística forte a partir de duas repetições.
+
+**Conformidade: 64 pendentes, zero aprovadas.** [Modelo separado com hashes e decisões pendentes](avaliados/extensao-real-0.3-001-avaliacao-001/revisao-conformidade-pendente.json); responsável/data não preenchidos. O resumo controlado continua bloqueado, sem alterar conformidades para produzir a descrição. [Conferência de integridade](evidencias/spec004/avaliacao-extensao-0.3-D43/integridade.json) e [6.442 arquivos anteriores preservados](evidencias/spec004/avaliacao-extensao-0.3-D43/preservacao.json), sem pendência técnica detectada. Piloto e controles não entram nos denominadores.
+
+Tokens reportados: Sol 56.384 entrada + 5.878 saída = 62.262; Astra 56.384 + 3.373 = 59.757. Raciocínio (4.439/1.693) já incluído na saída, sem somá-lo novamente. [Detalhes](avaliados/extensao-real-0.3-001-avaliacao-001/tokens-por-modelo.json). A captura ocorreu em 09/11/2026, 23:01:24–23:17:57, UTC−03:00, conforme registros originais.
+
+## Histórico da integração de envio — D-42
+
+O pesquisador autorizou a integração mínima do envio e declarou **USD 2 de orçamento de planejamento, sem controle automático ou garantia de teto**, aceitando esse risco. Implementado `extensao_exploratoria.py iniciar`, com `--enviar-real`, `--limite` obrigatório e `--continuar`; a coleta reutiliza o motor API e seleciona a configuração de cada observação. Registros reais usam fase `exploratoria` e identidade da extensão. A rota Codex CLI permanece intacta e bloqueada.
+
+Plano vigente: [extensão 003](captura/extensao-20261109-003/plano.json), gerado pelo preparador a partir do 002, com os mesmos **64 itens, ordem literal e hashes de payload**, referência 0.3, Sol/medium e Astra/medium, limite comum 4096. Há novas identidades e hashes funcionais; planos anteriores preservados. **Nenhuma observação real foi executada nesta implementação**; todas permanecem planejadas. `envio_autorizado=true` identifica a habilitação técnica do novo plano; cada envio exige também a flag explícita.
+
+[D-42](documentacao/decisoes.md), [relatório e comandos absolutos](evidencias/spec004/integracao-envio-extensao-2026-11-09-D42/RELATORIO.md), [verificação offline](evidencias/spec004/integracao-envio-extensao-2026-11-09-D42/verificacao-001/resultado.json). Captura, avaliação e revisão de conformidade permanecem separadas; USD 2 não é teto garantido. Nenhuma conexão, coleta, commit ou push foi feita nesta entrega.
+
+Verificação D-42: **52 testes aprovados**, zero falhas/erros/ignorados, com rede bloqueada e HTTP/chave fictícios nos controles. 64 envios simulados com ambos os modelos, captura/retomada sem reenvio, avaliação separada e conformidade pendente; 8.543 arquivos anteriores conferidos sem divergências. Os 64 itens, ordem literal, payloads e referência foram preservados entre 002/003.
+
+## Histórico da preparação offline — D-41
+
+Autorizada somente preparação e verificação offline: catálogo **0.3, T01–T15**, referência candidata **0.3**, quatro mudanças × D0/D1/E0/E1 × GPT-6 Sol/medium e GPT-6 Astra/medium × duas repetições = **64 observações novas**, em dois blocos de 32. Nenhuma dessas observações foi executada. Limite proposto comum: **4096 tokens**, incluindo raciocínio e resposta final. Notas 0.2-local, pedidos e demais textos experimentais preservados; 16 textos de payload, idênticos entre os modelos, em 32 preparações com identidades próprias.
+
+[Referência e justificativas 0.3](documentacao/referencia-candidata-0.3.md), [plano vigente](captura/extensao-20261109-002/plano.json), [ordem completa](captura/extensao-20261109-002/ordem.json), [relatório, custo e verificações](evidencias/spec004/extensao-2026-11-09/RELATORIO.md). A preparação `extensao-20261109-001` foi intermediária, anterior ao fechamento das fontes; seus hashes não autorizam execução. O coletor API foi reutilizado; a extensão possui trava de envio real no código. Os controles artificiais são identificados como sintéticos, separados da pesquisa.
+
+Verificação final: **75/75 comparações conformes**; 127 métodos descobertos, 126 aprovados, zero falhas/erros e um ignorado condicional por privilégio Windows de symlink. [Evidência](evidencias/spec004/extensao-2026-11-09/verificacao-final/resultado.json), com conexões/DNS bloqueados. Estimativa informativa dos 64 envios: USD 2,73 no cenário de 1024 tokens de saída e USD 8,63–10,81 usando o limite 4096, conforme hipóteses de entrada; orçamento novo ainda não declarado e saldo não presumido.
+
+## Piloto real encerrado pelo pesquisador e preservado
+
+O pesquisador declarou concluída sua revisão do piloto de 16 observações no pedido de D-41. As **16 capturas reais e 16 avaliações individuais** continuam intactas, concluídas/avaliadas e com formato válido. Houve correspondência integral com a referência candidata 0.2, sem conclusão de superioridade, equivalência geral entre condições ou inutilidade das notas. D-39 registra a integração offline anterior. Nenhum registro antigo substitui observação da extensão, cujo catálogo foi ampliado.
+
+| Artefato utilizado | Fonte preservada |
+|---|---|
+| Plano, ordem e configuração efetivos | [Plano API 002](captura/plano-api-piloto-002/plano.json), idêntico ao [plano copiado no lote](captura/piloto-api-001/plano-original.json) |
+| Brutos, requisições, metadados e fechamentos | [captura/piloto-api-001](captura/piloto-api-001/) |
+| Avaliações individuais e lista de hashes | [avaliados/piloto-api-001/lista.json](avaliados/piloto-api-001/lista.json) |
+| Resumo já produzido | [resumo.json](avaliados/piloto-api-001/resumo/resumo.json): incompleto, com diagnósticos de conformidade pendente |
+| Oito payloads únicos usados duas vezes | [Preparações do plano 002](captura/plano-api-piloto-002/preparados/); origem [v2-LF](evidencias/spec004/preparacao-piloto-2026-11-06-v2-lf/RELATORIO.md) |
+
+Configuração registrada: **GPT-6 Sol (`gpt-6-sol`), esforço `medium`**, `piloto-api-74180c81329ee360`, Responses API, limite de saída 4096, timeout 120 s, orçamento declarado USD 1,00 (não é teto imposto pelo coletor). MC-01/MC-03 × D0/D1/E0/E1 × duas repetições, na ordem do plano, sem novo sorteio. O plano original ainda diz `PLANEJADA_NAO_EXECUTADA`: retrata a preparação; tentativas/fechamentos documentam a execução. Não corrigir esse original.
+
+Os registros originais continuam com `conformidade_protocolo=pendente`, e o resumo existente conserva seu bloqueio histórico. A declaração atual de revisão concluída foi registrada em D-41, sem editar esses registros, fabricar decisões individuais ligadas a hashes ou completar aprovações retrospectivas. Os exemplos da integração são sintéticos. HTTP 200, formato válido e acertos não aprovam conformidade por si.
+
+A [conexão neutra](captura/conexao-api-20261107-001/resultado.json) está concluída e reporta `gpt-6-sol`, na fase `verificacao_conexao`, excluída do piloto e da coleta principal. O [exploratório MC-04](evidencias/spec004/exploratorio-2026-11-05-mc04-001/) e controles sintéticos permanecem separados dos dados reais.
+
+## Próximas tarefas e limites
+
+1. Pesquisador revisar explicitamente a conformidade das 64 observações usando a ficha existente e os [subsídios conferidos em D-44](documentacao/analise-extensao-0.3.md#subsídios-à-ficha-existente-de-conformidade), com responsável, data, decisão e justificativa por observação ligadas aos hashes. HTTP 200, ausência de desvio detectado ou resposta correta não aprovam conformidade. Não excluir seleções incorretas apenas pelo escore. Registrar separadamente o alcance efetivo da revisão científica da referência e das notas, sem editar originais ou inferir aprovação externa.
+2. Após preenchimento humano em arquivo separado e revisão registrada, usar os [comandos existentes do resumo revisado](documentacao/analise-extensao-0.3.md#o-que-falta-para-gerar-o-resumo-revisado) para as observações elegíveis, conservando N=64, capturas, avaliações originais e exclusões. Até lá, usar somente as tabelas e a síntese identificadas como descritivas com conformidade pendente.
+3. Manter notas, prompts, referência candidata e critérios utilizados nas 64 observações e no bloco de notas; não ajustá-los pelos resultados. D-50 confirmou a conclusão das 16 capturas novas; não repetir chamadas neste lote. Piloto e coortes anteriores permanecem separados; chamadas externas, commit e push não estão autorizados neste atendimento.
+4. Preservar a análise de notas por modelo × estrutura × nota, N=2 por célula e N=16 no bloco. As seleções iguais não demonstram reconhecimento explícito de contradição. Manter tanto empates quanto diferenças nos relatórios.
+5. Pesquisador revisar as 16 observações na ficha D-50, podendo examinar conjuntamente as duas de cada célula, mas registrando decisão/justificativa individual ligada aos hashes, responsável e data com fuso em arquivo separado. Confirmar ocorrências fora dos registros e a conferência da primeira observação antes da continuidade. Só após decisões explícitas usar `revisar` e `resumir-revisado` pelos comandos do relatório/operação de notas. As 64 anteriores exigem sua revisão independente.
+
+A rota Codex anterior continua bloqueada por ferramentas/contexto e retentativas internas; [D-38 e evidências](captura/analise-bloqueios-cli-2026-11-07-D38/RELATORIO.md). Seus planos, fontes e controles foram mantidos. A rota API tem identidade própria; não misturar lotes ou interpretar a integração D-39 como liberação de gasto.
+
+## Conservação do repositório
+
+| Classe | Conteúdo e tratamento |
+|---|---|
+| Essenciais e vigentes | Plano API 002, piloto real, avaliações, payloads v2-LF, notas/prompts, referência privada e justificativas nas versões usadas; código, testes/fixtures, variantes, contratos e governança. Mantidos nos caminhos existentes. |
+| Históricos necessários | Plano API 001, planos/rota Codex, conexão neutra, exploratório, controles sintéticos, ferramentas e relatórios de reprodução, Specs e histórico documental. Mantidos: versões e cópias têm vínculos de hash/caminho próprios. |
+| Regeneráveis comprovados | Cache Python da raiz; recomposições de `saidas-locais/verificacao-lf-v2-local-001/`; cópia `operacao-api-do-patch.md`. Removidos após comparação: 184 arquivos da recomposição idênticos aos preservados, 16 preparações diferentes apenas em ID/data sem hash referenciado; cópia documental idêntica à seção do patch original preservado. |
+| Origem ou utilidade incerta | Não foi comprovada a dispensa dos scripts locais de integração nem do schema completo da CLI: mantidos como produtores/fontes históricos. Repositórios de transporte têm finalidade conhecida e também permanecem: o snapshot Git conserva o commit temporário referido nos registros. Nenhum desses ignorados foi tratado como lixo. |
+
+Não há arquivamento novo. Os repositórios de transporte (~8 MB) são referidos para inspeção, com commit e caminhos nos comandos históricos. Compactá-los exigiria restauração antes dessas inspeções; o ganho não justifica mudar esses acessos. As evidências já guardam relatórios compactos dos checkouts. Os schemas (~4,4 MB) e scripts também permanecem acessíveis. `.gitignore` não autoriza excluir seu conteúdo.
+
+Versões científicas e ferramentas não foram movidas, normalizadas ou regravadas. `.gitattributes` conserva a política de bytes. Histórico de decisões em [decisoes.md](documentacao/decisoes.md), versões documentais em [historico/](documentacao/historico/). O pacote [revisão profissional v1](documentacao/revisao-profissional-spec004-v1/LEIA-PRIMEIRO.md) é histórico; não representa parecer externo obtido.

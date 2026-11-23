@@ -1,0 +1,46 @@
+{
+  "status": "OK_TECNICO_OFFLINE",
+  "observacoes_reais_novas": 0,
+  "chamadas_reais": 0,
+  "testes_conexao_provedor": 0,
+  "commit_push": false,
+  "head": "cd87842dbd8c317e6465e79a89bf600c5404f342",
+  "plano": {
+    "payloads": 16,
+    "observacoes": 64,
+    "celulas": 32,
+    "N": 2,
+    "blocos": [
+      32,
+      32
+    ]
+  },
+  "testes": {
+    "aprovados_distintos": 195,
+    "ignorados_symlink": 2,
+    "novos_aprovados": 11,
+    "forma": "regressão integral e reexecução dos novos controles após correção; ver testes-consolidados.json"
+  },
+  "bancada": {
+    "originais": 18,
+    "comparacoes": "75/75",
+    "fatos_operacionais": "240/240"
+  },
+  "navegador": {
+    "renderizado": "Chrome/157.0.8103.40",
+    "observacoes_sinteticas": 64,
+    "respostas_validas": 62,
+    "invalidas": 1,
+    "falhas": 1,
+    "divergencia_modelo": 1,
+    "celulas": 32,
+    "pares_validos_por_dimensao": 30
+  },
+  "conformidade": "PENDENTE; revisão humana separada; nenhum aceite atribuído",
+  "limites": [
+    "Nenhuma validação real do provedor, conforme solicitado.",
+    "Symlinks reais não exercitados por WinError 1314.",
+    "Tela física da banca, atalhos do VS Code e abertura nativa de pastas não exercitados.",
+    "Avaliações parciais preservadas exigem diagnóstico, sem sobrescrita/reparo automático."
+  ]
+}

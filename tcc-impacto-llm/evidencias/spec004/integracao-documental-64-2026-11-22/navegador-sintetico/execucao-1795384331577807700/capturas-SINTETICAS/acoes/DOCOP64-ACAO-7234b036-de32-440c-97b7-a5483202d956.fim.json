@@ -1,0 +1,27 @@
+{
+  "enviadas": 1,
+  "etapa": "concluida",
+  "eventos": [
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-22T21:52:14.319967+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-22T21:52:14.327864+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-22T21:52:14.393828+00:00"
+    },
+    {
+      "etapa": "concluida",
+      "instante": "2026-11-22T21:52:14.442985+00:00"
+    }
+  ],
+  "finalizado": true,
+  "id": "DOCOP64-ACAO-7234b036-de32-440c-97b7-a5483202d956",
+  "limite": 1,
+  "mensagem": "Limite solicitado concluído. Capturas e avaliações preservadas.",
+  "ultima_observacao": "DOCOP64-MC-04-v2-E1-CONSOLIDADA-SOL-R01"
+}

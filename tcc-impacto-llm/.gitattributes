@@ -27,3 +27,17 @@
 /evidencias/spec004/integracao-notas-0.3-D47/** -text -filter -ident
 # D-50: conferencia e relato offline do bloco real de notas, bytes literais.
 /evidencias/spec004/avaliacao-notas-0.3-D50/** -text -filter -ident
+
+# Documentacao operacional: produtor, controles e evidencias ligados a hashes.
+/preparar_documentacao_operacional.py -text -filter -ident
+/tests/test_documentacao_operacional.py -text -filter -ident
+/evidencias/spec004/documentacao-operacional-2026-11-22/** -text -filter -ident
+
+# D-54: preparacao 64 e fontes/evidencias novas com bytes literais.
+/preparar_documentacao_operacional_v2.py -text -filter -ident
+/documentacao_operacional.py -text -filter -ident
+/painel_documental.py -text -filter -ident
+/tests/test_documentacao_operacional_64.py -text -filter -ident
+/tests/validar_documental_navegador.py -text -filter -ident
+/tests/validar_integracao_documental.py -text -filter -ident
+/evidencias/spec004/integracao-documental-64-2026-11-22/** -text -filter -ident
