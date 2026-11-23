@@ -1,0 +1,144 @@
+{
+  "avaliador_sha256": "8448f07a7d5c1fd8596cde10deed9467544a75a7ce0f4a16ff8aca2d7689e516",
+  "bloco": 2,
+  "captura_fechamento_sha256": "67cf2a81998d889170ab09e77cfb123e06f8b2228b845e4732cad5d6586375ea",
+  "causa": null,
+  "condicao": "D0",
+  "conformidade_protocolo": "pendente",
+  "coorte": "documentacao_operacional_64",
+  "documentacao_id": "CONSOLIDADA",
+  "fase": "exploratoria_documental",
+  "formato_contrato": "valido",
+  "ids_conhecidos_por_dimensao": {
+    "requisitos": true,
+    "testes": true
+  },
+  "instante_avaliacao": "2026-11-23T15:45:27.790368+00:00",
+  "json_sintatico": "valido",
+  "manifesto_sha256": "dca157f3aff6b5d1d468ba984d011d67ab3aa8a99ed35fdc404306e4bbed0431",
+  "modelo_reportado": "gpt-6-astra",
+  "modelo_solicitado": "gpt-6-astra",
+  "mudanca": "MC-02",
+  "mudanca_pedida": "MC-02",
+  "nota_id": "sem",
+  "observacao_id": "DOCOP64-MC-02-D0-CONSOLIDADA-ASTRA-R02",
+  "ordem": 60,
+  "origem": "real",
+  "payload_sha256": "1f39acc820e09bd1a911d90bef408ff3fb6353e17e5e81a8df27957c29d7c190",
+  "plano": "captura/documentacao-operacional-0.3-002/plano.json",
+  "plano_sha256": "cf0e6abddfb76ffdbbe5c1f853488fbe62ff2b9a7d9946f55949913552759c99",
+  "politica": "ids-proposta-004-v2",
+  "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+  "repeticao": 2,
+  "requisicao_sha256": "e06769aa1830f113226260a1c844a0f75ed64c24f66dc48556b3dabe29cfba73",
+  "requisitos": {
+    "FN": 0,
+    "FP": 0,
+    "G": [
+      "RF-04"
+    ],
+    "S": [
+      "RF-04"
+    ],
+    "TP": 1,
+    "acertos": [
+      "RF-04"
+    ],
+    "desconhecidos": [],
+    "duplicatas": [],
+    "excedentes": [],
+    "lista_original": [
+      "RF-04"
+    ],
+    "metricas_propostas": {
+      "correspondencia_exata": 1,
+      "f1": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "precisao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "revocacao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "selecao_completa": 1
+    },
+    "omissoes": []
+  },
+  "resposta_sha256": "2a887e56318927c604c3b6ce001c832acf46bfdd841413d24b48797539cf3aa5",
+  "somente_ids_conhecidos": true,
+  "status_avaliacao": "avaliada",
+  "tentativa_id": "T01",
+  "testes": {
+    "FN": 0,
+    "FP": 0,
+    "G": [
+      "T06",
+      "T07",
+      "T11",
+      "T12",
+      "T14",
+      "T15"
+    ],
+    "S": [
+      "T06",
+      "T07",
+      "T11",
+      "T12",
+      "T14",
+      "T15"
+    ],
+    "TP": 6,
+    "acertos": [
+      "T06",
+      "T07",
+      "T11",
+      "T12",
+      "T14",
+      "T15"
+    ],
+    "desconhecidos": [],
+    "duplicatas": [],
+    "excedentes": [],
+    "lista_original": [
+      "T06",
+      "T07",
+      "T11",
+      "T12",
+      "T14",
+      "T15"
+    ],
+    "metricas_propostas": {
+      "correspondencia_exata": 1,
+      "f1": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "precisao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "revocacao": {
+        "decimal": "1.000000",
+        "denominador": 1,
+        "fracao": "1",
+        "numerador": 1
+      },
+      "selecao_completa": 1
+    },
+    "omissoes": []
+  }
+}

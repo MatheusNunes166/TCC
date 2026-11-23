@@ -1,0 +1,78 @@
+{
+  "acao_id": "DOCOP64-ACAO-f014ee6a-074c-4ece-8125-e74fa8978672",
+  "bloco": 2,
+  "causa": null,
+  "condicao": "D1",
+  "configuracao": {
+    "endpoint": "https://api.openai.com/v1/responses",
+    "esforco_solicitado": "medium",
+    "max_output_tokens": 4096,
+    "modelo_solicitado": "gpt-6-sol",
+    "orcamento_usd": null,
+    "retries_automaticos_cliente": 0,
+    "store": false,
+    "stream": false,
+    "timeout_segundos": 120,
+    "tool_choice": "none",
+    "tools": []
+  },
+  "conformidade_protocolo": "pendente",
+  "coorte": "documentacao_operacional_64",
+  "desvios": [],
+  "documentacao_id": "OPERACIONAL",
+  "estado_remoto": "resposta_http_recebida",
+  "estado_tecnico": "concluida",
+  "falha_transporte": null,
+  "fase": "exploratoria_documental",
+  "fontes_sha256": {
+    "coletor_api.py": "70e5b583bc52af64bd40af27ac5c1b172e021a4e643c8b9dc11ee2a1b4972b39",
+    "documentacao_operacional.py": "9b30d99ddd1c9109eee2bac9a7a7ad92dbb25d1b7dc8aa4177742eab4e2edf3c",
+    "preparar_documentacao_operacional_v2.py": "28e6ba272b4a889dda0503d66faf2938fa03ede238afb70c3fa1f0a7bfe90988"
+  },
+  "http_status": 200,
+  "instante_execucao": "2026-11-23T15:45:08.304002+00:00",
+  "instante_fim": "2026-11-23T15:45:10.902515+00:00",
+  "manifesto_sha256": "dca157f3aff6b5d1d468ba984d011d67ab3aa8a99ed35fdc404306e4bbed0431",
+  "modelo_reportado": "gpt-6-sol",
+  "modelo_solicitado": "gpt-6-sol",
+  "mudanca": "MC-04-v2",
+  "nota_id": "original",
+  "observacao_id": "DOCOP64-MC-04-v2-D1-OPERACIONAL-SOL-R02",
+  "ordem": 55,
+  "origem": "real",
+  "origem_payload": {
+    "payload_origem_sha256": "78d734ddcf58823fb1fe9b8fe917043b6b1d98945c1f4f8bc358a12d0129bf15",
+    "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+    "requisicao_origem": "captura/extensao-real-0.3-001/EXT03-MC-04-v2-D1-SOL-R01/T01/requisicao.json",
+    "requisicao_sha256": "b90927a8c2138d0640cf904659d81e988abe5eb545fe77fd02831776204199f8"
+  },
+  "payload": "payloads/MC-04-v2-D1-OPERACIONAL.txt",
+  "payload_sha256": "c052250683ee2bb0c74fb10f4a78f91991d4cdd55d0e95886141bcaef5461f80",
+  "plano": "captura/documentacao-operacional-0.3-002/plano.json",
+  "plano_sha256": "cf0e6abddfb76ffdbbe5c1f853488fbe62ff2b9a7d9946f55949913552759c99",
+  "referencia_sha256": "94b6315b935d9817dd833567a0b107a90e88d9be850e93c747e03337450eebc9",
+  "repeticao": 2,
+  "request_id": "req_b7aa0485a2d945db82438ecd7a479223",
+  "requisicao_sha256": "feb40a3deb4e1be12cc69f521f38c909cbe1a5520a1ae9d97c51d677dd0e9e92",
+  "response_id": "resp_071d4c55a1483c1d016b045f84c1e487d2baa0dd5227768fce",
+  "resposta_sha256": "bbf68c69327e6a76442c56465f8c6d5a37ae91253c1a2b09682e87ee5189cba7",
+  "retentativas_cliente": 0,
+  "status": "PLANEJADA_NAO_EXECUTADA",
+  "tentativa_id": "T01",
+  "usage": {
+    "input_tokens": 2060,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2057
+    },
+    "output_tokens": 161,
+    "output_tokens_details": {
+      "reasoning_tokens": 114
+    },
+    "total_tokens": 2221
+  }
+}

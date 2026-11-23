@@ -1,0 +1,771 @@
+{
+  "enviadas": 63,
+  "etapa": "concluida",
+  "eventos": [
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:42:11.801043+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:42:11.820827+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:42:17.201192+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:42:17.272134+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:42:17.284357+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:42:19.394527+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:42:19.486887+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:42:19.500644+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:42:25.907133+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:42:25.981876+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:42:25.995106+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:42:29.419120+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:42:29.491696+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:42:29.504792+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:42:32.097672+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:42:32.179238+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:42:32.202492+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:42:34.806715+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:42:34.897051+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:42:34.910745+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:42:38.356149+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:42:38.427974+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:42:38.441761+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:42:41.127901+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:42:41.219321+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:42:41.232492+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:42:44.311494+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:42:44.388773+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:42:44.402950+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:42:48.422910+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:42:48.498336+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:42:48.512128+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:42:50.883620+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:42:51.004182+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:42:51.026865+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:42:53.872318+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:42:53.975122+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:42:53.997231+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:42:56.845966+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:42:56.927530+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:42:56.947255+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:05.078227+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:05.151508+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:05.164654+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:07.850434+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:07.904358+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:07.916328+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:10.875840+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:10.949475+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:10.971650+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:13.639174+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:13.708134+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:13.719844+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:16.839484+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:16.909591+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:16.921924+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:20.056841+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:20.146823+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:20.156536+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:23.320619+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:23.372721+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:23.381272+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:25.748073+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:25.836218+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:25.847787+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:29.704665+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:29.773133+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:29.784517+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:32.486165+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:32.561816+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:32.574278+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:35.133363+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:35.238955+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:35.261465+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:39.385285+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:39.482162+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:39.503041+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:42.478232+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:42.550343+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:42.562990+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:44.990998+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:45.074872+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:45.088391+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:47.775691+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:47.887482+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:47.902084+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:51.628386+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:51.700485+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:51.714404+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:54.576691+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:54.631006+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:54.640282+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:43:57.421251+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:43:57.491587+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:43:57.505001+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:00.280515+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:00.350073+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:00.363443+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:03.183738+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:03.266419+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:03.280144+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:05.851640+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:05.921792+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:05.933788+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:09.625668+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:09.697850+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:09.708859+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:12.742536+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:12.811308+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:12.824996+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:15.427225+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:15.506622+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:15.527038+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:18.447374+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:18.517644+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:18.531131+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:21.509025+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:21.586123+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:21.594745+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:23.960348+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:24.061401+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:24.075902+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:26.909369+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:26.988484+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:27.009076+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:30.700501+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:30.772444+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:30.785540+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:33.488372+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:33.589526+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:33.603230+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:36.386168+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:36.454703+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:36.468407+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:39.392972+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:39.464166+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:39.477289+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:43.443848+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:43.515639+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:43.528744+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:46.296124+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:46.365768+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:46.374628+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:51.057937+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:51.129312+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:51.142574+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:55.596208+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:55.656200+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:55.672271+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:44:57.952895+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:44:58.045723+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:44:58.062145+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:45:00.625434+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:45:00.709614+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:45:00.724381+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:45:04.401987+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:45:04.469679+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:45:04.483488+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:45:08.221900+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:45:08.301440+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:45:08.314497+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:45:11.050316+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:45:11.122251+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:45:11.135159+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:45:14.601075+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:45:14.665884+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:45:14.675869+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:45:17.380646+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:45:17.434610+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:45:17.445222+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:45:20.105407+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:45:20.195434+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:45:20.217726+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:45:22.658932+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:45:22.752643+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:45:22.765031+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:45:27.752556+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:45:27.830688+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:45:27.844135+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:45:30.128507+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:45:30.238922+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:45:30.262040+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:45:33.086398+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:45:33.158149+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:45:33.171865+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:45:36.963570+00:00"
+    },
+    {
+      "etapa": "preparando",
+      "instante": "2026-11-23T15:45:37.055061+00:00"
+    },
+    {
+      "etapa": "enviando",
+      "instante": "2026-11-23T15:45:37.072674+00:00"
+    },
+    {
+      "etapa": "avaliando",
+      "instante": "2026-11-23T15:45:40.490217+00:00"
+    },
+    {
+      "etapa": "concluida",
+      "instante": "2026-11-23T15:45:40.554638+00:00"
+    }
+  ],
+  "finalizado": true,
+  "id": "DOCOP64-ACAO-f014ee6a-074c-4ece-8125-e74fa8978672",
+  "limite": 63,
+  "mensagem": "Limite solicitado concluído. Capturas e avaliações preservadas.",
+  "ultima_observacao": "DOCOP64-MC-02-E1-CONSOLIDADA-ASTRA-R02"
+}

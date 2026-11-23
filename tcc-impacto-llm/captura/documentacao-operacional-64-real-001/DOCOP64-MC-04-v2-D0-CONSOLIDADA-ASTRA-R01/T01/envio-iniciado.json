@@ -1,0 +1,12 @@
+{
+  "acao_id": "DOCOP64-ACAO-f014ee6a-074c-4ece-8125-e74fa8978672",
+  "coorte": "documentacao_operacional_64",
+  "estado_remoto": "desconhecido",
+  "fase": "exploratoria_documental",
+  "instante": "2026-11-23T15:42:44.400826+00:00",
+  "manifesto_sha256": "dca157f3aff6b5d1d468ba984d011d67ab3aa8a99ed35fdc404306e4bbed0431",
+  "origem": "real",
+  "plano": "captura/documentacao-operacional-0.3-002/plano.json",
+  "plano_sha256": "cf0e6abddfb76ffdbbe5c1f853488fbe62ff2b9a7d9946f55949913552759c99",
+  "requisicao_sha256": "65d920c639b2e3d85402efa1eed6c64a76311c849748d5901a5f09bcf31034d9"
+}

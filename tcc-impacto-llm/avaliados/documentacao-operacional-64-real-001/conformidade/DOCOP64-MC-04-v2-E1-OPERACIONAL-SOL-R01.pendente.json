@@ -1,0 +1,34 @@
+{
+  "data": null,
+  "fontes": {
+    "coorte": "documentacao_operacional_64",
+    "fase": "exploratoria_documental",
+    "manifesto_sha256": "dca157f3aff6b5d1d468ba984d011d67ab3aa8a99ed35fdc404306e4bbed0431",
+    "origem": "real",
+    "plano": "captura/documentacao-operacional-0.3-002/plano.json",
+    "plano_sha256": "cf0e6abddfb76ffdbbe5c1f853488fbe62ff2b9a7d9946f55949913552759c99"
+  },
+  "observacoes": [
+    {
+      "avaliacao_sha256": "54dbc1b6bf6702b00ba6be7834d9951eb07c5d4ae6233fd182ce00ddb1531783",
+      "bloco": 1,
+      "condicao": "E1",
+      "decisao": "pendente",
+      "documentacao_id": "OPERACIONAL",
+      "fechamento_sha256": "9add940919d6f6aacff368a2da2d24c4203e926744512b255d248317f938f28a",
+      "justificativa": null,
+      "modelo_solicitado": "gpt-6-sol",
+      "mudanca": "MC-04-v2",
+      "nota_id": "original",
+      "observacao_id": "DOCOP64-MC-04-v2-E1-OPERACIONAL-SOL-R01",
+      "ordem": 9,
+      "payload_sha256": "0704f5b9dd0472e1a6c8f26db0ab14e9753007cd95483aca6441bb5d3d19d667",
+      "plano_sha256": "cf0e6abddfb76ffdbbe5c1f853488fbe62ff2b9a7d9946f55949913552759c99",
+      "repeticao": 1,
+      "resposta_sha256": "48625043a89a5a9e1732641109b04758d76e2596c4cb60dcc15020c96490cbde",
+      "tentativa_sha256": "ad6e62d71e02009c603544f1cc19e456a8a662194d13cee01db48b4b255baf1b"
+    }
+  ],
+  "responsavel": null,
+  "versao": "decisoes-conformidade-v1"
+}
